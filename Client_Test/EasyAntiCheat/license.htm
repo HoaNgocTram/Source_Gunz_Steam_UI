@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gunz License Agreement</title>
+<style>
+body {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 15px;
+}
+h2 { color: #ffa500; }
+.hidden { display: none; }
+</style>
+<script>
+function setLanguage() {
+    var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+
+    // Map fallback
+    if (lang.startsWith('pt')) lang = 'pt';
+    else if (lang.startsWith('es')) lang = 'es';
+    else if (lang.startsWith('tl') || lang.startsWith('fil') || lang.startsWith('ph')) lang = 'ph';
+    else if (lang.startsWith('vi')) lang = 'vn';
+    else lang = 'en';
+
+    // Hide all, show one
+    var blocks = document.querySelectorAll('.lang');
+    for (var i = 0; i < blocks.length; i++) blocks[i].classList.add('hidden');
+
+    var active = document.getElementById('lang-' + lang);
+    if (active) active.classList.remove('hidden');
+}
+</script>
+</head>
+<body onload="setLanguage()">
+
+<!-- English -->
+<div class="lang" id="lang-en">
+<h2>Gunz Online License Agreement</h2>
+<p>By playing this game, you agree to the following terms and conditions:</p>
+<ol>
+<li>You shall not use cheats, hacks, or third-party tools that modify the game client.</li>
+<li>You agree not to exploit bugs or unintended features for unfair advantages.</li>
+<li>The game operator reserves the right to suspend or ban your account at any time.</li>
+<li>Your data may be logged for anti-cheat and debugging purposes.</li>
+
+</ol>
+<p>Click <strong>I Agree</strong> if you agree to these terms.</p>
+</div>
+
+<!-- Portuguese -->
+<div class="lang hidden" id="lang-pt">
+<h2>Contrato de Licença do Gunz Online</h2>
+<p>Ao jogar este jogo, você concorda com os seguintes termos e condições:</p>
+<ol>
+<li>Você não deve usar trapaças, hacks ou ferramentas de terceiros que modifiquem o cliente do jogo.</li>
+<li>Você concorda em não explorar bugs ou recursos não intencionais para obter vantagens injustas.</li>
+<li>O operador do jogo reserva-se o direito de suspender ou banir sua conta a qualquer momento.</li>
+<li>Seus dados podem ser registrados para fins de anti-cheat e depuração.</li>
+</ol>
+<p>Clique em <strong>I Agree</strong> se você concordar com estes termos.</p>
+</div>
+
+<!-- Filipino / Tagalog -->
+<div class="lang hidden" id="lang-ph">
+<h2>Kasunduan sa Lisensya ng Gunz Online</h2>
+<p>Sa paglaro ng larong ito, sumasang-ayon ka sa mga sumusunod na tuntunin at kundisyon:</p>
+<ol>
+<li>Hindi ka dapat gumamit ng cheats, hacks, o anumang third-party tool na nagbabago sa game client.</li>
+<li>Sang-ayon kang huwag samantalahin ang mga bug o hindi sinasadyang feature para sa hindi patas na bentahe.</li>
+<li>May karapatan ang operator ng laro na suspindihin o ipagbawal ang iyong account anumang oras.</li>
+<li>Maaaring i-log ang iyong data para sa anti-cheat at debugging purposes.</li>
+</ol>
+<p>I-click ang <strong>I Agree</strong> kung sumasang-ayon ka sa mga tuntuning ito.</p>
+</div>
+
+<!-- Vietnamese -->
+<div class="lang hidden" id="lang-vn">
+<h2>Thỏa Thuận Sử Dụng Gunz Online</h2>
+<p>Khi chơi trò chơi này, bạn đồng ý với các điều khoản sau:</p>
+<ol>
+<li>Bạn không được sử dụng hack, cheat, hoặc công cụ bên thứ ba làm thay đổi client của trò chơi.</li>
+<li>Bạn đồng ý không lợi dụng lỗi game hoặc tính năng ngoài ý muốn để có lợi thế không công bằng.</li>
+<li>Nhà vận hành có quyền đình chỉ hoặc khóa tài khoản của bạn bất cứ lúc nào.</li>
+<li>Dữ liệu của bạn có thể được ghi lại để phục vụ chống gian lận và xử lý lỗi.</li>
+</ol>
+<p>Nhấn <strong>I Agree</strong> nếu bạn đồng ý với các điều khoản trên.</p>
+</div>
+
+<!-- Spanish -->
+<div class="lang hidden" id="lang-es">
+<h2>Acuerdo de Licencia de Gunz Online</h2>
+<p>Al jugar este juego, aceptas los siguientes términos y condiciones:</p>
+<ol>
+<li>No debes usar trampas, hacks o herramientas de terceros que modifiquen el cliente del juego.</li>
+<li>Aceptas no explotar errores o funciones no intencionadas para obtener ventajas injustas.</li>
+<li>El operador del juego se reserva el derecho de suspender o prohibir tu cuenta en cualquier momento.</li>
+<li>Tus datos pueden ser registrados para propósitos de anti-trampa y depuración.</li>
+</ol>
+<p>Haz clic en <strong>I Agree</strong> si estás de acuerdo con estos términos.</p>
+</div>
+
+</body>
+</html>

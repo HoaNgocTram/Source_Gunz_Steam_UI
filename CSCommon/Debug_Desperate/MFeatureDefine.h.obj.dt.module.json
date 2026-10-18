@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Debug_Desperate\\MFeatureDefine.obj",
+            "outputs": [
+                "Debug_Desperate\\MFeatureDefine.h.obj.dt.module.json",
+                "Debug_Desperate\\MFeatureDefine.h.obj.dt.d.json",
+                "Debug_Desperate\\CSCommon.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Mission">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Mission 화면 구성
+   
+   Last Update : 2025. 02. 27
+   Editor      : gdyoo
+-->
+
+
+<!-- 프레임 생성 : Mission -->
+	<FRAME item="Mission">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- Picture : 미션 배경 -->
+	<PICTURE item="Mission_BackGround" parent="Mission">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Illustration_Inven_00.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 미션 리스트 배경 표시 -->
+	<PICTURE item="MissionListBackground" parent="Mission">
+		<BOUNDS>
+			<X>440</X>
+			<Y>198</Y>
+			<W>1437</W>
+			<H>760</H>
+		</BOUNDS>
+		<STRETCH/>
+		<!-- <BITMAP>Lobby_RoomList_BG.png</BITMAP> -->
+	</PICTURE>
+	
+	<PICTURE item="MissionTimeIcon" parent="Mission">
+		<BOUNDS>
+			<X>460</X>
+			<Y>164</Y>
+			<W>22</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item="MissionTimeLimit" parent="Mission">
+		<BOUNDS>
+			<X>486</X>
+			<Y>154</Y>
+			<W>900</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_MISSION_TIMELIMIT</TEXT>
+		<FONT>FONTa16</FONT>
+	</LABEL>
+	
+	<LABEL item="MissionResetTime" parent="Mission">
+		<BOUNDS>
+			<X>440</X>
+			<Y>1005</Y>
+			<W>1035</W>
+			<H>38</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_MISSION_DAILY_RESET</TEXT>
+		<FONT>FONTa16b</FONT>
+		<TEXTALIGN>
+				<HALIGN>RIGHT</HALIGN>
+				<VALIGN>TOP</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+
+	<!-- MISSIONTABBUTTON : BMBUTTON : 일일 미션 버튼 -->
+	<DOTBUTTON item="Daily_Button" parent="Mission">
+		<BOUNDS>
+			<X>53</X>
+			<Y>163</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>312</X>
+			<Y>22</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<GROUP>MissionList</GROUP>
+		<TEXT>Daily Mission</TEXT>
+		<BITMAP type="iconOn">MissionTabDay_ON.png</BITMAP>
+		<BITMAP type="iconOff">MissionTabDay_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+
+	<!-- BMBUTTON : 주간 미션 버튼 -->
+	<DOTBUTTON item="Weekly_Button" parent="Mission">
+		<BOUNDS>
+			<X>53</X>
+			<Y>237</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>312</X>
+			<Y>22</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>MissionList</GROUP>
+		<TEXT>Weekly Mission</TEXT>
+		<BITMAP type="iconOn">MissionTabWeek_ON.png</BITMAP>
+		<BITMAP type="iconOff">MissionTabWeek_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+
+
+	<!-- Picture : 미션 리스트 -->
+	<ZMISSIONLISTBOX item="MissionListBox" parent="MissionListBackground">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1386</W>
+			<H>760</H>
+		</BOUNDS>
+		<RECT type="Title">
+			<X>30</X>
+			<Y>25</Y>
+			<W>1057</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="Desc">
+			<X>30</X>
+			<Y>56</Y>
+			<W>1057</W>
+			<H>45</H>
+		</RECT>
+		<RECT type="Complete">
+			<X>1295</X>
+			<Y>34</Y>
+			<W>38</W>
+			<H>38</H>
+		</RECT>
+		<RECT type="CompleteText">
+			<X>1145</X>
+			<Y>44</Y>
+			<W>112</W>
+			<H>17</H>
+		</RECT>
+		<RECT type="ProgressText">
+			<X>1107</X>
+			<Y>18</Y>
+			<W>258</W>
+			<H>18</H>
+		</RECT>
+		<RECT type="ProgressBar">
+			<X>1108</X>
+			<Y>45</Y>
+			<W>256</W>
+			<H>8</H>
+		</RECT>
+		<RECT type="Button">
+			<X>1107</X>
+			<Y>23</Y>
+			<W>258</W>
+			<H>60</H>
+		</RECT>
+		<RECT type="ButtonText"><!--보류-->
+			<X>1107</X>
+			<Y>108</Y>
+			<W>78</W>
+			<H>78</H>
+		</RECT>
+		<RECT type="Icon">
+			<X>1287</X>
+			<Y>108</Y>
+			<W>78</W>
+			<H>78</H>
+		</RECT>
+		<BITMAP type="BG">
+			<PROGRESS>MissionFrame_Default.png</PROGRESS>
+			<COMPLETE>MissionFrame_Complete.png</COMPLETE>
+			<REWARDED>MissionFrame_Finish.png</REWARDED>
+		</BITMAP>
+		<BITMAP type="Button">
+			<UP>ReceiveButton_Default.png</UP>
+			<OVER>ReceiveButton_Over.png</OVER>
+			<DOWN>ReceiveButton_Over.png</DOWN>
+		</BITMAP>
+		<BITMAP type="CompleteIcon">CompleteIcon.png</BITMAP>
+		<FONT type="Title">FONTa20b</FONT>
+		<FONT type="Desc">FONTa16</FONT>
+		<FONT type="Complete">FONTa17b</FONT>
+		<FONT type="Button">FONTa20b</FONT>
+		<FONT type="Progress">FONTa16</FONT>
+		<FONT type="ItemNum">FONTa11</FONT>
+		<FONTCOLOR type="Title">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</SELECT>
+			<DISABLE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Desc">
+			<BASE>
+				<R>194</R>
+				<G>194</G>
+				<B>194</B>
+			</BASE>
+			<OVER>
+				<R>194</R>
+				<G>194</G>
+				<B>194</B>
+			</OVER>
+			<SELECT>
+				<R>194</R>
+				<G>194</G>
+				<B>194</B>
+			</SELECT>
+			<DISABLE>
+				<R>103</R>
+				<G>103</G>
+				<B>103</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Complete">
+			<BASE>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</BASE>
+			<OVER>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</OVER>
+			<SELECT>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</SELECT>
+			<DISABLE>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Button">
+			<BASE>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</BASE>
+			<OVER>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</OVER>
+			<SELECT>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</SELECT>
+			<DISABLE>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Progress">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</SELECT>
+			<DISABLE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="ItemNum">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</SELECT>
+			<DISABLE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<ITEMSPACEH>6</ITEMSPACEH>
+		<GRADIENTLINEARPROGRESSBAR item="MissionProgressBar" parent="MissionListBox">
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>66</R>
+					<G>207</G>
+					<B>173</B>
+				</BEGIN>
+				<END>
+					<R>66</R>
+					<G>207</G>
+					<B>173</B>
+				</END>
+			</FILLCOLOR>
+			<OUTLINECOLOR>
+				<R>21</R>
+				<G>25</G>
+				<B>26</B>
+				<ALPHA>127</ALPHA>
+			</OUTLINECOLOR>
+			<EMPTYCOLOR>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>153</ALPHA>
+			</EMPTYCOLOR>
+			<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+		<BUTTONTEXT>STR:UI_MISSION_RECEIVE</BUTTONTEXT>
+		<COMPLETETEXT>STR:UI_MISSION_COMPLETE</COMPLETETEXT>
+		<DIVIDERSPACE>
+			<X>10</X>
+			<Y>6</Y>
+		</DIVIDERSPACE>
+		<RECT type="scrollbg">
+			<X>1377</X>
+			<Y>51</Y>
+			<W>1</W>
+			<H>760</H>
+		</RECT>
+		<RECT type="scrollhandle">
+			<X>1377</X>
+			<Y>51</Y>
+			<W>1</W>
+			<H>118</H>
+		</RECT>
+		<SCROLLBARCOLOR type="bar">
+			<R>49</R>
+			<G>45</G>
+			<B>52</B>
+		</SCROLLBARCOLOR>
+		<SCROLLBARCOLOR type="thumb">
+			<R>140</R>
+			<G>140</G>
+			<B>140</B>
+		</SCROLLBARCOLOR>
+		<ROWNUM>3.5</ROWNUM>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+		<VIGNETTEBITMAP>ListVignetteEffect_Event.png</VIGNETTEBITMAP>
+		<VIGNETTEHEIGHT>80</VIGNETTEHEIGHT>	
+	</ZMISSIONLISTBOX>
+	
+	<ZRICHTOOLTIP item="Mission_Reward_Tooltip" parent="Mission">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">LeagueRuleTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<COLOR type="textcolor">
+			<R>200</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>389</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>350</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_08" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTb21b" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>			
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>200</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="ItemSourceSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>54</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>			
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Equipment_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+
+
+	<ICONBUTTON item="MissionRewardConfirmCaller" parent="Mission">
+		<FONT>FONTb18b</FONT>
+		<BOUNDS>
+			<X>1495</X>
+			<Y>989</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="disable">HideOut_QuickStartButtonOff.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>235</B>
+			</OVER>
+			<DOWN>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</DOWN>
+			<DISABLE>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MAILBOX_RECEIVE_ALL_MAIL</TEXT>
+		<TEXTRECT>
+			<X>111</X>
+			<Y>20</Y>
+			<W>131</W>
+			<H>18</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+</XML>

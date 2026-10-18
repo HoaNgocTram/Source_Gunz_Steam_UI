@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Processes>
+  <Process Run="True" Delay="1000" Path="C:\Users\Administrator\Desktop\ServerGunz2023\Locator\Locator.exe" Parameters="" />
+  <Process Run="True" Delay="1000" Path="C:\Users\Administrator\Desktop\ServerGunz2023\MatchServer\MatchServer.exe" Parameters="" />
+  <Process Run="True" Delay="1000" Path="C:\Users\Administrator\Desktop\ServerGunz2023\MatchAgent\MatchAgent.exe" Parameters="" />
+</Processes>

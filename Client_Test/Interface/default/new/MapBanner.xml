@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="MapBanner">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- Banner map lay tu ban Steam.
+     Map_00.png     2048x2048  anh map,     moi o 474x236
+     MapName_00.png 1024x1024  chu ten map, de len tren
+     Map le khong nam trong hai atlas nay thi khai them o cuoi file,
+     dung <SOURCE> tro toi file PNG rieng cua no. -->
+
+	<!-- ===== Map_00.png ===== -->
+	<BITMAPALIAS name="RoomBanner_Battle Arena.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>0</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Castle.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>475</X> <Y>0</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Catacomb.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>950</X> <Y>0</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Dungeon.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>1425</X> <Y>0</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Factory.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>237</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Garden.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>475</X> <Y>237</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Hall.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>950</X> <Y>237</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_High_Haven.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>1425</X> <Y>237</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Island.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>474</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Jail.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>475</X> <Y>474</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Lost Shrine.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>950</X> <Y>474</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Port.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>1425</X> <Y>474</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Prison II.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>711</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Citadel.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>475</X> <Y>711</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Mansion.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>950</X> <Y>711</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Prison.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>1425</X> <Y>711</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Ruin.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>948</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Shower Room.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>475</X> <Y>948</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Stairway.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>950</X> <Y>948</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Station.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>1425</X> <Y>948</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Town.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>1185</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_WeaponShop.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>475</X> <Y>1185</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_SkirmishHall.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>950</X> <Y>1185</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_RelayMap.png">
+		<SOURCE>Map_00.png</SOURCE>
+		<BOUNDS> <X>1425</X> <Y>1185</Y> <W>474</W> <H>236</H> </BOUNDS>
+	</BITMAPALIAS>
+
+	<!-- ===== MapName_00.png ===== -->
+	<BITMAPALIAS name="RoomBanner_Battle Arena_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>0</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Castle_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>242</X> <Y>0</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Catacomb_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>484</X> <Y>0</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Dungeon_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>726</X> <Y>0</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Factory_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>56</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Garden_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>242</X> <Y>56</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Hall_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>484</X> <Y>56</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_High_Haven_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>726</X> <Y>56</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Island_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>112</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Jail_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>242</X> <Y>112</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Lost Shrine_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>484</X> <Y>112</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Port_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>726</X> <Y>112</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Prison II_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>168</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Citadel_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>242</X> <Y>168</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Mansion_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>484</X> <Y>168</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Prison_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>726</X> <Y>168</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Ruin_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>224</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Shower Room_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>242</X> <Y>224</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Stairway_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>484</X> <Y>224</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Station_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>726</X> <Y>224</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_Town_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>280</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_WeaponShop_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>242</X> <Y>280</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_SkirmishHall_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>484</X> <Y>280</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomBanner_RelayMap_Title.png">
+		<SOURCE>MapName_00.png</SOURCE>
+		<BOUNDS> <X>726</X> <Y>280</Y> <W>242</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+
+</XML>

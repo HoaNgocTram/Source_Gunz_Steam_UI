@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ItemExpired">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   아이템 만료 알림 창
+-->
+	<FRAME item="ItemExpiredDlg">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>500</W>
+			<H>295</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_ITEMEXPIRED</TEXT> <!-- 기간이 만료되었습니다. -->
+	</FRAME>
+
+	<!-- LISTBOX : 만료된 아이템 리스트 -->
+	<ZMLISTBOX item="ItemExpiredList" parent="ItemExpiredDlg">
+		<BOUNDS>
+			<X>16</X>
+			<Y>33</Y>
+			<W>466</W>
+			<H>208</H>
+		</BOUNDS>
+		<ITEMHEIGHT>16</ITEMHEIGHT>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZMLISTBOX>
+
+	<!-- BUTTON : 확인 버튼-->
+	<BUTTON item="ItemExpiredDlgClose" parent="ItemExpiredDlg">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>352</X>
+			<Y>250</Y>
+			<W>133</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인 -->
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BUTTON>
+
+</XML>

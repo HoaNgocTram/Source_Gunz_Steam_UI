@@ -1,0 +1,25 @@
+[Sat Oct  3 06:57:37 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Sat Oct  3 06:57:37 2026] Release Date : Oct  3 2026
+===========================================================================================
+
+[Sat Oct  3 06:57:37 2026] Match Agent Created (Port:7777)
+[Sat Oct  3 06:57:37 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Sat Oct  3 06:57:37 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Sat Oct  3 06:57:37 2026] MMatchAgent::ConnectToMatchServer END 
+[Sat Oct  3 07:00:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:03:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:06:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:09:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:12:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:15:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:18:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:21:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:24:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:27:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:30:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:33:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:36:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:39:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 07:42:37 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2

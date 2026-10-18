@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML id="npccatalogue">
+  <AI_VALUE>
+    <SHAKING pathfinding_update="0.1" attack_update="0.1" speed="0.2" />
+    <INTELLIGENCE>
+      <TIME step="1">0.4</TIME>
+      <TIME step="2">0.6</TIME>
+      <TIME step="3">1</TIME>
+      <TIME step="4">2</TIME>
+      <TIME step="5">3</TIME>
+    </INTELLIGENCE>
+    <AGILITY>
+      <TIME step="1">0.2</TIME>
+      <TIME step="2">0.5</TIME>
+      <TIME step="3">1</TIME>
+      <TIME step="4">2</TIME>
+      <TIME step="5">3</TIME>
+    </AGILITY>
+  </AI_VALUE>
+  <NPC id="11" name="STR:NPC_NAME_11" desc="STR:NPC_DESC_11" meshname="goblin" scale="1 1 1" grade="regular" max_hp="39" max_ap="64" int="4" agility="4" view_angle="15" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="110" />
+    <ATTACK type="melee" range="150" weaponitem_id="300011" />
+    <SPEED default="300" />
+    <DROP table="G11" />
+  </NPC>
+  <NPC id="12" name="STR:NPC_NAME_12" desc="STR:NPC_DESC_12" meshname="goblinG" scale="1 1 1" grade="regular" max_hp="39" max_ap="38" int="4" agility="4" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="30" height="110" />
+    <ATTACK type="melee" range="110" weaponitem_id="300012" />
+    <SPEED default="230" />
+    <SKILL id="121" />
+    <DROP table="G12" />
+  </NPC>
+  <NPC id="13" name="STR:NPC_NAME_13" desc="STR:NPC_DESC_13" meshname="goblinW" scale="1 1 1" grade="veteran" max_hp="52" max_ap="51" int="4" agility="4" view_angle="25" dc="6" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="120" />
+    <ATTACK type="melee" range="130" weaponitem_id="300013" />
+    <SPEED default="400" />
+    <SKILL id="131" />
+    <SKILL id="132" />
+    <DROP table="G13" />
+  </NPC>
+  <NPC id="14" name="STR:NPC_NAME_14" desc="STR:NPC_DESC_14" meshname="goblinH" scale="1 1 1" grade="veteran" max_hp="65" max_ap="128" int="4" agility="2" view_angle="40" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="140" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="170" weaponitem_id="300014" />
+    <SPEED default="360" />
+    <DROP table="G14" />
+  </NPC>
+  <NPC id="15" name="STR:NPC_NAME_15" desc="STR:NPC_DESC_15" meshname="goblinC" scale="1.2 1.2 1.2" grade="elite" max_hp="260" max_ap="128" int="4" agility="4" view_angle="15" dc="8" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="160" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="270" weaponitem_id="300015" />
+    <SPEED default="320" />
+    <SKILL id="151" />
+    <SKILL id="152" />
+    <DROP table="G15" />
+  </NPC>
+  <NPC id="16" name="STR:NPC_NAME_16" desc="STR:NPC_DESC_16" meshname="goblinK" scale="2.5 2.5 2.5" grade="boss" max_hp="9100" max_ap="8960" int="3" agility="5" view_angle="20" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300016" />
+    <SPEED default="400" rotate="4.712" />
+    <SKILL id="161" />
+    <SKILL id="162" />
+    <DROP table="G16" />
+  </NPC>
+  <NPC id="17" name="STR:NPC_NAME_17" desc="STR:NPC_DESC_17" meshname="goblinK" scale="2.1 2.1 2.1" grade="boss" max_hp="6500" max_ap="6400" int="4" agility="5" view_angle="20" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300016" />
+    <SPEED default="400" rotate="4.712" />
+    <SKILL id="161" />
+    <SKILL id="162" />
+    <DROP table="G17" />
+  </NPC>
+  <NPC id="18" name="STR:NPC_NAME_18" desc="STR:NPC_DESC_18" meshname="goblinKB" scale="2.8 2.8 2.8" grade="boss" max_hp="11700" max_ap="11520" int="3" agility="5" view_angle="20" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300017" />
+    <SPEED default="400" rotate="4.712" />
+    <SKILL id="163" />
+    <SKILL id="164" />
+    <SKILL id="166" />
+    <DROP table="G18" />
+  </NPC>
+  <NPC id="181" name="STR:NPC_NAME_181" desc="STR:NPC_DESC_181" meshname="goblinKB" scale="1.2 1.2 1.2" grade="elite" max_hp="195" max_ap="192" int="3" agility="2" view_angle="20" dc="30" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300018" />
+    <SPEED default="450" rotate="4.712" />
+    <SKILL id="171" />
+    <SKILL id="172" />
+    <DROP table="G181" />
+  </NPC>
+  <NPC id="19" name="STR:NPC_NAME_19" desc="STR:NPC_DESC_19" meshname="goblinK" scale="1.2 1.2 1.2" grade="boss" max_hp="6500" max_ap="6400" int="3" agility="5" view_angle="20" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300017" />
+    <SPEED default="450" rotate="4.712" />
+    <SKILL id="167" />
+    <SKILL id="168" />
+    <SKILL id="169" />
+    <SKILL id="174" />
+    <DROP table="G19" />
+  </NPC>
+  <NPC id="191" name="STR:NPC_NAME_191" desc="STR:NPC_DESC_191" meshname="goblinK" scale="1.2 1.2 1.2" grade="elite" max_hp="195" max_ap="192" int="3" agility="2" view_angle="20" dc="30" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300018" />
+    <SPEED default="450" rotate="4.712" />
+    <SKILL id="173" />
+    <DROP table="G191" />
+  </NPC>
+  <NPC id="21" name="STR:NPC_NAME_21" desc="STR:NPC_DESC_21" meshname="kobolt" scale="1 1 1" grade="regular" max_hp="65" max_ap="64" int="2" agility="2" view_angle="25" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="150" />
+    <ATTACK type="melee" range="165" weaponitem_id="300021" />
+    <SPEED default="300" />
+    <DROP table="K21" />
+  </NPC>
+  <NPC id="22" name="STR:NPC_NAME_22" desc="STR:NPC_DESC_22" meshname="kobold_shaman" scale="1 1 1" grade="regular" max_hp="52" max_ap="51" int="2" agility="4" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="33" height="130" />
+    <ATTACK type="melee" range="135" weaponitem_id="300022" />
+    <SPEED default="250" />
+    <SKILL id="221" />
+    <SKILL id="222" />
+    <DROP table="K22" />
+  </NPC>
+  <NPC id="23" name="STR:NPC_NAME_23" desc="STR:NPC_DESC_23" meshname="koboltC" scale="1.3 1.3 1.3" grade="veteran" max_hp="117" max_ap="115" int="2" agility="1" view_angle="15" dc="6" offensetype="1" dyingtime="5">
+    <COLLISION radius="38" height="150" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="230" weaponitem_id="300023" />
+    <SPEED default="400" />
+    <DROP table="K23" />
+  </NPC>
+  <NPC id="24" name="STR:NPC_NAME_24" desc="STR:NPC_DESC_24" meshname="koboltK" scale="1 1 1" grade="elite" max_hp="208" max_ap="205" int="2" agility="2" view_angle="15" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="60" height="250" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="370" weaponitem_id="300024" />
+    <SPEED default="300" rotate="4" />
+    <SKILL id="241" />
+    <DROP table="K24" />
+  </NPC>
+  <NPC id="25" name="STR:NPC_NAME_25" desc="STR:NPC_DESC_25" meshname="koboltK" scale="1.8 1.8 1.8" grade="boss" max_hp="6500" max_ap="8960" int="2" agility="3" view_angle="15" dc="50" offensetype="1" dyingtime="5">
+    <COLLISION radius="60" height="250" tremble="10" pick="true" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="550" weaponitem_id="300025" />
+    <SPEED default="300" rotate="3" />
+    <SKILL id="251" />
+    <SKILL id="252" />
+    <DROP table="K25" />
+  </NPC>
+  <NPC id="26" name="STR:NPC_NAME_26" desc="STR:NPC_DESC_26" meshname="golem" scale="1.7 1.7 1.7" grade="boss" max_hp="9100" max_ap="10240" int="1" agility="2" view_angle="25" dc="60" offensetype="2" dyingtime="5">
+    <COLLISION radius="50" height="305" tremble="10" pick="true" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="400" weaponitem_id="300026" />
+    <SPEED default="350" rotate="4.712" />
+    <SKILL id="261" />
+    <SKILL id="262" />
+    <SKILL id="263" />
+    <DROP table="K26" />
+  </NPC>
+  <NPC id="31" name="STR:NPC_NAME_31" desc="STR:NPC_DESC_31" meshname="skeleton" scale="1.1 1.1 1.1" grade="regular" max_hp="65" max_ap="64" int="3" agility="5" view_angle="40" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="135" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="180" weaponitem_id="300031" />
+    <SPEED default="160" rotate="2.356" />
+    <DROP table="S31" />
+  </NPC>
+  <NPC id="32" name="STR:NPC_NAME_32" desc="STR:NPC_DESC_32" meshname="skeletonM" scale="0.8 0.8 0.8" grade="regular" max_hp="52" max_ap="51" int="3" agility="5" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="30" height="195" />
+    <ATTACK type="melee" range="120" weaponitem_id="300032" />
+    <SPEED default="160" rotate="2.356" />
+    <SKILL id="321" />
+    <SKILL id="322" />
+    <DROP table="S32" />
+  </NPC>
+  <NPC id="33" name="STR:NPC_NAME_33" desc="STR:NPC_DESC_33" meshname="skeletonC" scale="1.1 1.1 1.1" grade="veteran" max_hp="104" max_ap="128" int="3" agility="3" view_angle="25" dc="6" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="155" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="280" weaponitem_id="300033" />
+    <SPEED default="400" />
+    <DROP table="S33" />
+  </NPC>
+  <NPC id="34" name="STR:NPC_NAME_34" desc="STR:NPC_DESC_34" meshname="skeletonB" scale="1.3 1.3 1.3" grade="elite" max_hp="260" max_ap="128" int="3" agility="3" view_angle="25" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="40" height="250" tremble="10" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="350" weaponitem_id="300034" />
+    <SPEED default="500" />
+    <SKILL id="341" />
+    <DROP table="S34" />
+  </NPC>
+  <NPC id="35" name="STR:NPC_NAME_35" desc="STR:NPC_DESC_35" meshname="theUnholy" scale="1.6 1.6 1.6" grade="elite" max_hp="260" max_ap="128" int="3" agility="5" view_angle="25" dc="8" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="150" />
+    <FLAG never_blasted="true" />
+    <ATTACK type="melee" range="180" weaponitem_id="300035" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="351" />
+    <SKILL id="352" />
+    <SKILL id="353" />
+    <DROP table="S35" />
+  </NPC>
+  <NPC id="36" name="STR:NPC_NAME_36" desc="STR:NPC_DESC_36" meshname="Lich" scale="0.17 0.17 0.17" grade="regular" max_hp="52" max_ap="0" int="3" agility="3" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="120" height="700" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="120" weaponitem_id="300036" />
+    <SPEED default="200" rotate="2.452" />
+    <SKILL id="361" />
+    <DROP table="S36" />
+  </NPC>
+  <NPC id="37" name="STR:NPC_NAME_37" desc="STR:NPC_DESC_37" meshname="skeletonB" scale="2.1 2.1 2.1" grade="boss" max_hp="7800" max_ap="8960" int="3" agility="2" view_angle="15" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="40" height="250" tremble="10" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="550" weaponitem_id="300037" />
+    <SPEED default="700" />
+    <SKILL id="371" />
+    <SKILL id="372" />
+    <SKILL id="373" />
+    <DROP table="S37" />
+  </NPC>
+  <NPC id="38" name="STR:NPC_NAME_38" desc="STR:NPC_DESC_38" meshname="theUnholy" scale="4 4 4" grade="boss" max_hp="7800" max_ap="8960" int="3" agility="5" view_angle="25" dc="50" offensetype="2" dyingtime="8">
+    <COLLISION radius="15" height="150" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="1" />
+    <SPEED default="200" />
+    <SKILL id="381" />
+    <SKILL id="382" />
+    <SKILL id="383" />
+    <DROP table="S38" />
+  </NPC>
+  <NPC id="39" name="STR:NPC_NAME_39" desc="STR:NPC_DESC_39" meshname="Lich" scale="1 1 1" grade="boss" max_hp="9100" max_ap="8960" int="1" agility="1" view_angle="20" dc="60" offensetype="1" dyingtime="8">
+    <COLLISION radius="80" height="750" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="300" weaponitem_id="300039" />
+    <SPEED default="1000" rotate="5" />
+    <SKILL id="391" />
+    <SKILL id="392" />
+    <SKILL id="393" />
+    <DROP table="S39" />
+  </NPC>
+  <NPC id="41" name="STR:NPC_NAME_41" desc="STR:NPC_DESC_41" meshname="palmpou_baby" scale="1 1 1" grade="regular" max_hp="780" max_ap="0" int="2" agility="2" view_angle="25" dc="5" offensetype="1" dyingtime="0">
+    <COLLISION radius="15" height="30" />
+    <ATTACK type="melee" range="80" hitrate="10" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="411" />
+    <DROP table="P41" />
+  </NPC>
+  <NPC id="48" name="STR:NPC_NAME_48" desc="STR:NPC_DESC_48" meshname="palmpou_baby" scale="1 1 1" grade="regular" max_hp="78" max_ap="0" int="2" agility="2" view_angle="25" dc="5" offensetype="1" dyingtime="0">
+    <COLLISION radius="25" height="120" />
+    <ATTACK type="melee" range="40" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="411" />
+    <DROP table="P48" />
+  </NPC>
+  <NPC id="42" name="STR:NPC_NAME_42" desc="STR:NPC_DESC_42" meshname="palmpoa" scale="1.2 1.2 1.2" grade="regular" max_hp="65" max_ap="64" int="2" agility="4" view_angle="25" dc="6" offensetype="1" dyingtime="0">
+    <COLLISION radius="25" height="120" />
+    <ATTACK type="melee" range="40" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="421" />
+    <DROP table="P42" />
+  </NPC>
+  <NPC id="43" name="STR:NPC_NAME_43" desc="STR:NPC_DESC_43" meshname="palmpoaH" scale="2 2 2" grade="veteran" max_hp="130" max_ap="128" int="2" agility="4" view_angle="25" dc="7" offensetype="1" dyingtime="0">
+    <COLLISION radius="25" height="120" />
+    <ATTACK type="melee" range="80" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="432" />
+    <DROP table="P43" />
+  </NPC>
+  <NPC id="46" name="STR:NPC_NAME_46" desc="STR:NPC_DESC_46" meshname="palmpoaH" scale="2 2 2" grade="boss" max_hp="3900" max_ap="3840" int="2" agility="4" view_angle="25" dc="7" offensetype="1" dyingtime="0">
+    <COLLISION radius="25" height="120" />
+    <ATTACK type="melee" range="80" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="431" />
+    <DROP table="P46" />
+  </NPC>
+  <NPC id="44" name="STR:NPC_NAME_44" desc="STR:NPC_DESC_44" meshname="palmpou" scale="3 3 3" grade="elite" max_hp="260" max_ap="256" int="2" agility="4" view_angle="25" dc="8" offensetype="1" dyingtime="0">
+    <COLLISION radius="25" height="120" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="80" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="441" />
+    <DROP table="P44" />
+  </NPC>
+  <NPC id="47" name="STR:NPC_NAME_47" desc="STR:NPC_DESC_47" meshname="palmpou" scale="3 3 3" grade="boss" max_hp="7800" max_ap="7680" int="2" agility="4" view_angle="25" dc="8" offensetype="1" dyingtime="0">
+    <COLLISION radius="25" height="120" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="80" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="442" />
+    <DROP table="P47" />
+  </NPC>
+  <NPC id="45" name="STR:NPC_NAME_45" desc="STR:NPC_DESC_45" meshname="cpalmpoa" scale="2 2 2" grade="boss" max_hp="10400" max_ap="10240" int="1" agility="4" view_angle="60" dc="50" offensetype="1" dyingtime="5">
+    <COLLISION radius="25" height="120" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="80" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="451" />
+    <DROP table="P45" />
+  </NPC>
+  <NPC id="151" name="STR:NPC_NAME_11" desc="STR:NPC_DESC_11" meshname="goblin" scale="1 1 1" grade="regular" max_hp="13" max_ap="19" int="4" agility="4" view_angle="15" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="110" />
+    <ATTACK type="melee" range="150" weaponitem_id="300011" />
+    <SPEED default="300" />
+    <DROP table="G11" />
+  </NPC>
+  <NPC id="152" name="STR:NPC_NAME_12" desc="STR:NPC_DESC_12" meshname="goblinG" scale="1 1 1" grade="regular" max_hp="13" max_ap="13" int="4" agility="4" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="30" height="110" />
+    <ATTACK type="melee" range="110" weaponitem_id="300012" />
+    <SPEED default="230" />
+    <SKILL id="121" />
+    <DROP table="G12" />
+  </NPC>
+  <NPC id="153" name="STR:NPC_NAME_13" desc="STR:NPC_DESC_13" meshname="goblinW" scale="1 1 1" grade="veteran" max_hp="20" max_ap="19" int="4" agility="4" view_angle="25" dc="6" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="120" />
+    <ATTACK type="melee" range="130" weaponitem_id="300013" />
+    <SPEED default="400" />
+    <SKILL id="131" />
+    <SKILL id="132" />
+    <DROP table="G13" />
+  </NPC>
+  <NPC id="154" name="STR:NPC_NAME_14" desc="STR:NPC_DESC_14" meshname="goblinH" scale="1 1 1" grade="veteran" max_hp="20" max_ap="45" int="4" agility="2" view_angle="40" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="140" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="170" weaponitem_id="300014" />
+    <SPEED default="360" />
+    <DROP table="G14" />
+  </NPC>
+  <NPC id="155" name="STR:NPC_NAME_15" desc="STR:NPC_DESC_15" meshname="goblinC" scale="1.2 1.2 1.2" grade="elite" max_hp="78" max_ap="45" int="4" agility="4" view_angle="15" dc="8" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="160" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="270" weaponitem_id="300015" />
+    <SPEED default="320" />
+    <SKILL id="151" />
+    <SKILL id="152" />
+    <DROP table="G15" />
+  </NPC>
+  <NPC id="156" name="STR:NPC_NAME_16" desc="STR:NPC_DESC_16" meshname="goblinK" scale="2.5 2.5 2.5" grade="boss" max_hp="1560" max_ap="1536" int="3" agility="5" view_angle="20" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300016" />
+    <SPEED default="400" rotate="4.712" />
+    <SKILL id="161" />
+    <SKILL id="162" />
+    <DROP table="G16" />
+  </NPC>
+  <NPC id="157" name="STR:NPC_NAME_191" desc="STR:NPC_DESC_191" meshname="goblinK" scale="1.2 1.2 1.2" grade="elite" max_hp="65" max_ap="64" int="3" agility="2" view_angle="20" dc="30" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300018" />
+    <SPEED default="450" rotate="4.712" />
+    <SKILL id="173" />
+    <DROP table="G191" />
+  </NPC>
+  <NPC id="158" name="STR:NPC_NAME_181" desc="STR:NPC_DESC_181" meshname="goblinKB" scale="1.2 1.2 1.2" grade="elite" max_hp="65" max_ap="64" int="3" agility="2" view_angle="20" dc="30" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300018" />
+    <SPEED default="450" rotate="4.712" />
+    <SKILL id="171" />
+    <SKILL id="172" />
+    <DROP table="G181" />
+  </NPC>
+  <NPC id="159" name="STR:NPC_NAME_18" desc="STR:NPC_DESC_18" meshname="goblinKB" scale="2.8 2.8 2.8" grade="boss" max_hp="1950" max_ap="1920" int="3" agility="5" view_angle="20" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300017" />
+    <SPEED default="400" rotate="4.712" />
+    <SKILL id="163" />
+    <SKILL id="164" />
+    <SKILL id="166" />
+    <DROP table="G18" />
+  </NPC>
+  <NPC id="141" name="STR:NPC_NAME_191" desc="STR:NPC_DESC_191" meshname="goblinK" scale="1.2 1.2 1.2" grade="boss" max_hp="520" max_ap="512" int="3" agility="2" view_angle="20" dc="30" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300018" />
+    <SPEED default="450" rotate="4.712" />
+    <SKILL id="173" />
+    <DROP table="G191" />
+  </NPC>
+  <NPC id="142" name="STR:NPC_NAME_181" desc="STR:NPC_DESC_181" meshname="goblinKB" scale="1.2 1.2 1.2" grade="boss" max_hp="520" max_ap="512" int="3" agility="2" view_angle="20" dc="30" offensetype="1" dyingtime="8">
+    <COLLISION radius="50" height="200" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="450" weaponitem_id="300018" />
+    <SPEED default="450" rotate="4.712" />
+    <SKILL id="171" />
+    <SKILL id="172" />
+    <DROP table="G181" />
+  </NPC>
+  <NPC id="161" name="STR:NPC_NAME_21" desc="STR:NPC_DESC_21" meshname="kobolt" scale="1 1 1" grade="regular" max_hp="20" max_ap="19" int="2" agility="2" view_angle="25" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="150" />
+    <ATTACK type="melee" range="165" weaponitem_id="300021" />
+    <SPEED default="300" />
+    <DROP table="K21" />
+  </NPC>
+  <NPC id="162" name="STR:NPC_NAME_22" desc="STR:NPC_DESC_22" meshname="kobold_shaman" scale="1 1 1" grade="regular" max_hp="20" max_ap="19" int="2" agility="4" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="33" height="130" />
+    <ATTACK type="melee" range="135" weaponitem_id="300022" />
+    <SPEED default="250" />
+    <SKILL id="221" />
+    <SKILL id="222" />
+    <DROP table="K22" />
+  </NPC>
+  <NPC id="163" name="STR:NPC_NAME_23" desc="STR:NPC_DESC_23" meshname="koboltC" scale="1.3 1.3 1.3" grade="veteran" max_hp="39" max_ap="38" int="2" agility="1" view_angle="15" dc="6" offensetype="1" dyingtime="5">
+    <COLLISION radius="38" height="150" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="230" weaponitem_id="300023" />
+    <SPEED default="400" />
+    <DROP table="K23" />
+  </NPC>
+  <NPC id="164" name="STR:NPC_NAME_24" desc="STR:NPC_DESC_24" meshname="koboltK" scale="1 1 1" grade="elite" max_hp="65" max_ap="64" int="2" agility="2" view_angle="15" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="60" height="250" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="370" weaponitem_id="300024" />
+    <SPEED default="300" rotate="4" />
+    <SKILL id="241" />
+    <DROP table="K24" />
+  </NPC>
+  <NPC id="165" name="STR:NPC_NAME_25" desc="STR:NPC_DESC_25" meshname="koboltK" scale="1.8 1.8 1.8" grade="boss" max_hp="1040" max_ap="1536" int="2" agility="3" view_angle="15" dc="50" offensetype="1" dyingtime="5">
+    <COLLISION radius="60" height="250" tremble="10" pick="true" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="550" weaponitem_id="300025" />
+    <SPEED default="300" rotate="3" />
+    <SKILL id="251" />
+    <SKILL id="252" />
+    <DROP table="K25" />
+  </NPC>
+  <NPC id="166" name="STR:NPC_NAME_26" desc="STR:NPC_DESC_26" meshname="golem" scale="1.7 1.7 1.7" grade="boss" max_hp="1560" max_ap="1792" int="1" agility="2" view_angle="25" dc="60" offensetype="2" dyingtime="5">
+    <COLLISION radius="50" height="305" tremble="10" pick="true" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="400" weaponitem_id="300026" />
+    <SPEED default="350" rotate="4.712" />
+    <SKILL id="261" />
+    <SKILL id="262" />
+    <SKILL id="263" />
+    <DROP table="K26" />
+  </NPC>
+  <NPC id="167" name="STR:NPC_NAME_26" desc="STR:NPC_DESC_26" meshname="golem" scale="1.2 1.2 1.2" grade="boss" max_hp="1560" max_ap="1792" int="1" agility="2" view_angle="25" dc="60" offensetype="2" dyingtime="5">
+    <COLLISION radius="50" height="305" tremble="10" pick="true" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="350" weaponitem_id="300026" />
+    <SPEED default="350" rotate="4.712" />
+    <SKILL id="261" />
+    <SKILL id="262" />
+    <SKILL id="263" />
+    <DROP table="K26" />
+  </NPC>
+  <NPC id="143" name="STR:NPC_NAME_24" desc="STR:NPC_DESC_24" meshname="koboltK" scale="1 1 1" grade="boss" max_hp="520" max_ap="512" int="2" agility="2" view_angle="15" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="60" height="250" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="370" weaponitem_id="300024" />
+    <SPEED default="300" rotate="4" />
+    <SKILL id="241" />
+    <DROP table="K24" />
+  </NPC>
+  <NPC id="144" name="STR:NPC_NAME_24" desc="STR:NPC_DESC_24" meshname="koboltK" scale="1 1 1" grade="boss" max_hp="650" max_ap="640" int="2" agility="2" view_angle="15" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="60" height="250" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="370" weaponitem_id="300024" />
+    <SPEED default="300" rotate="4" />
+    <SKILL id="241" />
+    <DROP table="K24" />
+  </NPC>
+  <NPC id="171" name="STR:NPC_NAME_31" desc="STR:NPC_DESC_31" meshname="skeleton" scale="1.1 1.1 1.1" grade="regular" max_hp="26" max_ap="26" int="3" agility="5" view_angle="40" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="135" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="180" weaponitem_id="300031" />
+    <SPEED default="160" rotate="2.356" />
+    <DROP table="S31" />
+  </NPC>
+  <NPC id="172" name="STR:NPC_NAME_32" desc="STR:NPC_DESC_32" meshname="skeletonM" scale="0.8 0.8 0.8" grade="regular" max_hp="20" max_ap="19" int="3" agility="5" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="30" height="195" />
+    <ATTACK type="melee" range="120" weaponitem_id="300032" />
+    <SPEED default="160" rotate="2.356" />
+    <SKILL id="321" />
+    <SKILL id="322" />
+    <DROP table="S32" />
+  </NPC>
+  <NPC id="173" name="STR:NPC_NAME_33" desc="STR:NPC_DESC_33" meshname="skeletonC" scale="1.1 1.1 1.1" grade="veteran" max_hp="33" max_ap="45" int="3" agility="3" view_angle="25" dc="6" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="155" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="280" weaponitem_id="300033" />
+    <SPEED default="400" />
+    <DROP table="S33" />
+  </NPC>
+  <NPC id="174" name="STR:NPC_NAME_34" desc="STR:NPC_DESC_34" meshname="skeletonB" scale="1.3 1.3 1.3" grade="elite" max_hp="91" max_ap="45" int="3" agility="3" view_angle="25" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="40" height="250" tremble="10" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="350" weaponitem_id="300034" />
+    <SPEED default="500" />
+    <SKILL id="341" />
+    <DROP table="S34" />
+  </NPC>
+  <NPC id="175" name="STR:NPC_NAME_35" desc="STR:NPC_DESC_35" meshname="theUnholy" scale="1.6 1.6 1.6" grade="elite" max_hp="91" max_ap="45" int="3" agility="5" view_angle="25" dc="8" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="150" />
+    <FLAG never_blasted="true" />
+    <ATTACK type="melee" range="180" weaponitem_id="300035" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="351" />
+    <SKILL id="352" />
+    <SKILL id="353" />
+    <DROP table="S35" />
+  </NPC>
+  <NPC id="176" name="STR:NPC_NAME_36" desc="STR:NPC_DESC_36" meshname="Lich" scale="0.17 0.17 0.17" grade="regular" max_hp="20" max_ap="0" int="3" agility="3" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="120" height="700" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="120" weaponitem_id="300036" />
+    <SPEED default="200" rotate="2.452" />
+    <SKILL id="361" />
+    <DROP table="S36" />
+  </NPC>
+  <NPC id="177" name="STR:NPC_NAME_37" desc="STR:NPC_DESC_37" meshname="skeletonB" scale="2.1 2.1 2.1" grade="boss" max_hp="1300" max_ap="1536" int="3" agility="2" view_angle="15" dc="50" offensetype="1" dyingtime="8">
+    <COLLISION radius="40" height="250" tremble="10" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="550" weaponitem_id="300037" />
+    <SPEED default="700" />
+    <SKILL id="371" />
+    <SKILL id="372" />
+    <SKILL id="373" />
+    <DROP table="S37" />
+  </NPC>
+  <NPC id="178" name="STR:NPC_NAME_38" desc="STR:NPC_DESC_38" meshname="theUnholy" scale="4 4 4" grade="boss" max_hp="1300" max_ap="1536" int="3" agility="5" view_angle="25" dc="50" offensetype="2" dyingtime="8">
+    <COLLISION radius="15" height="150" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="1" />
+    <SPEED default="200" />
+    <SKILL id="381" />
+    <SKILL id="382" />
+    <SKILL id="383" />
+    <DROP table="S38" />
+  </NPC>
+  <NPC id="179" name="STR:NPC_NAME_39" desc="STR:NPC_DESC_39" meshname="Lich" scale="1 1 1" grade="boss" max_hp="1560" max_ap="1536" int="1" agility="1" view_angle="20" dc="60" offensetype="1" dyingtime="8">
+    <COLLISION radius="80" height="750" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="300" weaponitem_id="300039" />
+    <SPEED default="1000" rotate="5" />
+    <SKILL id="391" />
+    <SKILL id="392" />
+    <SKILL id="393" />
+    <DROP table="S39" />
+  </NPC>
+  <NPC id="180" name="STR:NPC_NAME_39" desc="STR:NPC_DESC_39" meshname="Lich" scale="1 1 1" grade="boss" max_hp="1560" max_ap="1536" int="1" agility="1" view_angle="20" dc="60" offensetype="1" dyingtime="8">
+    <COLLISION radius="80" height="750" tremble="5" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="300" weaponitem_id="300039" />
+    <SPEED default="416" rotate="5" />
+    <SKILL id="391" />
+    <SKILL id="392" />
+    <SKILL id="393" />
+    <DROP table="S39" />
+  </NPC>
+  <NPC id="145" name="STR:NPC_NAME_35" desc="STR:NPC_DESC_35" meshname="theUnholy" scale="1.6 1.6 1.6" grade="boss" max_hp="520" max_ap="512" int="3" agility="5" view_angle="25" dc="8" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="150" />
+    <FLAG never_blasted="true" />
+    <ATTACK type="melee" range="180" weaponitem_id="300035" />
+    <SPEED default="150" rotate="2.356" />
+    <SKILL id="351" />
+    <SKILL id="352" />
+    <SKILL id="353" />
+    <DROP table="S35" />
+  </NPC>
+  <NPC id="111" name="STR:NPC_NAME_11" desc="STR:NPC_DESC_11" meshname="goblinE" scale="1 1 1" grade="regular" max_hp="39" max_ap="64" int="4" agility="4" view_angle="15" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="110" />
+    <ATTACK type="melee" range="150" weaponitem_id="300011" />
+    <SPEED default="300" />
+    <DROP table="E01" />
+  </NPC>
+  <NPC id="131" name="STR:NPC_NAME_31" desc="STR:NPC_DESC_31" meshname="skeleton" scale="1.1 1.1 1.1" grade="regular" max_hp="65" max_ap="64" int="3" agility="5" view_angle="40" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="135" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="180" weaponitem_id="300031" />
+    <SPEED default="160" rotate="2.356" />
+    <DROP table="E01" />
+  </NPC>
+  <NPC id="2011" name="STR:NPC_NAME_11" desc="STR:NPC_DESC_11" meshname="goblin" scale="1 1 1" grade="regular" max_hp="39" max_ap="64" int="4" agility="4" view_angle="15" dc="5" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="110" />
+    <ATTACK type="melee" range="150" weaponitem_id="300011" />
+    <SPEED default="300" />
+    <DROP table="G181" />
+  </NPC>
+  <NPC id="2012" name="STR:NPC_NAME_12" desc="STR:NPC_DESC_12" meshname="goblinG" scale="1 1 1" grade="regular" max_hp="39" max_ap="38" int="4" agility="4" view_angle="25" dc="5" offensetype="2" dyingtime="5">
+    <COLLISION radius="30" height="110" />
+    <ATTACK type="melee" range="110" weaponitem_id="300012" />
+    <SPEED default="230" />
+    <SKILL id="121" />
+    <DROP table="G181" />
+  </NPC>
+  <NPC id="2013" name="STR:NPC_NAME_13" desc="STR:NPC_DESC_13" meshname="goblinW" scale="1 1 1" grade="veteran" max_hp="52" max_ap="51" int="4" agility="4" view_angle="25" dc="6" offensetype="1" dyingtime="5">
+    <COLLISION radius="30" height="120" />
+    <ATTACK type="melee" range="130" weaponitem_id="300013" />
+    <SPEED default="400" />
+    <SKILL id="131" />
+    <SKILL id="132" />
+    <DROP table="G181" />
+  </NPC>
+  <NPC id="2014" name="STR:NPC_NAME_14" desc="STR:NPC_DESC_14" meshname="goblinH" scale="1 1 1" grade="veteran" max_hp="65" max_ap="128" int="4" agility="2" view_angle="40" dc="7" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="140" />
+    <FLAG never_pushed="true" />
+    <ATTACK type="melee" range="170" weaponitem_id="300014" />
+    <SPEED default="360" />
+    <DROP table="G181" />
+  </NPC>
+  <NPC id="2015" name="STR:NPC_NAME_15" desc="STR:NPC_DESC_15" meshname="goblinC" scale="1.2 1.2 1.2" grade="elite" max_hp="260" max_ap="128" int="4" agility="4" view_angle="15" dc="8" offensetype="1" dyingtime="5">
+    <COLLISION radius="35" height="160" />
+    <FLAG never_blasted="true" never_pushed="true" />
+    <ATTACK type="melee" range="270" weaponitem_id="300015" />
+    <SPEED default="320" />
+    <SKILL id="151" />
+    <SKILL id="152" />
+    <DROP table="G181" />
+  </NPC>
+</XML>

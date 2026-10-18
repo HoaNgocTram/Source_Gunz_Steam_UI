@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <TIPS category="0">
+    <MSG>GunZ to darmowa gra akcji. Graj za darmo bez ograniczeń!</MSG>
+    <MSG>W razie problemów skontaktuj się z pomocą techniczną na stronie GunZ.</MSG>
+    <MSG>Korzystasz z routera? Skonfiguruj przekierowanie portów, aby poprawić jakość połączenia.</MSG>
+    <MSG>Gra działa wolno? Skorzystaj z opcji „Optymalizuj”.</MSG>
+    <MSG>Funkcja Szybki Start pozwala szybko dołączyć do meczu bez szukania pokoju.</MSG>
+    <MSG>Załóż klan i graj razem ze znajomymi!</MSG>
+    <MSG>Przedmioty Bounty nie mogą być współdzielone przez Magazyn z innymi postaciami.</MSG>
+    <MSG>W trybie Trening statystyki i EXP nie ulegają zmianie.</MSG>
+    <MSG>Użyj komendy /r, aby szybko odpowiedzieć na wiadomość prywatną.</MSG>
+    <MSG>Obraźliwe nazwy postaci mogą skutkować karą.</MSG>
+    <MSG>Obraźliwe zachowanie na czacie może skutkować karą.</MSG>
+    <MSG>Administracja nigdy nie poprosi o Twoje hasło.</MSG>
+    <MSG>Nigdy nie udostępniaj swojego hasła. Straty spowodowane włamaniem nie podlegają odzyskaniu.</MSG>
+    <MSG>Graj fair i szanuj innych graczy.</MSG>
+    <MSG>Prawdziwy mistrz okazuje szacunek przeciwnikom.</MSG>
+    <MSG>Używanie cheatów, nielegalnych programów lub bugów skutkuje trwałą blokadą wszystkich kont.</MSG>
+    <MSG>Zablokuj atak wręcz przeciwnika, aby wykonać potężne cięcie!</MSG>
+    <MSG>Podczas obserwacji naciśnij Ctrl + cyfrę, aby przypisać gracza do szybkiego wyboru.</MSG>
+  </TIPS>
+  <TIPS category="1">
+    <MSG id="8">Podczas obserwacji naciśnij Ctrl + cyfrę, aby przypisać gracza do szybkiego wyboru.</MSG>
+  </TIPS>
+</XML>

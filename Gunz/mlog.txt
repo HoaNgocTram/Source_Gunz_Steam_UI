@@ -1,0 +1,16 @@
+CPU ID = Intel(R) Core(TM) i9-14900KF @ 3187 MHz
+Display Device = NVIDIA GeForce RTX 5070 Ti 
+Display Driver Version = 32.0.0016.1047
+Windows = Windows 11 (64-bit) Build 26100 (32599 MB)
+ ===============System Information===============
+
+Load XML from memory : system/locale.xml- SUCCESS
+Country : (USA), Language : (USA)
+Load Config from file : config.xml- SUCCESS
+Load XML from memory : system/system.xml- SUCCESS
+Load XML from memory : system/strings.xml(0x0009) - SUCCESS
+Load XML from memory : system/cserror.xml(0x0009) - SUCCESS
+Load XML from memory : system/messages.xml(0x0009) - SUCCESS
+Load XML from memory : system/gametypecfg.xml 
+ =================Load XML Files=================
+

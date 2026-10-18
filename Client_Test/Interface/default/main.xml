@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="main">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<INCLUDE>BitmapAlias.xml</INCLUDE>
+	<INCLUDE>new/MainTop.xml</INCLUDE>
+	<INCLUDE>new/MapBanner.xml</INCLUDE>
+	<INCLUDE>templates.xml</INCLUDE>
+	<INCLUDE>Login.xml</INCLUDE>
+	<INCLUDE>Lobby.xml</INCLUDE>
+	<INCLUDE>Load.xml</INCLUDE>
+	<INCLUDE>Stage.xml</INCLUDE>
+	<!--<INCLUDE>StageCreateFrame.xml</INCLUDE>-->
+	<INCLUDE>PrivateStageJoinFrame.xml</INCLUDE>
+	<INCLUDE>StageListFrame.xml</INCLUDE>
+	<!--<INCLUDE>StageSettingFrame.xml</INCLUDE>-->
+	<INCLUDE>ChannelListFrame.xml</INCLUDE>
+	<INCLUDE>CombatInterface.xml</INCLUDE>
+	<INCLUDE>Greeter.xml</INCLUDE>
+	<INCLUDE>Option.xml</INCLUDE>
+	<INCLUDE>Shop.xml</INCLUDE>
+	<INCLUDE>BuyConfirm.xml</INCLUDE>
+	<INCLUDE>Equipment.xml</INCLUDE>
+	<INCLUDE>CharSelection.xml</INCLUDE>
+	<INCLUDE>CharCreation.xml</INCLUDE>
+	<INCLUDE>ResizeConfirm.xml</INCLUDE>	
+	<INCLUDE>112Confirm.xml</INCLUDE>
+	<INCLUDE>Clan.xml</INCLUDE>
+	<INCLUDE>Replay.xml</INCLUDE>
+	<INCLUDE>GameResult.xml</INCLUDE>
+	<INCLUDE>MonsterBook.xml</INCLUDE>
+	<INCLUDE>WarningMessages.xml</INCLUDE>
+	<INCLUDE>ScreenShot.xml</INCLUDE>
+	<INCLUDE>Webview.xml</INCLUDE>
+	<INCLUDE>CombatInterface_Spy.xml</INCLUDE>
+	<INCLUDE>CombatInterface_DuelTournament.xml</INCLUDE>
+	<INCLUDE>CombatInterface_Skill.xml</INCLUDE>
+	<INCLUDE>CombatInterface_ChallengeQuest.xml</INCLUDE>
+	<INCLUDE>KickPlayer.xml</INCLUDE>
+	<INCLUDE>Training.xml</INCLUDE>
+	<INCLUDE>ZGuard.xml</INCLUDE>
+	<INCLUDE>NetPortConfirm.xml</INCLUDE>
+	<INCLUDE>CharInfo.xml</INCLUDE>
+	<INCLUDE>CharDetail_Info.xml</INCLUDE>
+	<INCLUDE>StageJoinFrame.xml</INCLUDE>
+	<INCLUDE>MapFrame.xml</INCLUDE>
+	<INCLUDE>NetmarbleLogin.xml</INCLUDE>	
+	<INCLUDE>new/Event.xml</INCLUDE>
+	<INCLUDE>new/TopFrame.xml</INCLUDE>
+	<INCLUDE>new/StageOptionFrame.xml</INCLUDE>
+<!--<INCLUDE>Information.xml</INCLUDE>-->
+<!--<INCLUDE>BlitzkriegInterface.xml</INCLUDE>-->
+<!--<INCLUDE>Achievement.xml</INCLUDE>-->
+<!--<INCLUDE>CreateAccount.xml</INCLUDE>-->
+<!--<INCLUDE>LocaleAddition.xml</INCLUDE> -->
+<!--<INCLUDE>MailInterface.xml</INCLUDE>-->
+<!--<INCLUDE>EquipmentGame.xml</INCLUDE>-->
+<!--<INCLUDE>ExtraStageSettingFrame.xml</INCLUDE>-->
+<!--<INCLUDE>BlitzKriegInterface.xml</INCLUDE>-->
+</XML>

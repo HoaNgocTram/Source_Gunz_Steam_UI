@@ -1,0 +1,2112 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Stage">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Stage 화면 구성
+   
+   Last Update : 8.NOV.2004
+   Editor      : Lim Dong Hwan
+-->
+
+<!-- 프레임 생성 : Stage -->
+	<FRAME item="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 상단 바탕화면 
+	<PICTURE item="Stage_MainBGTop" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_t.png</BITMAP>
+	</PICTURE>
+	-->
+
+	<!-- Picture : 상단 이펙트 
+	<PICTURE item="Stage_StripTop" parent="Stage_MainBGTop">
+		<BOUNDS>
+			<X>288</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE>
+	-->
+	
+	<!-- Picture :스테이지 bg -->
+	<PICTURE item="Stage_MainBG" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Play.png</BITMAP>
+	</PICTURE>
+	
+	<!-- 상점 배경 그림자-->
+	<PICTURE item="Stage_MainBG_Shadow" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ShopPanel_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- 스테이지 패널-->
+	<PICTURE item="Stage_Panel" parent="Stage">
+		<BOUNDS>
+			<X>230</X>
+			<Y>186</Y>
+			<W>548</W>
+			<H>398</H>
+		</BOUNDS>
+		<COLOR> <R>12</R> <G>13</G> <B>14</B> <ALPHA>178</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<PICTURE item="Stage_Title_BG" parent="Stage">
+		<BOUNDS>
+			<X>230</X>
+			<Y>91</Y>
+			<W>548</W>
+			<H>90</H>
+		</BOUNDS>
+		<COLOR> <R>12</R> <G>13</G> <B>14</B> <ALPHA>178</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+	<!-- Picture : 좌측 상단 GUNZ 로고 -->
+	<PICTURE item="Stage_Logo" parent="Stage_MainBG">
+		<BOUNDS>
+			<X>10</X>
+			<Y>13</Y>
+			<W>120</W>
+			<H>55</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- Picture : 하단 바탕화면 
+	<PICTURE item="Stage_MainBGBottom" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>552</Y>
+			<W>800</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>main_bg_b.png</BITMAP>
+	</PICTURE>
+	-->
+
+	<!-- Picture : 하단 이펙트 
+	<PICTURE item="Stage_StripBottom" parent="Stage_MainBGBottom">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP>stripe.tga</BITMAP>
+	</PICTURE>
+	-->
+
+
+<!-- 프레임 생성 : Stage_Main_Frame 
+	<FRAME item="Stage_Main_Frame" parent="Stage">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	-->
+
+	<!-- Picture : 방제 표시창 이미지 출력 
+	<PICTURE item ="Stage_ChannelNameBG" parent="Stage">
+		<BOUNDS>
+			<X>18</X>
+			<Y>83</Y>
+			<W>425</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>title_bar.tga</BITMAP>
+	</PICTURE>
+	-->
+	<!-- Picture : 장비 정보 표시창 이미지 출력 -->
+	<PICTURE item ="Stage_ChannelNameBG" parent="Stage">
+		<BOUNDS>
+			<X>8</X>
+			<Y>75</Y>
+			<W>425</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Lobby_Title_bar.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- Label : 방제 정보 표시 -->
+	<LABEL item="StageNameLabel" parent="Stage">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>214</G>
+			<B>88</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>419</X>
+			<Y>109</Y>
+			<W>260</W>
+			<H>19</H>
+		</BOUNDS>
+		<TEXT>Stage</TEXT>
+	</LABEL>
+	
+	<PICTURE item="StagePasswordIcon" parent="Stage">
+		<BOUNDS>
+			<X>419</X>
+			<Y>112</Y>
+			<W>9</W>
+			<H>13</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>StagePasswordIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="StageGameInfoButton" parent="Stage">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>748</X>
+			<Y>119</Y>
+			<W>23</W>
+			<H>33</H>
+		</BOUNDS>
+		<BITMAP type="up">Lobby_FilterDefaultButtonOn.png</BITMAP>
+		<BITMAP type="over">Lobby_FilterDefaultButtonOver.png</BITMAP>
+		<BITMAP type="down">Lobby_FilterDefaultButtonOver.png</BITMAP>
+	</BMBUTTON>
+	
+	<PICTURE item="StageLatencyIcon" parent="Stage">
+		<BOUNDS>
+			<X>752</X>
+			<Y>100</Y>
+			<W>14</W>
+			<H>14</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RegionPing_Unknown.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="StageGameInfoIcon" parent="Stage">
+		<BOUNDS>
+			<X>752</X>
+			<Y>126</Y>
+			<W>14</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>SettingIcon.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item="StageMapNameLabel" parent="Stage">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>419</X>
+			<Y>131</Y>
+			<W>150</W>
+			<H>14</H>
+		</BOUNDS>
+	</LABEL>
+	
+	<PICTURE item="StageModIcon0" parent="Stage">
+		<BOUNDS> <X>419</X> <Y>152</Y> <W>15</W> <H>15</H> </BOUNDS>
+		<STRETCH/>
+		<BITMAP>RoomMod_Weapon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageModIcon1" parent="Stage">
+		<BOUNDS> <X>419</X> <Y>152</Y> <W>15</W> <H>15</H> </BOUNDS>
+		<STRETCH/>
+		<BITMAP>RoomMod_Physic.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageModIcon2" parent="Stage">
+		<BOUNDS> <X>419</X> <Y>152</Y> <W>15</W> <H>15</H> </BOUNDS>
+		<STRETCH/>
+		<BITMAP>RoomMod_HPSet.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageModIcon3" parent="Stage">
+		<BOUNDS> <X>419</X> <Y>152</Y> <W>15</W> <H>15</H> </BOUNDS>
+		<STRETCH/>
+		<BITMAP>RoomMod_Damage.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageModIcon4" parent="Stage">
+		<BOUNDS> <X>419</X> <Y>152</Y> <W>15</W> <H>15</H> </BOUNDS>
+		<STRETCH/>
+		<BITMAP>RoomMod_Gear.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageModIcon5" parent="Stage">
+		<BOUNDS> <X>419</X> <Y>152</Y> <W>15</W> <H>15</H> </BOUNDS>
+		<STRETCH/>
+		<BITMAP>RoomMod_Etc.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+
+	<!-- Picture : 이미지 프레임 출력 캐릭터 뒤 
+	<PICTURE item ="Stage_BG" parent="Stage">
+		<BOUNDS>
+			<X>15</X>
+			<Y>125</Y>
+			<W>200</W>
+			<H>416</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_bg.tga</BITMAP>
+	</PICTURE>
+	-->
+
+	
+<!-- 캐릭터 뷰어 -->
+	<FRAME item="Stage_CharacterInfo" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- CHARACTERVIEW : 캐릭터 뷰어 -->
+	<CHARACTERVIEW item="Stage_Charviewer" parent="Stage_CharacterInfo">
+		<BOUNDS>
+			<X>23</X>
+			<Y>97</Y>
+			<W>203</W>
+			<H>371</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</CHARACTERVIEW>
+	
+	
+	<!-- Picture : 반투명 검정 배경 
+	<PICTURE item="Stage_PlayerSpecBG" parent="Stage_CharacterInfo">
+		<BOUNDS>
+			<X>12</X>
+			<Y>385</Y>
+			<W>130</W>
+			<H>170</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Stage_black_bg.png</BITMAP>
+	</PICTURE>-->
+
+	<!-- ===== Ảnh và khung thông tin tên ===== -->
+	<!-- ===== Profile ===== -->
+	
+	<PICTURE item="Lobby_ProfileBanner" parent="Stage">
+		<BOUNDS>
+			<X>569</X>
+			<Y>17</Y>
+			<W>23</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileBanner0000.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="Lobby_HideBannerName" parent="Stage">
+		<BOUNDS>
+			<X>592</X>
+			<Y>17</Y>
+			<W>86</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BannerName.png</BITMAP>
+	</PICTURE>
+
+	<LABEL item="Stage_PlayerName1" parent="Stage">
+		<FONT>FONTa7</FONT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>597</X>
+			<Y>24</Y>
+			<W>78</W>
+			<H>10</H>
+		</BOUNDS>
+		<!-- <TEXT>STR:UI_LOBBY_06</TEXT> 이름 -->
+	</LABEL>
+	
+	<LABEL item="Stage_PlayerSpecLevel1" parent="Stage">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>597</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!--  레벨 : 0 lv. -->
+	</LABEL>
+	<LABEL item="Stage_PlayerSpecLevelValue1" parent="Stage">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>608</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+
+	
+	<LABEL item="Stage_PlayerSpecXP" parent="Stage">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>625</X>
+			<Y>35</Y>
+			<W>52</W>
+			<H>11</H>
+		</BOUNDS>
+		<!-- <TEXT>STR:UI_LOBBY_09</TEXT> 경험치 : 0% -->
+	</LABEL>
+	
+	<!-- Picture : 반투명 검정 배경 -->
+	<PICTURE item="Stage_PlayerSpecBG" parent="Stage_CharacterInfo">
+		<BOUNDS>
+			<X>22</X>
+			<Y>467</Y>
+			<W>195</W>
+			<H>74</H>
+		</BOUNDS>
+		<COLOR> <R>26</R> <G>28</G> <B>30</B> <ALPHA>204</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- Label : 플레이어 이름 표시 -->
+	<LABEL item="Stage_PlayerName" parent="Stage_CharacterInfo">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>3</R>
+			<G>113</G>
+			<B>177</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>63</X>
+			<Y>474</Y>
+			<W>125</W>
+			<H>17</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_01</TEXT> <!-- 이름 -->
+	</LABEL>
+	
+
+	<!-- Label : 플레이어 상세정보 표시(Clan) -->
+	<LABEL item="Stage_PlayerSpecClan" parent="Stage_CharacterInfo">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>63</X>
+			<Y>491</Y>
+			<W>63</W>
+			<H>13</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_02</TEXT> <!-- 클랜 : -->
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(Level) -->
+	<LABEL item="Stage_PlayerSpecLevel" parent="Stage_CharacterInfo">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>35</X>
+			<Y>491</Y>
+			<W>21</W>
+			<H>13</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_03</TEXT> <!-- 레벨 : 0 lv. -->
+	</LABEL>
+	
+	<LABEL item="Stage_PlayerSpecLevelValue" parent="Stage_CharacterInfo">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>35</X>
+			<Y>504</Y>
+			<W>21</W>
+			<H>13</H>
+		</BOUNDS>
+	</LABEL>
+	
+	<!-- Label : 플레이어 상세정보 표시(Ranking) -->
+	<LABEL item="Stage_PlayerSpecRanking" parent="Stage_CharacterInfo">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>133</X>
+			<Y>517</Y>
+			<W>70</W>
+			<H>13</H>
+		</BOUNDS>
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(Kill) -->
+	<LABEL item="Stage_PlayerSpecKill" parent="Stage_CharacterInfo">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>63</X>
+			<Y>504</Y>
+			<W>70</W>
+			<H>13</H>
+		</BOUNDS>
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(Death) -->
+	<LABEL item="Stage_PlayerSpecDeath" parent="Stage_CharacterInfo">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>133</X>
+			<Y>504</Y>
+			<W>70</W>
+			<H>13</H>
+		</BOUNDS>
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(WinningPercent) -->
+	<LABEL item="Stage_PlayerSpecWinning" parent="Stage_CharacterInfo">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>63</X>
+			<Y>517</Y>
+			<W>60</W>
+			<H>13</H>
+		</BOUNDS>
+	</LABEL>
+
+
+
+	<!-- Picture : 이미지 프레임 출력 
+	<PICTURE item ="Stage_FrameBG" parent="Stage">
+		<BOUNDS>
+			<X>8</X>
+			<Y>118</Y>
+			<W>784</W>
+			<H>425</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>-->
+	
+<!-- 채팅창 -->
+
+	<!-- Bong bong chat -->
+	<FRAME item="StageChattingFrame" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>22</X>
+			<Y>393</Y>
+			<W>195</W>
+			<H>144</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<PICTURE item="StageChatting_BG" parent="StageChattingFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>195</W>
+			<H>144</H>
+		</BOUNDS>
+		<COLOR> <R>19</R> <G>21</G> <B>22</B> <ALPHA>178</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<BMBUTTON item="StageChattingButton" parent="Stage">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>22</X>
+			<Y>552</Y>
+			<W>24</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP type="up">ChatButton_Default.png</BITMAP>
+		<BITMAP type="over">ChatButton_Over.png</BITMAP>
+		<BITMAP type="down">ChatButton_Over.png</BITMAP>
+	</BMBUTTON>
+
+	<!-- TEXTAREA : 채팅창 -->
+	<TEXTAREA item = "StageChattingOutput" parent = "StageChattingFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>3</X>
+			<Y>6</Y>
+			<W>188</W>
+			<H>109</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<TEXTAREALOOK>TextAreaLook</TEXTAREALOOK>
+		<INDENTATION>0</INDENTATION>
+		<SCROLLBAR>false</SCROLLBAR>
+	</TEXTAREA>
+	
+	<!-- EDIT : 대화 내용 입력창 -->
+	<EDIT item="StageChattingInput" parent="StageChattingFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>3</X>
+			<Y>123</Y>
+			<W>188</W>
+			<H>18</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<!--PlayrtListBtn
+	<PICTURE item ="StagePlayerList_Tab" parent="Stage">
+		<BOUNDS>
+			<X>532</X>
+			<Y>281</Y>
+			<W>257</W>
+			<H>17</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Stage_PlayerList.png</BITMAP>
+	</PICTURE>-->
+	<!-- 
+	<GBUTTON item="StagePlayerList_Tab_Btn" parent="Stage">
+		<BUTTONLOOK>GButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>532</X>
+			<Y>278</Y>
+			<W>256</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>Player List</TEXT>
+		<GROUP>Shop_Tab</GROUP>
+	</GBUTTON>		
+-->
+
+	<!-- PLAYER LIST -->
+	<!-- PLAYERLISTBOX : 게임 참가자 리스트 -->
+	
+	<PICTURE item="Stage_PlayerList_Deco" parent="Stage">
+		<BOUNDS>
+			<X>248</X>
+			<Y>200</Y>
+			<W>512</W>
+			<H>2</H>
+		</BOUNDS>
+		<COLOR> <R>67</R> <G>100</G> <B>145</B> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+	<PICTURE item="Stage_PlayerList_Red_Deco" parent="Stage">
+		<BOUNDS>
+			<X>248</X>
+			<Y>200</Y>
+			<W>254</W>
+			<H>2</H>
+		</BOUNDS>
+		<COLOR> <R>186</R> <G>69</G> <B>69</B> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+
+	<PICTURE item="Stage_PlayerList_Blue_Deco" parent="Stage">
+		<BOUNDS>
+			<X>506</X>
+			<Y>200</Y>
+			<W>254</W>
+			<H>2</H>
+		</BOUNDS>
+		<COLOR> <R>67</R> <G>100</G> <B>145</B> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Stage_PlayerList_Mode" parent="Stage">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>82</R>
+			<G>120</G>
+			<B>172</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>248</X>
+			<Y>207</Y>
+			<W>512</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TEXT>SOLO</TEXT>
+	</LABEL>
+
+	<LABEL item="Stage_PlayerList_Red" parent="Stage">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>61</G>
+			<B>61</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>248</X>
+			<Y>207</Y>
+			<W>254</W>
+			<H>17</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TEXT>Red Team</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+
+	<LABEL item="Stage_PlayerList_Blue" parent="Stage">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR>
+			<R>82</R>
+			<G>120</G>
+			<B>172</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>506</X>
+			<Y>207</Y>
+			<W>254</W>
+			<H>17</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TEXT>Blue Team</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PLAYERLISTBOX item="StagePlayerList_" parent = "Stage" >
+		<BOUNDS>
+			<X>246</X>
+			<Y>234</Y>
+			<W>516</W>
+			<H>246</H>
+		</BOUNDS>
+		<ITEMHEIGHT>35</ITEMHEIGHT>
+		<SELECTED>false</SELECTED>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>		
+		<MODE1></MODE1>
+	</PLAYERLISTBOX>
+
+	<!-- PLAYERLISTBOX : 게임 참가자 이전 리스트--> 
+	<BMBUTTON item="StagePlayerListPrev" parent="Stage">
+		<BOUNDS>
+			<X>756</X>
+			<Y>234</Y>
+			<W>14</W>
+			<H>123</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">StageBtn_PageUp_off.PNG</BITMAP>
+		<BITMAP type="over">StageBtn_PageUp_off.PNG</BITMAP>
+		<BITMAP type="down">StageBtn_PageUp_on.PNG</BITMAP>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</BMBUTTON>
+	
+	
+	<!-- PLAYERLISTBOX : 게임 참가자 다음 리스트--> 
+	<BMBUTTON item="StagePlayerListNext" parent="Stage">
+		<BOUNDS>
+			<X>756</X>
+			<Y>380</Y>
+			<W>14</W>
+			<H>123</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">StageBtn_PageDown_off.png</BITMAP>
+		<BITMAP type="over">StageBtn_PageDown_off.png</BITMAP>
+		<BITMAP type="down">StageBtn_PageDown_on.png</BITMAP>
+		<TEXT></TEXT>
+		<VISIBLE>false</VISIBLE>
+	</BMBUTTON>
+	
+
+	
+<!-- 게임 설정창 -->
+	<FRAME item="StageGameInfo" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>230</X>
+			<Y>330</Y>
+			<W>548</W>
+			<H>100</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<!-- Picture : 맵 이름 이미지 -->
+.	<PICTURE item="Stage_MainBGTop" parent="Stage">
+		<BOUNDS>
+			<X>230</X>
+			<Y>91</Y>
+			<W>178</W>
+			<H>90</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<PICTURE item="Stage_MainBGTitleTop" parent="Stage">
+		<BOUNDS>
+			<X>268</X>
+			<Y>120</Y>
+			<W>101</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+
+	<!-- ANIMATION : 맵 이름 배경 이미지 -->
+		<ANIMATION item="Stage_MapNameBG" parent="Stage">
+		<PLAYMODE>stop</PLAYMODE>
+		<ANIMTEMPLATE>MapAnimation</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>268</X>
+			<Y>120</Y>
+			<W>101</W>
+			<H>31</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</ANIMATION>
+
+	<!-- BUTTON : 청팀 체크 버튼 -->
+	<BUTTON item="StageTeamBlue" parent="StageGameInfo">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>18</X>
+			<Y>91</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<CUSTOM/>
+		<TEXT>STR:UI_STAGE_09</TEXT> <!-- 청팀  -->
+	</BUTTON>
+	<BMBUTTON item="StageTeamBlue2" parent="StageGameInfo">
+		<BOUNDS>
+			<X>18</X>
+			<Y>11</Y>
+			<W>107</W>
+			<H>105</H>
+		</BOUNDS>
+		<STRETCH/>
+	</BMBUTTON>
+	
+	<!-- BUTTON : 홍팀 체크 버튼 -->
+	<BUTTON item="StageTeamRed" parent="StageGameInfo">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>141</X>
+			<Y>91</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<CUSTOM/>
+		<TEXT>STR:UI_STAGE_10</TEXT> <!-- 홍팀  -->
+	</BUTTON>
+	<BMBUTTON item="StageTeamRed2" parent="StageGameInfo">
+		<BOUNDS>
+			<X>141</X>
+			<Y>11</Y>
+			<W>107</W>
+			<H>105</H>
+		</BOUNDS>
+		<STRETCH/>
+	</BMBUTTON>
+	
+	
+	
+	<!-- Picture : 희생 아이템 이미지 0 -->
+	<!-- <PICTURE item="Stage_SacrificeItemImage0" parent="StageGameInfo">
+		<BOUNDS>
+			<X>31</X>
+			<Y>11</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE> -->
+	
+	<!-- Picture : 희생 아이템 이미지 1 -->
+	<!-- <PICTURE item="Stage_SacrificeItemImage1" parent="StageGameInfo">
+		<BOUNDS>
+			<X>171</X>
+			<Y>11</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE> -->
+
+	<!-- Picture : 광선 이미지 0 -->
+	<PICTURE item="Stage_Lights0" parent="Stage">
+		<BOUNDS>
+			<X>524</X>
+			<Y>401</Y>
+			<W>36</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>lights.tga</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 광선 이미지 1 -->
+	<PICTURE item="Stage_Lights1" parent="Stage">
+		<BOUNDS>
+			<X>702</X>
+			<Y>401</Y>
+			<W>36</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>lights.tga</BITMAP>
+	</PICTURE>
+
+	<!-- ITEMSLOT : 희생 아이템 버튼 0 -->
+	<ITEMSLOT item="Stage_SacrificeItemButton0" parent="Stage" parts="none">
+		<BOUNDS>
+			<X>524</X>
+			<Y>401</Y>
+			<W>36</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_head.tga</BITMAP>			
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 희생 아이템 버튼 1 -->
+	<ITEMSLOT item="Stage_SacrificeItemButton1" parent="Stage" parts="none">
+		<BOUNDS>
+			<X>702</X>
+			<Y>401</Y>
+			<W>36</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>slot_head.tga</BITMAP>			
+	</ITEMSLOT>
+
+	
+	<!-- BMBUTTON : 게임 시작 버튼 -->
+	<BMBUTTON item="GameStart" parent="Stage">
+		<BOUNDS>
+			<X>426</X>
+			<Y>538</Y>
+			<W>156</W>
+			<H>33</H>
+		</BOUNDS>
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOff.png</BITMAP>
+		<STRETCH/>
+		<FONT>FONTa8b</FONT>
+		<TEXT>Game Start</TEXT>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 준비 완료 버튼 -->
+	<BMBUTTON item="StageReady" parent="Stage">
+		<BOUNDS>
+			<X>426</X>
+			<Y>538</Y>
+			<W>156</W>
+			<H>33</H>
+		</BOUNDS>
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOff.png</BITMAP>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<FONT>FONTa8b</FONT>
+		<TEXT>Ready</TEXT>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 난입 버튼 -->
+	<BMBUTTON item="ForcedEntryToGame" parent="Stage">
+		<BOUNDS>
+			<X>426</X>
+			<Y>538</Y>
+			<W>156</W>
+			<H>33</H>
+		</BOUNDS>
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOff.png</BITMAP>
+		<STRETCH/>
+		<FONT>FONTa8b</FONT>
+		<TEXT>join in</TEXT>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Lobby_StageExit" parent="Stage">
+		<BOUNDS>
+			<X>684</X>
+			<Y>538</Y>
+			<W>89</W>
+			<H>33</H>
+		</BOUNDS>
+		<BITMAP type="up">Lobby_FilterApplyButtonOn.png</BITMAP>
+		<BITMAP type="over">Lobby_FilterApplyButtonOver.png</BITMAP>
+		<BITMAP type="down">Lobby_FilterApplyButtonOff.png</BITMAP>
+		<STRETCH/>
+		<FONT>FONTa8b</FONT>
+		<TEXT>Exit</TEXT>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BMBUTTON>
+
+	<!-- BUTTON : 난입 버튼 -->
+	<BUTTON item="ForcedEntryToGame2" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_11</TEXT> <!-- 난입(&amp;G) -->
+	</BUTTON>
+
+	<!-- BMBUTTON : 기타 옵션 버튼
+	<BMBUTTON item ="StageSettingCaller" parent="StageGameInfo">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>270</X>
+			<Y>103</Y>
+			<W>75</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">gametype_off_kr.tga</BITMAP>
+		<BITMAP type="over">gametype_on_kr.tga</BITMAP>
+		<BITMAP type="down">gametype_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON> -->
+	
+	<!-- 기존 스테이지 옵션 버튼
+	<BUTTON item="StageSettingCaller" parent="StageGameInfo">
+		<BOUNDS>
+			<X>270</X>
+			<Y>109</Y>
+			<W>70</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_12</TEXT>
+	</BUTTON>
+	-->
+	
+	
+	<BMBUTTON item="StageSettingCaller" parent="StageGameInfo">
+		<BOUNDS>
+			<X>273</X>
+			<Y>110</Y>
+			<W>60</W>
+			<H>27</H>
+		</BOUNDS>
+		<BITMAP type="up">StageBtn_GameOption_up.tga</BITMAP>
+		<BITMAP type="over">StageBtn_GameOption_over.tga</BITMAP>
+		<BITMAP type="down">StageBtn_GameOption_down.tga</BITMAP>
+		<STRETCH/>
+		<TOOLTIP>STR:UI_SSF_01</TOOLTIP>
+	</BMBUTTON>
+	
+
+	
+	<!-- LISTBOX : 맵 리스트박스 -->
+	<LISTBOX item="MapList" parent ="StageGameInfo">
+		<VISIBLE>false</VISIBLE>
+		<BOUNDS>
+			<X>29</X>
+			<Y>45</Y>
+			<W>165</W>
+			<H>90</H>
+		</BOUNDS>
+	</LISTBOX>
+	
+	<!-- Picture : 라벨 배경 이미지 -->
+	<PICTURE item="LabelBG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>8</X>
+			<Y>8</Y> <!-- -1  -->
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_labelbg2.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 게임 방식 -->
+	<LABEL item="GameTypeLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>8</X>
+			<Y>8</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_13</TEXT> <!-- 게임 방식 -->
+	</LABEL>
+	
+	<!-- COMBOBOX : 게임 방식 콤보박스 -->
+	<COMBOBOX item="StageType" parent="StageGameInfo">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>70</X>
+			<Y>8</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>300</DROPSIZE>
+	</COMBOBOX>
+	
+	<!-- Picture : 라벨 배경 이미지 -->
+	<PICTURE item="LabelBG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>8</X>
+			<Y>38</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_labelbg2.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 맵 선택 -->
+	<LABEL item="GameMapLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>8</X>
+			<Y>38</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_14</TEXT> <!-- 맵 선택 -->
+	</LABEL>
+
+	<!-- COMBOBOX : 맵 선택 콤보 -->
+	<COMBOBOX item="MapSelection" parent="StageGameInfo">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>70</X>
+			<Y>38</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<DROPSIZE>230</DROPSIZE>
+	</COMBOBOX>
+	
+	<!-- Picture : 라벨 배경 이미지 -->
+	<PICTURE item="LabelBG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>8</X>
+			<Y>68</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_labelbg2.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 최대 인원 -->
+	<LABEL item="MaxPlayerLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>8</X>
+			<Y>68</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_22</TEXT> <!-- 최대 인원 -->
+	</LABEL>	
+	
+	
+	<!-- COMBOBOX : 최대 인원 콤보박스 -->
+	<COMBOBOX item="StageMaxPlayer" parent="StageGameInfo">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>70</X>
+			<Y>68</Y>
+			<W>70</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+	
+	<!-- Picture : 라벨 배경 이미지 -->
+	<PICTURE item="StageRoundCountLabelBG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>148</X>
+			<Y>68</Y>
+			<W>50</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_labelbg3.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 라운드 -->
+	<LABEL item="StageRoundCountLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>148</X>
+			<Y>68</Y>
+			<W>50</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_16</TEXT> <!-- 라운드 -->
+	</LABEL>
+	
+	<!-- COMBOBOX : 라운드 콤보박스 -->
+	<COMBOBOX item="StageRoundCount" parent="StageGameInfo">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>202</X>
+			<Y>68</Y>
+			<W>66</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>	
+	
+	<!-- BUTTON : 관전 체크 버튼 -->
+	<BUTTON item="StageObserverBtn" parent="StageGameInfo">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>218</X>
+			<Y>113</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<CUSTOM/>
+		<TEXT>STR:UI_STAGE_23</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+	</BUTTON>
+	
+	
+	<!-- Picture : 라벨 배경 이미지 -->
+	<PICTURE item="Stage_NumOfPersonBG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>285</X>
+			<Y>8</Y>
+			<W>110</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_labelbg.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 참가 인원 -->
+	<LABEL item="Stage_NumOfPerson" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>295</X>
+			<Y>6</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_17</TEXT> <!-- 참가 인원 : 0명 -->
+	</LABEL>
+
+	<!-- Picture : 라벨 배경 이미지 -->
+	<PICTURE item="Stage_QuestLevelBG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>145</X>
+			<Y>119</Y>
+			<W>117</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_labelbg.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 퀘스트 레벨 -->
+	<LABEL item="Stage_QuestLevel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>157</X>
+			<Y>116</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_18</TEXT> <!-- 퀘스트 레벨 : 0 -->
+	</LABEL>
+	
+	<!-- Picture : 라벨 배경 이미지 -->
+	<PICTURE item="Stage_ChallengeTimeBG" parent="StageGameInfo">
+		<BOUNDS>
+			<X>138</X>
+			<Y>119</Y>
+			<W>117</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>stage_labelbg.png</BITMAP>
+	</PICTURE>
+	<LABEL item="Stage_ChallengeTime" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>143</X>
+			<Y>118</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_25</TEXT>
+	</LABEL>	
+
+	<!-- Label : 관전 모드 표시
+	<LABEL item="StageObserverLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>249</X>
+			<Y>113</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>관전 모드</TEXT>
+	</LABEL> -->
+
+	
+			
+<!-- 상단 버튼 배열 -->
+	<!-- BMBUTTON : 장비버튼	
+	<BMBUTTON item="EquipmentCaller" parent="Stage">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>392</X>
+			<Y>32</Y>
+			<W>89</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">equip_off_kr.tga</BITMAP>
+		<BITMAP type="over">equip_on_kr.tga</BITMAP>
+		<BITMAP type="down">equip_on_kr.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	 -->
+
+	
+	
+<!-- 하단 버튼 배열 -->
+	
+	<!-- BUTTON : 나가기 버튼 -->
+	
+<!-- FRAME : 희생 아이템 설명 프레임 -->
+	<FRAME item="Stage_DescFrame" parent="Stage">
+		<FRAMELOOK>Custom3FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>250</W>
+			<H>56</H>
+		</BOUNDS>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Label : 아이템 이름 -->
+	<LABEL item="Stage_NameLabel" parent="Stage_DescFrame">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>8</X>
+			<Y>0</Y>
+			<W>240</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	
+	<!-- 아이템 리스트 뷰어 -->
+	<FRAME item="Quest_ItemListView" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>241</X>
+			<Y>336</Y>
+			<W>537</W>
+			<H>170</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	<FRAME item="Stage_ItemListView" parent="Quest_ItemListView">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>259</W>
+			<H>170</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<PICTURE item ="Stage_ItemListBG1" parent="Stage_ItemListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>259</W>
+			<H>170</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>QuestItemFrame.png</BITMAP>
+	</PICTURE>
+	<PICTURE item ="Stage_ItemListBG2" parent="Quest_ItemListView">
+		<BOUNDS>
+			<X>260</X>
+			<Y>0</Y>
+			<W>259</W>
+			<H>170</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>QuestItemUp.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 아이템 리스트 배경 이미지 출력 -->
+	<!-- <PICTURE item ="Stage_ItemListBG" parent="Stage_ItemListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>226</W>
+			<H>455</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE> -->
+
+	<!-- LISTBOX : 내 희생 아이템 목록 -->
+	<LISTBOX item="Stage_SacrificeItemListbox" parent="Stage_ItemListView">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>2</X>
+			<Y>2</Y>
+			<W>128</W>
+			<H>168</H>
+		</BOUNDS>
+		<STRETCH/>
+	</LISTBOX>
+	
+	<!-- BUTTON : 선택한 희생 아이템 놓기 버튼 -->
+	<BUTTON item="Stage_PutSacrificeItem" parent="Stage">
+	<BUTTONLOOK>SteamGreenButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>239</X>
+			<Y>538</Y>
+			<W>89</W>
+			<H>33</H>
+		</BOUNDS>
+		<ENABLE>false</ENABLE>
+		<TEXT>STR:UI_STAGE_20</TEXT> <!-- 놓기 -->
+	</BUTTON>
+
+	<!-- BMBUTTON : 희생 아이템 박스 열기 버튼 -->
+	<!-- <BMBUTTON item="Stage_SacrificeItemBoxOpen" parent="Stage_ItemListView">
+		<BOUNDS>
+			<X>200</X>
+			<Y>162</Y>
+			<W>16</W>
+			<H>120</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ShopBtn_listframeopen_off.png</BITMAP>
+		<BITMAP type="over">ShopBtn_listframeopen_on.png</BITMAP>
+		<BITMAP type="down">ShopBtn_listframeopen_on.png</BITMAP>
+	</BMBUTTON> -->
+
+	<!-- Picture : 분리막대선 -->
+	<PICTURE item ="Stage_SeperateBar" parent="Stage_ItemListView">
+		<BOUNDS>
+			<X>7</X>
+			<Y>302</Y>
+			<W>185</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- BMBUTTON : 희생 아이템 박스 닫기 버튼 -->
+	<!-- <BMBUTTON item="Stage_SacrificeItemBoxClose" parent="Stage_ItemListView">
+		<BOUNDS>
+			<X>200</X>
+			<Y>162</Y>
+			<W>16</W>
+			<H>120</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ShopBtn_listframeclose_off.png</BITMAP>
+		<BITMAP type="over">ShopBtn_listframeclose_on.png</BITMAP>
+		<BITMAP type="down">ShopBtn_listframeclose_on.png</BITMAP>
+	</BMBUTTON> -->
+	
+	<!-- Label : 아이템 없음 레이블 -->
+	<LABEL item="Stage_NoItemLabel" parent="Stage_ItemListView">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>140</Y>
+			<W>187</W>
+			<H>25</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<TEXT>STR:UI_STAGE_21</TEXT> <!-- 아이템이 없습니다. -->
+	</LABEL>
+	
+	<!-- TEXTAREA : 아이템 설명 -->
+	<TEXTAREA item="Stage_ItemDesc" parent="Quest_ItemListView">
+		<BOUNDS>
+			<X>130</X>
+			<Y>5</Y>
+			<W>123</W>
+			<H>76</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<PICTURE item="Stage_SacrificeItemImage0" parent="Quest_ItemListView">
+		<BOUNDS>
+			<X>284</X>
+			<Y>64</Y>
+			<W>34</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 희생 아이템 이미지 1 -->
+	<PICTURE item="Stage_SacrificeItemImage1" parent="Quest_ItemListView">
+		<BOUNDS>
+			<X>461</X>
+			<Y>64</Y>
+			<W>34</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	<!-- ANIMATION : 불타는 애니메이션 0 -->
+	<ANIMATION item="Stage_Flame0" parent="Stage">
+		<PLAYMODE>stop</PLAYMODE>
+		<ANIMTEMPLATE>FlameEffect</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>524</X>
+			<Y>401</Y>
+			<W>36</W>
+			<H>46</H>
+		</BOUNDS>
+	</ANIMATION>
+
+	<!-- ANIMATION : 불타는 애니메이션 1 -->
+	<ANIMATION item="Stage_Flame1" parent="Stage">
+		<PLAYMODE>stop</PLAYMODE>
+		<ANIMTEMPLATE>FlameEffect</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>702</X>
+			<Y>401</Y>
+			<W>36</W>
+			<H>46</H>
+		</BOUNDS>
+	</ANIMATION>
+	
+	<!-- Picture : 스페샬 시나리오 이름 표시 바탕 이미지 -->
+	<!-- <PICTURE item="Stage_SenarioNameImg" parent="Stage">
+		<BOUNDS>
+			<X>254</X>
+			<Y>217</Y>
+			<W>195</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>senariotitlebar.tga</BITMAP>
+	</PICTURE> -->
+
+	<!-- LABEL : 스페샬 시나리오 이름 표시 레이블 -->
+	<LABEL item="Stage_SenarioName" parent="Stage">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>586</X>
+			<Y>410</Y>
+			<W>86</W>
+			<H>27</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- 릴레이맵 리스트 뷰어 -->
+	<FRAME item="Stage_RelayMapListView" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>164</W>
+			<H>296</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+
+	
+	<!-- Picture : 릴레이맵 리스트 배경 이미지 출력 BITMAP은 코드상에 하드코딩-->
+	<PICTURE item ="Stage_RelayMapListBG1" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>296</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>QuestItemFrame.png</BITMAP>
+	</PICTURE>
+
+	<!-- COMBOBOX : 릴레이맵 방식 콤보박스 -->
+	<COMBOBOX item="Stage_RelayMapType" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>3</X>
+			<Y>3</Y>
+			<W>82</W>
+			<H>22</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+	
+	<!-- COMBOBOX : 릴레이맵 회차 콤보박스 -->
+	<COMBOBOX item="Stage_RelayMapRepeatCount" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>86</X>
+			<Y>3</Y>
+			<W>59</W>
+			<H>22</H>
+		</BOUNDS>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+
+	<!-- Picture : 분리막대선 -->
+	<PICTURE item ="Stage_SeperateBar" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>3</X>
+			<Y>116</Y>
+			<W>144</W>
+			<H>4</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>StageLine_widthLine.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LISTBOX : 맵 목록 -->
+	<LISTBOX item="Stage_MapListbox" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>3</X>
+			<Y>26</Y>
+			<W>144</W>
+			<H>90</H>
+		</BOUNDS>
+		<STRETCH/>
+	</LISTBOX>
+	
+	<!-- Picture : 분리막대선 -->
+	<PICTURE item ="Stage_SeperateBar" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>3</X>
+			<Y>115</Y>
+			<W>144</W>
+			<H>4</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>StageLine_widthLine.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LISTBOX : 릴레이맵 목록 -->
+	<LISTBOX item="Stage_RelayMapListbox" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>3</X>
+			<Y>119</Y>
+			<W>144</W>
+			<H>122</H>
+		</BOUNDS>
+		<STRETCH/>
+	</LISTBOX>
+	
+	<!-- Picture : 분리막대선 -->
+	<PICTURE item ="Stage_SeperateBar" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>3</X>
+			<Y>242</Y>
+			<W>144</W>
+			<H>4</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>StageLine_widthLine.png</BITMAP>
+	</PICTURE>
+	
+	<!-- BMBUTTON : 확인 버튼 -->
+	<BUTTON item="Stage_RelayMap_OK_Button" parent="Stage_RelayMapListView">
+	<BUTTONLOOK>SteamGreenButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>29</X>
+			<Y>253</Y>
+			<W>90</W>
+			<H>34</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 옵션 -->
+	</BUTTON>
+	
+	<!-- BMBUTTON : 릴레이맵 리스트 열기 버튼 -->
+	<BMBUTTON item="Stage_RelayMapBoxOpen" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>147</X>
+			<Y>89</Y>
+			<W>17</W>
+			<H>117</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ShopBtn_listframeopen_off.png</BITMAP>
+		<BITMAP type="over">ShopBtn_listframeopen_on.png</BITMAP>
+		<BITMAP type="down">ShopBtn_listframeopen_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 릴레이맵 리스트 닫기 버튼 -->
+	<BMBUTTON item="Stage_RelayMapBoxClose" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>147</X>
+			<Y>89</Y>
+			<W>17</W>
+			<H>117</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ShopBtn_listframeclose_off.png</BITMAP>
+		<BITMAP type="over">ShopBtn_listframeclose_on.png</BITMAP>
+		<BITMAP type="down">ShopBtn_listframeclose_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<!-- FRAME : 스파이모드 밴맵 리스트 뷰어 -->
+	<FRAME item="Stage_SpyBanMapListView" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>164</W>
+			<H>296</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 스파이모드 밴맵 리스트 배경 이미지 출력 -->
+	<PICTURE item ="Stage_SpyBanMapListBG1" parent="Stage_SpyBanMapListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>296</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>QuestItemFrame.png</BITMAP>
+	</PICTURE>
+	
+	<!-- BMBUTTON : 스파이모드 밴맵 리스트 열기 버튼 -->
+	<BMBUTTON item="Stage_SpyBanMapBoxOpen" parent="Stage_SpyBanMapListView">
+		<BOUNDS>
+			<X>147</X>
+			<Y>89</Y>
+			<W>17</W>
+			<H>117</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ShopBtn_listframeopen_off.png</BITMAP>
+		<BITMAP type="over">ShopBtn_listframeopen_on.png</BITMAP>
+		<BITMAP type="down">ShopBtn_listframeopen_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 스파이모드 밴맵 리스트 닫기 버튼 -->
+	<BMBUTTON item="Stage_SpyBanMapBoxClose" parent="Stage_SpyBanMapListView">
+		<BOUNDS>
+			<X>147</X>
+			<Y>89</Y>
+			<W>17</W>
+			<H>117</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ShopBtn_listframeclose_off.png</BITMAP>
+		<BITMAP type="over">ShopBtn_listframeclose_on.png</BITMAP>
+		<BITMAP type="down">ShopBtn_listframeclose_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<!-- LABEL : 스파이모드 '맵을 클릭해 제외할 수 있습니다.' -->
+	<LABEL item="Stage_SpyBanMapLabel" parent="Stage_SpyBanMapListView">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>5</Y>
+			<W>139</W>
+			<H>17</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_502</TEXT>
+	</LABEL>
+	
+	<!-- LISTBOX : 스파이모드 밴맵 리스트 -->
+	<LISTBOX item="Stage_SpyBanMapList" parent="Stage_SpyBanMapListView">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>7</X>
+			<Y>26</Y>
+			<W>142</W>
+			<H>266</H>
+		</BOUNDS>
+		<STRETCH/>
+	</LISTBOX>
+	
+	<!-- LABEL : 스파이모드 맵 선택에 랜덤 맵이라고 표시 -->
+	<LABEL item="Stage_SpyRandomMapLabel" parent="StageGameInfo">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>70</X>
+			<Y>38</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_STAGE_501</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<!-- LABEL : 시나리오 제목 표시 레이블 -->
+	<LABEL item="Stage_SenarioTitle" parent="Stage">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>230</X>
+			<Y>126</Y>
+			<W>244</W>
+			<H>27</H>
+		</BOUNDS>
+		<TEXT>-</TEXT>
+	</LABEL>
+
+	<!-- LABEL : 시나리오 설명 표시 레이블 -->
+<!-->	
+	<LABEL item="Stage_SenarioDescription" parent="Stage">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>230</X>
+			<Y>130</Y>
+			<W>250</W>
+			<H>100</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_22</TEXT>
+	</LABEL>	
+<-->
+	<TEXTAREA item="Stage_SenarioDescription" parent="Stage">
+	<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>230</X>
+			<Y>160</Y>
+			<W>230</W>
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+
+	<BUTTON item="StageSettingCaller" parent="StageGameInfo">
+		<BOUNDS>
+			<X>285</X>
+			<Y>66</Y>
+			<W>70</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_12</TEXT> <!-- 옵션 -->
+	</BUTTON>
+
+	<BUTTON item="Lead" parent="StageGameInfo">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>141</X>
+			<Y>115</Y>
+			<W>75</W>
+			<H>24</H>
+		</BOUNDS>
+		<CHECKED>false</CHECKED>
+		<SELECTED>true</SELECTED>
+	</BUTTON>
+
+	<LABEL item="LeadLabel" parent="StageGameInfo">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>170</X>
+			<Y>113</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_26</TEXT> 
+		<SELECTED>true</SELECTED>
+	</LABEL>
+
+	
+</XML>

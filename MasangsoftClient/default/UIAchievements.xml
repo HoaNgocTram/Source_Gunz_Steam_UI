@@ -1,0 +1,1275 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Achievements">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Achievements 화면 구성
+   
+   Last Update : 2026. 03. 17
+   Editor      : dhan
+   Reference : UIMission.xml
+-->
+
+
+<!-- 프레임 생성 : Achievements -->
+	<FRAME item="Achievements">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+<!-- 프레임 생성 : AchievementPopup -->
+	<FRAME item="AchievementAlarm">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+<!-- BEGIN - Achievements -->
+	
+	<!-- Picture : 업적 배경 -->
+	<PICTURE item="Achievements_BackGround" parent="Achievements">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Illustration_Inven_00.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 명예 휘장 아이콘 -->
+	<PICTURE item="AchievementsScoreBoard_Icon" parent="Achievements">
+		<BOUNDS>
+			<X>112</X>
+			<Y>163</Y>
+			<W>219</W>
+			<H>204</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>AchievementEmblem.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 총 명예 점수 -->
+	<LABEL item="AchievementsScoreBoard_TotalScore" parent="Achievements">
+		<BOUNDS>
+			<X>112</X>
+			<Y>380</Y>
+			<W>219</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>66</R>
+			<G>255</G>
+			<B>248</B>
+		</TEXTCOLOR>
+		<TEXT>(INPUT SCORE)P</TEXT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa22</FONT>
+	</LABEL>
+	
+	<!-- LABEL : 현재 순위정보 -->
+	<LABEL item="AchievementsScoreBoard_RankInfo" parent="Achievements">
+		<BOUNDS>
+			<X>112</X>
+			<Y>426</Y>
+			<W>219</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>168</R>
+			<G>168</G>
+			<B>168</B>
+		</TEXTCOLOR>
+		<TEXT>VALUE 0</TEXT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa14</FONT>
+	</LABEL>
+	
+	<!-- LABEL : 완료 업적 -->
+	<LABEL item="AchievementsScoreBoard_Complete" parent="Achievements">
+		<BOUNDS>
+			<X>112</X>
+			<Y>460</Y>
+			<W>219</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>168</R>
+			<G>168</G>
+			<B>168</B>
+		</TEXTCOLOR>
+		<TEXT>완료 업적 : 100개</TEXT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa14</FONT>
+	</LABEL>
+	
+	<!-- LABEL : 업적 보상 안내문 -->
+	<LABEL item="NoticeAchievementsAllReward" parent="Achievements">
+		<BOUNDS>
+			<X>453</X>
+			<Y>154</Y>
+			<W>900</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_ACHIEVEMENTS_NOTICE_ONETIMEREWARD</TEXT>
+		<FONT>FONTa16b</FONT>
+	</LABEL>
+	
+	<!-- LABEL : 계정 보상 안내문 -->
+	<LABEL item="NoticeAchievementsAccountReward" parent="Achievements">
+		<BOUNDS>
+			<X>440</X>
+			<Y>1005</Y>
+			<W>1035</W>
+			<H>38</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_ACHIEVEMENTS_NOTICE_ACCOUNTREWARD</TEXT>
+		<FONT>FONTa16b</FONT>
+		<TEXTALIGN>
+				<HALIGN>RIGHT</HALIGN>
+				<VALIGN>TOP</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+
+	<!-- DOTBUTTON : 일반 업적 버튼 -->
+	<DOTBUTTON item="Normal_Button" parent="Achievements">
+		<BOUNDS>
+			<X>53</X>
+			<Y>536</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa20</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>306</X>
+			<Y>18</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<GROUP>AchievementsList</GROUP>
+		<TEXT>STR:UI_ACHIEVEMENTS_CATEGORY_NORMAL</TEXT>
+		<BITMAP type="iconOn">AchievementCategoryIcon_Normal_ON.png</BITMAP>
+		<BITMAP type="iconOff">AchievementCategoryIcon_Normal_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+
+	<!-- DOTBUTTON : 전투 업적 버튼 -->
+	<DOTBUTTON item="Combat_Button" parent="Achievements">
+		<BOUNDS>
+			<X>53</X>
+			<Y>610</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa20</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>306</X>
+			<Y>18</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>AchievementsList</GROUP>
+		<TEXT>STR:UI_ACHIEVEMENTS_CATEGORY_COMBAT</TEXT>
+		<BITMAP type="iconOn">AchievementCategoryIcon_Battle_ON.png</BITMAP>
+		<BITMAP type="iconOff">AchievementCategoryIcon_Battle_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+
+	<!-- DOTBUTTON : 소셜 업적 버튼 -->
+	<DOTBUTTON item="Social_Button" parent="Achievements">
+		<BOUNDS>
+			<X>53</X>
+			<Y>684</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa20</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>306</X>
+			<Y>18</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>AchievementsList</GROUP>
+		<TEXT>STR:UI_ACHIEVEMENTS_CATEGORY_SOCIAL</TEXT>
+		<BITMAP type="iconOn">AchievementCategoryIcon_Social_ON.png</BITMAP>
+		<BITMAP type="iconOff">AchievementCategoryIcon_Social_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+	
+	<!-- DOTBUTTON : 특수 업적 버튼 -->
+	<DOTBUTTON item="Special_Button" parent="Achievements">
+		<BOUNDS>
+			<X>53</X>
+			<Y>758</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa20</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>306</X>
+			<Y>18</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>AchievementsList</GROUP>
+		<TEXT>STR:UI_ACHIEVEMENTS_CATEGORY_SPECIAL</TEXT>
+		<BITMAP type="iconOn">AchievementCategoryIcon_Special_ON.png</BITMAP>
+		<BITMAP type="iconOff">AchievementCategoryIcon_Special_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+	
+	<!-- DOTBUTTON : 수집 업적 버튼 -->
+	<DOTBUTTON item="Collection_Button" parent="Achievements">
+		<BOUNDS>
+			<X>53</X>
+			<Y>832</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa20</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>306</X>
+			<Y>18</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>AchievementsList</GROUP>
+		<TEXT>STR:UI_ACHIEVEMENTS_CATEGORY_COLLECTION</TEXT>
+		<BITMAP type="iconOn">AchievementCategoryIcon_Collection_ON.png</BITMAP>
+		<BITMAP type="iconOff">AchievementCategoryIcon_Collection_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+	
+	<!-- TO DO... -->
+	<!-- 리그 업적은 오픈 이후 추가예정이라 당장은 비활성화 처리 (2026.06.15) -->
+	<!-- DOTBUTTON : 리그 업적 버튼 -->
+	<!--
+	<DOTBUTTON item="League_Button" parent="Achievements">
+		<BOUNDS>
+			<X>53</X>
+			<Y>906</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa20</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>306</X>
+			<Y>18</Y>
+			<W>25</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>AchievementsList</GROUP>
+		<TEXT>STR:UI_ACHIEVEMENTS_CATEGORY_LEAGUE</TEXT>
+		<BITMAP type="iconOn">AchievementCategoryIcon_Special_ON.png</BITMAP>
+		<BITMAP type="iconOff">AchievementCategoryIcon_Special_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+	-->
+
+	<!-- Picture : 미션 리스트 -->
+	<ZMISSIONLISTBOX item="AchievementsListBox" parent="Achievements">
+		<BOUNDS>
+			<X>453</X>
+			<Y>198</Y>
+			<W>1386</W>
+			<H>760</H>
+		</BOUNDS>
+		<RECT type="Title">
+			<X>230</X>
+			<Y>25</Y>
+			<W>857</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="Desc">
+			<X>230</X>
+			<Y>56</Y>
+			<W>857</W>
+			<H>45</H>
+		</RECT>
+		<RECT type="Complete">
+			<X>1295</X>
+			<Y>54</Y>
+			<W>38</W>
+			<H>38</H>
+		</RECT>
+		<RECT type="CompleteText">
+			<X>1145</X>
+			<Y>64</Y>
+			<W>112</W>
+			<H>17</H>
+		</RECT>
+		<RECT type="AchievementDate"> <!-- 업적 날짜 -->
+			<X>1108</X>
+			<Y>18</Y>
+			<W>256</W>
+			<H>11</H>
+		</RECT>
+		<RECT type="ProgressText">
+			<X>1107</X>
+			<Y>18</Y>
+			<W>258</W>
+			<H>18</H>
+		</RECT>
+		<RECT type="ProgressBar">
+			<X>1108</X>
+			<Y>45</Y>
+			<W>256</W>
+			<H>8</H>
+		</RECT>
+		<RECT type="Button">
+			<X>1120</X>
+			<Y>53</Y>
+			<W>256</W>
+			<H>60</H>
+		</RECT>
+		<RECT type="ButtonText"><!--보류-->
+			<X>1107</X>
+			<Y>108</Y>
+			<W>78</W>
+			<H>78</H>
+		</RECT>
+		<RECT type="Icon"> <!-- 업적 보상아이템 -->
+			<X>1306</X>
+			<Y>129</Y>
+			<W>58</W>
+			<H>58</H>
+		</RECT>
+		<RECT type="RewardOutline">
+			<X>1319</X>
+			<Y>128</Y>
+			<W>59</W>
+			<H>59</H>
+		</RECT>
+		<RECT type="AchievementOutline">
+			<X>15</X>
+			<Y>13</Y>
+			<W>162</W>
+			<H>162</H>
+		</RECT>
+		<RECT type="AchievementIcon">
+			<X>28</X>
+			<Y>23</Y>
+			<W>136</W>
+			<H>136</H>
+		</RECT>
+		<RECT type="AchievementTypeIcon">
+			<X>195</X>
+			<Y>27</Y>
+			<W>27</W>
+			<H>27</H>
+		</RECT>
+		<RECT type="AchievementProgress">
+			<X>66</X>
+			<Y>145</Y>
+			<W>9</W>
+			<H>9</H>
+		</RECT>
+		<RECT type="AchievementShadowBG">
+			<X>26</X>
+			<Y>161</Y>
+			<W>140</W>
+			<H>28</H>
+		</RECT>
+		<RECT type="AchievementShadowText">
+			<X>26</X>
+			<Y>161</Y>
+			<W>140</W>
+			<H>28</H>
+		</RECT>
+		<BITMAP type="BG">
+			<PROGRESS>MissionFrame_Default.png</PROGRESS>
+			<COMPLETE>MissionFrame_Complete.png</COMPLETE>
+			<REWARDED>MissionFrame_Finish.png</REWARDED>
+			<GOLDFRAME>AchievementFrame_Gold.png</GOLDFRAME>
+		</BITMAP>
+		<BITMAP type="Button">
+			<UP>ReceiveButton_Default.png</UP>
+			<OVER>ReceiveButton_Over.png</OVER>
+			<DOWN>ReceiveButton_Over.png</DOWN>
+		</BITMAP>
+		<BITMAP type="Outline">
+			<DEFAULT>AchievementOutline_Default.png</DEFAULT>
+			<GOLD>AchievementOutline_Gold.png</GOLD>
+		</BITMAP>
+		<BITMAP type="AchievementProgress">
+			<GREEN>AchievementProgress_Green.png</GREEN>
+			<GOLD>AchievementProgress_Gold.png</GOLD>
+			<DISABLE>AchievementProgress_Disable.png</DISABLE>
+		</BITMAP>
+		<BITMAP type="CompleteIcon">CompleteIcon.png</BITMAP>
+		<BITMAP type="FirstCompleteIcon">AchievementCompleteIcon.png</BITMAP>
+		<BITMAP type="AchievementShadowBG">AchievementShadow.png</BITMAP>
+		<FONT type="Title">FONTa20b</FONT>
+		<FONT type="Desc">FONTa16</FONT>
+		<FONT type="Complete">FONTa17b</FONT>
+		<FONT type="Button">FONTa20b</FONT>
+		<FONT type="Progress">FONTa16</FONT>
+		<FONT type="ItemNum">FONTa11</FONT>
+		<FONT type="AchievementDate">FONTa12</FONT>
+		<FONT type="AchievementShadow">FONTa12</FONT>
+		<FONTCOLOR type="Title">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</SELECT>
+			<DISABLE>
+				<R>135</R>
+				<G>135</G>
+				<B>135</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Desc">
+			<BASE>
+				<R>194</R>
+				<G>194</G>
+				<B>194</B>
+			</BASE>
+			<OVER>
+				<R>194</R>
+				<G>194</G>
+				<B>194</B>
+			</OVER>
+			<SELECT>
+				<R>194</R>
+				<G>194</G>
+				<B>194</B>
+			</SELECT>
+			<DISABLE>
+				<R>103</R>
+				<G>103</G>
+				<B>103</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Complete">
+			<BASE>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</BASE>
+			<OVER>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</OVER>
+			<SELECT>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</SELECT>
+			<DISABLE>
+				<R>41</R>
+				<G>164</G>
+				<B>122</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Button">
+			<BASE>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</BASE>
+			<OVER>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</OVER>
+			<SELECT>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</SELECT>
+			<DISABLE>
+				<R>210</R>
+				<G>210</G>
+				<B>210</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="Progress">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</SELECT>
+			<DISABLE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="ItemNum">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</SELECT>
+			<DISABLE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<FONTCOLOR type="AchievementDate">
+			<BASE>
+				<R>196</R>
+				<G>196</G>
+				<B>196</B>
+			</BASE>
+			<OVER>
+				<R>196</R>
+				<G>196</G>
+				<B>196</B>
+			</OVER>
+			<SELECT>
+				<R>196</R>
+				<G>196</G>
+				<B>196</B>
+			</SELECT>
+			<DISABLE>
+				<R>88</R>
+				<G>88</G>
+				<B>88</B>
+			</DISABLE>
+		</FONTCOLOR>
+		<ITEMSPACEH>6</ITEMSPACEH>
+		<GRADIENTLINEARPROGRESSBAR item="AchievementsProgressBar" parent="AchievementsListBox">
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>66</R>
+					<G>207</G>
+					<B>173</B>
+				</BEGIN>
+				<END>
+					<R>66</R>
+					<G>207</G>
+					<B>173</B>
+				</END>
+			</FILLCOLOR>
+			<OUTLINECOLOR>
+				<R>21</R>
+				<G>25</G>
+				<B>26</B>
+				<ALPHA>127</ALPHA>
+			</OUTLINECOLOR>
+			<EMPTYCOLOR>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+				<ALPHA>153</ALPHA>
+			</EMPTYCOLOR>
+			<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+		<BUTTONTEXT>STR:UI_MISSION_RECEIVE</BUTTONTEXT>
+		<COMPLETETEXT>STR:UI_MISSION_COMPLETE</COMPLETETEXT>
+		<DIVIDERSPACE>
+			<X>10</X>
+			<Y>6</Y>
+		</DIVIDERSPACE>
+		<RECT type="scrollbg">
+			<X>1377</X>
+			<Y>51</Y>
+			<W>1</W>
+			<H>760</H>
+		</RECT>
+		<RECT type="scrollhandle">
+			<X>1377</X>
+			<Y>51</Y>
+			<W>1</W>
+			<H>118</H>
+		</RECT>
+		<SCROLLBARCOLOR type="bar">
+			<R>49</R>
+			<G>45</G>
+			<B>52</B>
+		</SCROLLBARCOLOR>
+		<SCROLLBARCOLOR type="thumb">
+			<R>140</R>
+			<G>140</G>
+			<B>140</B>
+		</SCROLLBARCOLOR>
+		<ROWNUM>3.5</ROWNUM>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+	</ZMISSIONLISTBOX>
+	
+	<ZRICHTOOLTIP item="Achievements_Reward_Tooltip" parent="Achievements">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">ShopEquipTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<COLOR type="textcolor">
+			<R>200</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>389</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>350</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="" alignment="left" title="Durability" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa24" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>45</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>45</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>45</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>200</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>30</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="AddEffectSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="" alignment="left" textcolor="4">
+				<X>18</X>
+				<Y>54</Y>
+				<W>76</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="" alignment="right" title="STR:UI_EQUIPMENT_TOOLTIP_09" textcolor="4">
+				<X>173</X>
+				<Y>102</Y>
+				<W>200</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Achievements_Reward_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+
+
+	<ICONBUTTON item="AchievementsRewardConfirmCaller" parent="Achievements">
+		<FONT>FONTb18b</FONT>
+		<BOUNDS>
+			<X>1495</X>
+			<Y>989</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="disable">HideOut_QuickStartButtonOff.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>235</B>
+			</OVER>
+			<DOWN>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</DOWN>
+			<DISABLE>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MAILBOX_RECEIVE_ALL_MAIL</TEXT>
+		<TEXTRECT>
+			<X>111</X>
+			<Y>20</Y>
+			<W>131</W>
+			<H>18</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+<!-- END - Achievements -->
+
+<!-- BEGIN - AchievementPopup -->
+	
+	<ZACHIEVEMENTPOPUP item="AchievementPopup" parent="AchievementAlarm">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="BG">AchievementAlarm_Complete.png</BITMAP>
+		<RECT type="BG">
+			<X>0</X>
+			<Y>0</Y>
+			<W>434</W>
+			<H>90</H>
+		</RECT>
+		<RECT type="Icon">
+			<X>4</X>
+			<Y>4</Y>
+			<W>78</W>
+			<H>78</H>
+		</RECT>
+		<RECT type="Title">
+			<X>104</X>
+			<Y>17</Y>
+			<W>127</W>
+			<H>15</H>
+		</RECT>
+		<RECT type="Desc">
+			<X>104</X>
+			<Y>45</Y>
+			<W>131</W>
+			<H>20</H>
+		</RECT>
+		<TEXTCOLOR type="Title">
+			<R>43</R>
+			<G>245</G>
+			<B>218</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="Desc">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN type="Title">
+			<HALIGN>LEFT</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<TEXTALIGN type="Desc">
+			<HALIGN>LEFT</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<FONT type="Title"></FONT>
+		<FONT type="Desc"></FONT>
+		<POPUPSOUND type="Hidden">Pop_up_Hidden_Achievement</POPUPSOUND>
+		<POPUPSOUND type="Complete">Pop_up_Complete_Achievement</POPUPSOUND>
+	</ZACHIEVEMENTPOPUP>
+
+<!-- END - AchievementPopup -->
+	
+</XML>

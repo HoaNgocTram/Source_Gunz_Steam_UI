@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="TopFrame">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<FRAME item="PersistentTopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- ===== Logo ===== -->
+	<PICTURE item="Logo" parent="PersistentTopFrame">
+		<BOUNDS>
+			<X>35</X>
+			<Y>13</Y>
+			<W>55</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Logo.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- ===== Vạch khói ===== -->
+	<PICTURE item="CharSelectionBG" parent="PersistentTopFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>191</OPACITY>
+		<STRETCH/>
+		<BITMAP>MenuBar.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- ===== Thanh nav chính ===== -->
+	<BUTTON item="CharSelectionCaller" parent="PersistentTopFrame">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>100</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<CHECK>true</CHECK>
+		<TEXT>HideOut</TEXT>
+	</BUTTON>
+
+	<BUTTON item="PlayCaller" parent="PersistentTopFrame">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>160</X>
+			<Y>0</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Play</TEXT>
+	</BUTTON>
+
+	<BUTTON item="ShopCaller" parent="PersistentTopFrame">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Shop</TEXT>
+	</BUTTON>
+
+	<BUTTON item="EquipmentCaller" parent="PersistentTopFrame">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>260</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Inventory</TEXT>
+	</BUTTON>
+
+	<BUTTON item="EventCaller" parent="PersistentTopFrame">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>320</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Event</TEXT>
+	</BUTTON>
+
+	<!-- ===== Icon tiền tệ ===== -->
+	<PICTURE item="Lobby_HideOutCash" parent="PersistentTopFrame">
+		<BOUNDS>
+			<X>415</X>
+			<Y>26</Y>
+			<W>10</W>
+			<H>13</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PurchaseGoodsIcon_C.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="Lobby_HideOutLC" parent="PersistentTopFrame">
+		<BOUNDS>
+			<X>465</X>
+			<Y>26</Y>
+			<W>10</W>
+			<H>13</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PurchaseGoodsIcon_ZC.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="Lobby_HideOutBP" parent="PersistentTopFrame">
+		<BOUNDS>
+			<X>520</X>
+			<Y>26</Y>
+			<W>10</W>
+			<H>13</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PurchaseGoodsIcon_BT.png</BITMAP>
+	</PICTURE>
+
+	<!-- ===== Số tiền ===== -->
+	<LABEL item="Lobby_PlayerSpecCash" parent="PersistentTopFrame">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>428</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+
+	<LABEL item="Lobby_PlayerSpecMD" parent="PersistentTopFrame">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>477</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+	</LABEL>
+
+	<LABEL item="Lobby_PlayerSpecBP" parent="PersistentTopFrame">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>533</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	
+
+	
+	
+	
+	<!-- ===== Nút góc phải ===== -->
+	<BMBUTTON item="ChatCaller" parent="PersistentTopFrame">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>693</X>
+			<Y>24</Y>
+			<W>10</W>
+			<H>13</H>
+		</BOUNDS>
+		<BITMAP type="up">MainTop_SocialButtonIconOFF.png</BITMAP>
+		<BITMAP type="over">MainTop_SocialButtonIcon.png</BITMAP>
+		<BITMAP type="down">MainTop_SocialButtonIcon.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="MailCaller" parent="PersistentTopFrame">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>730</X>
+			<Y>24</Y>
+			<W>10</W>
+			<H>11</H>
+		</BOUNDS>
+		<BITMAP type="up">MainTop_Mail_OFF.png</BITMAP>
+		<BITMAP type="over">MainTop_Mail_ON.png</BITMAP>
+		<BITMAP type="down">MainTop_Mail_ON.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="OptionFrame" parent="PersistentTopFrame">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>768</X>
+			<Y>21</Y>
+			<W>14</W>
+			<H>19</H>
+		</BOUNDS>
+		<BITMAP type="up">HideOut_OptionButton.png</BITMAP>
+		<BITMAP type="over">HideOut_OptionButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_OptionButtonOver.png</BITMAP>
+	</BMBUTTON>
+	
+	<!-- 1. FRAME CHỨA TỔNG (KÍCH THƯỚC 150x523) -->
+	<FRAME item="LobbyChatAndPlayerFrame" parent="PersistentTopFrame">
+		<BOUNDS>
+			<X>628</X>
+			<Y>61</Y>
+			<W>150</W>
+			<H>523</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FRAMELOOK>SteamChatCallerFrameLook</FRAMELOOK>
+	</FRAME>
+	
+	<!-- 4 NÚT TAB -->
+	<BUTTON item="LobbyPlayerListTabLobby" parent="LobbyChatAndPlayerFrame">
+		<BUTTONLOOK>SteamChatCallerButtonLook</BUTTONLOOK>
+		<BOUNDS><X>0</X><Y>0</Y><W>50</W><H>30</H></BOUNDS>
+		<TEXT>LOBBY</TEXT>
+	</BUTTON>
+
+	<BUTTON item="LobbyPlayerListTabFriend" parent="LobbyChatAndPlayerFrame">
+		<BUTTONLOOK>SteamChatCallerButtonLook</BUTTONLOOK>
+		<BOUNDS><X>50</X><Y>0</Y><W>50</W><H>30</H></BOUNDS>
+		<TEXT>FRIEND</TEXT>
+	</BUTTON>
+
+	<BUTTON item="LobbyPlayerListTabClan" parent="LobbyChatAndPlayerFrame">
+		<BUTTONLOOK>SteamChatCallerButtonLook</BUTTONLOOK>
+		<BOUNDS><X>100</X><Y>0</Y><W>50</W><H>30</H></BOUNDS>
+		<TEXT>CLAN</TEXT>
+	</BUTTON>
+
+	<BUTTON item="LobbyPlayerListTabChat" parent="LobbyChatAndPlayerFrame">
+		<BUTTONLOOK>SteamChatCallerButtonLook</BUTTONLOOK>
+		<BOUNDS><X>3</X><Y>34</Y><W>144</W><H>24</H></BOUNDS>
+		<TEXT>LOBBY CHAT</TEXT>
+	</BUTTON>
+
+	<!-- 2. FRAME NỘI DUNG 1: DANH SÁCH NGƯỜI CHƠI (BẮT ĐẦU TỪ Y=60 ĐỂ KHÔNG ĐÈ NÚT CHAT) -->
+	<FRAME item="LobbyListFrame" parent="LobbyChatAndPlayerFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>60</Y> <!-- Đã sửa Y từ 26 -> 60 -->
+			<W>146</W>
+			<H>460</H> <!-- Đã giảm H từ 495 -> 460 để vừa khung tổng -->
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+	</FRAME>
+
+	<PLAYERLISTBOX item="LobbyChannelPlayerList" parent="LobbyListFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>460</H>
+		</BOUNDS>
+		<SELECTED>false</SELECTED>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</PLAYERLISTBOX>
+
+	<FRAME item="LobbyPlayerListClanCreateFrame" parent="LobbyChannelPlayerList">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>184</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+	</FRAME>
+
+	<BMBUTTON item="LobbyPlayerListTabClanCreateButton" parent="LobbyPlayerListClanCreateFrame">
+		<BOUNDS>
+			<X>5</X>
+			<Y>65</Y>
+			<W>120</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">new_clan_off.tga</BITMAP>
+		<BITMAP type="over">new_clan_on.tga</BITMAP>
+		<BITMAP type="down">new_clan_on.tga</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<BMBUTTON item="LobbyChannelPlayerListPrev" parent="LobbyListFrame">
+		<BOUNDS>
+			<X>131</X>
+			<Y>130</Y>
+			<W>14</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_PageUp_off.PNG</BITMAP>
+		<BITMAP type="over">LobbyBtn_PageUp_off.PNG</BITMAP>
+		<BITMAP type="down">LobbyBtn_PageUp_on.PNG</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+	<BMBUTTON item="LobbyChannelPlayerListNext" parent="LobbyListFrame">
+		<BOUNDS>
+			<X>131</X>
+			<Y>215</Y>
+			<W>14</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_PageDown_off.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_PageDown_off.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_PageDown_on.png</BITMAP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+
+
+	<!-- 3. FRAME NỘI DUNG 2: KHUNG CHAT (NẰM BẮT ĐẦU TỪ Y=60 ĐÈ CÙNG VỊ TRÍ VỚI LOBBYLISTFRAME) -->
+	<FRAME item="LobbyChatFrame" parent="LobbyChatAndPlayerFrame">
+		<BOUNDS>
+			<X>2</X>
+			<Y>60</Y> <!-- Đã sửa Y từ 26 -> 60 -->
+			<W>146</W>
+			<H>460</H> <!-- Đã giảm H từ 495 -> 460 -->
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+	</FRAME>
+
+	<TEXTAREA item="ChannelChattingOutput" parent="LobbyChatFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>146</W>
+			<H>430</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>50</INDENTATION>
+	</TEXTAREA>
+
+	<EDIT item="ChannelChattingInput" parent="LobbyChatFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>435</Y>
+			<W>146</W>
+			<H>24</H>
+		</BOUNDS>
+		<MAXLENGTH>128</MAXLENGTH>
+	</EDIT>
+
+</XML>

@@ -1,0 +1,51 @@
+[Tue Oct 13 13:07:50 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Tue Oct 13 13:07:50 2026] Release Date : Oct  3 2026
+===========================================================================================
+
+[Tue Oct 13 13:07:50 2026] Match Agent Created (Port:7777)
+[Tue Oct 13 13:07:50 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Tue Oct 13 13:07:50 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Tue Oct 13 13:07:50 2026] MMatchAgent::ConnectToMatchServer END 
+[Tue Oct 13 13:10:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=1
+[Tue Oct 13 13:13:50 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=48
+[Tue Oct 13 13:16:50 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=50
+[Tue Oct 13 13:19:50 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=57
+[Tue Oct 13 13:22:50 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=57
+[Tue Oct 13 13:25:50 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=59
+[Tue Oct 13 13:28:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=59
+[Tue Oct 13 13:31:50 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=59
+[Tue Oct 13 13:34:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=4, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:37:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=5, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:40:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=5, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:43:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=3, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:46:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=2, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:49:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=2, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:52:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=2, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:55:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=2, SessionCount=1, CommandPool=75
+[Tue Oct 13 13:58:50 2026] GARBAGE SESSION CLEANING : ClientCount=4, StageCount=2, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:01:50 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:04:50 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:07:50 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:10:50 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:13:50 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:16:50 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:19:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:22:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:25:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:28:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:31:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:34:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:37:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:40:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:43:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:46:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:49:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:52:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:55:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 14:58:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 15:01:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 15:04:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 15:07:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75
+[Tue Oct 13 15:10:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=75

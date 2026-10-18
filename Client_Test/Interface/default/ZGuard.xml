@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ZGuard">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes"/>
+	
+	<FRAME item="ZGuard">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<PICTURE item="Background" parent="ZGuard">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>zguard.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="ZGuardLogo" parent="ZGuard">
+		<BOUNDS>
+			<X>0</X>
+			<Y>75</Y>
+			<W>800</W>
+			<H>450</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EAC.png</BITMAP>
+	</PICTURE>	
+	
+	<ANIMATION item="Waiting" parent="ZGuard">
+	<PLAYMODE>repetition</PLAYMODE>
+	<ANIMTEMPLATE>LoginConnect</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>380</X>
+			<Y>355</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>true</VISIBLE>
+	</ANIMATION>
+	
+	<LABEL item="Label" parent="ZGuard">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>310</X>
+			<Y>415</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Use of illegal programs in the game has been detected.</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="ZGuard">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>290</X>
+			<Y>560</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>The data was uploaded to the server and the game closes in 5 seconds.</TEXT>
+	</LABEL>
+	
+</XML>

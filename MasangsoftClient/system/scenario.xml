@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML id="scenario">
+  <STANDARD_SCENARIO QL="0" title="Quest Mansion QL0" DC="1" mapset="Mansion" XP="45" BP="17">
+    <MAP dice="1" key_sector="101">
+      <NPCSET_ARRAY>G01/G02/G03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102">
+      <NPCSET_ARRAY>G01/G02/G03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="103">
+      <NPCSET_ARRAY>G01/G02/G03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="105">
+      <NPCSET_ARRAY>G01/G02/G03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="107">
+      <NPCSET_ARRAY>G01/G02/G03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="109">
+      <NPCSET_ARRAY>G01/G02/G03</NPCSET_ARRAY>
+    </MAP>
+  </STANDARD_SCENARIO>
+  <STANDARD_SCENARIO QL="1" title="Quest Mansion QL1" DC="1" mapset="Mansion" XP="112" BP="25">
+    <MAP dice="1" key_sector="101">
+      <NPCSET_ARRAY>G11/G12/G13/G14</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102">
+      <NPCSET_ARRAY>G11/G12/G13/G14</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="103">
+      <NPCSET_ARRAY>G11/G12/G13/G14</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="105">
+      <NPCSET_ARRAY>G11/G12/G13/G14</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="107">
+      <NPCSET_ARRAY>G11/G12/G13/G14</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="109">
+      <NPCSET_ARRAY>G11/G12/G13/G14</NPCSET_ARRAY>
+    </MAP>
+  </STANDARD_SCENARIO>
+  <STANDARD_SCENARIO QL="2" title="Quest Mansion QL2" DC="1" mapset="Mansion" XP="360" BP="60">
+    <MAP dice="1" key_sector="101">
+      <NPCSET_ARRAY>G21/G22/G23/G24/G25</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102">
+      <NPCSET_ARRAY>G21/G22/G23/G24/G25</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="103">
+      <NPCSET_ARRAY>G21/G22/G23/G24/G25</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="105">
+      <NPCSET_ARRAY>G21/G22/G23/G24/G25</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="107">
+      <NPCSET_ARRAY>G21/G22/G23/G24/G25</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="109">
+      <NPCSET_ARRAY>G21/G22/G23/G24/G25</NPCSET_ARRAY>
+    </MAP>
+  </STANDARD_SCENARIO>
+  <STANDARD_SCENARIO QL="3" title="Quest Mansion QL3" DC="1" mapset="Mansion" XP="720" BP="170">
+    <MAP dice="1" key_sector="101">
+      <NPCSET_ARRAY>G31/G32/G33/G34/G35</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102">
+      <NPCSET_ARRAY>G31/G32/G33/G34/G35</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="103">
+      <NPCSET_ARRAY>G31/G32/G33/G34/G35</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="105">
+      <NPCSET_ARRAY>G31/G32/G33/G34/G35</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="107">
+      <NPCSET_ARRAY>G31/G32/G33/G34/G35</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="109">
+      <NPCSET_ARRAY>G31/G32/G33/G34/G35</NPCSET_ARRAY>
+    </MAP>
+  </STANDARD_SCENARIO>
+  <STANDARD_SCENARIO QL="4" title="Quest Mansion QL4" DC="1" mapset="Mansion" XP="1440" BP="250">
+    <MAP dice="1" key_sector="101">
+      <NPCSET_ARRAY>G41/G42/G43/G44/G45</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102">
+      <NPCSET_ARRAY>G41/G42/G43/G44/G45</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="103">
+      <NPCSET_ARRAY>G41/G42/G43/G44/G45</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="105">
+      <NPCSET_ARRAY>G41/G42/G43/G44/G45</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="107">
+      <NPCSET_ARRAY>G41/G42/G43/G44/G45</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="109">
+      <NPCSET_ARRAY>G41/G42/G43/G44/G45</NPCSET_ARRAY>
+    </MAP>
+  </STANDARD_SCENARIO>
+  <STANDARD_SCENARIO QL="5" title="Quest Mansion QL5" DC="1" mapset="Mansion" XP="2880" BP="600">
+    <MAP dice="1" key_sector="101">
+      <NPCSET_ARRAY>G51/G52/G53/G54/G55</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102">
+      <NPCSET_ARRAY>G51/G52/G53/G54/G55</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="103">
+      <NPCSET_ARRAY>G51/G52/G53/G54/G55</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="105">
+      <NPCSET_ARRAY>G51/G52/G53/G54/G55</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="107">
+      <NPCSET_ARRAY>G51/G52/G53/G54/G55</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="109">
+      <NPCSET_ARRAY>G51/G52/G53/G54/G55</NPCSET_ARRAY>
+    </MAP>
+  </STANDARD_SCENARIO>
+  <SPECIAL_SCENARIO id="11" title="Goblin King" QL="1" DC="1" mapset="Mansion" XP="5000" BP="500">
+    <SACRI_ITEM itemid="200008" />
+    <SACRI_ITEM itemid="200018" />
+    <MAP dice="1" key_sector="102" key_npc="16" boss="true">
+      <NPCSET_ARRAY>G61</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="13">
+        <NPC npcid="2011" rate="0.2" />
+        <NPC npcid="2012" rate="0.3" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="2" key_sector="102" key_npc="16" boss="true">
+      <NPCSET_ARRAY>G61</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="13">
+        <NPC npcid="2011" rate="0.2" />
+        <NPC npcid="2012" rate="0.3" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="3" key_sector="102" key_npc="16" boss="true">
+      <NPCSET_ARRAY>G61</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="13">
+        <NPC npcid="2011" rate="0.2" />
+        <NPC npcid="2012" rate="0.3" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="4" key_sector="102" key_npc="16" boss="true">
+      <NPCSET_ARRAY>G61</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="13">
+        <NPC npcid="2011" rate="0.2" />
+        <NPC npcid="2012" rate="0.3" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="5" key_sector="102" key_npc="16" boss="true">
+      <NPCSET_ARRAY>G61</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="13">
+        <NPC npcid="2011" rate="0.2" />
+        <NPC npcid="2012" rate="0.3" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="6" key_sector="102" key_npc="16" boss="true">
+      <NPCSET_ARRAY>G61</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="13">
+        <NPC npcid="2011" rate="0.2" />
+        <NPC npcid="2012" rate="0.3" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+  </SPECIAL_SCENARIO>
+  <SPECIAL_SCENARIO id="12" title="Fake Goblin King" QL="1" DC="1" mapset="Mansion" XP="3000" BP="300">
+    <SACRI_ITEM itemid="200021" />
+    <SACRI_ITEM itemid="200008" />
+    <MAP dice="1" key_sector="102" key_npc="17" boss="true">
+      <NPCSET_ARRAY>G62</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="9">
+        <NPC npcid="2011" rate="0.3" />
+        <NPC npcid="2012" rate="0.2" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="2" key_sector="102" key_npc="17" boss="true">
+      <NPCSET_ARRAY>G62</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="9">
+        <NPC npcid="2011" rate="0.3" />
+        <NPC npcid="2012" rate="0.2" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="3" key_sector="102" key_npc="17" boss="true">
+      <NPCSET_ARRAY>G62</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="9">
+        <NPC npcid="2011" rate="0.3" />
+        <NPC npcid="2012" rate="0.2" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="4" key_sector="102" key_npc="17" boss="true">
+      <NPCSET_ARRAY>G62</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="9">
+        <NPC npcid="2011" rate="0.3" />
+        <NPC npcid="2012" rate="0.2" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="5" key_sector="102" key_npc="17" boss="true">
+      <NPCSET_ARRAY>G62</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="9">
+        <NPC npcid="2011" rate="0.3" />
+        <NPC npcid="2012" rate="0.2" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+    <MAP dice="6" key_sector="102" key_npc="17" boss="true">
+      <NPCSET_ARRAY>G62</NPCSET_ARRAY>
+      <JACO count="2" tick="5" min_npc="0" max_npc="9">
+        <NPC npcid="2011" rate="0.3" />
+        <NPC npcid="2012" rate="0.2" />
+        <NPC npcid="2013" rate="0.2" />
+        <NPC npcid="2014" rate="0.2" />
+        <NPC npcid="2015" rate="0.1" />
+      </JACO>
+    </MAP>
+  </SPECIAL_SCENARIO>
+  <SPECIAL_SCENARIO id="13" title="Thunder Goblin King" QL="1" DC="1" mapset="Mansion" XP="6000" BP="500">
+    <SACRI_ITEM itemid="200009" />
+    <SACRI_ITEM itemid="200018" />
+    <MAP dice="1" key_sector="102" key_npc="18" boss="true">
+      <NPCSET_ARRAY>G63</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102" key_npc="18" boss="true">
+      <NPCSET_ARRAY>G63</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="102" key_npc="18" boss="true">
+      <NPCSET_ARRAY>G63</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="102" key_npc="18" boss="true">
+      <NPCSET_ARRAY>G63</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="102" key_npc="18" boss="true">
+      <NPCSET_ARRAY>G63</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="102" key_npc="18" boss="true">
+      <NPCSET_ARRAY>G63</NPCSET_ARRAY>
+    </MAP>
+  </SPECIAL_SCENARIO>
+  <SPECIAL_SCENARIO id="14" title="Dwarf Goblin King" QL="1" DC="1" mapset="Mansion" XP="6000" BP="500">
+    <SACRI_ITEM itemid="200009" />
+    <SACRI_ITEM itemid="200021" />
+    <MAP dice="1" key_sector="102" key_npc="19" boss="true">
+      <NPCSET_ARRAY>G64</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102" key_npc="19" boss="true">
+      <NPCSET_ARRAY>G64</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="102" key_npc="19" boss="true">
+      <NPCSET_ARRAY>G64</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="102" key_npc="19" boss="true">
+      <NPCSET_ARRAY>G64</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="102" key_npc="19" boss="true">
+      <NPCSET_ARRAY>G64</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="102" key_npc="19" boss="true">
+      <NPCSET_ARRAY>G64</NPCSET_ARRAY>
+    </MAP>
+  </SPECIAL_SCENARIO>
+  <SPECIAL_SCENARIO id="41" title="Captain Pampow" QL="2" DC="1" mapset="Mansion" XP="1800" BP="400">
+    <SACRI_ITEM itemid="200021" />
+    <SACRI_ITEM itemid="200022" />
+    <MAP dice="1" key_sector="102" key_npc="46" boss="true">
+      <NPCSET_ARRAY>P01/P02/P03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="2" key_sector="102" key_npc="46" boss="true">
+      <NPCSET_ARRAY>P01/P02/P03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="3" key_sector="102" key_npc="46" boss="true">
+      <NPCSET_ARRAY>P01/P02/P03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="4" key_sector="102" key_npc="46" boss="true">
+      <NPCSET_ARRAY>P01/P02/P03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="5" key_sector="102" key_npc="46" boss="true">
+      <NPCSET_ARRAY>P01/P02/P03</NPCSET_ARRAY>
+    </MAP>
+    <MAP dice="6" key_sector="102" key_npc="46" boss="true">
+      <NPCSET_ARRAY>P01/P02/P03</NPCSET_ARRAY>
+    </MAP>
+  </SPECIAL_SCENARIO>
+</XML>

@@ -1,0 +1,1655 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Social">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<!-- FRAME : SocialGroup -->
+	<FRAME item="SocialGroup" parent="MainTopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>1500</X>
+			<Y>103</Y>
+			<W>376</W>
+			<H>955</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>true</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<FRAME item="EditClanMarkPage" parent="MainTopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>true</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- Social Group -->
+	<PICTURE item="GlobalSocialPanel" parent="SocialGroup">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>376</W>
+			<H>955</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>SocialBG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- PICTURE : 소셜 로비 패널 -->
+	<FRAME item="GlobalSocialLobbyPanel" parent="GlobalSocialPanel">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>376</W>
+			<H>955</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 소셜 친구 패널 -->
+	<FRAME item="GlobalSocialFriendPanel" parent="GlobalSocialPanel">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>376</W>
+			<H>955</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 소셜 클랜 패널 -->
+	<FRAME item="GlobalSocialClanPanel" parent="GlobalSocialPanel">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>376</W>
+			<H>955</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- ICONBUTTON : 친구 추가 버튼 -->
+	<ICONBUTTON item="GlobalSocialAddFriendButton" parent="GlobalSocialFriendPanel">
+		<FONT>FONTa16</FONT>
+		<BOUNDS>
+			<X>17</X>
+			<Y>70</Y>
+			<W>343</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">AddFriendButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">AddFriendButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">AddFriendButton_Default.png</BITMAP>
+		<BITMAP type="icon" state="base">AddFriendIcon.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>145</R>
+				<G>145</G>
+				<B>148</B>
+			</BASE>	
+			<OVER>
+				<R>145</R>
+				<G>145</G>
+				<B>148</B>
+			</OVER>
+			<DISABLE>
+				<R>145</R>
+				<G>145</G>
+				<B>148</B>
+			</DISABLE>
+		</COLOR>
+		<ICONRECT>
+			<X>153</X>
+			<Y>8</Y>
+			<W>39</W>
+			<H>24</H>
+		</ICONRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ZLABEL : 친구 초대 텍스트 -->
+	<ZMLABEL item="FriendTextLabel" parent="GlobalSocialFriendPanel">
+		<FONT>FONTa16</FONT>
+		<BOUNDS>
+			<X>38</X>
+			<Y>450</Y>
+			<W>300</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT>STR:UI_SOCIAL_FRIEND_TAB_03</LABELTEXT>
+		<COLOR type="font">
+			<R>186</R>
+			<G>186</G>
+			<B>186</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</ZMLABEL>
+	
+	<!-- ACCORDION : 친구 목록 아코디언 -->
+	<ZFRIENDACCORDION item="FriendAccordion" parent="GlobalSocialFriendPanel">
+		<BOUNDS>
+			<X>17</X>
+			<Y>127</Y>
+			<W>343</W>
+			<H>815</H>
+		</BOUNDS>
+		<STRETCH/>
+		<INTERVAL type="header">7</INTERVAL>
+		<INTERVAL type="item">7</INTERVAL>
+		<RECT type="header">
+			<X>3</X>
+			<Y>0</Y>
+			<W>326</W>
+			<H>30</H>
+		</RECT>
+		<RECT type="headerContent">
+			<X>8</X>
+			<Y>8</Y>
+			<W>310</W>
+			<H>15</H>
+		</RECT>
+		<RECT type="headerIcon">
+			<X>286</X>
+			<Y>10</Y>
+			<W>13</W>
+			<H>10</H>
+		</RECT>
+		<RECT type="item">
+			<X>3</X>
+			<Y>0</Y>
+			<W>326</W>
+			<H>56</H>
+		</RECT>
+		<RECT type="itemName">
+			<X>58</X>
+			<Y>9</Y>
+			<W>110</W>
+			<H>17</H>
+		</RECT>
+		<RECT type="itemLocation">
+			<X>58</X>
+			<Y>35</Y>
+			<W>110</W>
+			<H>13</H>
+		</RECT>
+		<RECT type="itemIcon">
+			<X>9</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>40</H>
+		</RECT>
+		<RECT type="itemAcceptBtn">
+			<X>243</X>
+			<Y>14</Y>
+			<W>28</W>
+			<H>28</H>
+		</RECT>
+		<RECT type="itemRejectBtn">
+			<X>286</X>
+			<Y>14</Y>
+			<W>28</W>
+			<H>28</H>
+		</RECT>
+		<RECT type="itemMsgCount">
+			<X>274</X>
+			<Y>16</Y>
+			<W>40</W>
+			<H>20</H>
+		</RECT>
+		<RECT type="ScrollBar">
+			<X>354</X>
+			<Y>127</Y>
+			<W>6</W>
+			<H>811</H>
+		</RECT>
+		<BITMAP type="friendHeader" state="on">FriendStateTab_00.png</BITMAP> 
+		<BITMAP type="header" state="on">FriendStateTab_01.png</BITMAP>
+		<BITMAP type="header" state="over">FriendStateTab_01.png</BITMAP>
+		<BITMAP type="header" state="off">FriendStateTab_01.png</BITMAP>
+		<BITMAP type="headerIcon" state="on">Lobby_FilterListArrow_Down.png</BITMAP>
+		<BITMAP type="headerIcon" state="off">Lobby_FilterListArrow_Up.png</BITMAP>
+		<BITMAP type="friendRequestBg" state="on">FriendRequestBG.png</BITMAP>
+		<BITMAP type="itemAccept" state="on">FriendAcceptButton_Default.png</BITMAP>
+		<BITMAP type="itemAccept" state="over">FriendAcceptButton_Over.png</BITMAP>
+		<BITMAP type="itemReject" state="on">FriendRefuseButton_Default.png</BITMAP>
+		<BITMAP type="itemReject" state="over">FriendRefuseButton_Over.png</BITMAP>
+		<BITMAP type="itemMsgCount" state="on">GoodsSale.png</BITMAP>
+		<COLOR type="header" part="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="font" state="on">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="font" state="off">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="itemMsgCount">
+			<R>1</R>
+			<G>1</G>
+			<B>1</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="scrollbar" part="background">
+			<R>64</R>
+			<G>62</G>
+			<B>62</B>
+		</COLOR>
+		<COLOR type="scrollbar" part="handle">
+			<R>148</R>
+			<G>145</G>
+			<B>145</B>
+		</COLOR>
+		<FONT type="header">FONTa11</FONT>
+		<FONT type="item">FONTa12</FONT>
+		<ADDHEADER>
+			<FILTERNAME>STR:UI_SOCIAL_FRIEND_TAB_07</FILTERNAME>  		<!-- 친구신청 -->
+			<FILTERTYPE>FRIEND_REQUEST</FILTERTYPE> 				 	<!-- 친구신청 -->
+		</ADDHEADER>
+		<ADDHEADER>
+			<FILTERNAME>STR:UI_SOCIAL_FRIEND_TAB_08</FILTERNAME>  		<!-- 온라인 -->
+			<FILTERTYPE>FRIEND_ONLINE</FILTERTYPE>  					<!-- 온라인 -->
+		</ADDHEADER>
+		<ADDHEADER>  
+			<FILTERNAME>STR:UI_SOCIAL_FRIEND_TAB_09</FILTERNAME>  		<!-- 오프라인 -->
+			<FILTERTYPE>FRIEND_OFFLINE</FILTERTYPE>  					<!-- 오프라인 -->
+		</ADDHEADER>
+		<VISIBLE>false</VISIBLE>
+	</ZFRIENDACCORDION> 
+	
+	<!-- ZCLANACCORDION : 클랜 목록 아코디언 -->
+	<ZCLANACCORDION item="ClanAccordion" parent="GlobalSocialClanPanel">
+		<BOUNDS>
+			<X>17</X>
+			<Y>127</Y>
+			<W>343</W>
+			<H>815</H>
+		</BOUNDS>
+		<STRETCH/>
+		<INTERVAL type="header">7</INTERVAL>
+		<INTERVAL type="item">7</INTERVAL>
+		<RECT type="header">
+			<X>3</X>
+			<Y>0</Y>
+			<W>326</W>
+			<H>30</H>
+		</RECT>
+		<RECT type="headerContent">
+			<X>8</X>
+			<Y>8</Y>
+			<W>310</W>
+			<H>15</H>
+		</RECT>
+		<RECT type="headerIcon">
+			<X>286</X>
+			<Y>10</Y>
+			<W>13</W>
+			<H>10</H>
+		</RECT>
+		<RECT type="item">
+			<X>3</X>
+			<Y>0</Y>
+			<W>326</W>
+			<H>56</H>
+		</RECT>
+		<RECT type="itemName">
+			<X>58</X>
+			<Y>9</Y>
+			<W>110</W>
+			<H>17</H>
+		</RECT>
+		<RECT type="itemLocation">
+			<X>58</X>
+			<Y>35</Y>
+			<W>110</W>
+			<H>13</H>
+		</RECT>
+		<RECT type="itemRole">
+			<X>225</X>
+			<Y>17</Y>
+			<W>70</W>
+			<H>20</H>
+		</RECT>
+		<RECT type="itemIcon">
+			<X>9</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>40</H>
+		</RECT>
+		<RECT type="ScrollBar">
+			<X>354</X>
+			<Y>127</Y>
+			<W>6</W>
+			<H>811</H>
+		</RECT>
+		<BITMAP type="header" state="on">FriendStateTab_01.png</BITMAP>
+		<BITMAP type="header" state="over">FriendStateTab_01.png</BITMAP>
+		<BITMAP type="header" state="off">FriendStateTab_01.png</BITMAP>
+		<BITMAP type="headerIcon" state="on">Lobby_FilterListArrow_Down.png</BITMAP>
+		<BITMAP type="headerIcon" state="off">Lobby_FilterListArrow_Up.png</BITMAP>
+		<BITMAP type="item" state="bg">FriendRequestBG.png</BITMAP>
+		<COLOR type="header" part="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="font" state="on">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="font" state="off">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="font" state="offline">
+			<R>112</R>
+			<G>112</G>
+			<B>112</B>
+		</COLOR>
+		<COLOR type="item" part="name">
+			<R>186</R>
+			<G>186</G>
+			<B>186</B>
+		</COLOR>
+		<COLOR type="item" part="location">
+			<R>50</R>
+			<G>175</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="role">
+			<R>186</R>
+			<G>186</G>
+			<B>186</B>
+		</COLOR>
+		<COLOR type="scrollbar" part="background">
+			<R>64</R>
+			<G>62</G>
+			<B>62</B>
+		</COLOR>
+		<COLOR type="scrollbar" part="handle">
+			<R>148</R>
+			<G>145</G>
+			<B>145</B>
+		</COLOR>
+		<FONT type="header">FONTa11</FONT>
+		<FONT type="itemName">FONTa12</FONT>
+		<FONT type="itemLocation">FONTa12</FONT>
+		<FONT type="itemRole">FONTa12</FONT>
+		<ADDHEADER>   		<!-- 클랜 온라인 -->
+			<FILTERNAME>STR:UI_SOCIAL_COMMON_CAPTION_01</FILTERNAME>  	
+			<FILTERTYPE>CLAN_ONLINE</FILTERTYPE> 				 		
+		</ADDHEADER>
+		<ADDHEADER>   		<!-- 클랜 오프라인 -->
+			<FILTERNAME>STR:UI_SOCIAL_COMMON_CAPTION_02</FILTERNAME>
+			<FILTERTYPE>CLAN_OFFLINE</FILTERTYPE> 				 	
+		</ADDHEADER>
+		<VISIBLE>false</VISIBLE>
+	</ZCLANACCORDION> 
+	
+	<!-- ZLABEL : 클랜 생성 텍스트 -->
+	<ZMLABEL item="ClanTextLabel" parent="GlobalSocialClanPanel">
+		<FONT>FONTa16</FONT>
+		<BOUNDS>
+			<X>38</X>
+			<Y>450</Y>
+			<W>300</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT>STR:UI_SOCIAL_CLAN_TAB_02</LABELTEXT>
+		<COLOR type="font">
+			<R>186</R>
+			<G>186</G>
+			<B>186</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</ZMLABEL>
+	
+	<!-- ICONBUTTON : 클랜 생성 버튼 -->
+	<ICONBUTTON item="GlobalSocialCreateClanButton" parent="GlobalSocialClanPanel">
+		<FONT>FONTb16</FONT>
+		<BOUNDS>
+			<X>17</X>
+			<Y>70</Y>
+			<W>343</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">ClanInfoButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">ClanInfoButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">ClanInfoButton_Default.png</BITMAP>
+		<BITMAP type="icon" state="base">CreateClanIcon.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>118</R>
+				<G>119</G>
+				<B>124</B>
+			</BASE>	
+			<OVER>
+				<R>145</R>
+				<G>145</G>
+				<B>148</B>
+			</OVER>
+			<DISABLE>
+				<R>145</R>
+				<G>145</G>
+				<B>148</B>
+			</DISABLE>
+		</COLOR>
+		<ICONRECT>
+			<X>153</X>
+			<Y>8</Y>
+			<W>39</W>
+			<H>24</H>
+		</ICONRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ICONBUTTON : 클랜 채팅 버튼 -->
+	<ICONBUTTON item="ClanChatJoinButton" parent="GlobalSocialClanPanel">
+		<BOUNDS>
+			<X>319</X>
+			<Y>70</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">BackButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">BackButton_Over.png</BITMAP>
+		<BITMAP type="icon" state="base">ChatClanIcon.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>118</R>
+				<G>119</G>
+				<B>124</B>
+				<ALPHA>255</ALPHA>
+			</BASE>
+			<OVER>
+				<R>118</R>
+				<G>119</G>
+				<B>124</B>
+				<ALPHA>255</ALPHA>
+			</OVER>
+			<DOWN>
+				<R>118</R>
+				<G>119</G>
+				<B>124</B>
+				<ALPHA>255</ALPHA>
+			</DOWN>
+		</COLOR>
+		<ICONRECT>
+			<X>10</X>
+			<Y>10</Y>
+			<W>20</W>
+			<H>20</H>
+		</ICONRECT>
+		<ICONRATIO>1.0</ICONRATIO>
+		<VISIBLE>false</VISIBLE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ICONBUTTON : 클랜 아이콘 -->
+	<PICTURE item="ClanSocialMarkBG" parent="GlobalSocialClanPanel">
+		<BOUNDS>
+			<X>17</X>
+			<Y>70</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="background" state="base">ClanMark_Test01.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="ClanSocialMark" parent="GlobalSocialClanPanel">
+		<BOUNDS>
+			<X>27</X>
+			<Y>80</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="background" state="base">ClanMark_Test01.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- ZLABEL : 클랜 라벨 텍스트 -->
+	<ZMLABEL item="ClanNameLabel" parent="GlobalSocialClanPanel">
+		<FONT>FONTa8</FONT>
+		<BOUNDS>
+			<X>57</X>
+			<Y>70</Y>
+			<W>263</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR type="font">
+			<R>171</R>
+			<G>171</G>
+			<B>171</B>
+		</COLOR>
+		<COLOR type="bg">
+			<R>50</R>
+			<G>52</G>
+			<B>58</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<VISIBLE>false</VISIBLE>
+	</ZMLABEL>
+	
+	<!-- PANEL : 클랜 정보 버튼 패널 -->
+	<PICTURE item="ClanInfoButtonPanel" parent="GlobalSocialClanPanel">
+		<BOUNDS>
+			<X>8</X>
+			<Y>880</Y>
+			<W>360</W>
+			<H>68</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>40</R>
+			<G>42</G>
+			<B>50</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- ICONBUTTON : 클랜 정보 버튼 -->
+	<ICONBUTTON item="ClanInfoButton" parent="GlobalSocialClanPanel">
+		<FONT>FONTb16</FONT>
+		<BOUNDS>
+			<X>20</X>
+			<Y>891</Y>
+			<W>336</W>
+			<H>44</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">ClanInfoButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">ClanInfoButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">ClanInfoButton_Default.png</BITMAP>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_SOCIAL_CLAN_TAB_07</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>336</W>
+			<H>44</H>
+		</TEXTRECT>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<VISIBLE>false</VISIBLE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- PANEL : 클랜 정보 패널 -->
+	<PICTURE item="ClanSocialInfoPanel" parent="GlobalSocialClanPanel">
+		<BOUNDS>
+			<X>8</X>
+			<Y>559</Y>
+			<W>360</W>
+			<H>317</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ClanInfoBG.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- PICTURE : 클랜 정보창 클랜 마크 (배경) -->
+	<ZPICTURE item="ClanInfoIconBG" parent="ClanSocialInfoPanel">
+		<BOUNDS>
+			<X>128</X>
+			<Y>17</Y>
+			<W>100</W>
+			<H>100</H>
+		</BOUNDS>
+		<STRETCH/>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<OUTLINECOLOR>
+			<R>71</R>
+			<G>68</G>
+			<B>64</B>
+			<ALPHA>128</ALPHA>
+		</OUTLINECOLOR>		
+	</ZPICTURE>	
+	
+	<!-- PICTURE : 클랜 정보창 클랜 마크 (아이콘) -->
+	<PICTURE item="ClanInfoIcon" parent="ClanSocialInfoPanel">
+		<BOUNDS>
+			<X>138</X>
+			<Y>27</Y>
+			<W>80</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- ZLABEL : 클랜 역할 이름 텍스트 -->
+	<ZMLABEL item="ClanRoleNameTextLabel" parent="ClanSocialInfoPanel">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>20</X>
+			<Y>135</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT></LABELTEXT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<LABELTEXT>Clan Master</LABELTEXT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<VISIBLE>true</VISIBLE>
+	</ZMLABEL>
+	
+	
+	<!-- ZLABEL : 클랜 승패 텍스트 -->
+	<ZMLABEL item="ClanWinLoseTextLabel" parent="ClanSocialInfoPanel">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>20</X>
+			<Y>170</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT>STR:UI_SOCIAL_CLAN_TAB_08</LABELTEXT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<VISIBLE>true</VISIBLE>
+	</ZMLABEL>
+	
+	<!-- ZLABEL : 클랜 포인트 텍스트 -->
+	<ZMLABEL item="ClanPointTextLabel" parent="ClanSocialInfoPanel">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>20</X>
+			<Y>205</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT>STR:UI_SOCIAL_CLAN_TAB_09</LABELTEXT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<VISIBLE>true</VISIBLE>
+	</ZMLABEL>
+	
+	<!-- ZLABEL : 클랜 총 포인트 텍스트 -->
+	<ZMLABEL item="ClanTotalPointTextLabel" parent="ClanSocialInfoPanel">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>20</X>
+			<Y>240</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT>STR:UI_SOCIAL_CLAN_TAB_10</LABELTEXT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<VISIBLE>true</VISIBLE>
+	</ZMLABEL>
+	
+	<!-- ZLABEL : 클랜 랭킹 텍스트 -->
+	<ZMLABEL item="ClanRankTextLabel" parent="ClanSocialInfoPanel">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>20</X>
+			<Y>275</Y>
+			<W>300</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT>STR:UI_SOCIAL_CLAN_TAB_11</LABELTEXT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<VISIBLE>true</VISIBLE>
+	</ZMLABEL>
+	
+	<!-- BMBUTTON : 클랜 마크 수정 버튼 -->
+	<BMBUTTON item="ClanMarkEditButton" parent="ClanSocialInfoPanel">
+		<BOUNDS>
+			<X>234</X>
+			<Y>95</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>			
+		<STRETCH/>
+		<BITMAP type="up">ClanEditButton_Default.png</BITMAP>
+		<BITMAP type="over">ClanEditButton_Over.png</BITMAP>
+		<BITMAP type="down">ClanEditButton_Default.png</BITMAP>		
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>		
+		<VISIBLE>true</VISIBLE>
+	</BMBUTTON>
+	
+	<!-- TABPANEL : 소셜 상단 탭 패널 -->
+	<TABPANEL item="GlobalSocialTabPanel" parent="GlobalSocialPanel">
+		<BOUNDS>
+			<X>8</X>
+			<Y>8</Y>
+			<W>360</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="inform">MissionTabReddot.png</BITMAP>
+		<TAB item="SocialLobbyTab">
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>120</W>
+				<H>52</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>40</X>
+				<Y>20</Y>
+				<W>14</W>
+				<H>14</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>0</ALPHA>
+				</OVER> 
+				<SELECT>
+					<R>40</R>
+					<G>42</G>
+					<B>50</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>199</R>
+					<G>199</G>
+					<B>199</B>
+				</BASE>
+				<OVER>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+			</COLOR>
+			<FONT>FONTa16</FONT>
+			<CONTENT>STR:UI_SOCIAL_LOBBY_TAB_01</CONTENT>
+		</TAB>
+		<TAB item="SocialFriendTab">
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>120</W>
+				<H>52</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>40</X>
+				<Y>20</Y>
+				<W>14</W>
+				<H>14</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>0</ALPHA>
+				</OVER> 
+				<SELECT>
+					<R>40</R>
+					<G>42</G>
+					<B>50</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>199</R>
+					<G>199</G>
+					<B>199</B>
+				</BASE>
+				<OVER>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+			</COLOR>
+			<FONT>FONTa16</FONT>
+			<CONTENT>STR:UI_SOCIAL_FRIEND_TAB_01</CONTENT>
+		</TAB>
+		<TAB item="SocialClanTab">
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>120</W>
+				<H>52</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>40</X>
+				<Y>20</Y>
+				<W>14</W>
+				<H>14</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>0</ALPHA>
+				</OVER> 
+				<SELECT>
+					<R>40</R>
+					<G>42</G>
+					<B>50</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>199</R>
+					<G>199</G>
+					<B>199</B>
+				</BASE>
+				<OVER>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+			</COLOR>
+			<FONT>FONTa16</FONT>
+			<CONTENT>STR:UI_SOCIAL_CLAN_TAB_01</CONTENT>
+		</TAB>
+		<TABSPACE>0</TABSPACE>
+		<VISIBLE>true</VISIBLE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</TABPANEL>
+	
+	<!-- 소셜 채팅 출력 -->
+	<ZGLOBALCHAT item="GlobalSocialChat" parent="GlobalSocialLobbyPanel">
+		<BOUNDS>
+			<X>17</X>
+			<Y>127</Y>
+			<W>343</W>
+			<H>745</H>
+		</BOUNDS>
+		<STRETCH/>
+		<RECT type="item">
+			<X>0</X>
+			<Y>0</Y>
+			<W>263</W>
+			<H>50</H>
+		</RECT>
+		<RECT type="itemSenderIcon">
+			<X>10</X>
+			<Y>12</Y>
+			<W>40</W>
+			<H>40</H>
+		</RECT>
+		<RECT type="itemSenderText">
+			<X>60</X>
+			<Y>7</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<RECT type="itemContentText">
+			<X>63</X>
+			<Y>27</Y>
+			<W>263</W>
+			<H>80</H>
+		</RECT>
+		<RECT type="scroll">
+			<X>346</X>
+			<Y>119</Y>
+			<W>6</W>
+			<H>745</H>
+		</RECT>
+		<COLOR type="itemSenderNameText">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</SELECT>
+		</COLOR>
+		<COLOR type="itemContentText">
+			<BASE>
+				<R>171</R>
+				<G>171</G>
+				<B>171</B>
+			</BASE>
+			<OVER>
+				<R>171</R>
+				<G>171</G>
+				<B>171</B>
+			</OVER>
+			<SELECT>
+				<R>171</R>
+				<G>171</G>
+				<B>171</B>
+			</SELECT>
+		</COLOR>
+		<COLOR type="itemBackground">
+			<BASE>
+				<R>48</R>
+				<G>49</G>
+				<B>56</B>
+				<ALPHA>0</ALPHA>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>0</ALPHA>
+			</OVER>
+			<SELECT>
+				<R>40</R>
+				<G>42</G>
+				<B>50</B>
+				<ALPHA>255</ALPHA>
+			</SELECT>
+		</COLOR>
+		<COLOR type="scrollBackground">
+			<BASE>
+				<R>64</R>
+				<G>62</G>
+				<B>62</B>
+			</BASE>
+			<OVER>
+				<R>64</R>
+				<G>62</G>
+				<B>62</B>
+			</OVER>
+			<SELECT>
+				<R>64</R>
+				<G>62</G>
+				<B>62</B>
+			</SELECT>
+		</COLOR>
+		<COLOR type="scroll">
+			<BASE>
+				<R>148</R>
+				<G>145</G>
+				<B>145</B>
+			</BASE>
+			<OVER>
+				<R>148</R>
+				<G>145</G>
+				<B>145</B>
+			</OVER>
+			<SELECT>
+				<R>148</R>
+				<G>145</G>
+				<B>145</B>
+			</SELECT>
+		</COLOR>
+		<FONT type="itemSender">FONTa12</FONT>
+		<FONT type="itemContent">FONTa11</FONT>
+		<ITEMGAP>5</ITEMGAP>
+	</ZGLOBALCHAT>
+	
+	<!-- 소셜 로비 채팅 -->
+	<ZGLOBALCHATLIST item="GlobalSocialChatList" parent="GlobalSocialLobbyPanel">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>376</W>
+			<H>955</H>
+		</BOUNDS>
+		<STRETCH/>
+		<RECT type="item">
+			<X>20</X>
+			<Y>127</Y>
+			<W>263</W>
+			<H>80</H>
+		</RECT>
+		<RECT type="itemIcon">
+			<X>10</X>
+			<Y>25</Y>
+			<W>40</W>
+			<H>40</H>
+		</RECT>
+		<RECT type="itemTitle">
+			<X>63</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<RECT type="itemText">
+			<X>13</X>
+			<Y>2</Y>
+			<W>326</W>
+			<H>80</H>
+		</RECT>
+		<RECT type="scroll">
+			<X>346</X>
+			<Y>119</Y>
+			<W>6</W>
+			<H>745</H>
+		</RECT>
+		<RECT type="inputOutbox">
+			<X>8</X>
+			<Y>879</Y>
+			<W>360</W>
+			<H>68</H>
+		</RECT>
+		<RECT type="inputBox">
+			<X>20</X>
+			<Y>891</Y>
+			<W>336</W>
+			<H>44</H>
+		</RECT>
+		<COLOR type="itemBackground">
+			<BASE>
+				<R>48</R>
+				<G>49</G>
+				<B>56</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>40</R>
+				<G>42</G>
+				<B>50</B>
+			</SELECT>
+		</COLOR>
+		<COLOR type="inputOutbox">
+			<BASE>
+				<R>40</R>
+				<G>42</G>
+				<B>50</B>
+			</BASE>
+		</COLOR>
+		<COLOR type="inputBox">
+			<BASE>
+				<R>61</R>
+				<G>62</G>
+				<B>68</B>
+			</BASE>
+		</COLOR>
+		<COLOR type="topBanner">
+			<BASE>
+				<R>48</R>
+				<G>49</G>
+				<B>56</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<SELECT>
+				<R>40</R>
+				<G>42</G>
+				<B>50</B>
+			</SELECT>
+		</COLOR>
+		<BITMAP type="icon">ProfileIconOn_0000.png</BITMAP>
+	</ZGLOBALCHATLIST>
+	
+	<!-- ZEDIT : 로비 채팅바 -->
+	<ZEDIT item="LobbyChatBar" parent="GlobalSocialChatList">
+		<BOUNDS>
+			<X>27</X>
+			<Y>898</Y>
+			<W>323</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<MAXLENGTH>500</MAXLENGTH>
+		<GUIDETEXT>STR:UI_SOCIAL_LOBBY_TAB_03</GUIDETEXT>
+	</ZEDIT>
+	
+	<!-- ZLABEL : 로비 텍스트 -->
+	<ZMLABEL item="LobbyTextLabel" parent="GlobalSocialLobbyPanel">
+		<FONT>FONTa8</FONT>
+		<BOUNDS>
+			<X>17</X>
+			<Y>70</Y>
+			<W>343</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<LABELTEXT>STR:UI_SOCIAL_LOBBY_TAB_02</LABELTEXT>
+		<COLOR type="font">
+			<R>171</R>
+			<G>171</G>
+			<B>171</B>
+		</COLOR>
+		<COLOR type="bg">
+			<R>50</R>
+			<G>52</G>
+			<B>58</B>
+		</COLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</ZMLABEL>
+
+	<!-- ICONBUTTON : 친구 뒤로가기 버튼 -->
+	<ICONBUTTON item="SocialBackToButton" parent="GlobalSocialPanel">
+		<BOUNDS>
+			<X>16</X>
+			<Y>69</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">BackButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">BackButton_Over.png</BITMAP>
+		<BITMAP type="icon" state="base">SlotStepper_LArrow.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>0</ALPHA>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>0</ALPHA>
+			</OVER>
+			<DOWN>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>0</ALPHA>
+			</DOWN>
+		</COLOR>
+		<ICONRECT>
+			<X>15</X>
+			<Y>15</Y>
+			<W>8</W>
+			<H>13</H>
+		</ICONRECT>
+		<ICONRATIO>1.0</ICONRATIO>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- PICTURE : 클랜 마크 수정창 배경 -->
+	<PICTURE item="EditClanMarkImage" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>503</X>
+			<Y>245</Y>
+			<W>914</W>
+			<H>590</H>
+		</BOUNDS>
+		<BITMAP>PurchaseFrame.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<PICTURE item="EditClanMarkImage" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>563</X>
+			<Y>287</Y>
+			<W>794</W>
+			<H>143</H>
+		</BOUNDS>
+		<BITMAP>ClanEditShadow.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- PICTURE : 클랜 마크 수정창 바운더리 -->
+	<PICTURE item="EditClanMarkBoundary" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>960</X>
+			<Y>457</Y>
+			<W>1</W>
+			<H>250</H>
+		</BOUNDS>
+		<BITMAP>PurchaseBoundary.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>	
+	<PICTURE item="EditClanMarkBoundary" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>856</X>
+			<Y>309</Y>
+			<W>1</W>
+			<H>88</H>
+		</BOUNDS>
+		<BITMAP>PurchaseBoundary.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- ZPICTURE : 선택 된 클랜 마크 배경 -->
+	<ZPICTURE item="EditClanMarkSelectedBG" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>577</X>
+			<Y>301</Y>
+			<W>114</W> 
+			<H>114</H>
+		</BOUNDS>		
+		<STRETCH/>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<OUTLINECOLOR>
+			<R>71</R>
+			<G>68</G>
+			<B>64</B>
+			<ALPHA>128</ALPHA>
+		</OUTLINECOLOR>
+	</ZPICTURE> 	
+	
+	<!-- ZPICTURE : 선택 된 클랜 마크 -->
+	<PICTURE item="EditClanMarkSelectedMark" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>589</X>
+			<Y>313</Y>
+			<W>90</W> 
+			<H>90</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- LABEL : Emblem -->
+	<LABEL item="EditClanMark_Text1" parent="EditClanMarkPage">
+		<FONT>FONTa13b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>734</X>
+			<Y>301</Y>
+			<W>122</W>
+			<H>57</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:CLAN_MARK_EDIT_01</TEXT>
+	</LABEL>
+		
+	<!-- LABEL : Background -->
+	<LABEL item="EditClanMark_Text2" parent="EditClanMarkPage">
+		<FONT>FONTa13b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>734</X>
+			<Y>357</Y>
+			<W>122</W>
+			<H>57</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:CLAN_MARK_EDIT_02</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : Emblem Name-->
+	<LABEL item="EditClanMark_Name1" parent="EditClanMarkPage">
+		<FONT>FONTa13b</FONT>
+		<TEXTCOLOR>
+			<R>103</R>
+			<G>181</G>
+			<B>191</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>884</X>
+			<Y>301</Y>
+			<W>300</W>
+			<H>57</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- LABEL : Background Name-->
+	<LABEL item="EditClanMark_Name2" parent="EditClanMarkPage">
+		<FONT>FONTa13b</FONT>
+		<TEXTCOLOR>
+			<R>103</R>
+			<G>181</G>
+			<B>191</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>884</X>
+			<Y>357</Y>
+			<W>300</W>
+			<H>57</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- PICTURE : 클랜 마크 텍스트 배경 -->
+	<PICTURE item="EditClanCaution" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>563</X>
+			<Y>750</Y>
+			<W>19</W>
+			<H>19</H>
+		</BOUNDS>
+		<BITMAP>ClanEditCaution.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- LABEL : 경고 문구 -->
+	<LABEL item="EditClanMark_Text3" parent="EditClanMarkPage">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>85</G>
+			<B>83</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>588</X>
+			<Y>737</Y>
+			<W>364</W>
+			<H>46</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:CLAN_MARK_EDIT_03</TEXT>
+	</LABEL>
+	
+	<!-- PICTURE : 클랜 마크 텍스트 배경 -->
+	<PICTURE item="EditClanMarkTextBG" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>563</X>
+			<Y>457</Y>
+			<W>362</W>
+			<H>19</H>
+		</BOUNDS>
+		<BITMAP>PurchaseInfo.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- PICTURE : 클랜 마크 배경 텍스트 배경 -->
+	<PICTURE item="EditClanMarkBGTextBG" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>1007</X>
+			<Y>457</Y>
+			<W>362</W>
+			<H>19</H>
+		</BOUNDS>
+		<BITMAP>PurchaseInfo.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- PICTURE : 클랜 마크 텍스트 -->
+	<LABEL item="EditClanMarkText" parent="EditClanMarkPage">
+		<FONT>FONTa11b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>572</X>
+			<Y>457</Y>
+			<W>300</W>
+			<H>19</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:CLAN_MARK_EDIT_01</TEXT>
+	</LABEL>
+	
+	<!-- PICTURE : 클랜 마크 배경 텍스트 -->
+	<LABEL item="EditClanMarkBGText" parent="EditClanMarkPage">
+		<FONT>FONTa11b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1016</X>
+			<Y>457</Y>
+			<W>300</W>
+			<H>19</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:CLAN_MARK_EDIT_02</TEXT>
+	</LABEL>
+	
+	<!-- BMBUTTON : 클랜 마크 수정 적용 버튼 -->	
+	<ICONBUTTON item="ClanMarkEditApplyButton" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>926</X>
+			<Y>736</Y>
+			<W>205</W>
+			<H>49</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">ClanEditApplyButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">ClanEditApplyButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="down">ClanEditApplyButton_Default.png</BITMAP>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>205</W>
+			<H>49</H>
+		</TEXTRECT>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<FONT>FONTa18b</FONT>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_EQUIPMENT_30</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- BMBUTTON : 클랜 마크 수정 취소 버튼 -->	
+	<ICONBUTTON item="ClanMarkEditCancelButton" parent="EditClanMarkPage">
+		<BOUNDS>
+			<X>1154</X>
+			<Y>736</Y>
+			<W>205</W>
+			<H>49</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">ClanEditCancelButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">ClanEditCancelButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="down">ClanEditCancelButton_Default.png</BITMAP>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>205</W>
+			<H>49</H>
+		</TEXTRECT>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<FONT>FONTa18b</FONT>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LOBBY_05</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- SOCIALCLANMARKLISTBOX : 클랜 마크 리스트 박스 -->
+	<SOCIALCLANMARKLISTBOX item="ClanMarkListBox" parent="EditClanMarkPage">
+		<LISTBOXLOOK>SocialClanMarkListBoxLook</LISTBOXLOOK>
+		<THUMBLOOK>EditClanMarkRenewalThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>556</X>
+			<Y>488</Y>
+			<W>382</W>
+			<H>221</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<ITEMSPACE>6</ITEMSPACE>
+		<ITEMSPACEH>6</ITEMSPACEH>
+		<ROWNUM>2.5</ROWNUM>
+		<NUMCOLUMN>4</NUMCOLUMN>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<VIGNETTEBITMAP>ListVignetteEffect_ClanMark.png</VIGNETTEBITMAP>
+		<VIGNETTEHEIGHT>30</VIGNETTEHEIGHT>
+	</SOCIALCLANMARKLISTBOX>
+	
+	<!-- SOCIALCLANMARKLISTBOX : 클랜 마크 배경 리스트 박스 -->
+	<SOCIALCLANMARKLISTBOX item="ClanMarkBGListBox" parent="EditClanMarkPage">
+		<LISTBOXLOOK>SocialClanMarkListBoxLook</LISTBOXLOOK>
+		<THUMBLOOK>EditClanMarkRenewalThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>1000</X>
+			<Y>488</Y>
+			<W>382</W>
+			<H>221</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<ITEMSPACE>6</ITEMSPACE>
+		<ITEMSPACEH>6</ITEMSPACEH>
+		<ROWNUM>2.5</ROWNUM>
+		<NUMCOLUMN>4</NUMCOLUMN>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<VIGNETTEBITMAP>ListVignetteEffect_ClanMark.png</VIGNETTEBITMAP>
+		<VIGNETTEHEIGHT>30</VIGNETTEHEIGHT>
+	</SOCIALCLANMARKLISTBOX>
+</XML>

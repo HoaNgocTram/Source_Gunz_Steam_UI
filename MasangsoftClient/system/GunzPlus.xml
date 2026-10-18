@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <GUNZPLUS id="1" name="gunzplus" visible="1" price="1000" duration_hour="720" buy_bonus_optimite="100" first_buy_reward_type="item" first_buy_reward_amount="1" first_buy_reward_item_id="90000" first_buy_reward_rent_hour_period="0" xp_bonus="10" bp_bonus="10">
+    <PLAYTIME playtime_gap="1800" playtime_reward_type="eventcash" playtime_reward_amount="50" playtime_reward_item_id="0" playtime_reward_rent_hour_period="0" />
+    <PLAYTIME playtime_gap="3600" playtime_reward_type="optimite" playtime_reward_amount="15" playtime_reward_item_id="0" playtime_reward_rent_hour_period="0" />
+  </GUNZPLUS>
+</XML>

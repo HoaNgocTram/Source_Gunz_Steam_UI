@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <EVENTSHOPMISSIONREWARD event_id="1" mission_type="event_daily">
+    <BOUNTY bounty="100" />
+    <ITEM itemid="6300000" itemcount="5" renthourperiod="0" rewarditemtype="character" />
+  </EVENTSHOPMISSIONREWARD>
+  <EVENTSHOPMISSIONREWARD event_id="1" mission_type="event_weekly">
+    <BOUNTY bounty="500" />
+    <ITEM itemid="6300000" itemcount="15" renthourperiod="0" rewarditemtype="character" />
+  </EVENTSHOPMISSIONREWARD>
+  <EVENTSHOPMISSIONREWARD event_id="1" mission_type="event_fixed">
+    <ITEM itemid="6110074" itemcount="1" renthourperiod="0" rewarditemtype="character" />
+    <ITEM itemid="6100117" itemcount="1" renthourperiod="0" rewarditemtype="character" />
+  </EVENTSHOPMISSIONREWARD>
+</XML>

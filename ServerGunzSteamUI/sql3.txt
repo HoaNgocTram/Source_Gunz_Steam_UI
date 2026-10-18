@@ -1,0 +1,50 @@
+This key codes are allowed
+
+[SIZE=-1]0048 = 0 [/SIZE][SIZE=-1]0049 = 1 [/SIZE]
+[SIZE=-1]0050 = 2 [/SIZE][SIZE=-1]0051 = 3 [/SIZE]
+[SIZE=-1]0052 = 4 [/SIZE][SIZE=-1]0053 = 5 [/SIZE]
+[SIZE=-1]0054 = 6 [/SIZE][SIZE=-1]0055 = 7 [/SIZE]
+[SIZE=-1]0056 = 8 [/SIZE][SIZE=-1]0057 = 9 [/SIZE]
+[SIZE=-1]0058 = : [/SIZE][SIZE=-1]0059 = ; [/SIZE]
+[SIZE=-1]0060 = < [/SIZE][SIZE=-1]0061 = = [/SIZE]
+[SIZE=-1]0062 = > [/SIZE][SIZE=-1]0063 = ? [/SIZE]
+[SIZE=-1]0064 = @ [/SIZE][SIZE=-1]0065 = A [/SIZE]
+[SIZE=-1]0066 = B [/SIZE][SIZE=-1]0067 = C [/SIZE]
+[SIZE=-1]0068 = D [/SIZE][SIZE=-1]0069 = E [/SIZE]
+[SIZE=-1]0070 = F [/SIZE][SIZE=-1]0071 = G [/SIZE]
+[SIZE=-1]0072 = H [/SIZE][SIZE=-1]0073 = I [/SIZE] 
+[SIZE=-1]0074 = J [/SIZE][SIZE=-1]0075 = K [/SIZE]
+[SIZE=-1]0076 = L [/SIZE][SIZE=-1]0077 = M [/SIZE]
+[SIZE=-1]0078 = N [/SIZE][SIZE=-1]0079 = O [/SIZE]
+[SIZE=-1]0080 = P [/SIZE][SIZE=-1]0081 = Q [/SIZE]
+[SIZE=-1]0082 = R [/SIZE][SIZE=-1]0083 = S [/SIZE]
+[SIZE=-1]0084 = T [/SIZE][SIZE=-1]0085 = U [/SIZE]
+[SIZE=-1]0086 = V [/SIZE][SIZE=-1]0087 = W [/SIZE]
+[SIZE=-1]0088 = X [/SIZE][SIZE=-1]0089 = Y [/SIZE]
+[SIZE=-1]0090 = Z [/SIZE][SIZE=-1]0091 = [ [/SIZE]
+[SIZE=-1]0092 = \ [/SIZE][SIZE=-1]0093 = ] [/SIZE]
+[SIZE=-1]0094 = ^ [/SIZE][SIZE=-1]0095 = _ [/SIZE]
+[SIZE=-1]0096 = ` [/SIZE][SIZE=-1]0097 = a [/SIZE]
+[SIZE=-1]0098 = b [/SIZE][SIZE=-1]0099 = c [/SIZE]
+[SIZE=-1]0100 = d [/SIZE][SIZE=-1]0101 = e [/SIZE]
+[SIZE=-1]0102 = f [/SIZE][SIZE=-1]0103 = g [/SIZE]
+[SIZE=-1]0104 = h [/SIZE][SIZE=-1]0105 = i [/SIZE]
+[SIZE=-1]0106 = j [/SIZE][SIZE=-1]0107 = k [/SIZE]
+[SIZE=-1]0108 = l [/SIZE][SIZE=-1]0109 = m [/SIZE]
+[SIZE=-1]0110 = n [/SIZE][SIZE=-1]0111 = o [/SIZE]
+[SIZE=-1]0112 = p [/SIZE][SIZE=-1]0113 = q [/SIZE]
+[SIZE=-1]0114 = r [/SIZE][SIZE=-1]0115 = s [/SIZE]
+[SIZE=-1]0116 = t [/SIZE][SIZE=-1]0117 = u [/SIZE]
+[SIZE=-1]0118 = v [/SIZE][SIZE=-1]0119 = w [/SIZE]
+[SIZE=-1]0120 = x [/SIZE][SIZE=-1]0121 = y [/SIZE]
+[SIZE=-1]0122 = z [/SIZE]
+
+ IF (ASCII(SUBSTRING(@P_String, @V_Position, 1)) >= 48 AND ASCII(SUBSTRING(@P_String, @V_Position, 1)) <= 122 AND ASCII(SUBSTRING(@P_String, @V_Position, 1)) != 94)
+
+spInsertChar
+
+IF  (SELECT dbo.fnCheckString(@Name) as Test)= 1
+	BEGIN 
+	ROLLBACK TRAN
+	return (-1)
+	END 

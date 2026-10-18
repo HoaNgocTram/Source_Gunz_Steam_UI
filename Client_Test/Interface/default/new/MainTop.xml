@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="MainTop">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- Art từ bản Steam, atlas: new/Common_00.png (2048x2048) -->
+
+	<BITMAPALIAS name="MainTop_Shadow.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>0</Y> <W>1996</W> <H>76</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_TabButtonOn.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>76</Y> <W>152</W> <H>75</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_Boundary.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>152</X> <Y>76</Y> <W>1130</W> <H>1</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_Profile.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>151</Y> <W>286</W> <H>56</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_Logo.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>568</X> <Y>151</Y> <W>94</W> <H>40</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_BountyIcon.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>152</X> <Y>127</Y> <W>24</W> <H>24</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_CashIcon.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>176</X> <Y>127</Y> <W>24</W> <H>24</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_ZCoinIcon.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>662</X> <Y>179</Y> <W>23</W> <H>23</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_Mail_ON.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>429</X> <Y>132</Y> <W>25</W> <H>19</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_Mail_OFF.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>404</X> <Y>132</Y> <W>25</W> <H>19</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_SocialButton.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>286</X> <Y>151</Y> <W>94</W> <H>54</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_SocialButtonOver.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>380</X> <Y>151</Y> <W>94</W> <H>54</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_SocialButtonOff.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>474</X> <Y>151</Y> <W>94</W> <H>54</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_SocialButtonIcon.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>200</X> <Y>127</Y> <W>25</W> <H>24</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="MainTop_SocialButtonIconOFF.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>792</X> <Y>77</Y> <W>25</W> <H>24</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="PurchaseGoodsIcon_BT.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>662</X> <Y>105</Y> <W>74</W> <H>74</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="PurchaseGoodsIcon_C.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>736</X> <Y>105</Y> <W>74</W> <H>74</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="PurchaseGoodsIcon_ZC.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>810</X> <Y>105</Y> <W>74</W> <H>74</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="HideOut_OptionButton.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>488</X> <Y>77</Y> <W>34</W> <H>34</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="HideOut_OptionButtonOver.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>522</X> <Y>77</Y> <W>34</W> <H>34</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="Lobby_FilterDefaultButtonOn.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>0</Y> <W>54</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="Lobby_FilterDefaultButtonOver.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>54</X> <Y>0</Y> <W>54</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="Lobby_FilterDefaultButtonOff.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>108</X> <Y>0</Y> <W>54</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="SettingIcon.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>633</X> <Y>260</Y> <W>34</W> <H>34</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="HideOut_QuickStartButtonOn.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>207</Y> <W>374</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="HideOut_QuickStartButtonOver.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>374</X> <Y>207</Y> <W>374</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="HideOut_QuickStartButtonOff.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>748</X> <Y>207</Y> <W>374</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="Lobby_FilterApplyButtonOn.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>60</Y> <W>214</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="Lobby_FilterApplyButtonOver.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>214</X> <Y>60</Y> <W>214</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="Lobby_FilterApplyButtonOff.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>428</X> <Y>60</Y> <W>214</W> <H>60</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="ChatButton_Default.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>57</X> <Y>680</Y> <W>57</W> <H>57</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="ChatButton_Over.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>0</X> <Y>680</Y> <W>57</W> <H>57</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="RoomManagerIcon.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>799</X> <Y>260</Y> <W>19</W> <H>16</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="SlotStepper_LArrow.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>352</X> <Y>137</Y> <W>8</W> <H>13</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="SlotStepper_RArrow.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>360</X> <Y>137</Y> <W>8</W> <H>13</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="SlotStepper_Right.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>700</X> <Y>260</Y> <W>33</W> <H>33</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="SlotStepper_Right_Over.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>667</X> <Y>260</Y> <W>33</W> <H>33</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="SlotStepper_Left.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>766</X> <Y>260</Y> <W>33</W> <H>33</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="SlotStepper_Left_Over.png">
+		<SOURCE>Play_01.png</SOURCE>
+		<BOUNDS> <X>733</X> <Y>260</Y> <W>33</W> <H>33</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="StagePasswordIcon.png">
+		<SOURCE>Inven_00.png</SOURCE>
+		<BOUNDS> <X>765</X> <Y>293</Y> <W>23</W> <H>33</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="StageChatIcon.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>160</X> <Y>84</Y> <W>37</W> <H>36</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RegionPing_Red.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>823</X> <Y>284</Y> <W>16</W> <H>16</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RegionPing_Yellow.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>840</X> <Y>284</Y> <W>16</W> <H>16</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RegionPing_Green.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>857</X> <Y>284</Y> <W>16</W> <H>16</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RegionPing_Unknown.png">
+		<SOURCE>Play_00.png</SOURCE>
+		<BOUNDS> <X>874</X> <Y>284</Y> <W>16</W> <H>16</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="RoomMod_Weapon.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>202</X> <Y>77</Y> <W>50</W> <H>50</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomMod_Physic.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>302</X> <Y>77</Y> <W>50</W> <H>50</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomMod_HPSet.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>885</X> <Y>98</Y> <W>50</W> <H>50</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomMod_Damage.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>936</X> <Y>98</Y> <W>50</W> <H>50</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomMod_Gear.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>252</X> <Y>77</Y> <W>50</W> <H>50</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="RoomMod_Etc.png">
+		<SOURCE>Common_00.png</SOURCE>
+		<BOUNDS> <X>152</X> <Y>77</Y> <W>50</W> <H>50</H> </BOUNDS>
+	</BITMAPALIAS>
+	
+	<BITMAPALIAS name="ScrollArrowUp.png">
+  	<SOURCE>Common_00.png</SOURCE>
+  	<BOUNDS> <X>969</X> <Y>79</Y> <W>12</W> <H>8</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="ScrollArrowDown.png">
+  	<SOURCE>Common_00.png</SOURCE>
+  	<BOUNDS> <X>955</X> <Y>79</Y> <W>12</W> <H>8</H> </BOUNDS>
+	</BITMAPALIAS>
+
+	<BITMAPALIAS name="QuestItemFrame.png">
+  	<SOURCE>Play_04.png</SOURCE>
+  	<BOUNDS> <X>1</X> <Y>223</Y> <W>355</W> <H>224</H> </BOUNDS>
+	</BITMAPALIAS>
+	<BITMAPALIAS name="QuestItemUp.png">
+  	<SOURCE>Play_01.png</SOURCE>
+  	<BOUNDS> <X>0</X> <Y>317</Y> <W>634</W> <H>299</H> </BOUNDS>
+	</BITMAPALIAS>
+
+</XML>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Load">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Lobby 화면 구성
+   
+   Last Update : 29.OCT.2004
+   Editor      : Lim Dong Hwan
+-->
+
+	
+<!-- 프레임 생성 : Lobby -->
+	<FRAME item="Load">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과)-->
+	<PICTURE item="Lobby_MainNormalBG" parent="Load">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Play.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item ="Lobby_BottomBG" parent="Load">
+		<BOUNDS>
+			<X>8</X>
+			<Y>353</Y>
+			<W>784</W>
+			<H>210</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	<PICTURE item="CharSelectionBG" parent="Load">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>191</OPACITY>
+		<STRETCH/>
+		<BITMAP>MenuBar.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<!-- <PICTURE item="Logo" parent="Load">
+		<BOUNDS>
+			<X>35</X>
+			<Y>10</Y>
+			<W>55</W>
+			<H>30</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>191</OPACITY>
+		<STRETCH/>
+		<BITMAP>gunz_logo_hq1.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE> -->
+
+	<BUTTON item="CharSelectionCaller" parent="Load">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>100</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>HideOut</TEXT>
+	</BUTTON>
+	<BUTTON item="CS_SelectChar" parent="Load">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>160</X>
+			<Y>0</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Play</TEXT>
+	</BUTTON>
+	<BUTTON item="ShopCaller" parent="Load">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Shop</TEXT>
+	</BUTTON>
+	<BUTTON item="EquipmentCaller" parent="Load">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>260</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Inventory</TEXT>
+	</BUTTON>
+	<BUTTON item="CharSelectionCaller" parent="Load">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>320</X>
+			<Y>0</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Event</TEXT>
+	</BUTTON>
+
+	<ANIMATION item="Login_ConnectingMsg" parent="Load">
+	<PLAYMODE>repetition</PLAYMODE>
+	<ANIMTEMPLATE>LoginConnect</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<STRETCH/>
+		<VISIBLE>true</VISIBLE>
+	</ANIMATION>
+	
+</XML>

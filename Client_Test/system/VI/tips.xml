@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+
+<!-- Category
+	default = 0 
+	0 - 일반
+	1 - 개인전
+	2 - 팀전
+	3 - 클랜전
+	4 - 왕초보
+	5 - 초보
+	6 - 중수
+	7 - 고수
+
+	MSG태그의 id는 특정한 조건에만 발동될 경우를 위해서 만들어놓음.
+-->
+
+<!-- 일반 -->
+<TIPS category="0">
+	<!-- STATIC TIPS -->
+	<MSG>Nếu bạn có thắc mắc về GunZ, bạn có thể sử dụng chức năng Bàn trợ giúp trên Trang chủ GunZ.</MSG>
+	<MSG>Bạn có thể xem lại bản ghi bằng cách nhấp đúp vào các file replay trong .../My Documents/Gunz/Replay.</MSG>
+	<MSG>Nhấn phím F11 để bắt đầu ghi file replay. Nhấn F11 lần nữa để dừng ghi.</MSG>
+	<MSG>Bạn có thể xem file replay bằng cách chọn "Replay" trong Sảnh chính.</MSG>
+	<MSG>Ảnh chụp màn hình được lưu trong .../My Documents/Gunz The Duel/Screenshots.</MSG>
+	<MSG>Tham gia một bang hội ngay bây giờ để trải nghiệm Trận chiến bang hội!</MSG>
+	<MSG>Nhấn phím F12 để chụp ảnh màn hình.</MSG>
+	<MSG>Giới thiệu GunZ với bạn bè của bạn. Cùng nhau, các bạn có thể tạo một bang hội.</MSG>
+	<MSG>Tất cả vật phẩm trả phí có thể được chia sẻ qua "Kho" với mọi nhân vật trong cùng tài khoản.</MSG>
+	<MSG>Bạn sử dụng bộ định tuyến? Hãy thử chuyển tiếp cổng để trải nghiệm chơi mạng tối ưu.</MSG>
+	<MSG>Bạn có thể tặng vật phẩm cho bạn bè bằng chức năng tặng quà trên trang web.</MSG>
+	<MSG>GunZ chạy chậm trên máy tính của bạn? Sử dụng tính năng tối ưu hóa trong menu Tùy chọn.</MSG>
+	<MSG>Bạn có thể sử dụng chức năng "Chơi ngay" để nhanh chóng tham gia một trò chơi.</MSG>
+	<MSG>Không bao giờ cung cấp mật khẩu cho bất kỳ ai. Quản trị viên sẽ không bao giờ hỏi mật khẩu của bạn.</MSG>
+	<MSG>Các vật phẩm trả phí mua trong cửa hàng vật phẩm sẽ xuất hiện trong "Kho" của bạn.</MSG>
+	<MSG>Các vật phẩm tiền thưởng (Bounty) không thể chia sẻ với các nhân vật khác qua "Kho".</MSG>
+	<MSG>Sử dụng chế độ luyện tập để rèn luyện kỹ năng mà không mất điểm kinh nghiệm.</MSG>
+	<MSG>Sử dụng lệnh trò chuyện '/r' để trả lời nhanh một tin nhắn thì thầm.</MSG>
+	<MSG>Nếu bạn có nhân vật cấp 21, bạn không thể vào Kênh nhập môn hoặc Kênh dành cho người mới với bất kỳ nhân vật nào khác.</MSG>
+
+	<!-- GM Message -->
+	<MSG>Bất kỳ ID trò chơi nào gây xúc phạm người khác sẽ bị hạn chế.</MSG>
+	<MSG>Bất kỳ ai xúc phạm người khác trong trò chơi sẽ bị đội vận hành trừng phạt.</MSG>
+
+	<!-- 새로 추가 -->
+	<MSG>Nếu bạn phòng thủ thành công một đòn tấn công cận chiến, bạn có cơ hội thực hiện Đòn đánh mạnh ngay lập tức!</MSG>
+	<MSG>Nhấn phím Ctrl + số bất kỳ trong chế độ quan sát để gán số cho một người chơi.</MSG>
+
+	<!-- 클랜전 전용 -->
+	<MSG>Bạn đã chơi Trận chiến bang hội hấp dẫn chưa? Hãy thử ngay bây giờ!</MSG>
+	<MSG>Trong Trận chiến bang hội, bạn sẽ nhận được kinh nghiệm gấp 1,5 lần. Không mất kinh nghiệm do chênh lệch cấp độ.</MSG>
+</TIPS>    
+
+<!-- 왕초보 -->
+<TIPS category="4">
+	<MSG id="1">Để có độ trễ ổn định, vui lòng chọn máy chủ phản ánh chính xác vị trí địa lý của bạn.</MSG>
+</TIPS>
+
+<!-- 듀얼토너먼트 -->
+<TIPS category="8">
+	<MSG id="1"></MSG>
+</TIPS>
+</XML>

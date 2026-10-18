@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Report">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	
+	<FRAME item="Report">
+		<FRAMELOOK>NormalFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT></TEXT>
+	</FRAME>
+	
+	<PICTURE item="ReportBG" parent="Report">
+		<BOUNDS>
+			<X>531</X>
+			<Y>265</Y>
+			<W>867</W>
+			<H>537</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ReportBG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="ReportTitle" parent="Report">
+		<BOUNDS>
+			<X>914</X>
+			<Y>283</Y>
+			<W>102</W>
+			<H>46</H>
+		</BOUNDS>
+		<FONT>FONTb23b</FONT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPORT_01</TEXT>
+	</LABEL>
+	
+	<ZCOMBOBOX item="ReportTargetName" parent="Report">
+		<LISTBOXLOOK>ReportListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>573</X>
+			<Y>374</Y>
+			<W>358</W>
+			<H>44</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>419</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<ZCOMBOBOX item="ReportType" parent="Report">
+		<LISTBOXLOOK>ReportListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>991</X>
+			<Y>374</Y>
+			<W>358</W>
+			<H>44</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>419</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<LABEL item="ReportDescription" parent="Report">
+		<BOUNDS>
+			<X>579</X>
+			<Y>446</Y>
+			<W>102</W>
+			<H>28</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPORT_02</TEXT>
+	</LABEL>
+
+	<ZEDIT item="ReportContent" parent="Report">		
+		<BOUNDS>
+			<X>573</X>
+			<Y>472</Y>
+			<W>776</W>
+			<H>190</H>
+		</BOUNDS>		
+		<COLOR type="frame">
+			<R>66</R>
+			<G>69</G>
+			<B>71</B>
+			<A>204</A>
+		</COLOR>	
+		<WRAPTEXT/>111
+		<BITMAP type="frame">InvenSort.png</BITMAP>
+		<MAXLENGTH>200</MAXLENGTH>
+		<FONT>FONTa14</FONT>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>14</W>
+			<H>200</H>
+		</TABRECT>
+		<TEXT></TEXT>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</ZEDIT>
+	
+	<BMBUTTON item="Report_Submit" parent="Report">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>573</X>
+			<Y>688</Y>
+			<W>374</W>
+			<H>60</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>STR:UI_CC_15</TEXT> <!-- Submit -->
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOn.png</BITMAP>
+		<FONT>FONTa18b</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Report_Cancel" parent="Report">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>975</X>
+			<Y>688</Y>
+			<W>374</W>
+			<H>60</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>STR:UI_CC_14</TEXT> <!-- Cancel -->
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOn.png</BITMAP>
+		<FONT>FONTa18b</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!--END OF UI XML-->
+</XML>

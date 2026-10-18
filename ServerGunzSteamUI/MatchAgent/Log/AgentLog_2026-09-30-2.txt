@@ -1,0 +1,23 @@
+[Wed Sep 30 09:19:50 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Wed Sep 30 09:19:50 2026] Release Date : Sep 30 2026
+===========================================================================================
+
+[Wed Sep 30 09:19:50 2026] Match Agent Created (Port:7777)
+[Wed Sep 30 09:19:50 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Wed Sep 30 09:19:50 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Wed Sep 30 09:19:50 2026] MMatchAgent::ConnectToMatchServer END 
+[Wed Sep 30 09:22:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=1
+[Wed Sep 30 09:25:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:28:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:31:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:32:38 2026] Agent Local Login (UID:01000, IP:172.82.91.16, Port:50915)
+[Wed Sep 30 09:32:38 2026] Agent Net Clear(UID:01000)
+[Wed Sep 30 09:34:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:37:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:40:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:43:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:46:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:49:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Sep 30 09:52:50 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2

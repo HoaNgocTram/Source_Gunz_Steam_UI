@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <TIPS category="0">
+    <MSG>Disfruta de GunZ: The Duel - Un juego de acción gratuito de por vida.</MSG>
+    <MSG>Si tienes alguna consulta sobre GunZ, puedes usar la función de soporte en la página principal de GunZ.</MSG>
+    <MSG>¿Usas un router? Prueba el reenvío de puertos para experimentar un juego de red optimizado.</MSG>
+    <MSG>¿GunZ funciona lento en tu ordenador? Usa la función de optimización en el menú de opciones.</MSG>
+    <MSG>Puedes usar la función "Jugar ahora" para unirte rápidamente a una partida.</MSG>
+    <MSG>Cuéntales a tus amigos sobre GunZ. Juntos podéis formar un clan.</MSG>
+    <MSG>Los objetos de recompensa no se pueden compartir con otros personajes a través de tu "Almacén".</MSG>
+    <MSG>Usa el modo de entrenamiento para practicar tus habilidades sin perder puntos de experiencia.</MSG>
+    <MSG>Usa el comando de chat '/r' para responder rápidamente a un susurro.</MSG>
+    <MSG>Cualquier ID de juego que pueda ofender a otros será restringido.</MSG>
+    <MSG>Cualquier persona que ofenda a otros dentro del juego estará sujeta a castigo por parte del equipo de operaciones.</MSG>
+    <MSG>Nunca des tu contraseña a nadie. El administrador nunca te pedirá tu contraseña.</MSG>
+    <MSG>No compartas tu contraseña con nadie. No podemos recuperar los daños causados por el hackeo.</MSG>
+    <MSG>Por favor, juega con respeto para asegurar que todos tengan una mejor experiencia de juego.</MSG>
+    <MSG>El principio fundamental de un verdadero maestro es la consideración por los demás.</MSG>
+    <MSG>El uso de hacks, programas ilegales o la explotación de errores resultará en un baneo permanente para todas las cuentas asociadas.</MSG>
+    <MSG>¡Si te defiendes con éxito de un ataque cuerpo a cuerpo, tienes la oportunidad de realizar un ataque masivo de inmediato!</MSG>
+    <MSG>Presiona la tecla Ctrl + cualquier número en el modo observador para asignar un número a un jugador.</MSG>
+  </TIPS>
+  <TIPS category="1">
+    <MSG id="8">Presiona la tecla Ctrl + cualquier número en el modo observador para asignar un número a un jugador.</MSG>
+  </TIPS>
+</XML>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="OverlayAnnounce">
+	<!-- OVERLAYANNOUNCELABEL : 기본 게임 공지사항 -->
+	<OVERLAYANNOUNCELABEL item = "OverlayAnnounce">
+		<FONT>FONTb18b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>660</X>
+			<Y>125</Y>
+			<W>600</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<VISIBLE>false</VISIBLE>
+		<SHIFTSPEED>100</SHIFTSPEED>
+		<INTERVAL>50</INTERVAL>
+	</OVERLAYANNOUNCELABEL>
+	
+	<!-- OVERLAYANNOUNCELABEL : 상점에서 사용할 공지사항 -->
+	<OVERLAYANNOUNCELABEL item = "OverlayAnnounceShop" parent = "Shop">
+		<FONT>FONTb18b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>660</X>
+			<Y>125</Y>
+			<W>600</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<VISIBLE>false</VISIBLE>
+		<SHIFTSPEED>100</SHIFTSPEED>
+		<INTERVAL>50</INTERVAL>
+	</OVERLAYANNOUNCELABEL>
+	
+	<!-- OVERLAYANNOUNCELABEL : 장비창에서 사용할 공지사항 -->
+	<OVERLAYANNOUNCELABEL item = "OverlayAnnounceEquipment" parent = "Equipment">
+		<FONT>FONTb18b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>660</X>
+			<Y>125</Y>
+			<W>600</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<VISIBLE>false</VISIBLE>
+		<SHIFTSPEED>100</SHIFTSPEED>
+		<INTERVAL>50</INTERVAL>
+	</OVERLAYANNOUNCELABEL>
+</XML>

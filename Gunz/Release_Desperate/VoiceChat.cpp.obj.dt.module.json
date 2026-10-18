@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\VoiceChat.obj",
+            "outputs": [
+                "Release_Desperate\\VoiceChat.cpp.obj.dt.module.json",
+                "Release_Desperate\\VoiceChat.cpp.obj.dt.d.json",
+                "Release_Desperate\\Gunz.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

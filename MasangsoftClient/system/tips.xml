@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+
+<!-- Category
+	default = 0 
+	0 - 일반
+	1 - 개인전
+	2 - 팀전
+	3 - 클랜전
+	4 - 왕초보
+	5 - 초보
+	6 - 중수
+	7 - 고수
+
+	MSG태그의 id는 특정한 조건에만 발동될 경우를 위해서 만들어놓음.
+-->
+
+<TIPS category="0">
+	<!--- SEASON TIPS -->
+    <!--- <MSG>챌린저 챔피언쉽 대회! 참여를 위해서는 홈페이지에서 팀을 등록한 후 대회서버에서 게임을 즐겨주세요</MSG> -->
+	
+	<!--- STATIC TIPS -->
+    <MSG>Enjoy GunZ: The Duel - A free-to-play action game for life.</MSG>
+    <MSG>If you have any inquiries about GunZ, you may use the Helpdesk function on the GunZ Main Page.</MSG>
+    <!---<MSG>Press the F11 key to start recording a replay file. Press F11 again to stop recording.</MSG> -->
+    <!---<MSG>You can view a replay by double clicking the replay files located in .../My Documents/Gunz/Replay.</MSG> -->
+    <!---<MSG>Screenshots are saved in .../My Documents/Gunz/Screenshots.</MSG> -->
+    <!--<MSG>지금 클랜전 서버에서 클랜전을 즐기실 수 있습니다. 보다 재미있는 클랜전을 즐기세요!</MSG> <-->
+    <!--<MSG>Press the F12 key to take a screenshot.</MSG> -->
+    <!--<MSG>게임에서 /112(또는 /신고)를 타이핑하시면 최근 채팅내용을 리포트할 수 있습니다. (불량유저신고기능)</MSG> <-->
+    <!--<MSG>캐시아이템은 구입 계정내의 모든 캐릭터가 공유가능합니다.</MSG> <-->
+    <MSG>Do you use a router? Try port forwarding to experience optimized network play.</MSG>
+    <!--<MSG>You can give your friend an item as a present by using the gift function on the webpage.</MSG> -->
+    <MSG>Is GunZ running slow on your computer? Use the optimization feature in the Options menu.</MSG>
+    <MSG>You can use the "Quick Start" function to quickly join a game.</MSG>
+    <MSG>Tell your friends about GunZ. Together you can make a Clan.</MSG>
+    <!--<MSG>홈페이지의 아이템샵에서 구입한 아이템은 "중앙은행"으로 들어갑니다.</MSG> <-->
+    <MSG>Bounty items cannot be shared with other characters through your "Storage".</MSG>
+    <MSG>Use training mode to practice your skills without losing experience points.</MSG>
+    <MSG>Use the chat command '/r' to quickly reply to a whisper.</MSG>
+    <!--<MSG>If you have a level 21 character, you cannot enter the Entry-level or Beginner Channel with any other characters.</MSG> -->
+    <!--<MSG>Press 'V' to show or hide the chat(This key can be reconfigured).</MSG> -->
+	<!--<MSG>온몸을 감싸는 희열. 버서커전을 통해 건즈의 색다른 재미를 느껴보세요.</MSG> 
+	<MSG>퀘스트전. 지금 그 속에서 또 다른 건즈의 세계가 펼쳐집니다.</MSG> <-->
+    
+    <!-- GM Message -->
+    <MSG>Any Game ID that may offend others will be restricted.</MSG>
+    <MSG>Anyone who offends others inside a game will be subject to punishment by the operating team.</MSG>
+    <MSG>Never give your password to anyone. The administrator will never ask you for your password.</MSG>
+	<MSG>Do not share your password with anyone. We cannot recover damages caused by hacking.</MSG>
+	<MSG>Please play respectfully to ensure everyone has a better game experience.</MSG>
+	<MSG>A true master's fundamental principle is consideration for others.</MSG>
+	<MSG>Using hacks, illegal programs, or bug exploitation will result in a permanent ban for all associated accounts.</MSG>
+    
+    <!-- New Insert -->
+    <MSG>If you successfully defend yourself against a melee attack, you have a chance to perform a Massive Strike right away!</MSG>
+    <MSG>Press the Ctrl key+any Number while in observer mode to assign a number to a player.</MSG>
+ 
+    <!-- Clan -->
+    <!--<MSG>숨막히는 클랜전을 해보셨나요? 클랜전을 지금 체험해보세요.</MSG>
+    <MSG>클랜전에서는 경험치 획득량이 1.5배, 레벨차에 의한 경험치 손실량은 없습니다.</MSG> <-->
+</TIPS>
+
+<!-- NEWBI -->
+<TIPS category="4">
+	<!--<MSG id="1">Press F1 during the game to see key explanations.</MSG> -->
+</TIPS>
+
+<!-- Duel tournament -->
+<TIPS category="8">
+	<!--<MSG id="1">듀얼 토너먼트 : 시간 초과시에는 피해를 많이 입힌 유저가 승리하게 됩니다.</MSG> <-->
+</TIPS>
+
+<!-- Blitzkrieg -->
+<TIPS category="9">
+	<!--<MSG id="1">전격전 : 적을 쓰러뜨려 명예를 모은 뒤, F키를 눌러 특권을 획득할 수 있습니다.</MSG>
+	<MSG id="1">전격전 : 적의 건물을 파괴하면 팀 전체가 명예를 얻게 됩니다.</MSG>
+	<MSG id="1">전격전 : 일정 시간마다 특정 지점에 전리품 상자가 생성됩니다. 파괴하면 팀 전체가 명예를 얻습니다.</MSG> <-->
+</TIPS>
+</XML>

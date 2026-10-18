@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="RegionSelectPopup">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	
+	<!-- Frame : RegionSelectPopup -->
+	<FRAME item="RegionSelectPopup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 배경 이미지 -->
+	<PICTURE item="RegionSelectPopup_BackgroundImg" parent="RegionSelectPopup">
+		<BOUNDS>
+			<X>503</X>
+			<Y>245</Y>
+			<W>914</W>
+			<H>590</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PurchaseFrame.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Picture : 제목 아이콘 -->
+	<PICTURE item="RegionSelectPopup_FrameIcon" parent="RegionSelectPopup">
+		<BOUNDS>
+			<X>806</X>
+			<Y>286</Y>
+			<W>34</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RegionFrameIcon.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Label : 제목 -->
+	<LABEL item="RegionSelectPopup_Title" parent="RegionSelectPopup">
+		<FONT>FONTa16b</FONT>
+		<BOUNDS>
+			<X>845</X>
+			<Y>288</Y>
+			<W>240</W>
+			<H>29</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>111</R>
+			<G>153</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REGION_01</TEXT>
+	</LABEL>
+
+	<!-- Picture : 리전 선택 리스트 박스 배경 -->
+	<PICTURE item="RegionListBoxBG" parent="RegionSelectPopup">
+		<BOUNDS>
+			<X>519</X>
+			<Y>354</Y>
+			<W>882</W>
+			<H>238</H>
+		</BOUNDS>
+		<STRETCH/>
+		<OPACITY>77</OPACITY>
+		<BITMAP>RegionNullFrame.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- ZREGIONLISTBOX : 리전선택 리스트박스 -->
+	<ZREGIONLISTBOX item="RegionListBox" parent="RegionSelectPopup">
+		<BOUNDS>
+			<X>664</X>
+			<Y>361</Y>
+			<W>588</W>
+			<H>222</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<ITEMSPACE>0</ITEMSPACE>
+		<ITEMSPACEH>0</ITEMSPACEH>
+		<ROWNUM>5</ROWNUM>
+		<NUMCOLUMN>1</NUMCOLUMN>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ZREGIONLISTBOX>
+	
+	<!-- Label : 리전 정보 안내 라벨 1 -->
+	<LABEL item="RegionSelectPopup_SelectMent" parent="RegionSelectPopup">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>800</X>
+			<Y>622</Y>
+			<W>200</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>179</R>
+			<G>179</G>
+			<B>179</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REGION_03</TEXT>
+	</LABEL>
+
+	<!-- Label : 리전 정보 안내 라벨 2 -->
+	<LABEL item="RegionSelectPopup_SelectRegion" parent="RegionSelectPopup">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>1002</X>
+			<Y>622</Y>
+			<W>180</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>103</R>
+			<G>182</G>
+			<B>189</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>None</TEXT>
+	</LABEL>
+	
+	<!-- Label : 안내문 -->
+	<TEXTAREA item="RegionSelectPopup_Info" parent="RegionSelectPopup">
+		<BOUNDS>
+			<X>693</X>
+			<Y>655</Y>
+			<W>540</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>145</R>
+			<G>150</G>
+			<B>156</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+		<FONT>FONTa12</FONT>
+		<TEXT>STR:UI_REGION_02</TEXT>
+		<SCROLLBAR>false</SCROLLBAR>
+	</TEXTAREA>
+	
+	<!-- BmButton : 저장 버튼 -->
+	<BMBUTTON item="RegionSelect_ConfirmBtn" parent="RegionSelectPopup">
+		<FONT>FONTa18b</FONT>
+		<BOUNDS>
+			<X>692</X>
+			<Y>730</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EquipButton_ON.png</BITMAP>
+		<BITMAP type="over">EquipButton_Over.png</BITMAP>
+		<BITMAP type="down">EquipButton_ON.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_OPTION_APPLY</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- BmButton : 취소 버튼 -->
+	<BMBUTTON item="RegionSelect_CancelBtn" parent="RegionSelectPopup">
+		<FONT>FONTa18b</FONT>
+		<BOUNDS>
+			<X>974</X>
+			<Y>730</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">DeleteButton_ON.png</BITMAP>
+		<BITMAP type="over">DeleteButton_Over.png</BITMAP>
+		<BITMAP type="down">DeleteButton_ON.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_LOBBY_05</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+</XML>

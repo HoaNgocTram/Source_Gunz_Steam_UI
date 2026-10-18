@@ -1,0 +1,4797 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Option">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="Option">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<FRAME item="OptionGroup" parent="Option">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<TEXT>STR:UI_OPTION_01</TEXT> <!-- 옵션 -->
+	</FRAME>
+
+	<!-- Video -->
+	<FRAME item="VideoOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>55</Y>
+			<W>700</W>
+			<H>420</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_502</TEXT> <!-- Mode -->
+		<TOOLTIP>Mode</TOOLTIP>
+	</LABEL>
+	<COMBOBOX item="WindowedMode" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>50</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">FullScreen</LISTITEM>
+		<LISTITEM>Windowed</LISTITEM>
+		<LISTITEM>Borderless</LISTITEM>
+		<DROPSIZE>140</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>180</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_02</TEXT> <!-- Resolution -->
+		<TOOLTIP>Resolution</TOOLTIP>
+	</LABEL>
+	<COMBOBOX item="ScreenResolution" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>250</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>430</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_03</TEXT> <!-- Brightness -->
+		<TOOLTIP>Brightness</TOOLTIP>
+	</LABEL>
+	<SLIDER item="VideoGamma" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>480</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+	</SLIDER>
+
+
+	<BUTTON item="Reflection" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_04</TEXT> <!-- Reflection -->
+		<TOOLTIP>Reflection</TOOLTIP>
+	</LABEL>
+
+	
+	<BUTTON item="LightMap" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Lightmap Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_05</TEXT> <!-- LightMap -->
+		<TOOLTIP>LightMap</TOOLTIP>
+	</LABEL>
+
+	
+	<BUTTON item="Shader" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Shader Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_06</TEXT> <!-- Shader -->
+	</LABEL>
+
+	
+	<BUTTON item="DynamicLight" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_07</TEXT> <!-- DynamicLight -->
+		<TOOLTIP>Dynamic Light</TOOLTIP>
+	</LABEL>
+
+	<!--Archetype Config-->
+	<BUTTON item="Archetype" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Archetype Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_105</TEXT>
+		<TOOLTIP>Giảm kết cấu hình ảnh Map</TOOLTIP>
+	</LABEL>
+
+	<!-- WhiteMap -->
+	<BUTTON item="WhiteMap" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>	
+	<LABEL item="WhiteMaps Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_115</TEXT> 
+		<TOOLTIP>Chuyển hình ảnh map sang màu trắng</TOOLTIP>
+	</LABEL>
+
+	<!--LowPoly-->
+	<BUTTON item="LowPoly" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="LowPolyLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_180</TEXT> 
+		<TOOLTIP>Giảm đồ hoạ nhân vật tối đa</TOOLTIP>
+	</LABEL>
+	
+	<!-- Blood  -->
+	<BUTTON item="Blood" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="BloodLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_158</TEXT>
+	</LABEL>
+
+	<!-- Stencil -->
+	<BUTTON item="Stencil" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Stencilbuffering Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>120</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_113</TEXT> 
+		<TOOLTIP>Tăng cường render hình ảnh khoảng cách xa</TOOLTIP>
+	</LABEL>
+
+	<BUTTON item="SparkShot" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>120</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="SparkShotOptionLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>120</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_148</TEXT>
+		<TOOLTIP>Hiệu ứng đạn chạm vật thể</TOOLTIP>
+	</LABEL>
+
+	<!-- Hit Maker -->
+	<BUTTON item="HitMaker" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>120</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="HitMakerLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>120</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_152</TEXT>
+		<TOOLTIP>Hiệu ứng khi bắn trúng mục tiêu</TOOLTIP>
+	</LABEL>
+	
+	<!--ShowFPS-->
+	<BUTTON item="FrameLimit_Display" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>120</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>120</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_108</TEXT>
+	</LABEL>
+	
+	<!-- BulletMarks -->
+	<BUTTON item="BulletMarks" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>	
+	<LABEL item="BulletMarks Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>150</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_129</TEXT>
+		<TOOLTIP>Nếu bật sẽ lưu vết đạn bắn trên tường</TOOLTIP>
+	</LABEL>
+	
+	<!--Visible-->
+	<BUTTON item="Visible" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>150</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>	
+	<LABEL item="VisibleLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>150</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_503</TEXT>	
+		<TOOLTIP>Không làm mờ nhân vật khi cúi người</TOOLTIP>	
+	</LABEL>		
+	
+	<!-- PostureChar --> 
+	<BUTTON item="PostureChar" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>150</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="PostureLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>150</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_182</TEXT>
+		<TOOLTIP>Thay đổi cách quay hông nhân vật 1.0 (Vanilla)</TOOLTIP>
+	</LABEL>
+
+	<!-- No Smoke -->
+	<BUTTON item="NoSmoke" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>150</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>	
+	<LABEL item="NoSmokeLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>150</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_155</TEXT>
+	</LABEL>
+	
+	<!-- ShotEffects --> 
+	<BUTTON item="ShotEffects" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>180</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="ShotEffects Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>180</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_120</TEXT>
+		<TOOLTIP>Hiệu ứng tia lửa đầu nòng súng.</TOOLTIP>	
+	</LABEL>
+	
+	<!-- No Fog -->
+	<BUTTON item="NoFog" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>180</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>Bạn cần vào phòng lại để tùy chọn này hoạt động và thấy được sự thay đổi.</TOOLTIP>
+	</BUTTON>
+	<LABEL item="NoFogLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>180</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_160</TEXT>
+		<TOOLTIP>Không hiển thị sương mù.</TOOLTIP>	
+	</LABEL>
+
+	<!-- Server Ping Graphic-->
+	<BUTTON item="LatencyGraphic" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>180</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="LatencyGraphicrLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>180</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_165</TEXT> 
+		<TOOLTIP>Hiển thị độ trễ hình ảnh (ms) </TOOLTIP>
+	</LABEL>
+
+	<!-- DynamicLoad  -->
+	<BUTTON item="DynamicLoad" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>180</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="DymanicLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>180</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_181</TEXT>
+		<TOOLTIP>Tuỳ chọn này giảm mức tiêu thụ bộ nhớ. Bù lại sẽ không hiển thị bất cứ trang phục nào</TOOLTIP>		
+	</LABEL>
+
+	<!-- ScoreBoard-->
+	<BUTTON item="ScoreNew" parent="VideoOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>210</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="ScoreLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>210</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_159</TEXT>
+		<TOOLTIP>Nếu bật sẽ hiển thị giao diện cổ điển</TOOLTIP>	
+	</LABEL>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>270</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_08</TEXT> <!-- Character Image Quality -->
+	</LABEL>
+	<COMBOBOX item="CharTexLevel" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>150</X>
+			<Y>270</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_OPTION_LIST_01_01</LISTITEM> <!-- High -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_02</LISTITEM> <!-- Normal -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_03</LISTITEM> <!-- Low -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>340</X>
+			<Y>270</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_09</TEXT> <!-- Background Image Quality -->
+	</LABEL>
+	<COMBOBOX item="MapTexLevel" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>490</X>
+			<Y>270</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_OPTION_LIST_01_01</LISTITEM> <!-- High -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_02</LISTITEM> <!-- Normal -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_03</LISTITEM> <!-- Low -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>300</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_10</TEXT> <!-- Effect Quality -->
+	</LABEL>
+	<COMBOBOX item="EffectLevel" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>150</X>
+			<Y>300</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_OPTION_LIST_01_01</LISTITEM> <!-- High -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_02</LISTITEM> <!-- Normal -->
+		<LISTITEM>STR:UI_OPTION_LIST_01_03</LISTITEM> <!-- Low -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>340</X>
+			<Y>300</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_11</TEXT> <!-- Texture Quality -->
+	</LABEL>
+	<COMBOBOX item="TextureFormat" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>490</X>
+			<Y>300</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM>16bit</LISTITEM>
+		<LISTITEM selected="true">32bit</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<!--MultiSampling-->
+	<LABEL item="MultiSampling Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>330</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_114</TEXT> 
+	</LABEL>
+	<COMBOBOX item="MultiSampling" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>150</X>
+			<Y>330</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">None</LISTITEM>
+		<LISTITEM>2x</LISTITEM>
+		<LISTITEM>4x</LISTITEM>
+		<LISTITEM>8x</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>340</X>
+			<Y>330</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Outline Color</TEXT>
+	</LABEL>
+
+	<COMBOBOX item="OutlineMode" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>490</X>
+			<Y>330</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">All</LISTITEM>
+	</COMBOBOX>
+	<COMBOBOX item="OutlineColor" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>590</X>
+			<Y>330</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">Red</LISTITEM>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</COMBOBOX>
+
+	
+	<!-- <LABEL item="InputLabel" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>330</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Input Rate</TEXT>		
+	</LABEL>
+	<COMBOBOX item="InputRate" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>400</X>
+			<Y>330</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>FrameLimit phải nhỏ hơn hoặc bằng giới hạn khung hình mỗi giây</TOOLTIP>
+		<LISTITEM selected="true">60</LISTITEM>
+		<LISTITEM>120</LISTITEM>
+		<LISTITEM>260</LISTITEM>
+		<LISTITEM>333</LISTITEM>
+		<LISTITEM>500</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX> -->
+	
+	<!--Max FPS -->
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>390</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_107</TEXT>
+	</LABEL>
+	<EDIT item="FrameLimit_PerSecond" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>110</X>
+			<Y>390</Y>
+			<W>55</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+    	</TEXTALIGN>
+		<TOOLTIP>Chấp nhận giá trị: 0 hoặc 60~1000. Đề xuất: 250</TOOLTIP>
+	</EDIT>
+
+	<!--Fov Camera Mode Pro --> 
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>230</X>
+			<Y>390</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_504</TEXT>
+	</LABEL>
+	<EDIT item="FOVOption" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>290</X>
+			<Y>390</Y>
+			<W>55</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+    	</TEXTALIGN>
+		<TOOLTIP>Phạm vi không gian 70~110</TOOLTIP>
+	</EDIT>	
+
+	<!--CameraDistance-->
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>400</X>
+			<Y>390</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_130</TEXT>  
+	</LABEL>
+	<EDIT item="CameraDistance" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>520</X>
+			<Y>390</Y>
+			<W>55</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+    	</TEXTALIGN>
+		<TOOLTIP>Tùy ý, mặc định 390</TOOLTIP>
+	</EDIT>
+
+	
+
+	<!-- Audio -->
+	<FRAME item="AudioOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>55</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="AudioOptionGroup1" parent="AudioOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>30</Y>
+			<W>700</W>
+			<H>420</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>	
+	</FRAME>
+	
+	<FRAME item="AudioOptionGroup2" parent="AudioOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>5</X>
+			<Y>30</Y>
+			<W>560</W>
+			<H>340</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	<!-- mop3 butom
+	<BUTTON item="AudioButton1" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>65</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_124</TEXT>
+	</BUTTON>
+	<BUTTON item="AudioButton2" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>70</X>
+			<Y>0</Y>
+			<W>65</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_125</TEXT>
+	</BUTTON> -->
+	
+	<TABCONTROL item="AudioTabControl">
+		<TAB button = "AudioButton1" widget = "AudioOptionGroup1"/>
+		<TAB button = "AudioButton2" widget = "AudioOptionGroup2"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+
+	<LABEL item="LabelBGMMute" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_13</TEXT> <!-- Background Music -->
+	</LABEL>
+	<BUTTON item="BGMMute" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>60</X>
+			<Y>0</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<SLIDER item="BGMVolumeSlider" parent="AudioOptionGroup1">
+		<BOUNDS>
+			<X>110</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>Âm lượng nhạc nền</TOOLTIP>
+	</SLIDER>
+
+	<LABEL item="LabelEffectMute" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>300</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_15</TEXT> <!-- Sound Effect -->
+	</LABEL>
+	<BUTTON item="EffectMute" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>400</X>
+			<Y>0</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<SLIDER item="EffectVolumeSlider" parent="AudioOptionGroup1">
+		<BOUNDS>
+			<X>450</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>Âm lượng hiệu ứng</TOOLTIP>
+	</SLIDER>
+
+	<!-- Voice-->
+	<LABEL item="TeamChatLabel" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_144</TEXT>
+	</LABEL>	
+	<ACTIONKEY item="ChatActionKey" parent="AudioOptionGroup1">
+		<BOUNDS>
+			<X>150</X>
+			<Y>40</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<!-- VoiceChatToggle --> 
+	<LABEL item="VoiceChatToggle Label" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>300</X>
+			<Y>40</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_147</TEXT>
+	</LABEL>
+	<BUTTON item="VoiceChatToggle" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>400</X>
+			<Y>40</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<!-- Voice Volumn -->
+	<SLIDER item="VoiceVolumeSlider" parent="AudioOptionGroup1">
+		<BOUNDS>
+			<X>450</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>Âm lượng trò chuyện thoại</TOOLTIP>
+	</SLIDER>
+	
+	
+
+<!--	<BUTTON item="8BitSound" parent="AudioOptionGroup">
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>130</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>8비트사운드</TEXT>
+	</BUTTON>
+
+	<BUTTON item="16BitSound" parent="AudioOptionGroup">
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>190</X>
+			<Y>130</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>16비트사운드</TEXT>
+	</BUTTON>
+	-->
+
+	<BUTTON item="InverseSound" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>30</X>
+			<Y>100</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_17</TEXT> <!-- 3D sound -->
+	</LABEL>
+	
+
+	<BUTTON item="HWMixing" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>150</X>
+			<Y>100</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>180</X>
+			<Y>100</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_18</TEXT> <!-- Hardware Mixing Support -->
+	</LABEL>
+	
+
+	<BUTTON item="HitSound" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>300</X>
+			<Y>100</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>330</X>
+			<Y>100</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_19</TEXT> <!-- Hit Sound -->
+	</LABEL>
+	
+
+	<BUTTON item="NarrationSound" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>480</X>
+			<Y>100</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>510</X>
+			<Y>100</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_74</TEXT> <!-- Narration Voice Play -->
+	</LABEL>
+	
+
+	<BUTTON item="Effect3D" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>130</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="LabelEffect3D" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>30</X>
+			<Y>130</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_100</TEXT>
+	</LABEL>
+
+	<BUTTON item="PlayInBackground" parent="AudioOptionGroup1">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>150</X>
+			<Y>130</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="LabelPlayInBackground" parent="AudioOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>180</X>
+			<Y>130</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Play music in background</TEXT>
+	</LABEL>
+	
+	
+	<!-- Mp3 -->
+		<!--Custom: Mp3 Player -->
+	<!--<FRAME item="Mp3Widget" parent="AudioOptionGroup2">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X> 
+			<Y>13</Y> 
+			<W>400</W> 
+			<H>200</H> 
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<BMBUTTON item="Mp3_Previous" parent="Mp3Widget">
+		<BOUNDS>
+			<X>2</X>
+			<Y>2</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">prev0.png</BITMAP>
+		<BITMAP type="over">prev1.png</BITMAP>
+		<BITMAP type="down">prev2.png</BITMAP>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Mp3_Pause" parent="Mp3Widget">
+		<BOUNDS>
+			<X>29</X>
+			<Y>11</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">play0.png</BITMAP>
+		<BITMAP type="down">pause0.png</BITMAP>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Mp3_Next" parent="Mp3Widget">
+		<BOUNDS>
+			<X>64</X>
+			<Y>2</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">next0.png</BITMAP>
+		<BITMAP type="over">next1.png</BITMAP>	
+		<BITMAP type="down">next2.png</BITMAP>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Mp3_Repeat" parent="Mp3Widget">
+		<BOUNDS>
+			<X>2</X>
+			<Y>28</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">repeat2.png</BITMAP>
+		<BITMAP type="over">repeat1.png</BITMAP>
+		<BITMAP type="down">repeat0.png</BITMAP>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Mp3_Shuffle" parent="Mp3Widget">
+		<BOUNDS>
+			<X>64</X>
+			<Y>28</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">shuffle2.png</BITMAP>
+		<BITMAP type="over">shuffle1.png</BITMAP>
+		<BITMAP type="down">shuffle0.png</BITMAP>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Mp3_FastForward" parent="Mp3Widget">
+		<BOUNDS>
+			<X>64</X>
+			<Y>58</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ff0.png</BITMAP>
+		<BITMAP type="over">ff1.png</BITMAP>	
+		<BITMAP type="down">ff2.png</BITMAP>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Mp3_Rewind" parent="Mp3Widget">
+		<BOUNDS>
+			<X>2</X>
+			<Y>58</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">fb0.png</BITMAP>
+		<BITMAP type="over">fb1.png</BITMAP>	
+		<BITMAP type="down">fb2.png</BITMAP>
+	</BMBUTTON>
+	<COMBOBOX item="Mp3_ComboBox" parent="Mp3Widget">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>94</X>
+			<Y>26</Y>
+			<W>247</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+	
+	<LABEL item="Mp3_Time" parent="Mp3Widget">
+		<BOUNDS>
+			<X>250</X>
+			<Y>26</Y>
+			<W>64</W>
+			<H>24</H>
+		</BOUNDS>
+	</LABEL>
+	 <LABEL item="Mp3_Text" parent="Mp3Widget">
+		<BOUNDS>
+			<X>94</X>
+			<Y>0</Y>
+			<W>247</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_101</TEXT>
+	</LABEL>
+	 end mp3-->
+	
+	<!-- Keyboard Option -->
+	<FRAME item="KeyboardOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>55</Y>
+			<W>700</W>
+			<H>420</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="KeyboardOptionGroup1" parent="KeyboardOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="KeyboardOptionGroup2" parent="KeyboardOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="KeyboardOptionGroup3" parent="KeyboardOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<!-- action3 tab -->
+	 <!-- <LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>5</X>
+			<Y>0</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_170</TEXT>
+	</LABEL>-->
+	
+	<!--<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>30</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_171</TEXT>
+	</LABEL>
+	<ACTIONKEY item="BlitzAbilityWndActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>30</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>60</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_172</TEXT> 
+	</LABEL>
+	<ACTIONKEY item="BlitzHelpWndActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>60</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>90</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_173</TEXT>
+	</LABEL>
+	<ACTIONKEY item="BlitzUpgradeWeaponActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>90</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>120</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_174</TEXT> 
+	</LABEL>
+	<ACTIONKEY item="BlitzUpgradeBulletActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>120</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+		
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>150</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_175</TEXT> 
+	</LABEL>
+	<ACTIONKEY item="BlitzUpgradeArmorActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>180</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_176</TEXT> 
+	</LABEL>
+	<ACTIONKEY item="BlitzUpgradeFireActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>180</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>210</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_177</TEXT> 
+	</LABEL>
+	<ACTIONKEY item="BlitzUpgradeMagazineActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>210</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>240</Y>
+			<W>160</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_178</TEXT> 
+	</LABEL>
+	<ACTIONKEY item="BlitzUpgradeMedicActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>200</X>
+			<Y>240</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>-->
+
+	<FRAME item="KeyboardOptionGroup4" parent="KeyboardOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="KeyboardOptionGroup5" parent="KeyboardOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="KeyboardOptionGroup6" parent="KeyboardOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<BUTTON item="ControlTabBtn1" parent="KeyboardOptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>85</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_68</TEXT>
+	</BUTTON>
+	<BUTTON item="ControlTabBtn2" parent="KeyboardOptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>90</X>
+			<Y>0</Y>
+			<W>85</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_69</TEXT>
+	</BUTTON>
+	<BUTTON item="ControlTabBtn3" parent="KeyboardOptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>180</X>
+			<Y>0</Y>
+			<W>85</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_80</TEXT>	<!-- 액션 3 -->
+	</BUTTON>
+	<BUTTON item="ControlTabBtn4" parent="KeyboardOptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>270</X>
+			<Y>0</Y>
+			<W>85</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_70</TEXT>
+	</BUTTON>
+	<BUTTON item="ControlTabBtn5" parent="KeyboardOptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>360</X>
+			<Y>0</Y>
+			<W>85</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_71</TEXT>
+	</BUTTON>
+	<BUTTON item="ControlTabBtn6" parent="KeyboardOptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>450</X>
+			<Y>0</Y>
+			<W>85</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_72</TEXT>
+	</BUTTON>
+
+	<TABCONTROL item="ControlTabControl">
+		<TAB button = "ControlTabBtn1" widget = "KeyboardOptionGroup1"/>
+		<TAB button = "ControlTabBtn2" widget = "KeyboardOptionGroup2"/>
+		<TAB button = "ControlTabBtn3" widget = "KeyboardOptionGroup3"/>
+		<TAB button = "ControlTabBtn4" widget = "KeyboardOptionGroup4"/>
+		<TAB button = "ControlTabBtn5" widget = "KeyboardOptionGroup5"/>
+		<TAB button = "ControlTabBtn6" widget = "KeyboardOptionGroup6"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+	
+	<!-- action1 tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_22</TEXT> <!-- 앞으로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="ForwardActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>0</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_23</TEXT> <!-- 뒤로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="BackActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>30</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_24</TEXT> <!-- 왼쪽으로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="LeftActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>60</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>90</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_25</TEXT> <!-- 오른쪽으로 가기 -->
+	</LABEL>
+	<ACTIONKEY item="RightActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>90</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>120</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_59</TEXT> <!-- 무기 사용 -->
+	</LABEL>
+	<ACTIONKEY item="UseWeaponActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>120</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_73</TEXT> <!-- 무기 사용2 -->
+	</LABEL>
+	<ACTIONKEY item="UseWeapon2ActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>180</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_34</TEXT> <!-- 재장전 -->
+	</LABEL>
+	<ACTIONKEY item="ReloadActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>180</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>210</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	<TEXT>STR:UI_OPTION_35</TEXT> <!-- 점프 -->
+	</LABEL>
+	<ACTIONKEY item="JumpActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>210</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>240</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_39</TEXT> <!-- 방어 -->
+	</LABEL>
+	<ACTIONKEY item="DefenceActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>240</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>270</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_31</TEXT> <!-- 이전무기 -->
+	</LABEL>
+	<ACTIONKEY item="PrevousWeaponActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>270</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+
+	<LABEL item="Label" parent="KeyboardOptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>300</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_32</TEXT> <!-- 다음무기 -->
+	</LABEL>
+	<ACTIONKEY item="NextWeaponActionKey" parent="KeyboardOptionGroup1">
+		<BOUNDS>
+			<X>200</X>
+			<Y>300</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+
+	<!-- action2 tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_26</TEXT> <!-- 근접 무기 선택 -->
+	</LABEL>
+	<ACTIONKEY item="MeleeWeaponActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>0</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_27</TEXT> <!-- 주 무기 선택 -->
+	</LABEL>
+	<ACTIONKEY item="PrimaryWeaponActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>30</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_28</TEXT> <!-- 보조 무기 선택 -->
+	</LABEL>
+	<ACTIONKEY item="SecondaryWeaponActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>60</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>90</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_81</TEXT> <!-- 아이템1 선택 -->
+	</LABEL>
+	<ACTIONKEY item="Item1ActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>90</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>120</Y>
+			<W>120</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_82</TEXT> <!-- 아이템2 선택 -->
+	</LABEL>
+	<ACTIONKEY item="Item2ActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>120</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>150</Y>
+			<W>120</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_86</TEXT> <!-- 아이템3 선택 -->
+	</LABEL>
+	<ACTIONKEY item="Item3ActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>		
+
+	<!--<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_85</TEXT>  
+	</LABEL>
+	<ACTIONKEY item="Item3ActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>채팅창보기 -->
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>180</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_40</TEXT> <!-- 점수 보기 -->
+	</LABEL>
+	<ACTIONKEY item="ToggleChatActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>180</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>210</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_36</TEXT> <!-- 스크린샷 -->
+	</LABEL>
+	<ACTIONKEY item="ScoreActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>210</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>240</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_37</TEXT> <!-- 재생 -->
+	</LABEL>
+	<ACTIONKEY item="ScreenShotActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>240</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+		
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>270</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_38</TEXT> <!-- 동영상 녹화 -->
+	</LABEL>
+	<ACTIONKEY item="RecordActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>270</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>300</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_75</TEXT> <!-- 동영상 녹화 -->
+	</LABEL>
+	<ACTIONKEY item="MovingPictureActionKey" parent="KeyboardOptionGroup2">
+		<BOUNDS>
+			<X>200</X>
+			<Y>300</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Save Position Key</TEXT> <!-- 아이템2 선택 -->
+	</LABEL>
+	<ACTIONKEY item="SaveActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>140</X>
+			<Y>0</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>	
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup3">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Back Postion Key</TEXT> <!-- 아이템2 선택 -->
+	</LABEL>
+	<ACTIONKEY item="TeleportActionKey" parent="KeyboardOptionGroup3">
+		<BOUNDS>
+			<X>140</X>
+			<Y>30</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<!-- emotion tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_60</TEXT> <!-- 도발 -->
+	</LABEL>
+	<ACTIONKEY item="TauntActionKey" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>200</X>
+			<Y>0</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_61</TEXT> <!-- 인사 -->
+	</LABEL>
+	<ACTIONKEY item="BowActionKey" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>200</X>
+			<Y>30</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_62</TEXT> <!-- 손 흔들기 -->
+	</LABEL>
+	<ACTIONKEY item="WaveActionKey" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>200</X>
+			<Y>60</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>90</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_63</TEXT> <!-- 웃기 -->
+	</LABEL>
+	<ACTIONKEY item="LaughActionKey" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>200</X>
+			<Y>90</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>120</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_64</TEXT> <!-- 울기 -->
+	</LABEL>
+	<ACTIONKEY item="CryActionKey" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>200</X>
+			<Y>120</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+	<LABEL item="Label" parent="KeyboardOptionGroup4">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>150</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_65</TEXT> <!-- 춤 -->
+	</LABEL>
+	<ACTIONKEY item="DanceActionKey" parent="KeyboardOptionGroup4">
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>250</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	
+	<!-- mouse tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup5">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_76</TEXT> <!-- Mouse Sensitivity - -->
+	</LABEL>
+	<ACTIONKEY item="MouseSensitivityDecActionKey" parent="KeyboardOptionGroup5">
+		<BOUNDS>
+			<X>190</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup5">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_77</TEXT> <!-- Mouse Sensitivity + -->
+	</LABEL>
+	<ACTIONKEY item="MouseSensitivityIncActionKey" parent="KeyboardOptionGroup5">
+		<BOUNDS>
+			<X>190</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup5">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_20</TEXT> <!-- Mouse Sensitivity -->
+	</LABEL>
+	<EDIT item="MouseSensitivityEdit" parent="KeyboardOptionGroup5">
+		<BOUNDS>
+			<X>190</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	<SLIDER item="MouseSensitivitySlider" parent="KeyboardOptionGroup5">
+		<BOUNDS>
+			<X>350</X>
+			<Y>60</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+	</SLIDER>
+	
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup5">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_21</TEXT> <!-- Invert Mouse -->
+	</LABEL>
+	<BUTTON item="InvertMouse" parent="KeyboardOptionGroup5">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>188</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	
+	<!-- joystick tab -->
+	<LABEL item="Label" parent="KeyboardOptionGroup6">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>3</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_66</TEXT> <!-- Controller Sensitivity -->
+	</LABEL>
+	<SLIDER item="JoystickSensitivitySlider" parent="KeyboardOptionGroup6">
+		<BOUNDS>
+			<X>190</X>
+			<Y>0</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+	</SLIDER>
+	
+	<LABEL item="Label" parent="KeyboardOptionGroup6">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_67</TEXT> <!-- Inverted Controller -->
+	</LABEL>
+	<BUTTON item="InvertJoystick" parent="KeyboardOptionGroup6">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>188</X>
+			<Y>30</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	
+	<BUTTON item="DefaultSettingLoad" parent="KeyboardOptionGroup">
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>250</X>
+			<Y>390</Y>
+			<W>160</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_41</TEXT> <!-- Defaults Setting -->
+		<WIRELOOK/>
+	</BUTTON>
+
+	<!-- Etc Option -->
+	<FRAME item="EtcOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>55</Y>
+			<W>700</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_42</TEXT> <!-- Port Setting -->
+	</LABEL>
+	<EDIT item="NetworkPort1" parent="EtcOptionGroup">
+		<BOUNDS>
+			<X>70</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+    	</TEXTALIGN>
+	</EDIT>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>135</X>
+			<Y>0</Y>
+			<W>20</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>~</TEXT>
+	</LABEL>
+	<EDIT item="NetworkPort2" parent="EtcOptionGroup">
+		<BOUNDS>
+			<X>160</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+    	</TEXTALIGN>
+	</EDIT>
+<!--	
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>30</Y>
+			<W>320</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_43</TEXT> 
+	</LABEL>		
+-->		
+	<!-- Maximize Performance -->
+	<!-- <TEXTAREA item="Option_Textarea01" parent="EtcOptionGroup">
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>480</W>
+			<H>55</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_43</TEXT> 
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	<BUTTON item="BoostOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>100</X>
+			<Y>40</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON> -->
+
+
+	<LABEL item="LanguageSelectLabel" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>40</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_LANGUAGE_SELECT</TEXT>   
+	</LABEL>
+	<COMBOBOX item="LanguageSelectComboBox" parent="EtcOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>90</X>
+			<Y>40</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>Thay đổi ngôn ngữ cần khởi động lại game. Chỉ có thể thay đổi khi bạn ở ngoài Lobby</TOOLTIP>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+<!--	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>2</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_WEAPONTRACKS_01</TEXT> 
+	</LABEL>
+	<COMBOBOX item="SwordTrail" parent="EtcOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>105</X>
+			<Y>30</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_02</LISTITEM> 
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_03</LISTITEM>
+		<LISTITEM selected="true">STR:UI_OPTION_WEAPONTRACKS_04</LISTITEM> 
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_05</LISTITEM> 
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_06</LISTITEM> 
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>-->
+
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>270</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_44</TEXT> <!-- Chat Filtering Options -->
+	</LABEL>
+
+	<BUTTON item="NormalChatOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>300</X>
+			<Y>21</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>330</X>
+			<Y>20</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_45</TEXT> <!-- General chat -->
+	</LABEL>
+	
+
+	<BUTTON item="TeamChatOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>420</X>
+			<Y>21</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>20</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_46</TEXT> <!-- Team chat -->
+	</LABEL>
+	
+
+	<BUTTON item="ClanChatOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>300</X>
+			<Y>41</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>330</X>
+			<Y>40</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_47</TEXT> <!-- Clan chat -->
+	</LABEL>
+	
+
+	<BUTTON item="WhisperOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>420</X>
+			<Y>41</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>450</X>
+			<Y>40</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_48</TEXT> <!-- Whisper -->
+	</LABEL>
+		
+	
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_MOVINGPICTURE_01</TEXT> <!-- Video Recording Resolution -->
+	</LABEL>
+	<COMBOBOX item="MovingPictureResolution" parent="EtcOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>120</X>
+			<Y>90</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_OPTION_MOVINGPICTURE_02</LISTITEM> <!-- 320 X 240 -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_03</LISTITEM> <!-- 640 X 480 -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_04</LISTITEM> <!-- 1 : 1 -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>250</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_MOVINGPICTURE_11</TEXT> <!-- Video memory size limit -->
+	</LABEL>
+	<COMBOBOX item="MovingPictureFileSize" parent="EtcOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>400</X>
+			<Y>90</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_OPTION_MOVINGPICTURE_12</LISTITEM> <!-- 100MB -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_13</LISTITEM> <!-- 300MB -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_14</LISTITEM> <!-- 500MB -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_15</LISTITEM> <!-- Unlimited -->
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_50</TEXT> <!-- Crosshair Type -->
+	</LABEL>
+	<COMBOBOX item="CrossHairComboBox" parent="EtcOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>90</X>
+			<Y>150</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+	</COMBOBOX>
+	<EDIT item="CrossSize" parent="EtcOptionGroup">
+		<BOUNDS>
+			<X>210</X>
+			<Y>150</Y>
+			<W>50</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TOOLTIP>Kích thước tâm ngắm, giá trị: 50 hoặc 100 ~ 250.</TOOLTIP>
+	</EDIT>
+
+	<CANVAS item="CrossHairPreviewCanvas" parent="EtcOptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>300</X>
+			<Y>130</Y>
+			<W>80</W>
+			<H>70</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>FALSE</RESIZABLE>
+		<MOVABLE>FALSE</MOVABLE>
+	</CANVAS>	
+
+
+	<BUTTON item="InviteOption" parent="EtcOptionGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>190</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>	
+	<LABEL item="Label" parent="EtcOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>30</X>
+			<Y>190</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_49</TEXT> <!-- Refuse Clan Invitations -->
+	</LABEL>
+
+	
+	<!-- Macro Option -->
+	<FRAME item="MacroOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>55</Y>
+			<W>700</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_51</TEXT> <!-- F1 Key -->
+	</LABEL>
+	<EDIT item="MacroF1" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_52</TEXT> <!-- F2 Key -->
+	</LABEL>
+	<EDIT item="MacroF2" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_53</TEXT> <!-- F3 Key -->
+	</LABEL>
+	<EDIT item="MacroF3" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>60</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_54</TEXT> <!-- F4 Key -->
+	</LABEL>
+	<EDIT item="MacroF4" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>90</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_55</TEXT> <!-- F5 Key -->
+	</LABEL>
+	<EDIT item="MacroF5" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>120</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_56</TEXT> <!-- F6 Key -->
+	</LABEL>
+	<EDIT item="MacroF6" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>150</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>180</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_57</TEXT> <!-- F7 Key -->
+	</LABEL>
+	<EDIT item="MacroF7" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>180</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>210</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_58</TEXT> <!-- F8 Key -->
+	</LABEL>
+	<EDIT item="MacroF8" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>60</X>
+			<Y>210</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+
+<!-- 1337 Option -->
+
+	<FRAME item="1337OptionGroup" parent="OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>55</Y>
+			<W>700</W>
+			<H>400</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="1337OptionGroup1" parent="1337OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="1337OptionGroup2" parent="1337OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="1337OptionGroup3" parent="1337OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="1337OptionGroup4" parent="1337OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="1337OptionGroup5" parent="1337OptionGroup">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>42</Y>
+			<W>720</W>
+			<H>540</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>		
+	
+	<BUTTON item="1337Button1" parent="1337OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_126</TEXT>
+	</BUTTON>
+	<BUTTON item="1337Button2" parent="1337OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>95</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_127</TEXT>
+	</BUTTON>
+	<BUTTON item="1337Button3" parent="1337OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>190</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_128</TEXT>
+	</BUTTON>
+
+	<BUTTON item="1337Button4" parent="1337OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>285</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_133</TEXT>
+	</BUTTON>
+	
+	<BUTTON item="1337Button5" parent="1337OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>380</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_134</TEXT>
+	</BUTTON>
+	
+	<TABCONTROL item="1337TabControl">
+		<TAB button = "1337Button1" widget = "1337OptionGroup1"/>
+		<TAB button = "1337Button2" widget = "1337OptionGroup2"/>
+		<TAB button = "1337Button3" widget = "1337OptionGroup3"/>
+		<TAB button = "1337Button4" widget = "1337OptionGroup4"/>
+		<TAB button = "1337Button5" widget = "1337OptionGroup5"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+
+<!--///////////////////////////////////////////////////////////////////-->
+
+
+	<LABEL item="ChatBackGroundOpacity Label" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_136</TEXT>
+	</LABEL>
+	<EDIT item="ChatBackGroundOpacity" parent="1337OptionGroup1">
+		<BOUNDS>
+			<X>140</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>Accepted values: 0 or 50~100. Recommended: 50 or 80</TOOLTIP>
+	</EDIT>
+
+	<LABEL item="ChatBackgroundColorLabel" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_142</TEXT>
+	</LABEL>
+	<EDIT item="ChatBackgroundColorOption" parent="1337OptionGroup1">
+		<BOUNDS>
+			<X>390</X>
+			<Y>0</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>	
+
+	<LABEL item="ChatFontSizeLabel" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_141</TEXT>
+	</LABEL>
+	<EDIT item="ChatFontSizeOption" parent="1337OptionGroup1">
+		<BOUNDS>
+			<X>140</X>
+			<Y>30</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+	</EDIT>
+	
+
+	<!-- Voice Chat-->
+	<LABEL item="VoiceChatLabel" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>30</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_145</TEXT>
+	</LABEL>
+	<ACTIONKEY item="TeamChatActionKey" parent="1337OptionGroup1">
+		<BOUNDS>
+			<X>390</X>
+			<Y>30</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+    
+
+    <!-- Chat All -->
+	<LABEL item="ChatAllLabel" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_143</TEXT>
+	</LABEL>
+	<ACTIONKEY item="ShowFullChatActionKey" parent="1337OptionGroup1">
+		<BOUNDS>
+			<X>140</X>
+			<Y>60</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+	</ACTIONKEY>
+
+    <!-- Show Full Chat-->
+	<LABEL item="ShowFullChatLabel" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>60</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_146</TEXT> 
+	</LABEL>
+	<ACTIONKEY item="VoiceChatActionKey" parent="1337OptionGroup1">
+		<BOUNDS>
+			<X>390</X>
+			<Y>60</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>		
+	</ACTIONKEY>		
+
+	<!--TrailColorLabel-->
+	<LABEL item="TrailColorLabel" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Trail/Massive Color</TEXT>
+	</LABEL>			
+	<COMBOBOX item="TrailColorBox" parent="1337OptionGroup1">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>390</X>
+			<Y>90</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+            <LISTITEM selected="true">Normal</LISTITEM>
+            <LISTITEM>Red</LISTITEM>
+            <LISTITEM>Blue</LISTITEM>
+            <LISTITEM>Green</LISTITEM>
+            <LISTITEM>Cyan</LISTITEM>
+            <LISTITEM>Yellow</LISTITEM>
+            <LISTITEM>Purple</LISTITEM>  
+            <LISTITEM>Orange</LISTITEM>
+            <LISTITEM>Pink</LISTITEM>		
+		<DROPSIZE>500</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	
+	<!--SwordTrail-->
+	<LABEL item="SwordTrail Label" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>120</Y>
+			<W>450</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_WEAPONTRACKS_01</TEXT> 
+	</LABEL>
+	<COMBOBOX item="SwordTrail" parent="1337OptionGroup1">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>140</X>
+			<Y>120</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">1</LISTITEM>
+		<LISTITEM>2</LISTITEM>
+		<LISTITEM>3</LISTITEM>
+		<LISTITEM>4</LISTITEM>
+		<LISTITEM>5</LISTITEM>
+		<DROPSIZE>90</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<!--FloatDMG ComboBox-->
+	<LABEL item="FloatDMG Label" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>120</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Float Damage</TEXT>
+		<TOOLTIP>Hiển thị lượng sát thương khi trúng mục tiêu.</TOOLTIP>
+	</LABEL>
+	<COMBOBOX item="FloatDmgMode" parent="1337OptionGroup1">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>390</X>
+			<Y>120</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM selected="true">Off</LISTITEM>
+		<LISTITEM>Text</LISTITEM>
+		<LISTITEM>Elu</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<!--EmojiSet ComboBox-->
+	<LABEL item="EmojiSet Label" parent="1337OptionGroup1">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>0</X>
+			<Y>150</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Emoji Set</TEXT>
+		<TOOLTIP>Chọn bộ emoji hiển thị trong chat</TOOLTIP>
+	</LABEL>
+	<COMBOBOX item="EmojiSetCombo" parent="1337OptionGroup1">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>140</X>
+			<Y>150</Y>
+			<W>90</W>
+			<H>24</H>
+		</BOUNDS>
+		<LISTITEM>Off</LISTITEM>
+		<LISTITEM>Default</LISTITEM>
+		<LISTITEM>Noto</LISTITEM>
+		<LISTITEM>Facebook</LISTITEM>
+		<LISTITEM selected="true">Yahoo</LISTITEM>
+		<DROPSIZE>120</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+<!--///////////////////////////Part2///////////////////////////////-->
+	
+	<BUTTON item="LoginInstantSelect" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<TOOLTIP>This is to skip login to select character faster without the movie.</TOOLTIP>
+	</BUTTON>
+	<LABEL item="InstantLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Fast Login</TEXT>
+	</LABEL>
+
+
+	<!--Bullet Bar-->
+	<BUTTON item="BulletBar" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>0</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="BulletBarLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_167</TEXT> 
+		<TOOLTIP>Hiển thị thanh đạn còn lại</TOOLTIP>
+	</LABEL>	
+	
+
+	<!--KillFeed-->
+	<BUTTON item="KillFeed" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>0</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="KillFeedLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Kill Feed</TEXT> 
+		<TOOLTIP>Hiển thị thông tin hạ gục người chơi khác</TOOLTIP>
+	</LABEL>	
+	
+
+	<!--KillStreak-->
+	<BUTTON item="KillStreak" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>0</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="KillStreakLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>0</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_168</TEXT> 
+		<TOOLTIP>Âm thanh khi hạ đối thủ</TOOLTIP>
+	</LABEL>	
+	
+
+	<!-- Killcam -->
+	<BUTTON item="KillCam" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>30</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="KillCamLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>30</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_157</TEXT>
+		<TOOLTIP>Camera đối phương hạ gục bạn</TOOLTIP>
+	</LABEL>
+
+
+	<!-- Team HPAP Label -->
+	<BUTTON item="HPAPScoreboard" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>30</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="HPAPScoreboardLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>30</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_117</TEXT> 
+		<TOOLTIP>Hiển thị HP/AP đồng đội</TOOLTIP>
+	</LABEL>
+	
+
+	<!-- Extra Info -->
+	<BUTTON item="ExtraInfo" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>30</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="ExtraInfoLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>30</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_153</TEXT>
+		<TOOLTIP>Hiển thị thông tin HP/AP cá nhân, damage, aim </TOOLTIP>
+	</LABEL>
+		
+
+	<!--WeaponRotation-->
+	<BUTTON item="WeaponRotation" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>30</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="WeaponRotation Label" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>30</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_109</TEXT> 
+		<TOOLTIP>Lăn chuột chỉ có vũ khí</TOOLTIP>
+	</LABEL>
+
+
+	<!-- 3D ShotGuns Effect -->
+	<BUTTON item="3DShotGun" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="3DShotGunLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_156</TEXT>
+	</LABEL>
+	
+
+	<!-- NPCBAR -->
+	<BUTTON item="NPCBar" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="NPCBARLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_169</TEXT>
+		<TOOLTIP>Hiển thị HP/AP NPC </TOOLTIP>
+	</LABEL>
+
+
+	<!--FastCycle-->
+	<BUTTON item="FastWeaponCycleOption" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="FastCycleLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Fast Weapon Cycle</TEXT>	
+		<TOOLTIP>Lăn chuột chuyển vũ khí nhanh</TOOLTIP>	
+	</LABEL>		
+	
+
+	<!-- ChatBackGroundNormal -->
+	<BUTTON item="ChatBackGroundNormal" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>60</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="ChatBackGroundNormal Label" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_135</TEXT>
+	</LABEL>
+
+
+	<!-- DiscordOption --> 
+	<BUTTON item="DiscordOption" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>0</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="DiscordLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>26</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>RPC Discord Status</TEXT>	
+		<TOOLTIP>Hiển thị thông tin game ngoài discord (cần restat game).</TOOLTIP>	
+	</LABEL>		
+	
+
+	<!-- FontBold -->
+	<BUTTON item="ChatFontBoldOption" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>170</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="ChatFontBoldOptionLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>196</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_140</TEXT>
+		<TOOLTIP>Viết chữ đậm hơn trong khung chat</TOOLTIP>	
+	</LABEL>
+		
+
+	<!-- NewChatEnable --> 
+	<BUTTON item="NewChatEnable" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>340</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="NewChatEnableLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>366</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>New Chat Toggle</TEXT> 
+		<TOOLTIP>Đổi khung chat mới</TOOLTIP>	
+	</LABEL>
+	
+
+	<!-- ChatEnableCursor 
+	<BUTTON item="ChatEnableCursorOption" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="ChatEnableCursor Label" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_138</TEXT>
+		<TOOLTIP>Hiển thị chuột (khung chat mới)</TOOLTIP>	
+	</LABEL>--> 
+	
+	
+<!-- Respawn Effect -->
+<BUTTON item="RespawnEffect" parent="1337OptionGroup2">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>510</X>
+			<Y>90</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="RespawnEffectLabel" parent="1337OptionGroup2">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>536</X>
+			<Y>90</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_154</TEXT>
+		<TOOLTIP>Hiệu ứng hồi sinh</TOOLTIP>	
+	</LABEL>
+	
+
+<!--///////////////////////////Part3///////////////////////////////-->
+	
+
+	
+
+		
+
+	
+<!--///////////////////////////Part4///////////////////////////////-->
+	
+
+<!--///////////////////////////Part5///////////////////////////////-->
+
+
+	
+
+	<!-- Tab Buttons -->
+	<BUTTON item="ShowVideoOptionGroup" parent="OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>28</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>VIDEO</TEXT>
+	</BUTTON>
+	<BUTTON item="ShowAudioOptionGroup" parent="OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>125</X>
+			<Y>28</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>AUDIO</TEXT>
+	</BUTTON>
+	<BUTTON item="ShowKeyboardOptionGroup" parent="OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>240</X>
+			<Y>28</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>CONTROLS</TEXT>
+	</BUTTON>
+	<BUTTON item="ShowMacroOptionGroup" parent="OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>355</X>
+			<Y>28</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>MACRO</TEXT>
+	</BUTTON>
+	<BUTTON item="ShowEtcOptionGroup" parent="OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>470</X>
+			<Y>28</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>MISC</TEXT>
+	</BUTTON>
+	<BUTTON item="Show1337OptionGroup" parent="OptionGroup">
+	<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>585</X>
+			<Y>28</Y>
+			<W>110</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>EXTRA</TEXT>
+	</BUTTON>
+
+	<TABCONTROL item="OptionTabControl">
+		<TAB button = "ShowVideoOptionGroup" widget = "VideoOptionGroup"/>
+		<TAB button = "ShowAudioOptionGroup" widget = "AudioOptionGroup"/>	
+		<TAB button = "ShowKeyboardOptionGroup" widget = "KeyboardOptionGroup"/>
+		<TAB button = "ShowEtcOptionGroup" widget = "EtcOptionGroup"/>
+		<TAB button = "ShowMacroOptionGroup" widget = "MacroOptionGroup"/>
+		<TAB button = "Show1337OptionGroup" widget = "1337OptionGroup"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+
+	<!-- 나가기 -->
+	<BUTTON item="Optimization" parent="OptionGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>170</X>
+			<Y>500</Y>
+			<W>140</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_12</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="SaveOptionButton" parent="OptionGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>320</X>
+			<Y>500</Y>
+			<W>140</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="CancelOptionButton" parent="OptionGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>470</X>
+			<Y>500</Y>
+			<W>140</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+	
+
+</XML>

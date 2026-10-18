@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="EventShopLayout">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- EventShop Layout Parent Frame -->
+
+	<!-- FRAME : 이벤트 상점 부모 프레임 -->
+	<FRAME item="EventShopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+<!-- EventShop Layout 1 -->
+
+	<!-- FRAME : 이벤트 상점 UI 프레임 -->
+	<FRAME item="EventShopLayout_1_">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<!-- Picture : 이벤트 상점 배경 -->
+	<PICTURE item="EventShop_BG_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+
+	<!-- ITEMSLOT : 오픈 이벤트 상점 아이템 슬롯 -->
+	<EVENTSHOPSLOTVIEW item="EventShopItemSlot_0_1_" parent="EventShopLayout_1_" parts="head">
+		<BOUNDS>
+			<X>656</X>
+			<Y>416</Y>
+			<W>140</W>
+			<H>150</H>
+		</BOUNDS>
+		<STRETCH/>
+		<SLOTSIZE>S</SLOTSIZE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</EVENTSHOPSLOTVIEW>
+
+	<EVENTSHOPSLOTVIEW item="EventShopItemSlot_1_1_" parent="EventShopLayout_1_" parts="head">
+		<BOUNDS>
+			<X>809</X>
+			<Y>416</Y>
+			<W>140</W>
+			<H>150</H>
+		</BOUNDS>
+		<STRETCH/>
+		<SLOTSIZE>S</SLOTSIZE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</EVENTSHOPSLOTVIEW>
+
+	<EVENTSHOPSLOTVIEW item="EventShopItemSlot_2_1_" parent="EventShopLayout_1_" parts="head">
+		<BOUNDS>
+			<X>962</X>
+			<Y>416</Y>
+			<W>140</W>
+			<H>150</H>
+		</BOUNDS>
+		<STRETCH/>
+		<SLOTSIZE>S</SLOTSIZE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</EVENTSHOPSLOTVIEW>
+
+	<EVENTSHOPSLOTVIEW item="EventShopItemSlot_3_1_" parent="EventShopLayout_1_" parts="head">
+		<BOUNDS>
+			<X>656</X>
+			<Y>612</Y>
+			<W>140</W>
+			<H>150</H>
+		</BOUNDS>	
+		<STRETCH/>
+		<SLOTSIZE>S</SLOTSIZE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</EVENTSHOPSLOTVIEW>
+
+	<EVENTSHOPSLOTVIEW item="EventShopItemSlot_4_1_" parent="EventShopLayout_1_" parts="head">
+		<BOUNDS>
+			<X>809</X>
+			<Y>612</Y>
+			<W>293</W>
+			<H>150</H>
+		</BOUNDS>
+		<STRETCH/>
+		<SLOTSIZE>L</SLOTSIZE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</EVENTSHOPSLOTVIEW>
+
+	<EVENTSHOPSLOTVIEW item="EventShopItemSlot_5_1_" parent="EventShopLayout_1_" parts="head">
+		<BOUNDS>
+			<X>656</X>
+			<Y>807</Y>
+			<W>140</W>
+			<H>150</H>
+		</BOUNDS>
+		<STRETCH/>
+		<SLOTSIZE>S</SLOTSIZE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</EVENTSHOPSLOTVIEW>
+
+	<EVENTSHOPSLOTVIEW item="EventShopItemSlot_6_1_" parent="EventShopLayout_1_" parts="head">
+		<BOUNDS>
+			<X>809</X>
+			<Y>807</Y>
+			<W>293</W>
+			<H>150</H>
+		</BOUNDS>
+		<STRETCH/>
+		<SLOTSIZE>L</SLOTSIZE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</EVENTSHOPSLOTVIEW>
+
+	<!-- BMBUTTON : 오픈 이벤트 상점 아이템 교환 버튼 -->
+	<BMBUTTON item="EventShopItemBtn_0_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>656</X>
+			<Y>566</Y>
+			<W>140</W>
+			<H>33</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_EVENTSHOP_01</TEXT>
+		<BITMAP type="up">Opaque_Purchase_S_On.png</BITMAP>
+		<BITMAP type="over">Opaque_Purchase_S_Over.png</BITMAP>
+		<BITMAP type="down">Opaque_Purchase_S_Off.png</BITMAP>
+		<BITMAP type="disable">Opaque_SoldOut_S.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item="EventShopItemBtn_1_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>809</X>
+			<Y>566</Y>
+			<W>140</W>
+			<H>33</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_EVENTSHOP_01</TEXT>
+		<BITMAP type="up">Opaque_Purchase_S_On.png</BITMAP>
+		<BITMAP type="over">Opaque_Purchase_S_Over.png</BITMAP>
+		<BITMAP type="down">Opaque_Purchase_S_Off.png</BITMAP>
+		<BITMAP type="disable">Opaque_SoldOut_S.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item="EventShopItemBtn_2_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>962</X>
+			<Y>566</Y>
+			<W>140</W>
+			<H>33</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_EVENTSHOP_01</TEXT>
+		<BITMAP type="up">Opaque_Purchase_S_On.png</BITMAP>
+		<BITMAP type="over">Opaque_Purchase_S_Over.png</BITMAP>
+		<BITMAP type="down">Opaque_Purchase_S_Off.png</BITMAP>
+		<BITMAP type="disable">Opaque_SoldOut_S.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item="EventShopItemBtn_3_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>656</X>
+			<Y>762</Y>
+			<W>140</W>
+			<H>33</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_EVENTSHOP_01</TEXT>
+		<BITMAP type="up">Opaque_Purchase_S_On.png</BITMAP>
+		<BITMAP type="over">Opaque_Purchase_S_Over.png</BITMAP>
+		<BITMAP type="down">Opaque_Purchase_S_Off.png</BITMAP>
+		<BITMAP type="disable">Opaque_SoldOut_S.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item="EventShopItemBtn_4_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>809</X>
+			<Y>762</Y>
+			<W>293</W>
+			<H>33</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_EVENTSHOP_01</TEXT>
+		<BITMAP type="up">Opaque_Purchase_S_On.png</BITMAP>
+		<BITMAP type="over">Opaque_Purchase_S_Over.png</BITMAP>
+		<BITMAP type="down">Opaque_Purchase_S_Off.png</BITMAP>
+		<BITMAP type="disable">Opaque_SoldOut_S.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item="EventShopItemBtn_5_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>656</X>
+			<Y>957</Y>
+			<W>140</W>
+			<H>33</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_EVENTSHOP_01</TEXT>
+		<BITMAP type="up">Opaque_Purchase_S_On.png</BITMAP>
+		<BITMAP type="over">Opaque_Purchase_S_Over.png</BITMAP>
+		<BITMAP type="down">Opaque_Purchase_S_Off.png</BITMAP>
+		<BITMAP type="disable">Opaque_SoldOut_S.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item="EventShopItemBtn_6_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>809</X>
+			<Y>957</Y>
+			<W>293</W>
+			<H>33</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_EVENTSHOP_01</TEXT>
+		<BITMAP type="up">Opaque_Purchase_S_On.png</BITMAP>
+		<BITMAP type="over">Opaque_Purchase_S_Over.png</BITMAP>
+		<BITMAP type="down">Opaque_Purchase_S_Off.png</BITMAP>
+		<BITMAP type="disable">Opaque_SoldOut_S.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<!-- ZEVENTSHOPLISTBOX : 오픈 이벤트 리스트 박스 -->
+	<ZEVENTSHOPLISTBOX item="EventShopListBox_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>1133</X>
+			<Y>416</Y>
+			<W>705</W>
+			<H>484</H>
+		</BOUNDS>
+		<BITMAP type="bg_default">MissionFrame_Default.png</BITMAP>
+		<BITMAP type="bg_finish">MissionFrame_Finish.png</BITMAP>
+		<BITMAP type="bg_complete">MissionFrame_Complete.png</BITMAP>
+		<BITMAP type="receive_on">EventReceiveButton_On.png</BITMAP>
+		<BITMAP type="receive_over">EventReceiveButton_Over.png</BITMAP>
+		<BITMAP type="receive_off">EventReceiveButton_Off.png</BITMAP>
+		<BITMAP type="complete_icon">CompleteIcon.png</BITMAP>
+		<FONT type="type">FONTb14</FONT>
+		<FONT type="desc">FONTb18</FONT>
+		<FONT type="progress">FONTa10</FONT>
+		<FONT type="quantity">FONTa10</FONT>
+		<FONT type="receive">FONTb14b</FONT>
+		<FONT type="complete">FONTb12b</FONT>
+		<RECT type="MissionType">
+			<X>22</X><!--22-->
+			<Y>14</Y><!--19-->
+			<W>62</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="MissionDesc">
+			<X>22</X><!--22-->
+			<Y>44</Y><!--49-->
+			<W>382</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="MissionProgressBar">
+			<X>22</X><!--23-->
+			<Y>72</Y><!--77-->
+			<W>382</W>
+			<H>11</H>
+		</RECT>
+		<RECT type="MissionProgressText">
+			<X>370</X><!--373-->
+			<Y>85</Y><!--75-->
+			<W>34</W>
+			<H>15</H>
+		</RECT>
+		<RECT type="CompleteText">
+			<X>551</X><!--551-->
+			<Y>48</Y>
+			<W>103</W>
+			<H>17</H>
+		</RECT>
+		<RECT type="CompleteIcon">
+			<X>662</X><!--662-->
+			<Y>45</Y>
+			<W>24</W>
+			<H>24</H>
+		</RECT>
+		<RECT type="RewardQuantity">
+			<X>37</X><!--37-->
+			<Y>41</Y><!--46-->
+			<W>17</W>
+			<H>8</H>
+		</RECT>
+		<RECT type="RewardSlotBG">
+			<X>424</X><!--424-->
+			<Y>30</Y>
+			<W>58</W>
+			<H>58</H>
+		</RECT>
+		<RECT type="RewardSlot">
+			<X>429</X><!--429-->
+			<Y>35</Y>
+			<W>48</W>
+			<H>48</H>
+		</RECT>
+		<RECT type="ReceiveButton">
+			<X>573</X>
+			<Y>35</Y>
+			<W>111</W>
+			<H>48</H>
+		</RECT>
+		<RECT type="ReceiveText">
+			<X>588</X><!-- 597 -->
+			<Y>48</Y>
+			<W>80</W><!-- 62 -->
+			<H>15</H>
+		</RECT>
+		<VISIBLE>true</VISIBLE>
+		<ITEMSPACE>0</ITEMSPACE>
+		<ITEMSPACEH>9</ITEMSPACEH>
+		<ROWNUM>4</ROWNUM>
+		<NUMCOLUMN>1</NUMCOLUMN>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<!--
+		<VIGNETTEBITMAP>ListVignetteEffect_Event.png</VIGNETTEBITMAP>
+		<VIGNETTEHEIGHT>60</VIGNETTEHEIGHT>
+		-->
+	</ZEVENTSHOPLISTBOX>
+
+	<BMBUTTON item="EventShop_AllReceiveButton_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>1494</X>
+			<Y>930</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BMTEXTCOLOR r="255" g="255" b="255" a="255"/>
+		<FONT>FONTa16b</FONT>
+		<TEXT>STR:UI_EVENTSHOP_03</TEXT>
+		<BITMAP type="up">AllReceiveButton_On.png</BITMAP>
+		<BITMAP type="over">AllReceiveButton_Over.png</BITMAP>
+		<BITMAP type="down">AllReceiveButton_Off.png</BITMAP>
+		<BITMAP type="disable">AllReceiveButton_Off.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<PICTURE item="EventShop_EventCoinBG_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>1133</X>
+			<Y>930</Y>
+			<W>325</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventCoinBG.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="EventShop_EventCoin_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>1155</X>
+			<Y>943</Y>
+			<W>34</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventCurrencyIcon.png</BITMAP>
+	</PICTURE>
+
+	<LABEL item="EventShop_EventCurrency_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>1200</X>
+			<Y>950</Y>
+			<W>235</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>0</TEXT>
+		<FONT>FONTa16</FONT>
+	</LABEL>
+
+	<LABEL item="EventShop_Period_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>1133</X>
+			<Y>387</Y>
+			<W>700</W>
+			<H>27</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT></TEXT>
+		<FONT>FONTa16</FONT>
+	</LABEL>
+
+	<!-- 오픈 이벤트 상점 툴팁 -->
+	<ZRICHTOOLTIP item="EventShop_Tooltip_1_" parent="EventShopLayout_1_">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">ShopEquipTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>390</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>320</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_08" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTb21b" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>132</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="ItemSourceSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>54</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Shop_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+
+	<!-- EventShop Layout 2 -->
+	<FRAME item="EventShopLayout_2_">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<!-- Picture : 이벤트 상점 배경 -->
+	<PICTURE item="EventShop_BG_2_" parent="EventShopLayout_2_">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventBG.png</BITMAP>
+	</PICTURE>
+
+	<!-- EventShop Layout 3 -->
+	<FRAME item="EventShopLayout_3_">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<!-- Picture : 이벤트 상점 배경 -->
+	<PICTURE item="EventShop_BG_3_" parent="EventShopLayout_3_">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventBG_Immortal.png</BITMAP>
+	</PICTURE>
+
+	<!-- EventShop Layout 4 -->
+	<FRAME item="EventShopLayout_4_">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<!-- Picture : 이벤트 상점 배경 -->
+	<PICTURE item="EventShop_BG_4_" parent="EventShopLayout_4_">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>DangerOutline.png</BITMAP>
+	</PICTURE>
+</XML>

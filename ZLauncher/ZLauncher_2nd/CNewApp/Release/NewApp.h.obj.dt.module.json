@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": ".\\Release\\NewApp.obj",
+            "outputs": [
+                ".\\Release\\NewApp.h.obj.dt.module.json",
+                ".\\Release\\NewApp.h.obj.dt.d.json",
+                ".\\Release/GunzLauncher.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+[Tue Sep 29 09:47:47 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Tue Sep 29 09:47:47 2026] Release Date : Sep 29 2026
+===========================================================================================
+
+[Tue Sep 29 09:47:47 2026] Match Agent Created (Port:7777)
+[Tue Sep 29 09:47:47 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Tue Sep 29 09:47:47 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Tue Sep 29 09:47:47 2026] MMatchAgent::ConnectToMatchServer END 
+[Tue Sep 29 09:50:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:52:18 2026] Agent Local Login (UID:01000, IP:172.82.91.16, Port:57388)
+[Tue Sep 29 09:52:18 2026] Agent Net Clear(UID:01000)
+[Tue Sep 29 09:53:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:56:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:59:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:02:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:05:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:08:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:11:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:14:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:17:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:20:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 10:23:48 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2

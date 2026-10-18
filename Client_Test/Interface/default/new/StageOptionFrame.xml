@@ -1,0 +1,1340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Khung cai dat phong dung chung cho tao phong va bang co le
+   Hai trang : Option / Mod Room
+-->
+
+	<FRAME item="StageOptionFrame">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS><X>0</X><Y>0</Y><W>620</W><H>500</H></BOUNDS>
+		<ALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT></TEXT>
+	</FRAME>
+	<PICTURE item="StageOpt_BG" parent="StageOptionFrame">
+		<BOUNDS><X>0</X><Y>0</Y><W>620</W><H>500</H></BOUNDS>
+		<COLOR> <R>18</R> <G>20</G> <B>23</B> <ALPHA>242</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="StageOpt_Title" parent="StageOptionFrame">
+		<FONT>FONTb11b</FONT>
+		<TEXTCOLOR><R>108</R><G>211</G><B>222</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>0</X><Y>12</Y><W>620</W><H>22</H></BOUNDS>
+		<TEXT>Create room</TEXT>
+	</LABEL>
+	<PICTURE item="StageOpt_BG_Title" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>42</Y><W>596</W><H>60</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_BG_TitleL" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>42</Y><W>92</W><H>60</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>220</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOptionFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>20</X><Y>46</Y><W>78</W><H>24</H></BOUNDS>
+		<TEXT>Room Name</TEXT>
+	</LABEL>
+	<EDIT item="StageName" parent="StageOptionFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>110</X><Y>47</Y><W>490</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>128</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOptionFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>20</X><Y>76</Y><W>78</W><H>24</H></BOUNDS>
+		<TEXT>Password</TEXT>
+	</LABEL>
+	<EDIT item="StagePassword" parent="StageOptionFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>110</X><Y>77</Y><W>490</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>32</MAXLENGTH>
+	</EDIT>
+	<PICTURE item="StageOpt_BG_Mode" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>108</Y><W>290</W><H>26</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_BG_ModeL" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>108</Y><W>70</W><H>26</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>220</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOptionFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>20</X><Y>110</Y><W>60</W><H>24</H></BOUNDS>
+		<TEXT>Mode</TEXT>
+	</LABEL>
+	<COMBOBOX item="StageOpt_Mode" parent="StageOptionFrame">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>88</X><Y>110</Y><W>208</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_BG_Map" parent="StageOptionFrame">
+		<BOUNDS><X>318</X><Y>108</Y><W>290</W><H>26</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_BG_MapL" parent="StageOptionFrame">
+		<BOUNDS><X>318</X><Y>108</Y><W>70</W><H>26</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>220</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOptionFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>320</X><Y>110</Y><W>60</W><H>24</H></BOUNDS>
+		<TEXT>Map</TEXT>
+	</LABEL>
+	<COMBOBOX item="StageOpt_Map" parent="StageOptionFrame">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>394</X><Y>110</Y><W>208</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_BG_MaxPlayer" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>140</Y><W>290</W><H>26</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_BG_MaxPlayerL" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>140</Y><W>70</W><H>26</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>220</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOptionFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>20</X><Y>142</Y><W>60</W><H>24</H></BOUNDS>
+		<TEXT>Players</TEXT>
+	</LABEL>
+	<COMBOBOX item="StageOpt_MaxPlayer" parent="StageOptionFrame">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>88</X><Y>142</Y><W>208</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_BG_RoundCount" parent="StageOptionFrame">
+		<BOUNDS><X>318</X><Y>140</Y><W>290</W><H>26</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_BG_RoundCountL" parent="StageOptionFrame">
+		<BOUNDS><X>318</X><Y>140</Y><W>70</W><H>26</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>220</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOptionFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>320</X><Y>142</Y><W>60</W><H>24</H></BOUNDS>
+		<TEXT>Round</TEXT>
+	</LABEL>
+	<COMBOBOX item="StageOpt_RoundCount" parent="StageOptionFrame">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>394</X><Y>142</Y><W>208</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_BG_TabBar" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>176</Y><W>596</W><H>30</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>220</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<BUTTON item="StageOpt_TabOption" parent="StageOptionFrame">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>16</X><Y>177</Y><W>120</W><H>28</H></BOUNDS>
+		<TEXT>Option</TEXT>
+	</BUTTON>
+	<BUTTON item="StageOpt_TabMod" parent="StageOptionFrame">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>138</X><Y>177</Y><W>120</W><H>28</H></BOUNDS>
+		<TEXT>Mod Room</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_TabInd0" parent="StageOptionFrame">
+		<BOUNDS><X>16</X><Y>203</Y><W>120</W><H>3</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_TabInd1" parent="StageOptionFrame">
+		<BOUNDS><X>138</X><Y>203</Y><W>120</W><H>3</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<BUTTON item="StageOpt_OkBtn" parent="StageOptionFrame">
+		<BUTTONLOOK>SteamBlueButtonLook</BUTTONLOOK>
+		<FONT>FONTa8</FONT>
+		<BOUNDS><X>226</X><Y>460</Y><W>78</W><H>26</H></BOUNDS>
+		<TEXT>OK</TEXT>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+	<BUTTON item="ParentClose" parent="StageOptionFrame">
+		<BUTTONLOOK>SteamBlackButtonLook</BUTTONLOOK>
+		<FONT>FONTa8</FONT>
+		<BOUNDS><X>316</X><Y>460</Y><W>78</W><H>26</H></BOUNDS>
+		<TEXT>Cancel</TEXT>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	<PICTURE item="StageOpt_BG_Page" parent="StageOptionFrame">
+		<BOUNDS><X>12</X><Y>208</Y><W>596</W><H>240</H></BOUNDS>
+		<COLOR> <R>24</R> <G>27</G> <B>30</B> <ALPHA>225</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<FRAME item="StageOpt_PageOption" parent="StageOptionFrame">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS><X>12</X><Y>208</Y><W>596</W><H>240</H></BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	<FRAME item="StageOpt_PageMod" parent="StageOptionFrame">
+		<FRAMELOOK>SteamNullFrameLook</FRAMELOOK>
+		<BOUNDS><X>12</X><Y>208</Y><W>596</W><H>240</H></BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	<PICTURE item="StageOpt_RB_StageLimitTime" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>6</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageLimitTime" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>6</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>6</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Time Limit</TEXT>
+	</LABEL>
+	<COMBOBOX item="StageLimitTime" parent="StageOpt_PageOption">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>108</X><Y>7</Y><W>182</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_RB_StageIntrude" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>32</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageIntrude" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>32</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>32</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Late Join</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageIntrude_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>108</X><Y>32</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageIntrude_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>132</X><Y>29</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageIntrude_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>262</X><Y>32</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageIntrude_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>50</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageIntrude_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>50</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageIntrude_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>50</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageIntrude_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>50</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageTeamKill" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>58</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageTeamKill" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>58</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>58</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Friendly Fire</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageTeamKill_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>108</X><Y>58</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageTeamKill_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>132</X><Y>55</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageTeamKill_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>262</X><Y>58</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageTeamKill_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>76</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamKill_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>76</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamKill_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>76</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamKill_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>76</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageLevelLimit" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>84</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageLevelLimit" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>84</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>84</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Level Limit</TEXT>
+	</LABEL>
+	<COMBOBOX item="StageLevelLimit" parent="StageOpt_PageOption">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>108</X><Y>85</Y><W>182</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_RB_StageTeamBalancing" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>110</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageTeamBalancing" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>110</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>110</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Team Balance</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageTeamBalancing_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>108</X><Y>110</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageTeamBalancing_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>132</X><Y>107</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageTeamBalancing_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>262</X><Y>110</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageTeamBalancing_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamBalancing_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamBalancing_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamBalancing_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageObserver" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>136</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageObserver" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>136</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>136</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Spectator</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageObserver_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>108</X><Y>136</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageObserver_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>132</X><Y>133</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageObserver_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>262</X><Y>136</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageObserver_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageObserver_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageObserver_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageObserver_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageVote" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>162</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageVote" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>162</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>162</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Voting</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageVote_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>108</X><Y>162</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageVote_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>132</X><Y>159</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageVote_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>262</X><Y>162</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageVote_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageVote_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageVote_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageVote_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageTeamRotation" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>188</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageTeamRotation" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>188</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>188</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Team Rotation</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageTeamRotation_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>108</X><Y>188</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageTeamRotation_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>132</X><Y>185</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageTeamRotation_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>262</X><Y>188</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageTeamRotation_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamRotation_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>134</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamRotation_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageTeamRotation_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>196</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_PingType" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>214</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_PingType" parent="StageOpt_PageOption">
+		<BOUNDS><X>10</X><Y>214</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>18</X><Y>214</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Ping Type</TEXT>
+	</LABEL>
+	<COMBOBOX item="PingType" parent="StageOpt_PageOption">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>108</X><Y>215</Y><W>182</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_RB_PingLimit" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>6</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_PingLimit" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>6</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>6</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Ping Limit</TEXT>
+	</LABEL>
+	<EDIT item="PingLimitLow" parent="StageOpt_PageOption">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>404</X><Y>7</Y><W>84</W><H>22</H></BOUNDS>
+		<TEXT>0</TEXT>
+		<MAXLENGTH>5</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>488</X><Y>6</Y><W>14</W><H>24</H></BOUNDS>
+		<TEXT>~</TEXT>
+	</LABEL>
+	<EDIT item="PingLimitHigh" parent="StageOpt_PageOption">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>502</X><Y>7</Y><W>84</W><H>22</H></BOUNDS>
+		<TEXT>0</TEXT>
+		<MAXLENGTH>5</MAXLENGTH>
+	</EDIT>
+	<PICTURE item="StageOpt_RB_ServerPing" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>32</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_ServerPing" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>32</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>32</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Server Ping</TEXT>
+	</LABEL>
+	<EDIT item="ServerPing" parent="StageOpt_PageOption">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>404</X><Y>33</Y><W>102</W><H>22</H></BOUNDS>
+		<TEXT>0</TEXT>
+		<MAXLENGTH>5</MAXLENGTH>
+	</EDIT>
+	<BUTTON item="RefreshPingCaller" parent="StageOpt_PageOption">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS><X>508</X><Y>33</Y><W>72</W><H>22</H></BOUNDS>
+		<TEXT>Refresh</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_RB_PingStrikes" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>58</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_PingStrikes" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>58</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>58</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Ping Strikes</TEXT>
+	</LABEL>
+	<COMBOBOX item="PingStrikes" parent="StageOpt_PageOption">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>404</X><Y>59</Y><W>182</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_RB_StageInvulnerabilityStates" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>84</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageInvulnerabilityStates" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>84</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>84</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Invulnerable</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageInvulnerabilityStates_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>404</X><Y>84</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageInvulnerabilityStates_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>428</X><Y>81</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageInvulnerabilityStates_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>558</X><Y>84</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageInvulnerabilityStates_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>102</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageInvulnerabilityStates_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>102</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageInvulnerabilityStates_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>102</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageInvulnerabilityStates_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>102</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_NoKStyle" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>110</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_NoKStyle" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>110</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>110</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>No K-Style</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_NoKStyle_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>404</X><Y>110</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_NoKStyle_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>428</X><Y>107</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_NoKStyle_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>558</X><Y>110</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_NoKStyle_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_NoKStyle_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_NoKStyle_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_NoKStyle_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>128</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageXmas" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>136</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageXmas" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>136</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>136</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Christmas</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageXmas_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>404</X><Y>136</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageXmas_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>428</X><Y>133</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageXmas_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>558</X><Y>136</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageXmas_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageXmas_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageXmas_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageXmas_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>154</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageFog" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>162</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageFog" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>162</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>162</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Fog</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageFog_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>404</X><Y>162</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageFog_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>428</X><Y>159</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageFog_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>558</X><Y>162</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageFog_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageFog_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageFog_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageFog_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>180</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_StageHall" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>188</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_StageHall" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>188</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>188</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Halloween</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageHall_Prev" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>404</X><Y>188</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&lt;</TEXT>
+	</BUTTON>
+	<LABEL item="StageOpt_StageHall_Val" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>235</R><G>235</G><B>235</B></TEXTCOLOR>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>428</X><Y>185</Y><W>128</W><H>24</H></BOUNDS>
+		<TEXT>OFF</TEXT>
+	</LABEL>
+	<BUTTON item="StageOpt_StageHall_Next" parent="StageOpt_PageOption">
+		<BUTTONLOOK>SteamMenuButtonLook</BUTTONLOOK>
+		<BOUNDS><X>558</X><Y>188</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>&gt;</TEXT>
+	</BUTTON>
+	<PICTURE item="StageOpt_StageHall_Seg0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageHall_Sel0" parent="StageOpt_PageOption">
+		<BOUNDS><X>430</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageHall_Seg1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>70</R> <G>75</G> <B>80</B> <ALPHA>200</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_StageHall_Sel1" parent="StageOpt_PageOption">
+		<BOUNDS><X>492</X><Y>206</Y><W>59</W><H>2</H></BOUNDS>
+		<COLOR> <R>108</R> <G>211</G> <B>222</B> <ALPHA>255</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="StageOpt_RB_Netcode" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>214</Y><W>280</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>120</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_RBL_Netcode" parent="StageOpt_PageOption">
+		<BOUNDS><X>306</X><Y>214</Y><W>92</W><H>24</H></BOUNDS>
+		<COLOR> <R>30</R> <G>33</G> <B>36</B> <ALPHA>150</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Label" parent="StageOpt_PageOption">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>314</X><Y>214</Y><W>80</W><H>24</H></BOUNDS>
+		<TEXT>Netcode</TEXT>
+	</LABEL>
+	<COMBOBOX item="StageNetcode" parent="StageOpt_PageOption">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>404</X><Y>215</Y><W>182</W><H>22</H></BOUNDS>
+	</COMBOBOX>
+	<PICTURE item="StageOpt_MRB0" parent="StageOpt_PageMod">
+		<BOUNDS><X>4</X><Y>4</Y><W>588</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>80</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_MRB2" parent="StageOpt_PageMod">
+		<BOUNDS><X>4</X><Y>56</Y><W>588</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>80</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_MRB4" parent="StageOpt_PageMod">
+		<BOUNDS><X>4</X><Y>108</Y><W>588</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>80</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="StageOpt_MRB6" parent="StageOpt_PageMod">
+		<BOUNDS><X>4</X><Y>160</Y><W>588</W><H>24</H></BOUNDS>
+		<COLOR> <R>48</R> <G>52</G> <B>56</B> <ALPHA>80</ALPHA> </COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<BUTTON item="ModForceHPAP" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>6</X><Y>6</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModForceHPAP_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>29</X><Y>4</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_002</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_002</TOOLTIP>
+	</LABEL>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>103</X><Y>4</Y><W>24</W><H>24</H></BOUNDS>
+		<TEXT>HP:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceHP" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>128</X><Y>5</Y><W>38</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>170</X><Y>4</Y><W>24</W><H>24</H></BOUNDS>
+		<TEXT>AP:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceAP" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>195</X><Y>5</Y><W>38</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<BUTTON item="ModForceMelee" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>6</X><Y>32</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModForceMelee_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>29</X><Y>30</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_003</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_003</TOOLTIP>
+	</LABEL>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>103</X><Y>30</Y><W>24</W><H>24</H></BOUNDS>
+		<TEXT>DL:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceMeleeDelay" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>128</X><Y>31</Y><W>38</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>170</X><Y>30</Y><W>24</W><H>24</H></BOUNDS>
+		<TEXT>DMG:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceMeleeDmg" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>195</X><Y>31</Y><W>38</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>3</MAXLENGTH>
+	</EDIT>
+	<BUTTON item="ModGravity" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>6</X><Y>58</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModGravity_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>29</X><Y>56</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_013</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_013</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModGravityVal" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>103</X><Y>57</Y><W>40</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>146</X><Y>56</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>%</TEXT>
+	</LABEL>
+	<BUTTON item="ModSpeed" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>6</X><Y>84</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModSpeed_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>29</X><Y>82</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_014</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_014</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModSpeedVal" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>103</X><Y>83</Y><W>40</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>146</X><Y>82</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>%</TEXT>
+	</LABEL>
+	<BUTTON item="ModJump" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>6</X><Y>110</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModJump_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>29</X><Y>108</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_015</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_015</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModJumpVal" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>103</X><Y>109</Y><W>40</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>146</X><Y>108</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>%</TEXT>
+	</LABEL>
+	<BUTTON item="ModDamage" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>6</X><Y>136</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModDamage_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>29</X><Y>134</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_016</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_016</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModDamageVal" parent="StageOpt_PageMod">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>103</X><Y>135</Y><W>40</W><H>22</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>146</X><Y>134</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>x</TEXT>
+	</LABEL>
+	<LABEL item="Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>6</X><Y>160</Y><W>86</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_004</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_004</TOOLTIP>
+	</LABEL>
+	<COMBOBOX item="ModWeaponRestriction" parent="StageOpt_PageMod">
+		<LISTBOXLOOK>SteamListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN><HALIGN>center</HALIGN><VALIGN>center</VALIGN></TEXTALIGN>
+		<BOUNDS><X>96</X><Y>161</Y><W>150</W><H>22</H></BOUNDS>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_1</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_2</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_3</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_4</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_5</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_6</LISTITEM>
+	</COMBOBOX>
+	<BUTTON item="ModFastReload" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>268</X><Y>6</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModFastReload_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>291</X><Y>4</Y><W>140</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_005</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_005</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModInfiniteAmmo" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>268</X><Y>32</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModInfiniteAmmo_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>291</X><Y>30</Y><W>140</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_006</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_006</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModExplosion" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>268</X><Y>58</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModExplosion_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>291</X><Y>56</Y><W>140</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_007</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_007</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModFlip" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>268</X><Y>84</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModFlip_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>291</X><Y>82</Y><W>140</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_008</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_008</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModMassives" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>268</X><Y>110</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModMassives_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>291</X><Y>108</Y><W>140</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_009</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_009</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModNinja" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>268</X><Y>136</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModNinja_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>291</X><Y>134</Y><W>140</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_010</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_010</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModFPS" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>268</X><Y>162</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModFPS_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>291</X><Y>160</Y><W>140</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_011</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_011</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModRollTheDice" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>434</X><Y>6</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModRollTheDice_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>457</X><Y>4</Y><W>130</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_012</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_012</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModNoClothes" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>434</X><Y>32</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModNoClothes_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>457</X><Y>30</Y><W>130</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_017</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_017</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModNoItems" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>434</X><Y>58</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModNoItems_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>457</X><Y>56</Y><W>130</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_018</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_018</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModWIWeapon" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>434</X><Y>84</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModWIWeapon_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>457</X><Y>82</Y><W>130</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_019</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_019</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModNoDamage" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>434</X><Y>110</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModNoDamage_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>457</X><Y>108</Y><W>130</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_020</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_020</TOOLTIP>
+	</LABEL>
+	<BUTTON item="ModWireframe" parent="StageOpt_PageMod">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>434</X><Y>136</Y><W>20</W><H>20</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="StageOpt_ModWireframe_Label" parent="StageOpt_PageMod">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>457</X><Y>134</Y><W>130</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_021</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_021</TOOLTIP>
+	</LABEL>
+</XML>

@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\ZStageInterface.obj",
+            "outputs": [
+                "Release_Desperate\\ZStageInterface.cpp.obj.dt.module.json",
+                "Release_Desperate\\ZStageInterface.cpp.obj.dt.d.json",
+                "Release_Desperate\\Gunz.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

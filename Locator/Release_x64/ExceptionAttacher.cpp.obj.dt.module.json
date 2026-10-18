@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_x64\\ExceptionAttacher.obj",
+            "outputs": [
+                "Release_x64\\ExceptionAttacher.cpp.obj.dt.module.json",
+                "Release_x64\\ExceptionAttacher.cpp.obj.dt.d.json",
+                "Release_x64\\Locator.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

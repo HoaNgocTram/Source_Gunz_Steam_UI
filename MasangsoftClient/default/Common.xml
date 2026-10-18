@@ -1,0 +1,3032 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Common">
+	<!-- 프레임 생성 : Common -->
+	<FRAME item="MainTopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE: 상단바 뒷배경 -->
+	<PICTURE item="MainTopShadow" parent="MainTopFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1980</W>
+			<H>77</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Shadow.png</BITMAP>
+	</PICTURE>
+
+	<!-- PICTURE: 건즈 로고 -->
+	<PICTURE item="MainTopLogo" parent="MainTopFrame">
+		<BOUNDS>
+			<X>56</X>
+			<Y>31</Y>
+			<W>94</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Logo.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE: 상단바 밑줄 -->
+	<PICTURE item="MainTopBoundary" parent="MainTopFrame">
+		<BOUNDS>
+			<X>66</X>
+			<Y>75</Y>
+			<W>1130</W>
+			<H>1</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Boundary.png</BITMAP>
+	</PICTURE>
+	
+	<!-- TABPANEL: 상단바  -->
+	<TABPANEL item="MainTopTabPanel" parent="MainTopFrame">
+		<BOUNDS>
+			<X>172</X>
+			<Y>0</Y>
+			<W>900</W>
+			<H>150</H>
+		</BOUNDS>
+		<BITMAP type="inform">MissionTabReddot.png</BITMAP>
+		<TABSPACE>30</TABSPACE>
+		<TAB item="HideOutTab">
+			<BITMAP type="background" state="select">MainTop_TabButtonOn.png</BITMAP>
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W>
+				<H>75</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>1</X>
+				<Y>0</Y>
+				<W>25</W>
+				<H>25</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<ALPHA>0</ALPHA>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+				<DISABLE>
+					<ALPHA>0</ALPHA>
+				</DISABLE>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</BASE>
+				<OVER>
+					<R>130</R>
+					<G>130</G>
+					<B>130</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+				<DISABLE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</DISABLE>
+			</COLOR>
+			<FONT>FONTa18b</FONT>
+			<CONTENT>STR:UI_COMMON_TAB_01</CONTENT>
+			<SUBTAB item="LobbyTab">			<!-- Lobby 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_01_01</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="RecordTab">			<!-- Record 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_01_02</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="AchievementsTab">		<!-- Achievements 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_01_03</CONTENT>
+			</SUBTAB>
+			<SOUNDOVER>mouse_over</SOUNDOVER>
+			<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		</TAB>
+		<TAB item="PlayTab">
+			<BITMAP type="background" state="select">MainTop_TabButtonOn.png</BITMAP>
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W>
+				<H>75</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>3</X>
+				<Y>0</Y>
+				<W>25</W>
+				<H>25</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<ALPHA>0</ALPHA>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+				<DISABLE>
+					<ALPHA>0</ALPHA>
+				</DISABLE>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</BASE>
+				<OVER>
+					<R>130</R>
+					<G>130</G>
+					<B>130</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+				<DISABLE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</DISABLE>
+			</COLOR>
+			<FONT>FONTa18b</FONT>
+			<CONTENT>STR:UI_COMMON_TAB_02</CONTENT>
+			<SUBTAB item="CustomTab">			<!-- Custom 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_02_01</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="LeagueTab">			<!-- League 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_02_02</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="ClanWarTab">			<!-- Clan war 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_02_03</CONTENT>
+			</SUBTAB>
+			<SOUNDOVER>mouse_over</SOUNDOVER>
+			<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		</TAB>
+		<TAB item="ShopTab">
+			<BITMAP type="background" state="select">MainTop_TabButtonOn.png</BITMAP>
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W>
+				<H>75</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>3</X>
+				<Y>0</Y>
+				<W>25</W>
+				<H>25</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<ALPHA>0</ALPHA>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+				<DISABLE>
+					<ALPHA>0</ALPHA>
+				</DISABLE>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</BASE>
+				<OVER>
+					<R>130</R>
+					<G>130</G>
+					<B>130</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+				<DISABLE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</DISABLE>
+			</COLOR>
+			<FONT>FONTa18b</FONT>
+			<CONTENT>STR:UI_COMMON_TAB_03</CONTENT>		
+			<SUBTAB item="NewTab">
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_03_01</CONTENT>
+			</SUBTAB>		
+			<SUBTAB item="ItemTab">				<!-- Item 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_03_02</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="CreditTab">				<!-- Credit 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_03_03</CONTENT>
+			</SUBTAB>
+			<!-- GunZ Plus 하단탭 
+			<SUBTAB item="GunzPlusTab">				 
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>14</W>
+					<H>14</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>GunZ Plus</CONTENT> 
+			</SUBTAB> -->
+			<!-- 옵티마이트 하단탭 
+			<SUBTAB item="OptimiteTab">				 
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>14</W>
+					<H>14</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>Optimite</CONTENT>
+			</SUBTAB>  -->
+			<SUBTAB item="ChargeTab">
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_03_04</CONTENT>
+			</SUBTAB>			
+			<SOUNDOVER>mouse_over</SOUNDOVER>
+			<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		</TAB>
+		<TAB item="InvenTab">
+			<BITMAP type="background" state="select">MainTop_TabButtonOn.png</BITMAP>
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W>
+				<H>75</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>3</X>
+				<Y>0</Y>
+				<W>25</W>
+				<H>25</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<ALPHA>0</ALPHA>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+				<DISABLE>
+					<ALPHA>0</ALPHA>
+				</DISABLE>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</BASE>
+				<OVER>
+					<R>130</R>
+					<G>130</G>
+					<B>130</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+				<DISABLE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</DISABLE>
+			</COLOR>
+			<FONT>FONTa18b</FONT>
+			<CONTENT>STR:UI_COMMON_TAB_04</CONTENT>
+			<SUBTAB item="EquipTab">			<!-- Equip 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_04_01</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="CustomizeTab">		<!-- Customize 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_04_02</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="ProfileTab">		<!-- Profile 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_04_04</CONTENT>
+			</SUBTAB>
+			<SOUNDOVER>mouse_over</SOUNDOVER>
+			<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		</TAB>
+		<TAB item="EventTab">
+			<BITMAP type="background" state="select">MainTop_TabButtonOn.png</BITMAP>
+			<RECT type="bounds">
+				<X>0</X>
+				<Y>0</Y>
+				<W>0</W>
+				<H>75</H>
+			</RECT>
+			<RECT type="informIcon">
+				<X>3</X>
+				<Y>0</Y>
+				<W>25</W>
+				<H>25</H>
+			</RECT>
+			<COLOR type="background">
+				<BASE>
+					<ALPHA>0</ALPHA>
+				</BASE>
+				<OVER>
+					<ALPHA>0</ALPHA>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+					<ALPHA>255</ALPHA>
+				</SELECT>
+				<DISABLE>
+					<ALPHA>0</ALPHA>
+				</DISABLE>
+			</COLOR>
+			<COLOR type="content">
+				<BASE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</BASE>
+				<OVER>
+					<R>130</R>
+					<G>130</G>
+					<B>130</B>
+				</OVER>
+				<SELECT>
+					<R>255</R>
+					<G>255</G>
+					<B>255</B>
+				</SELECT>
+				<DISABLE>
+					<R>95</R>
+					<G>95</G>
+					<B>95</B>
+				</DISABLE>
+			</COLOR>
+			<FONT>FONTa18b</FONT>
+			<CONTENT>STR:UI_COMMON_TAB_05</CONTENT>
+			<SUBTAB item="MissionTab">			<!-- Mission 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_05_01</CONTENT>
+			</SUBTAB>
+			<SUBTAB item="Etc1Tab">				<!-- etc1 하단탭  -->
+				<RECT type="bounds">
+					<X>0</X>
+					<Y>75</Y>
+					<W>0</W>
+					<H>75</H>
+				</RECT>
+				<RECT type="informIcon">
+					<X>3</X>
+					<Y>0</Y>
+					<W>25</W>
+					<H>25</H>
+				</RECT>
+				<COLOR type="background">
+					<BASE>
+						<ALPHA>0</ALPHA>
+					</BASE>
+					<OVER>
+						<ALPHA>0</ALPHA>
+					</OVER>
+					<SELECT>
+						<ALPHA>0</ALPHA>
+					</SELECT>
+					<DISABLE>
+						<ALPHA>0</ALPHA>
+					</DISABLE>
+				</COLOR>
+				<COLOR type="content">
+					<BASE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</BASE>
+					<OVER>
+						<R>160</R>
+						<G>160</G>
+						<B>160</B>
+					</OVER>
+					<SELECT>
+						<R>255</R>
+						<G>255</G>
+						<B>255</B>
+					</SELECT>
+					<DISABLE>
+						<R>125</R>
+						<G>125</G>
+						<B>125</B>
+					</DISABLE>
+				</COLOR>
+				<FONT>FONTa16b</FONT>
+				<CONTENT>STR:UI_COMMON_TAB_05_02</CONTENT>
+			</SUBTAB>
+			<SOUNDOVER>mouse_over</SOUNDOVER>
+			<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		</TAB>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</TABPANEL>
+	
+	<!-- PICTURE: 캐시 로고 -->
+	<PICTURE item="MainTopCashIcon" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1000</X>
+			<Y>47</Y>
+			<W>23</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_CashIcon.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 캐시 정보 표시 -->
+	<LABEL item="MainTopCashAmount" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1028</X>
+			<Y>49</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>1025</TEXT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+
+	<!-- PICTURE: 옵티마이트 로고 -->
+	<PICTURE item="MainTopOptimiteIcon" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1000</X>
+			<Y>47</Y>
+			<W>23</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>GunzPlus_OptimiteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- Label : 옵티마이트 정보 표시 -->
+	<LABEL item="MainTopOptimiteAmount" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1028</X>
+			<Y>49</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>1025</TEXT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>	
+	
+	<!-- PICTURE: ZCoin 로고 -->
+	<PICTURE item="MainTopZCoinIcon" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1117</X>
+			<Y>47</Y>
+			<W>23</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_ZCoinIcon.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : ZCoin 정보 표시 -->
+	<LABEL item="MainTopZCoinAmount" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1145</X>
+			<Y>49</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>95460</TEXT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- PICTURE: 바운티 로고 -->
+	<PICTURE item="MainTopBoundaryIcon" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1234</X>
+			<Y>47</Y>
+			<W>23</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_BountyIcon.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 바운티 정보 표시 -->
+	<LABEL item="MainTopBountyAmount" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1264</X>
+			<Y>49</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>95460</TEXT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+			
+	<!-- PICTURE: 프로필 배경 -->
+	<PICTURE item="MainTopProfileBg" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1422</X>
+			<Y>30</Y>
+			<W>206</W>
+			<H>56</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Profile.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE: 건즈 플러스 약장 -->
+	<PICTURE item="MainTopPlusIcon" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1348</X>
+			<Y>89</Y>
+			<W>97</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>GunzPlusIcon_On.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE: 프로필 아이콘 -->
+	<PICTURE item="MainTopProfileIcon" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1366</X>
+			<Y>30</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileIconOn_0000.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE: 프로필 프레임 -->
+	<PICTURE item="MainTopProfileFrame" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1366</X>
+			<Y>30</Y>
+			<W>56</W>
+			<H>56</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 프로필 닉네임 -->
+	<ZOUTLINELABEL item="MainTopProfileNickname" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<BOUNDS>
+			<X>1434</X>
+			<Y>38</Y>
+			<W>180</W>
+			<H>25</H>
+		</BOUNDS>
+		<OUTLINECOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</OUTLINECOLOR>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<LABELTEXT>MyNickName</LABELTEXT>
+	</ZOUTLINELABEL>
+	
+	<!-- Label : 프로필 레벨 -->
+	<LABEL item="MainTopProfileLevel" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1434</X>
+			<Y>63</Y>
+			<W>50</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Lv. 31</TEXT>
+	</LABEL>
+	
+	<!-- Label : 프로필 경험치 -->
+	<LABEL item="MainTopProfileExp" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1498</X>
+			<Y>63</Y>
+			<W>35</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>EXP</TEXT>
+	</LABEL>
+	
+	<!-- BmButton : 프로필 인벤토리 이동 버튼 -->
+	<BMBUTTON item="MainTopProfileButton" parent="MainTopFrame">
+		<BUTTONLOOK>GButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>1366</X>
+			<Y>30</Y>
+			<W>262</W>
+			<H>56</H>
+		</BOUNDS>
+		<BUTTONEFFECT/>
+		<BITMAP type="over">PurchasePeriodButton_Over.png</BITMAP>
+		<STRETCH/>	
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Label : 프로필 경험치 퍼센트 -->
+	<LABEL item="MainTopProfileExpPercent" parent="MainTopFrame">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1534</X>
+			<Y>63</Y>
+			<W>45</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>30%</TEXT>
+	</LABEL>
+	
+	<!-- ICONBUTTON : 메인탑 옵션 버튼 -->
+	<ICONBUTTON item="MainTopOptionButton" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1839</X>
+			<Y>39</Y>
+			<W>34</W>
+			<H>34</H>
+		</BOUNDS>
+		<BITMAP type="icon" state="base">HideOut_OptionButton.png</BITMAP>
+		<BITMAP type="icon" state="over">HideOut_OptionButtonOver.png</BITMAP>
+		<ICONRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>34</W>
+			<H>34</H>
+		</ICONRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+	<!-- ICONBUTTON : 메일함 버튼 -->
+	<ICONBUTTON item="LobbyMailboxButton" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1742</X>
+			<Y>27</Y>
+			<W>60</W>
+			<H>50</H>
+		</BOUNDS>
+		<BITMAP type="icon" state="base">MainTop_Mail_OFF.png</BITMAP>
+		<BITMAP type="icon" state="over">MainTop_Mail_ON.png</BITMAP>
+		<BITMAP type="icon" state="select">MainTop_Mail_ON.png</BITMAP>
+		<BITMAP type="inform">MissionTabReddot.png</BITMAP>
+		<ICONRECT>
+			<X>13</X>
+			<Y>19</Y>
+			<W>25</W>
+			<H>19</H>
+		</ICONRECT>
+		<INFORMRECT>
+			<X>35</X>
+			<Y>0</Y>
+			<W>25</W>
+			<H>25</H>
+		</INFORMRECT>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mail</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+	<!-- FRAME : MailGroup -->
+	<FRAME item="MailGroup" parent="MainTopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>1508</X>
+			<Y>112</Y>
+			<W>360</W>
+			<H>938</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>true</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 메일 리스트 하단 화살표 -->
+	<PICTURE item="MailboxBottomArrow" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1762</X>
+			<Y>90</Y>
+			<W>12</W>
+			<H>7</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ChatArrow_Down.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<!-- PICTURE : 메일 리스트  바 -->
+	<PICTURE item="MailBG" parent="MailGroup">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>360</W>
+			<H>938</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MailListBG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<FRAME item="MailListSideBar" parent="MailGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>376</W>
+			<H>955</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- ZLABEL : 메일 갯수 라벨 -->
+	<ZLABEL item="MailboxCountLabel" parent="MailGroup">
+		<FONT>FONTb15</FONT>
+		<BOUNDS>
+			<X>245</X>
+			<Y>10</Y>
+			<W>100</W>
+			<H>40</H>
+		<STRETCH/>
+		</BOUNDS>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>right</HALIGN>
+		</TEXTALIGN>
+		<TEXTPADDING>
+			<X>0</X>
+			<Y>0</Y>
+		</TEXTPADDING>
+	</ZLABEL>
+	
+	<!-- ZLABEL : 메일함 상단 라벨 -->
+	<ZLABEL item="MailboxTopLabel" parent="MailGroup">
+		<FONT>FONTb16</FONT>
+		<BOUNDS>
+			<X>6</X>
+			<Y>10</Y>
+			<W>150</W>
+			<H>40</H>
+		<STRETCH/>
+		</BOUNDS>
+		<DEFAULTTEXT>STR:UI_MAILBOX_TOP_LABEL</DEFAULTTEXT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXTPADDING>
+			<X>10</X>
+			<Y>0</Y>
+		</TEXTPADDING>
+	</ZLABEL>
+
+	<!-- MAILLISTBOX : 메일함 목록 -->
+	<MAILLISTBOX item="MailListBox" parent="MailListSideBar">
+		<BOUNDS>
+			<X>0</X>
+			<Y>63</Y>
+			<W>360</W>
+			<H>875</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<RECT type="itemMailIcon">
+			<X>15</X>
+			<Y>19</Y>
+			<W>25</W>
+			<H>23</H>
+		</RECT>
+		<RECT type="itemTitle">
+			<X>56</X>
+			<Y>10</Y>
+			<W>260</W>
+			<H>18</H>
+		</RECT>
+		<RECT type="itemProfileIcon">
+			<X>59</X>
+			<Y>39</Y>
+			<W>13</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="itemName">
+			<X>75</X>
+			<Y>40</Y>
+			<W>36</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="itemTime">
+			<X>219</X>
+			<Y>40</Y>
+			<W>74</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="itemDelete">
+			<X>302</X>
+			<Y>38</Y>
+			<W>18</W>
+			<H>18</H>
+		</RECT>
+		<RECT type="itemGift">
+			<X>278</X>
+			<Y>8</Y>
+			<W>43</W>
+			<H>20</H>
+		</RECT>
+		<RECT type="item">
+			<X>9</X>
+			<Y>9</Y>
+			<W>330</W>
+			<H>64</H>
+		</RECT>
+		<RECT type="scrollbar">
+			<X>346</X>
+			<Y>72</Y>
+			<W>6</W>
+			<H>795</H>
+		</RECT>
+		<RECT type="mailList">
+			<X>0</X>
+			<Y>202</Y>
+			<W>360</W>
+			<H>807</H>
+		</RECT>
+		<BITMAP type="read">MailIcon_Read.png</BITMAP>
+		<BITMAP type="unread">MailIcon_Default.png</BITMAP>
+		<BITMAP type="profileIcon">ProfileIconOn_0001.png</BITMAP>
+		<BITMAP type="gift">MailListItem_Default.png</BITMAP>
+		<BITMAP type="giftnone">MailListItem_None.png</BITMAP>
+		<BITMAP type="delete">HideOut_CharacterDeleteButton.png</BITMAP>
+		<BITMAP type="listFrame">MailList.png</BITMAP>
+		<BITMAP type="framebg">MailSubjectBG.png</BITMAP>
+		<!-- <BITMAP type="mailarrive">Mail_income.png</BITMAP>
+		<BITMAP type="mailnormal">mail_icon.png</BITMAP> -->
+		<BITMAP type="mailalpha">MailList_AlphaBox.png</BITMAP>
+		<ITEMGAP>6</ITEMGAP>
+		<COLOR type="scrollbar" part="background">
+			<R>64</R>
+			<G>62</G>
+			<B>62</B>
+		</COLOR>
+		<COLOR type="scrollbar" part="handle">
+			<R>148</R>
+			<G>145</G>
+			<B>145</B>
+		</COLOR>
+		<COLOR type="mailItem" part="title">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="mailItem" part="name">
+			<R>163</R>
+			<G>163</G>
+			<B>163</B>
+		</COLOR>
+		<COLOR type="mailItem" part="time">
+			<R>163</R>
+			<G>163</G>
+			<B>163</B>
+		</COLOR>
+		<FONTINFO type="large">FONTb13</FONTINFO>
+		<FONTINFO type="medium">FONTb10</FONTINFO>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</MAILLISTBOX>
+
+	<!-- ICONBUTTON : 메일 개별 삭제 버튼 -->
+	<ICONBUTTON item="DeleteMailListButton" parent="MailListBox">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>50</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+		</ALIGN>
+		<BITMAP type="bg">Main_ButtonBGShadow.png</BITMAP>
+		<BITMAP type="icon">HideOut_CharacterDeleteButton.png</BITMAP>
+		<BITMAP type="edge">Main_ButtonOutlineShadow.png</BITMAP>
+		<STRETCH/>
+		<COLOR type="bg">
+			<BASE>
+				<R>32</R>
+				<G>98</G>
+				<B>170</B>
+			</BASE>
+			<OVER>
+				<R>44</R>
+				<G>114</G>
+				<B>193</B>
+			</OVER>
+			<DOWN>
+				<R>44</R>
+				<G>114</G>
+				<B>193</B>
+			</DOWN>
+		</COLOR>
+		<COLOR type="edge">
+			<BASE>
+				<R>97</R>
+				<G>194</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>165</R>
+				<G>220</G>
+				<B>255</B>
+			</OVER>
+			<DOWN>
+				<R>165</R>
+				<G>220</G>
+				<B>255</B>
+			</DOWN>
+		</COLOR>
+		<ICONRATIO>1.0</ICONRATIO>
+		<VISIBLE>false</VISIBLE>
+		<ENABLE>false</ENABLE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+	<!-- 메일 리스트 하단 배경 바 -->
+	<PICTURE item="MailListBottomBG" parent="MailListSideBar">
+		<BOUNDS>
+			<X>0</X>
+			<Y>871</Y>
+			<W>360</W>
+			<H>68</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MailBottomBarBG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+
+	<!-- ICONBUTTON : 메일 일괄수령 버튼 -->
+	<ICONBUTTON item="ReceiveAllGiftMailButton" parent="MailListSideBar">
+		<FONT>FONTb18</FONT>
+		<BOUNDS>
+			<X>13</X>
+			<Y>882</Y>
+			<W>156</W>
+			<H>44</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MAILBOX_RECEIVE_ALL_MAIL</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>156</W>
+			<H>44</H>
+		</TEXTRECT>
+		<COLOR type="font">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<DOWN>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DOWN>
+		</COLOR>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<BITMAP type="bg" state="base">ReceiveButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">ReceiveButton_ON_Over.png</BITMAP>
+		<BITMAP type="bg" state="down">ReceiveButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="disable">ReceiveButton_OFF.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ICONBUTTON : 메일 전체삭제 버튼 -->
+	<ICONBUTTON item="DeleteAllMailButton" parent="MailListSideBar">
+		<FONT>FONTb18</FONT>
+		<BOUNDS>
+			<X>192</X>
+			<Y>882</Y>
+			<W>156</W>
+			<H>44</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MAILBOX_DELETE_ALL_MAIL</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>156</W>
+			<H>44</H>
+		</TEXTRECT>
+		<COLOR type="font">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<DOWN>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DOWN>
+		</COLOR>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<BITMAP type="bg" state="base">DeleteButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">DeleteButton_ON_Over.png</BITMAP>
+		<BITMAP type="bg" state="down">DeleteButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="disable">DeleteButton_OFF.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	
+	<!-- FRAME : 메일 상세정보 바 -->
+	<FRAME item="MailDetailSideBar" parent="MailGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>360</W>
+			<H>938</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- 메일 상세정보 탭 -->
+	<MAILDETAILWIDGET item="MailDetailWidget" parent="MailDetailSideBar">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>0</X>
+			<Y>12</Y>
+			<W>360</W>
+			<H>887</H>
+		</BOUNDS>
+		<RECT type="titleBG">
+			<X>9</X>
+			<Y>60</Y>
+			<W>330</W>
+			<H>64</H>
+		</RECT>
+		<RECT type="giftIcon">
+			<X>287</X>
+			<Y>68</Y>
+			<W>43</W>
+			<H>20</H>
+		</RECT>
+		<RECT type="title">
+			<X>72</X>
+			<Y>72</Y>
+			<W>160</W>
+			<H>39</H>
+		</RECT>
+		<RECT type="backButton">
+			<X>18</X>
+			<Y>72</Y>
+			<W>40</W>
+			<H>40</H>
+		</RECT>
+		<RECT type="dateTime">
+			<X>14</X>
+			<Y>146</Y>
+			<W>170</W>
+			<H>15</H>
+		</RECT>
+		<RECT type="detailTitle">
+			<X>14</X>
+			<Y>170</Y>
+			<W>300</W>
+			<H>18</H>
+		</RECT>
+		<RECT type="detailSenderIcon">
+			<X>14</X>
+			<Y>187</Y>
+			<W>13</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="detailSenderName">
+			<X>32</X>
+			<Y>189</Y>
+			<W>72</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="content">
+			<X>17</X>
+			<Y>230</Y>
+			<W>315</W>
+			<H>200</H>
+		</RECT>
+		<RECT type="detailTitleDivider">
+			<X>13</X>
+			<Y>211</Y>
+			<W>325</W>
+			<H>2</H>
+		</RECT>
+		<RECT type="detailContentDivider">
+			<X>13</X>
+			<Y>425</Y>
+			<W>325</W>
+			<H>2</H>
+		</RECT>
+		<RECT type="detailItemText">
+			<X>15</X>
+			<Y>440</Y>
+			<W>100</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="detailItem">
+			<X>15</X>
+			<Y>470</Y>
+			<W>72</W>
+			<H>72</H>
+		</RECT>
+		<RECT type="detailItemCount">
+			<X>46</X>
+			<Y>56</Y>
+			<W>26</W>
+			<H>25</H>
+		</RECT>
+		<RECT type="detailReceiveName">
+			<X>15</X>
+			<Y>500</Y>
+			<W>100</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="detailCheck">
+			<X>0</X>
+			<Y>0</Y>
+			<W>30</W>
+			<H>30</H>
+		</RECT>
+		<ITEMGAP>11</ITEMGAP>
+		<BITMAP type="read">MailIcon_Default.png</BITMAP>
+		<BITMAP type="unread">MailIcon_Read.png</BITMAP>
+		<BITMAP type="gift">MailListItem_Default.png</BITMAP>
+		<BITMAP type="giftnone">MailListItem_None.png</BITMAP>
+		<BITMAP type="framebg">MailList.png</BITMAP>
+		<BITMAP type="divider">MailDivider.png</BITMAP>
+		<BITMAP type="checkIcon">CompleteIcon.png</BITMAP>
+		<BITMAP type="itemAlpha">ReceiveCompleteAlphaBox.png</BITMAP>
+		<COLOR type="titleText" part="background">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="dateTimeText">
+			<R>163</R>
+			<G>163</G>
+			<B>163</B>
+		</COLOR>
+		<COLOR type="inTitleText">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="senderNameText">
+			<R>163</R>
+			<G>163</G>
+			<B>163</B>
+		</COLOR>
+		<COLOR type="contentText">
+			<R>163</R>
+			<G>163</G>
+			<B>163</B>
+		</COLOR>
+		<COLOR type="receiveNameText">
+			<R>163</R>
+			<G>163</G>
+			<B>163</B>
+		</COLOR>
+		<COLOR type="attachItemText">
+			<R>50</R>
+			<G>175</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="attachItemCount">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<FONTINFO type="large">FONTb13</FONTINFO>
+		<FONTINFO type="medium">FONTb13</FONTINFO>
+		<FONTINFO type="small">FONTb10</FONTINFO>
+	</MAILDETAILWIDGET>
+	
+	<TEXTAREA item = "MailExpiredItemTextArea" parent = "MailDetailWidget">
+		<FONT>FONTb10b</FONT>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>17</X>
+			<Y>230</Y>
+			<W>300</W>
+			<H>450</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<INDENTATION>0</INDENTATION>
+		<SCROLLBARLOOK>OptionSliderLook</SCROLLBARLOOK>
+		<SCROLLBAR>true</SCROLLBAR>
+	</TEXTAREA>
+	
+	<ZRICHTOOLTIP item="Mail_Tooltip" parent="MainTopFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">ShopEquipTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<COLOR type="textcolor">
+			<R>200</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>389</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>350</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_08" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTb21b" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>			
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>132</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="ItemSourceSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>54</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>			
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Equipment_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+	
+	<!-- BMBUTTON : 메일 수령 버튼 -->
+	<ICONBUTTON item="ReceiveGiftMailButton" parent="MailDetailSideBar">
+		<FONT>FONTb18</FONT>
+		<BOUNDS>
+			<X>12</X>
+			<Y>882</Y>
+			<W>156</W>
+			<H>44</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MAILBOX_RECEIVE_ONE_MAIL</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>156</W>
+			<H>44</H>
+		</TEXTRECT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<COLOR type="font">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<DOWN>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DOWN>
+		</COLOR>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<BITMAP type="bg" state="base">ReceiveButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">ReceiveButton_ON_Over.png</BITMAP>
+		<BITMAP type="bg" state="down">ReceiveButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="disable">ReceiveButton_OFF.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- BMBUTTON : 메일 삭제 버튼 -->
+	<ICONBUTTON item="DeleteMailButton" parent="MailDetailSideBar">
+		<FONT>FONTb18</FONT>
+		<BOUNDS>
+			<X>192</X>
+			<Y>882</Y>
+			<W>156</W>
+			<H>44</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MAILBOX_DELETE_ONE_MAIL</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>156</W>
+			<H>44</H>
+		</TEXTRECT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<COLOR type="font">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<DOWN>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DOWN>
+		</COLOR>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<BITMAP type="bg" state="base">DeleteButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">DeleteButton_ON_Over.png</BITMAP>
+		<BITMAP type="bg" state="down">DeleteButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="disable">DeleteButton_OFF.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+	<!-- ICONBUTTON : 메일 리스트 복귀 버튼 -->
+	<ICONBUTTON item="BackToMailListButton" parent="MailDetailSideBar">
+		<BOUNDS>
+			<X>18</X>
+			<Y>84</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">BackButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">BackButton_Over.png</BITMAP>
+		<BITMAP type="icon" state="base">SlotStepper_LArrow.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>0</ALPHA>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>0</ALPHA>
+			</OVER>
+			<DOWN>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+				<ALPHA>0</ALPHA>
+			</DOWN>
+		</COLOR>
+		<ICONRECT>
+			<X>15</X>
+			<Y>15</Y>
+			<W>8</W>
+			<H>13</H>
+		</ICONRECT>
+		<ICONRATIO>1.0</ICONRATIO>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+	<!-- ICONBUTTON : 메인탑 소셜 버튼 -->
+	<ICONBUTTON item="MainTopSocialButton" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1653</X>
+			<Y>27</Y>
+			<W>60</W>
+			<H>50</H>
+		</BOUNDS>
+		<BITMAP type="icon" state="base">MainTop_SocialButtonIconOFF.png</BITMAP>
+		<BITMAP type="icon" state="over">MainTop_SocialButtonIcon.png</BITMAP>
+		<BITMAP type="icon" state="select">MainTop_SocialButtonIcon.png</BITMAP>
+		<BITMAP type="inform">MissionTabReddot.png</BITMAP>
+		<ICONRECT>
+			<X>13</X>
+			<Y>16</Y>
+			<W>25</W>
+			<H>24</H>
+		</ICONRECT>
+		<INFORMRECT>
+			<X>35</X>
+			<Y>0</Y>
+			<W>25</W>
+			<H>25</H>
+		</INFORMRECT>
+		<PUSHBUTTON/>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- 소셜 아이콘 하단 화살표 -->
+	<PICTURE item="SocialBottomArrow" parent="MainTopFrame">
+		<BOUNDS>
+			<X>1673</X>
+			<Y>90</Y>
+			<W>12</W>
+			<H>7</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ChatArrow_Down.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	
+	<!-- FRAME : MatchGroup -->
+	<FRAME item="MatchGroup" parent="MainTopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	
+	<!-- PICTURE : 매칭 오버레이 이미지 -->
+	<PICTURE item="Matching_Overlay" parent="MatchGroup">
+		<BOUNDS>
+			<X>766</X>
+			<Y>961</Y>
+			<W>405</W>
+			<H>98</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ClanMatchOverlay.png</BITMAP>
+	</PICTURE>
+	
+	<!-- ICONBUTTON : 메인탑 소셜 버튼 -->
+	<ICONBUTTON item="Matching_Overlay_CancelButton" parent="MatchGroup">
+		<FONT>FONTb15</FONT>
+		<BOUNDS>
+			<X>1082</X>
+			<Y>970</Y>
+			<W>80</W>
+			<H>80</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">ClanMatchOverlayCancel_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">ClanMatchOverlayCancel_Over.png</BITMAP>
+		<BITMAP type="bg" state="select">ClanMatchOverlayCancel_Over.png</BITMAP>
+		<STRETCH/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>Cancel</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>80</W>
+			<H>80</H>
+		</TEXTRECT>
+	</ICONBUTTON>
+	
+	<!-- Label : 매칭 타이틀 라벨 -->
+	<LABEL item="MatchingTitleLabel" parent="MatchGroup">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>806</X>
+			<Y>983</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Ranked Leagues</TEXT>
+		<TEXTALIGN>
+			<VALIGN>top</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- Label : 매칭 검색중 라벨 -->
+	<LABEL item="MatchingSearchingLabel" parent="MatchGroup">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>807</X>
+			<Y>1014</Y>
+			<W>150</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>48</R>
+			<G>48</G>
+			<B>50</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_LEAGUE_MATCHMAKING_BUTTON</TEXT>
+		<TEXTALIGN>
+			<VALIGN>top</VALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	
+	<!-- Label : 매칭 대기시간 정보 표시 -->
+	<LABEL item="MatchingWaitElapsedTime" parent="MatchGroup">
+		<FONT>FONTb13</FONT>
+		<BOUNDS>
+			<X>950</X>
+			<Y>1005</Y>
+			<W>120</W>
+			<H>27</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>99:99</TEXT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>right</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- FRAME : MatchFoundGroup -->
+	<FRAME item="MatchFoundGroup" parent="MainTopFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>true</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>true</FADEENABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 매치결성 배경 이미지 -->
+	<PICTURE item="MatchFound_BG" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>121</OPACITY>
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	
+	<!-- PICTURE : 매치결성 오버레이 이미지 -->
+	<PICTURE item="MatchFound_Overlay" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>634</X>
+			<Y>330</Y>
+			<W>652</W>
+			<H>432</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MatchingPopupFrame.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 매치 아이콘 이미지 -->
+	<PICTURE item="MatchFound_ModeIcon" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>847</X>
+			<Y>376</Y>
+			<W>220</W>
+			<H>220</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MatchingPopupModeIcon.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 텍스트 -->
+	<LABEL item="MatchFound_Found_Label" parent="MatchFoundGroup">
+		<FONT>FONTa23b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>812</X>
+			<Y>529</Y>
+			<W>300</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>FOUND THE MATCH</TEXT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- PICTURE : 수락 아이콘  -->
+	<PICTURE item="MatchFound_AceeptIcon" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>859</X>
+			<Y>593</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MatchingPopupIcon_Accept.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 거절 아이콘  -->
+	<PICTURE item="MatchFound_RejectIcon" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>1004</X>
+			<Y>593</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MatchingPopupIcon_Cancel.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 지역명 -->
+	<LABEL item="MatchFound_Region_Label" parent="MatchFoundGroup">
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>189</R>
+			<G>189</G>
+			<B>189</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>983</X>
+			<Y>365</Y>
+			<W>250</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Nousagi Land</TEXT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>right</HALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- PICTURE : 연결 상태 아이콘  -->
+	<PICTURE item="MatchFound_Connection" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>1237</X>
+			<Y>375</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RegionPing_Green.png</BITMAP>
+	</PICTURE>
+	
+	
+	<!-- LABEL : 수락 숫자 -->
+	<LABEL item="MatchFound_Accept_Label" parent="MatchFoundGroup">
+		<FONT>FONTa14</FONT>
+		<TEXTCOLOR>
+			<R>184</R>
+			<G>255</G>
+			<B>226</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>905</X>
+			<Y>597</Y>
+			<W>50</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXT>0</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 거절 숫자 -->
+	<LABEL item="MatchFound_Reject_Label" parent="MatchFoundGroup">
+		<FONT>FONTa14</FONT>
+		<TEXTCOLOR>
+			<R>221</R>
+			<G>142</G>
+			<B>140</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1049</X>
+			<Y>597</Y>
+			<W>50</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXT>0</TEXT>
+	</LABEL>
+	
+	
+	<!-- ICONBUTTON : 매치 수락 버튼 -->
+	<ICONBUTTON item="MatchFound_AcceptButton" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>692</X>
+			<Y>665</Y>
+			<W>254</W>
+			<H>60</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="down">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="disable">HideOut_QuickStartButtonOff.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>173</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>235</G>
+				<B>156</B>
+			</OVER>
+			<DOWN>
+				<R>76</R>
+				<G>159</G>
+				<B>173</B>
+			</DOWN>
+			<DISABLE>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DISABLE>
+		</COLOR>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>55</H>
+		</TEXTRECT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa23</FONT>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MATCHPOPUP_ACCEPT_BUTTON</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+	<!-- ICONBUTTON : 매치 취소 버튼 -->
+	<ICONBUTTON item="MatchFound_CancelButton" parent="MatchFoundGroup">
+		<BOUNDS>
+			<X>974</X>
+			<Y>665</Y>
+			<W>254</W>
+			<H>60</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">DeleteButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">DeleteButton_ON_Over.png</BITMAP>
+		<BITMAP type="bg" state="down">DeleteButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="disable">DeleteButton_OFF.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>143</R>
+				<G>144</G>
+				<B>149</B>
+			</BASE>
+			<OVER>
+				<R>143</R>
+				<G>144</G>
+				<B>149</B>
+			</OVER>
+			<DOWN>
+				<R>143</R>
+				<G>144</G>
+				<B>149</B>
+			</DOWN>
+			<DISABLE>
+				<R>121</R>
+				<G>122</G>
+				<B>127</B>
+			</DISABLE>
+		</COLOR>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>55</H>
+		</TEXTRECT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa23</FONT>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MATCHPOPUP_REJECT_BUTTON</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	
+</XML>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <LEAGUETIER tier_id="1" league_point="0" />
+  <LEAGUETIER tier_id="2" league_point="100" />
+  <LEAGUETIER tier_id="3" league_point="200" />
+  <LEAGUETIER tier_id="4" league_point="300" />
+  <LEAGUETIER tier_id="5" league_point="400" />
+  <LEAGUETIER tier_id="6" league_point="500" />
+  <LEAGUETIER tier_id="7" league_point="600" />
+  <LEAGUETIER tier_id="8" league_point="700" />
+  <LEAGUETIER tier_id="9" league_point="800" />
+  <LEAGUETIER tier_id="10" league_point="900" />
+  <LEAGUETIER tier_id="11" league_point="1000" />
+  <LEAGUETIER tier_id="12" league_point="1100" />
+  <LEAGUETIER tier_id="13" league_point="1200" />
+  <LEAGUETIER tier_id="14" league_point="1300" />
+  <LEAGUETIER tier_id="15" league_point="1400" />
+  <LEAGUETIER tier_id="16" league_point="1500" />
+  <LEAGUETIER tier_id="17" league_point="1600" />
+  <LEAGUETIER tier_id="18" league_point="1700" />
+  <LEAGUETIER tier_id="19" league_point="1800" />
+  <LEAGUETIER tier_id="20" league_point="1900" />
+  <LEAGUETIER tier_id="21" league_point="2000" />
+  <LEAGUETIER tier_id="22" league_point="2100" />
+  <LEAGUETIER tier_id="23" league_point="2200" />
+  <LEAGUETIER tier_id="24" league_point="2300" />
+  <LEAGUETIER tier_id="25" league_point="2400" />
+</XML>

@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="StageCreateFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>580</W>
+			<H>495</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_SCF_01</TEXT>
+	</FRAME>
+
+	<!-- Room Name -->
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>19</X><Y>38</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:UI_SCF_02</TEXT>
+	</LABEL>
+	<EDIT item="StageName" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>95</X><Y>38</Y><W>466</W><H>24</H></BOUNDS>
+		<TEXT>STR:UI_SCF_04</TEXT>
+		<MAXLENGTH>128</MAXLENGTH>
+	</EDIT>
+
+	<!-- Password -->
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>19</X><Y>66</Y><W>72</W><H>24</H></BOUNDS>
+		<TEXT>STR:UI_SCF_03</TEXT>
+	</LABEL>
+	<EDIT item="StagePassword" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>95</X><Y>66</Y><W>466</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>32</MAXLENGTH>
+	</EDIT>
+
+	<!-- Mods Section Label -->
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR><R>255</R><G>200</G><B>50</B></TEXTCOLOR>
+		<BOUNDS><X>19</X><Y>96</Y><W>320</W><H>18</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_001</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_001</TOOLTIP>
+	</LABEL>
+
+	<!-- ==================== LEFT COLUMN ==================== -->
+
+	<!-- Row 1: Force HP/AP [hpap] -->
+	<BUTTON item="ModForceHPAP" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>118</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModForceHPAP_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>118</Y><W>60</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_002</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_002</TOOLTIP>
+	</LABEL>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>108</X><Y>118</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>HP:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceHP" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>130</X><Y>118</Y><W>45</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>179</X><Y>118</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>AP:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceAP" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>201</X><Y>118</Y><W>45</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+
+	<!-- Row 2: Force Melee [meleedelay=N] [meleedmg=N] -->
+	<BUTTON item="ModForceMelee" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>146</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModForceMelee_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>146</Y><W>60</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_003</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_003</TOOLTIP>
+	</LABEL>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>108</X><Y>146</Y><W>22</W><H>24</H></BOUNDS>
+		<TEXT>DL:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceMeleeDelay" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>130</X><Y>146</Y><W>45</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>4</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>180</R><G>180</G><B>180</B></TEXTCOLOR>
+		<BOUNDS><X>179</X><Y>146</Y><W>30</W><H>24</H></BOUNDS>
+		<TEXT>DMG:</TEXT>
+	</LABEL>
+	<EDIT item="ModForceMeleeDmg" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>211</X><Y>146</Y><W>35</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>3</MAXLENGTH>
+	</EDIT>
+
+	<!-- Row 3: Weapon Restriction (DROPDOWN) -->
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>19</X><Y>174</Y><W>110</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_004</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_004</TOOLTIP>
+	</LABEL>
+	<COMBOBOX item="ModWeaponRestriction" parent="StageCreateFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<LISTBOXLOOK>DefaultListBoxLook</LISTBOXLOOK>
+		<BOUNDS><X>129</X><Y>174</Y><W>117</W><H>24</H></BOUNDS>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_1</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_2</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_3</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_4</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_5</LISTITEM>
+		<LISTITEM>STR:ROOM_TOOLTIP_004_6</LISTITEM>
+	</COMBOBOX>
+
+	<!-- Row 4: Fast Reload [r] -->
+	<BUTTON item="ModFastReload" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>200</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModFastReload_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>200</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_005</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_005</TOOLTIP>
+	</LABEL>
+
+	<!-- Row 5: Infinite Ammo [ia] -->
+	<BUTTON item="ModInfiniteAmmo" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>226</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModInfiniteAmmo_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>226</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_006</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_006</TOOLTIP>
+	</LABEL>
+
+	<!-- Row 6: No Explosions [ex] -->
+	<BUTTON item="ModExplosion" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>252</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModExplosion_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>252</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_007</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_007</TOOLTIP>
+	</LABEL>
+
+	<!-- Row 7: No Flips [f] -->
+	<BUTTON item="ModFlip" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>278</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModFlip_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>278</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_008</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_008</TOOLTIP>
+	</LABEL>
+
+	<!-- Row 8: No Massives [m] -->
+	<BUTTON item="ModMassives" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>304</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModMassives_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>304</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_009</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_009</TOOLTIP>
+	</LABEL>
+
+	<!-- Row 9: Infinite Jumps / Ninja [n] -->
+	<BUTTON item="ModNinja" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>330</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModNinja_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>330</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_010</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_010</TOOLTIP>
+	</LABEL>
+
+	<!-- Row 10: FPS Mode [fps] -->
+	<BUTTON item="ModFPS" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>356</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModFPS_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>356</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_011</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_011</TOOLTIP>
+	</LABEL>
+
+	<!-- Row 11: Roll The Dice [rtd] -->
+	<BUTTON item="ModRollTheDice" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>19</X><Y>382</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModRollTheDice_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>46</X><Y>382</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_012</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_012</TOOLTIP>
+	</LABEL>
+
+	<!-- ==================== RIGHT COLUMN ==================== -->
+
+	<!-- Gravity [gN] -->
+	<BUTTON item="ModGravity" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>118</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModGravity_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>118</Y><W>70</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_013</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_013</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModGravityVal" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>390</X><Y>118</Y><W>40</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>3</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>150</R><G>150</G><B>150</B></TEXTCOLOR>
+		<BOUNDS><X>433</X><Y>118</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>%</TEXT>
+	</LABEL>
+
+	<!-- Speed [sN] -->
+	<BUTTON item="ModSpeed" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>146</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModSpeed_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>146</Y><W>70</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_014</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_014</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModSpeedVal" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>390</X><Y>146</Y><W>40</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>3</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>150</R><G>150</G><B>150</B></TEXTCOLOR>
+		<BOUNDS><X>433</X><Y>146</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>%</TEXT>
+	</LABEL>
+
+	<!-- Jump [jN] -->
+	<BUTTON item="ModJump" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>174</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModJump_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>174</Y><W>70</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_015</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_015</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModJumpVal" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>390</X><Y>174</Y><W>40</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>3</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>150</R><G>150</G><B>150</B></TEXTCOLOR>
+		<BOUNDS><X>433</X><Y>174</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>%</TEXT>
+	</LABEL>
+
+	<!-- Damage [dmgN] -->
+	<BUTTON item="ModDamage" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>200</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModDamage_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>200</Y><W>70</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_016</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_016</TOOLTIP>
+	</LABEL>
+	<EDIT item="ModDamageVal" parent="StageCreateFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS><X>390</X><Y>200</Y><W>40</W><H>24</H></BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>1</MAXLENGTH>
+	</EDIT>
+	<LABEL item="Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>150</R><G>150</G><B>150</B></TEXTCOLOR>
+		<BOUNDS><X>433</X><Y>200</Y><W>12</W><H>24</H></BOUNDS>
+		<TEXT>x</TEXT>
+	</LABEL>
+
+	<!-- No Clothes [nc] -->
+	<BUTTON item="ModNoClothes" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>226</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModNoClothes_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>226</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_017</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_017</TOOLTIP>
+	</LABEL>
+
+	<!-- No Items (offensive) [ni] -->
+	<BUTTON item="ModNoItems" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>252</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModNoItems_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>252</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_018</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_018</TOOLTIP>
+	</LABEL>
+
+	<!-- No Recovery items [wiw] -->
+	<BUTTON item="ModWIWeapon" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>278</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModWIWeapon_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>278</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_019</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_019</TOOLTIP>
+	</LABEL>
+
+	<!-- No Damage [nd] -->
+	<BUTTON item="ModNoDamage" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>304</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModNoDamage_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>304</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_020</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_020</TOOLTIP>
+	</LABEL>
+
+	<!-- Wireframe [wire] -->
+	<BUTTON item="ModWireframe" parent="StageCreateFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS><X>290</X><Y>330</Y><W>24</W><H>24</H></BOUNDS>
+	</BUTTON>
+	<LABEL item="ModWireframe_Label" parent="StageCreateFrame">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR><R>205</R><G>205</G><B>205</B></TEXTCOLOR>
+		<BOUNDS><X>317</X><Y>330</Y><W>200</W><H>24</H></BOUNDS>
+		<TEXT>STR:ROOM_OPTION_021</TEXT>
+		<TOOLTIP>STR:ROOM_TOOLTIP_021</TOOLTIP>
+	</LABEL>
+
+	<!-- ==================== BUTTONS ==================== -->
+	<BUTTON item="StageCreateBtn" parent="StageCreateFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT><TOP>true</TOP><RIGHT>true</RIGHT><BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS><X>175</X><Y>445</Y><W>100</W><H>32</H></BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+	<BUTTON item="ParentClose" parent="StageCreateFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT><TOP>true</TOP><RIGHT>true</RIGHT><BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS><X>305</X><Y>445</Y><W>100</W><H>32</H></BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+</XML>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<!-- Dmg Floating -->
+    <AddEffectElu name="dmgx0">
+        <AddBaseModel name="dmgx0" filename="dmg/ef_exp_num_x0.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x0.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx1">
+        <AddBaseModel name="dmgx1" filename="dmg/ef_exp_num_x1.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x1.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx2">
+        <AddBaseModel name="dmgx2" filename="dmg/ef_exp_num_x2.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x2.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx3">
+        <AddBaseModel name="dmgx3" filename="dmg/ef_exp_num_x3.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x3.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx4">
+        <AddBaseModel name="dmgx4" filename="dmg/ef_exp_num_x4.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x4.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx5">
+        <AddBaseModel name="dmgx5" filename="dmg/ef_exp_num_x5.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x5.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx6">
+        <AddBaseModel name="dmgx6" filename="dmg/ef_exp_num_x6.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x6.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx7">
+        <AddBaseModel name="dmgx7" filename="dmg/ef_exp_num_x7.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x7.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx8">
+        <AddBaseModel name="dmgx8" filename="dmg/ef_exp_num_x8.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x8.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+    <AddEffectElu name="dmgx9">
+        <AddBaseModel name="dmgx9" filename="dmg/ef_exp_num_x9.elu" />
+        <AddAnimation name="play" filename="dmg/ef_exp_num_x9.elu.ani" motion_type="0" motion_loop_type="lastframe" />
+    </AddEffectElu>
+</xml>

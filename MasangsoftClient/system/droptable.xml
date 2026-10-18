@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML id="droptable">
+  <DROPSET id="11" name="G11">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200011" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200011" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200011" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200011" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200011" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200011" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="12" name="G12">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200012" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200012" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200012" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200012" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200012" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200012" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="13" name="G13">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200013" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200013" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200013" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200013" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200013" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200013" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="14" name="G14">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.25" />
+      <ITEM id="mag1" rate="0.25" />
+      <ITEM id="200021" rate="0.10" />
+      <ITEM id="200008" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.25" />
+      <ITEM id="mag1" rate="0.25" />
+      <ITEM id="200021" rate="0.10" />
+      <ITEM id="200008" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.25" />
+      <ITEM id="mag1" rate="0.25" />
+      <ITEM id="200021" rate="0.10" />
+      <ITEM id="200008" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.25" />
+      <ITEM id="mag1" rate="0.25" />
+      <ITEM id="200021" rate="0.10" />
+      <ITEM id="200008" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.25" />
+      <ITEM id="mag1" rate="0.25" />
+      <ITEM id="200021" rate="0.10" />
+      <ITEM id="200008" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.25" />
+      <ITEM id="mag1" rate="0.25" />
+      <ITEM id="200021" rate="0.10" />
+      <ITEM id="200008" rate="0.10" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="15" name="G15">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200018" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200018" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200018" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200018" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200018" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+      <ITEM id="200018" rate="0.10" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="16" name="G16">
+    <ITEMSET QL="0">
+      <ITEM id="200009" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000042" rate="0.01" rent_period="168" />
+      <ITEM id="3100094" rate="0.01" rent_period="168" />
+      <ITEM id="2120016" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="200009" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000042" rate="0.01" rent_period="168" />
+      <ITEM id="3100094" rate="0.01" rent_period="168" />
+      <ITEM id="2120016" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="200009" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000042" rate="0.01" rent_period="168" />
+      <ITEM id="3100094" rate="0.01" rent_period="168" />
+      <ITEM id="2120016" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="200009" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000042" rate="0.01" rent_period="168" />
+      <ITEM id="3100094" rate="0.01" rent_period="168" />
+      <ITEM id="2120016" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="200009" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000042" rate="0.01" rent_period="168" />
+      <ITEM id="3100094" rate="0.01" rent_period="168" />
+      <ITEM id="2120016" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="200009" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000042" rate="0.01" rent_period="168" />
+      <ITEM id="3100094" rate="0.01" rent_period="168" />
+      <ITEM id="2120016" rate="0.01" rent_period="168" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="17" name="G17">
+    <ITEMSET QL="0">
+      <ITEM id="200033" rate="0.20" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030023" rate="0.01" rent_period="168" />
+      <ITEM id="3130023" rate="0.01" rent_period="168" />
+      <ITEM id="2010029" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="200033" rate="0.20" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030023" rate="0.01" rent_period="168" />
+      <ITEM id="3130023" rate="0.01" rent_period="168" />
+      <ITEM id="2010029" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="200033" rate="0.20" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030023" rate="0.01" rent_period="168" />
+      <ITEM id="3130023" rate="0.01" rent_period="168" />
+      <ITEM id="2010029" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="200033" rate="0.20" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030023" rate="0.01" rent_period="168" />
+      <ITEM id="3130023" rate="0.01" rent_period="168" />
+      <ITEM id="2010029" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="200033" rate="0.20" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030023" rate="0.01" rent_period="168" />
+      <ITEM id="3130023" rate="0.01" rent_period="168" />
+      <ITEM id="2010029" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="200033" rate="0.20" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030023" rate="0.01" rent_period="168" />
+      <ITEM id="3130023" rate="0.01" rent_period="168" />
+      <ITEM id="2010029" rate="0.01" rent_period="168" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="18" name="G18">
+    <ITEMSET QL="0">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000043" rate="0.01" rent_period="168" />
+      <ITEM id="3100095" rate="0.01" rent_period="168" />
+      <ITEM id="2120017" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000043" rate="0.01" rent_period="168" />
+      <ITEM id="3100095" rate="0.01" rent_period="168" />
+      <ITEM id="2120017" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000043" rate="0.01" rent_period="168" />
+      <ITEM id="3100095" rate="0.01" rent_period="168" />
+      <ITEM id="2120017" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000043" rate="0.01" rent_period="168" />
+      <ITEM id="3100095" rate="0.01" rent_period="168" />
+      <ITEM id="2120017" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000043" rate="0.01" rent_period="168" />
+      <ITEM id="3100095" rate="0.01" rent_period="168" />
+      <ITEM id="2120017" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3000043" rate="0.01" rent_period="168" />
+      <ITEM id="3100095" rate="0.01" rent_period="168" />
+      <ITEM id="2120017" rate="0.01" rent_period="168" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="19" name="G19">
+    <ITEMSET QL="0">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030024" rate="0.01" rent_period="168" />
+      <ITEM id="3130024" rate="0.01" rent_period="168" />
+      <ITEM id="2010030" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030024" rate="0.01" rent_period="168" />
+      <ITEM id="3130024" rate="0.01" rent_period="168" />
+      <ITEM id="2010030" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030024" rate="0.01" rent_period="168" />
+      <ITEM id="3130024" rate="0.01" rent_period="168" />
+      <ITEM id="2010030" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030024" rate="0.01" rent_period="168" />
+      <ITEM id="3130024" rate="0.01" rent_period="168" />
+      <ITEM id="2010030" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030024" rate="0.01" rent_period="168" />
+      <ITEM id="3130024" rate="0.01" rent_period="168" />
+      <ITEM id="2010030" rate="0.01" rent_period="168" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="200038" rate="0.10" />
+      <ITEM id="200004" rate="0.20" />
+      <ITEM id="3030024" rate="0.01" rent_period="168" />
+      <ITEM id="3130024" rate="0.01" rent_period="168" />
+      <ITEM id="2010030" rate="0.01" rent_period="168" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="41" name="P41">
+    <ITEMSET QL="0">
+      <ITEM id="200022" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="200022" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="200022" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="200022" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="200022" rate="0.10" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="200022" rate="0.10" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="42" name="P42">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="43" name="P43">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="46" name="P46">
+    <ITEMSET QL="0">
+      <ITEM id="200026" rate="0.30" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="200026" rate="0.30" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="200026" rate="0.30" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="200026" rate="0.30" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="200026" rate="0.30" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="200026" rate="0.30" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="48" name="P48">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="181" name="G181">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="191" name="G191">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+    <ITEMSET QL="5">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="2011" name="G181">
+    <ITEMSET QL="0">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="2012" name="G181">
+    <ITEMSET QL="1">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="2013" name="G181">
+    <ITEMSET QL="2">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="2014" name="G181">
+    <ITEMSET QL="3">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+  <DROPSET id="2015" name="G181">
+    <ITEMSET QL="4">
+      <ITEM id="hp1" rate="0.20" />
+      <ITEM id="ap1" rate="0.20" />
+      <ITEM id="mag1" rate="0.20" />
+    </ITEMSET>
+  </DROPSET>
+</XML>

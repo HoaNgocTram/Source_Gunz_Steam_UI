@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML id="randomweaponmaplist">	
+
+	<RNDWP_MAP id="0" name="Mansion"/>	 
+	<RNDWP_MAP id="2" name="Station"/>	 
+	<RNDWP_MAP id="5" name="Town"/>	 
+	<RNDWP_MAP id="26" name="SkirmishHall"/>	 
+
+
+
+<!--
+	<RNDWP_MAP id="5" name="Town"/>	 
+	<RNDWP_MAP id="24" name="Weaponshop"/>
+-->
+</XML>

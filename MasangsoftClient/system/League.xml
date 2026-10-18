@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <LEAGUE league_id="1" season_id="1" season_type="regular" name="Classic Duel" description="No mercy, only skill. Eliminate all be the last one standing." game_type="dual" map_group_id="2" melee="all" range="all" item="all" round="5" limit_time="300000" max_player="2" team_kill="0" elo_define="16" limit_level="1" rating_gap="300" wait_bonus="50" item_reward_probable="0" reward_shopitemid="0" reward_bounty="0" reward_exp="0" exp_decrease_per_rank="0" start_date="2026-01-30 00:00" end_date="2026-08-04 23:59" />
+</XML>

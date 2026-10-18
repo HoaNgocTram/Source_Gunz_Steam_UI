@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\MQuestItem.obj",
+            "outputs": [
+                "Release_Desperate\\MQuestItem.h.obj.dt.module.json",
+                "Release_Desperate\\MQuestItem.h.obj.dt.d.json",
+                "Release_Desperate\\CSCommon.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

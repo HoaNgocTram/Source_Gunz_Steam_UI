@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Event">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Event 화면 구성
+   
+   Last Update : 29.DEC.2026
+   Editor      : Desperate
+-->
+
+	
+<!-- 프레임 생성 : Event -->
+	<FRAME item="Event">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<PICTURE item="Event_BackGround" parent="Event">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Illustration_Inven_00.png</BITMAP>
+	</PICTURE>
+	
+	<FRAME item="Supply" parent="Event">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<FRAME item="PlayTime" parent="Event">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<FRAME item="Boost" parent="Event">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<PICTURE item ="Event_Welcome" parent="Event">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>true</VISIBLE>
+		<BITMAP>BG_Attendance_Normal.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item ="Event_PlayTime" parent="PlayTime">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>true</VISIBLE>
+		<BITMAP>BG_Play_Time.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item ="Event_Boost" parent="Boost">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>true</VISIBLE>
+		<BITMAP>BG_Boost_Event.png</BITMAP>
+	</PICTURE>
+
+	<BUTTON item="welcome_Btn" parent="Event">
+		<BUTTONLOOK>SteamNullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>22</X>
+			<Y>91</Y>
+			<W>141</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>Welcome, Mercenaries!</TEXT>
+	</BUTTON>
+
+	<BUTTON item="playtime_Btn" parent="Event">
+		<BUTTONLOOK>SteamNullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>22</X>
+			<Y>126</Y>
+			<W>141</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>Play Time</TEXT>
+	</BUTTON>
+	
+	<BUTTON item="boost_Btn" parent="Event">
+		<BUTTONLOOK>SteamNullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>22</X>
+			<Y>161</Y>
+			<W>141</W>
+			<H>33</H>
+		</BOUNDS>
+		<TEXT>Boost Event</TEXT>
+	</BUTTON>
+
+	<!-- ===== Khung con điểm danh ===== -->
+
+	<FRAME item="WelcomSupply" parent="Supply">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<BMBUTTON item="Day1" parent="Event">
+		<BOUNDS>
+			<X>213</X>
+			<Y>172</Y>
+			<W>63</W>
+			<H>145</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Day1Lock.png</BITMAP>
+    <BITMAP type="over">Day1Lock.png</BITMAP>
+    <BITMAP type="down">Day1Lock.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="Day2" parent="Event">
+		<BOUNDS>
+			<X>281</X>
+			<Y>172</Y>
+			<W>63</W>
+			<H>145</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Day2Lock.png</BITMAP>
+    <BITMAP type="over">Day2Lock.png</BITMAP>
+    <BITMAP type="down">Day2Lock.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="Day3" parent="Event">
+		<BOUNDS>
+			<X>349</X>
+			<Y>172</Y>
+			<W>63</W>
+			<H>145</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Day3Lock.png</BITMAP>
+		<BITMAP type="over">Day3Lock.png</BITMAP>
+		<BITMAP type="down">Day3Lock.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="Day4" parent="Event">
+		<BOUNDS>
+			<X>213</X>
+			<Y>326</Y>
+			<W>63</W>
+			<H>145</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Day4Lock.png</BITMAP>
+		<BITMAP type="over">Day4Lock.png</BITMAP>
+		<BITMAP type="down">Day4Lock.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="Day5" parent="Event">
+		<BOUNDS>
+			<X>281</X>
+			<Y>326</Y>
+			<W>63</W>
+			<H>145</H>
+		</BOUNDS>
+		<BITMAP type="up">Day5Lock.png</BITMAP>
+		<BITMAP type="over">Day5Lock.png</BITMAP>
+		<BITMAP type="down">Day5Lock.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="Day6" parent="Event">
+		<BOUNDS>
+			<X>349</X>
+			<Y>326</Y>
+			<W>63</W>
+			<H>145</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Day6Lock.png</BITMAP>
+		<BITMAP type="over">Day6Lock.png</BITMAP>
+		<BITMAP type="down">Day6Lock.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="Day7" parent="Event">
+		<BOUNDS>
+			<X>419</X>
+			<Y>171</Y>
+			<W>100</W>
+			<H>300</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Day7Lock.png</BITMAP>
+    	<BITMAP type="over">Day7Lock.png</BITMAP>
+    	<BITMAP type="down">Day7Lock.png</BITMAP>
+	</BMBUTTON>
+	<!--Profile Phải ở dưới cùng-->
+	<PICTURE item="Lobby_ProfileBanner" parent="Event">
+		<BOUNDS>
+			<X>569</X>
+			<Y>17</Y>
+			<W>23</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileBanner0000.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="Lobby_HideBannerName" parent="Event">
+		<BOUNDS>
+			<X>592</X>
+			<Y>17</Y>
+			<W>86</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BannerName.png</BITMAP>
+	</PICTURE>
+
+	<LABEL item="Event_MyInfo1" parent="Event">
+    <FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>597</X>
+			<Y>24</Y>
+			<W>78</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	
+	<LABEL item="Event_MyInfo2" parent="Event">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>597</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+
+	<LABEL item="Event_MyInfo10" parent="Event">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>625</X>
+			<Y>35</Y>
+			<W>52</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+</XML>

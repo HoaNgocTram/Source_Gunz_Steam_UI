@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML id="GunzShop">
+    <!--아이템타입정의 1.장비 2.티켓 1.인챈트 4. 패키지아이템-->
+    <!--아이템필터정의 1.근거리무기 2.원거리무기 1.머리 4.가슴 5.손 6.바지 7.신발 8.장신구 9.소모품 10.아바타 11.패키지아이템-->
+    <!--셀그룹정의 1.바운티 2.캐쉬 ,3, 메달 ,4 PC방 바운티,-->
+    <!--모든 아이템 리세일 불가, 무기 아이템 7일, 방어구 아이템 30일, 장신구 무제한 한도만 노출-->
+    <!--shopid 구성 0일=끝자리0, 1일=끝자리1, 7일=끝자리2, 15일=끝자리3, 30일=끝자리4, 50%할인=끝자리5-->
+	<!--아이템 그레이드 1.Common, 2.Uncommon, 1.Rare, 4.Unique -->
+	
+	<!-- 퀘템 페이지 판매 -->
+	<!-- 단. 가격 여기서 결정 안함(zquestitem.xml) 확인할것 -->
+
+	
+	<!--  //////////////////////////////PC방 아이템 //////	-->
+	<!-- 무기 -->
+	<!-- 단검 -->
+	
+	<SHOP_ITEM ID="25000090" ITEM_ID="2500009" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25000100" ITEM_ID="2500010" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25000110" ITEM_ID="2500011" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+
+	<!-- 카타나 -->
+	
+	<SHOP_ITEM ID="25020200" ITEM_ID="2502020" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25020210" ITEM_ID="2502021" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25020220" ITEM_ID="2502022" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	
+	<!-- 듀얼 카타나 -->
+
+	<SHOP_ITEM ID="25020230" ITEM_ID="2502023" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25020240" ITEM_ID="2502024" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25020250" ITEM_ID="2502025" ITEM_TYPE="1" ITEM_FILTER="1" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	
+	<!-- 권총 x2 -->
+
+	<SHOP_ITEM ID="25040080" ITEM_ID="2504008" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25040090" ITEM_ID="2504009" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25040100" ITEM_ID="2504010" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	
+	<!-- 리볼버 x2 -->
+	
+	<SHOP_ITEM ID="25045070" ITEM_ID="2504507" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25045080" ITEM_ID="2504508" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25045090" ITEM_ID="2504509" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	
+	<!-- SMG x2 -->	
+	
+	<SHOP_ITEM ID="25050060" ITEM_ID="2505006" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25050070" ITEM_ID="2505007" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25050080" ITEM_ID="2505008" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	
+	<!-- 샷건 -->		
+
+	<SHOP_ITEM ID="25060120" ITEM_ID="2506012" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25060130" ITEM_ID="2506013" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25060140" ITEM_ID="2506014" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+
+	<!-- 라이플 -->
+	
+	<SHOP_ITEM ID="25070050" ITEM_ID="2507005" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25070060" ITEM_ID="2507006" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25070070" ITEM_ID="2507007" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+
+	<!-- 머신건 -->
+	
+	<SHOP_ITEM ID="25080040" ITEM_ID="2508004" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25080050" ITEM_ID="2508005" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25080060" ITEM_ID="2508006" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	
+	<!-- 로켓런처 -->	
+
+	<SHOP_ITEM ID="25090100" ITEM_ID="2509010" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25090110" ITEM_ID="2509011" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25090120" ITEM_ID="2509012" ITEM_TYPE="1" ITEM_FILTER="2" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	
+	<!-- 아바타 -->
+
+	<SHOP_ITEM ID="25300150" ITEM_ID="2530015" ITEM_TYPE="1" ITEM_FILTER="10" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+	<SHOP_ITEM ID="25305150" ITEM_ID="2530515" ITEM_TYPE="1" ITEM_FILTER="10" RESALE="FALSE" SELL_GROUP="4" EXPIRATION_DATE="0" PRICE="100" VISIBLE="FALSE" BEFOREPRICE="0"/>
+
+	
+	
+	<!--
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     이벤트 아이템_행운의 티켓(이벤트 티켓)
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<SHOP_ITEM ID="2401000"
+	<SHOP_ITEM ID="2401001"
+	<SHOP_ITEM ID="2401002"
+	<SHOP_ITEM ID="2401003"
+	<SHOP_ITEM ID="2401004"
+	<SHOP_ITEM ID="2401005"
+	<SHOP_ITEM ID="2401006"
+	<SHOP_ITEM ID="2401007"
+	<SHOP_ITEM ID="2401008"
+	<SHOP_ITEM ID="2401009"
+	-->
+	
+	
+	<!--
+	/////////////////////////////////////////////////
+     이벤트 아이템_행운의 티켓(알파벳 이벤트 티켓)
+	/////////////////////////////////////////////////
+	<SHOP_ITEM ID="2402000" 
+	<SHOP_ITEM ID="2402001" 
+	<SHOP_ITEM ID="2402002" 
+	<SHOP_ITEM ID="2402003" 
+	<SHOP_ITEM ID="2402004" 
+	<SHOP_ITEM ID="2402005" 
+	<SHOP_ITEM ID="2402006" 
+	<SHOP_ITEM ID="2402007" 
+	<SHOP_ITEM ID="2402008" 
+	<SHOP_ITEM ID="2402009" 
+	<SHOP_ITEM ID="2402010" 
+	<SHOP_ITEM ID="2402011" 
+	<SHOP_ITEM ID="2402012" 
+	<SHOP_ITEM ID="2402013" 
+	<SHOP_ITEM ID="2402014" 
+	<SHOP_ITEM ID="2402015" 
+	<SHOP_ITEM ID="2402016" 
+	<SHOP_ITEM ID="2402017" 
+	<SHOP_ITEM ID="2402018" 
+	<SHOP_ITEM ID="2402019" 
+	<SHOP_ITEM ID="2402020" 
+	<SHOP_ITEM ID="2402021" 
+	<SHOP_ITEM ID="2402022" 
+	<SHOP_ITEM ID="2402023" 
+	<SHOP_ITEM ID="2402024" 
+	<SHOP_ITEM ID="2402025" 
+	-->
+	
+	<!--
+	/////////////////////////////////////////////////
+     할로윈 이벤트 티켓
+	/////////////////////////////////////////////////
+	<SHOP_ITEM ID="2403001" 
+	<SHOP_ITEM ID="2403002" 
+	<SHOP_ITEM ID="2403003" 
+	<SHOP_ITEM ID="2403004" 
+	<SHOP_ITEM ID="2403005" 
+	<SHOP_ITEM ID="2403006" 
+	<SHOP_ITEM ID="2403007" 
+	<SHOP_ITEM ID="2403008" 
+	<SHOP_ITEM ID="2403009" 
+	<SHOP_ITEM ID="2403010" 
+	<SHOP_ITEM ID="2403011" 
+	-->
+	
+	
+	<!--
+	/////////////////////////////////////////////////
+     넷마블 이벤트 기념품(바운티 제공하기위한)
+	/////////////////////////////////////////////////
+	<SHOP_ITEM ID="2405001" name="STR:ZITEM_NAME_2405001" 
+	<SHOP_ITEM ID="2405002" name="STR:ZITEM_NAME_2405002" 
+	<SHOP_ITEM ID="2405003" name="STR:ZITEM_NAME_2405003" 
+	<SHOP_ITEM ID="2405004" name="STR:ZITEM_NAME_2405004" 
+	<SHOP_ITEM ID="2405005" name="STR:ZITEM_NAME_2405005" 
+	<SHOP_ITEM ID="2405006" name="STR:ZITEM_NAME_2405006" 
+	<SHOP_ITEM ID="2405007" name="STR:ZITEM_NAME_2405007" 
+	-->
+	<!--
+	/////////////////////////////////////////////////
+     첼린지 퀘스트 보상 지폐
+	/////////////////////////////////////////////////
+
+	<SHOP_ITEM ID="2405101" name="STR:ZITEM_NAME_2405101" 
+	<SHOP_ITEM ID="2405102" name="STR:ZITEM_NAME_2405102" 
+	<SHOP_ITEM ID="2405103" name="STR:ZITEM_NAME_2405103" 
+	<SHOP_ITEM ID="2405104" name="STR:ZITEM_NAME_2405104" 
+	<SHOP_ITEM ID="2405105" name="STR:ZITEM_NAME_2405105" 
+	-->
+	
+	<!--
+	/////////////////////////////////////////////////
+     승점 교환권
+	/////////////////////////////////////////////////
+	<SHOP_ITEM ID="2405201" name="STR:ZITEM_NAME_2405201" 
+	<SHOP_ITEM ID="2405202" name="STR:ZITEM_NAME_2405202" 
+	<SHOP_ITEM ID="2405203" name="STR:ZITEM_NAME_2405203" 
+	<SHOP_ITEM ID="2405204" name="STR:ZITEM_NAME_2405204" 
+	<SHOP_ITEM ID="2405205" name="STR:ZITEM_NAME_2405205" 
+	<SHOP_ITEM ID="2405206" name="STR:ZITEM_NAME_2405206" 
+	-->
+
+	<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     아이콘만 존재하는 아이템. 실제로 게임상에는 존재하지 않는 아이템이다. 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<SHOP_ITEM ID="5000001" type="ghost"/>
+	<SHOP_ITEM ID="5000002" type="ghost"/>
+	<SHOP_ITEM ID="5000003" type="ghost"/>
+	-->
+	
+	<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     	 메달 상점 전용 캐시아이템, 상점 리프레시권, 할인율 고정권 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	<SHOP_ITEM ID="5000004" name="STR:ZITEM_NAME_5000004" 
+	<SHOP_ITEM ID="5000005" name="STR:ZITEM_NAME_5000005" 
+		-->
+	<!--////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	//
+	// 소모성 아이템을 뺐음
+	// 국가별로 소모성 아이템의 성능이 다르다. 그렇기 때문에 소모성 아이템을 별도의 xml에 정의하고,
+	// copy_share.bat를 실행할 때 그 국가에 해당하는 zitem_locale.xml을 zitem.xml과 같은 폴더에 
+	// 복사하도록 해서 국가별 특수화가 가능해지도록 한다. 코드에서는 두 파일을 연속으로 읽는다.
+	// 추후에 국가간 소모성 아이템 성능 차이가 없어지게 되면 다시 여기에 직접 정의하자.
+	//
+	/////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+	<!-- 아바타 아이템 -->
+	<!--<ITEM id="80000" name="STR:ZITEM_NAME_80000" type="avatar" slot="avatar" avatar_head="eq_head_police" 
+		avatar_chest="eq_chest_police" avatar_hand="eq_hands_police" avatar_legs="eq_legs_police" avatar_feet="eq_feet_police"
+		res_sex="m" res_level="0" bt_price="400" iscashitem="false" weight="0" desc="STR:ZITEM_DESC_80000" />
+
+	<SHOP_ITEM ID="80001" name="STR:ZITEM_NAME_80001" type="avatar" slot="avatar" avatar_head="eq_head_police" 
+		avatar_chest="eq_chest_police" avatar_hand="eq_hands_police" avatar_legs="eq_legs_police" avatar_feet="eq_feet_police"
+		res_sex="f" res_level="0" bt_price="400" iscashitem="false" weight="0" desc="STR:ZITEM_DESC_80001" />
+
+	<SHOP_ITEM ID="2900000" name="STR:ZITEM_NAME_2900000" 
+	<SHOP_ITEM ID="2900001" name="STR:ZITEM_NAME_2900001" 
+	<SHOP_ITEM ID="2900002" name="STR:ZITEM_NAME_2900002" 
+	<SHOP_ITEM ID="2900003" name="STR:ZITEM_NAME_2900003" 
+	<SHOP_ITEM ID="2900004" name="STR:ZITEM_NAME_2900004" 
+	<SHOP_ITEM ID="2900005" name="STR:ZITEM_NAME_2900005" 
+		-->
+	
+	
+	
+	
+
+		
+	
+	
+	 <!--아이템타입정의 1.장비 2.티켓 1.인챈트 4. 패키지아이템-->
+    <!--아이템필터정의 1.근거리무기 2.원거리무기 1.머리 4.가슴 5.손 6.바지 7.신발 8.장신구 9.소모품 10.아바타 11.패키지아이템-->
+    <!--셀그룹정의 1.바운티 2.캐쉬 1.메달샵-->
+    <!--모든 아이템 리세일 불가, 무기 아이템 7일, 방어구 아이템 30일, 장신구 무제한 한도만 노출-->
+    <!--shopid 구성 0일=끝자리0, 1일=끝자리1, 7일=끝자리2, 15일=끝자리3, 30일=끝자리4-->
+	<!--아이템 그레이드 1.Common, 2.Uncommon, 1.Rare, 4.Unique -->
+	
+	
+		<!--
+		[ 추가사항 ]
+
+		우선은 선택한 무기에만 적용됨...( 스피드 반지등은 만들수없음..필요하면 추가 )
+
+			무기에 따른 속도 제어	: limitspeed="70"	수치는 비율.. 기본은 100%
+			무기에 따른 점프 제한	: limitjump = "1"	수치는 0 , 1 (기본은 0 점프가능)
+			무기에 따른 가속 제한	: limittumble = "1" 수치는 0 , 1 (기본은 0 점프가능)
+			무기에 따른 벽타기 제한 : limitwall = "1"	수치는 0 , 1 (기본은 0 점프가능)
+
+		근접 공격용 무기들은 기본이 되는 공격의 에니메이션길이를 포함하는 delay 를 갖는것으로 한다..
+		
+			단검류		: 266 ms 를 더해준다..   attackS ( 상체모션이 기본 ) man_dagger_standshot.elu.ani
+			양손단검류	: 299 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_2hdagger_standshot_1.elu.ani
+			카타나류	: 299 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_knife_standshot_1.elu.ani
+			이도류		: 299 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_blade_standshot_1.elu.ani
+			대검류		: 399 ms 를 더해준다..   attack1 ( 하체모션이 기본 ) man_sword_standshot_1.elu.ani
+		
+		아이템 Type 종류 : melee, range, equip, custom, ticket
+		아이템 Slot 종류 : none, melee, range, custom, head, chest, hands, legs, feet, finger, extra
+		무기 Type 종류
+			Melee : dagger, dualdagger, katana, greatsword, doublekatana
+			Range : pistol, pistolx2, revolver, revolverx2, smg, smgx2, shotgun, sawedshotgun, rifle, machinegun, rocket, snifer
+			Custom : medikit, repairkit, bulletkit, flashbang, frag, smoke, skill, food
+			Enchant : enchant_fire, enchant_cold, enchant_lightning, enchant_poison
+			
+	-->
+	
+</XML>

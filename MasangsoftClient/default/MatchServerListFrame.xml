@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="NewMathcServerList">
+	<Schema xmlns="MasangData" xmlns:dt="MasangDataTypes" />
+
+<!--이미지는 BitmapAlias.xml에서 검색-->
+
+<!-- 프레임 생성 : NewMatchServerList -->
+	<FRAME item="NewMatchServerList">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>		
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+<!-- Picture : 배경 이미지 -->
+	<PICTURE item="NewMatchServerList_BackgrdImg" parent="NewMatchServerList">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+<!-- 서버 리스트 프레임( NULL FARME ) -->
+	<FRAME item="NewMatchServerListFrame" parent="NewMatchServerList">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>1308</X>
+			<Y>112</Y>
+			<W>524</W>
+			<H>896</H>
+		</BOUNDS>	
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>		
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+<!-- 서버 리스트 프레임 이미지 -->
+	<PICTURE item="NewMatchServerListFrameImg" parent="NewMatchServerListFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>524</W>
+			<H>896</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ServerFrame.png</BITMAP>
+	</PICTURE>
+
+<!-- 서버 리스트 박스 -->
+	<MATCHSERVERLISTBOX item="NewMatchServerListBox" parent="NewMatchServerListFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa14b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>137</Y>
+			<W>504</W>
+			<H>624</H>
+		</BOUNDS>
+		<ITEMHEIGHT>46</ITEMHEIGHT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<NULLFRAME/>
+		<TEXTBOUNDS>
+			<X>100</X>
+			<Y>15</Y>
+			<W>100</W>
+			<H>20</H>
+		</TEXTBOUNDS>
+		<MARKBOUNDS>
+			<X>380</X>
+			<Y>12</Y>
+			<W>16</W>
+			<H>16</H>
+		</MARKBOUNDS>
+	</MATCHSERVERLISTBOX>
+	
+	<!-- 서버 접속 버튼 -->
+	<ICONBUTTON item="MatchServerJoin" parent="NewMatchServerListFrame">
+		<BOUNDS>
+			<X>78</X>
+			<Y>797</Y>
+			<W>374</W>
+			<H>60</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOff.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="down">HideOut_QuickStartButtonOn.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>235</B>
+			</OVER>
+			<DOWN>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DOWN>
+		</COLOR>
+		<TEXTRECT>
+			<X>112</X>
+			<Y>20</Y>
+			<W>151</W>
+			<H>24</H>
+		</TEXTRECT>
+		<FONT>FONTa16b</FONT>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>Connect</TEXT>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- 서버 리스트 타이틀 -->
+	<LABEL item="ServerListTitle" parent="NewMatchServerListFrame">
+		<FONT>FONTa22b</FONT>
+		<TEXTCOLOR>
+			<R>216</R>
+			<G>216</G>
+			<B>216</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>186</X>
+			<Y>19</Y>
+			<W>250</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>Server List</TEXT>
+	</LABEL>
+	
+	<!-- 서버 이름 타이틀 -->
+	<LABEL item="ServerListRegion" parent="NewMatchServerListFrame">
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>160</R>
+			<G>160</G>
+			<B>160</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>126</X>
+			<Y>95</Y>
+			<W>100</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Region</TEXT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- 서버 혼잡도 타이틀 -->
+	<LABEL item="ServerListStatus" parent="NewMatchServerListFrame">
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>160</R>
+			<G>160</G>
+			<B>160</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>340</X>
+			<Y>95</Y>
+			<W>100</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Status</TEXT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- 서버 선택 아웃라인 -->
+	<PICTURE item="SelectedOutline" parent="NewMatchServerListBox">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>492</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ServerOutline.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+
+	<!-- 서버 가이드 텍스트 -->
+	<ZOUTLINELABEL item="NewMatchServerList_Guid_Text" parent="NewMatchServerList">
+		<BOUNDS>
+			<X>660</X>
+			<Y>861</Y>
+			<W>600</W>
+			<H>30</H>
+		</BOUNDS>
+		<COLOR type="bg">
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</COLOR>
+		<COLOR type="edge">
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</COLOR>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<OUTLINECOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</OUTLINECOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa20b</FONT>
+		<LABELTEXT>STR:UI_MATCHSERVERLIST_04</LABELTEXT>
+		<OUTLINETHICKNESS>3</OUTLINETHICKNESS>
+	</ZOUTLINELABEL>
+	
+</XML>

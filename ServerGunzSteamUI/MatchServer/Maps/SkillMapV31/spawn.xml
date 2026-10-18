@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+	<GAMETYPE id="solo">
+	<SPAWN item="mediumbox" timesec="15000">
+			<POSITION>-4752.103027 9677.876953 9544.131836</POSITION>
+		</SPAWN>
+	</GAMETYPE>
+
+	<GAMETYPE id="team">
+	</GAMETYPE>
+</XML>

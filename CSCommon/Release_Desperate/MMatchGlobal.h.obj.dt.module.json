@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\MMatchGlobal.obj",
+            "outputs": [
+                "Release_Desperate\\MMatchGlobal.h.obj.dt.module.json",
+                "Release_Desperate\\MMatchGlobal.h.obj.dt.d.json",
+                "Release_Desperate\\CSCommon.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

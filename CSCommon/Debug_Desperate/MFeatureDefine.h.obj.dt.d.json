@@ -1,0 +1,12 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\desperatesource_gunz_steam_ui\\cscommon\\mfeaturedefine.h",
+        "ProvidedModule": "",
+        "Includes": [
+            "e:\\desperatesource_gunz_steam_ui\\sdk\\xor\\include\\xorstr.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

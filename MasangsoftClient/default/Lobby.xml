@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Lobby">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Lobby 화면 구성
+   
+   Last Update : 29.OCT.2004
+   Editor      : Lim Dong Hwan
+-->
+
+
+<!-- 프레임 생성 : Lobby -->
+	<FRAME item="Lobby">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+
+<!-- 로비 배경-->	
+	<PICTURE item="RenewalLobby_BackGround" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Play.png</BITMAP>
+	</PICTURE>
+	
+	<!-- COMBOBOX : 방 정렬 기능 -->
+	<ZCOMBOBOX item="LobbyRoomSort" parent="Lobby">
+		<BUTTONLOOK>EquipFillterListBoxButtonLook</BUTTONLOOK>
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>250</G>
+			<B>250</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>RIGHT</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>1179</X>
+			<Y>162</Y>
+			<W>169</W>
+			<H>43</H>
+		</BOUNDS>
+		<LISTITEM selected="true">STR:UI_EQUIPMENT_LIST_01_20</LISTITEM><!-- 방 번호 오름차순 -->
+		<LISTITEM>STR:UI_LOBBY_SORT_01_01</LISTITEM>				<!-- 참가 인원수 오름차순 -->
+		<LISTITEM>STR:UI_LOBBY_SORT_01_02</LISTITEM>				<!-- 참가 인원수 내림차순 -->
+		<LISTITEM>STR:UI_LOBBY_SORT_01_03</LISTITEM>				<!-- 대기중인 방 우선 정렬 -->
+		<LISTITEM>STR:UI_LOBBY_SORT_01_04</LISTITEM>				<!-- 게임 진행 중인 방 우선 정렬-->
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<DROPSIZE>400</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+
+	<!-- ZEDIT : 검색바 -->
+	<ZEDIT item="LobbySearchBar" parent="Lobby">
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1378</X>
+			<Y>162</Y>
+			<W>490</W>
+			<H>43</H>
+		</BOUNDS>
+		<MAXLENGTH>64</MAXLENGTH>
+		<BITMAP type="frame">Lobby_Search.png</BITMAP>
+		<COLOR type="frame">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>45</W>
+		</TABRECT>
+		<GUIDETEXT>STR:UI_LOBBY_SEARCH_GUIDE</GUIDETEXT>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</ZEDIT>
+	
+	<!-- ICONBUTTON : 검색바 초기화 버튼 -->
+	<ICONBUTTON item="LobbySearchBarInitButton" parent="LobbySearchBar">
+		<BOUNDS>
+			<X>462</X>
+			<Y>14</Y>
+			<W>14</W>
+			<H>14</H>
+		</BOUNDS>
+		<BITMAP type="icon" state="base">Lobby_SearchDeleteOn.png</BITMAP>
+		<BITMAP type="icon" state="over">Lobby_SearchDeleteOver.png</BITMAP>
+		<ICONRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>14</W>
+			<H>14</H>
+		</ICONRECT>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ROOMLISTEX : 룸 리스트 -->
+	<ROOMLISTEX item="RoomListBox" parent="Lobby">
+		<BOUNDS>
+			<X>369</X>
+			<Y>227</Y>
+			<W>1494</W>
+			<H>727</H>
+		</BOUNDS>
+		<!-- rect -->
+		<RECT type="shadow">
+			<X>0</X>
+			<Y>0</Y>
+			<W>498</W>
+			<H>260</H>
+		</RECT>
+		<RECT type="item">
+			<X>13</X>
+			<Y>2</Y>
+			<W>474</W>
+			<H>236</H>
+		</RECT>
+		<RECT type="gameMode">
+			<X>243</X>
+			<Y>13</Y>
+			<W>223</W>
+			<H>23</H>
+		</RECT>
+		<RECT type="mapName">
+			<X>126</X>
+			<Y>96</Y>
+			<W>224</W>
+			<H>42</H>
+		</RECT>
+		<RECT type="ping">
+			<X>12</X>
+			<Y>208</Y>
+			<W>16</W>
+			<H>16</H>
+		</RECT>
+		<RECT type="option">
+			<X>12</X>
+			<Y>170</Y>
+			<W>30</W>
+			<H>30</H>
+		</RECT>
+		<RECT type="roomTitle">
+			<X>42</X>
+			<Y>206</Y>
+			<W>250</W>
+			<H>16</H>
+		</RECT>
+		<RECT type="lock">
+			<X>389</X>
+			<Y>206</Y>
+			<W>17</W>
+			<H>17</H>
+		</RECT>
+		<RECT type="member">
+			<X>400</X>
+			<Y>206</Y>
+			<W>65</W>
+			<H>16</H>
+		</RECT>
+		<RECT type="scrollbar">
+			<X>1862</X>
+			<Y>228</Y>
+			<W>6</W>
+			<H>726</H>
+		</RECT>
+		<!-- bitmap -->
+		<BITMAP type="mapName" map="Mansion">RoomBanner_Mansion_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Prison">RoomBanner_Prison_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Station">RoomBanner_Station_Title.png</BITMAP>
+		<BITMAP type="mapName" map="PrisonII">RoomBanner_Prison II_Title.png</BITMAP>
+		<BITMAP type="mapName" map="BattleArena">RoomBanner_Battle Arena_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Town">RoomBanner_Town_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Dungeon">RoomBanner_Dungeon_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Ruin">RoomBanner_Ruin_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Island">RoomBanner_Island_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Garden">RoomBanner_Garden_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Castle">RoomBanner_Castle_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Factory">RoomBanner_Factory_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Port">RoomBanner_Port_Title.png</BITMAP>
+		<BITMAP type="mapName" map="LostShrine">RoomBanner_Lost Shrine_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Stairway">RoomBanner_Stairway_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Hall">RoomBanner_Hall_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Catacomb">RoomBanner_Catacomb_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Jail">RoomBanner_Jail_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Shower Room">RoomBanner_Shower Room_Title.png</BITMAP>
+		<BITMAP type="mapName" map="HighHaven">RoomBanner_High_Haven_Title.png.png</BITMAP>
+		<BITMAP type="mapName" map="Citadel">RoomBanner_Citadel_Title.png</BITMAP>
+		<BITMAP type="mapName" map="WeaponShop">RoomBanner_WeaponShop_Title.png</BITMAP>
+		<BITMAP type="mapName" map="SkirmishHall">RoomBanner_SkirmishHall_Title.png</BITMAP>
+		<BITMAP type="mapName" map="Relaymap">RoomBanner_RelayMap_Title.png</BITMAP>
+		<BITMAP type="ping" level="high">RegionPing_Green.png</BITMAP>
+		<BITMAP type="ping" level="normal">RegionPing_Yellow.png</BITMAP>
+		<BITMAP type="ping" level="low">RegionPing_Red.png</BITMAP>
+		<BITMAP type="ping" level="unknown">RegionPing_Unknown.png</BITMAP>
+		<BITMAP type="mode" level="chat">HideOut_FilterIcon_Chat.png</BITMAP>
+		<BITMAP type="mode" level="weapon">HideOut_FilterIcon_Weapon.png</BITMAP>
+		<BITMAP type="mode" level="break">HideOut_FilterIcon_BreakIn.png</BITMAP>
+		<BITMAP type="mode" level="special">HideOut_FilterIcon_Special.png</BITMAP>
+		<BITMAP type="mode" level="lowHP">HideOut_FilterIcon_HP_Reduction.png</BITMAP>
+		<BITMAP type="mode" level="highHP">HideOut_FilterIcon_HP_Increase.png</BITMAP>
+		<BITMAP type="lock">Lobby_RoomList_Lock.png</BITMAP>
+		<BITMAP type="selectOverlay">Lobby_RoomBanner_Select.png</BITMAP>
+		<BITMAP type="createOverlay">Lobby_RoomBanner_Create.png</BITMAP>
+		<BITMAP type="shadow">Lobby_RoomBanner_Shadow.png</BITMAP>
+		<!-- color -->
+		<COLOR type="itemOutline">
+			<R>69</R>
+			<G>67</G>
+			<B>69</B>
+		</COLOR>
+		<COLOR type="gameModeRect">
+			<R>28</R>
+			<G>25</G>
+			<B>25</B>
+			<ALPHA>204</ALPHA>
+		</COLOR>
+		<COLOR type="gameModeFont">
+			<R>175</R>
+			<G>175</G>
+			<B>175</B>
+		</COLOR>
+		<COLOR type="roomTitle">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="disableJoin">
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>127</ALPHA>
+		</COLOR>
+		<COLOR type="scrollbarBackground">
+			<R>49</R>
+			<G>46</G>
+			<B>46</B>
+		</COLOR>
+		<COLOR type="scrollbarHandle">
+			<R>148</R>
+			<G>145</G>
+			<B>145</B>
+		</COLOR>
+		<!-- font -->
+		<FONT type="gameMode">FONTa16b</FONT>
+		<FONT type="roomTitle">FONTa16</FONT>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<INTERVAL>10</INTERVAL>
+	</ROOMLISTEX>
+	
+	<!-- ICONBUTTON : 게임참가 버튼 -->
+	<ICONBUTTON item="JoinGameButton" parent="Lobby">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>1495</X>
+			<Y>990</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="disable">HideOut_QuickStartButtonOff.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>235</G>
+				<B>156</B>
+			</OVER>
+			<DOWN>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</DOWN>
+			<DISABLE>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LOBBY_24</TEXT>
+		<TEXTRECT>
+			<X>111</X>
+			<Y>20</Y>
+			<W>131</W>
+			<H>18</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ICONBUTTON : 빠른참가 버튼 -->
+	<ICONBUTTON item="QuickJoinGameButton" parent="Lobby">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>1186</X>
+			<Y>990</Y>
+			<W>274</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">Lobby_QuickJoinButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">Lobby_QuickJoinButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="disable">Lobby_QuickJoinButtonOff.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>235</G>
+				<B>156</B>
+			</OVER>
+			<DOWN>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</DOWN>
+			<DISABLE>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LOBBY_25</TEXT>
+		<TEXTRECT>
+			<X>69</X>
+			<Y>20</Y>
+			<W>131</W>
+			<H>18</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ICONBUTTON : 게임생성 버튼 -->
+	<ICONBUTTON item="CreateGameButton" parent="Lobby">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>381</X>
+			<Y>990</Y>
+			<W>214</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">Lobby_RoomCreateButton.png</BITMAP>
+		<BITMAP type="bg" state="over">Lobby_RoomCreateButton_Over.png</BITMAP>
+		<BITMAP type="icon" state="base">Lobby_CreateButton_Icon.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>58</R>
+				<G>163</G>
+				<B>137</B>
+			</BASE>
+			<OVER>
+				<R>122</R>
+				<G>228</G>
+				<B>202</B>
+			</OVER>
+			<DOWN>
+				<R>58</R>
+				<G>163</G>
+				<B>137</B>
+			</DOWN>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LOBBY_26</TEXT>
+		<ICONRECT>
+			<X>51</X>
+			<Y>23</Y>
+			<W>15</W>
+			<H>15</H>
+		</ICONRECT>
+		<TEXTRECT>
+			<X>78</X>
+			<Y>20</Y>
+			<W>73</W>
+			<H>18</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- ZACCORDION : 룸리스트 필터링 아코디언 -->
+	<ZACCORDION item="FilterAccordion" parent="Lobby">
+		<BOUNDS>
+			<X>52</X>
+			<Y>163</Y>
+			<W>290</W>
+			<H>811</H>
+		</BOUNDS>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<INTERVAL type="header">4</INTERVAL>
+		<INTERVAL type="item">3</INTERVAL>
+		<RECT type="header">
+			<X>0</X>
+			<Y>0</Y>
+			<W>290</W>
+			<H>44</H>
+		</RECT>
+		<RECT type="headerContent">
+			<X>23</X>
+			<Y>13</Y>
+			<W>100</W>
+			<H>18</H>
+		</RECT>
+		<RECT type="headerIcon">
+			<X>259</X>
+			<Y>17</Y>
+			<W>14</W>
+			<H>10</H>
+		</RECT>
+		<RECT type="item">
+			<X>20</X>
+			<Y>0</Y>
+			<W>270</W>
+			<H>44</H>
+		</RECT>
+		<RECT type="itemContent">
+			<X>21</X>
+			<Y>13</Y>
+			<W>200</W>
+			<H>18</H>
+		</RECT>
+		<RECT type="ScrollBar">
+			<X>349</X>
+			<Y>163</Y>
+			<W>6</W>
+			<H>811</H>
+		</RECT>
+		<BITMAP type="item" state="on">Lobby_FilterAttribute_On.png</BITMAP>
+		<BITMAP type="item" state="over">Lobby_FilterAttribute_Over.png</BITMAP>
+		<BITMAP type="headerIcon" state="on">Lobby_FilterListArrow_Down.png</BITMAP>
+		<BITMAP type="headerIcon" state="off">Lobby_FilterListArrow_Up.png</BITMAP>
+		<COLOR type="header" part="background">
+			<R>26</R>
+			<G>25</G>
+			<B>26</B>
+		</COLOR>
+		<COLOR type="header" part="outline">
+			<R>63</R>
+			<G>65</G>
+			<B>76</B>
+		</COLOR>
+		<COLOR type="header" part="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="font" state="on">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<COLOR type="item" part="font" state="off">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</COLOR>
+		<COLOR type="scrollbar" part="background">
+			<R>49</R>
+			<G>46</G>
+			<B>46</B>
+		</COLOR>
+		<COLOR type="scrollbar" part="handle">
+			<R>148</R>
+			<G>145</G>
+			<B>145</B>
+		</COLOR>
+		<FONT type="header">FONTa16</FONT>
+		<FONT type="item">FONTa14</FONT>
+		<ADDHEADER>   <!-- 상태 -->
+			<FILTERNAME>STR:UI_LOBBY_FILTER_01</FILTERNAME>
+			<ADDITEM>STR:UI_LOBBY_FILTER_01_02</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_01_03</ADDITEM>
+			<!--ADDITEM>STR:UI_LOBBY_FILTER_01_04</ADDITEM-->
+			<MULTISELECT/>
+			<DEFITEMON/>
+			<BLOCKALLOFF/>
+		</ADDHEADER>
+		<ADDHEADER>   <!-- Region -->
+			<FILTERNAME>STR:UI_LOBBY_FILTER_08</FILTERNAME>
+			<ADDITEM>STR:UI_LOBBY_FILTER_08_01</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_08_02</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_08_03</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_08_04</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_08_05</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_08_06</ADDITEM>
+			<MULTISELECT/>
+			<DEFITEMON/>
+			<BLOCKALLOFF/>
+		</ADDHEADER>
+		<ADDHEADER>   <!-- 비밀번호 -->
+			<FILTERNAME>STR:UI_LOBBY_FILTER_02</FILTERNAME>
+			<ADDITEM>STR:UI_LOBBY_FILTER_02_01</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_02_02</ADDITEM>
+			<MULTISELECT/>
+			<DEFITEMON/>
+			<BLOCKALLOFF/>
+		</ADDHEADER>
+		<ADDHEADER>   <!-- 모드 -->
+			<FILTERNAME>STR:UI_LOBBY_FILTER_04</FILTERNAME>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_01</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_02</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_03</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_04</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_05</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_06</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_07</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_08</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_09</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_10</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_11</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_04_12</ADDITEM>
+			<MULTISELECT/>
+			<DEFITEMON/>
+			<BLOCKALLOFF/>
+		</ADDHEADER>
+		<ADDHEADER>   <!-- 무기 -->
+			<FILTERNAME>STR:UI_LOBBY_FILTER_05</FILTERNAME>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_01</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_02</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_03</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_04</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_05</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_06</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_07</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_08</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_09</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_10</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_05_11</ADDITEM>
+			<MULTISELECT/>
+			<BLOCKALLON/>
+		</ADDHEADER>
+		<ADDHEADER>   <!-- 채팅 -->
+			<FILTERNAME>STR:UI_LOBBY_FILTER_06</FILTERNAME>
+			<ADDITEM>STR:UI_LOBBY_FILTER_06_01</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_06_02</ADDITEM>
+			<MULTISELECT/>
+			<DEFITEMON/>
+			<BLOCKALLOFF/>
+		</ADDHEADER>
+		<ADDHEADER>   <!-- 특수 옵션 -->
+			<FILTERNAME>STR:UI_LOBBY_FILTER_07</FILTERNAME>
+			<ADDITEM>STR:UI_LOBBY_FILTER_07_01</ADDITEM>
+			<ADDITEM>STR:UI_LOBBY_FILTER_07_02</ADDITEM>
+			<MULTISELECT/>
+			<DEFITEMON/>
+			<BLOCKALLOFF/>
+		</ADDHEADER>
+	</ZACCORDION>
+	
+	<!-- ICONBUTTON : 필터링 적용 버튼 -->
+	<ICONBUTTON item="FilterInitButton" parent="Lobby">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>53</X>
+			<Y>991</Y>
+			<W>214</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">Lobby_FilterApplyButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">Lobby_FilterApplyButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="disable">Lobby_FilterApplyButtonOff.png</BITMAP>
+		<BITMAP type="icon" state="base">Lobby_FilterApplyIcon.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>99</R>
+				<G>115</G>
+				<B>135</B>
+			</BASE>
+			<OVER>
+				<R>125</R>
+				<G>144</G>
+				<B>168</B>
+			</OVER>
+			<DISABLE>
+				<R>61</R>
+				<G>71</G>
+				<B>83</B>
+			</DISABLE>
+		</COLOR>
+		<COLOR type="font">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<DISABLE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LOBBY_27</TEXT>
+		<ICONRECT>
+			<X>51</X>
+			<Y>18</Y>
+			<W>25</W>
+			<H>25</H>
+		</ICONRECT>
+		<TEXTRECT>
+			<X>86</X>
+			<Y>20</Y>
+			<W>75</W>
+			<H>18</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+</XML>

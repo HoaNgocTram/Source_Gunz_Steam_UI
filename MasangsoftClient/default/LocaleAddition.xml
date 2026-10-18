@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- CharSelection.xml -->
+	
+<!-- Picture : 게임방 유저 표시 -->
+	<PICTURE item="CharSel_GameRoomUser" parent="CharSelection">
+		<BOUNDS>
+			<X>660</X>
+			<Y>30</Y>
+			<W>116</W>
+			<H>84</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	
+<!-- GameResult.xml -->
+
+	<!-- Picture : 게임방 이미지 -->
+	<PICTURE item="CombatResult_GameRoomImg00" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg01" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg02" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg03" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg04" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg05" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg06" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg07" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg08" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg09" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg10" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg11" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg12" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg13" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg14" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="CombatResult_GameRoomImg15" parent="CombatResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	
+	<!-- PICTURE : 게임방 유저 표시 -->
+	<PICTURE item="ClanResult_GameRoomImg10" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg11" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg12" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg13" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	
+	<!-- PICTURE : 게임방 유저 표시 -->
+	<PICTURE item="ClanResult_GameRoomImg20" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg21" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg22" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	<PICTURE item="ClanResult_GameRoomImg23" parent="ClanResult">
+		<BOUNDS>
+			<X>37</X>
+			<Y>165</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	
+</XML>

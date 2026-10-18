@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\MMatchRuleCustomGame.obj",
+            "outputs": [
+                "Release_Desperate\\MMatchRuleCustomGame.h.obj.dt.module.json",
+                "Release_Desperate\\MMatchRuleCustomGame.h.obj.dt.d.json",
+                "Release_Desperate\\CSCommon.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

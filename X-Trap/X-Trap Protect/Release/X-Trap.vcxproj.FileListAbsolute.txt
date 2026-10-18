@@ -1,0 +1,2 @@
+E:\EpixGunzSource-main\X-Trap\X-Trap Protect\Release\X-Trap.vcxproj.AssemblyReference.cache
+E:\DesperateSource\X-Trap\X-Trap Protect\Release\X-Trap.vcxproj.AssemblyReference.cache

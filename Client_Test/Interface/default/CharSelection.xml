@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!-- 
+   Last Update : 1.JUN.2020
+   Editor      : Jorklenis2
+-->
+
+	<FRAME item="CharSelection">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<PICTURE item="ProfileBanner" parent="CharSelection">
+		<BOUNDS>
+			<X>569</X>
+			<Y>17</Y>
+			<W>23</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileBanner0000.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="HideBannerName" parent="CharSelection">
+		<BOUNDS>
+			<X>592</X>
+			<Y>17</Y>
+			<W>86</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BannerName.png</BITMAP>
+	</PICTURE>
+
+	<BUTTON item="SCALE_BannerTop" parent="CharSelection">
+		<BUTTONLOOK>SCALE_Banner</BUTTONLOOK>
+		<BOUNDS>
+			<X>20</X>
+			<Y>121</Y>
+			<W>157</W>
+			<H>70</H>
+		</BOUNDS>
+	</BUTTON>
+	<BUTTON item="SCALE_DiscordBanner" parent="CharSelection">
+		<BUTTONLOOK>SCALE_DiscordBanner</BUTTONLOOK>
+		<BOUNDS>
+			<X>20</X>
+			<Y>200</Y>
+			<W>157</W>
+			<H>111</H>
+		</BOUNDS>
+	</BUTTON>
+
+<!--<PICTURE item="CharSel_BGImgBottom" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>540</Y>
+			<W>802</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>-->
+
+	<!-- <PICTURE item="CharSel_Selectbar0" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>320</Y>
+			<W>180</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="CharSel_Selectbar1" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>370</Y>
+			<W>180</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="CharSel_Selectbar2" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>420</Y>
+			<W>180</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<PICTURE item="CharSel_Selectbar3" parent="CharSelection">
+		<BOUNDS>
+			<X>560</X>
+			<Y>470</Y>
+			<W>180</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>selectbar.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE> -->
+	<PICTURE item="BannerInfo" parent="CharSelection">
+		<BOUNDS>
+			<X>22</X>
+			<Y>430</Y>
+			<W>155</W>
+			<H>63</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BannerInfo.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="CharSel_RankIcon0" parent="CharSelection">
+		<BOUNDS>
+			<X>22</X>
+			<Y>430</Y>
+			<W>47</W>
+			<H>63</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	<PICTURE item="CharSel_RankIcon1" parent="CharSelection">
+		<BOUNDS>
+			<X>22</X>
+			<Y>430</Y>
+			<W>47</W>
+			<H>63</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	<PICTURE item="CharSel_RankIcon2" parent="CharSelection">
+		<BOUNDS>
+			<X>22</X>
+			<Y>430</Y>
+			<W>47</W>
+			<H>63</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	<PICTURE item="CharSel_RankIcon3" parent="CharSelection">
+		<BOUNDS>
+			<X>22</X>
+			<Y>430</Y>
+			<W>47</W>
+			<H>63</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+
+	<LABEL item="League" parent="CharSelection">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>436</Y>
+			<W>37</W>
+			<H>12</H>
+		</BOUNDS>
+		<TEXT>League</TEXT>
+	</LABEL>
+	<LABEL item="CharSel_RankWL0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>455</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_RankWL1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>455</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_RankWL2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>455</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_RankWL3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>455</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+
+	<LABEL item="CharSel_CustomKD0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>469</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_CustomKD1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>469</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_CustomKD2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>469</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_CustomKD3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>77</X>
+			<Y>469</Y>
+			<W>93</W>
+			<H>11</H>
+		</BOUNDS>
+	</LABEL>
+
+	<LABEL item="CharSel_Cash0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>428</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_Cash1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>428</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_Cash2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>428</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_Cash3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>428</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_LC0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>477</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_LC1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>477</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_LC2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>477</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_LC3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>477</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_BP0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>533</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_BP1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>533</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_BP2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>533</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+	<LABEL item="CharSel_BP3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>533</X>
+			<Y>28</Y>
+			<W>36</W>
+			<H>10</H>
+		</BOUNDS>
+	</LABEL>
+
+	<LABEL item="CharSel_Name0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>597</X>
+			<Y>24</Y>
+			<W>78</W>
+			<H>10</H>
+		</BOUNDS>
+		
+	</LABEL>
+
+	<LABEL item="CharSel_Name1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>597</X>
+			<Y>24</Y>
+			<W>78</W>
+			<H>10</H>
+		</BOUNDS>
+		
+	</LABEL>
+	<LABEL item="CharSel_Name2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>597</X>
+			<Y>24</Y>
+			<W>78</W>
+			<H>10</H>
+		</BOUNDS>
+		
+	</LABEL>
+
+	<LABEL item="CharSel_Name3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>597</X>
+			<Y>24</Y>
+			<W>78</W>
+			<H>10</H>
+		</BOUNDS>
+		
+	</LABEL>
+
+	<LABEL item="CharSel_Level0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>597</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+
+	<LABEL item="CharSel_Level1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>597</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+
+	<LABEL item="CharSel_Level2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>597</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+
+	<LABEL item="CharSel_Level3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>597</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+
+	<LABEL item="CharSel_XP0" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>625</X>
+			<Y>35</Y>
+			<W>52</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+	<LABEL item="CharSel_XP1" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>625</X>
+			<Y>35</Y>
+			<W>52</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+	<LABEL item="CharSel_XP2" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>625</X>
+			<Y>35</Y>
+			<W>52</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+	<LABEL item="CharSel_XP3" parent="CharSelection">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>625</X>
+			<Y>35</Y>
+			<W>52</W>
+			<H>11</H>
+		</BOUNDS>
+		
+	</LABEL>
+	
+	<BMBUTTON item="CharSel_SelectBtn0" parent="CharSelection">
+		<BOUNDS>
+			<X>349</X>
+			<Y>551</Y>
+			<W>24</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="over">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="down">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="disable">ProfileIconOn_0000.png</BITMAP>
+	</BMBUTTON>
+	
+	<BMBUTTON item="CharSel_SelectBtn1" parent="CharSelection">
+		<BOUNDS>
+			<X>378</X>
+			<Y>551</Y>
+			<W>24</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="over">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="down">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="disable">ProfileIconOn_0000.png</BITMAP>
+	</BMBUTTON>
+	
+	<BMBUTTON item="CharSel_SelectBtn2" parent="CharSelection">
+		<BOUNDS>
+			<X>407</X>
+			<Y>551</Y>
+			<W>24</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="over">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="down">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="disable">ProfileIconOn_0000.png</BITMAP>
+	</BMBUTTON>
+
+	<BMBUTTON item="CharSel_SelectBtn3" parent="CharSelection">
+		<BOUNDS>
+			<X>436</X>
+			<Y>551</Y>
+			<W>24</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="over">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="down">ProfileIconOn_0000.png</BITMAP>
+		<BITMAP type="disable">ProfileIconOn_0000.png</BITMAP>
+	</BMBUTTON>
+
+	<BUTTON item="CS_CreateChar" parent="CharSelection">
+		<BUTTONLOOK>SteamBlueButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>22</X>
+			<Y>499</Y>
+			<W>155</W>
+			<H>33</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>STR:UI_CC_01</TEXT>
+	</BUTTON>		
+
+	<BMBUTTON item="CS_DeleteChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>709</X>
+			<Y>568</Y>
+			<W>15</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TOOLTIP>STR:UI_CS_06</TOOLTIP>
+		<BITMAP type="up">CharDel00.png</BITMAP>
+		<BITMAP type="over">CharDel01.png</BITMAP>
+		<BITMAP type="down">CharDel00.png</BITMAP>
+	</BMBUTTON>			
+
+	<BMBUTTON item="CS_SelectChar" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>738</X>
+			<Y>568</Y>
+			<W>15</W>
+			<H>19</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<TOOLTIP>STR:UI_CLF_05</TOOLTIP>
+		<BITMAP type="up">CharSlect00.png</BITMAP>
+		<BITMAP type="over">CharSlect01.png</BITMAP>
+		<BITMAP type="down">CharSlect00.png</BITMAP>
+	</BMBUTTON>	
+
+	<BUTTON item="CS_SelectCharDefKey" parent="CharSelection">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_04</TEXT> 
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+ 	<BMBUTTON item="CS_Prev" parent="CharSelection">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>767</X>
+			<Y>568</Y>
+			<W>15</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Quit00.png</BITMAP>
+		<BITMAP type="over">Quit01.png</BITMAP>
+		<BITMAP type="down">Quit00.png</BITMAP>
+		<CONFIRMMESSAGE>STR:UI_CS_05</CONFIRMMESSAGE>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>	
+		<CONFIRMLOOK>SteamDefaultFrameLook</CONFIRMLOOK>
+	</BMBUTTON>		
+
+	<FRAME item="CS_ConfirmDeleteChar">
+		<FRAMELOOK>SteamDefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>196</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_CS_06</TEXT> 
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>	
+
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>259</X>
+			<Y>61</Y>
+			<W>288</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_CS_07</TEXT> 
+	</LABEL>
+
+	<LABEL item="CS_Label" parent="CS_ConfirmDeleteChar">
+		<BOUNDS>
+			<X>258</X>
+			<Y>76</Y>
+			<W>288</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_08</TEXT> 
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+
+	<EDIT item="CS_DeleteCharNameEdit" parent="CS_ConfirmDeleteChar">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>102</Y>
+			<W>140</W>
+			<H>24</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+	</EDIT>	
+
+	<BUTTON item="CS_DeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>SteamBlueButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>277</X>
+			<Y>151</Y>
+			<W>117</W>
+			<H>35</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BUTTON>
+
+	<BUTTON item="CS_CloseConfirmDeleteCharButton" parent="CS_ConfirmDeleteChar">
+		<BUTTONLOOK>SteamBlackButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>406</X>
+			<Y>151</Y>
+			<W>117</W>
+			<H>35</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BUTTON>	
+
+	
+</XML>

@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Replay">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Replay 화면 구성
+   
+   Last Update : 24.DEC.2004
+   Editor      : Lim Dong Hwan
+-->
+
+	<FRAME item="Replay">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>		
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>	
+		<TITLEBAR>false</TITLEBAR>
+		<FOCUSABLE>false</FOCUSABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+		
+	<PICTURE item="Background" parent="Replay">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Record.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="ReplayListBG" parent="Replay">
+		<BOUNDS>
+			<X>52</X>
+			<Y>247</Y>
+			<W>1290</W>
+			<H>656</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ReplayListBG.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : Date -->
+	<LABEL item="ListTitle_0" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>179</X>
+			<Y>263</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_19</TEXT> <!-- Date -->
+	</LABEL>
+	<!-- LABEL : Mod -->
+	<LABEL item="ListTitle_1" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>441</X>
+			<Y>263</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_20</TEXT> <!-- Mod -->
+	</LABEL>
+	<!-- LABEL : Map -->
+	<LABEL item="ListTitle_2" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>672</X>
+			<Y>263</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_21</TEXT> <!-- Map -->
+	</LABEL>
+	<!-- LABEL : Win -->
+	<LABEL item="ListTitle_3" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>846</X>
+			<Y>263</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_22</TEXT> <!-- Win/Lose -->
+	</LABEL>
+	<!-- LABEL : Result -->
+	<LABEL item="ListTitle_4" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1002</X>
+			<Y>263</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_23</TEXT> <!-- Result -->
+	</LABEL>
+	<!-- LABEL : K/D -->
+	<LABEL item="ListTitle_5" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1139</X>
+			<Y>263</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_24</TEXT> <!-- K/D -->
+	</LABEL>
+	<!-- LABEL : Lenght -->
+	<LABEL item="ListTitle_6" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1252</X>
+			<Y>263</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_25</TEXT> <!-- Lenght -->
+	</LABEL>
+	
+	<!-- LISTBOX : 리플레이 파일 리스트 -->
+	<ZMLISTBOX item="Replay_FileList" parent="Replay">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>52</X>
+			<Y>300</Y>
+			<W>1290</W>
+			<H>610</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<ITEMHEIGHT>60</ITEMHEIGHT>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SCROLLBAR>false</SCROLLBAR>
+	</ZMLISTBOX>
+	
+	<PICTURE item="CautionIcon" parent="Replay">
+		<BOUNDS>
+			<X>55</X>
+			<Y>999</Y>
+			<W>21</W>
+			<H>21</H>
+		</BOUNDS>
+		<BITMAP>CautionIcon.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- LABEL : 표시 -->
+	<LABEL item="Label" parent="Replay">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>85</X>
+			<Y>1000</Y>
+			<W>1000</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_REPLAY_03</TEXT> <!-- 버젼이 낮은 경우에 재생시 일부 차이가 있을 수 -->
+	</LABEL>
+
+	<!-- BUTTON : 리플레이 보기 버튼-->	
+	<BMBUTTON item="Replay_View" parent="Replay">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1494</X>
+			<Y>990</Y>
+			<W>374</W>
+			<H>60</H>	
+		</BOUNDS>
+		<STRETCH/>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_REPLAY_05</TEXT> <!-- 장착 -->
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOn.png</BITMAP>
+		<FONT>FONTa18b</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+		
+<!-- 리플레이 -->
+	<!-- Frame : 리플레이 타임라인 프레임 -->
+	<FRAME item="ReplayTimeLine_Frame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>		
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<!-- Picture : 리플레이 타임라인 배경 -->
+	<PICTURE item="ReplayTimeLine_BG" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>971</Y>
+			<W>1920</W>
+			<H>109</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>VignetteEffect.png</BITMAP>
+	</PICTURE>
+
+	<!-- Slider : 리플레이 타임라인 슬라이더 -->
+	<SLIDER item="ReplayTimeLine_Slider" parent="ReplayTimeLine_Frame">
+		<THUMBLOOK>CustomTimelineThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>995</Y>
+			<W>1800</W>
+			<H>32</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>top</VALIGN>
+		</ALIGN>
+		<THUMBSIZE>
+			<W>16</W>
+			<H>16</H>
+		</THUMBSIZE>
+	</SLIDER>
+
+	<!-- Button : 리플레이 처음 버튼 -->
+	<BMBUTTON item="ReplayFirstButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>60</X>
+			<Y>1030</Y>
+			<W>14</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayFirstButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplayFirstButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayFirstButton_Default.png</BITMAP>
+		<TEXT/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Button : 리플레이 5초 뒤로가기 버튼 -->
+	<BMBUTTON item="ReplayBackButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>100</X>
+			<Y>1030</Y>
+			<W>20</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayBackButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplayBackButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayBackButton_Default.png</BITMAP>
+		<TEXT/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Button : 리플레이 일시정지 버튼 -->
+	<BMBUTTON item="ReplayPauseButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>147</X>
+			<Y>1031</Y>
+			<W>14</W>
+			<H>18</H>
+		</BOUNDS>		
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayPauseButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplayPauseButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayPauseButton_Default.png</BITMAP>
+		<TEXT/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<!-- Button : 리플레이 재생 버튼 -->
+	<BMBUTTON item="ReplayPlayButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>147</X>
+			<Y>1031</Y>
+			<W>14</W>
+			<H>18</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayPlayButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplayPlayButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayPlayButton_Default.png</BITMAP>
+		<TEXT/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<!-- Button : 리플레이 5초 앞으로 버튼 -->
+	<BMBUTTON item="ReplayForwardButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>187</X>
+			<Y>1030</Y>
+			<W>20</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayFowardButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplayFowardButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayFowardButton_Default.png</BITMAP>
+		<TEXT/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Button : 리플레이 배속 버튼 -->
+	<BMBUTTON item="ReplaySpeedButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>233</X>
+			<Y>1030</Y>
+			<W>23</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplaySpeedButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplaySpeedButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplaySpeedButton_Default.png</BITMAP>
+		<TEXT/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<LABEL item="ReplayBackText" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>100</X>
+			<Y>1045</Y>
+			<W>30</W>
+			<H>18</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>194</G>
+			<B>194</B>
+		</TEXTCOLOR>
+		<TEXT>5</TEXT>
+	</LABEL>
+	
+	<LABEL item="ReplayForwardText" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>197</X>
+			<Y>1045</Y>
+			<W>30</W>
+			<H>18</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>194</G>
+			<B>194</B>
+		</TEXTCOLOR>
+		<TEXT>5</TEXT>
+	</LABEL>
+		
+	<LABEL item="ReplaySpeedText" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>247</X>
+			<Y>1045</Y>
+			<W>50</W>
+			<H>18</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>194</G>
+			<B>194</B>
+		</TEXTCOLOR>
+		<TEXT>x1</TEXT>
+	</LABEL>
+	
+    <LABEL item="ReplayTime" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>1752</X>
+			<Y>980</Y>
+			<W>153</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa12b</FONT>
+		<TEXTCOLOR>
+			<R>194</R>
+			<G>194</G>
+			<B>194</B>
+		</TEXTCOLOR>
+	</LABEL>
+	
+	<!-- Button : 리플레이 UI 숨김 버튼 -->
+	<BMBUTTON item="ReplayHideButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>1661</X>
+			<Y>1027</Y>
+			<W>24</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayHideButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplayHideButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayHideButton_Default.png</BITMAP>
+		<TEXT/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Button : 리플레이 신고 버튼 -->
+	<BMBUTTON item="ReplayReportButton" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>1751</X>
+			<Y>1024</Y>
+			<W>25</W>
+			<H>29</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayReportButton_Default.png</BITMAP>
+		<BITMAP type="over">IngameReplayReportButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayReportButton_Default.png</BITMAP>
+		<TEXT/>		
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Picture : 리플레이 POV 별 이미지 -->
+	<BMBUTTON item="ReplayPOVButton_0" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>1832</X>
+			<Y>1025</Y>
+			<W>30</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayPOVButton_Default.png</BITMAP>	
+		<BITMAP type="over">IngameReplayPOVButton_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayPOVButton_Default.png</BITMAP>
+		<VISIBLE>true</VISIBLE>			
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>	
+	
+	<BMBUTTON item="ReplayPOVButton_1" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>1832</X>
+			<Y>1025</Y>
+			<W>30</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayPOVButton_Free_Default.png</BITMAP>	
+		<BITMAP type="over">IngameReplayPOVButton_Free_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayPOVButton_Free_Default.png</BITMAP>	
+		<VISIBLE>false</VISIBLE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>	
+	
+	<BMBUTTON item="ReplayPOVButton_2" parent="ReplayTimeLine_Frame">
+		<BOUNDS>
+			<X>1832</X>
+			<Y>1025</Y>
+			<W>30</W>
+			<H>27</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">IngameReplayPOVButton_Ghost_Default.png</BITMAP>	
+		<BITMAP type="over">IngameReplayPOVButton_Ghost_Over.png</BITMAP>
+		<BITMAP type="down">IngameReplayPOVButton_Ghost_Default.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>	
+</XML>

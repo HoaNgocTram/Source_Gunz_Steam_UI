@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <LOGINEVENTSTEP event_type="1" step="1" reward_category="bounty" reward_amount="10000" reward_item_id="0" reward_expiration_hour="0" />
+  <LOGINEVENTSTEP event_type="1" step="2" reward_category="eventcash" reward_amount="1000" reward_item_id="0" reward_expiration_hour="0" />
+  <LOGINEVENTSTEP event_type="1" step="3" reward_category="item" reward_amount="1" reward_item_id="1000007" reward_expiration_hour="0" />
+  <LOGINEVENTSTEP event_type="1" step="4" reward_category="item" reward_amount="1" reward_item_id="6100059" reward_expiration_hour="0" />
+  <LOGINEVENTSTEP event_type="1" step="5" reward_category="item" reward_amount="1" reward_item_id="6110037" reward_expiration_hour="0" />
+  <LOGINEVENTSTEP event_type="1" step="6" reward_category="item" reward_amount="1" reward_item_id="6120029" reward_expiration_hour="0" />
+  <LOGINEVENTSTEP event_type="1" step="7" reward_category="bounty" reward_amount="30000" reward_item_id="0" reward_expiration_hour="0" />
+  <LOGINEVENTSTEP event_type="2" step="1" />
+  <LOGINEVENTSTEP event_type="2" step="2" />
+  <LOGINEVENTSTEP event_type="2" step="3" />
+  <LOGINEVENTSTEP event_type="2" step="4" />
+  <LOGINEVENTSTEP event_type="2" step="5" />
+  <LOGINEVENTSTEP event_type="2" step="6" />
+  <LOGINEVENTSTEP event_type="2" step="7" />
+  <LOGINEVENTSTEP event_type="3" step="1" />
+  <LOGINEVENTSTEP event_type="3" step="2" />
+  <LOGINEVENTSTEP event_type="3" step="3" />
+  <LOGINEVENTSTEP event_type="3" step="4" />
+  <LOGINEVENTSTEP event_type="3" step="5" />
+  <LOGINEVENTSTEP event_type="3" step="6" />
+  <LOGINEVENTSTEP event_type="3" step="7" />
+</XML>

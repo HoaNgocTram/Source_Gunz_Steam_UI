@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <EVENTSHOP id="1" layout="1" background="1" name="IMMOTAL" currency_item_id="6300000" daily_mission_count="3" weekly_mission_count="1" fixed_mission_count="1" start_date="2026-08-13 17:00" end_date="2026-09-22 23:59" />
+</XML>

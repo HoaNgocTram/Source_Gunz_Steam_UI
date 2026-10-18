@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SystemPopup">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes"/>
+
+	<!-- 프레임 생성 : SystemPopup -->
+	<FRAME item="SystemPopupFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- Picture : 단색 배경(블러 대용) -->
+	<PICTURE item="SystemPopup_BG" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>165</OPACITY>
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Picture : 배경 이미지 -->
+	<PICTURE item="SystemPopup_BackgroundImg" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>308</Y>
+			<W>1920</W>
+			<H>382</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>SystemPopupBG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Label : 제목 -->
+	<LABEL item="SystemPopup_Title" parent="SystemPopupFrame">
+		<FONT>FONTa22b</FONT>
+		<BOUNDS>
+			<X>805</X>
+			<Y>323</Y>
+			<W>500</W>
+			<H>80</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>111</R>
+			<G>153</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_SYSTEMPOPUP_TITLE</TEXT>
+	</LABEL>
+	
+	<!--ZOUTLINELABEL item="SystemPopup_Title"  parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>905</X>
+			<Y>343</Y>
+			<W>200</W>
+			<H>35</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTb18b</FONT>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+		<OUTLINECOLOR>
+			<R>48</R>
+			<G>46</G>
+			<B>46</B>
+		</OUTLINECOLOR>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<LABELTEXT>STR:UI_SYSTEMPOPUP_TITLE</LABELTEXT>
+	</ZOUTLINELABEL-->
+	
+	<!-- TextArea : 설명글 -->
+	<TEXTAREA item="SystemPopup_Description" parent="SystemPopupFrame">
+		<FONT>FONTa17</FONT>
+		<BOUNDS>
+			<X>695</X>
+			<Y>433</Y>
+			<W>800</W>
+			<H>150</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>142</R>
+			<G>142</G>
+			<B>142</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+		<TEXT>STR:UI_SYSTEMPOPUP_DESCRIPTION</TEXT>
+	</TEXTAREA>
+	
+	<!-- TextArea : 타이머 -->
+	<TEXTAREA item="SystemPopup_Timer" parent="SystemPopupFrame">
+		<FONT>FONTa17</FONT>
+		<BOUNDS>
+			<X>897</X>
+			<Y>508</Y>
+			<W>800</W>
+			<H>150</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>142</R>
+			<G>142</G>
+			<B>142</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- BmButton : 확인 버튼 -->
+	<BMBUTTON item="SystemPopup_ConfirmBtn" parent="SystemPopupFrame">
+		<FONT>FONTa18b</FONT>
+		<BOUNDS>
+			<X>668</X>
+			<Y>595</Y>
+			<W>274</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Lobby_QuickJoinButtonOn.png</BITMAP>
+		<BITMAP type="over">Lobby_QuickJoinButtonOver.png</BITMAP>
+		<BITMAP type="down">Lobby_QuickJoinButtonOff.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CI_14</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- BmButton : 취소 버튼 -->
+	<BMBUTTON item="SystemPopup_CancelBtn" parent="SystemPopupFrame">
+		<FONT>FONTa18b</FONT>
+		<BOUNDS>
+			<X>978</X>
+			<Y>595</Y>
+			<W>274</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">CancelButtonOn.png</BITMAP>
+		<BITMAP type="over">CancelButtonOver.png</BITMAP>
+		<BITMAP type="down">CancelButtonOff.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_LOBBY_05</TEXT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- SystemPopupListBox : 아이템 리스트 -->
+	<ZSYSTEMPOPUPLISTBOX item="SystemPopupListBox" parent="SystemPopupFrame">
+		<LISTBOXLOOK>NullListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>422</X>
+			<Y>420</Y>
+			<W>1075</W>
+			<H>120</H>
+		</BOUNDS>
+		<ITEMWIDTH>120</ITEMWIDTH>
+		<ITEMHEIGHT>120</ITEMHEIGHT>
+		<ITEMSPACE>16</ITEMSPACE>
+		<FONT>FONTb14b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>bottom</VALIGN>
+		</TEXTALIGN>
+		<STRETCH/>
+		<VISIBLE>true</VISIBLE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDITEMPOPUP>pop_up</SOUNDITEMPOPUP>
+		<SOUNDMSGPOPUP>pop_up</SOUNDMSGPOPUP>
+	</ZSYSTEMPOPUPLISTBOX>
+	
+	<PICTURE item="SystemPopup_Exchange_GoodsIcon_1" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>820</X>
+			<Y>470</Y>
+			<W>74</W>
+			<H>74</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PurchaseGoodsIcon_C.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="SystemPopup_Exchange_GoodsIcon_2" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>1042</X>
+			<Y>470</Y>
+			<W>74</W>
+			<H>74</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PurchaseGoodsIcon_ZC.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<PICTURE item="SystemPopup_Exchange_GoodsArrow" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>928</X>
+			<Y>492</Y>
+			<W>75</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>GoodsArrow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<!-- Edit : 텍스트 입력 -->
+	<EDIT item="SystemPopup_Editbox" parent="SystemPopupFrame">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<FONT>FONTa17</FONT>
+		<BOUNDS>
+			<X>877</X>
+			<Y>508</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<MAXLENGTH>60</MAXLENGTH>
+		<VISIBLE>false</VISIBLE>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+		</ALIGN>
+		<TEXT></TEXT>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</EDIT>
+	
+	<!-- ZRichTooltip : 시스템 팝업 툴팁 -->
+	<ZRICHTOOLTIP item="SystemPopup_Tooltip" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">ShopEquipTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<COLOR type="textcolor">
+			<R>200</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>390</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>320</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_08" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTb21b" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>200</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="ItemSourceSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>54</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Shop_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+
+	<PICTURE item="VoteProfileIcon" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>925</X>
+			<Y>410</Y>
+			<W>80</W>
+			<H>80</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+
+	<PICTURE item="VoteProfileFrame" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>925</X>
+			<Y>410</Y>
+			<W>80</W>
+			<H>80</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+
+	<LABEL item="VoteNickNameLabel" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>829</X>
+			<Y>500</Y>
+			<W>263</W>
+			<H>22</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>플레이어닉네임</TEXT>
+		<STRETCH/>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<FONT>FONTb16b</FONT>
+		<TEXTALIGN> 
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>221</R>
+			<G>221</G>
+			<B>221</B>
+		</TEXTCOLOR>
+	</LABEL>
+
+	<LABEL item="VoteDescLabel" parent="SystemPopupFrame">
+		<BOUNDS>
+			<X>679</X>
+			<Y>537</Y>
+			<W>563</W>
+			<H>25</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_VOTE_UI2</TEXT>
+		<STRETCH/>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<FONT>FONTa16</FONT>
+		<TEXTALIGN> 
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXTCOLOR>
+			<R>221</R>
+			<G>221</G>
+			<B>221</B>
+		</TEXTCOLOR>
+	</LABEL>
+
+</XML>

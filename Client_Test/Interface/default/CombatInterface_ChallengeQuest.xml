@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<XML ID="CombatInterface_ChallengeQuest">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />	
+	<FRAME item="CombatChallQuestInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	<ZBMNUMLABEL item="CQ_ElapsedTime" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>340</X>
+			<Y>60</Y>
+			<W>116</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>Challenge_TimeNum.png</BITMAP>
+		<FONTSIZE>
+			<W>64</W>
+			<H>64</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>	
+	<ZBMNUMLABEL item="CQ_RoundProgress" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>440</X>
+			<Y>20</Y>
+			<W>64</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>Challenge_RoundNum.png</BITMAP>
+		<FONTSIZE>
+			<W>21</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	<PICTURE item ="CQ_Round" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>298</X>
+			<Y>20</Y>
+			<W>127</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Challenge_Round.png</BITMAP>
+	</PICTURE>		
+	<PICTURE item ="CQ_FadeBG" parent="CombatChallQuestInfo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>fade.png</BITMAP>
+	</PICTURE>		
+	<LABEL item="CQ_ObserverDescription" parent="CombatChallQuestInfo">
+		<FONT>FONTa12_O2Wht</FONT>
+		<BOUNDS>
+			<X>300</X>
+			<Y>540</Y>
+			<W>300</W>
+			<H>36</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMBAT_CQI_01</TEXT>
+	</LABEL>	
+</XML>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="PrivateStageJoinFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<!-- PICTURE : 캐릭터 생성 위젯 배경 -->
+	<PICTURE item="PrivateStageJoinBG" parent="PrivateStageJoinFrame">
+		<BOUNDS>
+			<X>692</X>
+			<Y>368</Y>
+			<W>537</W>
+			<H>285</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CharacterCreationBG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- PICTURE : 캐릭터 생성 위젯 제목 배경 -->
+	<PICTURE item="PrivateStageJoinTitleBG" parent="PrivateStageJoinFrame">
+		<BOUNDS>
+			<X>692</X>
+			<Y>368</Y>
+			<W>537</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CharacterCreationTitle.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="PrivateStageJoinFrame">
+		<FONT>FONTa16b</FONT>
+		<TEXTCOLOR>
+			<R>110</R>
+			<G>151</G>
+			<B>202</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>830</X>
+			<Y>380</Y>
+			<W>260</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_PSJF_03</TEXT> <!-- 비밀번호 -->
+	</LABEL>	
+		
+	<LABEL item="PrivateStageName" parent="PrivateStageJoinFrame">
+		<BOUNDS>
+			<X>845</X>
+			<Y>450</Y>
+			<W>230</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT></TEXT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<FONT>FONTa16</FONT>
+		<MAXLENGTH>32</MAXLENGTH>
+	</LABEL>
+	
+	<EDIT item="PrivateStagePassword" parent="PrivateStageJoinFrame">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>845</X>
+			<Y>490</Y>
+			<W>230</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<MAXLENGTH>32</MAXLENGTH>
+	</EDIT>
+	
+	<!-- BMBUTTON : 확인 -->
+	<BMBUTTON item="PrivateStageJoinBtn" parent="PrivateStageJoinFrame">
+		<BOUNDS>
+			<X>737</X>
+			<Y>584</Y>
+			<W>210</W>
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOff.png</BITMAP>
+		<TEXT>STR:UI_COMMON_OK</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa17b</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 취소 -->
+	<BMBUTTON item="ParentClose" parent="PrivateStageJoinFrame">
+		<BOUNDS>
+			<X>976</X>
+			<Y>584</Y>
+			<W>210</W>
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">CancelButtonOn.png</BITMAP>
+		<BITMAP type="over">CancelButtonOver.png</BITMAP>
+		<BITMAP type="down">CancelButtonOff.png</BITMAP>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa17b</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+</XML>

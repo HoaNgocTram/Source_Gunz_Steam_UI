@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+<MAP id="0" MapName="Mansion" BspFile="Maps/Mansion/Mansion.rs"/>
+<MAP id="8" MapName="Island" BspFile="Maps/Mansion/island.RS"/>
+</XML>

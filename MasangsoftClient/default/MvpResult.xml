@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Equipment">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+
+<!-- FRAME : Mvp Result 화면 구성 -->
+	<FRAME item="MvpResult">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+<!-- Picture : 배경 이미지 -->
+	<PICTURE item="MvpResult_Background" parent="MvpResult">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- ICONBUTTON : Mvp 다음 버튼 -->
+	<ICONBUTTON item="MvpNextButton" parent="MvpResult">
+		<FONT>FONTa20b</FONT>
+		<BOUNDS>
+			<X>773</X>
+			<Y>992</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="icon" state="base">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="down">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="disable">HideOut_QuickStartButtonOff.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>235</G>
+				<B>156</B>
+			</OVER>
+			<DOWN>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</DOWN>
+			<DISABLE>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_MVP_CONTINUE_BTN</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>374</W>
+			<H>60</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+<!-- Label : Mvp 타이틀 리스트 -->
+	<LABEL item="MvpResult_TypeList_1" parent="MvpResult">
+		<FONT>FONTa16b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>235</X>
+			<Y>81</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>center</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+	</LABEL>
+	
+	<PICTURE item="MvpResult_Title_BG" parent="MvpResult">
+		<BOUNDS>
+			<X>720</X>
+			<Y>61</Y>
+			<W>442</W>
+			<H>36</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPTitle.png</BITMAP>
+	</PICTURE>
+
+	<LABEL item="MvpResult_TypeList_2" parent="MvpResult">
+		<FONT>FONTa20b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>204</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>835</X>
+			<Y>59</Y>
+			<W>260</W>
+			<H>36</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+
+	<LABEL item="MvpResult_TypeList_3" parent="MvpResult">
+		<FONT>FONTa16b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1465</X>
+			<Y>81</Y>
+			<W>220</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+
+<!-- Picture : Mvp Pannel 리스트 -->
+<!-- CHARACTERVIEW : 캐릭터 뷰어 -->
+	<PICTURE item="MvpResult_PannelList_1_Bg" parent="MvpResult">
+		<BOUNDS>
+			<X>174</X>
+			<Y>115</Y>
+			<W>332</W>
+			<H>774</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPPannel_01.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="MvpResult_PannelList_1" parent="MvpResult">
+		<BOUNDS>
+			<X>180</X>
+			<Y>121</Y>
+			<W>318</W>
+			<H>760</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPPannel_02.png</BITMAP>
+	</PICTURE>
+	
+	<CHARACTERVIEW item="MvpResult_PannelList_1_Viewer" parent="MvpResult">
+		<BOUNDS>
+			<X>180</X>
+			<Y>121</Y>
+			<W>318</W>
+			<H>760</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</CHARACTERVIEW>
+
+	<PICTURE item="MvpResult_PannelList_1_MvpInfo" parent="MvpResult">
+		<BOUNDS>
+			<X>180</X>
+			<Y>757</Y>
+			<W>318</W>
+			<H>202</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPInfo.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="MvpResult_PannelList_2_Bg" parent="MvpResult">
+		<BOUNDS>
+			<X>787</X>
+			<Y>106</Y>
+			<W>332</W>
+			<H>774</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPPannel_01.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="MvpResult_PannelList_2" parent="MvpResult">
+		<BOUNDS>
+			<X>793</X>
+			<Y>112</Y>
+			<W>318</W>
+			<H>788</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPPannel_03.png</BITMAP>
+	</PICTURE>
+	
+	<CHARACTERVIEW item="MvpResult_PannelList_2_Viewer" parent="MvpResult">
+		<BOUNDS>
+			<X>793</X>
+			<Y>112</Y>
+			<W>318</W>
+			<H>788</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</CHARACTERVIEW>
+
+		<PICTURE item="MvpResult_PannelList_2_MvpInfo" parent="MvpResult">
+		<BOUNDS>
+			<X>793</X>
+			<Y>757</Y>
+			<W>318</W>
+			<H>202</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPInfo.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item="MvpResult_PannelList_3_Bg" parent="MvpResult">
+		<BOUNDS>
+			<X>1404</X>
+			<Y>115</Y>
+			<W>332</W>
+			<H>774</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPPannel_02.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="MvpResult_PannelList_3" parent="MvpResult">
+		<BOUNDS>
+			<X>1410</X>
+			<Y>121</Y>
+			<W>318</W>
+			<H>760</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPPannel_02.png</BITMAP>
+	</PICTURE>
+	
+	<CHARACTERVIEW item="MvpResult_PannelList_3_Viewer" parent="MvpResult">
+		<BOUNDS>
+			<X>1410</X>
+			<Y>121</Y>
+			<W>318</W>
+			<H>760</H>
+		</BOUNDS>1
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</CHARACTERVIEW>
+
+	<PICTURE item="MvpResult_PannelList_3_MvpInfo" parent="MvpResult">
+		<BOUNDS>
+			<X>1410</X>
+			<Y>757</Y>
+			<W>318</W>
+			<H>202</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MVPInfo.png</BITMAP>
+	</PICTURE>
+
+<!-- Picture : Mvp Pannel 프로필 아이콘 및 정보 -->
+
+	<PICTURE item ="1Player_Info_Emblem" parent="MvpResult">
+		<BOUNDS>
+			<X>269</X>
+			<Y>772</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item ="1Player_Info_Name" parent="MvpResult">
+		<FONT>FONTb14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>323</X>
+			<Y>782</Y>
+			<W>120</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+	</LABEL>
+	
+	<PICTURE item ="1Player_ClanInfo_Emblem" parent="MvpResult">
+		<BOUNDS>
+			<X>269</X>
+			<Y>818</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item ="1Player_ClanInfo_Name" parent="MvpResult">
+		<FONT>FONTb14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>323</X>
+			<Y>828</Y>
+			<W>120</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+	</LABEL>
+	
+	<PICTURE item ="2Player_Info_Emblem" parent="MvpResult">
+		<BOUNDS>
+			<X>882</X>
+			<Y>772</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item ="2Player_Info_Name" parent="MvpResult">
+		<FONT>FONTb14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>936</X>
+			<Y>782</Y>
+			<W>120</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+	</LABEL>
+	
+	<PICTURE item ="2Player_ClanInfo_Emblem" parent="MvpResult">
+		<BOUNDS>
+			<X>882</X>
+			<Y>818</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item ="2Player_ClanInfo_Name" parent="MvpResult">
+		<FONT>FONTb14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>936</X>
+			<Y>828</Y>
+			<W>120</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+	</LABEL>
+	
+	<PICTURE item ="3Player_Info_Emblem" parent="MvpResult">
+		<BOUNDS>
+			<X>1500</X>
+			<Y>772</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item ="3Player_Info_Name" parent="MvpResult">
+		<FONT>FONTb14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1564</X>
+			<Y>782</Y>
+			<W>120</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+	</LABEL>
+	
+	<PICTURE item ="3Player_ClanInfo_Emblem" parent="MvpResult">
+		<BOUNDS>
+			<X>1500</X>
+			<Y>818</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item ="3Player_ClanInfo_Name" parent="MvpResult">
+		<FONT>FONTb14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1564</X>
+			<Y>828</Y>
+			<W>120</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+	</LABEL>
+
+<!-- LABEL : Mvp Pannel 인게임 결과 정보 -->
+	<LABEL item="MvpResult_DamageToEnemy_1" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>201</X>
+			<Y>888</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT>STR:UI_DAMAGE_TO_ENEMY</TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_DamageToEnemy_1_Data" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>419</X>
+			<Y>888</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_KD_1" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>201</X>
+			<Y>924</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT>STR:UI_K/D</TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_KD_1_Data" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>419</X>
+			<Y>924</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_DamageToEnemy_2" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>814</X>
+			<Y>888</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT>STR:UI_DAMAGE_TO_ENEMY</TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_DamageToEnemy_2_Data" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1032</X>
+			<Y>888</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_KD_2" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>814</X>
+			<Y>924</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT>STR:UI_K/D</TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_KD_2_Data" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1032</X>
+			<Y>924</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_DamageToEnemy_3" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1432</X>
+			<Y>888</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT>STR:UI_DAMAGE_TO_ENEMY</TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_DamageToEnemy_3_Data" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1698</X>
+			<Y>888</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_KD_3" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1432</X>
+			<Y>924</Y>
+			<W>60</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT>STR:UI_K/D</TEXT>
+	</LABEL>
+
+	<LABEL item="MvpResult_KD_3_Data" parent="MvpResult">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1698</X>
+			<Y>924</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN> 
+			<HALIGN>left</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<TEXT></TEXT>
+	</LABEL>
+
+</XML>

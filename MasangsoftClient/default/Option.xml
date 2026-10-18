@@ -1,0 +1,7612 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Option">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="Option">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<PICTURE item="OptionBG" parent="Option">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>191</OPACITY>
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="OptionTitle" parent="Option">
+		<FONT>FONTa22b</FONT>
+		<TEXTCOLOR>
+			<R>216</R>
+			<G>216</G>
+			<B>216</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>932</X>
+			<Y>25</Y>
+			<W>120</W>
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>STR:UI_OPTION_01</TEXT>
+	</LABEL>
+
+	<FRAME item="OptionGroup" parent="Option">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+		
+	<BMBUTTON item="SaveOptionButton" parent="OptionGroup">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>1636</X>
+			<Y>1020</Y>
+			<W>70</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">OptionShortcut_ENTER_OFF.png</BITMAP>
+		<BITMAP type="over">OptionShortcut_ENTER_Over.png</BITMAP>
+		<BITMAP type="down">OptionShortcut_ENTER_ON.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_OPTION_ENTER</TEXT> <!-- 확인(&amp;O) -->
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<LABEL item="Label" parent="OptionGroup">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1711</X>
+			<Y>1025</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_APPLY</TEXT> <!-- 적용 -->
+	</LABEL>
+
+	<BMBUTTON item="CancelOptionButton" parent="OptionGroup">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>1784</X>
+			<Y>1018</Y>
+			<W>56</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">OptionShortcut_ESC_Default.png</BITMAP>
+		<BITMAP type="over">OptionShortcut_ESC_Over.png</BITMAP>
+		<BITMAP type="down">OptionShortcut_ESC_Default.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_OPTION_ESC</TEXT> <!-- 취소(&amp;C) -->
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<LABEL item="Label" parent="OptionGroup">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1844</X>
+			<Y>1026</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_BACK</TEXT> <!-- 뒤로 -->
+	</LABEL>
+
+	<!-- GameOption -->
+	<FRAME item="GameOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>430</X>
+			<Y>105</Y>
+			<W>1685</W>
+			<H>1100</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="GameOptionTabGroup" parent="GameOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="ChatOptionTabGroup" parent="GameOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<BMBUTTON item ="GameOptionTabBtn" parent ="GameOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>225</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_133</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<BMBUTTON item ="ChatOptionTabBtn" parent ="GameOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>325</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_134</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<TABCONTROL item="GameOptionTabControl">
+		<TAB button = "GameOptionTabBtn" widget = "GameOptionTabGroup"/>
+		<TAB button = "ChatOptionTabBtn" widget = "ChatOptionTabGroup"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_50</TEXT> <!-- 조준점 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZCOMBOBOX item="CrossHairComboBox" parent="GameOptionTabGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>0</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	<CANVAS item="CrossHairPreviewCanvas" parent="GameOptionTabGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>626</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>FALSE</RESIZABLE>
+		<MOVABLE>FALSE</MOVABLE>
+		<!-- <ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN> -->
+	</CANVAS>
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>114</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="ChatOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>8</Y>
+			<W>400</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_44</TEXT> <!-- 채팅 필터 옵션 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="ChatOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<LABEL item="Label" parent="ChatOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>39</X>
+			<Y>65</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_45</TEXT> <!-- 일반 채팅 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="NormalChatOption" parent="ChatOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>54</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<LABEL item="Label" parent="ChatOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>39</X>
+			<Y>122</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_46</TEXT> <!-- 팀 채팅 말 무시 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="TeamChatOption" parent="ChatOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>113</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<LABEL item="Label" parent="ChatOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>39</X>
+			<Y>179</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_47</TEXT> <!-- 클랜 채팅 말 무시 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="ClanChatOption" parent="ChatOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>170</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<LABEL item="Label" parent="ChatOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>39</X>
+			<Y>236</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_48</TEXT> <!-- 귓말 거부 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="WhisperOption" parent="ChatOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>227</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="ChatOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>284</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>134</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_49</TEXT> <!-- 초대거부 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>139</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="InviteOption" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>128</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>183</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>203</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_121</TEXT> <!-- 아군 위치 확인 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>208</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="InviteOption" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>197</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>252</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>272</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_WEAPONTRACKS_01</TEXT> <!-- 검 궤적 길이 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>277</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZCOMBOBOX item="WeaponTracksOption" parent="GameOptionTabGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>266</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_02</LISTITEM> <!-- 1 -->
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_03</LISTITEM> <!-- 2 -->
+		<LISTITEM selected="true">STR:UI_OPTION_WEAPONTRACKS_04</LISTITEM> <!-- 3 -->
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_05</LISTITEM> <!-- 4 -->
+		<LISTITEM>STR:UI_OPTION_WEAPONTRACKS_06</LISTITEM> <!-- 5 -->
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>321</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>341</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_135</TEXT> <!-- 캐릭터 외곽선 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>346</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="CharOutlineOption" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>335</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>390</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>410</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_FRAMELIMIT_PERSECOND_01</TEXT> <!-- 1초당 프레임 제한 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>415</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<SLIDER item="FrameLimit_PerSecondSlider" parent="GameOptionTabGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>12</X>
+			<Y>404</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+
+	<EDIT item="FrameLimit_PerSecondEdit" parent="GameOptionTabGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>618</X>
+			<Y>404</Y>
+			<W>100</W>
+			<H>42</H>
+		</BOUNDS>
+		<NUMBERONLY>true</NUMBERONLY>
+		<MAXLENGTH>3</MAXLENGTH>
+	</EDIT>
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>459</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="LabelFOV" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>479</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Field of View</TEXT> <!-- FOV  -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>484</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<SLIDER item="FOVSlider" parent="GameOptionTabGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>12</X>
+			<Y>473</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="FOVEdit" parent="GameOptionTabGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>618</X>
+			<Y>473</Y>
+			<W>100</W>
+			<H>42</H>
+		</BOUNDS>
+		<NUMBERONLY>true</NUMBERONLY>
+		<MAXLENGTH>3</MAXLENGTH>
+	</EDIT>
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>528</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="LabelCombatUIPostion" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>548</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_COMBAT_UI_POS_01</TEXT> <!-- Combat UI Centering Level  -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>553</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<ZSTEPSELECTOR item="UIPositionSelector" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>542</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">1</SELECTORITEM>
+		<SELECTORITEM>2</SELECTORITEM>
+		<SELECTORITEM>3</SELECTORITEM>
+		<SELECTORITEM>4</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>597</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>617</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_136</TEXT> <!-- AntiAliasing -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>622</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZCOMBOBOX item="Antialiasing" parent="GameOptionTabGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>613</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM selected="true">STR:UI_OPTION_ANTIALIASING_1</LISTITEM> <!-- None -->
+		<LISTITEM>STR:UI_OPTION_ANTIALIASING_2</LISTITEM> <!-- x2 -->
+		<LISTITEM>STR:UI_OPTION_ANTIALIASING_3</LISTITEM> <!-- x4 -->
+		<LISTITEM>STR:UI_OPTION_ANTIALIASING_4</LISTITEM> <!-- x8 -->
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>666</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<PICTURE item="Line" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>735</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>686</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_137</TEXT>
+	</LABEL>
+
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>691</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<ZSTEPSELECTOR item="HitEffectOption" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>682</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+
+	
+	<LABEL item="Label" parent="GameOptionTabGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>755</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_138</TEXT>
+	</LABEL>
+
+	<PICTURE item="Indicator" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>760</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<ZSTEPSELECTOR item="InputDisplayOption" parent="GameOptionTabGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>751</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+
+	<!-- Video -->
+	<FRAME item="VideoOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>430</X>
+			<Y>205</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_02</TEXT> <!-- 해상도 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZCOMBOBOX item="ScreenResolution" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>0</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label_IsFullScreen" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_78</TEXT> <!-- 전체화면으로 보기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="IsFullScreen" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>69</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_03</TEXT> <!-- 밝기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<SLIDER item="VideoGamma" parent="VideoOptionGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>12</X>
+			<Y>138</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="VideoGammaEdit" parent="VideoOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>618</X>
+			<Y>138</Y>
+			<W>100</W>
+			<H>42</H>
+		</BOUNDS>
+	</EDIT>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_04</TEXT> <!-- 반사효과 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="Reflection" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>207</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Lightmap Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>282</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_05</TEXT> <!-- 라이트맵 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>287</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="LightMap" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>276</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>331</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Shader Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>351</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_06</TEXT> <!-- 쉐이더 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>356</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="Shader" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>345</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>400</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>420</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_07</TEXT> <!-- 동적라이트 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>425</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="DynamicLight" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>414</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>469</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>489</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_08</TEXT> <!-- 캐릭터 이미지 품질 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>494</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>538</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>558</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_09</TEXT> <!-- 배경 이미지 품질 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>563</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>607</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>627</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_10</TEXT> <!-- 이펙트 품질 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>632</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>676</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="VideoOptionGroup">
+	<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>696</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_11</TEXT> <!-- 텍스쳐 품질 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>701</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>745</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<ZSTEPSELECTOR item="CharTexLevel" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>483</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_OPTION_LIST_01_01</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_OPTION_LIST_01_02</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_LIST_01_03</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+
+	<ZSTEPSELECTOR item="MapTexLevel" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>552</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_OPTION_LIST_01_01</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_OPTION_LIST_01_02</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_LIST_01_03</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<ZSTEPSELECTOR item="EffectLevel" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>621</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_OPTION_LIST_01_01</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_OPTION_LIST_01_02</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_LIST_01_03</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+
+	<ZSTEPSELECTOR item="TextureFormat" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>690</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>16bit</SELECTORITEM>
+		<SELECTORITEM selected="true">32bit</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<LABEL item="Label" parent="VideoOptionGroup">
+	<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>765</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_12</TEXT> <!-- 최적화하기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>770</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<ZCOMBOBOX item="Optimization" parent="VideoOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>759</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<PICTURE item="Line" parent="VideoOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>814</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<!-- Audio -->
+	<FRAME item="AudioOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>430</X>
+			<Y>205</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<LABEL item="LabelBGMMute" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>8</Y>
+			<W>400</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_13</TEXT> <!-- 배경음악 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="BGMMute" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>0</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="LabelBGMVolume" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>76</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_14</TEXT> <!-- 배경음악 볼륨 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<SLIDER item="BGMVolumeSlider" parent="AudioOptionGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>12</X>
+			<Y>69</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="BGMVolumeEdit" parent="AudioOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>618</X>
+			<Y>69</Y>
+			<W>100</W>
+			<H>42</H>
+		</BOUNDS>
+	</EDIT>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="LabelEffectMute" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>146</Y>
+			<W>400</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_15</TEXT> <!-- 효과음 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="EffectMute" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>138</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="LabelEffectVolume" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>215</Y>
+			<W>400</W>
+			<H>22</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_16</TEXT> <!-- 효과음 볼륨 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<SLIDER item="EffectVolumeSlider" parent="AudioOptionGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>12</X>
+			<Y>207</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="EffectVolumeEdit" parent="AudioOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>618</X>
+			<Y>207</Y>
+			<W>100</W>
+			<H>42</H>
+		</BOUNDS>
+	</EDIT>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>282</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_17</TEXT> <!-- 3D사운드 좌우반전 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>287</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="InverseSound" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>276</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>331</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>353</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_18</TEXT> <!-- 하드웨어 믹싱지원 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>356</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="InverseSound" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>345</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>400</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>420</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_19</TEXT> <!-- 적 명중시 표시음 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>425</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="InverseSound" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>414</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>469</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="AudioOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>490</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_74</TEXT> <!-- 해설자 음성 출력 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>494</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="InverseSound" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>483</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="AudioOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>538</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Keyboard Option -->
+	<FRAME item="KeyboardOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>430</X>
+			<Y>105</Y>
+			<W>1685</W>
+			<H>1100</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="Action1OptionGroup" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="Action2OptionGroup" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="Action3OptionGroup" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="EtcActionOptionGroup" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+
+	<FRAME item="MouseOptionGroup" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="MacroOptionGroup" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="JoystickOptionGroup" parent="KeyboardOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<BMBUTTON item ="Action1TabBtn" parent ="KeyboardOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_68</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<BMBUTTON item ="Action2TabBtn" parent ="KeyboardOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>320</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_69</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<BMBUTTON item ="Action3TabBtn" parent ="KeyboardOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>440</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_80</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<BMBUTTON item ="EtcActionTabBtn" parent ="KeyboardOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>560</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_122</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<BMBUTTON item ="MouseTabBtn" parent ="KeyboardOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>680</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_71</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<BMBUTTON item ="MacroTabBtn" parent ="KeyboardOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>800</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:CMD_NAME_14</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item ="JoystickTabBtn" parent ="KeyboardOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>920</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_72</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<TABCONTROL item="KeyboardOptionTabControl">
+		<TAB button = "Action1TabBtn" widget = "Action1OptionGroup"/>
+		<TAB button = "Action2TabBtn" widget = "Action2OptionGroup"/>
+		<TAB button = "Action3TabBtn" widget = "Action3OptionGroup"/>
+		<TAB button = "EtcActionTabBtn" widget = "EtcActionOptionGroup"/>
+		<TAB button = "MouseTabBtn" widget = "MouseOptionGroup"/>
+		<TAB button = "MacroTabBtn" widget = "MacroOptionGroup"/>
+		<TAB button = "JoystickTabBtn" widget = "JoystickOptionGroup"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+	
+	<!-- Action1OptionTab -->
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_22</TEXT> <!-- 앞으로 가기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="ForwardActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="ForwardActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_23</TEXT> <!-- 뒤로 가기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="BackActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="BackActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_24</TEXT> <!-- 왼쪽으로 가기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="LeftActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="LeftActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_25</TEXT> <!-- 오른쪽으로 가기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="RightActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="RightActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>282</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_59</TEXT> <!-- 무기 사용 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>287</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="UseWeaponActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>276</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="UseWeaponActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>276</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>331</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>351</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_73</TEXT> <!-- 무기 사용2 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>356</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="UseWeapon2ActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>345</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="UseWeapon2ActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>345</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>400</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>420</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_34</TEXT> <!-- 재장전 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>425</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="ReloadActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>414</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="ReloadActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>414</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>469</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>489</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_35</TEXT> <!-- 점프 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>494</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="JumpActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>483</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="JumpActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>483</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>538</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>558</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_39</TEXT> <!-- 방어 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>563</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="DefenceActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>552</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="DefenceActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>552</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>607</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>627</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_31</TEXT> <!-- 이전무기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>632</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="PrevousWeaponActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>621</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="PrevousWeaponActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>621</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>676</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="Action1OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>696</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_32</TEXT> <!-- 다음무기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>701</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="NextWeaponActionKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>690</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="NextWeaponActionAltKey" parent="Action1OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>690</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action1OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>745</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- MouseOptionTab -->
+	<LABEL item="Label" parent="MouseOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_76</TEXT> <!-- 마우스 감도 감소 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="MouseSensitivityDecActionKey" parent="MouseOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>0</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="MouseOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_77</TEXT> <!-- 마우스 감도 증가 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="MouseSensitivityIncActionKey" parent="MouseOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>69</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="MouseOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_20</TEXT> <!-- 마우스 감도 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<SLIDER item="MouseSensitivitySlider" parent="MouseOptionGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>12</X>
+			<Y>138</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="MouseSensitivityEdit" parent="MouseOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>618</X>
+			<Y>138</Y>
+			<W>100</W>
+			<H>42</H>
+		</BOUNDS>
+	</EDIT>
+	<PICTURE item="Line" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="MouseOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_21</TEXT> <!-- 마우스 상하 반전 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="InvertMouse" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>207</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="MouseOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- Action2OptionTab -->
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_26</TEXT> <!-- 근접 무기 선택 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="MeleeWeaponActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="MeleeWeaponActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_27</TEXT> <!-- 주 무기 선택 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="PrimaryWeaponActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="PrimaryWeaponActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_28</TEXT> <!-- 보조 무기 선택 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="SecondaryWeaponActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="SecondaryWeaponActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_81</TEXT> <!-- 아이템1 선택 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="Item1ActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="Item1ActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>282</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_82</TEXT> <!-- 아이템2 선택 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>287</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="Item2ActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>276</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="Item2ActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>276</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>331</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>351</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_40</TEXT> <!-- 채팅창보기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>356</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="ToggleChatActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>345</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="ToggleChatActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>345</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>400</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>420</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_36</TEXT> <!-- 점수 보기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>425</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="ScoreActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>414</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="ScoreActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>414</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>469</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>489</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_AUTODASH_LEFT</TEXT> <!-- 자동 대쉬 기능(좌대쉬) -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>494</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="AutoDash_LeftActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>483</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="AutoDash_LeftActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>483</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>538</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>558</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_AUTODASH_RIGHT</TEXT> <!-- 자동 대쉬 기능(우대쉬) -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>563</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="AutoDash_RightActionKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>552</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="AutoDash_RightActionAltKey" parent="Action2OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>552</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>607</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>627</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_AUTORELOAD</TEXT> <!-- 발사 후 자동 장전 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>632</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="AutoReload" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>621</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>676</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action2OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>696</Y>
+			<W>520</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_BLOCK_ACTIONKEY_WEAPONCHANGE_ITEM1_ITEM2</TEXT> <!-- 전투화면, 마우스 휠, Q, E 키 입력 통한 MMCIP_CUSTOM1, MMCIP_CUSTOM2 무기 교체 막기 옵션 -->
+	</LABEL>
+	
+	<PICTURE item="Indicator" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>701</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<ZSTEPSELECTOR item="Block_ActionKeyWeaponChange_Item1_Item2" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>690</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<PICTURE item="Line" parent="Action2OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>745</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MouseButton" parent="KeyboardOptionGroup">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>18</W>
+			<H>30</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- Action3OptionTab -->
+	<LABEL item="Label" parent="Action3OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_60</TEXT> <!-- 도발 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="TauntActionKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="TauntActionAltKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action3OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_61</TEXT> <!-- 인사 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="BowActionKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="BowActionAltKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action3OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_62</TEXT> <!-- 손 흔들기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="WaveActionKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="WaveActionAltKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action3OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_63</TEXT> <!-- 웃기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="LaughActionKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="LaughActionAltKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action3OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>282</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_64</TEXT> <!-- 울기 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>287</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="CryActionKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>276</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="CryActionAltKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>276</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>331</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="Action3OptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>351</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_65</TEXT> <!-- 춤 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>356</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="DanceActionKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>345</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="DanceActionAltKey" parent="Action3OptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>345</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="Action3OptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>400</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- EtcOptionTab -->
+	<LABEL item="Label" parent="EtcActionOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_37</TEXT> <!-- 스크린샷 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="ScreenShotActionKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="ScreenShotActionAltKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>0</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcActionOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_38</TEXT> <!-- 녹화/재생 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="RecordActionKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="RecordActionAltKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>69</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="EtcActionOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_75</TEXT> <!-- 동영상 녹화 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="MovingPictureActionKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="MovingPictureActionAltKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>138</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcActionOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_79</TEXT> <!-- 카메라 오프셋 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ACTIONKEY item="CameraOffsetActionKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<ACTIONKEY item="CameraOffsetActionAltKey" parent="EtcActionOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>906</X>
+			<Y>207</Y>
+			<W>168</W>
+			<H>42</H>
+		</BOUNDS>
+	</ACTIONKEY>
+	<PICTURE item="Line" parent="EtcActionOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	
+	<!-- JoystickOptionTab -->
+	<LABEL item="Label" parent="JoystickOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_66</TEXT> <!-- 조이스틱 아날로그 감도 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="JoystickOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<SLIDER item="JoystickSensitivitySlider" parent="JoystickOptionGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>12</X>
+			<Y>0</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="JoystickSensitivityEdit" parent="JoystickOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>618</X>
+			<Y>0</Y>
+			<W>100</W>
+			<H>42</H>
+		</BOUNDS>
+	</EDIT>
+	<PICTURE item="Line" parent="JoystickOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="DefaultSettingLoad" parent="KeyboardOptionGroup">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>1025</X>
+			<Y>916</Y>
+			<W>30</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">OptionShortcut_Reset_Default.png</BITMAP>
+		<BITMAP type="over">OptionShortcut_Reset_Over.png</BITMAP>
+		<BITMAP type="down">OptionShortcut_Reset_Default.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<DEFAULTKEY>R</DEFAULTKEY>
+		<TEXT>R</TEXT>
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	<LABEL item="Label" parent="KeyboardOptionGroup">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1063</X>
+			<Y>921</Y>
+			<W>130</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_123</TEXT> <!-- 기본설정으로 -->
+	</LABEL>
+
+	<!-- Etc Option -->
+	<FRAME item="EtcOptionGroup" parent="OptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>430</X>
+			<Y>105</Y>
+			<W>1300</W>
+			<H>1100</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="EtcDetailOptionGroup" parent="EtcOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="EtcBlockListGroup" parent="EtcOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="EtcCouponGroup" parent="EtcOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1085</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	<FRAME item="EtcCreatorGroup" parent="EtcOptionGroup">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>100</Y>
+			<W>1300</W>
+			<H>1000</H>
+		</BOUNDS>
+		<VISIBLE>FALSE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<MOVABLE>false</MOVABLE>
+	</FRAME>
+	
+	
+	<BMBUTTON item ="EtcSubTabBtn1" parent ="EtcOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>616</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_124</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item ="EtcSubTabBtn2" parent ="EtcOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>736</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_125</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item ="EtcSubTabBtn3" parent ="EtcOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>856</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_130</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item ="EtcSubTabBtn4" parent ="EtcOptionGroup">
+		<BUTTONLOOK>NullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>976</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_CREATOR_01</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTb16</FONT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<TABCONTROL item="EtcSubTabControl">
+		<TAB button = "EtcSubTabBtn1" widget = "EtcDetailOptionGroup"/>
+		<TAB button = "EtcSubTabBtn2" widget = "EtcBlockListGroup"/>
+		<TAB button = "EtcSubTabBtn3" widget = "EtcCouponGroup"/>
+		<TAB button = "EtcSubTabBtn4" widget = "EtcCreatorGroup"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+
+	<!-- EtcDetailOptionGroup -->
+	<LABEL item="Label" parent="EtcDetailOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_LANGUAGE_SELECT</TEXT> <!-- 언어 설정 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZCOMBOBOX item="LanguageSelectComboBox" parent="EtcDetailOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>0</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	<PICTURE item="Line" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcDetailOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_42</TEXT> <!-- 포트포워딩 포트설정 -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="NetworkPort1" parent="EtcDetailOptionGroup">
+		<EDITLOOK>OptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>734</X>
+			<Y>69</Y>
+			<W>148</W>
+			<H>42</H>
+		</BOUNDS>
+	</EDIT>
+	<LABEL item="Label" parent="EtcDetailOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>895</X>
+			<Y>69</Y>
+			<W>20</W>
+			<H>42</H>
+		</BOUNDS>
+		<TEXT>~</TEXT>
+	</LABEL>
+	<EDIT item="NetworkPort2" parent="EtcDetailOptionGroup">
+		<EDITLOOK>OptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>926</X>
+			<Y>69</Y>
+			<W>148</W>
+			<H>42</H>
+		</BOUNDS>
+	</EDIT>
+	<PICTURE item="Line" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcDetailOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_43</TEXT> <!-- 성능 최대화(일부 시스템에서 마우스가 느려질 수 있습니다. -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZSTEPSELECTOR item="BoostOption" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>138</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<PICTURE item="Line" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcDetailOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_MOVINGPICTURE_01</TEXT> <!-- 해상도(동영상) -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZCOMBOBOX item="MovingPictureResolution" parent="EtcDetailOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>207</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM selected="true">STR:UI_OPTION_MOVINGPICTURE_02</LISTITEM> <!-- 1 -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_03</LISTITEM> <!-- 2 -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_04</LISTITEM> <!-- 3 -->
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	<PICTURE item="Line" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcDetailOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>282</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_MOVINGPICTURE_11</TEXT> <!-- 저장 용량 제한( 동영상 ) -->
+	</LABEL>
+	
+	<PICTURE item="Indicator" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>287</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<ZCOMBOBOX item="MovingPictureFileSize" parent="EtcDetailOptionGroup">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>12</X>
+			<Y>276</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+		<LISTITEM selected="true">STR:UI_OPTION_MOVINGPICTURE_12</LISTITEM> <!-- 100MB -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_13</LISTITEM> <!-- 300MB -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_14</LISTITEM> <!-- 500MB -->
+		<LISTITEM>STR:UI_OPTION_MOVINGPICTURE_15</LISTITEM> <!-- 무제한 -->
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	<PICTURE item="Line" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>331</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- 슨타트 -->
+	<PICTURE item="Indicator" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>346</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcDetailOptionGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>341</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_REPLAY_AUTO_SAVE</TEXT> <!-- 저장 용량 제한( 동영상 ) -->
+	</LABEL>
+	<ZSTEPSELECTOR item="ReplayAutoSavingOption" parent="EtcDetailOptionGroup">
+		<BOUNDS>
+			<X>734</X>
+			<Y>341</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_119</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_120</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	<!-- 끝 -->
+	
+	<!-- EtcBlockListGroup -->
+	<BLOCKLISTBOX item="OptionBlockListBox" parent="EtcBlockListGroup">
+		<LISTBOXLOOK>NullFrameLook</LISTBOXLOOK>
+		<THUMBLOOK>CustomRenewalThumbLook</THUMBLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1085</W>
+			<H>750</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<ITEMSPACE>77</ITEMSPACE><!--326-->
+		<ITEMSPACEH>24</ITEMSPACEH>
+		<ITEMBETWEEN>200</ITEMBETWEEN>
+		<ROWNUM>9.5</ROWNUM>
+		<NUMCOLUMN>2</NUMCOLUMN>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+		<VIEWTYPE>OPTION</VIEWTYPE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<FONT>FONTa16</FONT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+	</BLOCKLISTBOX>
+
+	<!-- EtcCouponGroup -->
+	<PICTURE item="Indicator" parent="EtcCouponGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcCouponGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_COUPON_TITLE</TEXT>
+	</LABEL>
+	
+	<PICTURE item="Line" parent="EtcCouponGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>41</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<ZEDIT item="CouponNumberInput" parent="EtcCouponGroup">
+		<BOUNDS>
+			<X>23</X>
+			<Y>70</Y>
+			<W>500</W>
+			<H>43</H>
+		</BOUNDS>
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<MAXLENGTH>19</MAXLENGTH>
+		<COLOR type="frame">
+			<R>62</R>
+			<G>66</G>
+			<B>69</B>
+		</COLOR>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>125</W>
+		</TABRECT>
+		<GUIDETEXT>STR:UI_OPTION_COUPON_INPUT_HINT</GUIDETEXT>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</ZEDIT>
+	
+	<BMBUTTON item="CouponUseButton" parent="EtcCouponGroup">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>700</X>
+			<Y>70</Y>
+			<W>180</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">OptimizationButton_Default.png</BITMAP>
+		<BITMAP type="over">OptimizationButton_Over.png</BITMAP>
+		<BITMAP type="down">OptimizationButton_Default.png</BITMAP>
+		<TEXT>STR:UI_OPTION_APPLY</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<LABEL item="Label" parent="EtcCouponGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>150</Y>
+			<W>600</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_COUPON_WARNING_TITLE</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="EtcCouponGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>185</Y>
+			<W>800</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_COUPON_WARNING_1</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="EtcCouponGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>220</Y>
+			<W>800</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_COUPON_WARNING_2</TEXT>
+	</LABEL>
+	
+	<!-- EtcCreatprGroup -->
+	<PICTURE item="Indicator" parent="EtcCreatorGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="EtcCreatorGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_CREATOR_01</TEXT>
+	</LABEL>
+	
+	<PICTURE item="Line" parent="EtcCreatorGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>41</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<ZEDIT item="CreatorTagNumberInput" parent="EtcCreatorGroup">
+		<BOUNDS>
+			<X>23</X>
+			<Y>70</Y>
+			<W>500</W>
+			<H>43</H>
+		</BOUNDS>
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<MAXLENGTH>19</MAXLENGTH>
+		<COLOR type="frame">
+			<R>62</R>
+			<G>66</G>
+			<B>69</B>
+		</COLOR>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>125</W>
+		</TABRECT>
+		<GUIDETEXT>STR:UI_OPTION_COUPON_INPUT_HINT</GUIDETEXT>
+	</ZEDIT>
+	
+	<BMBUTTON item="CreatorRegistButton" parent="EtcCreatorGroup">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>700</X>
+			<Y>70</Y>
+			<W>180</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>true</VISIBLE>
+		<BITMAP type="up">OptimizationButton_Default.png</BITMAP>
+		<BITMAP type="over">OptimizationButton_Over.png</BITMAP>
+		<BITMAP type="down">OptimizationButton_Default.png</BITMAP>
+		<TEXT>STR:UI_OPTION_CREATOR_09</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item="CreatorCancelButton" parent="EtcCreatorGroup">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>700</X>
+			<Y>70</Y>
+			<W>180</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">Common_00-CancelButton_On.png</BITMAP>
+		<BITMAP type="over">Common_00-CancelButton_Over.png</BITMAP>
+		<BITMAP type="down">Common_00-CancelButton_On.png</BITMAP>
+		<TEXT>STR:UI_OPTION_CREATOR_19</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<LABEL item="Label" parent="EtcCreatorGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>150</Y>
+			<W>600</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_COUPON_WARNING_TITLE</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="EtcCreatorGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>185</Y>
+			<W>1300</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_CREATOR_03</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="EtcCreatorGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>220</Y>
+			<W>1300</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_CREATOR_04</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="EtcCreatorGroup">
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>255</Y>
+			<W>1300</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_CREATOR_05</TEXT>
+	</LABEL>
+	
+	
+
+	<!-- MacroOptionTab -->
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>6</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_51</TEXT> <!-- F1 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>11</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF1" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>55</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>75</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_52</TEXT> <!-- F2 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>80</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF2" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>69</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>124</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>144</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_53</TEXT> <!-- F3 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>149</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF3" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>138</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>193</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>213</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_54</TEXT> <!-- F4 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>218</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF4" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>207</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>262</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>282</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_55</TEXT> <!-- F5 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>287</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF5" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>276</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>331</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>351</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_56</TEXT> <!-- F6 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>356</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF6" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>345</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>400</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>420</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_57</TEXT> <!-- F7 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>425</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF7" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>414</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>469</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="Label" parent="MacroOptionGroup">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>18</X>
+			<Y>489</Y>
+			<W>400</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_58</TEXT> <!-- F8 Key -->
+	</LABEL>
+	<PICTURE item="Indicator" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>494</Y>
+			<W>3</W>
+			<H>22</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	<EDIT item="MacroF8" parent="MacroOptionGroup">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>483</Y>
+			<W>501</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>right</HALIGN>
+		</ALIGN>
+	</EDIT>
+	<PICTURE item="Line" parent="MacroOptionGroup">
+		<BOUNDS>
+			<X>7</X>
+			<Y>538</Y>
+			<W>1067</W>
+			<H>1</H>
+		</BOUNDS>
+		<OPACITY>70</OPACITY>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+
+<!-- 옵션 메뉴 버튼들 -->
+
+	<BMBUTTON item = "ShowGameOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>645</X>
+			<Y>77</Y>
+			<W>127</W>
+			<H>56</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_126</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTa18b</FONT>
+		<STRETCH/>
+		<BITMAP type="down">MainTop_TabButtonOn.png</BITMAP>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item = "ShowVideoOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>772</X>
+			<Y>77</Y>
+			<W>127</W>
+			<H>56</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_127</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTa18b</FONT>
+		<STRETCH/>
+		<BITMAP type="down">MainTop_TabButtonOn.png</BITMAP>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item = "ShowAudioOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>899</X>
+			<Y>77</Y>
+			<W>127</W>
+			<H>56</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_128</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTa18b</FONT>
+		<STRETCH/>
+		<BITMAP type="down">MainTop_TabButtonOn.png</BITMAP>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item = "ShowKeyboardOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>1026</X>
+			<Y>77</Y>
+			<W>127</W>
+			<H>56</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_129</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTa18b</FONT>
+		<STRETCH/>
+		<BITMAP type="down">MainTop_TabButtonOn.png</BITMAP>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<BMBUTTON item = "ShowEtcOptionGroup" parent = "OptionGroup">
+		<BOUNDS>
+			<X>1153</X>
+			<Y>77</Y>
+			<W>127</W>
+			<H>56</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_LIST_01_07</TEXT>
+		<TYPETEXTCOLOR type="up">
+			<R>95</R>
+			<G>95</G>
+			<B>95</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="down">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TYPETEXTCOLOR>
+		<TYPETEXTCOLOR type="over">
+			<R>130</R>
+			<G>130</G>
+			<B>130</B>
+		</TYPETEXTCOLOR>
+		<FONT>FONTa18b</FONT>
+		<STRETCH/>
+		<BITMAP type="down">MainTop_TabButtonOn.png</BITMAP>
+		<PUSHBUTTON/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<TABCONTROL item="OptionTabControl">
+		<TAB button = "ShowGameOptionGroup" widget = "GameOptionGroup"/>
+		<TAB button = "ShowVideoOptionGroup" widget = "VideoOptionGroup"/>
+		<TAB button = "ShowAudioOptionGroup" widget = "AudioOptionGroup"/>
+		<TAB button = "ShowKeyboardOptionGroup" widget = "KeyboardOptionGroup"/>
+		<TAB button = "ShowEtcOptionGroup" widget = "EtcOptionGroup"/>
+		<TABCONTROLLOOK>NullTabLook</TABCONTROLLOOK>
+	</TABCONTROL>
+	
+	<PICTURE item="MainTopBoundary" parent="OptionGroup">
+		<BOUNDS>
+			<X>395</X>
+			<Y>131</Y>
+			<W>1130</W>
+			<H>1</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Boundary.png</BITMAP>
+	</PICTURE>
+
+</XML>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <EVENTSHOPITEM id="1" event_id="1" price="5" item_id="900002" item_count="1" rent_hour_period="0" exchange_limit="100" />
+  <EVENTSHOPITEM id="2" event_id="1" price="10" item_id="900101" item_count="1" rent_hour_period="0" exchange_limit="5" />
+  <EVENTSHOPITEM id="3" event_id="1" price="10" item_id="3200002" item_count="1" rent_hour_period="720" exchange_limit="2" />
+  <EVENTSHOPITEM id="4" event_id="1" price="100" item_id="5100001" item_count="1" rent_hour_period="0" exchange_limit="1" />
+  <EVENTSHOPITEM id="5" event_id="1" price="10" item_id="2100005" item_count="1" rent_hour_period="0" exchange_limit="1" />
+  <EVENTSHOPITEM id="6" event_id="1" price="35" item_id="5000000" item_count="1" rent_hour_period="0" exchange_limit="1" />
+  <EVENTSHOPITEM id="7" event_id="1" price="15" item_id="2010005" item_count="1" rent_hour_period="0" exchange_limit="1" />
+</XML>

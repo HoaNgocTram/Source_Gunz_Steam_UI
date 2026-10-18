@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+
+<CASH id="1001" description="GunZ: The Duel - 370 Credit" cash="370" usd="299"></CASH>
+<CASH id="1002" description="GunZ: The Duel - 750 Credit" cash="750" usd="599"></CASH>
+<CASH id="1003" description="GunZ: The Duel - 2050 Credit" cash="2050" usd="1499"></CASH>
+<CASH id="1004" description="GunZ: The Duel - 3770 Credit" cash="3770" usd="2499"></CASH>
+<CASH id="1005" description="GunZ: The Duel - 9150 Credit" cash="9150" usd="5999"></CASH>
+<CASH id="1006" description="GunZ: The Duel - 16100 Credit" cash="16100" usd="9999"></CASH>
+
+</XML>

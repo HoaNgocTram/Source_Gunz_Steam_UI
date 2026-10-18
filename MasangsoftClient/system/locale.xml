@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+	<LOCALE>
+ 		<COUNTRY>ENG</COUNTRY>
+		<LANGUAGE>ENG</LANGUAGE>	
+		<MAXPLAYERS>16</MAXPLAYERS>
+		<SELECTABLE_LANGUAGES>
+			<LANGUAGE id="ENG" name="English" />
+			<LANGUAGE id="KOR" name="한국어" />
+			<LANGUAGE id="ESP" name="Español" />
+			<LANGUAGE id="RUS" name="Русский" />
+			<LANGUAGE id="JPN" name="日本語" />
+			<LANGUAGE id="FRA" name="Français" />
+			<LANGUAGE id="PRT" name="Português" />
+			<LANGUAGE id="DEU" name="Deutsch" />
+			<LANGUAGE id="CHN" name="简体中文" />
+			<LANGUAGE id="TWN" name="繁體中文" />
+			<LANGUAGE id="POL" name="Polski" />
+
+			
+
+		</SELECTABLE_LANGUAGES>
+	</LOCALE>
+</XML>

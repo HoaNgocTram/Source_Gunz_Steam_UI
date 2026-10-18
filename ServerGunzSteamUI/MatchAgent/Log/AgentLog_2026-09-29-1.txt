@@ -1,0 +1,29 @@
+[Tue Sep 29 09:01:34 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Tue Sep 29 09:01:34 2026] Release Date : Sep 23 2026
+===========================================================================================
+
+[Tue Sep 29 09:01:34 2026] Match Agent Created (Port:7777)
+[Tue Sep 29 09:01:34 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Tue Sep 29 09:01:34 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Tue Sep 29 09:01:34 2026] MMatchAgent::ConnectToMatchServer END 
+[Tue Sep 29 09:04:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=1
+[Tue Sep 29 09:07:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:10:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:13:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:16:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:19:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:21:03 2026] Agent Local Login (UID:01000, IP:176.53.159.199, Port:6682)
+[Tue Sep 29 09:21:04 2026] Agent Net Clear(UID:01000)
+[Tue Sep 29 09:22:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:25:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:28:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:31:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:33:01 2026] Agent Local Login (UID:01001, IP:64.62.197.92, Port:44048)
+[Tue Sep 29 09:33:01 2026] Agent Net Clear(UID:01001)
+[Tue Sep 29 09:34:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:37:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:40:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:43:34 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Tue Sep 29 09:44:52 2026] Server Connection is Cleared(UID:02)

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <TIPS category="0">
+    <MSG>Aproveite o GunZ: The Duel - Um jogo de ação gratuito para sempre.</MSG>
+    <MSG>Se tiver alguma dúvida sobre o GunZ, você pode usar a função de suporte na página principal do GunZ.</MSG>
+    <MSG>Você usa um roteador? Tente o encaminhamento de porta para uma jogabilidade online otimizada.</MSG>
+    <MSG>O GunZ está lento no seu computador? Use o recurso de otimização no menu de opções.</MSG>
+    <MSG>Você pode usar a função "Jogar agora" para entrar rapidamente em um jogo.</MSG>
+    <MSG>Fale para seus amigos sobre o GunZ. Juntos vocês podem criar um clã.</MSG>
+    <MSG>Itens de recompensa não podem ser compartilhados com outros personagens através do seu "Armazém".</MSG>
+    <MSG>Use o modo de treinamento para praticar suas habilidades sem perder pontos de experiência.</MSG>
+    <MSG>Use o comando de chat '/r' para responder rapidamente a um sussurro.</MSG>
+    <MSG>Qualquer ID de jogo que possa ofender outros será restrito.</MSG>
+    <MSG>Qualquer pessoa que ofender outros dentro do jogo estará sujeita a punição pela equipe de operação.</MSG>
+    <MSG>Nunca dê sua senha a ninguém. O administrador nunca pedirá sua senha.</MSG>
+    <MSG>Não compartilhe sua senha com ninguém. Não podemos recuperar danos causados por hacking.</MSG>
+    <MSG>Por favor, jogue com respeito para garantir que todos tenham uma melhor experiência de jogo.</MSG>
+    <MSG>O princípio fundamental de um verdadeiro mestre é a consideração pelos outros.</MSG>
+    <MSG>O uso de hacks, programas ilegais ou exploração de bugs resultará em banimento permanente para todas as contas associadas.</MSG>
+    <MSG>Se você se defender com sucesso de um ataque corpo a corpo, terá a chance de realizar um ataque massivo imediatamente!</MSG>
+    <MSG>Pressione a tecla Ctrl + qualquer número no modo observador para atribuir um número a um jogador.</MSG>
+  </TIPS>
+  <TIPS category="1">
+    <MSG id="8">Pressione a tecla Ctrl + qualquer número no modo observador para atribuir um número a um jogador.</MSG>
+  </TIPS>
+</XML>

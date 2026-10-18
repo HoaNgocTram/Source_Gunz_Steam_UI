@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="CharCreation">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	
+<!--
+   캐릭터 생성 윈도우
+   
+   Last Update : 29.OCT.2004
+   Editor      : Lim Dong Hwan
+-->
+
+
+<!-- 프레임 생성 : CharCreation -->
+	<FRAME item="CharCreationFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- PICTURE: 상단바 뒷배경 -->
+	<PICTURE item="MainTopShadow" parent="CharCreationFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1980</W>
+			<H>77</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Shadow.png</BITMAP>
+	</PICTURE>
+
+	<!-- PICTURE: 건즈 로고 -->
+	<PICTURE item="MainTopLogo" parent="CharCreationFrame">
+		<BOUNDS>
+			<X>56</X>
+			<Y>31</Y>
+			<W>94</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Logo.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE: 상단바 밑줄 -->
+	<PICTURE item="MainTopBoundary" parent="CharCreationFrame">
+		<BOUNDS>
+			<X>66</X>
+			<Y>75</Y>
+			<W>1130</W>
+			<H>1</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Boundary.png</BITMAP>
+	</PICTURE>
+	
+	<!-- PICTURE : 상단탭 배경 -->
+	<PICTURE item="CharCreationTitleBG" parent="CharCreationFrame">
+		<BOUNDS>
+			<X>172</X>
+			<Y>0</Y>
+			<W>212</W>
+			<H>76</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_TabButtonOn.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- LABEL : 상단탭 텍스트 -->
+	<LABEL item="Label" parent="CharCreationFrame">
+		<BOUNDS>
+			<X>184</X>
+			<Y>30</Y>
+			<W>220</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>CharacterCreation</TEXT>
+		<FONT>FONTa16b</FONT>
+	</LABEL>
+	
+	<!-- FRAEM : 캐릭터 생성 위젯 -->
+	<FRAME item="CharCreation">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>711</X>
+			<Y>755</Y>
+			<W>537</W>
+			<H>285</H>
+		</BOUNDS>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<!-- PICTURE : 캐릭터 생성 위젯 배경 -->
+	<PICTURE item="CharCreationBG" parent="CharCreation">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>537</W>
+			<H>285</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CharacterCreationBG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- PICTURE : 캐릭터 생성 위젯 제목 배경 -->
+	<PICTURE item="CharCreationTitleBG" parent="CharCreation">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>537</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CharacterCreationTitle.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<!-- LABEL : 캐릭터 생성 위젯 제목 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>150</X>
+			<Y>12</Y>
+			<W>260</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>204</R>
+			<G>204</G>
+			<B>204</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_01</TEXT>
+		<FONT>FONTa20b</FONT>
+	</LABEL>
+	
+	<!-- LABEL : 닉네임 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>30</X>
+			<Y>95</Y>
+			<W>120</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_12</TEXT> <!-- 닉네임 -->
+		<FONT>FONTa16</FONT>
+	</LABEL>
+	
+	<!-- EDIT : 닉네임 입력창 -->
+	<EDIT item="CC_CharName" parent="CharCreation">
+		<EDITLOOK>KeyboardOptionEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>154</X>
+			<Y>84</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<MAXLENGTH>16</MAXLENGTH>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</EDIT>
+	
+	<!-- LABEL : 성별 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>30</X>
+			<Y>154</Y>
+			<W>120</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_CC_03</TEXT> <!-- 성별 -->
+		<FONT>FONTa16</FONT>
+	</LABEL>
+	
+	<!-- STEPSELECTOR : 성별 선택 -->
+	<ZSTEPSELECTOR item="CC_Sex" parent="CharCreation">
+		<BOUNDS>
+			<X>154</X>
+			<Y>144</Y>
+			<W>340</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>64</R>
+			<G>66</G>
+			<B>69</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>290</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>18</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>23</X>
+			<Y>16</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_OPTION_131</SELECTORITEM>
+		<SELECTORITEM>STR:UI_OPTION_132</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>5</X>
+			<Y>8</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<!-- 헤어 -->
+	<!-- Label : 헤어 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>104</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_04</TEXT> <!-- 헤어 -->
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+
+	<!-- Conbobox : 헤어 선택창 -->
+	<ZCOMBOBOX item="CC_Hair" parent="CharCreation">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>104</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">STR:UI_CC_LIST_02_01</LISTITEM> <!-- 타입1 -->
+		<LISTITEM>STR:UI_CC_LIST_02_02</LISTITEM> <!-- 타입2 -->
+		<LISTITEM>STR:UI_CC_LIST_02_03</LISTITEM> <!-- 타입3 -->
+		<LISTITEM>STR:UI_CC_LIST_02_04</LISTITEM> <!-- 타입4 -->
+		<DROPSIZE>210</DROPSIZE>
+		<VISIBLE>false</VISIBLE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+
+<!-- 얼굴 -->
+	<!-- Label : 얼굴 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>133</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_05</TEXT> <!-- 얼굴 -->
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+
+	<!-- Combobox : 얼굴 선택창 -->
+	<ZCOMBOBOX item="CC_Face" parent="CharCreation">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>133</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">STR:UI_CC_LIST_02_01</LISTITEM> <!-- 타입1 -->
+		<LISTITEM>STR:UI_CC_LIST_02_02</LISTITEM> <!-- 타입2 -->
+		<LISTITEM>STR:UI_CC_LIST_02_03</LISTITEM> <!-- 타입3 -->
+		<LISTITEM>STR:UI_CC_LIST_02_04</LISTITEM> <!-- 타입4 -->
+		<DROPSIZE>210</DROPSIZE>
+		<VISIBLE>false</VISIBLE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+
+<!-- 기본장비 -->
+	<!-- Label : 기본장비 -->
+	<LABEL item="Label" parent="CharCreation">
+		<BOUNDS>
+			<X>19</X>
+			<Y>162</Y>
+			<W>60</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CC_06</TEXT> <!-- 기본장비 -->
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+
+	<!-- Combobox : 기본장비 선택창 -->
+	<ZCOMBOBOX item="CC_Costume" parent="CharCreation">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>80</X>
+			<Y>162</Y>
+			<W>153</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<LISTITEM selected="true">STR:UI_CC_LIST_03_01</LISTITEM> <!-- 액시움 건나이트 -->
+		<LISTITEM>STR:UI_CC_LIST_03_02</LISTITEM> <!-- 트라비아 건파이터 -->
+		<!-- <LISTITEM>STR:UI_CC_LIST_03_03</LISTITEM>  --><!-- 액시움 애서신 -->
+		<!-- <LISTITEM>STR:UI_CC_LIST_03_04</LISTITEM> --> <!-- 트라비아 스카우트 -->
+		<!-- <LISTITEM>STR:UI_CC_LIST_03_05</LISTITEM> --> <!-- 액시움 건프리스트 -->
+		<!-- <LISTITEM>STR:UI_CC_LIST_03_06</LISTITEM> --> <!-- 트라비아 닥터 -->
+		<DROPSIZE>210</DROPSIZE>
+		<VISIBLE>false</VISIBLE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<!-- BMBUTTON : 확인 -->
+	<BMBUTTON item="CC_CreateChar" parent="CharCreation">
+		<BOUNDS>
+			<X>45</X>
+			<Y>216</Y>
+			<W>210</W>
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOff.png</BITMAP>
+		<TEXT>STR:UI_CC_13</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa17b</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- BMBUTTON : 취소 -->
+	<BMBUTTON item="CC_Cancel" parent="CharCreation">
+		<BOUNDS>
+			<X>284</X>
+			<Y>216</Y>
+			<W>210</W>
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">CancelButtonOn.png</BITMAP>
+		<BITMAP type="over">CancelButtonOver.png</BITMAP>
+		<BITMAP type="down">CancelButtonOff.png</BITMAP>
+		<TEXT>STR:UI_CC_14</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa17b</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+</XML>

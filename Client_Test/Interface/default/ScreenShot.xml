@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ScreenShot">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<FRAME item="ScreenShot">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>500</W>
+			<H>295</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>ScreenShot Viewer</TEXT>
+	</FRAME>	
+	
+	<LABEL item="Title" parent="ScreenShot">
+	<FONT>FONTa10_O2Wht</FONT>
+		<BOUNDS>
+			<X>6</X>
+			<Y>0</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Screen Shots</TEXT>
+	</LABEL>
+	
+	<LABEL item="Label" parent="ScreenShot">
+		<FONT>FONTa10_O2Wht</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>16</X>
+			<Y>33</Y>
+			<W>270</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>../My Documents/Gunz The Duel/ScreenShots</TEXT> 
+	</LABEL>
+	
+	<LISTBOX item="ScreenShot_List" parent="ScreenShot">
+		<BOUNDS>
+			<X>16</X>
+			<Y>56</Y>
+			<W>466</W>
+			<H>150</H>
+		</BOUNDS>
+		<ITEMHEIGHT>16</ITEMHEIGHT>
+	</LISTBOX>
+
+	<LABEL item="Label" parent="ScreenShot">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>16</X>
+			<Y>200</Y>
+			<W>480</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SCREENSHOTDIALOG</TEXT>
+		<EDITABLE>false</EDITABLE>
+	</LABEL>
+
+	<LABEL item="Label" parent="ScreenShot">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>170</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>16</X>
+			<Y>215</Y>
+			<W>480</W>
+			<H>50</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SCREENSHOTDIALOG0</TEXT>
+		<EDITABLE>false</EDITABLE>
+	</LABEL>	
+
+	<BUTTON item="ViewScreenShot" parent="ScreenShot">
+		<BOUNDS>
+			<X>5</X>
+			<Y>258</Y>
+			<W>70</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>View</TEXT>
+	</BUTTON>	
+	<FRAME item="ScreenShotPictureFrame" parent="ScreenShotPictureFrame">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>500</W>
+			<H>500</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	<BUTTON item="ExitScreenShotPicture" parent="ScreenShotPictureFrame">
+		<BOUNDS>
+			<X>475</X>
+			<Y>0</Y>
+			<W>25</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>X</TEXT>
+	</BUTTON>
+	<BUTTON item="NextScreenShotPicture" parent="ScreenShotPictureFrame">
+		<BOUNDS>
+			<X>445</X>
+			<Y>0</Y>
+			<W>25</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>></TEXT>
+	</BUTTON>	
+	<BUTTON item="PrevScreenShotPicture" parent="ScreenShotPictureFrame">
+		<BOUNDS>
+			<X>415</X>
+			<Y>0</Y>
+			<W>25</W>
+			<H>25</H>
+		</BOUNDS>
+	</BUTTON>		
+	<PICTURE item="ScreenShotPicture" parent="ScreenShotPictureFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>34</Y>
+			<W>500</W>
+			<H>468</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+
+	
+	<BUTTON item="ExitScreenShot" parent="ScreenShot">
+		<BOUNDS>
+			<X>425</X>
+			<Y>258</Y>
+			<W>70</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Exit</TEXT>
+	</BUTTON>
+</XML>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+
+<!-- Client Error Message -->
+<MSG id="500">Thông báo</MSG>
+<MSG id="501">Đăng nhập vào trang chủ GunZ The Duel tại www.gunz.vn trước, sau đó nhấp vào Play Live để khởi động GunZ The Duel.</MSG>
+
+<!-- Client Interface -->
+<MSG id="1000">Bạn phải đợi 1 phút trước khi báo cáo lại.</MSG>
+<MSG id="1001">Chi tiết trò chuyện đã được báo cáo.</MSG>
+<MSG id="1002">Vui lòng quay lại sảnh chính để tuyển thành viên Clan.</MSG>
+<MSG id="1003">Nhập ít nhất $1 ký tự.</MSG>
+<MSG id="1004">Lỗi cú pháp lệnh.</MSG>
+<MSG id="1005">Lỗi cú pháp lệnh.</MSG>
+<MSG id="1006">Chỉ có thể thực hiện trong sảnh.</MSG>
+<MSG id="1007">Chỉ có thể thực hiện trong phòng chờ.</MSG>
+<MSG id="1008">Chỉ có thể thực hiện trong trận đấu.</MSG>
+<MSG id="1009">Yêu cầu đã bị hủy.</MSG>
+<MSG id="1010">Không thể sử dụng lệnh này.</MSG>
+<MSG id="1011">Ảnh chụp màn hình đã được lưu trong thư mục.</MSG>
+<MSG id="1012">Không thể lưu ảnh chụp màn hình.</MSG>
+<MSG id="1013">Đã bắt đầu ghi hình.</MSG>
+<MSG id="1014">Ghi hình đã được lưu trong thư mục "GunZ The Duel".</MSG>
+<MSG id="1015">Không thể lưu ghi hình.</MSG>
+<MSG id="1016">Bỏ phiếu để đuổi '$s' đã bắt đầu.</MSG>
+<MSG id="1017">Nếu muốn tham gia bỏ phiếu, nhấn 'Y' để đồng ý; 'N' để từ chối.</MSG>
+<MSG id="1018">Chọn người dùng để đuổi.</MSG>
+<MSG id="1019">[ESC] Hủy</MSG>
+<MSG id="1020">Bỏ phiếu được chấp nhận.</MSG>
+<MSG id="1021">Bỏ phiếu bị từ chối.</MSG>
+<MSG id="1022">Tùy chọn bỏ phiếu không khả dụng.</MSG>
+<MSG id="1023">Bỏ phiếu về '$1' đã bắt đầu.</MSG>
+<MSG id="1024">Đang tìm kiếm đội đối thủ $1</MSG>
+<MSG id="1025">Người dùng đã rời phòng.</MSG>
+
+<!-- Clan -->
+<MSG id="1105">$1 đang cố gắng tuyển '$3' vào Clan với $2. Bạn có muốn tham gia không?</MSG>
+<MSG id="1106">$1 đã từ chối lời mời tham gia Clan.</MSG>
+<MSG id="1107">Clan đã được tạo.</MSG>
+<MSG id="1108">Clan này đã bị giải thể. Clan sẽ không còn tồn tại sau 48 giờ.</MSG>
+<MSG id="1109">Chỉ trưởng Clan mới có thể thực hiện lệnh này.</MSG>
+<MSG id="1110">Chỉ trưởng Clan và quản trị viên Clan mới có thể thực hiện lệnh này.</MSG>
+<MSG id="1111">Bạn đã tham gia một Clan.</MSG>
+<MSG id="1112">Bạn không phải là thành viên của bất kỳ Clan nào.</MSG>
+<MSG id="1113">Bạn có muốn tham gia Clan không?</MSG>
+<MSG id="1114">Tư cách thành viên của bạn đã bị từ chối.</MSG>
+<MSG id="1115">Một thành viên mới đã tham gia Clan.</MSG>
+<MSG id="1116">Bạn đã rời Clan.</MSG>
+<MSG id="1117">Trưởng Clan không thể rời Clan.</MSG>
+<MSG id="1118">Không thể xóa khi bạn còn là thành viên Clan. Bạn phải rời Clan trước.</MSG>
+<MSG id="1119">Quyền hạn đã được thay đổi.</MSG>
+<MSG id="1120">Thành viên được chọn đã bị xóa khỏi Clan.</MSG>
+<MSG id="1121">Bạn cần tuyển $1 thành viên để tạo Clan.</MSG>
+<MSG id="1122">Bạn có chắc chắn muốn giải thể Clan không?</MSG>
+<MSG id="1123">Bạn có chắc chắn muốn rời Clan không?</MSG>
+<MSG id="1124">Tên Clan khác nhau.</MSG>
+<MSG id="1125">Thành viên Clan '$1' đã đăng nhập.</MSG>
+<MSG id="1126">Bạn có thực sự muốn đuổi '$1' khỏi Clan không?</MSG>
+<MSG id="1127">Bạn có thực sự muốn thay đổi cấp độ quyền hạn của '$1' thành '$2' không?</MSG>
+<MSG id="1128">Trưởng Clan muốn ủy quyền vai trò trưởng Clan cho bạn. Bạn có muốn chấp nhận không?</MSG>
+<MSG id="1129">Yêu cầu ủy quyền trưởng Clan đã bị từ chối.</MSG>
+
+<!-- Etc -->
+<MSG id="1200">Bạn không thể xóa nhân vật đang trang bị vật phẩm trả phí. Hãy tháo vật phẩm trước và thử lại.</MSG>
+<MSG id="1201">Nhân vật đã bị xóa.</MSG>
+<MSG id="1202">Bạn sẽ trở lại cài đặt độ phân giải trước đó sau $1 giây.</MSG>
+<MSG id="1203">Bạn có thể điều chỉnh độ khó nhiệm vụ tùy thuộc vào vật phẩm hy sinh bạn đặt lên hai bàn thờ ở giữa màn hình.</MSG>
+<MSG id="1204">Bạn đã vào kênh cổ điển. Các động tác nâng cao như K-style và các bước di chuyển khó thực hiện khác không thể sử dụng trong kênh cổ điển.</MSG>
+
+<!-- Robby UI -->
+<MSG id="1301">Trưởng Clan: $1, $2 đã truy cập.</MSG>
+<MSG id="1302">Đang chờ %d người.</MSG>
+<MSG id="1303">Bạn chưa tham gia Clan.</MSG>
+<MSG id="1304">Chọn kênh tự do nếu bạn không muốn giới hạn cấp độ.</MSG>
+<MSG id="1305">Trong trận đấu xếp hạng, bạn sẽ đấu với tất cả người dùng bất kể kênh.</MSG>
+<MSG id="1306">$1 được mời vào Phòng trò chuyện.</MSG>
+<MSG id="1307">$1 đã mời bạn vào Phòng trò chuyện '$2'.</MSG>
+<MSG id="1308">'$2' đã vào Phòng trò chuyện '$1'.</MSG>
+<MSG id="1309">'$2' đã rời Phòng trò chuyện '$1'.</MSG>
+<MSG id="1310">Sẽ chuyển sang Phòng trò chuyện '$1'.</MSG>
+<!-- <MSG id="1311">.</MSG> -->
+<MSG id="1312">Phòng trò chuyện ($1) $2: $3</MSG>
+<MSG id="1313">Đang yêu cầu mở Phòng trò chuyện...</MSG>
+<MSG id="1314">Đang yêu cầu tham gia Phòng trò chuyện...</MSG>
+<MSG id="1315">Rời Phòng trò chuyện.</MSG>
+<MSG id="1316">Đang chọn Phòng trò chuyện.</MSG>
+<MSG id="1317">Bạn đã vào kênh '$1'.</MSG>
+<MSG id="1318">Cần $1 điểm để nâng cấp hạng.</MSG>
+<MSG id="1319">Thắng/Thua tuần trước</MSG>
+<MSG id="1320">Điểm giải đấu tuần trước</MSG>
+<MSG id="1321">Chiến thắng tuần trước</MSG>
+<MSG id="1322">Hạng tuần trước</MSG>
+<MSG id="1323">Thắng/Thua hiện tại</MSG>
+<MSG id="1324">Điểm giải đấu hiện tại</MSG>
+<MSG id="1325">Chiến thắng hiện tại</MSG>
+<MSG id="1326">Hạng hôm qua</MSG>
+<MSG id="1327">Hạng tuần trước ($1 hạng)</MSG>
+<MSG id="1328">Hạng hôm qua</MSG>
+<MSG id="1329">Danh sách hạng cao nhất</MSG>
+
+<!-- Invite -->
+<MSG id="1400">Đang chờ phản hồi.</MSG>
+<MSG id="1401">Vui lòng đợi cho đến khi người chơi đồng ý.</MSG>
+<MSG id="1402">$1 đã mời bạn tham gia trận chiến Clan. Bạn có chấp nhận lời mời không?</MSG>
+<MSG id="1403">$1 đã từ chối yêu cầu của bạn.</MSG>
+<MSG id="1404">$1 đã hủy yêu cầu.</MSG>
+<MSG id="1405">Yêu cầu đã bị hủy.</MSG>
+<MSG id="1406">Chọn đúng số lượng người.</MSG>
+<MSG id="1407">Bạn đã rời trận chiến Clan đang diễn ra. Bạn có muốn tham gia lại trận đấu không?</MSG>
+<MSG id="1408">Bạn đã rời trận chiến Clan đang diễn ra. Gõ /rejoin để tham gia lại trận đấu.</MSG>
+
+<MSG id="1420">$1 đã mời bạn tham gia trận chiến Clan. Bạn có chấp nhận lời mời không?</MSG>
+
+<!-- Clan Battle -->
+<MSG id="1510">Clan '$1' đã đánh bại Clan '$2' $3 lần liên tiếp và rất tự tin.</MSG>
+<MSG id="1511">Clan '$1' đã đánh bại Clan '$2' ghi nhận $3 chiến thắng liên tiếp.</MSG>
+<MSG id="1512">Clan '$1' đã đánh bại Clan '$2' ghi nhận $3 chiến thắng liên tiếp một cách dễ dàng.</MSG>
+<MSG id="1513">Clan '$1' đã đánh bại Clan '$2' thành công ghi nhận $3 chiến thắng liên tiếp.</MSG>
+<MSG id="1514">Clan '$1' đã đánh bại Clan '$2' $3 chiến thắng liên tiếp.</MSG>
+<MSG id="1515">Clan '$1' đã đánh bại Clan '$2' chấm dứt chuỗi chiến thắng liên tiếp của họ.</MSG>
+
+<!-- Dual -->
+<MSG id="1520">'$1' đã thắng $4 trận đấu tay đôi liên tiếp trong phòng $3 của kênh '$2'.</MSG>
+<MSG id="1521">'$2' đã chặn chuỗi chiến thắng $3 trận đấu tay đôi liên tiếp của '$1'.</MSG>
+
+<!-- Loading Message -->
+<MSG id="1600">Tham gia cộng đồng</MSG>
+<MSG id="1601">Xem thông tin tại</MSG>
+<MSG id="1602">gunz.vn</MSG>
+<MSG id="1603">Cảm ơn!</MSG>
+<MSG id="1604">Cảm ơn bạn đã chơi GunZ.</MSG>
+<MSG id="1605">Các bạn chính là GunZ!</MSG>
+<MSG id="1606">Quảng cáo</MSG>
+<MSG id="1607">Quảng cáo giúp GunZ ngày càng lớn mạnh.</MSG>
+<MSG id="1608">Hãy giới thiệu với bạn bè của bạn!</MSG>
+<MSG id="1609">Lỗi Agent</MSG>
+<MSG id="1610">Nếu gặp lỗi Agent, hãy thử chuyển tiếp cổng (port forwarding).</MSG>
+<MSG id="1611">Nó sẽ giúp ích! Tìm trên Google -> Port Forwarding</MSG>
+<MSG id="1612">Gợi ý</MSG>
+<MSG id="1613">Có gợi ý hoặc ý tưởng để cải thiện GunZ không?</MSG>
+<MSG id="1614">Đăng chúng tại gunz.vn</MSG>
+<MSG id="1615">Trang chủ</MSG>
+<MSG id="1616">gunz.vn</MSG>
+<MSG id="1617">Hãy xem qua!</MSG>
+<MSG id="1618">Công bằng và thân thiện</MSG>
+<MSG id="1619">Đây là một trò chơi công bằng và cộng đồng thân thiện.</MSG>
+<MSG id="1620">Hãy công bằng, thân thiện, khoan dung và chú ý ngôn từ của bạn.</MSG>
+<MSG id="1621">Lỗi</MSG>
+<MSG id="1622">Có lỗi hoặc trục trặc nào không?</MSG>
+<MSG id="1623">Vui lòng báo cáo tại gunz.vn</MSG>
+<MSG id="1624">Quyên góp</MSG>
+<MSG id="1625">Quyên góp ngay để nhận vật phẩm V.I.P đặc biệt!</MSG>
+<MSG id="1626">gunz.vn</MSG>
+
+<!-- Character Infomation -->
+<MSG id="1699">Quốc gia</MSG>
+<MSG id="1700">[Thông tin nhân vật]=============</MSG>
+<MSG id="1701">Tên</MSG>
+<MSG id="1702">Clan</MSG>
+<MSG id="1703">Cấp độ</MSG>
+<MSG id="1704">Tỷ lệ thắng</MSG>
+<MSG id="1705">Thắng</MSG>
+<MSG id="1706">Thua</MSG>
+<MSG id="1707">Thời gian kết nối</MSG>
+<MSG id="1708">ngày</MSG>
+<MSG id="1709">giờ</MSG>
+<MSG id="1710">phút</MSG>
+<MSG id="1711">giây</MSG>
+<MSG id="1712">Kinh nghiệm</MSG>
+<MSG id="1713">Bounty</MSG>
+<MSG id="1714">HP</MSG>
+<MSG id="1715">AP</MSG>
+<MSG id="1716">WT</MSG>
+<MSG id="1717">Lv.</MSG>
+<MSG id="1718">Hạng</MSG>
+<MSG id="1719">Giết</MSG>
+<MSG id="1720">Chết</MSG>
+<MSG id="1721">Chiến thắng</MSG>
+<MSG id="1722">Cash</MSG>
+<MSG id="1723">Medal</MSG>
+<MSG id="1724">Sự kiện</MSG>
+<MSG id="1725">HP/AP</MSG>
+<MSG id="1726">Giết/Chết</MSG>
+
+<!-- Game Playing Message -->
+<MSG id="2000">$1 đã tham gia trò chơi.</MSG>
+<MSG id="2001">$1 đã rời trò chơi.</MSG>
+<MSG id="2002">$1 đã lên một cấp độ. (Tuyệt vời!)</MSG>
+<MSG id="2003">$1 đã bị giảm cấp độ.</MSG>
+<MSG id="2004">Trận chiến Clan $1 ( $2 vs. $3 )</MSG>
+<MSG id="2005">Đã rơi vào quên lãng.</MSG>
+<MSG id="2006">Bạn đã tự sát.</MSG>
+<MSG id="2007">Bạn đã tự sát.</MSG>
+<MSG id="2008">$1 đã tự sát.</MSG>
+<MSG id="2009">Bạn đã đánh bại $1.</MSG>
+<MSG id="2010">$1 đã đánh bại bạn.</MSG>
+<MSG id="2011">$1 đã đánh bại $2.</MSG>
+<MSG id="2012">Nhấn phím Bắn để chơi!</MSG>
+<MSG id="2013">Đợi $1 giây!</MSG>
+<MSG id="2014">Bạn sẽ rời trò chơi sau $1 giây.</MSG>
+
+<!-- Blitz Time Respawn Message -->
+<MSG id="200030">Đợi $1 giây!</MSG>
+<MSG id="200029">Bạn sẽ rời trò chơi sau $1 giây.</MSG>
+<MSG id="200031">Khi hồi sinh, bạn sẽ bất tử trong 5 giây.</MSG>
+
+<MSG id="2090">Bạn đã bị hạ gục, còn $1 giây để rời phòng và quay lại trò chơi khác!</MSG>
+<MSG id="2091">Nhấn phím SPACE hoặc nhấp chuột để thoát về sảnh.</MSG>
+<MSG id="2092">^9$1 đã bị ^2loại^9 khỏi trò chơi.</MSG>
+<MSG id="2093">$1 đã loại bạn khỏi trò chơi.</MSG>
+<MSG id="2094">$1 đã loại $2 khỏi trò chơi.</MSG>
+<MSG id="2095">$1 đã bị loại khỏi trò chơi.</MSG>
+
+<!-- Game Etc. -->
+<MSG id="2015">Thì thầm ($1): $2</MSG>
+<MSG id="2016">Vật phẩm đã được rút.</MSG>
+<MSG id="2017">Không thể rút vật phẩm.</MSG>
+<MSG id="2018">Bạn đã mua vật phẩm, nếu là vật phẩm trả phí, sự kiện hoặc huy chương, nó sẽ được gửi vào kho.</MSG>
+<MSG id="2019">Bạn không thể mua vật phẩm.</MSG>
+<MSG id="2020">Vật phẩm của bạn đã được bán.</MSG>
+<MSG id="2021">Không có nhân vật để chọn. Trước tiên hãy tạo một nhân vật, nhớ kiểm tra các vật phẩm được gửi vào kho của bạn.</MSG>
+<MSG id="2022">Bạn không thể bán vật phẩm này.</MSG>
+<MSG id="2023">Bạn sẽ tiến đến vòng tiếp theo sau $1 giây.</MSG>
+<MSG id="2024">Đội nhiệm vụ đã nhận được $1.</MSG>
+<MSG id="2025">Nhận được $2 $1.</MSG>
+<MSG id="2026">Cổng đã được mở.</MSG>
+<MSG id="2027">Cân bằng đội tự động</MSG>
+<MSG id="2028">Kết hợp vật phẩm sai.</MSG>
+
+<!-- Game DuelTournament -->
+<MSG id="2029">Vòng đấu ban đầu $1</MSG>
+<MSG id="2030">Vòng bán kết $1</MSG>
+<MSG id="2031">Trận chung kết</MSG>
+<MSG id="2032">Hạng $1</MSG>
+<MSG id="2033">Vẫn còn các trận đấu cần chơi. Nếu bạn thoát bây giờ, bạn sẽ mất điểm giải đấu. Bạn vẫn muốn thoát trò chơi không?</MSG>
+<MSG id="2034">$1 đã thắng nhờ quyết định vì gây nhiều sát thương hơn.</MSG>
+
+<!-- Relay Map -->
+<MSG id="2040">Theo thứ tự</MSG>
+<MSG id="2041">Ngẫu nhiên</MSG>
+<MSG id="2042">1 lần</MSG>
+<MSG id="2043">2 lần</MSG>
+<MSG id="2044">3 lần</MSG>
+<MSG id="2045">4 lần</MSG>
+<MSG id="2046">5 lần</MSG>
+<MSG id="2047">Vui lòng nhấn nút OK.</MSG>
+<MSG id="2048">Bạn phải chọn ít nhất một bản đồ.</MSG>
+<MSG id="2049">Bạn có thể chọn tối đa 20 bản đồ.</MSG>
+
+<!-- Battle Time Reward System -->
+<MSG id="2060">[$1] $2 đã nhận được $3!</MSG>
+<MSG id="2061">Cơ hội thưởng còn lại: $1</MSG>
+<MSG id="2062">[$1] Không còn cơ hội thưởng nào.</MSG>
+<MSG id="2063">Cơ hội thưởng đã được nạp lại: $1</MSG>
+
+<!-- SpyMode -->
+<MSG id="2200">Trò chơi hội đồng đang đợi thêm người. (Cần ít nhất $1)</MSG>
+<MSG id="2201">Một crawler đã được phóng đến vị trí. Nó phải sống sót!</MSG>
+<MSG id="2202">Vị trí của Spy đã bị lộ. Chúng ta phải nhanh lên!</MSG>
+<MSG id="2203">Mẹo: Ảnh gián điệp đóng băng được kích hoạt ngay lập tức, hiệu quả sẽ tốt hơn nhiều.</MSG>
+<MSG id="2204">Mẹo: Pháo sáng gián điệp nổ ngay lập tức và hầu như không ảnh hưởng đến gián điệp.</MSG>
+<MSG id="2205">Mẹo: Khói gián điệp lan rộng ngay lập tức và phạm vi rộng.</MSG>
+<MSG id="2206">Mẹo: Sử dụng lựu đạn choáng, đặc điểm của gián điệp là ở phía dưới.</MSG>
+<MSG id="2207">Mẹo: Bạn cũng có thể thấy các mìn gián điệp được cài đặt.</MSG>
+<MSG id="2208">Mẹo: Bạn có thể tạo vũ khí gián điệp, nhưng chỉ nhận thanh toán từ bắn băng/pháo sáng/bom khói.</MSG>
+<MSG id="2209">Mẹo: Sử dụng bộ theo dõi gián điệp hữu ích cho lựu đạn và mìn, bạn phải sở hữu nó để sử dụng.</MSG>
+<MSG id="2210">Danh sách bản đồ đã được cập nhật.</MSG>
+<MSG id="2211">Người chơi không phù hợp với bản đồ hiện tại, ngoại trừ bản đồ được chọn.</MSG>
+<MSG id="2212">Anh ấy đã ghi điểm!!!</MSG>
+<MSG id="2213">Trích dẫn</MSG>
+<MSG id="2214">Bạn có thể tham gia trò chơi từ vòng tiếp theo.</MSG>
+<MSG id="2215">Thắng một vòng, nhận $1 xu và $2 kinh nghiệm.</MSG>
+<MSG id="2216">Gián điệp công khai tĩnh! :</MSG>
+<MSG id="2217">Tất cả bản đồ có thể bắt đầu đã bị loại khỏi danh sách.</MSG>
+<MSG id="2218">Mẹo: Ảnh gián điệp cháy được kích hoạt ngay lập tức, hiệu quả sẽ tốt hơn nhiều.</MSG>
+
+<!-- Administrator -->
+<MSG id="3000">[GunZ]: $1</MSG>
+
+<!-- VIP_WALL -->
+<MSG id="3001">[VIP]: $1</MSG>
+
+<!-- NOTICE -->
+<MSG id="3002">[THÔNG BÁO]: $1</MSG>
+
+<!-- Shop Equipment UI -->
+<MSG id="4100">Bạn có chắc chắn muốn mua vật phẩm đã chọn không?</MSG>
+<MSG id="4101">Bạn có chắc chắn muốn bán vật phẩm đã chọn không?</MSG>
+<MSG id="4102">Bán vật phẩm</MSG>
+<MSG id="4103">Vui lòng nhập số lượng để bán.</MSG>
+<MSG id="4104">Số lượng</MSG>
+<MSG id="4105">Bán (S)</MSG>
+<MSG id="4106">Mua vật phẩm</MSG>
+<MSG id="4107">Vui lòng nhập số lượng để mua.</MSG>
+<MSG id="4108">Số lượng</MSG>
+<MSG id="4109">Mua (B)</MSG>
+<MSG id="4110">Gửi vật phẩm vào kho</MSG>
+<MSG id="4111">Vui lòng cung cấp số lượng (số vật phẩm) để gửi…</MSG>
+<MSG id="4112">Số lượng</MSG>
+<MSG id="4113">Gửi (S)</MSG>
+<MSG id="4114">Lấy vật phẩm từ kho</MSG>
+<MSG id="4115">Vui lòng cung cấp số lượng để trang bị.</MSG>
+<MSG id="4116">Số lượng</MSG>
+<MSG id="4117">Trang bị</MSG>
+<MSG id="4118">Bạn có chắc chắn muốn gửi vật phẩm này vào Ba lô không?</MSG>
+<MSG id="4190">Vật phẩm sẽ bị tiêu hao sau mỗi lần sử dụng!</MSG>
+<MSG id="4191">Bạn có chắc chắn muốn bán vật phẩm trả phí này để lấy xu không?</MSG>
+
+<!-- Menu -->
+<MSG id="8000">Không</MSG>
+<MSG id="8001">Thêm bạn bè</MSG>
+<MSG id="8002">Xóa bạn bè</MSG>
+<MSG id="8003">Kiểm tra vị trí</MSG>
+<MSG id="8004">Theo dõi</MSG>
+<MSG id="8005">Thì thầm</MSG>
+<MSG id="8006">Đuổi</MSG>
+<MSG id="8007">Tuyển</MSG>
+<MSG id="8008">Ủy quyền trưởng Clan mới</MSG>
+<MSG id="8009">Thay đổi cấp quản trị viên Clan.</MSG>
+<MSG id="8010">Thay đổi cấp thành viên Clan.</MSG>
+<MSG id="8011">Đuổi khỏi Clan</MSG>
+<MSG id="8012">Rời Clan</MSG>
+<MSG id="8013">Chuyển vào kho</MSG>
+<MSG id="8014">OK</MSG>
+<MSG id="8015">Hủy</MSG>
+<MSG id="8016">YES</MSG>
+<MSG id="8017">Không</MSG>
+<MSG id="8018">Tin nhắn</MSG>
+<MSG id="8080">Xem thông tin người chơi</MSG>
+
+<!-- Character Wording -->
+<MSG id="9000"></MSG>
+<MSG id="9001">Trưởng Clan</MSG>
+<MSG id="9002">Quản trị viên Clan</MSG>
+<MSG id="9003">Thành viên Clan</MSG>
+<MSG id="9004">Quản trị viên</MSG>
+<MSG id="9005">Nhà phát triển</MSG>
+<MSG id="9006">Lệnh</MSG>
+<MSG id="9007">Trợ giúp</MSG>
+<MSG id="9008">Cách sử dụng</MSG>
+<MSG id="9100">Nam</MSG>
+<MSG id="9101">Nữ</MSG>
+<MSG id="9102">Nam</MSG>
+<MSG id="9103">Nữ</MSG>
+<MSG id="9200">Sảnh</MSG>
+<MSG id="9201">Phòng đấu</MSG>
+<MSG id="9202">Cửa hàng</MSG>
+<MSG id="9203">Trang bị</MSG>
+<MSG id="9204">Cash</MSG>
+<MSG id="9205">Người chơi trực tuyến</MSG>
+
+<!-- Game Wording -->
+<MSG id="9302">Dành cho nam</MSG>
+<MSG id="9349">Dành cho nữ</MSG>
+<MSG id="9303">Yêu cầu cấp độ</MSG>
+<MSG id="9304">WT</MSG>
+<MSG id="9305">Thuộc tính: Lửa</MSG>
+<MSG id="9306">Thuộc tính: Băng</MSG>
+<MSG id="9307">Thuộc tính: Độc</MSG>
+<MSG id="9308">Thuộc tính: Sét</MSG>
+<MSG id="9309">Thời gian sử dụng</MSG>
+<MSG id="9310">Băng đạn</MSG>
+<MSG id="9311">Sát thương</MSG>
+<MSG id="9312">Độ trễ</MSG>
+<MSG id="9313">WT tối đa</MSG>
+<MSG id="9314">Tốc độ</MSG>
+<MSG id="9315">Nhảy [X]</MSG>
+<MSG id="9316">Lao [X]</MSG>
+<MSG id="9317">Leo tường [X]</MSG>
+<MSG id="9318">Sát thương</MSG>
+<MSG id="9319">Nhiệm vụ</MSG>
+<MSG id="9320">Vật phẩm</MSG>
+<MSG id="9321">Hy sinh</MSG>
+<MSG id="9322">Người chơi</MSG>
+<MSG id="9323">Xanh lam</MSG>
+<MSG id="9324">Đỏ</MSG>
+<MSG id="9325">Số lượng</MSG>
+<MSG id="9326">Đang tìm kiếm đội đối thủ</MSG>
+<MSG id="9327">Số lượng vật phẩm</MSG>
+<MSG id="9328">Số lượng NPC</MSG>
+<MSG id="9329">Tiến độ</MSG>
+<MSG id="9330">Thời gian còn lại</MSG>
+<MSG id="9331">V</MSG>
+<MSG id="9332">Tỷ lệ</MSG>
+<MSG id="9333">Cấp</MSG>
+<MSG id="9334">Bình thường</MSG>
+<MSG id="9335">Huyền thoại</MSG>
+<MSG id="9336">Trùm</MSG>
+<MSG id="9337">Tinh anh</MSG>
+<MSG id="9338">Cựu chiến binh</MSG>
+<MSG id="9339">Rất mạnh</MSG>
+<MSG id="9340">Mạnh</MSG>
+<MSG id="9341">Trung bình</MSG>
+<MSG id="9342">Yếu</MSG>
+<MSG id="9343">Rất yếu</MSG>
+<MSG id="9344">Vô hạn</MSG>
+<MSG id="9345">Không</MSG>
+<MSG id="9346">Chênh lệch cấp độ</MSG>
+<MSG id="9347">Cho phép</MSG>
+<MSG id="9348">Cấm</MSG>
+
+<!-- ChallengeQuest -->
+<MSG id="9350">Thời gian đã trôi qua</MSG>
+<MSG id="9351">Hạng</MSG>
+<MSG id="9352">Điểm</MSG>
+<MSG id="9353">Kỷ lục tối đa</MSG>
+<MSG id="9354">Thế hệ </MSG>
+<MSG id="9357">Kỷ lục</MSG>
+<MSG id="9355">Bạn đã thắng $1 kinh nghiệm và $2 Bounty vì hoàn thành vòng đấu.</MSG>
+<MSG id="9361">Nếu bạn rời đi trong lúc thử thách, bạn sẽ không nhận được vật phẩm thưởng.</MSG>
+<MSG id="9362">Nếu bạn bắt đầu trò chơi với số người chơi ít hơn số khuyến nghị, bạn sẽ nhận được xu và kinh nghiệm, nhưng không thể nhận vật phẩm thưởng. Bạn vẫn muốn bắt đầu trò chơi không?</MSG>
+<MSG id="20020">Bạn sẽ hồi sinh sau vòng này.</MSG>
+<MSG id="20021">Bạn sẽ được gửi đến phòng tiếp theo trong giây lát.</MSG>
+<MSG id="20022">Điểm số</MSG>
+
+<!-- Game Wording Addition -->
+<MSG id="9997">Săn bắn (USA)</MSG>
+<MSG id="9998">Chiếm giữ</MSG>
+<MSG id="9363">Tiêu diệt mục tiêu</MSG>
+<MSG id="9364">Vòng</MSG>
+<MSG id="9365">Loại</MSG>
+<MSG id="9366">Kinh nghiệm</MSG>
+<MSG id="9367">Giết</MSG>
+<MSG id="9368">Chết</MSG>
+<MSG id="9369">Ping</MSG>
+<MSG id="9300">Thắng</MSG>
+<MSG id="9301">Thua</MSG>
+<MSG id="9370">&lt; Đầu &gt;</MSG>
+<MSG id="9371">&lt; Ngực &gt;</MSG>
+<MSG id="9372">&lt; Tay &gt;</MSG>
+<MSG id="9373">&lt; Chân &gt;</MSG>
+<MSG id="9374">&lt; Bàn chân &gt;</MSG>
+<MSG id="9375">&lt; Ngón tay trái &gt;</MSG>
+<MSG id="9376">&lt; Ngón tay phải &gt;</MSG>
+<MSG id="9377">&lt; Cận chiến &gt;</MSG>
+<MSG id="9378">&lt; Vũ khí chính &gt;</MSG>
+<MSG id="9379">&lt; Vũ khí phụ &gt;</MSG>
+<MSG id="9380">&lt; Vật phẩm 1 &gt;</MSG>
+<MSG id="9381">&lt; Vật phẩm 2 &gt;</MSG>
+<MSG id="9388">&lt; Vật phẩm 3 &gt;</MSG>
+<MSG id="9382">&lt; Vật phẩm cộng đồng 1 &gt;</MSG>
+<MSG id="9383">&lt; Vật phẩm cộng đồng 2 &gt;</MSG>
+<MSG id="9384">&lt; Vật phẩm LongBuff 1 &gt;</MSG>
+<MSG id="9385">&lt; Vật phẩm LongBuff 2 &gt;</MSG>
+<MSG id="9386">&lt; Hình đại diện &gt;</MSG>
+<MSG id="9387">&lt; Nhảy &gt;</MSG>
+
+<!-- Etc. -->
+<MSG id="9400">còn lại.</MSG>
+<MSG id="9401">Bạn đã tham gia phòng '$1'.</MSG>
+<MSG id="9402">'$1 ($2 / $3 $4)' đã tham gia phòng.</MSG>
+<MSG id="9500">BẬT</MSG>
+<MSG id="9501">TẮT</MSG>
+<MSG id="9505">hoặc</MSG>
+
+<!-- Input -->
+<MSG id="9510">Nút trái</MSG>
+<MSG id="9511">Nút phải</MSG>
+<MSG id="9512">Nút giữa</MSG>
+<MSG id="9513">M4</MSG>
+<MSG id="9514">M5</MSG>
+<MSG id="9515">M6</MSG>
+<MSG id="9516">M7</MSG>
+<MSG id="9517">M8</MSG>
+<MSG id="9518">Lăn lên</MSG>
+<MSG id="9519">Lăn xuống</MSG>
+
+<MSG id="9601">Phát hiện hành vi gian lận.</MSG>
+<MSG id="9701">Bạn đã nhận được vật phẩm '$1'</MSG>
+<MSG id="9801">Ngôn ngữ đã chọn sẽ được áp dụng sau khi khởi động lại trò chơi. Bạn có muốn khởi động lại không?</MSG>
+
+<!-- Match Type -->
+<MSG id="9900">Deathmatch</MSG>
+<MSG id="9901">Team Deathmatch</MSG>
+<MSG id="9902">Gladiator</MSG>
+<MSG id="9903">Team Gladiator</MSG>
+<MSG id="9904">Assassination</MSG>
+<MSG id="9905">Training</MSG>
+<MSG id="9906">Quest</MSG>
+<MSG id="9907">Survival</MSG>
+<MSG id="9908">Deathmatch +Berserker</MSG>
+<MSG id="9909">Team Deathmatch +Extreme</MSG>
+<MSG id="9910">The Duel match</MSG>
+<MSG id="9911">Duel Tournament</MSG>
+<MSG id="9912">Challenge Quest</MSG>
+<MSG id="9913">Team Training</MSG>
+<MSG id="9914">Capture The Flag</MSG>
+<MSG id="9915">Infected</MSG>
+<MSG id="9916">Gun Game</MSG>
+<MSG id="9917">SpyMode</MSG>
+<MSG id="9918">Amateur</MSG>
+<MSG id="9919">Blitzkrieg</MSG>
+<MSG id="9920">Skill Map</MSG>
+<MSG id="9921">Turbo Mode</MSG>
+<MSG id="9922">Box Weapons</MSG>
+<MSG id="9923">Paint Ball</MSG>
+<MSG id="9924">Paint Ball Team</MSG>
+<MSG id="9925">Staff Mode</MSG>
+<MSG id="9926">Classic</MSG>
+<MSG id="9927">Classic Team</MSG>
+<MSG id="9928">Vampire Mode</MSG>
+<MSG id="9929">Sniper Mode</MSG>
+<MSG id="9930">Ghost Mode</MSG>
+<!--<MSG id="9930">Chế độ FPS</MSG>-->
+
+<!-- Warning -->
+<MSG id="20000">Phát hiện hành vi gian lận. Theo thỏa thuận mà thành viên đã đồng ý, Đội vận hành GunZ The Duel tiếp tục theo dõi và thu thập thông tin về những người dùng gian lận. Hãy nhớ rằng mọi trách nhiệm phát sinh từ hành vi bất hợp pháp trong các vụ việc dân sự hoặc hình sự đều thuộc về người dùng thực hiện hành vi đó.</MSG>
+<MSG id="20001">Các vật phẩm sau đã hết hạn:</MSG>
+<MSG id="20002">Bạn có thể gắn hoặc tháo trang bị bằng cách kéo hoặc nhấp đúp vào biểu tượng. Bạn không thể gửi vật phẩm trả phí (xu) vào kho.</MSG>
+<MSG id="20003">CẢNH BÁO: GunZ The Duel không hỗ trợ $1. Bạn có thể không xem được một số phông chữ hoặc tiếp tục chơi game. Bạn vẫn muốn tiếp tục không?</MSG>
+<MSG id="20004">GunZ The Duel yêu cầu DirectX 9.0c để chạy đúng cách. Bạn có muốn cài đặt DirectX 9.0c bây giờ không?</MSG>
+<MSG id="20005">**Chưa được quyết định**</MSG>
+<MSG id="20006">Vui lòng nhập 'YES' nếu bạn muốn xóa nhân vật này.</MSG>
+<MSG id="20007">Trò chuyện của bạn đã bị quản trị viên chặn.</MSG>
+<!-- SpyMode-->
+<MSG id="20008">Mẹo: Thanh kiếm gián điệp có thể dùng để hạ gục kẻ thù bằng đòn tấn công đặc biệt.</MSG>
+<MSG id="20009">Mẹo: Lựu đạn chớp gián điệp nổ ngay lập tức, bạn hầu như không bị ảnh hưởng.</MSG>
+<MSG id="20010">Mẹo: Bẫy gián điệp kích hoạt ngay lập tức và tồn tại lâu hơn bẫy thông thường.</MSG>
+<MSG id="20011">Mẹo: Bom khói gián điệp kích hoạt ngay lập tức và bao phủ khu vực rộng.</MSG>
+<MSG id="20012">Mẹo: Lựu đạn choáng kích hoạt ngay lập tức và ngăn chặn chuyển động của gián điệp.</MSG>
+<MSG id="20013">Mẹo: Sử dụng mìn của bạn để làm choáng gián điệp.</MSG>
+<MSG id="20014">Nhanh lên, bạn sắp hết thời gian!</MSG>
+
+<MSG id="20015">Báo cáo của bạn đã được gửi.</MSG>
+<MSG id="20016">Báo cáo của bạn đã bị hủy do sự cố bất ngờ. Vui lòng thử lại.</MSG>
+<MSG id="20017">Lịch sử chơi gần đây của bạn trong vài phút qua sẽ được gửi cùng với báo cáo. Khi tính toàn vẹn của báo cáo được xác minh, báo cáo của bạn sẽ được xử lý bình thường. Bạn vẫn muốn báo cáo $1 là người chơi lạm dụng không?</MSG>
+
+<!-- System Wording -->
+<MSG id="100100">Đang tìm kiếm đội đối thủ $1</MSG>
+<MSG id="100200">Bỏ phiếu về '$1' đã bắt đầu.</MSG>
+<MSG id="100300">Có từ '$1' mà bạn không thể sử dụng.</MSG>
+
+<MSG id="200000">Máy chủ gỡ lỗi</MSG>
+<MSG id="200001">Máy chủ trận đấu</MSG>
+<MSG id="200002">Máy chủ Clan</MSG>
+<MSG id="200003">Máy chủ nhiệm vụ</MSG>
+<MSG id="200004">Máy chủ sự kiện</MSG>
+<MSG id="200005">Máy chủ bình thường</MSG>
+
+<!-- Msg StreakLadder -->
+<MSG id="200006">Chào mừng đến với Xếp hạng, tại đây bạn tham gia chế độ cạnh tranh và nhận thưởng xứng đáng, càng nhiều chiến thắng, bạn càng có nhiều huy chương để mua sắm tại Cửa hàng Xếp hạng, chúc may mắn!
+Lưu ý: Nếu bạn không nhận được Xếp hạng, hãy thử quay lại màn hình chọn nhân vật và trở lại sảnh. Không cần đóng trò chơi.</MSG>
+<MSG id="200007">Hãy nhớ rằng việc sử dụng chương trình bất hợp pháp trong trò chơi là hoàn toàn bị cấm, điều này cũng áp dụng cho những người sử dụng "swap", hình phạt sẽ là cấm tài khoản vĩnh viễn.</MSG>
+
+<MSG id="200008">Bạn đã nhận được (Xu Xếp hạng) thành công, chơi tốt lắm.</MSG>
+<MSG id="200009">Chào mừng đến với Xếp hạng, hồ sơ của bạn đã được cập nhật.</MSG>
+<MSG id="200010">Trò chơi đã kết thúc thành công. Đừng quên nhận phần thưởng bằng cách nhấn nút nhận thưởng trong sảnh.</MSG>
+<MSG id="200011">Trò chơi đã bắt đầu! Chúc trận đấu thành công!</MSG>
+
+<MSG id="200013">Tổng sát thương: Nhận: </MSG>
+<MSG id="200014"> - Gây ra: </MSG>
+<MSG id="200015">Sát thương: Nhận: </MSG>
+<MSG id="200016"> - Gây ra: </MSG>
+<MSG id="200020">Thông tin vũ khí:</MSG>
+<MSG id="200021">Giá vật phẩm: </MSG>
+<MSG id="200022">Sát thương: </MSG>
+<MSG id="200023"> / Độ trễ: </MSG>
+<MSG id="200024">Cấp độ: Cấp</MSG>
+<MSG id="200025"> / Thời gian nạp đạn: giây </MSG>
+<MSG id="200026">WT: </MSG>
+<MSG id="200027"> / Tầm xa: </MSG>
+<MSG id="200028"></MSG>
+
+<MSG id="200033">Bạn đã mua vật phẩm từ cửa hàng trả phí, vật phẩm đã được gửi vào kho.</MSG>
+<MSG id="200034">Bạn đã mua vật phẩm từ cửa hàng sự kiện, vật phẩm đã được gửi vào kho.</MSG>
+<MSG id="200035">Bạn đã mua vật phẩm từ cửa hàng huy chương, vật phẩm đã được gửi vào kho.</MSG>
+
+</XML>

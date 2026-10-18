@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+
+<!-- Category
+	default = 0 
+	0 - 일반
+	1 - 개인전
+	2 - 팀전
+	3 - 클랜전
+	4 - 왕초보
+	5 - 초보
+	6 - 중수
+	7 - 고수
+
+	MSG태그의 id는 특정한 조건에만 발동될 경우를 위해서 만들어놓음.
+-->
+
+<!-- 일반 -->
+<TIPS category="0">
+	<!-- STATIC TIPS -->
+	<MSG>Se você tiver qualquer dúvida sobre o GunZ, use a função Helpdesk na página principal do GunZ.</MSG>
+	<MSG>Você pode visualizar um replay clicando duas vezes nos arquivos em .../Meus Documentos/Gunz/Replay.</MSG>
+	<MSG>Pressione a tecla F11 para iniciar a gravação de um replay. Pressione F11 novamente para parar.</MSG>
+	<MSG>Você pode assistir um replay selecionando "Replay" no Lobby Principal.</MSG>
+	<MSG>As capturas de tela são salvas em .../Meus Documentos/Gunz The Duel/Screenshots.</MSG>
+	<MSG>Junte-se a um Clã agora para experimentar uma Guerra de Clãs!</MSG>
+	<MSG>Pressione a tecla F12 para tirar uma captura de tela.</MSG>
+	<MSG>Chame seus amigos para jogar GunZ. Juntos vocês podem criar um Clã.</MSG>
+	<MSG>Todos os itens premium podem ser compartilhados através do "Armazém" entre todos os personagens da mesma conta.</MSG>
+	<MSG>Você usa roteador? Tente configurar port forwarding para melhorar a experiência online.</MSG>
+	<MSG>Você pode enviar um item de presente para um amigo usando a função de presente no site.</MSG>
+	<MSG>GunZ está lento no seu computador? Use o recurso de otimização no menu de Opções.</MSG>
+	<MSG>Você pode usar a função "Jogar Agora" para entrar rapidamente em uma partida.</MSG>
+	<MSG>Nunca compartilhe sua senha com ninguém. Os administradores nunca pedirão sua senha.</MSG>
+	<MSG>Os itens premium comprados na loja aparecerão no seu "Armazém".</MSG>
+	<MSG>Itens de Bounty não podem ser compartilhados com outros personagens pelo "Armazém".</MSG>
+	<MSG>Use o modo de treinamento para praticar sem perder experiência.</MSG>
+	<MSG>Use o comando de chat '/r' para responder rapidamente a um sussurro.</MSG>
+	<MSG>Se você tiver um personagem nível 21, não poderá entrar nos canais Iniciante ou Básico com nenhum outro personagem.</MSG>
+
+	<!-- GM Message -->
+	<MSG>Qualquer Game ID que possa ofender outros jogadores será restringido.</MSG>
+	<MSG>Qualquer jogador que ofender outros dentro do jogo poderá ser punido pela equipe de operação.</MSG>
+
+	<!-- Newly Added -->
+	<MSG>Se você defender com sucesso um ataque corpo a corpo, terá a chance de executar um Massive Strike imediatamente!</MSG>
+	<MSG>Pressione Ctrl + qualquer número no modo de observador para atribuir um número a um jogador.</MSG>
+
+	<!-- Clan War Only -->
+	<MSG>Você já jogou a empolgante Guerra de Clãs? Experimente agora!</MSG>
+	<MSG>Em uma Guerra de Clãs você recebe 1.5x mais Exp. Não há perda de Exp. por diferença de nível.</MSG>
+</TIPS>
+
+<!-- Beginner -->
+<TIPS category="4">
+	<MSG id="1">Para uma latência estável, selecione um servidor que corresponda com precisão à sua localização geográfica.</MSG>
+</TIPS>
+
+<!-- 듀얼토너먼트 -->
+<TIPS category="8">
+	<MSG id="1"></MSG>
+</TIPS>
+</XML>

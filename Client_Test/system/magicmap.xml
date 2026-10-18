@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML id="MagicMap">
+	<MAP id="0" name="Mansion"/>
+	<MAP id="1" name="Prison"/>
+	<MAP id="2" name="Station"/>
+	<MAP id="3" name="Prison II"/>
+	<MAP id="4" name="Battle Arena"/>
+	<MAP id="5" name="Town"/>
+	<MAP id="6" name="Dungeon"/>
+	<MAP id="8" name="Ruin"/>
+	<MAP id="9" name="Island"/>
+	<MAP id="10" name="Garden"/>
+	<MAP id="11" name="Castle"/>
+	<MAP id="12" name="Factory"/>
+	<MAP id="13" name="Port"/>
+	<MAP id="14" name="Lost Shrine"/>
+	<MAP id="15" name="Stairway"/>
+	<MAP id="16" name="Snow_Town"/>
+	<MAP id="17" name="Hall"/>
+	<MAP id="18" name="Catacomb"/>	
+	<MAP id="19" name="Jail"/>
+	<MAP id="20" name="Shower Room"/>
+	<MAP id="21" name="High_Haven"/>
+	<MAP id="22" name="Citadel"/>
+	<MAP id="25" name="WeaponShop"/>					
+</XML>

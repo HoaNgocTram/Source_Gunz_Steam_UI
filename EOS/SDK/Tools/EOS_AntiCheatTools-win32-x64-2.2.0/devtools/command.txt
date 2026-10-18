@@ -1,0 +1,3 @@
+anticheat_integritytool.exe -productid a91729130eb949eaa22ef2e3bd7ea5cb -inkey base_private.key -incert base_public.cer -target_game_dir E:\DesperateSource\Build\GunzLauncher
+
+anticheat_integritytool.exe -target_game_dir E:\DesperateSource\Build\GunzLauncher -productid a91729130eb949eaa22ef2e3bd7ea5cb

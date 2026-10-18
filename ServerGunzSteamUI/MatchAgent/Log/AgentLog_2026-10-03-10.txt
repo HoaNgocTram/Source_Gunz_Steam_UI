@@ -1,0 +1,23 @@
+[Sat Oct  3 05:17:27 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Sat Oct  3 05:17:27 2026] Release Date : Oct  2 2026
+===========================================================================================
+
+[Sat Oct  3 05:17:27 2026] Match Agent Created (Port:7777)
+[Sat Oct  3 05:17:28 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Sat Oct  3 05:17:28 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Sat Oct  3 05:17:28 2026] MMatchAgent::ConnectToMatchServer END 
+[Sat Oct  3 05:20:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=1
+[Sat Oct  3 05:23:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 05:26:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 05:29:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 05:32:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 05:35:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 05:38:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 05:41:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 05:44:28 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=63
+[Sat Oct  3 05:47:28 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=63
+[Sat Oct  3 05:50:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=1, SessionCount=1, CommandPool=63
+[Sat Oct  3 05:53:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=63
+[Sat Oct  3 05:56:28 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=63

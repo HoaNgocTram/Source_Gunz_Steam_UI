@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <TIPS category="0">
+    <MSG>GunZ est un jeu d'action entièrement gratuit.</MSG>
+    <MSG>En cas de problème, contactez le support sur le site officiel de GunZ.</MSG>
+    <MSG>Vous utilisez un routeur ? Configurez la redirection de ports pour une connexion optimale.</MSG>
+    <MSG>Le jeu est lent ? Essayez l'option « Optimiser ».</MSG>
+    <MSG>Utilisez le Démarrage rapide pour rejoindre une partie sans chercher de salle.</MSG>
+    <MSG>Créez un clan et jouez avec vos amis !</MSG>
+    <MSG>Les objets Bounty ne peuvent pas être partagés entre personnages via l'entrepôt.</MSG>
+    <MSG>En mode Entraînement, les victoires, défaites et l'EXP ne sont pas comptabilisées.</MSG>
+    <MSG>Utilisez la commande /r pour répondre rapidement à un message privé.</MSG>
+    <MSG>Les pseudonymes offensants peuvent entraîner des sanctions.</MSG>
+    <MSG>Les propos offensants en jeu peuvent entraîner des sanctions.</MSG>
+    <MSG>L'équipe ne vous demandera jamais votre mot de passe.</MSG>
+    <MSG>Ne communiquez jamais votre mot de passe. Les pertes dues au piratage ne sont pas remboursées.</MSG>
+    <MSG>Jouez dans le respect des autres.</MSG>
+    <MSG>Les meilleurs joueurs respectent leurs adversaires.</MSG>
+    <MSG>Les cheats, logiciels interdits et abus de bugs entraînent un bannissement permanent de tous les comptes.</MSG>
+    <MSG>Bloquez une attaque au corps à corps pour lancer une puissante contre-attaque !</MSG>
+    <MSG>En mode spectateur, utilisez Ctrl + chiffre pour attribuer un raccourci à un joueur.</MSG>
+  </TIPS>
+  <TIPS category="1">
+    <MSG id="8">En mode spectateur, utilisez Ctrl + chiffre pour attribuer un raccourci à un joueur.</MSG>
+  </TIPS>
+</XML>

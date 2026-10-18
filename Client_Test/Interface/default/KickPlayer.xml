@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="SelChar">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<FRAME item="KickPlayer">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>584</X>
+			<Y>278</Y>
+			<W>350</W>
+			<H>160</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>Kick</TEXT>
+		<VISIBLE>FALSE</VISIBLE>
+		<FOCUSABLE>false</FOCUSABLE>
+	</FRAME>
+	
+	
+	<!-- COMBOBOX : 신고 대상 -->
+	<LABEL item="KickPlayer_Label" parent="KickPlayer">
+		<BOUNDS>
+			<X>20</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_112C_03</TEXT>
+	</LABEL>
+
+	<COMBOBOX item="KickPlayer_ConfirmID" parent="KickPlayer">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+		<BOUNDS>
+			<X>130</X>
+			<Y>60</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<DROPSIZE>210</DROPSIZE>
+	</COMBOBOX>
+	
+	<BUTTON item="KickPlayer_ConfirmOKButton" parent="KickPlayer">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>70</X>
+			<Y>105</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="KickPlayer_ConfirmCancelButton" parent="KickPlayer">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>180</X>
+			<Y>105</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+
+</XML>

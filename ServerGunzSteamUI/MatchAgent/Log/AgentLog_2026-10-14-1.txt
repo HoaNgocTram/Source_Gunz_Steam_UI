@@ -1,0 +1,193 @@
+[Wed Oct 14 03:47:24 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Wed Oct 14 03:47:24 2026] Release Date : Oct  3 2026
+===========================================================================================
+
+[Wed Oct 14 03:47:24 2026] Match Agent Created (Port:7777)
+[Wed Oct 14 03:47:24 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Wed Oct 14 03:47:24 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Wed Oct 14 03:47:24 2026] MMatchAgent::ConnectToMatchServer END 
+[Wed Oct 14 03:50:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=1
+[Wed Oct 14 03:53:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Oct 14 03:56:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Oct 14 03:59:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Oct 14 04:02:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Wed Oct 14 04:05:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=26
+[Wed Oct 14 04:08:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=28
+[Wed Oct 14 04:11:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=28
+[Wed Oct 14 04:14:17 2026] Agent Local Login (UID:01000, IP:151.245.151.190, Port:41012)
+[Wed Oct 14 04:14:17 2026] Agent Net Clear(UID:01000)
+[Wed Oct 14 04:14:17 2026] 151.245.151.190, 41016 is Disconnect(RCP_IO_READ Error)
+[Wed Oct 14 04:14:17 2026] Agent Local Login (UID:01001, IP:151.245.151.190, Port:41016)
+[Wed Oct 14 04:14:17 2026] Agent Net Clear(UID:01001)
+[Wed Oct 14 04:14:18 2026] 151.245.151.190, 41022 is Disconnect(RCP_IO_READ Error)
+[Wed Oct 14 04:14:18 2026] Agent Local Login (UID:01002, IP:151.245.151.190, Port:41022)
+[Wed Oct 14 04:14:18 2026] Agent Net Clear(UID:01002)
+[Wed Oct 14 04:14:18 2026] Agent Local Login (UID:01003, IP:151.245.151.190, Port:41032)
+[Wed Oct 14 04:14:18 2026] Agent Net Clear(UID:01003)
+[Wed Oct 14 04:14:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=28
+[Wed Oct 14 04:17:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=29
+[Wed Oct 14 04:20:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=29
+[Wed Oct 14 04:23:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=29
+[Wed Oct 14 04:26:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:29:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:32:24 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:35:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:38:24 2026] GARBAGE SESSION CLEANING : ClientCount=3, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:41:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:44:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:47:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:50:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:53:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:56:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 04:59:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:02:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:05:24 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:08:24 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:11:24 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:14:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:17:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:20:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:23:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:26:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:29:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:32:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:35:24 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:38:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:41:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:44:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:47:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:50:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:53:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:56:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 05:59:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:02:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:05:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:08:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:11:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:14:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:17:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:20:25 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:23:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:26:25 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:29:25 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:32:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:35:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:35:28 2026] Agent Local Login (UID:01004, IP:185.247.137.63, Port:42251)
+[Wed Oct 14 06:35:30 2026] Agent Net Clear(UID:01004)
+[Wed Oct 14 06:38:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:41:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:44:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:47:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:50:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:53:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:56:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 06:59:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:02:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:04:16 2026] Agent Local Login (UID:01005, IP:85.217.149.15, Port:58964)
+[Wed Oct 14 07:04:16 2026] Agent Net Clear(UID:01005)
+[Wed Oct 14 07:05:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:08:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:11:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:14:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:17:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:20:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:23:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:26:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:29:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:32:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:33:37 2026] Agent Local Login (UID:01006, IP:64.62.197.137, Port:58552)
+[Wed Oct 14 07:33:38 2026] Agent Net Clear(UID:01006)
+[Wed Oct 14 07:35:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:38:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:41:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:44:25 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:47:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:50:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:53:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:56:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 07:59:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:02:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:05:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:08:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:11:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:14:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:17:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:20:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:21:20 2026] Agent Local Login (UID:01007, IP:94.231.206.111, Port:41573)
+[Wed Oct 14 08:21:20 2026] 94.231.206.111, 41573 is Disconnect(RCP_IO_READ Error)
+[Wed Oct 14 08:21:20 2026] Agent Net Clear(UID:01007)
+[Wed Oct 14 08:21:20 2026] Agent Local Login (UID:01008, IP:94.231.206.109, Port:47417)
+[Wed Oct 14 08:21:23 2026] Agent Net Clear(UID:01008)
+[Wed Oct 14 08:23:25 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:26:25 2026] GARBAGE SESSION CLEANING : ClientCount=2, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:29:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:32:25 2026] GARBAGE SESSION CLEANING : ClientCount=1, StageCount=1, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:35:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:38:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:41:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:44:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:47:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:50:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:53:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:56:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 08:59:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:02:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:05:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:08:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:11:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:14:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:17:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:20:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:23:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:26:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:29:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:32:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:35:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:38:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:41:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:44:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:47:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:50:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:53:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:56:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 09:59:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:02:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:05:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:08:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:11:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:14:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:17:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:20:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:23:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:26:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:29:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:32:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:35:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:38:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:41:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:44:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:47:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:50:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:53:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:56:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 10:59:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:02:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:05:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:08:05 2026] Agent Local Login (UID:01009, IP:195.184.76.217, Port:43159)
+[Wed Oct 14 11:08:06 2026] 195.184.76.217, 43159 is Disconnect(RCP_IO_READ Error)
+[Wed Oct 14 11:08:06 2026] Agent Net Clear(UID:01009)
+[Wed Oct 14 11:08:07 2026] Agent Local Login (UID:01010, IP:195.184.76.223, Port:54721)
+[Wed Oct 14 11:08:10 2026] Agent Net Clear(UID:01010)
+[Wed Oct 14 11:08:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:11:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:14:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:17:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:20:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:23:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:26:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:29:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:32:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:35:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42
+[Wed Oct 14 11:38:25 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=42

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML id="GAdvertisementInfo">
+  <AD activate="1" sort="0" type="LINK" iconid="HT00000" id="https://gz.masanggames.com/" />
+  <AD activate="1" sort="0" type="LINK" iconid="HT00002" id="https://gz.ludenus.com/drops" />
+  <AD activate="0" sort="1" type="" iconid="HB00002" id="" />
+  <AD activate="1" sort="1" type="LINK" iconid="HB00001" id="https://discord.gg/q7ykbaqVa4" />
+</XML>

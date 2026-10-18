@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+
+<!-- Client Error Message -->
+<MSG id="500">공지</MSG>
+<MSG id="501">먼저 www.gunzonline.com GunZ The Duel 홈페이지에 로그인한 후 라이브 플레이를 클릭하여 GunZ The Duel을 실행하세요.</MSG>
+<!--  Client Interface  -->
+<MSG id="1000">다시 신고하려면 1분을 기다려야 합니다.</MSG>
+<MSG id="1001">채팅 내용이 신고되었습니다.</MSG>
+<MSG id="1002">클랜원을 모집하려면 메인 로비로 돌아가세요.</MSG>
+<MSG id="1003">$1자 이상 입력하세요.</MSG>
+<MSG id="1004">명령 구문 오류입니다.</MSG>
+<MSG id="1005">명령 구문 오류입니다.</MSG>
+<MSG id="1006">로비에서만 사용할 수 있습니다.</MSG>
+<MSG id="1007">대기실에서만 사용할 수 있습니다.</MSG>
+<MSG id="1008">게임에서만 사용할 수 있습니다.</MSG>
+<MSG id="1009">요청이 취소되었습니다.</MSG>
+<MSG id="1010">이 명령을 사용할 수 없습니다.</MSG>
+<MSG id="1011">스크린샷이 폴더에 저장되었습니다.</MSG>
+<MSG id="1012">스크린샷 저장에 실패했습니다.</MSG>
+<MSG id="1013">녹화가 시작되었습니다.</MSG>
+<MSG id="1014">녹화가 "Gunz The Duel"에 저장되었습니다.</MSG>
+<MSG id="1015">녹화 저장에 실패했습니다.</MSG>
+<MSG id="1016">'%s' 강제 퇴장 투표가 시작되었습니다.</MSG>
+<MSG id="1017">투표에 참여하려면 예는 'Y', 아니오는 'N'을 누르세요.</MSG>
+<MSG id="1018">퇴장시킬 사용자를 선택하세요.</MSG>
+<MSG id="1019">[ESC] 취소</MSG>
+<MSG id="1020">투표가 승인되었습니다.</MSG>
+<MSG id="1021">투표가 거부되었습니다.</MSG>
+<MSG id="1022">투표 옵션을 사용할 수 없습니다.</MSG>
+<MSG id="1023">'$1'에 대한 투표가 시작되었습니다.</MSG>
+<MSG id="1024">상대 팀 $1을(를) 검색 중입니다</MSG>
+<MSG id="1025">사용자가 방을 나갔습니다.</MSG>
+
+<!-- Clan -->
+<MSG id="1105">$1님이 클랜 $2에 '$3'을(를) 영입하려 하고 있습니다. 가입하시겠습니까?</MSG>
+<MSG id="1106">$1님이 클랜 가입 제안을 거절했습니다.</MSG>
+<MSG id="1107">클랜이 생성되었습니다.</MSG>
+<MSG id="1108">이 클랜은 해산되었습니다. 클랜은 48시간 후에 더 이상 존재하지 않습니다.</MSG>
+<MSG id="1109">이 명령은 클랜장만 실행할 수 있습니다.</MSG>
+<MSG id="1110">이 명령은 클랜장과 클랜 관리자만 수행할 수 있습니다.</MSG>
+<MSG id="1111">이미 클랜에 가입되어 있습니다.</MSG>
+<MSG id="1112">현재 어떤 클랜에도 가입되어 있지 않습니다.</MSG>
+<MSG id="1113">클랜에 가입하시겠습니까?</MSG>
+<MSG id="1114">귀하의 가입이 거절되었습니다.</MSG>
+<MSG id="1115">새로운 멤버가 클랜에 가입했습니다.</MSG>
+<MSG id="1116">클랜에서 탈퇴했습니다.</MSG>
+<MSG id="1117">클랜장은 클랜을 탈퇴할 수 없습니다.</MSG>
+<MSG id="1118">클랜원인 상태에서는 삭제할 수 없습니다. 먼저 클랜을 탈퇴해야 합니다.</MSG>
+<MSG id="1119">권한이 변경되었습니다.</MSG>
+<MSG id="1120">선택한 멤버가 클랜에서 추방되었습니다.</MSG>
+<MSG id="1121">클랜을 생성하려면 $1명의 멤버를 모집해야 합니다.</MSG>
+<MSG id="1122">정말로 클랜을 해산하시겠습니까?</MSG>
+<MSG id="1123">정말로 클랜을 탈퇴하시겠습니까?</MSG>
+<MSG id="1124">클랜 이름이 다릅니다.</MSG>
+<MSG id="1125">클랜원 '$1'님이 접속했습니다.</MSG>
+<MSG id="1126">'$1'님을 클랜에서 추방하시겠습니까?</MSG>
+<MSG id="1127">'$1'님의 권한을 '$2'로 변경하시겠습니까?</MSG>
+<MSG id="1128">클랜장이 클랜장 직책을 귀하에게 위임하려 합니다. 수락하시겠습니까?</MSG>
+<MSG id="1129">클랜장 위임 요청이 거부되었습니다.</MSG>
+
+<!-- Etc -->
+<MSG id="1200">캐시 아이템을 장착한 캐릭터는 삭제할 수 없습니다. 먼저 아이템을 장착 해제한 후 다시 시도하세요.</MSG>
+<MSG id="1201">캐릭터가 삭제되었습니다.</MSG>
+<MSG id="1202">$1초 후 이전 해상도 설정으로 복귀합니다.</MSG>
+<MSG id="1203">화면 중앙의 두 제단에 어떤 희생 아이템을 올려놓느냐에 따라 퀘스트 난이도를 조정할 수 있습니다.</MSG>
+<MSG id="1204">클래식 채널에 입장했습니다. K-스타일 등 수행하기 어려운 고급 동작은 클래식 채널에서 사용할 수 없습니다.</MSG>
+
+<!-- Robby UI -->
+<MSG id="1301">길드장: $1, $2가 접속했습니다.</MSG>
+<MSG id="1302">%d명 대기 중입니다.</MSG>
+<MSG id="1303">길드에 가입되어 있지 않습니다.</MSG>
+<MSG id="1304">레벨 제한을 원하지 않으면 무료 채널을 선택하세요.</MSG>
+<MSG id="1305">리그 경기에서는 채널에 관계없이 모든 유저와 대전합니다.</MSG>
+<MSG id="1306">$1님이 채팅방으로 초대되었습니다.</MSG>
+<MSG id="1307">$1님이 채팅방 '$2'로 초대했습니다.</MSG>
+<MSG id="1308">'$2'님이 채팅방 '$1'에 입장했습니다.</MSG>
+<MSG id="1309">'$2'님이 채팅방 '$1'에서 나갔습니다.</MSG>
+<MSG id="1310">$1 채팅방으로 전환됩니다.</MSG>
+<!-- <MSG id="1311">.</MSG> -->
+<MSG id="1312">채팅방($1) $2 : $3</MSG>
+<MSG id="1313">채팅방을 열기 위한 요청을 보냅니다 ...</MSG>
+<MSG id="1314">채팅방 참가 요청을 보냅니다 ...</MSG>
+<MSG id="1315">채팅방 나가기.</MSG>
+<MSG id="1316">채팅방 선택 중. </MSG>
+<MSG id="1317">'$1' 채널에 입장했습니다.</MSG>
+<MSG id="1318">등급을 올리려면 $1 포인트가 필요합니다.</MSG>
+<MSG id="1319">지난주 승/패</MSG>
+<MSG id="1320">지난주 토너먼트 포인트</MSG>
+<MSG id="1321">지난주 승리</MSG>
+<MSG id="1322">지난주 랭크</MSG>
+<MSG id="1323">현재 승/패</MSG>
+<MSG id="1324">현재 토너먼트 포인트</MSG>
+<MSG id="1325">현재 승리</MSG>
+<MSG id="1326">어제 랭크</MSG>
+<MSG id="1327">지난주 랭크 클래스 ($1 클래스)</MSG>
+<MSG id="1328">어제 랭크</MSG>
+<MSG id="1329">상위 랭킹 목록</MSG>
+
+<!-- Invite -->
+<MSG id="1400">응답을 기다리는 중입니다.</MSG>
+<MSG id="1401">플레이어가 동의할 때까지 기다려 주세요.</MSG>
+<MSG id="1402">$1님이 클랜 전투에 초대했습니다. 초대에 응하시겠습니까?</MSG>
+<MSG id="1403">$1님이 당신의 요청을 거절했습니다.</MSG>
+<MSG id="1404">$1님이 요청을 취소했습니다.</MSG>
+<MSG id="1405">취소되었습니다</MSG>
+<MSG id="1406">적절한 인원 수를 선택하세요.</MSG>
+<MSG id="1407">진행 중인 클랜 전투에서 나가셨습니다. 경기에 다시 참여하시겠습니까?</MSG>
+<MSG id="1408">진행 중인 클랜 전투에서 나가셨습니다. /rejoin을 입력하여 경기에 다시 참여하세요.</MSG>
+
+<MSG id="1420">$1님이 클랜 전투에 초대했습니다. 초대에 응하시겠습니까? </MSG>
+
+<!-- Clan Battle -->
+<MSG id="1510">$1 클랜이 '$2' 클랜을 연속으로 $3번 이겨 매우 자신감을 얻었습니다.</MSG>
+<MSG id="1511">$1 클랜이 '$2' 클랜을 이겨 연속 $3승을 기록했습니다.</MSG>
+<MSG id="1512">$1 클랜이 '$2' 클랜을 가뿐히 이기며 연속 $3승을 기록했습니다.</MSG>
+<MSG id="1513">$1 클랜이 '$2' 클랜을 이겨 연속 $3승을 성공적으로 기록했습니다.</MSG>
+<MSG id="1514">$1 클랜이 '$2' 클랜을 연속 $3승으로 이겼습니다.</MSG>
+<MSG id="1515">$1 클랜이 '$2' 클랜을 이겨 그들의 연승 기록을 끊었습니다.</MSG>
+
+<!-- Dual -->
+<MSG id="1520">$1님이 '$2' 채널의 $3 룸에서 듀얼 매치를 연속 $4승 거두었습니다.</MSG>
+<MSG id="1521">$2님이 '$1'의 $3연속 듀얼 승리를 막았습니다.</MSG>
+
+<!-- Loading Message -->
+<MSG id="1600">'커뮤니티에 참여하세요'</MSG>
+<MSG id="1601">GunZ 를 확인하세요</MSG>
+<MSG id="1602">gunz.vn</MSG>
+<MSG id="1603">'감사합니다!'</MSG>
+<MSG id="1604">GunZ를 플레이해 주셔서 감사합니다.</MSG>
+<MSG id="1605">여러분이 바로 GunZ입니다!</MSG>
+<MSG id="1606">'광고'</MSG>
+<MSG id="1607">광고는 GunZ가</MSG>
+<MSG id="1608">더 크고, 더 좋아지도록 돕습니다. 친구들에게 알려주세요!</MSG>
+<MSG id="1609">'에이전트 오류'</MSG>
+<MSG id="1610">에이전트 오류가 발생하면 포트 포워딩을 시도해 보세요</MSG>
+<MSG id="1611">도움이 됩니다! Google -> Port Forwarding</MSG>
+<MSG id="1612">'제안'</MSG>
+<MSG id="1613">GunZ를 더 좋게 만들기 위한 제안이나 아이디어가 있나요?</MSG>
+<MSG id="1614">게시해 주세요! gunz.vn</MSG>
+<MSG id="1615">'홈페이지'</MSG>
+<MSG id="1616">gunz.vn</MSG>
+<MSG id="1617">한번 확인해 보세요!</MSG>
+<MSG id="1618">'공정하고 친절하게'</MSG>
+<MSG id="1619">여기는 공정한 게임과 친절한 커뮤니티입니다.</MSG>
+<MSG id="1620">공정하고 친절하게, 관용을 베풀고 언행을 조심해 주세요.</MSG>
+<MSG id="1621">'버그'</MSG>
+<MSG id="1622">글리치나 버그가 있나요?</MSG>
+<MSG id="1623">forum.gunz.vn에 보고해 주세요</MSG>
+<MSG id="1624">'기부'</MSG>
+<MSG id="1625">지금 기부하면 특별 V.I.P 아이템을 얻을 수 있습니다!</MSG>
+<MSG id="1626">gunz.vn</MSG>
+
+<!-- Character Infomation -->
+<MSG id="1699">국가</MSG>
+<MSG id="1700">[캐릭터 정보]=============</MSG>
+<MSG id="1701">이름</MSG>
+<MSG id="1702">클랜</MSG>
+<MSG id="1703">레벨</MSG>
+<MSG id="1704">승률</MSG>
+<MSG id="1705">승</MSG>
+<MSG id="1706">패</MSG>
+<MSG id="1707">접속 시간</MSG>
+<MSG id="1708">일</MSG>
+<MSG id="1709">시간</MSG>
+<MSG id="1710">분</MSG>
+<MSG id="1711">초</MSG>
+<MSG id="1712">경험치</MSG>
+<MSG id="1713">현상금</MSG>
+<MSG id="1714">체력</MSG>
+<MSG id="1715">행동력</MSG>
+<MSG id="1716">무게</MSG>
+<MSG id="1717">Lv.</MSG>
+<MSG id="1718">순위</MSG>
+<MSG id="1719">킬</MSG>
+<MSG id="1720">데스</MSG>
+<MSG id="1721">승리</MSG>
+<MSG id="1722">현금</MSG>
+<MSG id="1723">메달</MSG>
+<MSG id="1724">이벤트</MSG>
+<MSG id="1725">HP/AP</MSG>
+<MSG id="1726">K/D</MSG>
+
+<!-- Game Playing Message -->
+<MSG id="2000">$1님이 게임에 참가했습니다.</MSG>
+<MSG id="2001">$1님이 게임에서 나갔습니다.</MSG>
+<MSG id="2002">$1님이 레벨을 올렸습니다. (굉장해요!)</MSG>
+<MSG id="2003">$1님이 레벨을 내렸습니다.</MSG>
+<MSG id="2004">클랜 전 $1 ( $2 대 $3 )</MSG>
+<MSG id="2005">망각 속으로 떨어졌습니다.</MSG>
+<MSG id="2006">자살하셨습니다.</MSG>
+<MSG id="2007">자살하셨습니다.</MSG>
+<MSG id="2008">$1님이 자살했습니다.</MSG>
+<MSG id="2009">$1님을 격파했습니다.</MSG>
+<MSG id="2010">$1님이 당신을 격파했습니다.</MSG>
+<MSG id="2011">$1님이 $2님을 격파했습니다.</MSG>
+<MSG id="2012">발사 키를 눌러 게임을 시작하세요!</MSG>
+<MSG id="2013">$1초 기다려 주세요!</MSG>
+<MSG id="2014">$1초 후 게임에서 나가게 됩니다</MSG>
+
+<!-- Blitz Time Respawn Message -->
+<MSG id="200030">$1초 기다려 주세요!</MSG>
+<MSG id="200029">$1초 후 게임에서 나가게 됩니다</MSG>
+<MSG id="200031">부활 시 5초 동안 무적 상태가 됩니다.</MSG>
+
+<MSG id="2090">$1초 후 스테이지에서 나가 다른 게임으로 돌아갑니다!</MSG>
+<MSG id="2091">로비로 나가려면 SPACE 또는 클릭 키를 누르세요.</MSG>
+<MSG id="2092">^9$1님이 ^2실격^9 처리되었습니다.</MSG>
+<MSG id="2093">$1님이 게임에서 당신을 제외시켰습니다.</MSG>
+<MSG id="2094">$1님이 $2님을 게임에서 제거하도록 책임졌습니다.</MSG>
+<MSG id="2095">$1님이 게임에서 제거되었습니다.</MSG>
+
+<!-- Game Etc. -->
+<MSG id="2015">귓속말 ($1) : $2</MSG>
+<MSG id="2016">아이템이 회수되었습니다.</MSG>
+<MSG id="2017">아이템을 회수할 수 없습니다.</MSG>
+<MSG id="2018">아이템을 구매했습니다. 캐시/이벤트/메달 아이템일 경우 보관함으로 이동됩니다.</MSG>
+<MSG id="2019">이 아이템은 구매할 수 없습니다.</MSG>
+<MSG id="2020">아이템이 판매되었습니다.</MSG>
+<MSG id="2021">선택할 캐릭터가 없습니다. 먼저 캐릭터를 생성하세요. 보관함에 전송된 아이템도 확인하세요.</MSG>
+<MSG id="2022">이 아이템은 판매할 수 없습니다.</MSG>
+<MSG id="2023">$1초 후 다음 라운드로 진행됩니다.</MSG>
+<MSG id="2024">퀘스트 팀이 $1을(를) 획득했습니다.</MSG>
+<MSG id="2025">$1을(를) $2개 획득했습니다.</MSG>
+<MSG id="2026">포털이 열렸습니다.</MSG>
+<MSG id="2027">자동 팀 밸런스</MSG>
+<MSG id="2028">잘못된 아이템 조합입니다.</MSG>
+
+<!-- Game DuelTournament -->
+<MSG id="2029">예선 매치 라운드 $1</MSG>
+<MSG id="2030">준결승 매치 라운드 $1</MSG>
+<MSG id="2031">결승전</MSG>
+<MSG id="2032">클래스 $1</MSG>
+<MSG id="2033">아직 남은 경기가 있습니다. 지금 나가면 토너먼트 포인트가 감소합니다. 정말로 게임을 종료하시겠습니까?</MSG>
+<MSG id="2034">$1이(가) 더 많은 피해를 입혀 판정승했습니다.</MSG>
+
+<!-- Relay Map -->
+<MSG id="2040">순서대로</MSG>
+<MSG id="2041">랜덤</MSG>
+<MSG id="2042">1회</MSG>
+<MSG id="2043">2회</MSG>
+<MSG id="2044">3회</MSG>
+<MSG id="2045">4회</MSG>
+<MSG id="2046">5회</MSG>
+<MSG id="2047">OK 버튼을 눌러주세요.</MSG>
+<MSG id="2048">최소 한 개의 맵을 선택해야 합니다.</MSG>
+<MSG id="2049">최대 20개의 맵을 선택할 수 있습니다.</MSG>
+
+<!-- Battle Time Reward System -->
+<MSG id="2060">[$1] $2 님이 $3을(를) 획득했습니다!</MSG>
+<MSG id="2061">남은 보너스 기회 : $1</MSG>
+<MSG id="2062">[$1] 보너스 기회가 더 이상 없습니다.</MSG>
+<MSG id="2063">보너스 기회가 충전되었습니다 : $1</MSG>
+
+<!-- 스파이모드 -->
+<MSG id="2200">보드 게임이 더 많은 인원을 기다리고 있습니다. (최소 $1명이 필요합니다)</MSG>
+<MSG id="2201">크롤러가 해당 위치로 투입되었습니다. 반드시 생존해야 합니다!</MSG>
+<MSG id="2202">스파이의 위치가 노출되었습니다. 서둘러야 합니다!</MSG>
+<MSG id="2203">팁: 얼음 스파이 사진은 즉시 발동되며, 효과가 훨씬 좋습니다.</MSG>
+<MSG id="2204">팁: 스파이 플레어는 즉시 폭발하며, 스파이에게 거의 영향을 주지 않습니다.</MSG>
+<MSG id="2205">팁: 스파이 연막탄은 즉시 퍼지며, 범위가 넓습니다.</MSG>
+<MSG id="2206">팁: 섬광 수류탄을 사용하면 스파이를 일시적으로 멈출 수 있습니다.</MSG>
+<MSG id="2207">팁: 설치된 스파이 지뢰도 확인할 수 있습니다.</MSG>
+<MSG id="2208">팁: 스파이 무기는 제작할 수 있으나, 아이스 샷/플레어/스모크 폭탄으로만 보상을 얻을 수 있습니다.</MSG>
+<MSG id="2209">팁: 스파이 트래커는 수류탄 및 지뢰 탐지에 유용하며, 사용하려면 획득해야 합니다.</MSG>
+<MSG id="2210">맵 목록이 업데이트되었습니다.</MSG>
+<MSG id="2211">선택된 맵을 제외하고 현재 맵들은 인원 조건에 맞지 않습니다.</MSG>
+<MSG id="2212">포인트를 획득했습니다!!!</MSG>
+<MSG id="2213">인용문</MSG>
+<MSG id="2214">다음 라운드부터 게임에 참여할 수 있습니다.</MSG>
+<MSG id="2215">라운드 승리 시 $1 코인과 $2 경험치를 획득합니다.</MSG>
+<MSG id="2216">정적 공개 스파이! :</MSG>
+<MSG id="2217">시작 가능한 모든 맵이 목록에서 제외되었습니다.</MSG>
+<MSG id="2218">팁: 불타는 스파이 사진은 즉시 발동되며, 효과가 훨씬 좋습니다.</MSG>
+
+<!-- Administrator -->
+<MSG id="3000">[Gunz]:$1</MSG>
+
+<!-- VIP_WALL -->
+<MSG id="3001">[VIP]:$1</MSG>
+
+<!-- NOTICE -->
+<MSG id="3002">[NOTICE]:$1</MSG>
+
+<!-- Shop Equipment UI -->
+<MSG id="4100">선택한 아이템을 구매하시겠습니까?</MSG>
+<MSG id="4101">선택한 아이템을 판매하시겠습니까?</MSG>
+<MSG id="4102">아이템 판매</MSG>
+<MSG id="4103">판매할 수량을 입력하세요.</MSG>
+<MSG id="4104">수량</MSG>
+<MSG id="4105">판매 (S)</MSG>
+<MSG id="4106">아이템 구매</MSG>
+<MSG id="4107">구매할 수량을 입력하세요.</MSG>
+<MSG id="4108">수량</MSG>
+<MSG id="4109">구매 (B)</MSG>
+<MSG id="4110">아이템을 보관함으로 보내기</MSG>
+<MSG id="4111">보낼 아이템 수량을 입력하세요…</MSG>
+<MSG id="4112">수량</MSG>
+<MSG id="4113">보내기 (S)</MSG>
+<MSG id="4114">보관함에서 아이템 받기</MSG>
+<MSG id="4115">장착할 수량을 입력하세요.</MSG>
+<MSG id="4116">수량</MSG>
+<MSG id="4117">장착</MSG>
+<MSG id="4118">이 아이템을 가방(Backpack)으로 보내시겠습니까?</MSG>
+<MSG id="4190">이 아이템은 사용 시마다 소모됩니다!</MSG>
+<MSG id="4191">이 캐시 아이템을 코인으로 판매하시겠습니까?</MSG>
+
+<!-- Menu -->
+<MSG id="8000">없음</MSG>
+<MSG id="8001">친구 추가</MSG>
+<MSG id="8002">친구 삭제</MSG>
+<MSG id="8003">위치 확인</MSG>
+<MSG id="8004">따라가기</MSG>
+<MSG id="8005">귓속말</MSG>
+<MSG id="8006">강퇴</MSG>
+<MSG id="8007">초대</MSG>
+<MSG id="8008">클랜 리더 위임</MSG>
+<MSG id="8009">클랜 관리자 등급으로 변경</MSG>
+<MSG id="8010">클랜 멤버 등급으로 변경</MSG>
+<MSG id="8011">클랜에서 추방</MSG>
+<MSG id="8012">클랜 탈퇴</MSG>
+<MSG id="8013">보관함으로 이동</MSG>
+<MSG id="8014">확인</MSG>
+<MSG id="8015">취소</MSG>
+<MSG id="8016">YES</MSG>
+<MSG id="8017">아니오</MSG>
+<MSG id="8018">메시지</MSG>
+<MSG id="8080">플레이어 정보 보기</MSG>
+
+<!-- Character Wording -->
+<MSG id="9000"></MSG>
+<MSG id="9001">클랜 리더</MSG>
+<MSG id="9002">클랜 관리자</MSG>
+<MSG id="9003">클랜 멤버</MSG>
+<MSG id="9004">관리자</MSG>
+<MSG id="9005">개발자</MSG>
+<MSG id="9006">명령어</MSG>
+<MSG id="9007">도움말</MSG>
+<MSG id="9008">사용법</MSG>
+<MSG id="9100">남성</MSG>
+<MSG id="9101">여성</MSG>
+<MSG id="9102">남성</MSG>
+<MSG id="9103">여성</MSG>
+<MSG id="9200">로비</MSG>
+<MSG id="9201">스테이지</MSG>
+<MSG id="9202">상점</MSG>
+<MSG id="9203">장비</MSG>
+<MSG id="9204">캐시</MSG>
+<MSG id="9205">온라인 유저</MSG>
+
+<!-- Game Wording -->
+<MSG id="9302">남성용</MSG>
+<MSG id="9349">여성용</MSG>
+<MSG id="9303">필요 레벨</MSG>
+<MSG id="9304">무게</MSG>
+<MSG id="9305">속성: 화염</MSG>
+<MSG id="9306">속성: 얼음</MSG>
+<MSG id="9307">속성: 독</MSG>
+<MSG id="9308">속성: 번개</MSG>
+<MSG id="9309">지속시간</MSG>
+<MSG id="9310">탄창</MSG>
+<MSG id="9311">데미지</MSG>
+<MSG id="9312">딜레이</MSG>
+<MSG id="9313">최대 중량</MSG>
+<MSG id="9314">속도</MSG>
+<MSG id="9315">점프 [X]</MSG>
+<MSG id="9316">대시 [X]</MSG>
+<MSG id="9317">벽타기 [X]</MSG>
+<MSG id="9318">데미지</MSG>
+<MSG id="9319">퀘스트</MSG>
+<MSG id="9320">아이템</MSG>
+<MSG id="9321">제물</MSG>
+<MSG id="9322">플레이어</MSG>
+<MSG id="9323">블루</MSG>
+<MSG id="9324">레드</MSG>
+<MSG id="9325">수량</MSG>
+<MSG id="9326">상대 팀을 찾는 중</MSG>
+<MSG id="9327">아이템 수</MSG>
+<MSG id="9328">NPC 수</MSG>
+<MSG id="9329">진행 상황</MSG>
+<MSG id="9330">남은 시간</MSG>
+<MSG id="9331">V</MSG>
+<MSG id="9332">비율</MSG>
+<MSG id="9333">등급</MSG>
+<MSG id="9334">일반</MSG>
+<MSG id="9335">레전더리</MSG>
+<MSG id="9336">보스</MSG>
+<MSG id="9337">엘리트</MSG>
+<MSG id="9338">베테랑</MSG>
+<MSG id="9339">매우 강함</MSG>
+<MSG id="9340">강함</MSG>
+<MSG id="9341">보통</MSG>
+<MSG id="9342">약함</MSG>
+<MSG id="9343">매우 약함</MSG>
+<MSG id="9344">무한</MSG>
+<MSG id="9345">없음</MSG>
+<MSG id="9346">레벨 차이</MSG>
+<MSG id="9347">허용됨</MSG>
+<MSG id="9348">금지됨</MSG>
+
+<!-- ChallengeQuest -->
+<MSG id="9350">경과 시간</MSG>
+<MSG id="9351">순위</MSG>
+<MSG id="9352">포인트</MSG>
+<MSG id="9353">최고 기록</MSG>
+<MSG id="9354">일반</MSG>
+<MSG id="9357">기록</MSG>
+<MSG id="9355">라운드를 클리어하여 $1 경험치와 $2 바운티를 획득했습니다.</MSG>
+<MSG id="9361">도전 중에 나가면 보상 아이템을 받을 수 없습니다.</MSG>
+<MSG id="9362">권장 인원보다 적게 시작하면 코인과 경험치는 받지만, 보상 아이템은 받을 수 없습니다. 그래도 시작하시겠습니까?</MSG>
+
+<MSG id="20020">이번 라운드가 끝난 후 부활합니다.</MSG>
+<MSG id="20021">잠시 후 다음 스테이지로 이동합니다.</MSG>
+<MSG id="20022">점수</MSG>
+
+<!-- Game Wording Addition -->
+<MSG id="9997">사냥 (USA)</MSG>
+<MSG id="9998">점령</MSG>
+<MSG id="9363">목표 처치</MSG>
+<MSG id="9364">라운드</MSG>
+<MSG id="9365">종류</MSG>
+<MSG id="9366">경험치</MSG>
+<MSG id="9367">킬</MSG>
+<MSG id="9368">데스</MSG>
+<MSG id="9369">핑</MSG>
+<MSG id="9300">승리</MSG>
+<MSG id="9301">패배</MSG>
+
+<MSG id="9370">&lt; 머리 &gt;</MSG>
+<MSG id="9371">&lt; 가슴 &gt;</MSG>
+<MSG id="9372">&lt; 손 &gt;</MSG>
+<MSG id="9373">&lt; 다리 &gt;</MSG>
+<MSG id="9374">&lt; 발 &gt;</MSG>
+<MSG id="9375">&lt; 왼손가락 &gt;</MSG>
+<MSG id="9376">&lt; 오른손가락 &gt;</MSG>
+<MSG id="9377">&lt; 근접무기 &gt;</MSG>
+<MSG id="9378">&lt; 주무기 &gt;</MSG>
+<MSG id="9379">&lt; 보조무기 &gt;</MSG>
+<MSG id="9380">&lt; 아이템 1 &gt;</MSG>
+<MSG id="9381">&lt; 아이템 2 &gt;</MSG>
+<MSG id="9388">&lt; 아이템 3 &gt;</MSG>
+<MSG id="9382">&lt; 커뮤니티 아이템 1 &gt;</MSG>
+<MSG id="9383">&lt; 커뮤니티 아이템 2 &gt;</MSG>
+<MSG id="9384">&lt; 장기 버프 아이템 1 &gt;</MSG>
+<MSG id="9385">&lt; 장기 버프 아이템 2 &gt;</MSG>
+<MSG id="9386">&lt; 아바타 &gt;</MSG>
+<MSG id="9387">&lt; 댄스 &gt;</MSG>
+
+<!-- Etc. -->
+<MSG id="9400">남음</MSG>
+<MSG id="9401">스테이지 '$1'에 참가했습니다.</MSG>
+<MSG id="9402">'$1 ($2 / $3 $4)' 님이 스테이지에 입장했습니다.</MSG>
+<MSG id="9500">켜짐</MSG>
+<MSG id="9501">꺼짐</MSG>
+<MSG id="9505">또는</MSG>
+
+<!-- Input -->
+<MSG id="9510">왼쪽 버튼</MSG>
+<MSG id="9511">오른쪽 버튼</MSG>
+<MSG id="9512">가운데 버튼</MSG>
+<MSG id="9513">M4</MSG>
+<MSG id="9514">M5</MSG>
+<MSG id="9515">M6</MSG>
+<MSG id="9516">M7</MSG>
+<MSG id="9517">M8</MSG>
+<MSG id="9518">휠 위로</MSG>
+<MSG id="9519">휠 아래로</MSG>
+
+<MSG id="9601">해킹 시도가 감지되었습니다.</MSG>
+<MSG id="9701">'$1' 아이템을 획득했습니다.</MSG>
+<MSG id="9801">선택한 언어는 게임 재시작 후 적용됩니다. 지금 재시작하시겠습니까?</MSG>
+
+
+<!-- Match Type 
+<MSG id="9900">Deathmatch</MSG>
+<MSG id="9901">Team Deathmatch</MSG>
+<MSG id="9902">Gladiator</MSG>
+<MSG id="9903">Team Gladiator</MSG>
+<MSG id="9904">Assassination</MSG>
+<MSG id="9905">Training</MSG>
+<MSG id="9906">Survival</MSG>
+<MSG id="9907">Quest</MSG>
+<MSG id="9908">Deathmatch +Berserker</MSG>
+<MSG id="9909">Team Deathmatch +Extream</MSG>
+<MSG id="9910">The Duel match</MSG>
+<MSG id="9911">Duel Tournament</MSG>
+<MSG id="9912">Capture The Flag</MSG>
+<MSG id="9913">Classic</MSG>
+<MSG id="9914">Counter Strikes</MSG>
+<MSG id="9915">Vampire</MSG>
+<MSG id="9916">Paint Team</MSG>
+<MSG id="9917">Paint Mode</MSG>
+<MSG id="9918">GunGame</MSG> //este estaba removido
+<MSG id="9919">Team Training</MSG>
+<MSG id="9920">Staff Mode</MSG>
+<MSG id="9921">Infected</MSG>-->
+
+<!-- Match Type -->
+<MSG id="9900">Deathmatch</MSG>
+<MSG id="9901">Team Deathmatch</MSG>
+<MSG id="9902">Gladiator</MSG>
+<MSG id="9903">Team Gladiator</MSG>
+<MSG id="9904">Assassination</MSG>
+<MSG id="9905">Training</MSG>
+<MSG id="9906">Quest</MSG>
+<MSG id="9907">Survival</MSG>
+<MSG id="9908">Deathmatch +Berserker</MSG>
+<MSG id="9909">Team Deathmatch +Extreme</MSG>
+<MSG id="9910">The Duel match</MSG>
+<MSG id="9911">Duel Tournament</MSG>
+<MSG id="9912">Challenge Quest</MSG>
+<MSG id="9913">Team Training</MSG>
+<MSG id="9914">Capture The Flag</MSG>
+<MSG id="9915">Infected</MSG>
+<MSG id="9916">Gun Game</MSG>
+<MSG id="9917">SpyMode</MSG>
+<MSG id="9918">Amateur</MSG>
+<MSG id="9919">Blitzkrieg</MSG>
+<MSG id="9920">Skill Map</MSG>
+<MSG id="9921">Turbo Mode</MSG>
+<MSG id="9922">Box Weapons</MSG>
+<MSG id="9923">Paint Ball</MSG>
+<MSG id="9924">Paint Ball Team</MSG>
+<MSG id="9925">Staff Mode</MSG>
+<MSG id="9926">Classic</MSG>
+<MSG id="9927">Classic Team</MSG>
+<MSG id="9928">Vampire Mode</MSG>
+<MSG id="9929">Sniper Mode</MSG>
+<MSG id="9930">Ghost Mode</MSG>
+<!--<MSG id="9930">FPS Mode</MSG>-->
+
+
+<!-- Warning -->
+<MSG id="20000">해킹 시도가 감지되었습니다. 이용자 동의에 따라 GunZ The Duel 운영팀은 해킹 사용자에 대한 정보를 지속적으로 수집 및 모니터링합니다. 민·형사상의 모든 책임은 불법 행위를 저지른 사용자 본인에게 있습니다.</MSG>
+<MSG id="20001">다음 아이템의 기간이 만료되었습니다:</MSG>
+<MSG id="20002">장비는 아이콘을 끌어놓거나 더블 클릭하여 장착/해제할 수 있습니다. 코인 장비(아이템)는 창고로 보낼 수 없습니다.</MSG>
+<MSG id="20003">경고: GunZ The Duel은 $1 을(를) 지원하지 않습니다. 일부 글꼴이 보이지 않거나 게임 진행이 어려울 수 있습니다. 계속하시겠습니까?</MSG>
+<MSG id="20004">GunZ The Duel을 정상적으로 실행하려면 DirectX 9.0c가 필요합니다. 지금 설치하시겠습니까?</MSG>
+<MSG id="20005">**아직 결정되지 않았습니다**</MSG>
+<MSG id="20006">이 캐릭터를 삭제하려면 'YES'를 입력해 주세요.</MSG>
+<MSG id="20007">관리자에 의해 채팅이 차단되었습니다.</MSG>
+
+<!-- SpyMode -->
+<MSG id="20008">팁: 스파이 검의 특수 공격은 적을 넘어뜨릴 수 있습니다.</MSG>
+<MSG id="20009">팁: 스파이 플래시뱅은 즉시 폭발하며, 스파이는 거의 영향을 받지 않습니다.</MSG>
+<MSG id="20010">팁: 스파이 함정은 즉시 발동되며 일반 함정보다 지속 시간이 깁니다.</MSG>
+<MSG id="20011">팁: 스파이 연막탄은 즉시 활성화되며 넓은 범위를 덮습니다.</MSG>
+<MSG id="20012">팁: 섬광 수류탄은 즉시 발동되며 스파이의 움직임을 멈춥니다.</MSG>
+<MSG id="20013">팁: 지뢰를 사용하여 스파이를 기절시키세요.</MSG>
+<MSG id="20014">서두르세요! 시간이 거의 없습니다!</MSG>
+
+<MSG id="20015">신고가 제출되었습니다.</MSG>
+<MSG id="20016">예상치 못한 문제로 신고가 취소되었습니다. 다시 시도해 주세요.</MSG>
+<MSG id="20017">최근 몇 분간의 플레이 기록이 신고와 함께 제출됩니다. 기록의 무결성이 확인되면 정상적으로 처리됩니다. 그래도 $1 님을 비매너 플레이어로 신고하겠습니까?</MSG>
+
+<!-- System Wording -->
+<MSG id="100100">상대 팀을 찾는 중입니다 $1</MSG>
+<MSG id="100200">'$1' 에 대한 투표가 시작되었습니다.</MSG>
+<MSG id="100300">사용할 수 없는 단어 '$1' 이(가) 포함되어 있습니다.</MSG>
+
+<MSG id="200000">디버그 서버</MSG>
+<MSG id="200001">매치 서버</MSG>
+<MSG id="200002">클랜 서버</MSG>
+<MSG id="200003">퀘스트 서버</MSG>
+<MSG id="200004">이벤트 서버</MSG>
+<MSG id="200005">일반 서버</MSG>
+
+<!-- Msg StreakLadder -->
+<MSG id="200006">래더에 오신 것을 환영합니다! 이곳에서 경쟁 및 보상 모드에 참여하게 되며, 승리가 많을수록 래더 상점에서 사용할 수 있는 메달을 더 많이 얻습니다. 행운을 빕니다!
+참고: 래더 보상을 받지 못한다면 캐릭터 선택 화면으로 이동한 뒤 로비로 돌아와 보세요. 게임을 종료할 필요는 없습니다.</MSG>
+
+<MSG id="200007">게임 내 불법 프로그램 사용은 절대 금지되어 있으며, "스왑" 사용 또한 마찬가지입니다. 적발 시 계정은 영구 정지됩니다.</MSG>
+
+<MSG id="200008">래더 코인을 정상적으로 받았습니다. 좋은 게임 플레이였습니다.</MSG>
+<MSG id="200009">래더에 오신 것을 환영합니다. 프로필이 업데이트되었습니다.</MSG>
+<MSG id="200010">게임이 성공적으로 종료되었습니다. 로비에서 보상 수령 버튼을 눌러 보상을 받는 것을 잊지 마세요.</MSG>
+<MSG id="200011">게임이 시작되었습니다! 좋은 경기 되세요!</MSG>
+
+<MSG id="200013">총 데미지: 받은 데미지: </MSG>
+<MSG id="200014"> - 가한 데미지: </MSG>
+<MSG id="200015">데미지: 받은 데미지: </MSG>
+<MSG id="200016"> - 가한 데미지: </MSG>
+
+<MSG id="200020">무기 정보:</MSG>
+<MSG id="200021">아이템 가격: </MSG>
+<MSG id="200022">데미지: </MSG>
+<MSG id="200023"> / 딜레이: </MSG>
+<MSG id="200024">레벨: Lv.</MSG>
+<MSG id="200025"> / 재장전 시간: 초 </MSG>
+<MSG id="200026">무게: </MSG>
+<MSG id="200027"> / 사거리: </MSG>
+<MSG id="200028"></MSG>
+
+<MSG id="200033">캐시 상점에서 구매한 아이템이 창고로 전달되었습니다.</MSG>
+<MSG id="200034">이벤트 상점에서 구매한 아이템이 창고로 전달되었습니다.</MSG>
+<MSG id="200035">메달 상점에서 구매한 아이템이 창고로 전달되었습니다.</MSG>
+
+
+
+</XML>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+	<ABUSEWORD name="fag" level="1"/>
+	<ABUSEWORD name="kanker" level="1"/>
+	<ABUSEWORD name="asshole" level="1"/>
+	<ABUSEWORD name="fuck" level="1"/>
+	<ABUSEWORD name="bitch" level="1"/>
+	<ABUSEWORD name="slut" level="1"/>
+	<ABUSEWORD name="whore" level="1"/>
+	<ABUSEWORD name="shit"  level="1"/>
+	<ABUSEWORD name="pussy" level="1"/>
+	<ABUSEWORD name="dick" level="1"/>
+</XML>

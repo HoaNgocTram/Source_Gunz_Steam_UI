@@ -1,0 +1,20 @@
+[Sat Oct  3 06:30:44 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Sat Oct  3 06:30:44 2026] Release Date : Oct  2 2026
+===========================================================================================
+
+[Sat Oct  3 06:30:44 2026] Match Agent Created (Port:7777)
+[Sat Oct  3 06:30:44 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Sat Oct  3 06:30:44 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Sat Oct  3 06:30:44 2026] MMatchAgent::ConnectToMatchServer END 
+[Sat Oct  3 06:33:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:36:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:39:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:42:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:45:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:48:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:51:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:54:44 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Sat Oct  3 06:55:15 2026] Agent Local Login (UID:01000, IP:205.210.31.243, Port:58984)
+[Sat Oct  3 06:55:15 2026] Agent Net Clear(UID:01000)

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EMOJIS lobby_size="22" ingame_size="22">
+	<!-- 
+		pattern  = text pattern to match (any length: 2, 3, 4+ chars)
+		file     = image filename in Interface/default/emojis/
+		space    = "true" (default) requires space before pattern, "false" = no space needed
+		w, h     = custom width/height in pixels (0 = use lobby_size or ingame_size)
+		Tương tự các ký tự đặc biệt khác trong XML:
+		< → &lt;
+		> → &gt;
+		& → &amp;
+		" → &quot;
+		' → &apos;
+
+	-->
+
+	<!-- 2-char face emojis -->
+	<EMOJI pattern=":D" file="1.png" />
+	<EMOJI pattern=":)" file="3.png" />
+	<EMOJI pattern=":(" file="4.png" />
+	<EMOJI pattern=":P" file="5.png" />
+	<EMOJI pattern=":/" file="6.png" />
+	<EMOJI pattern=":S" file="6.png" />
+	<EMOJI pattern=":*" file="15.png" />
+	<EMOJI pattern=":@" file="10.png" />
+	<EMOJI pattern=":O" file="13.png" />
+	<EMOJI pattern=":|" file="14.png" />
+	<EMOJI pattern=":v" file="16.png" />
+	<EMOJI pattern=":7" file="17.png" />
+	<EMOJI pattern=";(" file="2.png" />
+	<EMOJI pattern=";/" file="2.png" />
+	<EMOJI pattern=";)" file="12.png" />
+	<EMOJI pattern="&lt;3" file="7.png" />
+	<EMOJI pattern=":3" file="18.png" />
+	<EMOJI pattern=":))" file="19.png" />
+
+	<!-- 3-char face emojis -->
+	<EMOJI pattern="^_^" file="8.png" />
+	<EMOJI pattern="-_-" file="14.png" />
+	<EMOJI pattern="O:)" file="9.png" />
+
+	<!-- gif emojis -->
+	<EMOJI pattern=":diamond:" file="diamond.gif" space="false" />
+
+</EMOJIS>

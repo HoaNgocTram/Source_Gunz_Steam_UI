@@ -1,0 +1,845 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="League">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   League 화면 구성
+-->
+
+<!-- 프레임 생성 : League -->
+	<FRAME item="League">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- Picture : 리그 배경 -->
+	<PICTURE item="League_BackGround" parent="League">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeagueBG.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 리그 배너 그림자-->
+	<PICTURE item="League_BannerShadow" parent="League">
+		<BOUNDS>
+			<X>46</X>
+			<Y>200</Y>
+			<W>925</W>
+			<H>351</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeagueModeBannerShadow.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 리그 배너 -->
+	<PICTURE item="League_Banner" parent="League">
+		<BOUNDS>
+			<X>53</X>
+			<Y>207</Y>
+			<W>907</W>
+			<H>333</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeagueModeBanner_01.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 리그 타이틀 -->
+	<LABEL item="League_Title_Label" parent="League">
+		<FONT>FONTb23b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>78</X>
+			<Y>475</Y>
+			<W>850</W>
+			<H>37</H>
+		</BOUNDS>
+	</LABEL>
+	
+	<!-- Picture : 리그 시간 아이콘 -->
+	<PICTURE item="League_TimeIcon" parent="League">
+		<BOUNDS>
+			<X>81</X>
+			<Y>439</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE>
+
+	<!-- LABEL : 리그 시간 -->
+	<LABEL item="League_Time_Label" parent="League">
+		<FONT>FONTa12</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>114</X>
+			<Y>438</Y>
+			<W>200</W>
+			<H>20</H>
+		</BOUNDS>
+	</LABEL>
+
+	<!-- Picture : 리그 티어 마크 -->
+	<PICTURE item="League_TierMark" parent="League">
+		<BOUNDS>
+			<X>1285</X>
+			<Y>262</Y>
+			<W>341</W>
+			<H>345</H>
+		</BOUNDS>
+		<STRETCH/>
+		<FADE>
+			<TYPE>down</TYPE>
+			<DISTANCE>50</DISTANCE>
+			<PLAYTIME>500</PLAYTIME>
+		</FADE>
+	</PICTURE>
+
+	<!-- Picture : 리그 티어 랭크 넘버 -->
+	<PICTURE item="League_Tier_Number_Mark" parent="League">
+		<BOUNDS>
+			<X>1418</X>
+			<Y>537</Y>
+			<W>75</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<FADE>
+			<TYPE>down</TYPE>
+			<DISTANCE>50</DISTANCE>
+			<PLAYTIME>500</PLAYTIME>
+		</FADE>
+	</PICTURE>
+	
+	<!-- Picture : 리그 티어 이름 -->
+	<PICTURE item="League_TierName" parent="League">
+		<BOUNDS>
+			<X>1318</X>
+			<Y>631</Y>
+			<W>275</W>
+			<H>51</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+
+	<!-- Picture : 리그 티어 이름 이미지 -->
+	<PICTURE item="League_TierName" parent="League">
+		<BOUNDS>
+			<X>1359</X>
+			<Y>632</Y>
+			<W>196</W>
+			<H>49</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+
+	<!-- Picture : 리그 룰 구분선 -->
+	<PICTURE item="League_Divider" parent="League">
+		<BOUNDS>
+			<X>53</X>
+			<Y>565</Y>
+			<W>907</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeagueDivider.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 리그 규칙 -->
+	<LABEL item="League_Rule_Label" parent="League">
+		<FONT>FONTb18</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>59</X>
+			<Y>575</Y>
+			<W>200</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LEAGUE_RULE_LABEL</TEXT>
+	</LABEL>
+	
+	<!-- Picture : 리그 룰 배경 -->
+	<PICTURE item="League_RuleBG" parent="League">
+		<BOUNDS>
+			<X>53</X>
+			<Y>620</Y>
+			<W>907</W>
+			<H>260</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeagueRuleBG.png</BITMAP>
+	</PICTURE>
+	
+	
+
+	<!-- Picture : 리그 룰 속성 모드 -->
+	<PICTURE item="League_RuleAttribute_ModeBG" parent="League">
+		<BOUNDS>
+			<X>77</X>
+			<Y>638</Y>
+			<W>461</W>
+			<H>109</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RuleAttributeBG_Big.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 리그 룰 속성 모드 아이콘-->
+	<PICTURE item="League_RuleAttribute_Mode_Icon" parent="League">
+		<BOUNDS>
+			<X>77</X>
+			<Y>640</Y>
+			<W>112</W>
+			<H>108</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>All.png</BITMAP>
+	</PICTURE>
+
+	<!-- LABEL : 리그 룰 속성 모드 라벨 -->
+	<LABEL item="League_RuleAttribute_Mode_Label" parent="League">
+		<FONT>FONTb20</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>100</X>
+			<Y>638</Y>
+			<W>500</W>
+			<H>109</H>
+		</BOUNDS>
+	</LABEL>
+
+
+	<!-- Picture : 리그 룰 속성 무기 -->
+	<PICTURE item="League_RuleAttribute_WeaponBG" parent="League">
+		<BOUNDS>
+			<X>77</X>
+			<Y>752</Y>
+			<W>461</W>
+			<H>109</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RuleAttributeBG_Big.png</BITMAP>
+	</PICTURE>
+
+
+	<!-- Picture : 리그 룰 속성 무기 아이콘 -->
+	<PICTURE item="League_RuleAttribute_Weapon_Icon" parent="League">
+		<BOUNDS>
+			<X>77</X>
+			<Y>754</Y>
+			<W>112</W>
+			<H>108</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Blade.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 리그 룰 속성 무기 라벨 -->
+	<LABEL item="League_RuleAttribute_Weapon_Label" parent="League">
+		<FONT>FONTb20</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>100</X>
+			<Y>752</Y>
+			<W>461</W>
+			<H>109</H>
+		</BOUNDS>
+	</LABEL>
+
+	
+	<!-- Picture : 리그 룰 모드 속성 버프1 -->
+	<PICTURE item="League_RuleAttribute_BuffBG1" parent="League">
+		<BOUNDS>
+			<X>548</X>
+			<Y>638</Y>
+			<W>395</W>
+			<H>68</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RuleAttributeBG_Small.png</BITMAP>
+	</PICTURE>
+
+	<!-- LABEL : 리그 룰 모드 속성 버프1 라벨 -->
+	<LABEL item="League_RuleAttribute_Buff1_Label" parent="League">
+		<FONT>FONTb18</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>548</X>
+			<Y>638</Y>
+			<W>395</W>
+			<H>68</H>
+		</BOUNDS>
+	</LABEL>
+
+
+	<!-- Picture : 리그 룰 모드 속성 버프 아이콘1 -->
+	<PICTURE item="League_RuleAttribute_Buff_Icon1" parent="League">
+		<BOUNDS>
+			<X>560</X>
+			<Y>640</Y>
+			<W>70</W>
+			<H>68</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- Picture : 리그 룰 모드 속성 버프2 -->
+	<PICTURE item="League_RuleAttribute_BuffBG2" parent="League">
+		<BOUNDS>
+			<X>548</X>
+			<Y>716</Y>
+			<W>395</W>
+			<H>68</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RuleAttributeBG_Small.png</BITMAP>
+	</PICTURE>
+	<!-- Picture : 리그 룰 모드 속성 버프 아이콘2 -->
+	<PICTURE item="League_RuleAttribute_Buff_Icon2" parent="League">
+		<BOUNDS>
+			<X>560</X>
+			<Y>714</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- LABEL : 리그 룰 모드 속성 버프2 라벨 -->
+	<LABEL item="League_RuleAttribute_Buff2_Label" parent="League">
+		<FONT>FONTb18</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>548</X>
+			<Y>716</Y>
+			<W>395</W>
+			<H>68</H>
+		</BOUNDS>
+	</LABEL>
+
+	<!-- Picture : 리그 룰 모드 속성 버프3 -->
+	<PICTURE item="League_RuleAttribute_BuffBG3" parent="League">
+		<BOUNDS>
+			<X>548</X>
+			<Y>793</Y>
+			<W>395</W>
+			<H>68</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RuleAttributeBG_Small.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 리그 룰 모드 속성 버프 아이콘3 -->
+	<PICTURE item="League_RuleAttribute_Buff_Icon3" parent="League">
+		<BOUNDS>
+			<X>562</X>
+			<Y>796</Y>
+			<W>68</W>
+			<H>65</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<!-- LABEL : 리그 룰 모드 속성 버프3 라벨 -->
+	<LABEL item="League_RuleAttribute_Buff3_Label" parent="League">
+		<FONT>FONTb18</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>548</X>
+			<Y>793</Y>
+			<W>395</W>
+			<H>68</H>
+		</BOUNDS>
+	</LABEL>
+
+	<!-- BMBUTTON : 리그 룰 툴팁 버튼	 -->
+	<BMBUTTON item="LeagueRuleToolTip_Button" parent="League">
+		<BOUNDS>
+			<X>916</X>
+			<Y>566</Y>
+			<W>50</W>
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">HideOut_FilterIcon_Special.png</BITMAP>
+		<BITMAP type="over">HideOut_FilterIcon_Special.png</BITMAP>
+		<BITMAP type="down">HideOut_FilterIcon_Special.png</BITMAP>
+		<SETCHECK/>
+	</BMBUTTON>
+	
+	<!-- Picture : 리그 룰 툴팁 배경 -->
+	<PICTURE item="LeagueRuleToolTip_Background" parent="League">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>250</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>LeagueRuleToolTip.png</BITMAP>
+	</PICTURE>
+	
+	<!-- TEXTAREA : 리그 룰 툴팁 텍스트 -->
+	<TEXTAREA item="LeagueRuleInformationTextarea" parent="League">
+		<FONT>FONTb13</FONT>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>290</W>
+			<H>240</H>
+		</BOUNDS>
+		<MAXLENGTH>1024</MAXLENGTH>
+		<LEADING>30</LEADING>
+		<TEXTOFFSET>
+			<X>25</X>
+			<Y>0</Y>
+		</TEXTOFFSET>
+		<TEXT>STR:UI_LEAGUE_RULE_INFO</TEXT>
+		<EDITABLE>false</EDITABLE>
+		<VISIBLE>false</VISIBLE>
+	</TEXTAREA>
+	
+	
+	
+	<!-- ICONBUTTON : 리그정보 버튼 -->
+	<ICONBUTTON item="LeagueInfo_Button" parent="League">
+		<BOUNDS>
+			<X>53</X>
+			<Y>899</Y>
+			<W>30</W>
+			<H>30</H>
+		</BOUNDS>
+		<BITMAP type="icon" state="base">LeagueInfo_Default.png</BITMAP>
+		<BITMAP type="icon" state="over">LeagueInfo_Over.png</BITMAP>
+		<ICONRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>30</W>
+			<H>30</H>
+		</ICONRECT>
+	</ICONBUTTON>
+	
+	
+	<!-- LABEL : 리그정보 버튼 텍스트 -->
+	<LABEL item="LeagueInfo_Label" parent="League">
+		<FONT>FONTb18</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>97</X>
+			<Y>898</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LEAGUE_INFO_LABEL</TEXT>
+	</LABEL>
+	
+	<!-- Picture : 리그포인트 배경 -->
+	<PICTURE item="League_PointBG" parent="League">
+		<BOUNDS>
+			<X>1260</X>
+			<Y>696</Y>
+			<W>357</W>
+			<H>43</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeaguePointBG.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 리그 포인트 라벨 -->
+	<LABEL item="League_Point_Label" parent="League">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>227</R>
+			<G>227</G>
+			<B>227</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>1270</X>
+			<Y>696</Y>
+			<W>357</W>
+			<H>43</H>
+		</BOUNDS>
+	</LABEL>
+	
+	<!-- Picture : 리그 구분선 (K/D)-->
+	<PICTURE item="League_Divider" parent="League">
+		<BOUNDS>
+			<X>1330</X>
+			<Y>796</Y>
+			<W>254</W>
+			<H>1</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeagueDivider.png</BITMAP>
+	</PICTURE>
+	
+	<!-- LABEL : 리그 KD 라벨 -->
+	<LABEL item="League_KD_Label" parent="League">
+		<FONT>FONTb16</FONT>
+		<BOUNDS>
+			<X>1332</X>
+			<Y>753</Y>
+			<W>100</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>168</R>
+			<G>168</G>
+			<B>168</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_K/D</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 리그 KD 라벨 -->
+	<LABEL item="League_KD_Info_Label" parent="League">
+		<FONT>FONTb16</FONT>
+		<BOUNDS>
+			<X>1425</X>
+			<Y>753</Y>
+			<W>160</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<STRETCH/>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- Picture : 리그 구분선 (Win/Lose)-->
+	<PICTURE item="League_Divider" parent="League">
+		<BOUNDS>
+			<X>1330</X>
+			<Y>854</Y>
+			<W>254</W>
+			<H>1</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LeagueDivider.png</BITMAP>
+	</PICTURE>
+	
+	
+	<!-- LABEL : 리그 승패 라벨 -->
+	<LABEL item="League_WinLose_Label" parent="League">
+		<FONT>FONTb16</FONT>
+		<BOUNDS>
+			<X>1332</X>
+			<Y>809</Y>
+			<W>120</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>168</R>
+			<G>168</G>
+			<B>168</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_LEAGUE_WINLOSE_LABEL</TEXT>
+	</LABEL>
+	
+	<!-- LABEL : 리그 승패 라벨 -->
+	<LABEL item="League_WinLose_Info_Label" parent="League">
+		<FONT>FONTb16</FONT>
+		<BOUNDS>
+			<X>1435</X>
+			<Y>809</Y>
+			<W>150</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<STRETCH/>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- ICONBUTTON : 리그시작 버튼 -->
+	<ICONBUTTON item="League_MatchingStart_Button" parent="League">
+		<FONT>FONTb23</FONT>
+		<BOUNDS>
+			<X>781</X>
+			<Y>990</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOff.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="bg" state="down">HideOut_QuickStartButtonOn.png</BITMAP>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LEAGUE_MATCH_START_BUTTON</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>-5</Y>
+			<W>374</W>
+			<H>60</H>
+		</TEXTRECT>
+		<COLOR type="font">
+			<BASE>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</BASE>
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+			<DOWN>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</DOWN>
+		</COLOR>
+		<SOUNDCLICK>match_click</SOUNDCLICK>
+	</ICONBUTTON>
+
+	<!-- Button : 리전 선택 버튼 -->
+	<BMBUTTON item="LG_RegionSelectBtn" parent="League">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>1840</X>
+			<Y>1020</Y>
+			<W>34</W>
+			<H>34</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RegionIcon_Default.png</BITMAP>
+		<BITMAP type="over">RegionIcon_Over.png</BITMAP>
+		<BITMAP type="down">RegionIcon_Default.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+<!-- 프레임 생성 : League Info-->
+	<FRAME item="LeagueInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<PICTURE item="LeagueInfoBG" parent="LeagueInfo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>191</OPACITY>
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="LeagueInfoTitle" parent="LeagueInfo">
+		<FONT>FONTb23b</FONT>
+		<TEXTCOLOR>
+			<R>216</R>
+			<G>216</G>
+			<B>216</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>932</X>
+			<Y>25</Y>
+			<W>200</W>
+			<H>50</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>STR:UI_LEAGUE_RULE_INFO_TITLE</TEXT>
+	</LABEL>
+
+
+	<TEXTAREA item="RuleInformationTextarea" parent="LeagueInfo">
+		<FONT>FONTb13</FONT>
+		<BOUNDS>
+			<X>74</X>
+			<Y>861</Y>
+			<W>1000</W>
+			<H>200</H>
+		</BOUNDS>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<LEADING>20</LEADING>
+		<TEXT>STR:UI_LEAGUE_RULE_INFO</TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<BMBUTTON item="LeagueInfoCloseButton" parent="LeagueInfo">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>1784</X>
+			<Y>1018</Y>
+			<W>56</W>
+			<H>30</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">OptionShortcut_ESC_Default.png</BITMAP>
+		<BITMAP type="over">OptionShortcut_ESC_Over.png</BITMAP>
+		<BITMAP type="down">OptionShortcut_ESC_Default.png</BITMAP>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_OPTION_ESC</TEXT> <!-- ESC -->
+		<SETCHECK/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<LABEL item="LeagueInfo_Close_Button_Label" parent="LeagueInfo">
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1844</X>
+			<Y>1023</Y>
+			<W>80</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_OPTION_BACK</TEXT> <!-- Back -->
+	</LABEL>
+
+	<FRAME item="LeagueCountdown">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>true</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	
+	<PICTURE item="League_CountdownBG" parent="LeagueCountdown">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>19</G>
+			<B>20</B>
+		</COLOR>
+		<OPACITY>125</OPACITY>
+		<STRETCH/>
+		<BITMAP>Main_Quadrangle_BG.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+</XML>

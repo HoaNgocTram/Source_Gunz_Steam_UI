@@ -1,0 +1,11 @@
+{
+	"title"											: "Gunz Việt Nam",
+	"executable"									: "<Gunz.exe>",
+	"productid"										: "a91729130eb949eaa22ef2e3bd7ea5cb",
+	"sandboxid"										: "61afb5ef566148b0bfdda3bba8b80407",
+	"deploymentid"									: "df8f76f8a0714673bf45cda2cb81c7d9",
+	"requested_splash"								: "EasyAntiCheat/SplashScreen.png",
+	"wait_for_game_process_exit"					: "false",
+	"hide_bootstrapper"								: "false",
+	"hide_gui"										: "false"
+}

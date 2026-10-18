@@ -1,0 +1,994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <CharacterModel></CharacterModel>
+  <AddBaseModel name="manbase1" filename="man-set-000.elu"></AddBaseModel>
+  <AddParts name="parts179" filename="man-set-001.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-002.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-003.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-004.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-005.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-006.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-007.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-008.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-009.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-010.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-011.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-012.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-013.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-014.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-015.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-016.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-017.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-018.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-019.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-020.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-021.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-022.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-023.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-024.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-025.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-026.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-027.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-028.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-029.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-030.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-031.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-032.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-033.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-034.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-035.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-036.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-037.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-038.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-039.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-040.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-041.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-042.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-043.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-044.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-045.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-046.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-050.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-051.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-055.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-056.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-058.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-061.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-062.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-064.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-065.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-066.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-067.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-068.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-069.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-071.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-072.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-073.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-074.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-075.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-076.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-077.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-078.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-079.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-080.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-081.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-082.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-086.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-092.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-093.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-094.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-095.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-097.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-098.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-099.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-100.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-101.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-102.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-103.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-104.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-105.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-106.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-107.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-108.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-109.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-110.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-111.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-112.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-113.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-114.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-115.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-116.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-117.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-118.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-119.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-120.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-121.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-122.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-123.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-125.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-126.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-127.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-128.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-129.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-130.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-137.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-138.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-139.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-155.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-195.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-196.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-197.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-198.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-199.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-200.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-201.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-202.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-203.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-204.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-205.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-206.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-207.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-208.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-209.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-210.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-211.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-212.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-213.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-214.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-215.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-216.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-217.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-221.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-225.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-226.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-227.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-228.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-229.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-230.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-232.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-233.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-234.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-236.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-238.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-244.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-245.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-247.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-249.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-251.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-252.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-253.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-254.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-271.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-272.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-285.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-286.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-287.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-402.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-403.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-398.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-399.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-400.elu"></AddParts>
+  <AddParts name="parts179" filename="man-set-401.elu"></AddParts>
+  <MakeAnimationMap></MakeAnimationMap>
+  <AddAnimation name="idle" filename="man_1hpistol_idle.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_1hpistol_run.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_1hpistol_run_back.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_1hpistol_jump_up.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_1hpistol_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_1hpistol_standshot.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_1hpistol_load.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="reload" filename="man_1hpistol_reload.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_1hpistol_run_wall_down.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_1hpistol_intro.elu.ani" sound="" gm="0" motion_type="2" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_1hpistol_idle.elu.ani" sound="" gm="0" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_1hpistol_walk.elu.ani" sound="" gm="0" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_1hpistol_taunt.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_1hpistol_bow.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_1hpistol_wave.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_1hpistol_cry.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_1hpistol_laugh.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="2" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_2hpistol_idle.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_2hpistol_run.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_2hpistol_run_back.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lonceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_2hpistol_jump_up.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_2hpistol_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_2hpistol_standshot.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_2hpistol_load.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="reload" filename="man_2hpistol_reload.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_2hpistol_run_wall_down.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_2hpistol_intro.elu.ani" sound="" gm="0" motion_type="3" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_2hpistol_idle.elu.ani" sound="" gm="0" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_2hpistol_walk.elu.ani" sound="" gm="0" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_2hpistol_taunt.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_2hpistol_bow.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_2hpistol_wave.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_2hpistol_cry.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_2hpistol_laugh.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="3" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_knife_idle.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_knife_run.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_knife_run_back.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall_melee.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_down_meleef.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_down_meleeb.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_knife_jump_up.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_knife_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="bind" filename="man_knife_bind.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_knife_load.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_knife_dash.elu.ani" sound="fx_dash" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_knife_dash_back.elu.ani" sound="fx_dash" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_knife_dash_Rside.elu.ani" sound="fx_dash" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_knife_dash_Lside.elu.ani" sound="fx_dash" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1" filename="man_knife_standshot_1.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1_ret" filename="man_knife_standshot_1_return.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2" filename="man_knife_standshot_2.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2_ret" filename="man_knife_standshot_2_return.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack3" filename="man_knife_standshot_3.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack3_ret" filename="man_knife_standshot_3_return.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack4" filename="man_knife_standshot_4.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack_Jump" filename="man_knife_attack_jump.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="uppercut" filename="man_knife_uppercut.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_knife_intro.elu.ani" sound="" gm="0" motion_type="1" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_knife_idle.elu.ani" sound="" gm="0" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_knife_walk.elu.ani" sound="" gm="0" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_start" filename="man_knife_guard_start2.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="guard_idle" filename="man_knife_guard_idle.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="guard_block1" filename="man_knife_guard_block_1.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block1_ret" filename="man_knife_guard_block_1_return.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block2" filename="man_knife_guard_block_2.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_cancel" filename="man_knife_guard_cancel.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_knife_taunt.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_knife_bow.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_knife_wave.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_knife_cry.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_knife_laugh.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cancel" filename="man_knife_cancel.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="charge" filename="man_knife_charge.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="slash" filename="man_knife_slash.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash1" filename="man_knife_jump_slash1.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash2" filename="man_knife_jump_slash2.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="1" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_shotgun_idle.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_shotgun_run.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_shotgun_run_back.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_shotgun_jump_up.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_shotgun_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_shotgun_standshot.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_shotgun_load.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="reload" filename="man_shotgun_reload.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_shotgun_intro.elu.ani" sound="" gm="0" motion_type="4" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_shotgun_idle.elu.ani" sound="" gm="0" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_shotgun_walk.elu.ani" sound="" gm="0" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_shotgun_taunt.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_shotgun_bow.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_shotgun_wave.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_shotgun_cry.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_shotgun_laugh.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="4" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_rifle_idle.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_rifle_run.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_rifle_run_back.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_rifle_jump_up.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_rifle_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_rifle_standshot.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_rifle_load.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="reload" filename="man_rifle_reload.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_rifle_intro.elu.ani" sound="" gm="0" motion_type="5" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_rifle_idle.elu.ani" sound="" gm="0" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_rifle_walk.elu.ani" sound="" gm="0" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_rifle_taunt.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_rifle_bow.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_rifle_wave.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_rifle_cry.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_rifle_laugh.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="5" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_grenade_idle.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_grenade_run.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_grenade_run_back.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_grenade_jump_up.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_grenade_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_grenade_standshot.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_grenade_load.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_item_idle.elu.ani" sound="" gm="0" motion_type="6" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_item_idle.elu.ani" sound="" gm="0" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_item_walk.elu.ani" sound="" gm="0" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_grenade_taunt.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_item_idle.elu.ani" sound="" gm="0" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_grenade_bow.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_grenade_wave.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_grenade_cry.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_grenade_laugh.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="6" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_dagger_idle.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_dagger_run.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_dagger_run_back.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_down_meleef.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_down_meleeb.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_down" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_dagger_jump_up.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_dagger_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_dagger_standshot.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_dagger_tumble.elu.ani" sound="fx_dash" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_dagger_tumble_back.elu.ani" sound="fx_dash" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_dagger_tumble_Lside.elu.ani" sound="fx_dash" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_dagger_tumble_Rside.elu.ani" sound="fx_dash" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="load" filename="man_dagger_load.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="bind" filename="man_knife_bind.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_dagger_intro.elu.ani" sound="" gm="0" motion_type="7" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_dagger_idle.elu.ani" sound="" gm="0" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_dagger_walk.elu.ani" sound="" gm="0" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_dagger_taunt.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="uppercut" filename="man_dagger_uppercut.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="bow" filename="man_dagger_bow.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_dagger_wave.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_dagger_cry.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_dagger_laugh.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cancel" filename="man_knife_cancel.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="charge" filename="man_dagger_charge.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="slash" filename="man_dagger_slash.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash1" filename="man_dagger_jump_slash1.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash2" filename="man_dagger_jump_slash2.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="7" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_medikit_idle.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_medikit_run.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_medikit_run_back.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_medikit_jump_up.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_medikit_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_medikit_standshot.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="load" filename="man_medikit_load.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_item_idle.elu.ani" sound="" gm="0" motion_type="8" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_item_idle.elu.ani" sound="" gm="0" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_item_walk.elu.ani" sound="" gm="0" motion_type="8" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_medikit_bow.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_medikit_wave.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_medikit_cry.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_medikit_laugh.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="8" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_rl_idle.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_rl_run.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_rl_run_back.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_rl_jump_up.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_rl_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_rl_standshot.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_rl_load.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="reload" filename="man_rl_reload.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_rl_intro.elu.ani" sound="" gm="0" motion_type="9" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_rl_idle.elu.ani" sound="" gm="0" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_rl_walk.elu.ani" sound="" gm="0" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_rl_taunt.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_rl_bow.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_rl_wave.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_rl_cry.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_rl_laugh.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="9" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_1hpistol_idle.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_1hpistol_run.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_1hpistol_run_back.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_1hpistol_jump_up.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_1hpistol_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_1hpistol_standshot.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_1hpistol_load.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="reload" filename="man_1hpistol_reload.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_1hpistol_run_wall_down.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_1hsmg_intro.elu.ani" sound="" gm="0" motion_type="10" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_1hsmg_idle.elu.ani" sound="" gm="0" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_1hsmg_walk.elu.ani" sound="" gm="0" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_1hsmg_taunt.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_1hpistol_bow.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_1hpistol_wave.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_1hpistol_cry.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_1hpistol_laugh.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="10" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_2hpistol_idle.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_2hpistol_run.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_2hpistol_run_back.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_downf.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_downb.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lonceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_2hpistol_jump_up.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_2hpistol_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attackS" filename="man_2hpistol_standshot.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_2hpistol_load.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="reload" filename="man_2hpistol_reload.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_tumbleF.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_tumbleB.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_tumbleR.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_tumbleL.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_2hpistol_run_wall_down.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_2hsmg_intro.elu.ani" sound="" gm="0" motion_type="11" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_2hsmg_idle.elu.ani" sound="" gm="0" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_2hsmg_walk.elu.ani" sound="" gm="0" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_2hsmg_taunt.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_2hpistol_bow.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_2hpistol_wave.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_2hpistol_cry.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_2hpistol_laugh.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="11" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_sword_idle.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_sword_run.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_sword_run_back.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall_melee.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_down_meleef.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_down_meleeb.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_sword_jump_up.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_sword_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_sword_load.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_sword_ftumble.elu.ani" sound="fx_dash" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_sword_btumble.elu.ani" sound="fx_dash" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_sword_rtumble.elu.ani" sound="fx_dash" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_sword_ltumble.elu.ani" sound="fx_dash" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="bind" filename="man_knife_bind.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1" filename="man_sword_standshot_1.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1_ret" filename="man_sword_standshot_1_return.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2" filename="man_sword_standshot_2.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2_ret" filename="man_sword_standshot_2_return.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack3" filename="man_sword_standshot_3.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack3_ret" filename="man_sword_standshot_3_return.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack4" filename="man_sword_standshot_4.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack_Jump" filename="man_sword_attack_jump.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_sword_intro.elu.ani" sound="" gm="0" motion_type="12" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_sword_idle.elu.ani" sound="" gm="0" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_sword_walk.elu.ani" sound="" gm="0" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_sword_taunt.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_sword_bow.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_sword_wave.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_sword_cry.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_sword_laugh.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="uppercut" filename="man_sword_uppercut.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="cancel" filename="man_knife_cancel.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="charge" filename="man_sword_charge.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="slash" filename="man_sword_slash.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash1" filename="man_sword_jump_slash1.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash2" filename="man_sword_jump_slash2.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_idle" filename="man_sword_guard_idle.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="guard_block1" filename="man_sword_guard_block.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_cancel" filename="man_sword_guard_cancel.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="12" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_blade_idle.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_blade_run.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_blade_run_back.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall_melee.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_down_meleef.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_down_meleeb.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_blade_jump_up.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_blade_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_blade_load.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_blade_ftumble.elu.ani" sound="fx_dash" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_blade_btumble.elu.ani" sound="fx_dash" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_blade_rtumble.elu.ani" sound="fx_dash" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_blade_ltumble.elu.ani" sound="fx_dash" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="bind" filename="man_knife_bind.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1" filename="man_blade_standshot_1.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1_ret" filename="man_blade_standshot_1_return.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2" filename="man_blade_standshot_2.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2_ret" filename="man_blade_standshot_2_return.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack3" filename="man_blade_standshot_3.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack3_ret" filename="man_blade_standshot_3_return.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack4" filename="man_blade_standshot_4.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack_Jump" filename="man_blade_attack_jump.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_start" filename="man_blade_guard_start2.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="guard_idle" filename="man_knife_guard_idle.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="guard_block1" filename="man_knife_guard_block_1.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block1_ret" filename="man_knife_guard_block_1_return.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block2" filename="man_knife_guard_block_2.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_cancel" filename="man_blade_guard_cancel.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_blade_intro.elu.ani" sound="" gm="0" motion_type="13" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_blade_idle.elu.ani" sound="" gm="0" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_blade_walk.elu.ani" sound="" gm="0" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_blade_taunt.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_blade_bow.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_blade_wave.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_blade_cry.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_blade_laugh.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="uppercut" filename="man_blade_uppercut.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="cancel" filename="man_knife_cancel.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="charge" filename="man_blade_charge.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="slash" filename="man_blade_slash.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash1" filename="man_blade_jump_slash1.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash2" filename="man_blade_jump_slash2.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="13" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_2hdagger_idle.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_2hdagger_run.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_2hdagger_run_back.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_down_meleef.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_down_meleeb.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_down" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_2hdagger_jump_up.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_2hdagger_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1" filename="man_2hdagger_standshot_1.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="attack1_ret" filename="man_2hdagger_standshot_1_return.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="attack2" filename="man_2hdagger_standshot_2.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="attack_Jump" filename="man_2hdagger_attack_jump.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_dagger_tumble.elu.ani" sound="fx_dash" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_dagger_tumble_back.elu.ani" sound="fx_dash" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_dagger_tumble_Lside.elu.ani" sound="fx_dash" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_dagger_tumble_Rside.elu.ani" sound="fx_dash" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="load" filename="man_2hdagger_load.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="bind" filename="man_knife_bind.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_dagger_intro.elu.ani" sound="" gm="0" motion_type="14" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_dagger_idle.elu.ani" sound="" gm="0" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_dagger_walk.elu.ani" sound="" gm="0" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_2hdagger_taunt.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_2hdagger_bow.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_2hdagger_wave.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_2hdagger_cry.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_2hdagger_laugh.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="uppercut" filename="man_2hdagger_uppercut.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="cancel" filename="man_knife_cancel.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="guard_start" filename="man_2hdagger_guard_start.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="guard_idle" filename="man_knife_guard_idle.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="guard_block1" filename="man_knife_guard_block_1.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block1_ret" filename="man_knife_guard_block_1_return.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block2" filename="man_knife_guard_block_2.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_cancel" filename="man_2hdagger_guard_cancel.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="14" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="idle" filename="man_knife_idle.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="run" filename="man_spycase_run.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runB" filename="man_knife_run_back.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="runW" filename="man_run_wall_melee.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downF" filename="man_run_wall_down_meleef.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runW_downB" filename="man_run_wall_down_meleeb.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runLW" filename="man_run_Lwall_melee.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runLW_down" filename="man_run_Lwall_down_melee.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="runRW" filename="man_run_Rwall_melee.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="runRW_down" filename="man_run_Rwall_down_melee.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpU" filename="man_knife_jump_up.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jumpD" filename="man_knife_jump_down.elu.ani" sound="man_jump" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="bind" filename="man_knife_bind.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die" filename="man_die.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die2" filename="man_die2.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die3" filename="man_die3.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="die4" filename="man_die4.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="load" filename="man_knife_load.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="tumbleF" filename="man_knife_dash.elu.ani" sound="fx_dash" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleB" filename="man_knife_dash_back.elu.ani" sound="fx_dash" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleR" filename="man_knife_dash_Rside.elu.ani" sound="fx_dash" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="tumbleL" filename="man_knife_dash_Lside.elu.ani" sound="fx_dash" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallB" filename="man_run_wall_down_melee.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallF" filename="man_jump_wallB.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallL" filename="man_jump_wallL.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="jumpwallR" filename="man_jump_wallR.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast" filename="man_blast.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_fall" filename="man_blast_fall.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop" filename="man_blast_drop.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_stand" filename="man_blast_stand.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="blast_dagger" filename="man_blast_dagger.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_drop_dagger" filename="man_blast_drop_dagger.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1" filename="man_spycase_standshot_1.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack1_ret" filename="man_spycase_standshot_1_return.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2" filename="man_spycase_standshot_2.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack2_ret" filename="man_spycase_standshot_2_return.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="attack_Jump" filename="man_spycase_attack_jump.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="uppercut" filename="man_spycase_smash.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="damage" filename="man_damage.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage2" filename="man_damage2.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="damage_down" filename="man_damage_down.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="blast_airmove" filename="man_blast_airmove_melee.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="login_intro" filename="man_login_knife_intro.elu.ani" sound="" gm="0" motion_type="15" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="login_idle" filename="man_login_knife_idle.elu.ani" sound="" gm="0" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="login_walk" filename="man_login_knife_walk.elu.ani" sound="" gm="0" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_start" filename="man_knife_guard_start2.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="guard_idle" filename="man_spycase_guard_idle.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="guard_block1" filename="man_spycase_guard_block_1.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block1_ret" filename="man_knife_guard_block_1_return.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_block2" filename="man_spycase_guard_block_1.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="guard_cancel" filename="man_knife_guard_cancel.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceLowerbody"></AddAnimation>
+  <AddAnimation name="taunt" filename="man_knife_taunt.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="onceidle"></AddAnimation>
+  <AddAnimation name="pit" filename="man_pit.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="bow" filename="man_knife_bow.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="wave" filename="man_knife_wave.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cry" filename="man_knife_cry.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="laugh" filename="man_knife_laugh.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="dance" filename="man_dance.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="cancel" filename="man_knife_cancel.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="charge" filename="man_knife_charge.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="slash" filename="man_knife_slash.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash1" filename="man_knife_jump_slash1.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="jump_slash2" filename="man_knife_jump_slash2.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="lastframe"></AddAnimation>
+  <AddAnimation name="lightning" filename="man_damage_lightning.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+  <AddAnimation name="stun" filename="man_stun.elu.ani" sound="" gm="1" motion_type="15" motion_loop_type="loop"></AddAnimation>
+</XML>

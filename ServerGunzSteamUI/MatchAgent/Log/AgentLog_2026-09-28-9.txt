@@ -1,0 +1,47 @@
+[Mon Sep 28 04:14:32 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Mon Sep 28 04:14:32 2026] Release Date : Sep 23 2026
+===========================================================================================
+
+[Mon Sep 28 04:14:32 2026] Match Agent Created (Port:7777)
+[Mon Sep 28 04:14:32 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Mon Sep 28 04:14:32 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Mon Sep 28 04:14:32 2026] MMatchAgent::ConnectToMatchServer END 
+[Mon Sep 28 04:17:32 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Mon Sep 28 04:20:32 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Mon Sep 28 04:23:20 2026] Agent Local Login (UID:01000, IP:191.96.101.180, Port:47684)
+[Mon Sep 28 04:23:20 2026] 191.96.101.180, 47684 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:20 2026] Agent Net Clear(UID:01000)
+[Mon Sep 28 04:23:22 2026] Agent Local Login (UID:01001, IP:191.96.101.180, Port:47690)
+[Mon Sep 28 04:23:22 2026] 191.96.101.180, 47690 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:22 2026] Agent Net Clear(UID:01001)
+[Mon Sep 28 04:23:23 2026] 191.96.101.180, 47704 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:23 2026] Agent Local Login (UID:01002, IP:191.96.101.180, Port:47704)
+[Mon Sep 28 04:23:23 2026] Agent Net Clear(UID:01002)
+[Mon Sep 28 04:23:24 2026] 191.96.101.180, 47714 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:24 2026] Agent Local Login (UID:01003, IP:191.96.101.180, Port:47714)
+[Mon Sep 28 04:23:24 2026] Agent Net Clear(UID:01003)
+[Mon Sep 28 04:23:25 2026] 191.96.101.180, 47718 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:25 2026] Agent Local Login (UID:01004, IP:191.96.101.180, Port:47718)
+[Mon Sep 28 04:23:25 2026] Agent Net Clear(UID:01004)
+[Mon Sep 28 04:23:25 2026] Agent Local Login (UID:01005, IP:191.96.101.180, Port:47720)
+[Mon Sep 28 04:23:25 2026] 191.96.101.180, 47720 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:25 2026] Agent Net Clear(UID:01005)
+[Mon Sep 28 04:23:26 2026] Agent Local Login (UID:01006, IP:191.96.101.180, Port:47722)
+[Mon Sep 28 04:23:26 2026] 191.96.101.180, 47722 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:26 2026] Agent Net Clear(UID:01006)
+[Mon Sep 28 04:23:27 2026] 191.96.101.180, 47728 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:27 2026] Agent Local Login (UID:01007, IP:191.96.101.180, Port:47728)
+[Mon Sep 28 04:23:27 2026] Agent Net Clear(UID:01007)
+[Mon Sep 28 04:23:28 2026] 191.96.101.180, 47734 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:28 2026] Agent Local Login (UID:01008, IP:191.96.101.180, Port:47734)
+[Mon Sep 28 04:23:28 2026] Agent Net Clear(UID:01008)
+[Mon Sep 28 04:23:29 2026] 191.96.101.180, 58468 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:29 2026] Agent Local Login (UID:01009, IP:191.96.101.180, Port:58468)
+[Mon Sep 28 04:23:29 2026] Agent Net Clear(UID:01009)
+[Mon Sep 28 04:23:30 2026] Agent Local Login (UID:01010, IP:191.96.101.180, Port:58472)
+[Mon Sep 28 04:23:30 2026] 191.96.101.180, 58472 is Disconnect(RCP_IO_READ Error)
+[Mon Sep 28 04:23:30 2026] Agent Net Clear(UID:01010)
+[Mon Sep 28 04:23:32 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=3
+[Mon Sep 28 04:26:32 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=3

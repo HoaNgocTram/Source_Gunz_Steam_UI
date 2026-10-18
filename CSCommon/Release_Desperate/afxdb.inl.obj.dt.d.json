@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.44.35207\\atlmfc\\include\\afxdb.inl",
+        "ProvidedModule": "",
+        "Includes": [
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.44.35207\\include\\sal.h",
+            "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.44.35207\\include\\concurrencysal.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

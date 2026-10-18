@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="NewMathcServerList">
+	<Schema xmlns="MasangData" xmlns:dt="MasangDataTypes" />
+
+<!--이미지는 BitmapAlias.xml에서 검색-->
+
+<!-- 프레임 생성 : NewMatchServerList -->
+	<FRAME item="IntroLogo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>		
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+<!-- Picture : 배경 이미지 -->
+	<PICTURE item="BG" parent="IntroLogo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>blacknullframe.tga</BITMAP>
+	</PICTURE>
+
+	<!-- 인트로 로고 -->
+	<ZINTROLOGO item="IntroPicture" parent="IntroLogo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<BITMAP type="Intro">Interface/default/Loading/Intro01.png</BITMAP>
+	</ZINTROLOGO>
+
+	<VIDEOCANVAS item="IntroVideo" parent="IntroLogo">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<VIDEOLINK>/Intro.avi</VIDEOLINK>
+	</VIDEOCANVAS>
+</XML>

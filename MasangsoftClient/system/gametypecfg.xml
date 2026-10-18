@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+<!-- GAMETYPE_DEATHMATCH_SOLO -->
+	<GAMETYPE id="0">	
+		<ROUNDS    round="5"	str="5" />
+		<ROUNDS    round="7"	str="7" />
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" />
+		<ROUNDS    round="50"	str="50" default="true" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="10"	str="10분" />
+		<LIMITTIME sec="20"	str="20분" />
+		<LIMITTIME sec="30"	str="30분" default="true" />
+		<LIMITTIME sec="40"	str="40분" />
+		<LIMITTIME sec="50"	str="50분" />
+		<LIMITTIME sec="60"	str="60분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+	<!-- GAMETYPE_DEATHMATCH_TEAM -->
+	<GAMETYPE id="1">	
+		<ROUNDS    round="3"	str="3" />
+		<ROUNDS    round="5"	str="5" />
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" default="true" />
+		<ROUNDS    round="50"	str="50" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="5"	str="5분" />
+		<LIMITTIME sec="10"	str="10분" default="true" />
+		<LIMITTIME sec="15"	str="15분" />
+		<LIMITTIME sec="20"	str="20분" />
+		<LIMITTIME sec="25"	str="25분" />
+		<LIMITTIME sec="30"	str="30분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+	
+	<!-- GAMETYPE_GLADIATOR_SOLO -->
+	<GAMETYPE id="2">	
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" />
+		<ROUNDS    round="50"	str="50" default="true" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="10"	str="10분" />
+		<LIMITTIME sec="20"	str="20분" />
+		<LIMITTIME sec="30"	str="30분" default="true" />
+		<LIMITTIME sec="40"	str="40분" />
+		<LIMITTIME sec="50"	str="50분" />
+		<LIMITTIME sec="60"	str="60분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+	<!-- GAMETYPE_GLADIATOR_TEAM -->
+	<GAMETYPE id="3">	
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" default="true" />
+		<ROUNDS    round="50"	str="50" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="5"	str="5분" />
+		<LIMITTIME sec="10"	str="10분" default="true" />
+		<LIMITTIME sec="15"	str="15분" />
+		<LIMITTIME sec="20"	str="20분" />
+		<LIMITTIME sec="25"	str="25분" />
+		<LIMITTIME sec="30"	str="30분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+	<!-- GAMETYPE_ASSASSINATE -->
+	<GAMETYPE id="4">	
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" default="true" />
+		<ROUNDS    round="50"	str="50" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="5"	str="5분" />
+		<LIMITTIME sec="10"	str="10분" default="true" />
+		<LIMITTIME sec="15"	str="15분" />
+		<LIMITTIME sec="20"	str="20분" />
+		<LIMITTIME sec="25"	str="25분" />
+		<LIMITTIME sec="30"	str="30분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+	<!-- GAMETYPE_TRAINING -->
+	<GAMETYPE id="5">	
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" />
+		<ROUNDS    round="50"	str="50" default="true" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="10"	str="10분" />
+		<LIMITTIME sec="20"	str="20분" />
+		<LIMITTIME sec="30"	str="30분" default="true" />
+		<LIMITTIME sec="40"	str="40분" />
+		<LIMITTIME sec="50"	str="50분" />
+		<LIMITTIME sec="60"	str="60분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+	<!-- GAMETYPE_SURVIVAL -->
+	<GAMETYPE id="6">	
+		<ROUNDS    round="1"	str="---" default="true" />
+		<LIMITTIME sec="-1"	str="무한" default="true" />
+		<MAXPLAYERS player="4"  str="4" default="true" />
+	</GAMETYPE>
+	
+	
+	<!-- GAMETYPE_QUEST -->
+	<GAMETYPE id="7">	
+		<ROUNDS    round="1"	str="---" default="true" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<MAXPLAYERS player="4"  str="4" default="true" />
+	</GAMETYPE> 
+
+	
+	<!-- GAMETYPE_QUEST_CHALLENGE -->
+ 	<GAMETYPE id="12">	
+		<ROUNDS    round="1"	str="---" default="true" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<MAXPLAYERS player="4"  str="4" default="true" />
+	</GAMETYPE>
+
+	<!-- GAMETYPE_BERSERKER -->
+<!-- 	<GAMETYPE id="8">	
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="20"	str="20" />
+		<ROUNDS    round="30"	str="30" />
+		<ROUNDS    round="50"	str="50" default="true" />
+		<ROUNDS    round="70"	str="70" />
+		<ROUNDS    round="100"	str="100" />
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="10"	str="10분" />
+		<LIMITTIME sec="20"	str="20분" />
+		<LIMITTIME sec="30"	str="30분" default="true" />
+		<LIMITTIME sec="40"	str="40분" />
+		<LIMITTIME sec="50"	str="50분" />
+		<LIMITTIME sec="60"	str="60분" />
+		<MAXPLAYERS player="4"  str="4명" />
+		<MAXPLAYERS player="8"  str="8명" default="true" />
+		<MAXPLAYERS player="12" str="12명" />
+		<MAXPLAYERS player="16" str="16명" />
+	</GAMETYPE> -->
+
+	<!-- GAMETYPE_DEATHMATCH_TEAM2 -->
+	<GAMETYPE id="9">	
+		<ROUNDS round="5"	str="5" /> 
+		<ROUNDS round="10"	str="10" /> 
+		<ROUNDS round="20"	str="20" /> 
+		<ROUNDS round="30"	str="30" /> 
+		<ROUNDS round="50"	str="50" /> 
+		<ROUNDS round="70"	str="70" default="true" /> 
+		<ROUNDS round="100"	str="100" /> 
+		<LIMITTIME sec="-1"	str="무한" />
+		<LIMITTIME sec="10"	str="10분" /> 
+		<LIMITTIME sec="20"	str="20분" /> 
+		<LIMITTIME sec="30"	str="30분" /> 
+		<LIMITTIME sec="40"	str="40분" default="true" /> 
+		<LIMITTIME sec="50"	str="50분" /> 
+		<LIMITTIME sec="60"	str="60분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+
+	<!-- GAMETYPE_DEATHMATCH_DUEL -->
+	
+<GAMETYPE id="10">	
+		<ROUNDS    round="10"	str="10" />
+		<ROUNDS    round="15"	str="15" />
+		<ROUNDS    round="20"	str="20" default="true" />
+		<ROUNDS    round="25"	str="25" />
+		<ROUNDS    round="30"	str="30" />
+		<LIMITTIME sec="1"	str="1분" />
+		<LIMITTIME sec="2"	str="2분" />
+		<LIMITTIME sec="3"	str="3분" default="true" />
+		<LIMITTIME sec="4"	str="4분" />
+		<LIMITTIME sec="5"	str="5분" />
+		<MAXPLAYERS player="4"  str="4" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+		<MAXPLAYERS player="16" str="16" />
+	</GAMETYPE>
+	
+	<!-- GAMETYPE_SPY -->
+<!-- 	<GAMETYPE id="14">	
+		<ROUNDS    round="3"	str="3" default="true"/>
+		<ROUNDS    round="4"	str="4" />
+		<ROUNDS    round="5"	str="5" />
+		<MAXPLAYERS player="4"  str="4명" />
+		<MAXPLAYERS player="5"  str="5명" />
+		<MAXPLAYERS player="6"  str="6명" />
+		<MAXPLAYERS player="7"  str="7명" />
+		<MAXPLAYERS player="8"  str="8명" default="true" />
+		<MAXPLAYERS player="9"  str="9명" />
+		<MAXPLAYERS player="10"  str="10명" />
+		<MAXPLAYERS player="11"  str="11명" />
+		<MAXPLAYERS player="12"  str="12명" />
+	</GAMETYPE> -->
+	
+	<!-- MMATCH_GAMETYPE_RANDOM_WEAPON -->
+ 	<GAMETYPE id="17">
+		<ROUNDS    round="50"	str="---" default="true" />
+		<LIMITTIME sec="20"	str="20분" default="true" />
+		<MAXPLAYERS player="8"  str="8" default="true" />
+		<MAXPLAYERS player="12" str="12" />
+	</GAMETYPE>	
+</XML>

@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<XML ID="CombatInterface_Skill">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />	
+	<FRAME item="CombatSkill">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<ZBMNUMLABEL item="CountDownTime" parent="CombatSkill">
+		<BOUNDS>
+			<X>250</X>
+			<Y>16</Y>
+			<W>300</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>TimeNum.png</BITMAP>
+		<FONTSIZE>
+			<W>64</W>
+			<H>64</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<ZBMNUMLABEL item="CountDownTime_Red" parent="CombatSkill">
+		<BOUNDS>
+			<X>250</X>
+			<Y>16</Y>
+			<W>300</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>TimeNum_Red.png</BITMAP>
+		<FONTSIZE>
+			<W>64</W>
+			<H>64</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+</XML>

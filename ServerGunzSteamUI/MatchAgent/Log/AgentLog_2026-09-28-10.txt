@@ -1,0 +1,12 @@
+[Mon Sep 28 04:29:27 2026] Command registeration completed
+
+================================== Agent configure info ==================================
+[Mon Sep 28 04:29:27 2026] Release Date : Sep 23 2026
+===========================================================================================
+
+[Mon Sep 28 04:29:27 2026] Match Agent Created (Port:7777)
+[Mon Sep 28 04:29:27 2026] MMatchAgent::ConnectToMatchServer BEGIN 
+[Mon Sep 28 04:29:27 2026] Request Connect to matchserver ip(163.61.182.42), port(6000).
+[Mon Sep 28 04:29:27 2026] MMatchAgent::ConnectToMatchServer END 
+[Mon Sep 28 04:32:27 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2
+[Mon Sep 28 04:35:27 2026] GARBAGE SESSION CLEANING : ClientCount=0, StageCount=0, SessionCount=1, CommandPool=2

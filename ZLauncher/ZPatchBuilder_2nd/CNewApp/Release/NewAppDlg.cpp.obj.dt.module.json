@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": ".\\Release\\NewAppDlg.obj",
+            "outputs": [
+                ".\\Release\\NewAppDlg.cpp.obj.dt.module.json",
+                ".\\Release\\NewAppDlg.cpp.obj.dt.d.json",
+                ".\\Release/NewApp.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

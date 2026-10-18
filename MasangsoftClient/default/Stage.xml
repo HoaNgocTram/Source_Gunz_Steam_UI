@@ -1,0 +1,1892 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Stage">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Stage 화면 구성
+   
+   Last Update : 8.NOV.2004
+   Editor      : Lim Dong Hwan
+-->
+
+<!-- 프레임 생성 : Stage -->
+	<FRAME item="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<!-- Picture :스테이지 bg -->
+	<PICTURE item="Stage_MainBG" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Play_Lobby_Background.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="Stage_Title_BG" parent="Stage">
+		<BOUNDS>
+			<X>552</X>
+			<Y>164</Y>
+			<W>1316</W>
+			<H>162</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>12</R>
+			<G>13</G>
+			<B>14</B>
+			<ALPHA>178</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE> 
+		
+	<PICTURE item="Stage_MainBGTop" parent="Stage">
+		<BOUNDS>
+			<X>552</X>
+			<Y>164</Y>
+			<W>426</W>
+			<H>162</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<PICTURE item="Stage_MainBGTitleTop" parent="Stage">
+		<BOUNDS>
+			<X>644</X>
+			<Y>216</Y> 
+			<W>242</W>
+			<H>56</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>	
+						
+	<!-- Label : 방제 정보 표시 -->
+	<LABEL item="StageNameLabel" parent="Stage">
+		<FONT>FONTb14b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>214</G>
+			<B>88</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1006</X>
+			<Y>197</Y>
+			<W>410</W>
+			<H>35</H>
+		</BOUNDS>
+	</LABEL>
+
+	<!-- Picture : 비밀번호 유무 아이콘 -->
+	<PICTURE item="Stage_PasswordIcon" parent="Stage">
+		<BOUNDS>
+			<X>1415</X>
+			<Y>205</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Lobby_RoomList_Lock.png</BITMAP>
+	</PICTURE>
+
+	<LABEL item="StageMapNameLabel" parent="Stage">
+		<FONT>FONTa14</FONT>
+		<TEXTCOLOR>
+			<R>133</R>
+			<G>133</G>
+			<B>133</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1006</X>
+			<Y>235</Y>
+			<W>180</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>Stage</TEXT>
+	</LABEL>
+
+	<!-- Picture : 옵션 아이콘 1 -->
+	<PICTURE item="Stage_OptionIcon_1" parent="Stage">
+		<BOUNDS>
+			<X>1006</X>
+			<Y>272</Y>
+			<W>31</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>HideOut_FilterIcon_Chat.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 옵션 아이콘 2 -->
+	<PICTURE item="Stage_OptionIcon_2" parent="Stage">
+		<BOUNDS>
+			<X>1040</X>
+			<Y>272</Y>
+			<W>31</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>HideOut_FilterIcon_Weapon.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 옵션 아이콘 3 -->
+	<PICTURE item="Stage_OptionIcon_3" parent="Stage">
+		<BOUNDS>
+			<X>1074</X>
+			<Y>272</Y>
+			<W>31</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>HideOut_FilterIcon_BreakIn.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 옵션 아이콘 4 -->
+	<PICTURE item="Stage_OptionIcon_4" parent="Stage">
+		<BOUNDS>
+			<X>1108</X>
+			<Y>272</Y>
+			<W>31</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>HideOut_FilterIcon_Special.png</BITMAP>
+	</PICTURE>
+
+	<!-- Picture : 옵션 아이콘 5 -->
+	<PICTURE item="Stage_OptionIcon_5" parent="Stage">
+		<BOUNDS>
+			<X>1142</X>
+			<Y>272</Y>
+			<W>31</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>HideOut_FilterIcon_Special.png</BITMAP>
+	</PICTURE>
+	
+<!-- 캐릭터 뷰어 -->
+	<FRAME item="Stage_CharacterInfo" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+
+	<!-- CHARACTERVIEW : 캐릭터 뷰어 -->
+	<CHARACTERVIEW item="Stage_Charviewer" parent="Stage_CharacterInfo">
+		<BOUNDS>
+			<X>55</X>
+			<Y>175</Y>
+			<W>487</W>
+			<H>667</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<ENABLEROTATEZOOM>
+			<ROTATE>true</ROTATE>
+			<ZOOM>false</ZOOM>
+		</ENABLEROTATEZOOM>
+		<VISIBLE>true</VISIBLE>
+	</CHARACTERVIEW>
+	
+	<!-- Picture : 캐릭터 정보 배경 -->
+	<PICTURE item="Stage_CharacterInfo_BG" parent="Stage">
+		<BOUNDS>
+			<X>53</X>
+			<Y>841</Y>
+			<W>468</W>
+			<H>134</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>26</R>
+			<G>28</G>
+			<B>30</B>
+			<ALPHA>204</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<PICTURE item="Stage_CharacterInfo_Deco" parent="Stage">
+		<BOUNDS>
+			<X>53</X>
+			<Y>841</Y>
+			<W>4</W>
+			<H>134</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>55</R>
+			<G>128</G>
+			<B>131</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- Label : 플레이어 이름 표시 -->
+	<ZOUTLINELABEL item="Stage_PlayerName" parent="Stage">
+		<FONT>FONTa14</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>	
+		<BOUNDS>
+			<X>151</X>
+			<Y>854</Y>
+			<W>300</W>
+			<H>30</H>
+		</BOUNDS>
+		<OUTLINECOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</OUTLINECOLOR>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_STAGE_01</TEXT> <!-- 이름 -->
+	</ZOUTLINELABEL>
+	
+
+	<!-- Label : 플레이어 상세정보 표시(Clan) -->
+	<LABEL item="Stage_PlayerSpecClan" parent="Stage">
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>151</X>
+			<Y>884</Y>
+			<W>150</W>
+			<H>23</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_02</TEXT> <!-- 클랜 : -->
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(Level) -->
+	<LABEL item="Stage_PlayerSpecLevel" parent="Stage">
+		<FONT>FONTa16b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>83</X>
+			<Y>884</Y>
+			<W>50</W>
+			<H>23</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_STAGE_03</TEXT> <!-- Level -->
+	</LABEL>
+	
+	<LABEL item="Stage_PlayerSpecLevelValue" parent="Stage">
+		<FONT>FONTa16b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>83</X>
+			<Y>908</Y>
+			<W>50</W>
+			<H>23</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_STAGE_03</TEXT> <!-- 레벨 : 0 lv. -->
+	</LABEL>
+	
+	<!-- Label : 플레이어 상세정보 표시(Kill,Death) -->
+	<LABEL item="Stage_PlayerSpecKillDeath" parent="Stage">
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>151</X>
+			<Y>912</Y>
+			<W>350</W>
+			<H>23</H>			
+		</BOUNDS>
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(WinningPercent) -->
+	<LABEL item="Stage_PlayerSpecWinning" parent="Stage">
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>155</R>
+			<G>155</G>
+			<B>155</B>
+		</TEXTCOLOR>
+		<BOUNDS> 	
+			<X>151</X>
+			<Y>942</Y>
+			<W>130</W>
+			<H>23</H>			
+		</BOUNDS>
+	</LABEL>
+	
+	<!-- Picture : 이미지 프레임 출력 -->
+	<PICTURE item ="Stage_FrameBG" parent="Stage">
+		<BOUNDS>
+			<X>8</X>
+			<Y>118</Y>
+			<W>784</W>
+			<H>425</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- 채팅창 -->
+	<ICONBUTTON item="StageChattingButton" parent="Stage">
+		<BOUNDS>
+			<X>53</X>
+			<Y>993</Y>
+			<W>57</W>
+			<H>57</H>
+		</BOUNDS>
+		<INFORMRECT>
+			<X>30</X>
+			<Y>4</Y>
+			<W>20</W>
+			<H>20</H>
+		</INFORMRECT>
+		<BITMAP type="bg" state="base">ChatButton_Default.png</BITMAP>
+		<BITMAP type="bg" state="over">ChatButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">ChatButton_Default.png</BITMAP>
+		<BITMAP type="inform">MissionTabReddot.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>58</R>
+				<G>163</G>
+				<B>137</B>
+			</BASE>
+			<OVER>
+				<R>122</R>
+				<G>228</G>
+				<B>202</B>
+			</OVER>
+			<DOWN>
+				<R>58</R>
+				<G>163</G>
+				<B>137</B>
+			</DOWN>
+			<DISABLE>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</DISABLE>
+		</COLOR>
+		<COLOR type="bg">
+			<OVER>
+				<R>255</R>
+				<G>255</G>
+				<B>255</B>
+			</OVER>
+		</COLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+		
+	<FRAME item="StageChattingFrame" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>53</X>
+			<Y>707</Y>
+			<W>468</W>
+			<H>260</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<PICTURE item ="StageChatting_BG" parent="StageChattingFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>468</W>
+			<H>260</H><!--20-->
+		</BOUNDS>
+		<COLOR>
+			<R>19</R>
+			<G>21</G>
+			<B>22</B>
+			<ALPHA>178</ALPHA>
+		</COLOR>
+		<STRETCH/>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- TEXTAREA : 채팅창 -->
+	<TEXTAREA item = "StageChattingOutput" parent = "StageChattingFrame">
+		<FONT>FONTa11</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>8</X>
+			<Y>10</Y>
+			<W>450</W>
+			<H>197</H>
+		</BOUNDS>
+		<MOVABLE>false</MOVABLE>
+		<EDITABLE>false</EDITABLE>
+		<MAXLENGTH>4096</MAXLENGTH>
+		<TEXTAREALOOK>TextAreaLook</TEXTAREALOOK>
+		<INDENTATION>0</INDENTATION>
+	</TEXTAREA>
+	
+	<!-- EDIT : 대화 내용 입력창 -->
+	<EDIT item="StageChattingInput" parent="StageChattingFrame">
+		<EDITLOOK>NullEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>8</X>
+			<Y>222</Y>
+			<W>450</W>
+			<H>32</H>
+		</BOUNDS>
+	</EDIT>
+	
+	<!--PlayrtListBtn-->
+	<PICTURE item ="StagePlayerList_Tab" parent="Stage">
+		<BOUNDS>
+			<X>552</X>
+			<Y>335</Y>
+			<W>1316</W>
+			<H>717</H><!--20-->
+		</BOUNDS>
+		<COLOR>
+			<R>12</R>
+			<G>13</G>
+			<B>14</B>
+			<ALPHA>178</ALPHA>
+		</COLOR>
+		<STRETCH/>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- PLAYER LIST -->
+<!-- Label : 플레이어 리스트 -->
+	<PICTURE item="Stage_PlayerList_Deco" parent="Stage">
+		<BOUNDS>
+			<X>574</X>
+			<Y>360</Y>
+			<W>1272</W>
+			<H>4</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>67</R>
+			<G>100</G>
+			<B>145</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="Stage_PlayerList_Red_Deco" parent="Stage">
+		<BOUNDS>
+			<X>573</X>
+			<Y>360</Y>
+			<W>630</W>
+			<H>4</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>186</R>
+			<G>69</G>
+			<B>69</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="Stage_PlayerList_Blue_Deco" parent="Stage">
+		<BOUNDS>
+			<X>1216</X>
+			<Y>360</Y>
+			<W>630</W>
+			<H>4</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>67</R>
+			<G>100</G>
+			<B>145</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="Stage_PlayerList_Mode" parent="Stage">
+		<FONT>FONTb21b</FONT>
+		<TEXTCOLOR>
+			<R>82</R>
+			<G>120</G>
+			<B>172</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1063</X>
+			<Y>372</Y>
+			<W>300</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXTALIGN> <HALIGN>center</HALIGN> <VALIGN>center</VALIGN> </TEXTALIGN>
+		<TEXT>Stage</TEXT>
+	</LABEL>
+	<LABEL item="Stage_PlayerList_Red" parent="Stage">
+		<FONT>FONTb21b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>61</G>
+			<B>61</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>591</X>
+			<Y>372</Y>
+			<W>300</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_27</TEXT>
+	</LABEL>
+	<LABEL item="Stage_PlayerList_Blue" parent="Stage">
+		<FONT>FONTb21b</FONT>
+		<TEXTCOLOR>
+			<R>82</R>
+			<G>120</G>
+			<B>172</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1234</X>
+			<Y>372</Y>
+			<W>300</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_28</TEXT>
+	</LABEL>
+
+	<!-- PLAYERLISTBOX : 게임 참가자 리스트 -->
+	<PLAYERLISTBOX item="StagePlayerList_" parent = "Stage" >
+		<BOUNDS>
+			<X>574</X>
+			<Y>422</Y>
+			<W>1274</W>
+			<H>524</H>
+		</BOUNDS>
+		<PROFILERECT idx="0"> <!-- 프로필 아이콘 -->
+			<X>1</X>
+			<Y>1</Y>
+			<W>60</W>
+			<H>60</H>
+		</PROFILERECT>
+		<PROFILERECT idx="1"> <!-- 프로필 프레임 -->
+			<X>1</X>
+			<Y>1</Y>
+			<W>60</W>
+			<H>60</H>
+		</PROFILERECT>
+		<PROFILERECT idx="2"> <!-- 프로필 배경 -->
+			<X>60</X>
+			<Y>1</Y>
+			<W>221</W>
+			<H>60</H>
+		</PROFILERECT>
+		<PROFILERECT idx="3"> <!-- 닉네임 -->
+			<X>73</X>
+			<Y>19</Y>
+			<W>142</W>
+			<H>30</H>
+		</PROFILERECT>
+		<PROFILERECT idx="4"> <!-- 방장 마크 -->
+			<X>498</X>
+			<Y>21</Y>
+			<W>19</W>
+			<H>16</H>
+		</PROFILERECT>
+		<PROFILERECT idx="5"> <!-- 클랜 아이콘 -->
+			<X>281</X>
+			<Y>1</Y>
+			<W>60</W>
+			<H>60</H>
+		</PROFILERECT>
+		<PROFILERECT idx="6"> <!-- 클랜명 -->
+			<X>357</X>
+			<Y>19</Y>
+			<W>96</W>
+			<H>30</H>
+		</PROFILERECT>
+		<PROFILERECT idx="7"> <!-- 유저 상태 -->
+			<X>512</X>
+			<Y>19</Y>
+			<W>100</W>
+			<H>30</H>
+		</PROFILERECT>
+		<RECT type="clan">
+			<X>283</X>
+			<Y>0</Y>
+			<W>208</W>
+			<H>62</H>
+		</RECT>
+		<RECT type="buttonicon">
+			<X>289</X>
+			<Y>14</Y>
+			<W>33</W>
+			<H>33</H>
+		</RECT>
+		<SELECTED>false</SELECTED>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>		
+		<MODE1></MODE1>
+		<FONT>FONTa14</FONT>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</PLAYERLISTBOX>
+	
+	<!-- LABEL : 선택한 리전 라벨 -->
+	<LABEL item="StageRegionLabel" parent="Stage">
+		<FONT>FONTa14</FONT>
+		<BOUNDS>
+			<X>1620</X>
+			<Y>177</Y>
+			<W>200</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>189</R>
+			<G>189</G>
+			<B>189</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>N/A</TEXT>
+	</LABEL>
+
+	<!-- PICTURE : 레이턴시 아이콘 -->
+	<PICTURE item="StageLatencyIcon" parent="Stage">
+		<BOUNDS>
+			<X>1831</X>
+			<Y>180</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RegionPing_Unknown.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+
+	<!-- 게임 설정창 -->
+	<ICONBUTTON item="StageGameInfoButton" parent="Stage">
+		<BOUNDS>
+			<X>1794</X>
+			<Y>215</Y>
+			<W>54</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">Lobby_FilterDefaultButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">Lobby_FilterDefaultButtonOver.png</BITMAP>
+		<BITMAP type="icon" state="base">SettingIcon.png</BITMAP>
+		<ICONRECT>
+			<X>10</X>
+			<Y>13</Y>
+			<W>34</W>
+			<H>34</H>
+		</ICONRECT>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+		
+	<!-- ITEMSLOT : 희생 아이템 버튼 0 -->
+	<ITEMSLOT item="Stage_SacrificeItemButton0" parent="Stage" parts="none">
+		<BOUNDS>
+			<X>1230</X>
+			<Y>674</Y>
+			<W>173</W>
+			<H>173</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>			
+	</ITEMSLOT>
+	
+	<!-- ITEMSLOT : 희생 아이템 버튼 1 -->
+	<ITEMSLOT item="Stage_SacrificeItemButton1" parent="Stage" parts="none">
+		<BOUNDS>
+			<X>1664</X>
+			<Y>674</Y>
+			<W>173</W>
+			<H>173</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>			
+	</ITEMSLOT>
+
+	
+	<!-- BMBUTTON : 게임 시작 버튼 -->
+	<BMBUTTON item="GameStart2" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>			
+		<STRETCH/>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<ICONBUTTON item="GameStart" parent="Stage">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>1022</X>
+			<Y>969</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="bg" state="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>235</B>
+			</OVER>
+			<DOWN>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DOWN>
+			<DISABLE>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_STAGE_29</TEXT>
+		<TEXTRECT>
+			<X>142</X>
+			<Y>18</Y>
+			<W>90</W>
+			<H>24</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- BMBUTTON : 준비 완료 버튼 -->
+	<BMBUTTON item="StageReady" parent="Stage">
+		<BOUNDS>
+			<X>1022</X>
+			<Y>969</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOff.png</BITMAP>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_STAGE_30</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<!-- BMBUTTON : 난입 버튼 -->
+	<BMBUTTON item="ForcedEntryToGame" parent="Stage">
+		<BOUNDS>
+			<X>1022</X>
+			<Y>969</Y>
+			<W>374</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="up">HideOut_QuickStartButtonOn.png</BITMAP>
+		<BITMAP type="over">HideOut_QuickStartButtonOver.png</BITMAP>
+		<BITMAP type="down">HideOut_QuickStartButtonOff.png</BITMAP>
+		<STRETCH/>
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_STAGE_31</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<!-- BUTTON : 난입 버튼 -->
+	<BUTTON item="ForcedEntryToGame2" parent="Stage">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_11</TEXT> <!-- 난입(&amp;G) -->
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BUTTON>
+	
+		
+	<!-- ICONBUTTON : 나가기 버튼 -->
+	<BMBUTTON item="Lobby_StageExit" parent="Stage">
+		<BOUNDS>
+			<X>1642</X>
+			<Y>969</Y>
+			<W>214</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="up">Lobby_FilterApplyButtonOn.png</BITMAP>
+		<BITMAP type="over">Lobby_FilterApplyButtonOver.png</BITMAP>
+		<BITMAP type="down">Lobby_FilterApplyButtonOff.png</BITMAP>
+		<STRETCH/>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_TOOLTIP_EXIT</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+<!-- 아이템 리스트 뷰어 -->
+	<FRAME item="Stage_Quest_ItemListView" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+	<PICTURE item="Stage_Quest_ItemListView_BG" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>574</X>
+			<Y>600</Y>
+			<W>630</W>
+			<H>316</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>21</R>
+			<G>22</G>
+			<B>24</B>
+			<ALPHA>204</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE> 
+	
+	<PICTURE item="Stage_Quest_ItemListbox_BG" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>582</X>
+			<Y>608</Y>
+			<W>614</W>
+			<H>300</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>36</R>
+			<G>38</G>
+			<B>41</B>
+			<ALPHA>178</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE> 
+	
+	<PICTURE item="Stage_Quest_ItemListbox_Title_BG" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>582</X>
+			<Y>608</Y>
+			<W>614</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>40</R>
+			<G>42</G>
+			<B>50</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE> 
+	
+	<!-- Picture : 희생 아이템 슬롯 배경 -->
+	<PICTURE item="Stage_SacrificeItemBG" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>1220</X>
+			<Y>547</Y>
+			<W>633</W>
+			<H>420</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ItemSlot.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 희생 아이템 이미지 0 -->
+	<PICTURE item="Stage_SacrificeItemImage0" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>1276</X>
+			<Y>719</Y>
+			<W>80</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 희생 아이템 이미지 1 -->
+	<PICTURE item="Stage_SacrificeItemImage1" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>1710</X>
+			<Y>720</Y>
+			<W>80</W>
+			<H>80</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<ANIMATION item="Stage_Flame0" parent="Stage_Quest_ItemListView">
+		<PLAYMODE>stop</PLAYMODE>
+		<ANIMTEMPLATE>FlameEffect</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>1276</X>
+			<Y>719</Y>
+			<W>94</W>
+			<H>85</H>
+		</BOUNDS>
+	</ANIMATION>
+
+	<!-- ANIMATION : 불타는 애니메이션 1 -->
+	<ANIMATION item="Stage_Flame1" parent="Stage_Quest_ItemListView">
+		<PLAYMODE>stop</PLAYMODE>
+		<ANIMTEMPLATE>FlameEffect</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>1710</X>
+			<Y>720</Y>
+			<W>94</W>
+			<H>85</H>
+		</BOUNDS>
+	</ANIMATION>
+	
+	<PICTURE item="Stage_SenarioNameImg" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>1320</X>
+			<Y>850</Y>
+			<W>435</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BossTitleBG.png</BITMAP>
+	</PICTURE>
+	
+	<LABEL item="Stage_SenarioName" parent="Stage_Quest_ItemListView">
+		<FONT>FONTb16</FONT>
+		<TEXTCOLOR>
+			<R>226</R>
+			<G>186</G>
+			<B>65</B>
+		</TEXTCOLOR>
+		<TEXTALIGN> 
+			<HALIGN>center</HALIGN> 
+			<VALIGN>center</VALIGN> 
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>1368</X>
+			<Y>844</Y>
+			<W>340</W>
+			<H>55</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<!-- LISTBOX : 내 희생 아이템 목록 -->
+	<ITEMLISTBOX item="Stage_SacrificeItemListbox" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>582</X>
+			<Y>650</Y>
+			<W>614</W>
+			<H>258</H>
+		</BOUNDS>
+		<STRETCH/>
+		<ITEMHEIGHT>94</ITEMHEIGHT>
+		<VIEWSTYLE>2</VIEWSTYLE>
+		<RECT type="icon">
+			<X>28</X>
+			<Y>19</Y>
+			<W>56</W>
+			<H>56</H>
+		</RECT>
+		<RECT type="grade">
+			<X>17</X>
+			<Y>8</Y>
+			<W>78</W>
+			<H>78</H>
+		</RECT>
+		<RECT type="text">
+			<X>25</X>
+			<Y>35</Y>
+			<W>180</W>
+			<H>30</H>
+		</RECT>
+		<BITMAP type="grade">ItemRFrame_White.png</BITMAP>
+		<BITMAP type="grade">ItemRFrame_Blue.png</BITMAP>
+		<BITMAP type="grade">ItemRFrame_Yellow.png</BITMAP>
+		<BITMAP type="grade">ItemRFrame_Orange.png</BITMAP>
+		<BITMAP type="grade">ItemRFrame_Purple.png</BITMAP>
+		<BITMAP type="grade">ItemRFrame_Red.png</BITMAP>
+		<FONT>FONTa14</FONT>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ITEMLISTBOX>
+	
+	<ZRICHTOOLTIP item="Stage_SacrificeItemTooltip" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">ShopEquipTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<COLOR type="textcolor">
+			<R>200</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>389</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>350</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_08" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTb21b" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>			
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>132</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="ItemSourceSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>54</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>				
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Equipment_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+	
+	<!-- BUTTON : 선택한 희생 아이템 놓기 버튼 -->
+	<ICONBUTTON item="Stage_PutSacrificeItem" parent="Stage_Quest_ItemListView">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>574</X>
+			<Y>969</Y>
+			<W>214</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">Lobby_RoomCreateButton.png</BITMAP>
+		<BITMAP type="bg" state="over">Lobby_RoomCreateButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">Lobby_RoomCreateButton_Off.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>58</R>
+				<G>163</G>
+				<B>137</B>
+			</BASE>
+			<OVER>
+				<R>122</R>
+				<G>228</G>
+				<B>202</B>
+			</OVER>
+			<DOWN>
+				<R>74</R>
+				<G>125</G>
+				<B>112</B>
+			</DOWN>
+			<DISABLE>
+				<R>74</R>
+				<G>125</G>
+				<B>112</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_STAGE_20</TEXT>
+		<TEXTRECT>
+			<X>87</X>
+			<Y>18</Y>
+			<W>40</W>
+			<H>24</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<!-- 아이템 리스트 타이틀 라벨 -->
+	<LABEL item="Stage_ItemListBox_Label" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>582</X>
+			<Y>606</Y>
+			<W>614</W>
+			<H>42</H>
+		</BOUNDS>
+		<FONT>FONTa16b</FONT>
+		<TEXTCOLOR>
+			<R>199</R>
+			<G>199</G>
+			<B>199</B>
+		</TEXTCOLOR>
+		<TEXTALIGN> <HALIGN>center</HALIGN> <VALIGN>center</VALIGN> </TEXTALIGN>
+		<TEXT>STR:UI_STAGE_33</TEXT> <!-- 아이템 -->
+	</LABEL>
+	
+	<!-- Label : 퀘스트 레벨 -->
+	<LABEL item="Stage_QuestLevel" parent="Stage_Quest_ItemListView">
+		<TEXTCOLOR>
+			<R>50</R>
+			<G>192</G>
+			<B>198</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1430</X>
+			<Y>734</Y>
+			<W>211</W>
+			<H>47</H>
+		</BOUNDS>
+		<FONT>FONTa16b</FONT>
+		<TEXTALIGN> <HALIGN>center</HALIGN> <VALIGN>center</VALIGN> </TEXTALIGN>
+	</LABEL>
+
+	<!-- PICTURE : 퀘스트 레벨 주의 배경 -->
+	<PICTURE item="Stage_QuestLevel_Warning_BG" parent="Stage_Quest_ItemListView">
+		<BOUNDS>
+			<X>1320</X>
+			<Y>850</Y>
+			<W>434</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>QuestItemWarning_BG.png</BITMAP>
+	</PICTURE>
+
+	<!-- LABEL : 퀘스트 레벨 주의 -->
+	<LABEL item="Stage_QuestLevel_Warning" parent="Stage_Quest_ItemListView">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1320</X>
+			<Y>850</Y>
+			<W>434</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa12</FONT>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:QUEST_SACRIFICE_WARNING</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<!-- 릴레이맵 리스트 뷰어 -->
+	<FRAME item="Stage_RelayMapListView" parent="Stage">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>163</Y>
+			<W>400</W>
+			<H>535</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+
+	
+	<!-- Picture : 릴레이맵 리스트 배경 이미지 출력 BITMAP은 코드상에 하드코딩-->
+	<PICTURE item ="Stage_RelayMapBG" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>355</W>
+			<H>535</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>21</R>
+			<G>22</G>
+			<B>24</B>
+			<ALPHA>204</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- Picture : 릴레이맵 리스트 배경 -->
+	<PICTURE item ="Stage_MapListBG" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>6</X>
+			<Y>48</Y>
+			<W>343</W>
+			<H>163</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>36</R>
+			<G>38</G>
+			<B>41</B>
+			<ALPHA>179</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+<!-- Picture : 선택 된 릴레이맵 리스트 배경 -->
+	<PICTURE item ="Stage_SelectRelayMapListBG" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>6</X>
+			<Y>217</Y>
+			<W>343</W>
+			<H>220</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>36</R>
+			<G>38</G>
+			<B>41</B>
+			<ALPHA>179</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+	<!-- COMBOBOX : 릴레이맵 방식 콤보박스 -->
+	<ZCOMBOBOX item="Stage_RelayMapType" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RelayListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>6</X>
+			<Y>6</Y>
+			<W>199</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>210</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<!-- COMBOBOX : 릴레이맵 회차 콤보박스 -->
+	<ZCOMBOBOX item="Stage_RelayMapRepeatCount" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RelayRepeatListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>204</X>
+			<Y>6</Y>
+			<W>145</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>210</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<!-- LISTBOX : 맵 목록 -->
+	<ZMLISTBOX item="Stage_MapListbox" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>6</X>
+			<Y>48</Y>
+			<W>343</W>
+			<H>163</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<STRETCH/>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZMLISTBOX>
+		
+	<!-- Picture : 분리막대선 -->
+	<PICTURE item ="Stage_SeperateBar" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>0</X>
+			<Y>213</Y>
+			<W>355</W>
+			<H>2</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- LISTBOX : 릴레이맵 목록 -->
+	<ZMLISTBOX item="Stage_RelayMapListbox" parent="Stage_RelayMapListView">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BOUNDS>
+			<X>6</X>
+			<Y>217</Y>
+			<W>343</W>
+			<H>213</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<STRETCH/>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZMLISTBOX>
+		
+	<!-- BMBUTTON : 확인 버튼 -->
+	<BMBUTTON item="Stage_RelayMap_OK_Button" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>71</X>
+			<Y>459</Y>
+			<W>214</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Lobby_RoomCreateButton.png</BITMAP>
+		<BITMAP type="over">Lobby_RoomCreateButton_Over.png</BITMAP>
+		<BITMAP type="down">Lobby_RoomCreateButton_Off.png</BITMAP>
+		<TEXT>STR:UI_CI_14</TEXT> <!-- 확인 -->
+		<FONT>FONTb16b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+		
+	<!-- BMBUTTON : 릴레이맵 리스트 열기 버튼 -->
+	<ICONBUTTON item="Stage_RelayMapBoxOpen" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>354</X>
+			<Y>163</Y>
+			<W>38</W>
+			<H>210</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">MailList.png</BITMAP>
+		<BITMAP type="bg" state="over">MailList.png</BITMAP>
+		<BITMAP type="icon" state="base">SlotStepper_RArrow.png</BITMAP>
+		<ICONRECT>
+			<X>15</X>
+			<Y>78</Y>
+			<W>8</W>
+			<H>13</H>
+		</ICONRECT>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+		
+	<!-- BMBUTTON : 릴레이맵 리스트 닫기 버튼 -->
+	<ICONBUTTON item="Stage_RelayMapBoxClose" parent="Stage_RelayMapListView">
+		<BOUNDS>
+			<X>354</X>
+			<Y>163</Y>
+			<W>38</W>
+			<H>210</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">MailList.png</BITMAP>
+		<BITMAP type="bg" state="over">MailList.png</BITMAP>
+		<BITMAP type="icon" state="base">SlotStepper_LArrow.png</BITMAP>
+		<ICONRECT>
+			<X>15</X>
+			<Y>78</Y>
+			<W>8</W>
+			<H>13</H>
+		</ICONRECT>
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+			
+	<PICTURE item="Stage_SenarioTitle_BG" parent="Stage">
+		<BOUNDS>
+			<X>574</X>
+			<Y>682</Y>
+			<W>1272</W>
+			<H>54</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR type="left">
+			<R>50</R>
+			<G>175</G>
+			<B>255</B>
+			<ALPHA>38</ALPHA>
+		</COLOR>
+		<COLOR type="right">
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>0</ALPHA>
+		</COLOR>
+		<GRADIENTRECT>true</GRADIENTRECT>
+	</PICTURE>
+	
+	<PICTURE item="Stage_SenarioTitle_Deco" parent="Stage">
+		<BOUNDS>
+			<X>574</X>
+			<Y>682</Y>
+			<W>6</W>
+			<H>54</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>50</R>
+			<G>175</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<PICTURE item="Stage_SenarioDescription_BG" parent="Stage">
+		<BOUNDS>
+			<X>574</X>
+			<Y>745</Y>
+			<W>1272</W>
+			<H>144</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>33</R>
+			<G>35</G>
+			<B>38</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- LABEL : 시나리오 제목 표시 레이블 -->
+	<LABEL item="Stage_SenarioTitle" parent="Stage">
+		<FONT>FONTb16b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>603</X>
+			<Y>682</Y>
+			<W>300</W>
+			<H>54</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+
+	<TEXTAREA item="Stage_SenarioDescription" parent="Stage">
+	<FONT>FONTa14</FONT>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>600</X>
+			<Y>772</Y>
+			<W>1220</W>
+			<H>50</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- Label : 권장 기록 레벨 -->
+	<LABEL item="Stage_SenarioWorldRecord" parent="Stage">
+		<TEXTCOLOR>
+			<R>50</R>
+			<G>175</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>830</X>
+			<Y>845</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_18</TEXT> <!-- 권장 기록 : 0 -->
+	</LABEL>
+	
+	<LABEL item="Stage_SenarioBestRecord" parent="Stage">
+		<TEXTCOLOR>
+			<R>50</R>
+			<G>175</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>600</X>
+			<Y>845</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_STAGE_18</TEXT> <!-- 권장 기록 : 0 -->
+	</LABEL>
+	
+</XML>

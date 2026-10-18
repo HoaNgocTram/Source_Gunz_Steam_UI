@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\MMatchItem.obj",
+            "outputs": [
+                "Release_Desperate\\MMatchItem.h.obj.dt.module.json",
+                "Release_Desperate\\MMatchItem.h.obj.dt.d.json",
+                "Release_Desperate\\CSCommon.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

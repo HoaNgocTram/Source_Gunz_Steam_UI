@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+<!-- Error Massage -->
+<STR id="100">Trình giao tiếp không có UID. Trình giao tiếp này phải được khởi tạo bởi Bộ điều khiển chính.</STR>
+<STR id="101">Trình giao tiếp không còn không gian UID để cấp phát cho UID của bạn.</STR>
+<STR id="110">Trình giao tiếp cố gắng kết nối đến một kết nối trực tiếp không hợp lệ.</STR>
+<STR id="200">Lệnh có UID người nhận không hợp lệ. Nếu bạn chưa kết nối với bất kỳ máy chủ nào và chưa đặt người nhận mặc định, bạn phải thực hiện trước.</STR>
+<STR id="300">Máy chủ vùng không được kết nối với Bộ điều khiển chính.</STR>
+<STR id="301">Máy chủ vùng cố gắng vô hiệu hóa Bộ điều khiển chính.</STR>
+<STR id="1000">UID đối tượng không hợp lệ.</STR>
+<!--
+<STR id="1001"></STR>
+-->
+
+<STR id="2000">Lỗi mở file bản đồ.</STR>
+
+<!-- Connection, Login -->
+<STR id="10000">Vui lòng kiểm tra mật khẩu và thử lại.</STR>
+<STR id="10001">ID này đã được sử dụng.</STR>
+<STR id="10002">Phiên bản client không khớp với máy chủ.</STR>
+<STR id="10003">Máy chủ đã đầy.</STR>
+<STR id="10004">ID này đã bị cấm khỏi GunZ online.</STR>
+<STR id="10005">Xác thực thất bại.</STR>
+<STR id="10006">Đang kết thúc trò chơi. Han đã đăng nhập từ một PC khác với cùng ID.</STR>
+<STR id="10007">Kết nối thất bại. Vui lòng thử lại sau.</STR>
+<STR id="10008">Không thể lấy thông tin tài khoản. Vui lòng thử lại sau.</STR>
+<STR id="10009">Phiên bản client sai. Vui lòng chạy 'Sửa chữa' từ Ijji Reactor hoặc cài đặt lại client GunZ.</STR>
+<STR id="10010">Vui lòng chờ trong khi trò chơi cố gắng kết nối.</STR>
+<STR id="10011">Địa chỉ IP của bạn đến từ khu vực chúng tôi không hỗ trợ.</STR>
+<STR id="10012">Thông tin đăng nhập của bạn đã lỗi thời hoặc không khả dụng. Vui lòng khởi động lại Ijji Reactor.</STR>
+<STR id="10014">Để đăng nhập vào GunZ Duel, bạn phải kích hoạt tài khoản qua email.</STR>
+<STR id="10015">Tài khoản của bạn đã được tạo thành công.</STR>
+
+<!-- Character Admin -->
+<STR id="10100">Tên nhân vật này đã được sử dụng.</STR>
+<STR id="10101">Bạn đã sử dụng các ký tự không hợp lệ. Vui lòng chỉ sử dụng chữ cái và số.</STR>
+<STR id="10102">Tên nhân vật quá ngắn.</STR>
+<STR id="10103">Tên nhân vật quá dài.</STR>
+<STR id="10104">Nhập tên nhân vật.</STR>
+<STR id="10110">Tên nhân vật không tồn tại.</STR>
+<STR id="10111">Không thể xóa nhân vật nếu nó thuộc về một bang hội hoặc sở hữu vật phẩm trả phí.</STR>
+
+<!-- Item -->
+<STR id="20001">Không đủ tiền thưởng (Bounty)!</STR>
+<STR id="20002">Bạn không được phép mua vật phẩm này.</STR>
+<STR id="20003">Bạn không được phép trang bị vật phẩm này.</STR>
+<STR id="20004">Bạn không được phép tháo vật phẩm này.</STR>
+<STR id="20005">Bạn không được phép bán vật phẩm này.</STR>
+<STR id="20006">Bạn không được phép bán vật phẩm đang trang bị.</STR>
+<STR id="20007">Vật phẩm không có sẵn.</STR>
+<STR id="20008">Bạn có quá nhiều vật phẩm.</STR>
+<STR id="20009">Vật phẩm đã chọn không tồn tại.</STR>
+<STR id="20010">Vật phẩm bạn chọn quá nặng so với cấu hình hiện tại.</STR>
+<STR id="20011">Bạn phải đạt cấp độ cao hơn để sử dụng vật phẩm này.</STR>
+<STR id="20012">Không thể trang bị cùng một vật phẩm vào một ô.</STR>
+<STR id="20013">Không thể tháo vì tổng trọng lượng quá lớn.</STR>
+<STR id="20014">Không thể bán vật phẩm trả phí tại cửa hàng.</STR>
+<STR id="20015">Không thể nhận vật phẩm, nó không khớp với giới tính của bạn.</STR>
+<STR id="20016">Vật phẩm này không thể trang bị vì bạn chưa đạt cấp độ yêu cầu. Bạn vẫn muốn nhận vật phẩm này chứ?</STR>
+<STR id="20017">Không thể lưu vật phẩm vào kho.</STR>
+<STR id="20018">Chỉ có thể lưu vật phẩm trả phí vào kho.</STR>
+<STR id="20019">Vật phẩm đã được tháo do cấp độ giảm.</STR>
+<STR id="20020">Không thể trang bị vật phẩm này.</STR>
+<STR id="20021"></STR>
+<STR id="20022">Bạn không thể sử dụng vật phẩm này vì nó là vật phẩm tiến hóa.</STR>
+<STR id="20023">Không đủ xu trả phí (Cash Coins)!</STR>
+<STR id="20024">Không đủ xu huy chương (Medal Coins)!</STR>
+<STR id="20025">Không đủ xu sự kiện (Event Coins)!</STR>
+
+<!-- Stage -->
+<STR id="30000">Không thể vào phòng.</STR>
+<STR id="30001">Phòng đã đầy.</STR>
+<STR id="30002">Mật khẩu không đúng!</STR>
+<STR id="30003">Bạn không thể vào với cấp độ hiện tại.</STR>
+<STR id="30004">Không thể tham gia trò chơi đang diễn ra.</STR>
+<STR id="30005">Bạn không được phép vào.</STR>
+<STR id="30006">Phòng không tồn tại.</STR>
+<STR id="30007">Phòng đã tồn tại.</STR>
+<STR id="30008">Bạn không thể tạo phòng.</STR>
+<STR id="30009">Không có phòng nào để bạn vào.</STR>
+<STR id="30027">Xin lỗi, phòng này chỉ dành cho nhân vật cấp 1.</STR>
+
+<!-- Channel -->
+<STR id="30020">Không thể vào kênh.</STR>
+<STR id="30021">Đã đạt số lượng người dùng tối đa.</STR>
+<STR id="30022">Bạn không thể vào với cấp độ hiện tại.</STR>
+<STR id="30023">Nếu bạn có nhân vật cấp 21 trở lên, bạn không thể vào kênh dành cho người mới.</STR>
+<STR id="30028">Xin lỗi, kênh này chỉ dành cho nhân vật cấp 1.</STR>
+
+<!-- Primium Ticket -->
+<STR id="30026">Vui lòng chọn nhân vật trước.</STR>
+
+<!-- Clan -->
+<STR id="30030">Không thể tạo bang hội.</STR>
+<STR id="30031">Bang hội không thể bị đóng.</STR>
+<STR id="30032">Tên bang hội đã được sử dụng.</STR>
+<STR id="30033">Bạn không có đủ thành viên để tạo bang hội.</STR>
+<STR id="30034">Người dùng này đã thuộc về một bang hội khác.</STR>
+<STR id="30035">Thành viên bạn mời tham gia bang hội không có trong sảnh.</STR>
+<STR id="30036">Tên bang hội không hợp lệ.</STR>
+<STR id="30037">Đây không phải là trưởng bang.</STR>
+<STR id="30038">Bạn không được phép thực hiện hành động này.</STR>
+<STR id="30039">Người dùng này đã thuộc về một bang hội khác.</STR>
+<STR id="30040">Yêu cầu tham gia bang hội của bạn đã bị từ chối.</STR>
+<STR id="30041">Người dùng này đã là thành viên của một bang hội khác.</STR>
+<STR id="30042">Không thể gửi lời mời. Người chơi đang trong trận đấu.</STR>
+<STR id="30043">Bạn chưa tham gia bang hội.</STR>
+<STR id="30044">Bạn không thể rút khỏi bang hội.</STR>
+<STR id="30045">Không thể thêm thành viên bang hội.</STR>
+<STR id="30046">Bạn bè của bạn không online.</STR>
+<STR id="30047">Không cùng bang hội.</STR>
+<STR id="30048">Bạn không thể thay đổi quyền hạn của mình.</STR>
+<STR id="30049">Thành viên bang hội không có sẵn.</STR>
+<STR id="30050">Không đủ tiền thưởng (1000 BP) để tạo bang hội.</STR>
+<STR id="30051">Chỉ nhân vật cấp 10 trở lên mới có thể tạo bang hội.</STR>
+<STR id="30052">Bang hội sẽ bị đóng vào '%s'.</STR>
+
+<!-- Ladder -->
+<STR id="30070">Bạn không thể yêu cầu trận chiến bang hội.</STR>
+<STR id="30071">Thông báo này xuất hiện khi nào?</STR>
+<STR id="30072">Thông báo này xuất hiện khi nào?</STR>
+<STR id="30073">Thông báo này xuất hiện khi nào?</STR>
+<STR id="30074">Trận chiến bang hội đã đóng. Thời gian hoạt động: 9:00 sáng.</STR>
+
+<!-- Clan Battle -->
+<STR id="30080">Bạn không cùng bang hội.</STR>
+<STR id="30081">Không có thành viên bang hội nào hiện diện.</STR>
+<STR id="30082">Một trong những thành viên bang hội được chọn hiện không sẵn sàng cho trận chiến bang hội.</STR>
+
+<!-- Client -->
+<STR id="30103">Chức năng này chưa được hỗ trợ.</STR>
+<STR id="30104">Vui lòng không sử dụng ngôn ngữ thô tục hoặc xúc phạm.</STR>
+<STR id="30105">Vui lòng không gửi thư rác trong kênh hoặc phòng.</STR>
+<STR id="30106">Bị cấm tham gia trò chuyện trong 1 phút.</STR>
+
+<!-- Server Message -->
+<STR id="90000">Không thể truy cập máy chủ.</STR>
+<STR id="90002">Ngắt kết nối khỏi máy chủ.</STR>
+
+<!-- Clan Message -->
+<STR id="100000">Bạn đã tham gia bang hội.</STR>
+<STR id="100001">Bang hội đã được tạo.</STR>
+
+<!-- Follow -->
+<STR id="110000">Bạn không thể vào.</STR>
+
+<!-- Vote -->
+<STR id="120000">Không thể yêu cầu bỏ phiếu.</STR>
+
+<!-- Disconnect message -->
+<STR id="130001">Phát hiện hành vi gian lận. Kết nối với máy chủ trò chơi sẽ bị chấm dứt.</STR>
+<STR id="130002">Tài khoản này bị chặn do hành vi gian lận. Tài khoản sẽ bị khóa trong khoảng một giờ.</STR>
+<STR id="130003">Kết nối bị từ chối do trạng thái của người dùng. Kết nối với máy chủ trò chơi sẽ sớm bị chấm dứt.</STR>
+<STR id="130004">Phát hiện tệp không hợp lệ.</STR>
+<STR id="130005">Phát hiện hành vi lạm dụng trò chơi: Tài khoản của bạn bị tạm khóa trong một giờ.</STR>
+<STR id="130006">Tài khoản bị khóa trong 1 giờ.</STR>
+<STR id="130007">Nhân vật của bạn đã bị xóa do không hoạt động.</STR>
+
+<!-- DuelTournament message -->
+<STR id="140000">Đây không phải là kênh Giải đấu tay đôi.</STR>
+<STR id="140001">Bạn đã yêu cầu tham gia Giải đấu tay đôi.</STR>
+<STR id="140002">Đăng ký thất bại. Vui lòng thử lại sau. Nếu vấn đề vẫn tiếp diễn, hãy liên hệ với bàn trợ giúp ijji.</STR>
+<STR id="140003">Đã vượt quá thời hạn đăng ký giải đấu.</STR>
+<STR id="140004">Không thể tạo phòng đấu.</STR>
+<STR id="140005">Không thể tìm thấy phòng đấu.</STR>
+<STR id="140006">Có lỗi trong cài đặt phòng đấu.</STR>
+<STR id="140007">Không thể bắt đầu phòng đấu.</STR>
+<STR id="140008">Kết nối với cơ sở dữ liệu không ổn định.</STR>
+<STR id="140009">Giải đấu tay đôi đã đóng. Nó sẽ mở từ %d:00 đến %d:59.</STR>
+
+<!-- Administartor message -->
+<STR id="150000">Không tìm thấy nhân vật.</STR>
+<STR id="150001">Không có phản hồi từ cơ sở dữ liệu. Vui lòng thử lại.</STR>
+
+<!-- Server -->
+<STR id="200000">Bạn không thể bắt đầu bỏ phiếu.</STR>
+<STR id="200001">Bạn không thể sử dụng chức năng này trong trò chơi xếp hạng.</STR>
+<STR id="200002">Bỏ phiếu đã bắt đầu.</STR>
+<STR id="200003">Bỏ phiếu thất bại.</STR>
+<STR id="200004">Còn 10 giây.</STR>
+<STR id="200005">Còn 30 giây.</STR>
+<STR id="200006">Còn 60 giây.</STR>
+<STR id="200007">Có quá nhiều người chơi để bắt đầu trò chơi này.</STR>
+<STR id="200008">'%s' chưa sẵn sàng.</STR>
+
+<!-- Challenge Quest -->
+<STR id="300001"> '%s' thấp hơn cấp độ yêu cầu.</STR>
+<STR id="300002">Bạn không thể bắt đầu thử thách vì ít nhất một người chơi có cấp độ thấp hơn yêu cầu.</STR>
+
+</XML>

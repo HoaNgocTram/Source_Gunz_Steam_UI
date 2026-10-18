@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EMOJIS lobby_size="22" ingame_size="22">
+	<!--
+		Yahoo Messenger Emoticon Set
+		pattern  = text pattern to match
+		file     = GIF filename in Interface/default/emojis/yahoo/
+		space    = "true" (default) requires space before pattern, "false" = no space needed
+		w, h     = custom width/height in pixels (0 = use lobby_size or ingame_size)
+		
+		XML special characters:
+		< = &lt;   > = &gt;   & = &amp;   " = &quot;   ' = &apos;
+		\ = \\
+	-->
+
+	<!-- ============================================ -->
+	<!-- Version 11 emoticons (longest patterns first) -->
+	<!-- ============================================ -->
+	<EMOJI pattern=":-)/\:-)" file="highfive.gif" space="false" />
+	<EMOJI pattern="&apos;@^@|||" file="dizzy.gif" space="false" />
+	<EMOJI pattern="o|^_^|o" file="music.gif" space="false" />
+	<EMOJI pattern=":::^^:::" file="hot.gif" space="false" />
+	<EMOJI pattern="%||:-{" file="unlucky.gif" space="false" />
+	<EMOJI pattern=":(fight)" file="fight.gif" space="false" />
+	<EMOJI pattern="?@_@?" file="studying.gif" space="false" />
+	<EMOJI pattern=":puke!" file="vomit.gif" space="false" />
+	<EMOJI pattern="~^o^~" file="cheer.gif" space="false" />
+	<EMOJI pattern="^o^||3" file="eat.gif" space="false" />
+	<EMOJI pattern=":-(||&gt;" file="giveup.gif" space="false" />
+	<EMOJI pattern=":(game)" file="gaming.gif" space="false" />
+	<EMOJI pattern="[]---" file="cook.gif" space="false" />
+	<EMOJI pattern="[]==[]" file="exercise.gif" space="false" />
+	<EMOJI pattern="&apos;+_+" file="cold.gif" space="false" />
+	<EMOJI pattern="o|\~" file="sing.gif" space="false" />
+	<EMOJI pattern="o|:-)" file="catch.gif" space="false" />
+	<EMOJI pattern="&apos;@-@" file="searchme.gif" space="false" />
+	<EMOJI pattern=":-&gt;~~" file="spooky.gif" space="false" />
+	<EMOJI pattern=":(tv)" file="tv.gif" space="false" />
+	<EMOJI pattern="%*-{" file="downonluck.gif" space="false" />
+	<EMOJI pattern="&amp;[]" file="gift.gif" space="false" />
+
+	<!-- ============================================ -->
+	<!-- Base emoticons (5+ char patterns) -->
+	<!-- ============================================ -->
+	<EMOJI pattern="&gt;:D&lt;" file="hug.gif" space="false" />
+	<EMOJI pattern=":)&gt;-" file="peace.gif" space="false" />
+	<EMOJI pattern="\:D/" file="dancing.gif" space="false" />
+	<EMOJI pattern="@};-" file="rose.gif" space="false" />
+	<EMOJI pattern="**==" file="flag.gif" space="false" />
+	<EMOJI pattern="(~~)" file="pumpkin.gif" space="false" />
+	<EMOJI pattern="*-:)" file="idea.gif" space="false" />
+	<EMOJI pattern="&lt;):)" file="cowboy.gif" space="false" />
+	<EMOJI pattern="[-O&lt;" file="praying.gif" space="false" />
+
+	<!-- ============================================ -->
+	<!-- 4-char patterns -->
+	<!-- ============================================ -->
+	<EMOJI pattern=";;)" file="batting.gif" space="false" />
+	<EMOJI pattern=":((" file="crying.gif" space="false" />
+	<EMOJI pattern=":))" file="laughing.gif" space="false" />
+	<EMOJI pattern="/:)" file="raised.gif" space="false" />
+	<EMOJI pattern="O:-)" file="angel.gif" space="false" />
+	<EMOJI pattern=":(|)" file="monkey.gif" space="false" />
+	<EMOJI pattern="3:-O" file="cow.gif" space="false" />
+	<EMOJI pattern=":@)" file="pig.gif" space="false" />
+	<EMOJI pattern=":O)" file="clown.gif" space="false" />
+	<EMOJI pattern="=P~" file="drooling.gif" space="false" />
+	<EMOJI pattern="=D&gt;" file="applause.gif" space="false" />
+	<EMOJI pattern="#-o" file="doh.gif" space="false" />
+	<EMOJI pattern="~:&gt;" file="chicken.gif" space="false" />
+	<EMOJI pattern="(:|" file="yawn.gif" space="false" />
+	<EMOJI pattern="8-}" file="silly.gif" space="false" />
+	<EMOJI pattern="[-(" file="notalking.gif" space="false" />
+	<EMOJI pattern=":-$" file="donttell.gif" space="false" />
+	<EMOJI pattern=":-&amp;" file="sick.gif" space="false" />
+	<EMOJI pattern="=((" file="broken.gif" space="false" />
+	<EMOJI pattern="#:-S" file="whew.gif" space="false" />
+	<EMOJI pattern="=))" file="rolling.gif" space="false" />
+	<EMOJI pattern="&lt;:-P" file="party.gif" space="false" />
+	<EMOJI pattern=":-ss" file="nail.gif" space="false" />
+	<EMOJI pattern=":-@" file="chatterbox.gif" space="false" />
+	<EMOJI pattern="^:)^" file="notworthy.gif" space="false" />
+	<EMOJI pattern=":-??" file="dontknow.gif" space="false" />
+	<EMOJI pattern=";))" file="hehe.gif" space="false" />
+	<EMOJI pattern=":)]" file="phone.gif" space="false" />
+	<EMOJI pattern="~X(" file="witsend.gif" space="false" />
+	<EMOJI pattern="%-(" file="notlistening.gif" space="false" />
+	<EMOJI pattern="(*)" file="star.gif" space="false" />
+	<EMOJI pattern="[..]" file="transformer.gif" space="false" />
+	<EMOJI pattern="^#(^" file="wasnotme.gif" space="false" />
+	<EMOJI pattern="~O)" file="coffee.gif" space="false" />
+	<EMOJI pattern="%%-" file="goodluck.gif" space="false" />
+
+	<!-- ============================================ -->
+	<!-- 3-char patterns -->
+	<!-- ============================================ -->
+	<EMOJI pattern=":-/" file="confused.gif" space="false" />
+	<EMOJI pattern=":-*" file="kiss.gif" space="false" />
+	<EMOJI pattern=":-O" file="surprised.gif" space="false" />
+	<EMOJI pattern=":-s" file="worried.gif" space="false" />
+	<EMOJI pattern=":-B" file="nerd.gif" space="false" />
+	<EMOJI pattern="I-)" file="sleepy.gif" space="false" />
+	<EMOJI pattern="8-|" file="rollingeyes.gif" space="false" />
+	<EMOJI pattern=":-?" file="thinking.gif" space="false" />
+	<EMOJI pattern=":-L" file="frustrated.gif" space="false" />
+	<EMOJI pattern="@-)" file="hipno.gif" space="false" />
+	<EMOJI pattern="$-)" file="money.gif" space="false" />
+	<EMOJI pattern=":-&quot;" file="whistling.gif" space="false" />
+	<EMOJI pattern=":^o" file="liar.gif" space="false" />
+	<EMOJI pattern="b-(" file="beatup.gif" space="false" />
+	<EMOJI pattern="[-X" file="shame.gif" space="false" />
+	<EMOJI pattern="&gt;:)" file="devil.gif" space="false" />
+	<EMOJI pattern="B-)" file="cool.gif" space="false" />
+	<EMOJI pattern="L-)" file="loser.gif" space="false" />
+	<EMOJI pattern=":-w" file="waiting.gif" space="false" />
+	<EMOJI pattern=":-&lt;" file="sigh.gif" space="false" />
+	<EMOJI pattern="&gt;:P" file="phbbt.gif" space="false" />
+	<EMOJI pattern="&gt;:/" file="bringit.gif" space="false" />
+	<EMOJI pattern=":-j" file="ohgoon.gif" space="false" />
+	<EMOJI pattern=":-c" file="callme.gif" space="false" />
+	<EMOJI pattern=":-h" file="bye.gif" space="false" />
+	<EMOJI pattern=":-t" file="timeout.gif" space="false" />
+	<EMOJI pattern="8-&gt;" file="daydreaming.gif" space="false" />
+	<EMOJI pattern="o-&gt;" file="hiro.gif" space="false" />
+	<EMOJI pattern="o=&gt;" file="billy.gif" space="false" />
+	<EMOJI pattern="o-+" file="april.gif" space="false" />
+	<EMOJI pattern="(%)" file="yinyang.gif" space="false" />
+	<EMOJI pattern="X_X" file="dontsee.gif" space="false" />
+	<EMOJI pattern="\m/" file="rockon.gif" space="false" />
+	<EMOJI pattern=":o3" file="puppy.gif" space="false" />
+	<EMOJI pattern="=:)" file="bug.gif" space="false" />
+	<EMOJI pattern="&gt;-)" file="alien.gif" space="false" />
+	<EMOJI pattern="8-X" file="skull.gif" space="false" />
+	<EMOJI pattern=":ar!" file="pirate.gif" space="false" />
+
+	<!-- ============================================ -->
+	<!-- Short patterns (need longer to match first) -->
+	<!-- ============================================ -->
+	<EMOJI pattern=":-bd" file="thumbup.gif" space="false" />
+	<EMOJI pattern=":-q" file="thumbdown.gif" space="false" />
+	<EMOJI pattern=":!!" file="hurryup.gif" space="false" />
+	<EMOJI pattern=":bz" file="bee.gif" space="false" />
+	<EMOJI pattern=":&quot;&gt;" file="blushing.gif" space="false" />
+
+	<!-- ============================================ -->
+	<!-- 2-char base patterns (must be last) -->
+	<!-- ============================================ -->
+	<EMOJI pattern=":)" file="happy.gif" />
+	<EMOJI pattern=":(" file="sad.gif" />
+	<EMOJI pattern=";)" file="winking.gif" />
+	<EMOJI pattern=":D" file="grin.gif" />
+	<EMOJI pattern=":x" file="love.gif" />
+	<EMOJI pattern=":P" file="tongue.gif" />
+	<EMOJI pattern="x(" file="angry.gif" />
+	<EMOJI pattern=":&gt;" file="smug.gif" />
+	<EMOJI pattern=":|" file="straight.gif" />
+	<EMOJI pattern="=;" file="talkhand.gif" />
+
+</EMOJIS>

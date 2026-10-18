@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": ".\\Release\\resource.obj",
+            "outputs": [
+                ".\\Release\\resource.h.obj.dt.module.json",
+                ".\\Release\\resource.h.obj.dt.d.json",
+                ".\\Release/GunzLauncher.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

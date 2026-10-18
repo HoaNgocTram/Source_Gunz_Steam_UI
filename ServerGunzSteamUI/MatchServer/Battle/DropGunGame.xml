@@ -1,0 +1,859 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML>
+	<DROPGUNGAME id="0"> 
+		<WORLDITEM itemid="51" x="-5423.1645508" y="-1336.1931152" z="704.1063843"/>
+		<WORLDITEM itemid="51" x="4799.7851563" y="-790.5439453" z="601.9998169"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="1284.8856201" z="279.5906677"/>
+		<WORLDITEM itemid="51" x="4799.7851563" y="-790.5439453" z="601.9998169"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-1798.4650879" z="-714.6474609"/>
+		<WORLDITEM itemid="51" x="-0.0000091" y="-2298.1274414" z="741.9470215"/>
+		<WORLDITEM itemid="51" x="-5423.1645508" y="-1336.1931152" z="704.1063843"/>
+		<WORLDITEM itemid="51" x="2881.0000000" y="-3011.4650879" z="165.6474609"/>
+		<WORLDITEM itemid="51" x="-2930.0000091" y="-2983.1274414" z="165.0470215"/>
+		<WORLDITEM itemid="51" x="-6.7145508" y="-823.5931152" z="794.0063843"/>
+	
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>		
+
+
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="1"> 
+
+		<WORLDITEM itemid="51" x="123.9" y="-6599.2" z="-733.4"/>
+		<WORLDITEM itemid="51" x="3759.1" y="4195.0" z="-261.8"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="3018.2729492" y="-2577.8046875" z="-101.5480347"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000185" z="165.4286194"/>
+		<WORLDITEM itemid="51" x="3451.6127930" y="4002.9538574" z="-256.9829102"/>
+		<WORLDITEM itemid="51" x="2889.8708496" y="-3429.0600586" z="-663.4041748"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-0.0000319" z="165.4286051"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="2"> 
+
+		<WORLDITEM itemid="51" x="-7648.9" y="1371.2" z="165.0"/>
+		<WORLDITEM itemid="51" x="7555.6" y="-1286.3" z="165.0"/>
+		<WORLDITEM itemid="51" x="-0.3217850" y="1422.3381348" z="680.9749146"/>
+		<WORLDITEM itemid="51" x="-5522.2685547" y="0.0000000" z="518.6928711"/>		
+		<WORLDITEM itemid="51" x="5017.8784180" y="-0.0000222" z="508.4477844"/>
+		<WORLDITEM itemid="51" x="-0.3217850" y="-1413.4533691" z="680.9745483"/>
+		<WORLDITEM itemid="51" x="-0.3217850" y="-1413.4533691" z="680.9747925"/>	
+		<WORLDITEM itemid="51" x="-0.3217850" y="1422.3381348" z="680.9749146"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="3"> 
+
+		<WORLDITEM itemid="51" x="-264.0" y="-6518.8" z="-751.4"/>
+		<WORLDITEM itemid="51" x="2990.0" y="2849.7" z="-253.7"/>
+		<WORLDITEM itemid="51" x="1867.5767822" y="-6487.0117188" z="-649.8615723"/>
+		<WORLDITEM itemid="51" x="2993.0312500" y="4084.5275879" z="-246.7167664"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-0.0000015" z="3.2833252"/>
+		<WORLDITEM itemid="51" x="102.1681519" y="-6487.0117188" z="-649.8615723"/>
+		<WORLDITEM itemid="51" x="-1130.6702881" y="-4191.2607422" z="3.2832642"/>
+		<WORLDITEM itemid="51" x="-1376.5926514" y="4180.6269531" z="3.2832642"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="4"> 
+		<WORLDITEM itemid="51" x="5146.3" y="-37.2" z="-1039.7"/>
+		<WORLDITEM itemid="51" x="-5116.3" y="-1.4" z="-1039.7"/>
+		<WORLDITEM itemid="51" x="-1056.1359863" y="1328.4733887" z="-1031.9265137"/>
+		<WORLDITEM itemid="51" x="-2750.8081055" y="-2379.3818359" z="-1031.9265137"/>
+		<WORLDITEM itemid="51" x="-0.0000008" y="0.0000000" z="399.9749756"/>
+		<WORLDITEM itemid="51" x="2737.6391602" y="-2379.3818359" z="-1031.9265137"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000000" z="399.9749756"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="5"> 
+		<WORLDITEM itemid="51" x="-4045.3" y="-5284.7" z="-729.7"/>
+		<WORLDITEM itemid="51" x="4850.8" y="3640.8" z="-729.7"/>
+		<WORLDITEM itemid="51" x="-107.7636871" y="46.9901848" z="165.0000000"/>
+		<WORLDITEM itemid="51" x="-3941.0378418" y="-1781.7968750" z="521.0701294"/>
+		<WORLDITEM itemid="51" x="3217.4130859" y="2769.1140137" z="-710.6282959"/>
+		<WORLDITEM itemid="51" x="-980.7435913" y="-2492.3833008" z="-374.6056824"/>
+		<WORLDITEM itemid="51" x="-668.5640869" y="35.8902969" z="165.0000000"/>
+		<WORLDITEM itemid="51" x="2135.9755859" y="-3046.4060059" z="-710.6286621"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="6"> 
+
+		<WORLDITEM itemid="51" x="830.9" y="-5720.1" z="31.1"/>
+		<WORLDITEM itemid="51" x="486.0" y="7693.9" z="1249.6"/>
+		<WORLDITEM itemid="51" x="830.9" y="-5720.1" z="31.1"/>
+		<WORLDITEM itemid="51" x="-2924.6311035" y="0.0111899" z="-283.1813049"/>
+		<WORLDITEM itemid="51" x="-3900.5422363" y="1170.2413330" z="532.7059326"/>
+		<WORLDITEM itemid="51" x="-3900.5422363" y="0.0111847" z="9.8839264"/>
+		<WORLDITEM itemid="51" x="-3950.5422363" y="1.0111847" z="10.8839264"/>
+	
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="7"> 
+		<WORLDITEM itemid="51" x="123.9" y="-6599.2" z="-733.4"/>
+		<WORLDITEM itemid="51" x="3759.1" y="4195.0" z="-261.8"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="3018.2729492" y="-2577.8046875" z="-101.5480347"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000185" z="165.4286194"/>
+		<WORLDITEM itemid="51" x="3451.6127930" y="4002.9538574" z="-256.9829102"/>
+		<WORLDITEM itemid="51" x="2889.8708496" y="-3429.0600586" z="-663.4041748"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-0.0000319" z="165.4286051"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+     <!-- Coded By Jorklenis2 -->
+	<DROPGUNGAME id="8"> -->
+		<WORLDITEM itemid="51" x="-4172.9" y="-3576.1" z="180.7"/>
+		<WORLDITEM itemid="51" x="5281.5" y="-4140.2" z="352.7"/>
+		<WORLDITEM itemid="51" x="-3486.4790039" y="170.6912842" z="208.0000000"/>
+		<WORLDITEM itemid="51" x="1944.9753418" y="6114.9101563" z="-579.7717285"/>
+		<WORLDITEM itemid="51" x="-1938.0274658" y="3829.9345703" z="-579.7717285"/>
+		<WORLDITEM itemid="51" x="3818.3544922" y="-4134.8798828" z="1079.7453613"/>
+		<WORLDITEM itemid="51" x="0.0075624" y="4919.8657227" z="500.0267334"/>
+		<WORLDITEM itemid="51" x="1169.0272217" y="-3369.6643066" z="384.6375122"/>
+	
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="9"> 
+		<WORLDITEM itemid="51" x="2137.2" y="-823.9" z="-600.0"/>
+		<WORLDITEM itemid="51" x="-2202.1" y="-3314.7" z="50.0"/>
+		<WORLDITEM itemid="51" x="-2202.7917480" y="-0.0000020" z="50.0000000"/>
+		<WORLDITEM itemid="51" x="-2202.7917480" y="-2948.7885742" z="50.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-2635.2846680" z="-200.2736816"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="2500.0000000" z="75.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-2635.2846680" z="-200.2736816"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="300.0000305" z="-800.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000861" y="-820.0000000" z="-600.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="10"> 
+		<WORLDITEM itemid="51" x="4809.3" y="3694.2" z="-845.0"/>
+		<WORLDITEM itemid="51" x="-5180.7" y="4487.6" z="-850.0"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-4224.5385742" z="-605.0000000"/>
+		<WORLDITEM itemid="51" x="4354.0830078" y="-18.8507614" z="-545.0000000"/>
+		<WORLDITEM itemid="51" x="-4770.0000000" y="1630.0000000" z="-695.0000000"/>
+		<WORLDITEM itemid="51" x="-5060.0000000" y="3045.0000000" z="-845.0000000"/>
+		<WORLDITEM itemid="51" x="-3755.7094727" y="-763.2302246" z="-532.7045898"/>
+		<WORLDITEM itemid="51" x="3500.0000000" y="-1635.6525879" z="-495.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="11"> 
+		<WORLDITEM itemid="51" x="2831.5" y="-2077.2" z="887.5"/>
+		<WORLDITEM itemid="51" x="-2585.3" y="2748.8" z="768.6"/>
+		<WORLDITEM itemid="51" x="1211.5681152" y="2840.9711914" z="360.0000000"/>
+		<WORLDITEM itemid="51" x="-73.1597900" y="-1686.1795654" z="285.0000000"/>
+		<WORLDITEM itemid="51" x="1184.4531250" y="-616.0078735" z="905.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-0.0000131" z="305.0000000"/>
+		<WORLDITEM itemid="51" x="2192.2102051" y="-1672.6177979" z="305.0000000"/>
+		<WORLDITEM itemid="51" x="416.7194519" y="-297.8787842" z="1205.0000000"/>
+		<WORLDITEM itemid="51" x="-2072.6379395" y="1654.4375000" z="305.0000000"/>
+>
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="12"> 
+		<WORLDITEM itemid="51" x="-411.2" y="-2643.3" z="-450.0"/>
+		<WORLDITEM itemid="51" x="-663.9" y="5753.9" z="-150.0"/>
+		<WORLDITEM itemid="51" x="-1200.0000000" y="-2800.0000000" z="-445.0000000"/>
+		<WORLDITEM itemid="51" x="1800.0000000" y="-2500.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="-3200.0000000" y="-2100.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="1300.0000000" y="2400.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="-900.0000000" y="3400.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="2700.0000000" y="-2500.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="1700.0000000" y="900.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="-1800.0000000" y="0.0000000" z="455.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="13"> 
+		<WORLDITEM itemid="51" x="-4001.7" y="-5428.6" z="165.0"/>
+		<WORLDITEM itemid="51" x="4007.6" y="5393.8" z="165.0"/>
+		<WORLDITEM itemid="51" x="-2400.0000000" y="-3000.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="2300.0000000" y="-0.0000132" z="310.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000109" z="-240.0000000"/>
+		<WORLDITEM itemid="51" x="-1200.0000000" y="3000.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="-4000.0000000" y="0.0000000" z="-245.0000000"/>
+		<WORLDITEM itemid="51" x="1200.0000000" y="-3000.0000000" z="5.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="14"> 
+		<WORLDITEM itemid="51" x="366.7" y="-2415.3" z="-629.0"/>
+		<WORLDITEM itemid="51" x="3734.7490234" y="299.9999695" z="150.0000000"/>
+		<WORLDITEM itemid="51" x="3050.0000000" y="-1200.0000000" z="1815.0000000"/>
+		<WORLDITEM itemid="51" x="-2800.0000000" y="2250.0000000" z="1715.0000000"/>
+		<WORLDITEM itemid="51" x="1560.0000000" y="1655.0000000" z="1590.0000000"/>
+		<WORLDITEM itemid="51" x="192.4004974" y="-2150.0000000" z="150.0000000"/>
+		<WORLDITEM itemid="51" x="-250.0000000" y="1800.0000000" z="820.0000000"/>
+		<WORLDITEM itemid="51" x="-4100.0000000" y="1450.0000000" z="-1309.9998779"/>
+		<WORLDITEM itemid="51" x="-2500.0000000" y="-1050.0000000" z="1590.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="15"> 
+		<WORLDITEM itemid="51" x="-4224.0" y="-4789.3" z="-307.7"/>
+		<WORLDITEM itemid="51" x="4881.7" y="3742.2" z="-429.7"/>
+		<WORLDITEM itemid="51" x="-3369.9816895" y="107.6977539" z="300.0000000"/>
+		<WORLDITEM itemid="51" x="3217.4130859" y="2769.1140137" z="-410.6282959"/>
+		<WORLDITEM itemid="51" x="-990.2953491" y="35.8316956" z="833.0192871"/>
+		<WORLDITEM itemid="51" x="-2266.8906250" y="-4075.9592285" z="-410.6286621"/>
+		<WORLDITEM itemid="51" x="1932.0458984" y="-3046.4060059" z="-410.6286621"/>
+		<WORLDITEM itemid="51" x="2135.0583496" y="-1580.5131836" z="-173.7171021"/>
+		<WORLDITEM itemid="51" x="-668.5640869" y="35.8902855" z="300.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="16"> 
+		<WORLDITEM itemid="51" x="-49.7" y="1737.3" z="0.2"/>
+		<WORLDITEM itemid="51" x="-22.3" y="514.2" z="0.2"/>
+		<WORLDITEM itemid="51" x="2.8" y="-411.0077539" z="0.2000000"/>
+		<WORLDITEM itemid="51" x="-7.7130859" y="-1490.0140137" z="0.2082959"/>
+		<WORLDITEM itemid="51" x="-982.2953491" y="-1635.8316956" z="50.5192871"/>
+		<WORLDITEM itemid="51" x="-980.8906250" y="31.9592285" z="50.5286621"/>
+		<WORLDITEM itemid="51" x="934.5458984" y="1767.8060059" z="50.7286621"/>
+		<WORLDITEM itemid="51" x="987.5583496" y="181.8131836" z="50.7171021"/>
+		<WORLDITEM itemid="51" x="1277.5640869" y="-1965.8902855" z="50.8000000"/>
+		<WORLDITEM itemid="51" x="-1024.5640869" y="1655.8902855" z="50.3000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="17"> >
+		<WORLDITEM itemid="51" x="-4.2" y="-2432.0" z="142.2"/>
+		<WORLDITEM itemid="51" x="17.4" y="62.8" z="165.0"/>
+		<WORLDITEM itemid="51" x="6.0816895" y="2476.5977539" z="142.2000000"/>
+		<WORLDITEM itemid="51" x="-6.2" y="-2438.0" z="148.2"/>
+		<WORLDITEM itemid="51" x="22.4" y="67.8" z="170.0"/>
+		<WORLDITEM itemid="51" x="11.0816895" y="2481.5977539" z="147.2000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="18"> 
+		<WORLDITEM itemid="51" x="123.9" y="-6599.2" z="-733.4"/>
+		<WORLDITEM itemid="51" x="3759.1" y="4195.0" z="-261.8"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="3018.2729492" y="-2577.8046875" z="-101.5480347"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000185" z="165.4286194"/>
+		<WORLDITEM itemid="51" x="3451.6127930" y="4002.9538574" z="-256.9829102"/>
+		<WORLDITEM itemid="51" x="2889.8708496" y="-3429.0600586" z="-663.4041748"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-0.0000319" z="165.4286051"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="19"> 
+		<WORLDITEM itemid="51" x="123.9" y="-6599.2" z="-733.4"/>
+		<WORLDITEM itemid="51" x="3759.1" y="4195.0" z="-261.8"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="3018.2729492" y="-2577.8046875" z="-101.5480347"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000185" z="165.4286194"/>
+		<WORLDITEM itemid="51" x="3451.6127930" y="4002.9538574" z="-256.9829102"/>
+		<WORLDITEM itemid="51" x="2889.8708496" y="-3429.0600586" z="-663.4041748"/>
+		<WORLDITEM itemid="51" x="3135.3920898" y="-1719.1718750" z="-663.4040527"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-0.0000319" z="165.4286051"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="20"> 
+		<WORLDITEM itemid="51" x="5040.8" y="17.8" z="150.0"/>
+		<WORLDITEM itemid="51" x="-5061.1" y="1.8" z="150.0"/>
+		<WORLDITEM itemid="51" x="-2217.4497070" y="775.2012939" z="-795.6045532"/>
+		<WORLDITEM itemid="51" x="264.2125854" y="30.3530216" z="-795.6044922"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="800.0000000" y="-550.0000000" z="-267.5876465"/>
+		<WORLDITEM itemid="51" x="-3000.0000000" y="0.0000087" z="-795.6045532"/>
+		<WORLDITEM itemid="51" x="3000.0000000" y="0.0000087" z="-795.6045532"/>
+		<WORLDITEM itemid="51" x="-800.0000000" y="550.0000000" z="-267.5875854"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="21"> 
+		<WORLDITEM itemid="51" x="-7270.7" y="-921.7" z="500.0"/>
+		<WORLDITEM itemid="51" x="7066.3" y="-1830.2" z="500.0"/>
+		<WORLDITEM itemid="51" x="4061.5344238" y="-1768.9020996" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-1790.1684570" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="3292.8273926" y="-1195.6289063" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="-4045.7302246" y="-1825.9589844" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="-3285.2551270" y="-1195.6289063" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-4323.5732422" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="4788.0644531" y="-1801.2540283" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="-4786.4462891" y="-1801.2540283" z="505.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="22"> 
+		<WORLDITEM itemid="51" x="-7270.7" y="-921.7" z="500.0"/>
+		<WORLDITEM itemid="51" x="7066.3" y="-1830.2" z="500.0"/>
+		<WORLDITEM itemid="51" x="4061.5344238" y="-1768.9020996" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-1790.1684570" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="3292.8273926" y="-1195.6289063" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="-4045.7302246" y="-1825.9589844" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="-3285.2551270" y="-1195.6289063" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-4323.5732422" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="4788.0644531" y="-1801.2540283" z="505.0000000"/>
+		<WORLDITEM itemid="51" x="-4786.4462891" y="-1801.2540283" z="505.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="23"> 
+		<WORLDITEM itemid="51" x="-4224.0" y="-4789.3" z="-307.7"/>
+		<WORLDITEM itemid="51" x="4881.7" y="3742.2" z="-429.7"/>
+		<WORLDITEM itemid="51" x="-3369.9816895" y="107.6977539" z="300.0000000"/>
+		<WORLDITEM itemid="51" x="3217.4130859" y="2769.1140137" z="-410.6282959"/>
+		<WORLDITEM itemid="51" x="-990.2953491" y="35.8316956" z="833.0192871"/>
+		<WORLDITEM itemid="51" x="-2266.8906250" y="-4075.9592285" z="-410.6286621"/>
+		<WORLDITEM itemid="51" x="1932.0458984" y="-3046.4060059" z="-410.6286621"/>
+		<WORLDITEM itemid="51" x="2135.0583496" y="-1580.5131836" z="-173.7171021"/>
+		<WORLDITEM itemid="51" x="-668.5640869" y="35.8902855" z="300.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="24"> 
+		<WORLDITEM itemid="51" x="2889.2" y="-1169.6" z="165.0"/>
+		<WORLDITEM itemid="51" x="-2906.1" y="1135.8" z="165.0"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-2261.5703125" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="1250.0000000" y="-1730.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="-0.0000263" z="605.0000000"/>
+		<WORLDITEM itemid="51" x="-1250.0000000" y="1730.0000000" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="389.8489990" y="-1031.4425049" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="2234.0886230" y="-2247.4970703" z="5.0000000"/>
+		<WORLDITEM itemid="51" x="0.0000000" y="0.0000000" z="605.0000000"/>
+		<WORLDITEM itemid="51" x="-2234.0891113" y="2247.4970703" z="5.0000000"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+	<DROPGUNGAME id="70"> 
+		<WORLDITEM itemid="51" x="-4045.3" y="-5284.7" z="-729.7"/>
+		<WORLDITEM itemid="51" x="4850.8" y="3640.8" z="-729.7"/>
+		<WORLDITEM itemid="51" x="-107.7636871" y="46.9901848" z="165.0000000"/>
+		<WORLDITEM itemid="51" x="-3941.0378418" y="-1781.7968750" z="521.0701294"/>
+		<WORLDITEM itemid="51" x="3217.4130859" y="2769.1140137" z="-710.6282959"/>
+		<WORLDITEM itemid="51" x="-980.7435913" y="-2492.3833008" z="-374.6056824"/>
+		<WORLDITEM itemid="51" x="-668.5640869" y="35.8902969" z="165.0000000"/>
+		<WORLDITEM itemid="51" x="2135.9755859" y="-3046.4060059" z="-710.6286621"/>
+
+		<ITEMSET melee="500001" primary="743030" secondary="743020" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600404" secondary="600405" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="504001" secondary="506001" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502002" primary="507001" secondary="506010" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502008" primary="504006" secondary="504005" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="504506" secondary="504007" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502017" primary="506007" secondary="505005" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="508003" secondary="507004" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502007" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="72"     primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+		<ITEMSET melee="502014" primary="600391" secondary="600396" custom1="600005" custom2="527828"/>
+		<ITEMSET melee="500002" primary="600397" secondary="600398" custom1="30402" custom2="600105"/>
+		<ITEMSET melee="502001" primary="600401" secondary="600402" custom1="30203" custom2="600205"/>
+		<ITEMSET melee="502012" primary="507004" secondary="507003" custom1="30303" custom2="600305"/>
+		<ITEMSET melee="502014" primary="508001" secondary="508002" custom1="30403" custom2="600304"/>
+		<ITEMSET melee="502010" primary="505003" secondary="505002" custom1="30205" custom2="600204"/>
+		<ITEMSET melee="502012" primary="504505" secondary="504504" custom1="30305" custom2="600104"/>
+		<ITEMSET melee="500007" primary="504004" secondary="504003" custom1="30405" custom2="600004"/>
+		<ITEMSET melee="502012" primary="509007" secondary="509008" custom1="600305" custom2="30405"/>
+		<ITEMSET melee="502017" primary="507001" secondary="509001" custom1="30303"  custom2="30402"/>
+	</DROPGUNGAME>
+
+</XML>

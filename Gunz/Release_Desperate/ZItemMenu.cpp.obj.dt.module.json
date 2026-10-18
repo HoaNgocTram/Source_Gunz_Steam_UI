@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\ZItemMenu.obj",
+            "outputs": [
+                "Release_Desperate\\ZItemMenu.cpp.obj.dt.module.json",
+                "Release_Desperate\\ZItemMenu.cpp.obj.dt.d.json",
+                "Release_Desperate\\Gunz.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

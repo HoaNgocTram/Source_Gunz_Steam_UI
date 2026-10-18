@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XML>
+  <TIPS category="0">
+    <MSG>GunZ ist ein kostenloses Actionspiel.</MSG>
+    <MSG>Bei Problemen wende dich bitte an den Support auf der GunZ-Webseite.</MSG>
+    <MSG>Nutzt du einen Router? Richte Portweiterleitung ein, um die Verbindung zu verbessern.</MSG>
+    <MSG>Das Spiel läuft langsam? Nutze die Option „Optimieren“.</MSG>
+    <MSG>Mit Schnellstart kannst du sofort einem Spiel beitreten, ohne nach Räumen zu suchen.</MSG>
+    <MSG>Gründe einen Clan und spiele mit deinen Freunden!</MSG>
+    <MSG>Bounty-Gegenstände können nicht über das Lager mit anderen Charakteren geteilt werden.</MSG>
+    <MSG>Im Trainingsmodus werden Siege, Niederlagen und EP nicht gewertet.</MSG>
+    <MSG>Mit /r kannst du schnell auf eine private Nachricht antworten.</MSG>
+    <MSG>Anstößige Charakternamen können bestraft werden.</MSG>
+    <MSG>Beleidigendes Verhalten im Spiel kann bestraft werden.</MSG>
+    <MSG>Das Team wird dich niemals nach deinem Passwort fragen.</MSG>
+    <MSG>Gib dein Passwort niemals weiter. Verluste durch Hacking werden nicht ersetzt.</MSG>
+    <MSG>Fair Play sorgt für ein besseres Spielerlebnis.</MSG>
+    <MSG>Wahre Profis respektieren ihre Gegner.</MSG>
+    <MSG>Cheats, unerlaubte Programme oder Bug-Missbrauch führen zur dauerhaften Sperrung aller Konten.</MSG>
+    <MSG>Blocke einen Nahkampfangriff und kontere sofort mit einem starken Hieb!</MSG>
+    <MSG>Im Zuschauermodus kannst du mit Strg + Zahl einen Spieler einer Kurztaste zuweisen.</MSG>
+  </TIPS>
+  <TIPS category="1">
+    <MSG id="8">Im Zuschauermodus kannst du mit Strg + Zahl einen Spieler einer Kurztaste zuweisen.</MSG>
+  </TIPS>
+</XML>

@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="StageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Stage 화면 구성
+   
+   Last Update : 5.NOV.2004
+   Editor      : Lim Dong Hwan
+-->
+
+<!-- 프레임 생성 : StageSettingFrame -->
+	<FRAME item="StageGameInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>	
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<FRAME item="StageSettingGroup" parent="StageGameInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>	
+		<VISIBLE>true</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+
+	<PICTURE item="RoomSetting_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>153</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+	<!-- Picture : 방 제목 및 비밀번호 설정 -->
+	<PICTURE item="RoomTitle_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>162</Y>
+			<W>1093</W>
+			<H>106</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<ZEDIT item="StageName" parent="StageSettingGroup">		
+		<BOUNDS>
+			<X>693</X>
+			<Y>167</Y>
+			<W>811</W>
+			<H>46</H>
+		</BOUNDS>		
+		<COLOR type="frame">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<A>255</A>
+		</COLOR>	
+		<BITMAP type="frame">InvenSort.png</BITMAP>
+		<MAXLENGTH>32</MAXLENGTH>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>10</W>
+		</TABRECT>
+		<TEXT></TEXT>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</ZEDIT>
+	<ZEDIT item="StagePassword" parent="StageSettingGroup">		
+		<BOUNDS>
+			<X>693</X>
+			<Y>217</Y>
+			<W>811</W>
+			<H>46</H>
+		</BOUNDS>
+		<COLOR type="frame">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<A>255</A>
+		</COLOR>
+		<BITMAP type="frame">InvenSort.png</BITMAP>
+		<TABRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>10</W>
+		</TABRECT>
+		<GUIDETEXT></GUIDETEXT>
+		<TEXT></TEXT>
+		<MAXLENGTH>32</MAXLENGTH>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</ZEDIT>
+	
+	<!-- Picture : 모드 설정 -->
+	<PICTURE item="RoomMode_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>288</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+		
+	<!-- Picture : 맵 설정 -->
+	<PICTURE item="RoomMap_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>988</X>
+			<Y>288</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+		
+	<!-- Picture : 인원 설정 -->
+	<PICTURE item="RoomPlayer_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>349</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+		
+	<!-- Picture : 킬 수 설정 -->
+	<PICTURE item="RoomKill_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>988</X>
+			<Y>349</Y>
+			<W>521</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- Picture : 무기 제한 -->
+	<PICTURE item="RoomWeaponLimit_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>420</Y>
+			<W>1093</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>34</R>
+			<G>38</G>
+			<B>42</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	
+	<!-- Picture : 기타 옵션 -->
+	<PICTURE item="RoomOtherOption_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>595</Y>
+			<W>1093</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>34</R>
+			<G>38</G>
+			<B>42</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+
+	<LABEL item="RoomCreateLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>216</R>
+			<G>216</G>
+			<B>216</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>914</X>
+			<Y>64</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_PSJF_05</TEXT>
+	</LABEL>
+	
+	<LABEL item="RoomOptionLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>216</R>
+			<G>216</G>
+			<B>216</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>914</X>
+			<Y>64</Y>
+			<W>200</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_PSJF_04</TEXT>
+	</LABEL>
+	
+	
+	<!-- ZEDIT : 게임 제목 텍스트 입력 창 -->
+	<!-- LABEL : 게임 제목 -->
+	<LABEL item="RoomTitleLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>181</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_PSJF_02</TEXT> <!-- 게임 제목 -->
+	</LABEL>
+		
+	<!-- ZEDIT : 비밀번호 텍스트 입력 창 -->
+	<!-- LABEL : 비밀번호 -->
+	<LABEL item="RoomTitleLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>229</Y>
+			<W>200</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_PSJF_03</TEXT> <!-- 비밀번호 -->
+	</LABEL>
+		
+	<!-- Label : 게임 방식 -->
+	<LABEL item="GameTypeLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>304</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_STAGE_13</TEXT> <!-- 게임 방식 -->
+	</LABEL>
+	
+	<!-- COMBOBOX : 게임 방식 콤보박스 -->
+	<ZCOMBOBOX item="StageType" parent="StageSettingGroup">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>573</X>
+			<Y>293</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>419</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+		
+	<!-- Label : 맵 선택 -->
+	<LABEL item="GameMapLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>			
+			<X>1010</X>
+			<Y>304</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_STAGE_14</TEXT> <!-- 맵 선택 -->
+	</LABEL>
+
+	<!-- COMBOBOX : 맵 선택 콤보 -->
+	<ZCOMBOBOX item="MapSelection" parent="StageSettingGroup">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>1145</X>
+			<Y>293</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>419</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<!-- Label : 최대 인원 -->
+	<LABEL item="MaxPlayerLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>437</X>
+			<Y>365</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT></TEXT> <!-- 최대 인원 -->
+	</LABEL>	
+	
+	
+	<!-- COMBOBOX : 최대 인원 콤보박스 -->
+	<ZCOMBOBOX item="StageMaxPlayer" parent="StageSettingGroup">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>573</X>
+			<Y>354</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>182</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>
+	
+	<!-- Label : 라운드 -->
+	<LABEL item="StageRoundCountLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1010</X>
+			<Y>365</Y>
+			<W>80</W>
+			<H>24</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_STAGE_16</TEXT> <!-- 라운드 -->
+	</LABEL>
+	
+	<!-- COMBOBOX : 라운드 콤보박스 -->
+	<ZCOMBOBOX item="StageRoundCount" parent="StageSettingGroup">
+		<LISTBOXLOOK>RoomOptionListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>RoomOptionListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>42</ITEMHEIGHT>
+		<BOUNDS>
+			<X>1145</X>
+			<Y>354</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<ALIGN>CENTER</ALIGN>
+		<FONT>FONTa14</FONT>
+		<DROPSIZE>266</DROPSIZE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<LISTSOUNDCLICK>mouse_click</LISTSOUNDCLICK>
+	</ZCOMBOBOX>	
+			
+	<!-- 기타 옵션 -->
+	<LABEL item="StageOtherOptionLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>917</X>
+			<Y>420</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_10</TEXT> <!-- 기타 옵션 -->
+	</LABEL>
+	
+	<!-- 안티리드 설정 -->
+	<PICTURE item="RoomTimeLimit_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>471</Y>
+			<W>1093</W>
+			<H>52</H>
+		</BOUNDS>		
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<PICTURE item="RoomAntiLeadBG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>593</X>
+			<Y>475</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+			<ALPHA>179</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	<LABEL item="RoomAntiLeadLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>438</X>
+			<Y>471</Y>
+			<W>100</W>
+			<H>52</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>Anti-Lead</TEXT>
+	</LABEL>
+	<SLIDER item="AntiLeadSlider" parent="StageSettingGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>660</X>
+			<Y>475</Y>
+			<W>273</W>
+			<H>42</H>
+		</BOUNDS>
+		<MIN>0</MIN>
+		<MAX>100</MAX>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="AntiLeadEdit" parent="StageSettingGroup">
+		<EDITLOOK>StageSettingEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>595</X>
+			<Y>485</Y>
+			<W>62</W>
+			<H>25</H>
+		</BOUNDS>		
+		<MAXLENGTH>3</MAXLENGTH>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</EDIT>
+	
+	<!-- 제한 시간 설정 -->
+	<LABEL item="RoomTimeLimitLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>980</X>
+			<Y>471</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_02</TEXT> <!-- 제한 시간 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="RoomTimeLimitButton" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>476</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_STAGEOPTION_01</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_02</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_03</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_04</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_05</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_06</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa16</FONT>
+		<DARKISHTONE/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<!-- 난입 설정 -->
+	<PICTURE item="RoomForcedEntryToGame_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>522</Y>
+			<W>546</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	<LABEL item="RoomForcedEntryToGameLabel" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>438</X>
+			<Y>522</Y>
+			<W>100</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_03</TEXT> <!-- 난입 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="RoomForcedEntryToGameButton" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>593</X>
+			<Y>526</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<DARKISHTONE/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<!-- 팀킬 설정 -->
+	<PICTURE item="RoomTeamKill_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>962</X>
+			<Y>522</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="RoomTeamKillLabel" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>980</X>
+			<Y>522</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_04</TEXT> <!-- 팀킬 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="RoomTeamKillButton" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>526</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<DARKISHTONE/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<!-- 팀 밸런스 설정 -->
+	<PICTURE item="RoomTeamBalance_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>573</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	<LABEL item="RoomTeamBalanceLabel" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>438</X>
+			<Y>573</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_08</TEXT> <!-- 팀 밸런스 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="RoomTeamBalanceButton" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>593</X>
+			<Y>577</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<DARKISHTONE/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>	
+	
+	<!-- 관전 허용 설정 -->
+	<PICTURE item="RoomWatchGame_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>962</X>
+			<Y>573</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="RoomWatchGameLabel" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>980</X>
+			<Y>573</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_06</TEXT> <!-- 관전 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="RoomWatchGameButton" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>577</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM>STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<DARKISHTONE/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<!-- 투표 가능 설정 -->
+	<PICTURE item="RoomVote_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>624</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	<LABEL item="RoomVoteLabel" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>438</X>
+			<Y>624</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_07</TEXT> <!-- 투표 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="RoomVoteButton" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>593</X>
+			<Y>628</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<DARKISHTONE/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>	
+	
+	<!-- 핫키 설정 -->
+	<PICTURE item="RoomHotKey_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>962</X>
+			<Y>624</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>
+	<LABEL item="RoomVoteLabel" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>980</X>
+			<Y>624</Y>
+			<W>200</W>
+			<H>52</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>		
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_09</TEXT> <!-- 핫키 사용 -->
+	</LABEL>
+	<ZSTEPSELECTOR item="RoomHotKeyButton" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>1145</X>
+			<Y>628</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<BGCOLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+		</BGCOLOR>
+		<OPACITY>179</OPACITY>
+		<BUTTONBITMAP dir="left" type="down">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="up">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="left" type="over">SlotStepper_LArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="down">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="up">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBITMAP dir="right" type="over">SlotStepper_RArrow.png</BUTTONBITMAP>
+		<BUTTONBOUNDS dir="left">
+			<X>0</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<BUTTONBOUNDS dir="right">
+			<X>310</X>
+			<Y>0</Y>
+			<W>50</W>
+			<H>42</H>
+		</BUTTONBOUNDS>
+		<ICONBOUNDS dir="left">
+			<X>16</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<ICONBOUNDS dir="right">
+			<X>24</X>
+			<Y>14</Y>
+			<W>10</W>
+			<H>14</H>
+		</ICONBOUNDS>
+		<SELECTORITEM selected="true">STR:UI_STAGEOPTION_07</SELECTORITEM>
+		<SELECTORITEM>STR:UI_STAGEOPTION_08</SELECTORITEM>
+		<TEXTCOLOR>
+			<R>180</R>
+			<G>180</G>
+			<B>180</B>
+		</TEXTCOLOR>
+		<INDICATORRECT>
+			<X>7</X>
+			<Y>9</Y>
+			<W>40</W>
+			<H>4</H>
+		</INDICATORRECT>
+		<FONT>FONTa17</FONT>
+		<DARKISHTONE/>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</ZSTEPSELECTOR>
+	
+	<!-- 체력 옵션 설정 BG-->
+	<PICTURE item="RoomHPOption_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>416</X>
+			<Y>675</Y>
+			<W>547</W>
+			<H>52</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>51</R>
+			<G>55</G>
+			<B>58</B>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	
+	<!-- 체력 슬라이더 설정 BG-->
+	<PICTURE item="RoomHPOptionSlider_BG" parent="StageSettingGroup">
+		<BOUNDS>
+			<X>593</X>
+			<Y>675</Y>
+			<W>359</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLOR>
+			<R>24</R>
+			<G>27</G>
+			<B>29</B>
+			<ALPHA>179</ALPHA>
+		</COLOR>
+		<COLORRECT>true</COLORRECT>
+	</PICTURE>	
+	
+	<LABEL item="RoomHPPercentLabel" parent="StageSettingGroup">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>438</X>
+			<Y>675</Y>
+			<W>150</W>
+			<H>52</H>
+		</BOUNDS>
+		<FONT>FONTa14</FONT>
+		<TEXT>STR:UI_SSF_12</TEXT>
+	</LABEL>
+	
+	<SLIDER item="HPPercentSlider" parent="StageSettingGroup">
+		<THUMBLOOK>OptionSliderThumbLookTemplate</THUMBLOOK>
+		<ARROWLOOK>NullArrowLook</ARROWLOOK>
+		<BOUNDS>
+			<X>660</X>
+			<Y>675</Y>
+			<W>273</W>
+			<H>42</H>
+		</BOUNDS>
+		<MIN>50</MIN>
+		<MAX>200</MAX>
+		<THICKNESS>4</THICKNESS>
+		<THUMBSIZE>
+			<W>9</W>
+			<H>25</H>
+		</THUMBSIZE>
+		<ALIGN>
+			<HALIGN>left</HALIGN>
+		</ALIGN>
+	</SLIDER>
+	<EDIT item="HPPercentEdit" parent="StageSettingGroup">
+		<EDITLOOK>StageSettingEditLook</EDITLOOK>
+		<BOUNDS>
+			<X>595</X>
+			<Y>685</Y>
+			<W>62</W>
+			<H>25</H>
+		</BOUNDS>		
+		<MAXLENGTH>3</MAXLENGTH>
+		<ONLYENGLISHNUMBER>true</ONLYENGLISHNUMBER>
+	</EDIT>
+	
+	<FRAME item="HPOptionToolTipFrame" parent="StageGameInfo">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>433</X>
+			<Y>717</Y>
+			<W>350</W>
+			<H>190</H>
+		</BOUNDS>	
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- 체력 퍼센트 툴팁 BG-->
+	<PICTURE item="RoomHPOptionToolTip_BG" parent="HPOptionToolTipFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>350</W>
+			<H>190</H>
+		</BOUNDS>
+		<STRETCH/>
+		<COLORRECT>true</COLORRECT>
+		<BITMAP>PurchaseFrame.png</BITMAP>
+	</PICTURE>	
+	
+	<PICTURE item="Indicator" parent="HPOptionToolTipFrame">
+		<BOUNDS>
+			<X>23</X>
+			<Y>17</Y>
+			<W>2</W>
+			<H>15</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>IndicatorLine.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="HPOptionToolTip_Label_Title" parent="HPOptionToolTipFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>30</X>
+			<Y>15</Y>
+			<W>250</W>
+			<H>18</H>
+		</BOUNDS>
+		<FONT>FONTa12b</FONT>
+		<TEXT>STR:UI_SSF_HEALTH_01</TEXT>
+	</LABEL>
+	
+	<!-- TEXTAREA : 체력 퍼센트 툴팁 TextArea -->
+	<TEXTAREA item="HPOptionToolTip_TextArea_1" parent="HPOptionToolTipFrame">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>25</X>
+			<Y>28</Y>
+			<W>300</W>
+			<H>80</H>
+		</BOUNDS>
+		<MAXLENGTH>1024</MAXLENGTH>
+		<LEADING>5</LEADING>
+		<TEXTOFFSET>
+			<X>0</X>
+			<Y>0</Y>
+		</TEXTOFFSET>
+		<TEXT>STR:UI_SSF_HEALTH_02</TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<LABEL item="HPOptionToolTip_Label_1" parent="HPOptionToolTipFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>105</Y>
+			<W>250</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTa12</FONT>
+		<TEXT>STR:UI_SSF_HEALTH_03</TEXT>
+	</LABEL>
+	
+	<TEXTAREA item="HPOptionToolTip_TextArea_2" parent="HPOptionToolTipFrame">
+		<FONT>FONTa12</FONT>
+		<BOUNDS>
+			<X>25</X>
+			<Y>123</Y>
+			<W>200</W>
+			<H>60</H>
+		</BOUNDS>
+		<MAXLENGTH>1024</MAXLENGTH>
+		<LEADING>4</LEADING>
+		<TEXTOFFSET>
+			<X>0</X>
+			<Y>0</Y>
+		</TEXTOFFSET>
+		<TEXT>STR:UI_SSF_HEALTH_02</TEXT>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- BMBUTTON : 체력 옵션 툴팁 버튼 -->
+	<BMBUTTON item="HPOptionToolTip_Button" parent="StageGameInfo">
+		<BOUNDS>
+			<X>419</X>
+			<Y>692</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">TooltipIcon.png</BITMAP>
+		<BITMAP type="over">TooltipIcon.png</BITMAP>
+		<BITMAP type="down">TooltipIcon.png</BITMAP>
+		<SETCHECK/>
+	</BMBUTTON>
+	
+	<ICONBUTTON item="StageCreateBtn" parent="StageGameInfo">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>965</X>
+			<Y>928</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">EquipButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">EquipButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">EquipButton_OFF.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>174</B>
+			</OVER>
+			<DOWN>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DOWN>
+			<DISABLE>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_CI_14</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>60</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+	
+	<ICONBUTTON item="StageSettingApplyBtn" parent="StageGameInfo">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>965</X>
+			<Y>928</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">EquipButton_ON.png</BITMAP>
+		<BITMAP type="bg" state="over">EquipButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">EquipButton_OFF.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>76</R>
+				<G>159</G>
+				<B>174</B>
+			</BASE>
+			<OVER>
+				<R>123</R>
+				<G>234</G>
+				<B>174</B>
+			</OVER>
+			<DOWN>
+				<R>75</R>
+				<G>105</G>
+				<B>121</B>
+			</DOWN>
+			<DISABLE>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_CI_14</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>60</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+
+	<ICONBUTTON item="StageSettingCancelBtn" parent="StageGameInfo">
+		<FONT>FONTb16b</FONT>
+		<BOUNDS>
+			<X>1255</X>
+			<Y>928</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<BITMAP type="bg" state="base">DeleteButton_On.png</BITMAP>
+		<BITMAP type="bg" state="over">DeleteButton_Over.png</BITMAP>
+		<BITMAP type="bg" state="disable">DeleteButton_OFF.png</BITMAP>
+		<COLOR type="edge">
+			<BASE>
+				<R>99</R>
+				<G>115</G>
+				<B>135</B>
+			</BASE>
+			<OVER>
+				<R>125</R>
+				<G>144</G>
+				<B>168</B>
+			</OVER>
+			<DOWN>
+				<R>61</R>
+				<G>71</G>
+				<B>83</B>
+			</DOWN>
+			<DISABLE>
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</DISABLE>
+		</COLOR>
+		<DRAWTEXT>TRUE</DRAWTEXT>
+		<TEXT>STR:UI_LOBBY_05</TEXT>
+		<TEXTRECT>
+			<X>0</X>
+			<Y>0</Y>
+			<W>254</W>
+			<H>60</H>
+		</TEXTRECT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ICONBUTTON>
+</XML>

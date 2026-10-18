@@ -1,0 +1,2947 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Event_ETC1">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	
+<!--
+   ETC1 화면 구성
+   
+   Last Update : 2026. 03. 06
+   Editor      : jhju
+-->
+
+	<!-- FRAME : Event_ETC1 -->
+	<FRAME item="Event_ETC1">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- FRAME : MercenaryWelcomePage -->
+	<FRAME item="MercenaryWelcomeFrame" parent="Event_ETC1">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 바탕화면 이미지 -->
+	<PICTURE item="MercenaryWelcomeBackGround" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Attendance_Normal.png</BITMAP>
+	</PICTURE>
+		
+	<PICTURE item="MercenaryWelcome_Notice_Icon" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>513</X>
+			<Y>272</Y>
+			<W>20</W> 
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Notice_Text" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>541</X>
+			<Y>259</Y>
+			<W>400</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_MISSION_TIMELIMIT</TEXT>
+	</LABEL>
+	
+	<!-- Day1 -->
+	<PICTURE item="MercenaryWelcome_Day1_BG" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>510</X>
+			<Y>308</Y>
+			<W>158</W> 
+			<H>268</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="MercenaryWelcome_Day1_Outline" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W> 
+			<H>260</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelOutline_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day1_Title" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>48</X>
+			<Y>7</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Day 1</TEXT>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day1_RemainTimeIcon" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>90</X>
+			<Y>52</Y>
+			<W>9</W> 
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day1_RemainTimeText" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>101</X>
+			<Y>50</Y>
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>7day</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day1_ItemIcon" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>26</X>
+			<Y>73</Y>
+			<W>100</W> 
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+	</PICTURE> 
+	
+	<TEXTAREA item="MercenaryWelcome_Day1_ItemText" parent="MercenaryWelcome_Day1_Outline">
+		<BOUNDS>
+			<X>0</X>
+			<Y>174</Y>
+			<W>144</W>
+			<H>42</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Item</TEXT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<PICTURE item="MercenaryWelcome_Day1_Shadow" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W>
+			<H>260</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MercenaryWelcome_Day1_CompleteIcon" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>38</X>
+			<Y>87</Y>
+			<W>81</W>
+			<H>61</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CheckIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="MercenaryWelcome_Day1_Button" parent="MercenaryWelcome_Day1_BG">
+		<BOUNDS>
+			<X>2</X>
+			<Y>219</Y>
+			<W>148</W>
+			<H>41</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="over">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="down">RewardButton_Disable.png</BITMAP>
+		<BITMAP type="disable">RewardButton_Disable.png</BITMAP>
+		<TEXT>Receive</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa16</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Day2 -->
+	<PICTURE item="MercenaryWelcome_Day2_BG" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>675</X>
+			<Y>308</Y>
+			<W>158</W> 
+			<H>268</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="MercenaryWelcome_Day2_Outline" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W> 
+			<H>260</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelOutline_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day2_Title" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>48</X>
+			<Y>7</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Day 2</TEXT>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day2_RemainTimeIcon" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>90</X>
+			<Y>52</Y>
+			<W>9</W> 
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>	
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day2_RemainTimeText" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>101</X>
+			<Y>50</Y>
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>7day</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day2_ItemIcon" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>26</X>
+			<Y>73</Y>
+			<W>100</W> 
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+	</PICTURE> 
+	
+	<TEXTAREA item="MercenaryWelcome_Day2_ItemText" parent="MercenaryWelcome_Day2_Outline">
+		<BOUNDS>
+			<X>0</X>
+			<Y>174</Y>
+			<W>144</W>
+			<H>42</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Item</TEXT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<PICTURE item="MercenaryWelcome_Day2_Shadow" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W>
+			<H>260</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MercenaryWelcome_Day2_CompleteIcon" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>38</X>
+			<Y>87</Y>
+			<W>81</W>
+			<H>61</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CheckIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="MercenaryWelcome_Day2_Button" parent="MercenaryWelcome_Day2_BG">
+		<BOUNDS>
+			<X>2</X>
+			<Y>219</Y>
+			<W>148</W>
+			<H>41</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="over">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="down">RewardButton_Disable.png</BITMAP>
+		<BITMAP type="disable">RewardButton_Disable.png</BITMAP>
+		<TEXT>Receive</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa16</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Day3 -->
+	<PICTURE item="MercenaryWelcome_Day3_BG" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>838</X>
+			<Y>308</Y>
+			<W>158</W> 
+			<H>268</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="MercenaryWelcome_Day3_Outline" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W> 
+			<H>260</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelOutline_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day3_Title" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>48</X>
+			<Y>7</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Day 3</TEXT>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day3_RemainTimeIcon" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>90</X>
+			<Y>52</Y>
+			<W>9</W> 
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>	
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day3_RemainTimeText" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>101</X>
+			<Y>50</Y>
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>7day</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day3_ItemIcon" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>26</X>
+			<Y>73</Y>
+			<W>100</W> 
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+	</PICTURE> 
+	
+	<TEXTAREA item="MercenaryWelcome_Day3_ItemText" parent="MercenaryWelcome_Day3_Outline">
+		<BOUNDS>
+			<X>0</X>
+			<Y>174</Y>
+			<W>144</W>
+			<H>42</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Item</TEXT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<PICTURE item="MercenaryWelcome_Day3_Shadow" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W>
+			<H>260</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MercenaryWelcome_Day3_CompleteIcon" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>38</X>
+			<Y>87</Y>
+			<W>81</W>
+			<H>61</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CheckIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="MercenaryWelcome_Day3_Button" parent="MercenaryWelcome_Day3_BG">
+		<BOUNDS>
+			<X>2</X>
+			<Y>219</Y>
+			<W>148</W>
+			<H>41</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="over">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="down">RewardButton_Disable.png</BITMAP>
+		<BITMAP type="disable">RewardButton_Disable.png</BITMAP>
+		<TEXT>Receive</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa16</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Day4 -->
+	<PICTURE item="MercenaryWelcome_Day4_BG" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>510</X>
+			<Y>586</Y>
+			<W>158</W> 
+			<H>268</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="MercenaryWelcome_Day4_Outline" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W> 
+			<H>260</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelOutline_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day4_Title" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>48</X>
+			<Y>7</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Day 4</TEXT>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day4_RemainTimeIcon" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>90</X>
+			<Y>52</Y>
+			<W>9</W> 
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day4_RemainTimeText" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>101</X>
+			<Y>50</Y>
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>7day</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day4_ItemIcon" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>26</X>
+			<Y>73</Y>
+			<W>100</W> 
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+	</PICTURE> 
+	
+	<TEXTAREA item="MercenaryWelcome_Day4_ItemText" parent="MercenaryWelcome_Day4_Outline">
+		<BOUNDS>
+			<X>0</X>
+			<Y>174</Y>
+			<W>144</W>
+			<H>42</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Item</TEXT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<PICTURE item="MercenaryWelcome_Day4_Shadow" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W>
+			<H>260</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MercenaryWelcome_Day4_CompleteIcon" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>38</X>
+			<Y>87</Y>
+			<W>81</W>
+			<H>61</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CheckIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="MercenaryWelcome_Day4_Button" parent="MercenaryWelcome_Day4_BG">
+		<BOUNDS>
+			<X>2</X>
+			<Y>219</Y>
+			<W>148</W>
+			<H>41</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="over">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="down">RewardButton_Disable.png</BITMAP>
+		<BITMAP type="disable">RewardButton_Disable.png</BITMAP>
+		<TEXT>Receive</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa16</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Day5 -->
+	<PICTURE item="MercenaryWelcome_Day5_BG" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>675</X>
+			<Y>586</Y>
+			<W>158</W> 
+			<H>268</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="MercenaryWelcome_Day5_Outline" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W> 
+			<H>260</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelOutline_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day5_Title" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>48</X>
+			<Y>7</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Day 5</TEXT>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day5_RemainTimeIcon" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>90</X>
+			<Y>52</Y>
+			<W>9</W> 
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>	
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day5_RemainTimeText" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>101</X>
+			<Y>50</Y>
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>7day</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day5_ItemIcon" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>26</X>
+			<Y>73</Y>
+			<W>100</W> 
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+	</PICTURE> 
+	
+	<TEXTAREA item="MercenaryWelcome_Day5_ItemText" parent="MercenaryWelcome_Day5_Outline">
+		<BOUNDS>
+			<X>0</X>
+			<Y>174</Y>
+			<W>144</W>
+			<H>42</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Item</TEXT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<PICTURE item="MercenaryWelcome_Day5_Shadow" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W>
+			<H>260</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MercenaryWelcome_Day5_CompleteIcon" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>38</X>
+			<Y>87</Y>
+			<W>81</W>
+			<H>61</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CheckIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="MercenaryWelcome_Day5_Button" parent="MercenaryWelcome_Day5_BG">
+		<BOUNDS>
+			<X>2</X>
+			<Y>219</Y>
+			<W>148</W>
+			<H>41</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="over">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="down">RewardButton_Disable.png</BITMAP>
+		<BITMAP type="disable">RewardButton_Disable.png</BITMAP>
+		<TEXT>Receive</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa16</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Day6 -->
+	<PICTURE item="MercenaryWelcome_Day6_BG" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>838</X>
+			<Y>586</Y>
+			<W>158</W> 
+			<H>268</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="MercenaryWelcome_Day6_Outline" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W> 
+			<H>260</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelOutline_Small.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day6_Title" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>48</X>
+			<Y>7</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Day 6</TEXT>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day6_RemainTimeIcon" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>90</X>
+			<Y>52</Y>
+			<W>9</W> 
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day6_RemainTimeText" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>101</X>
+			<Y>50</Y>
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>7day</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day6_ItemIcon" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>26</X>
+			<Y>73</Y>
+			<W>100</W> 
+			<H>100</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+	</PICTURE> 
+	
+	<TEXTAREA item="MercenaryWelcome_Day6_ItemText" parent="MercenaryWelcome_Day6_Outline">
+		<BOUNDS>
+			<X>0</X>
+			<Y>174</Y>
+			<W>144</W>
+			<H>42</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Item</TEXT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<PICTURE item="MercenaryWelcome_Day6_Shadow" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>150</W>
+			<H>260</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MercenaryWelcome_Day6_CompleteIcon" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>38</X>
+			<Y>87</Y>
+			<W>81</W>
+			<H>61</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CheckIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="MercenaryWelcome_Day6_Button" parent="MercenaryWelcome_Day6_BG">
+		<BOUNDS>
+			<X>2</X>
+			<Y>219</Y>
+			<W>148</W>
+			<H>41</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="over">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="down">RewardButton_Disable.png</BITMAP>
+		<BITMAP type="disable">RewardButton_Disable.png</BITMAP>
+		<TEXT>Receive</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa16</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- Day7 -->
+	<PICTURE item="MercenaryWelcome_Day7_BG" parent="MercenaryWelcomeFrame">
+		<BOUNDS>
+			<X>1003</X>
+			<Y>306</Y>
+			<W>253</W> 
+			<H>552</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Big.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="MercenaryWelcome_Day7_Outline" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>3</X>
+			<Y>3</Y>
+			<W>239</W> 
+			<H>538</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>RewardPannelOutline_Big.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day7_Title" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>97</X>
+			<Y>18</Y>
+			<W>60</W>
+			<H>30</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>Day 7</TEXT>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day7_RemainTimeIcon" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>172</X>
+			<Y>77</Y>
+			<W>9</W> 
+			<H>10</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>	
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="MercenaryWelcome_Day7_RemainTimeText" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>183</X>
+			<Y>76</Y>
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>7day</TEXT>
+		<VISIBLE>false</VISIBLE>
+	</LABEL>
+	
+	<PICTURE item="MercenaryWelcome_Day7_ItemIcon" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>33</X>
+			<Y>170</Y>
+			<W>180</W> 
+			<H>180</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<DRAWMODE>4</DRAWMODE>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+	</PICTURE> 
+	
+	<TEXTAREA item="MercenaryWelcome_Day7_ItemText" parent="MercenaryWelcome_Day7_Outline">
+		<BOUNDS>
+			<X>0</X>
+			<Y>435</Y>
+			<W>232</W>
+			<H>70</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXT>Item</TEXT>
+		<TEXTALIGN>
+			<HALIGN>CENTER</HALIGN>
+			<VALIGN>CENTER</VALIGN>
+		</TEXTALIGN>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<PICTURE item="MercenaryWelcome_Day7_Shadow" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>3</X>
+			<Y>3</Y>
+			<W>239</W>
+			<H>538</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>RewardPannelBG_Small_Shadow.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="MercenaryWelcome_Day7_CompleteIcon" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>82</X>
+			<Y>230</Y>
+			<W>81</W>
+			<H>61</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CheckIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<BMBUTTON item="MercenaryWelcome_Day7_Button" parent="MercenaryWelcome_Day7_BG">
+		<BOUNDS>
+			<X>5</X>
+			<Y>499</Y>
+			<W>236</W>
+			<H>41</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="over">RewardButton_Enable.png</BITMAP>
+		<BITMAP type="down">RewardButton_Disable.png</BITMAP>
+		<BITMAP type="disable">RewardButton_Disable.png</BITMAP>
+		<TEXT>Receive</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<FONT>FONTa16</FONT>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<!-- FRAME : PlayTimeEvent -->
+	<FRAME item="PlayTimeEventFrame" parent="Event_ETC1">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<PICTURE item="PlayTimeEventBackGround" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Play_Time.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Information" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>407</X>
+			<Y>730</Y>
+			<W>1303</W>
+			<H>270</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Information.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_InformationShadow_s" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>528</X>
+			<Y>741</Y>
+			<W>247</W>
+			<H>242</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_InformationShadow_s.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_InformationShadow_L" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>770</X>
+			<Y>862</Y>
+			<W>890</W>
+			<H>121</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_InformationShadow_L.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Update_Text" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>407</X>
+			<Y>700</Y>
+			<W>1303</W>
+			<H>50</H>
+		</BOUNDS>
+		<FONT>FONTa13</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_EVENT_ETC1_UPDATE_PLAYTIME</TEXT>
+	</LABEL>
+		
+	<LABEL item="PlayTimeEvent_Normal_Text" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>607</X>
+			<Y>789</Y>
+			<W>138</W>
+			<H>25</H>
+		</BOUNDS>
+		<FONT>FONTa18b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:ZITEM_NAME_PROFILE_BG_6120000</TEXT> <!-- Normal -->
+	</LABEL>
+		
+	<PICTURE item="PlayTime_Plus_Icon" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>627</X>
+			<Y>888</Y>
+			<W>97</W> 
+			<H>30</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>GunzPlusIcon_On.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="PlayTime_Plus_Text_Icon" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>605</X>
+			<Y>925</Y>
+			<W>141</W>
+			<H>25</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<STRETCH/>
+		<BITMAP>GunzPlus_Text.png</BITMAP>
+	</PICTURE> 
+	
+	<PICTURE item="PlayTime_Guage_BG" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>803</X>
+			<Y>858</Y>
+			<W>710</W> 
+			<H>8</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>Ingame_HPBar.png</BITMAP>
+	</PICTURE> 
+	
+	<GRADIENTLINEARPROGRESSBAR item="PlayTime_Guage"  parent="PlayTime_Guage_BG">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>710</W> 
+			<H>8</H>
+		</BOUNDS>
+		<FILLCOLOR> <!-- 0 -->
+			<INDEX>0</INDEX>
+			<BEGIN>
+				<R>66</R>
+				<G>207</G>
+				<B>124</B>
+			</BEGIN>
+			<END>
+				<R>66</R>
+				<G>207</G>
+				<B>124</B>
+			</END>
+		</FILLCOLOR>
+		<EMPTYCOLOR>
+			<R>53</R>
+			<G>56</G>
+			<B>57</B>
+			<ALPHA>255</ALPHA>
+		</EMPTYCOLOR>		
+		<LEANDIRECTION>0</LEANDIRECTION>
+		<BARTEXTURE>Main_Quadrangle_BG.png</BARTEXTURE>		
+		<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+	</GRADIENTLINEARPROGRESSBAR>
+		
+	<PICTURE item="PlayTimeEvent_ItemIconBG_0" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>870</X>
+			<Y>761</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_ItemIcon_0" parent="PlayTimeEvent_ItemIconBG_0">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_ItemIconBtn_0" parent="PlayTimeEvent_ItemIconBG_0">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Amount_0" parent="PlayTimeEvent_ItemIconBG_0">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_CompleteIcon_0" parent="PlayTimeEvent_ItemIconBG_0">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_LockIcon_0" parent="PlayTimeEvent_ItemIconBG_0">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>14</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+		
+	<PICTURE item="PlayTimeEvent_Arrow_0" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>763</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Text_0" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>948</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>1H</TEXT>
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_ItemIconBG_1" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1120</X>
+			<Y>761</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_ItemIcon_1" parent="PlayTimeEvent_ItemIconBG_1">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_ItemIconBtn_1" parent="PlayTimeEvent_ItemIconBG_1">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Amount_1" parent="PlayTimeEvent_ItemIconBG_1">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_CompleteIcon_1" parent="PlayTimeEvent_ItemIconBG_1">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_LockIcon_1" parent="PlayTimeEvent_ItemIconBG_1">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>13</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Arrow_1" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1158</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Text_1" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1151</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>2H</TEXT>
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_ItemIconBG_2" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1370</X>
+			<Y>761</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_ItemIcon_2" parent="PlayTimeEvent_ItemIconBG_2">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_ItemIconBtn_2" parent="PlayTimeEvent_ItemIconBG_2">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Amount_2" parent="PlayTimeEvent_ItemIconBG_2">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_CompleteIcon_2" parent="PlayTimeEvent_ItemIconBG_2">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_LockIcon_2" parent="PlayTimeEvent_ItemIconBG_2">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>13</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+			
+	<PICTURE item="PlayTimeEvent_Arrow_2" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1408</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Text_2" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1401</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>3H</TEXT>
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_ItemIconBG_3" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1476</X>
+			<Y>761</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_ItemIcon_3" parent="PlayTimeEvent_ItemIconBG_3">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_ItemIconBtn_3" parent="PlayTimeEvent_ItemIconBG_3">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Amount_3" parent="PlayTimeEvent_ItemIconBG_3">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_CompleteIcon_3" parent="PlayTimeEvent_ItemIconBG_3">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_LockIcon_3" parent="PlayTimeEvent_ItemIconBG_3">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>13</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+		
+	<PICTURE item="PlayTimeEvent_Arrow_3" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1493</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Text_3" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1493</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>4H</TEXT>
+	</LABEL>	
+
+	<PICTURE item="PlayTimeEvent_Plus_ItemIconBG_0" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>870</X>
+			<Y>891</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_ItemIcon_0" parent="PlayTimeEvent_Plus_ItemIconBG_0">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_Plus_ItemIconBtn_0" parent="PlayTimeEvent_Plus_ItemIconBG_0">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Plus_Amount_0" parent="PlayTimeEvent_Plus_ItemIconBG_0">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_Plus_CompleteIcon_0" parent="PlayTimeEvent_Plus_ItemIconBG_0">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_LockIcon_0" parent="PlayTimeEvent_Plus_ItemIconBG_0">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>14</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>	
+	
+	<PICTURE item="PlayTimeEvent_Plus_Arrow_0" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>763</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Plus_Text_0" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>948</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>1H</TEXT>
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_Plus_ItemIconBG_1" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1120</X>
+			<Y>891</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_ItemIcon_1" parent="PlayTimeEvent_Plus_ItemIconBG_1">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_Plus_ItemIconBtn_1" parent="PlayTimeEvent_Plus_ItemIconBG_1">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Plus_Amount_1" parent="PlayTimeEvent_Plus_ItemIconBG_1">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_Plus_CompleteIcon_1" parent="PlayTimeEvent_Plus_ItemIconBG_1">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_LockIcon_1" parent="PlayTimeEvent_Plus_ItemIconBG_1">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>13</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>	
+	
+	<PICTURE item="PlayTimeEvent_Plus_Arrow_1" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1158</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Plus_Text_1" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1151</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>2H</TEXT>
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_Plus_ItemIconBG_2" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1370</X>
+			<Y>891</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_ItemIcon_2" parent="PlayTimeEvent_Plus_ItemIconBG_2">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_Plus_ItemIconBtn_2" parent="PlayTimeEvent_Plus_ItemIconBG_2">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Plus_Amount_2" parent="PlayTimeEvent_Plus_ItemIconBG_2">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_Plus_CompleteIcon_2" parent="PlayTimeEvent_Plus_ItemIconBG_2">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_LockIcon_2" parent="PlayTimeEvent_Plus_ItemIconBG_2">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>13</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>	
+	
+	<PICTURE item="PlayTimeEvent_Plus_Arrow_2" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1408</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Plus_Text_2" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1401</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>3H</TEXT>
+	</LABEL>	
+
+	<PICTURE item="PlayTimeEvent_Plus_ItemIconBG_3" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1476</X>
+			<Y>891</Y>
+			<W>78</W>
+			<H>78</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Reward_Default.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_ItemIcon_3" parent="PlayTimeEvent_Plus_ItemIconBG_3">
+		<BOUNDS>
+			<X>9</X>
+			<Y>9</Y>
+			<W>58</W>
+			<H>58</H>
+		</BOUNDS>
+		<BITMAP>PlaytimeEvent_Reward2.png</BITMAP>
+		<STRETCH/>
+	</PICTURE>
+	
+	<BMBUTTON item="PlayTimeEvent_Plus_ItemIconBtn_3" parent="PlayTimeEvent_Plus_ItemIconBG_3">
+		<BOUNDS>
+			<X>1</X>
+			<Y>1</Y>
+			<W>70</W>
+			<H>70</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="over">EventTab_Reward_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_Reward_Enable.png</BITMAP>
+		<BITMAP type="disable">EventTab_Reward_Complete.png</BITMAP>
+		<GROUP>PlayTimeEvent_Reward</GROUP>
+	</BMBUTTON>
+	
+	<LABEL item="PlayTimeEvent_Plus_Amount_3" parent="PlayTimeEvent_Plus_ItemIconBG_3">
+		<BOUNDS>
+			<X>0</X>
+			<Y>55</Y>
+			<W>70</W>
+			<H>20</H>
+		</BOUNDS>
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>right</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>		
+	</LABEL>
+	
+	<PICTURE item="PlayTimeEvent_Plus_CompleteIcon_3" parent="PlayTimeEvent_Plus_ItemIconBG_3">
+		<BOUNDS>
+			<X>17</X>
+			<Y>17</Y>
+			<W>38</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>CompleteIcon.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="PlayTimeEvent_Plus_LockIcon_3" parent="PlayTimeEvent_Plus_ItemIconBG_3">
+		<BOUNDS>
+			<X>53</X>
+			<Y>5</Y>
+			<W>13</W>
+			<H>19</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EquipTab_Lock.png</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+		
+	<PICTURE item="PlayTimeEvent_Plus_Arrow_3" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1493</X>
+			<Y>843</Y>
+			<W>39</W>
+			<H>39</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>PlayTime_Gauge_Complete.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<LABEL item="PlayTimeEvent_Plus_Text_3" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>1493</X>
+			<Y>845</Y>
+			<W>60</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>211</R>
+			<G>255</G>
+			<B>244</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>4H</TEXT>
+	</LABEL>
+
+	<PICTURE item="PlayTime_Tooltip_BG" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>803</X>
+			<Y>858</Y>
+			<W>710</W> 
+			<H>8</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE> 
+	
+	<FRAME item="PlayTime_Tooltip" parent="PlayTime_Tooltip_BG">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>750</W>
+			<H>20</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+		<TOOLTIP></TOOLTIP>
+	</FRAME>	
+
+	<!-- EXP&Bounty Event Page -->
+	<FRAME item="EXPBountyEventFrame" parent="Event_ETC1">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 바탕화면 이미지 -->
+	<PICTURE item="EXPBountyEventBackGround" parent="EXPBountyEventFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Boost_Event.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="EXPBountyEvent_Information" parent="EXPBountyEventFrame">
+		<BOUNDS>
+			<X>407</X>
+			<Y>765</Y>
+			<W>1303</W>
+			<H>235</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Information.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+	
+	<PICTURE item="EXPBountyEvent_Notice_Icon" parent="EXPBountyEventFrame">
+		<BOUNDS>
+			<X>528</X>
+			<Y>1001</Y>
+			<W>20</W> 
+			<H>20</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP>TimeIcon.png</BITMAP>
+	</PICTURE> 
+	
+	<LABEL item="EXPBountyEvent_Notice_Text" parent="EXPBountyEventFrame">
+		<BOUNDS>
+			<X>561</X>
+			<Y>988</Y>
+			<W>400</W>
+			<H>40</H>
+		</BOUNDS>
+		<FONT>FONTa16</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXT>STR:UI_MISSION_TIMELIMIT</TEXT>
+	</LABEL>
+		
+	<BMBUTTON item="EXPBountyEvent_XPMark" parent="EXPBountyEventFrame">
+		<BOUNDS>
+			<X>1600</X>
+			<Y>744</Y>
+			<W>27</W> 
+			<H>24</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP type="up">EventTab_EXPIcon_Default.png</BITMAP>
+		<BITMAP type="over">EventTab_EXPIcon_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_EXPIcon_Default.png</BITMAP>
+		<BITMAP type="disable">EventTab_EXPIcon_Default.png</BITMAP>
+	</BMBUTTON> 
+	
+	<BMBUTTON item="EXPBountyEvent_BTMark" parent="EXPBountyEventFrame">
+		<BOUNDS>
+			<X>1639</X>
+			<Y>744</Y>
+			<W>27</W> 
+			<H>24</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>		
+		<STRETCH/>
+		<BITMAP type="up">EventTab_BountyIcon_Default.png</BITMAP>
+		<BITMAP type="over">EventTab_BountyIcon_Over.png</BITMAP>
+		<BITMAP type="down">EventTab_BountyIcon_Default.png</BITMAP>
+		<BITMAP type="disable">EventTab_BountyIcon_Default.png</BITMAP>
+	</BMBUTTON> 
+	
+	<LABEL item="EXPBountyEvent_Text" parent="EXPBountyEventFrame">
+		<BOUNDS>
+			<X>437</X>
+			<Y>765</Y>
+			<W>1303</W>
+			<H>235</H>
+		</BOUNDS>
+		<FONT>FONTa32</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+	</LABEL>
+	
+	<!-- Event Unavailable Page -->
+	<FRAME item="EventUnavailableFrame" parent="Event_ETC1">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- PICTURE : 바탕화면 이미지 -->
+	<PICTURE item="EventUnavailableBackGround" parent="EventUnavailableFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Shop_Background.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="EventUnavailable_Information" parent="EventUnavailableFrame">
+		<BOUNDS>
+			<X>407</X>
+			<Y>765</Y>
+			<W>1303</W>
+			<H>235</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>EventTab_Information.png</BITMAP>
+		<VISIBLE>true</VISIBLE>
+	</PICTURE>
+		
+	<LABEL item="EventUnavailable_Text" parent="EventUnavailableFrame">
+		<BOUNDS>
+			<X>437</X>
+			<Y>765</Y>
+			<W>1303</W>
+			<H>235</H>
+		</BOUNDS>
+		<FONT>FONTa32</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_EVENT_ETC1_CLOSED</TEXT>
+	</LABEL>
+	
+	<FRAME item="Event_ETC1_Common" parent="Event_ETC1">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- DOTBUTTON : Mercenary_Welcome_Button -->
+	<DOTBUTTON item="Mercenary_Welcome_Button" parent="Event_ETC1_Common">
+		<BOUNDS>
+			<X>53</X>
+			<Y>163</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>312</X>
+			<Y>22</Y>
+			<W>14</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<GROUP>ETC1</GROUP>
+		<TEXT>STR:UI_EVENT_ETC1_MERCENARY_WELCOME</TEXT>
+		<BITMAP type="iconOn">EventTab_DailyLogin_ON.png</BITMAP>
+		<BITMAP type="iconOff">EventTab_DailyLogin_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+
+	<!-- DOTBUTTON : PlayTime_Button -->
+	<DOTBUTTON item="PlayTime_Button" parent="Event_ETC1_Common">
+		<BOUNDS>
+			<X>53</X>
+			<Y>237</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>312</X>
+			<Y>22</Y>
+			<W>14</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>ETC1</GROUP>
+		<TEXT>STR:UI_EVENT_ETC1_PLAYTIME</TEXT>
+		<BITMAP type="iconOn">EventTab_Playtime_ON.png</BITMAP>
+		<BITMAP type="iconOff">EventTab_Playtime_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+	
+	<!-- DOTBUTTON : EXP_Bounty_Event_Button -->
+	<DOTBUTTON item="EXP_Bounty_Event_Button" parent="Event_ETC1_Common">
+		<BOUNDS>
+			<X>53</X>
+			<Y>311</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>312</X>
+			<Y>22</Y>
+			<W>14</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>ETC1</GROUP>
+		<TEXT>STR:UI_EVENT_ETC1_XPBT</TEXT>
+		<BITMAP type="iconOn">EventTab_EXPBounty_ON.png</BITMAP>
+		<BITMAP type="iconOff">EventTab_EXPBounty_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+	
+	<!-- DOTBUTTON : Event_Welcome_Button -->
+	<DOTBUTTON item="Event_Welcome_Button" parent="Event_ETC1_Common">
+		<BOUNDS>
+			<X>53</X>
+			<Y>385</Y>
+			<W>340</W>
+			<H>60</H>
+		</BOUNDS>
+		<FONT>FONTa17</FONT>
+		<TEXTCOLOR type="ON">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTCOLOR type="OFF">
+			<R>109</R>
+			<G>109</G>
+			<B>118</B>
+		</TEXTCOLOR>
+		<RECT type="icon">
+			<X>19</X>
+			<Y>18</Y>
+			<W>22</W>
+			<H>22</H>
+		</RECT>
+		<RECT type="dot">
+			<X>312</X>
+			<Y>22</Y>
+			<W>14</W>
+			<H>14</H>
+		</RECT>
+		<RECT type="text">
+			<X>59</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</RECT>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<GROUP>ETC1</GROUP>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_EVENT_ETC1_NEWBIE</TEXT>
+		<BITMAP type="iconOn">EventTab_DailyLogin_ON.png</BITMAP>
+		<BITMAP type="iconOff">EventTab_DailyLogin_OFF.png</BITMAP>
+		<BITMAP type="reddot">MissionTabReddot.png</BITMAP>
+		<BITMAP type="over">MissionTabBG.png</BITMAP>
+		<BITMAP type="down">MissionTabBG.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</DOTBUTTON>
+	
+	<ZRICHTOOLTIP item="PlayTime_Item_Tooltip" parent="PlayTimeEventFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">ShopEquipTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>200</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>389</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>350</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_08" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTb21b" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>132</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="ItemSourceSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>54</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Shop_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+</XML>

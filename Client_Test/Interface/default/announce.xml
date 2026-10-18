@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+    <!--
+        Admin Announce Configuration (/wall command)
+
+        === Hộp ===
+        pos_y          : Vị trí Y (0.0 = trên cùng, 1.0 = dưới cùng)
+        box_width      : Chiều rộng hộp (0.0 - 1.0 theo màn hình)
+        box_height     : Chiều cao hộp (pixels)
+        padding        : Padding bên trong (pixels)
+        bg_color       : Màu nền ARGB hex (VD: C0000000 = đen 75%)
+        border_color   : Màu viền ARGB hex
+
+        === Chữ ===
+        font           : Tên font (đăng ký trong MFontManager)
+        text_color     : Màu chữ ARGB hex (dùng khi color_cycle tắt)
+        shadow         : Bóng chữ (1/0)
+        shadow_offset  : Khoảng cách bóng (pixels)
+        shadow_color   : Màu bóng ARGB hex
+
+        === Thời gian ===
+        display_time   : Thời gian hiển thị nếu text ngắn (ms)
+        fade_time      : Fade in/out (ms)
+
+        === Cuộn (text dài) ===
+        scroll_speed   : Tốc độ cuộn (pixels/giây)
+        scroll_pause   : Dừng ở đầu/cuối cuộn (ms)
+        repeat         : Số lần cuộn lại (VD: 3 = chạy 3 lần)
+
+        === Nhấp nháy màu ===
+        color_cycle    : Bật/tắt (1/0)
+        color_speed    : ms chuyển giữa 2 màu kề (VD: 300 = mượt, 100 = nhanh)
+        colors         : Danh sách màu ARGB hex, cách nhau bằng dấu phẩy
+                         VD Rainbow: "FFFF0000,FFFF8800,FFFFFF00,FF00FF00,FF0088FF,FF0000FF,FFFF00FF"
+    -->
+    <ANNOUNCE
+        font="FONTa10_O2Wht"
+        text_color="FFFFFF00"
+        bg_color="C0000000"
+        border_color="FF888888"
+        shadow_color="AA000000"
+        pos_y="0.15"
+        box_width="0.50"
+        box_height="30"
+        display_time="8000"
+        fade_time="500"
+        scroll_speed="150"
+        scroll_pause="2000"
+        padding="10"
+        shadow="1"
+        shadow_offset="1"
+        repeat="3"
+        color_cycle="1"
+        color_speed="300"
+        colors="FFFF0000,FFFF8800,FFFFFF00,FF00FF00,FF0088FF,FF0000FF,FFFF00FF"
+        icon="interface/default/announce_icon.gif"
+        icon_size="24"
+    />
+</XML>

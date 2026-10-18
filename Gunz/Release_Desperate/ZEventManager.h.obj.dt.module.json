@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\ZEventManager.obj",
+            "outputs": [
+                "Release_Desperate\\ZEventManager.h.obj.dt.module.json",
+                "Release_Desperate\\ZEventManager.h.obj.dt.d.json",
+                "Release_Desperate\\Gunz.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

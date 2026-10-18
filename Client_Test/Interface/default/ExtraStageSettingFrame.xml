@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="ExtraStageList">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+	<FRAME item="ExtraStageSettingFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>500</W>
+			<H>300</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_SSF_01</TEXT>
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+
+	<LABEL item="GravityValueLabel" parent="ExtraStageSettingFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Gravity Value</TEXT>
+	</LABEL>
+	<COMBOBOX item="GravityValueComboBox" parent="ExtraStageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>115</X>
+			<Y>40</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>		
+	
+	<LABEL item="JumpValueLabel" parent="ExtraStageSettingFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>70</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Jump Value</TEXT>
+	</LABEL>
+	<COMBOBOX item="JumpValueComboBox" parent="ExtraStageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>115</X>
+			<Y>70</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>		
+	
+	<LABEL item="SpeedValueLabel" parent="ExtraStageSettingFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>100</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Speed Value</TEXT>
+	</LABEL>
+	<COMBOBOX item="SpeedValueComboBox" parent="ExtraStageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>115</X>
+			<Y>100</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>		
+	<LABEL item="DMGTypeLabel" parent="ExtraStageSettingFrame">
+		<BOUNDS>
+			<X>10</X>
+			<Y>130</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>Damage Type</TEXT>
+	</LABEL>
+	<COMBOBOX item="DMGTypeComboBox" parent="ExtraStageSettingFrame">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>115</X>
+			<Y>130</Y>
+			<W>100</W>
+			<H>24</H>
+		</BOUNDS>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>		
+	<!-- COMBOBOX END-->
+
+
+<!-- Left Colunm-->	
+	<LABEL item="SpecialWeaponLabel" parent="ExtraStageSettingFrame">
+		<BOUNDS>
+			<X>260</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>No Custom Items</TEXT>
+	</LABEL>
+	<BUTTON item="SpecialWeapon" parent="ExtraStageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>220</X>
+			<Y>38</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+
+<!-- Right Colunm-->		
+	<LABEL item="NoDMGLabel" parent="ExtraStageSettingFrame">
+		<BOUNDS>
+			<X>390</X>
+			<Y>40</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>No Damage</TEXT>
+	</LABEL>
+	<BUTTON item="NoDMG" parent="ExtraStageSettingFrame">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>350</X>
+			<Y>38</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+
+	<BUTTON item="ExtraStageSettingApplyBtn" parent="ExtraStageSettingFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>300</X>
+			<Y>260</Y>
+			<W>89</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_OK</TEXT> <!-- 확인(&amp;O) -->
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+	</BUTTON>
+
+	<!-- BUTTON : 취소 버튼 -->
+	<BUTTON item="ParentClose" parent="ExtraStageSettingFrame">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>400</X>
+			<Y>260</Y>
+			<W>89</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>STR:UI_COMMON_CANCEL</TEXT> <!-- 취소(&amp;C) -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+</XML>

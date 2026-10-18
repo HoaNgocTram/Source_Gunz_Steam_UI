@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+	<LOCALE>
+ 		<COUNTRY>USA</COUNTRY>
+		<LANGUAGE>USA</LANGUAGE>
+		<MAXPLAYERS>64</MAXPLAYERS>
+		<SELECTABLE_LANGUAGES>
+			<LANGUAGE id="USA" name="English" />
+			<LANGUAGE id="KOR" name="한국어" />
+			<LANGUAGE id="POR" name="Português (Brasil)" />
+			<LANGUAGE id="SPA" name="Español" />
+			<LANGUAGE id="VI" name="Tiếng Việt" />
+		</SELECTABLE_LANGUAGES>
+	</LOCALE>
+</XML>

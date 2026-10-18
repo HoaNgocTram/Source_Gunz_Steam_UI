@@ -1,0 +1,2395 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Lobby">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Lobby 화면 구성
+   
+   Last Update : 29.OCT.2004
+   Editor      : Lim Dong Hwan
+-->
+
+	
+<!-- 프레임 생성 : Lobby -->
+	<FRAME item="Lobby">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+	
+<!-- 프레임 생성 : Main Window -->
+	<FRAME item="Lobby_Main_Frame" parent="Lobby">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>	
+
+
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과)-->
+	<PICTURE item="Lobby_MainNormalBG" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BG_Play.png</BITMAP>
+	</PICTURE> 
+	
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="Lobby_MainClanBG" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>PlacementmatchBG.png</BITMAP>
+	</PICTURE>	
+
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="Lobby_MainLadderWarsBG" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>LeagueBG.png</BITMAP>
+	</PICTURE>	 
+	
+		<!-- Picture : 상단 바탕화면 이미지(이펙트 효과) -->
+	<PICTURE item="Lobby_MainDuelBG" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP>LeagueBG.png</BITMAP>
+	</PICTURE>
+
+	<!-- <PICTURE item="Lobby_PanelShadow" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>800</W>
+			<H>600</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>LobbyPanel_Shadow.png</BITMAP>
+	</PICTURE> -->
+	
+	<!-- <PICTURE item ="Lobby_PagePanel" parent="Lobby">
+		<BOUNDS>
+			<X>622</X>
+			<Y>312</Y>
+			<W>168</W>
+			<H>23</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Lobby_PagePanel.png</BITMAP>
+	</PICTURE> -->
+
+	<PICTURE item ="Banner_Ladder" parent="Lobby_MainLadderWarsBG">
+		<BOUNDS>
+			<X>23</X>
+			<Y>115</Y>	
+			<W>377</W> 
+			<H>185</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Banner_Ladder.png</BITMAP>
+	</PICTURE>
+
+	<PICTURE item ="BB_Ladder_Info" parent="Lobby_MainLadderWarsBG"> 
+		<BOUNDS>
+			<X>23</X>
+			<Y>345</Y>	
+			<W>377</W> 
+			<H>143</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BB_Ladder_Info.png</BITMAP>
+	</PICTURE>	
+	<PICTURE item ="Banner_Ladder_Mode" parent="Lobby_MainLadderWarsBG"> 
+		<BOUNDS>
+			<X>33</X>
+			<Y>355</Y>	
+			<W>192</W> 
+			<H>60</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Banner_Ladder_Mode.png</BITMAP>
+	</PICTURE>	
+	<PICTURE item ="Banner_Ladder_Weapon" parent="Lobby_MainLadderWarsBG"> 
+		<BOUNDS>
+			<X>33</X>
+			<Y>418</Y>	
+			<W>192</W> 
+			<H>60</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Banner_Ladder_Weapon.png</BITMAP>
+	</PICTURE>	
+	<PICTURE item ="BB_Ladder_Info" parent="Lobby_MainLadderWarsBG"> 
+		<BOUNDS>
+			<X>229</X>
+			<Y>355</Y>	
+			<W>164</W> 
+			<H>37</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BB_Ladder_Info1.png</BITMAP>
+	</PICTURE>	
+	<PICTURE item ="BB_Ladder_Info1" parent="Lobby_MainLadderWarsBG"> 
+		<BOUNDS>
+			<X>229</X>
+			<Y>398</Y>	
+			<W>164</W> 
+			<H>37</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BB_Ladder_Info1.png</BITMAP>
+	</PICTURE>	
+	<PICTURE item ="BB_Ladder_Info2" parent="Lobby_MainLadderWarsBG"> 
+		<BOUNDS>
+			<X>229</X>
+			<Y>441</Y>	
+			<W>164</W> 
+			<H>37</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BB_Ladder_Info1.png</BITMAP>
+	</PICTURE>	
+	<PICTURE item ="Ladder_Score" parent="Lobby_MainLadderWarsBG"> 
+		<BOUNDS>
+			<X>546</X>
+			<Y>387</Y>	
+			<W>118</W> 
+			<H>23</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BB_Ladder_Info2.png</BITMAP>
+	</PICTURE>	
+	<LABEL item="Lobby_GameMode" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>109</X>
+			<Y>378</Y> 
+			<W>77</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXT>Duelmatch</TEXT>
+	</LABEL>
+
+	<LABEL item="Lobby_LadderWarsCount0" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>254</X>
+			<Y>366</Y> 
+			<W>116</W>
+			<H>15</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Lobby_LadderWarsCount1" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>254</X>
+			<Y>408</Y> 
+			<W>116</W>
+			<H>15</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Lobby_LadderWarsCount2" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>254</X>
+			<Y>451</Y> 
+			<W>116</W>
+			<H>15</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="Lobby_LadderWarsCount3" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa9b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>88</X>
+			<Y>440</Y> 
+			<W>116</W>
+			<H>18</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- <LADDERWARSRANKINGLIST item="Lobby_LadderWarsRankingList" parent="Lobby_MainLadderWarsBG">
+		<BOUNDS>
+			<X>530</X>
+			<Y>140</Y>
+			<W>250</W>
+			<H>170</H>
+		</BOUNDS>
+	</LADDERWARSRANKINGLIST> -->
+
+	<PICTURE item ="Lobby_LadderWarsEmblem" parent="Lobby_MainLadderWarsBG"> <!-- icon Rank -->
+		<BOUNDS>
+			<X>538</X>
+			<Y>152</Y>	
+			<W>136</W> 
+			<H>167</H> 
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>	
+	
+	<LABEL item="Lobby_LadderWarsName" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>100</G>
+			<B>20</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>544</X>
+			<Y>355</Y> 
+			<W>125</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="Lobby_LadderWarsScore" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa8b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>584</X>
+			<Y>392</Y> 
+			<W>40</W>
+			<H>14</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="Lobby_LadderWarsRanking" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>556</X>
+			<Y>421</Y>
+			<W>105</W>
+			<H>17</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<LABEL item="Lobby_LadderWarsWinLoss" parent="Lobby_MainLadderWarsBG">
+		<FONT>FONTa8</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>556</X>
+			<Y>453</Y>
+			<W>105</W>
+			<H>17</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- Map Selector -->
+	<FRAME item="MapSelector">
+	<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>150</X>
+			<Y>110</Y>
+			<W>600</W>
+			<H>250</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<TEXT></TEXT>
+	</FRAME>
+	
+	<PICTURE item="MapSelectorImg0" parent="MapSelector">
+		<BOUNDS>
+			<X>27</X>
+			<Y>37</Y>
+			<W>162</W>
+			<H>162</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<LABEL item="PlayerVoteMapName0" parent="MapSelector">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>150</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>90</X>
+			<Y>210</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	
+	<LABEL item="PlayerVoteMap0" parent="MapSelector">
+		<FONT>FONTa5b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>90</X>
+			<Y>225</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Votes: 0</TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+
+	<BMBUTTON item="PlayerVoteMapButton0" parent="MapSelector">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>27</X>
+			<Y>37</Y>
+			<W>162</W>
+			<H>162</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">select_cw_map_off.png</BITMAP>
+		<BITMAP type="over">select_cw_map_on.png</BITMAP>
+		<BITMAP type="down">select_cw_map_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<PICTURE item="MapSelectorImg1" parent="MapSelector">
+		<BOUNDS>
+			<X>220</X>
+			<Y>37</Y>
+			<W>162</W>
+			<H>162</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<LABEL item="PlayerVoteMapName1" parent="MapSelector">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>150</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>210</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	
+	<LABEL item="PlayerVoteMap1" parent="MapSelector">
+		<FONT>FONTa5b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>280</X>
+			<Y>225</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Votes: 0</TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+
+	<BMBUTTON item="PlayerVoteMapButton1" parent="MapSelector">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>220</X>
+			<Y>37</Y>
+			<W>162</W>
+			<H>160</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">select_cw_map_off.png</BITMAP>
+		<BITMAP type="over">select_cw_map_on.png</BITMAP>
+		<BITMAP type="down">select_cw_map_on.png</BITMAP>
+	</BMBUTTON>
+	
+	<PICTURE item="MapSelectorImg2" parent="MapSelector">
+		<BOUNDS>
+			<X>410</X>
+			<Y>37</Y>
+			<W>162</W>
+			<H>162</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<LABEL item="PlayerVoteMapName2" parent="MapSelector">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>0</R>
+			<G>150</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>470</X>
+			<Y>210</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	
+	<LABEL item="PlayerVoteMap2" parent="MapSelector">
+		<FONT>FONTa5b</FONT>
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>470</X>
+			<Y>225</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Votes: 0</TEXT>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+
+	<BMBUTTON item="PlayerVoteMapButton2" parent="MapSelector">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>410</X>
+			<Y>37</Y>
+			<W>162</W>
+			<H>162</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">select_cw_map_off.png</BITMAP>
+		<BITMAP type="over">select_cw_map_on.png</BITMAP>
+		<BITMAP type="down">select_cw_map_on.png</BITMAP>
+	</BMBUTTON>
+
+	<!-- STREAKLADDER JOIN RANDOM LIST -->
+
+	<FRAME item="LadderWarsGameDialog" >
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>420</W>
+			<H>170</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<TEXT>STR:UI_LOBBY_23</TEXT>
+	</FRAME>
+	
+	<LABEL item="GameTypeLabel" parent="LadderWarsGameDialog">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>420</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_LOBBY_27</TEXT>
+		<CHECKED>true</CHECKED>
+		<SELECTED>true</SELECTED>
+	</LABEL>
+
+	<COMBOBOX item="LadderWarsGameType" parent="LadderWarsGameDialog">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>138</X>
+			<Y>79</Y>
+			<W>150</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<ITEMHEIGHT>18</ITEMHEIGHT>
+
+		<LISTITEM>Solo (1 VS 1)</LISTITEM>
+		<LISTITEM selected="true">Duo (2 VS 2)</LISTITEM>
+		<LISTITEM>Trio (3 VS 3)</LISTITEM>
+		<LISTITEM>Squad (4 VS 4)</LISTITEM>		
+		
+		<DROPSIZE>250</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+		<COMBOFIRSTSIZE>120</COMBOFIRSTSIZE>
+	</COMBOBOX>
+	
+	<BUTTON item="LadderWarsDialogOk" parent="LadderWarsGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>92</X>
+			<Y>129</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_17</TEXT> <!-- ??(&amp;O) -->
+	</BUTTON>
+	
+	<BUTTON item="LadderWarsDialogClose" parent="LadderWarsGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>239</X>
+			<Y>129</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_LOBBY_18</TEXT> <!-- ??(&amp;C) -->
+	</BUTTON>
+	
+<!-- END STREAKLADDER JOIN RANDOM LIST-->	
+
+<!-- 프레임 생성 : Main Window -->
+	<!-- <FRAME item="Lobby_Main_Frame" parent="Lobby">
+		<FRAMELOOK>Custom2FrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>92</Y>
+			<W>800</W>
+			<H>467</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>			 -->
+	
+	<!-- <PICTURE item="Lobby_Logo" parent="Lobby">
+		<BOUNDS>
+			<X>10</X>
+			<Y>13</Y>
+			<W>120</W>
+			<H>55</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo.png</BITMAP>
+	</PICTURE> -->
+	
+	
+	<!-- Picture : 상단 바탕화면 이미지 
+	
+	<PICTURE item="Lobby_MainBGTop" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<STRETCH>y</STRETCH>
+		<BITMAP>space.png</BITMAP>
+	</PICTURE>-->
+	
+
+	<!-- Center-top Logo -->
+	<!-- ANIMATION item="LogoAnim" parent="Lobby">
+	<PLAYMODE>repetition</PLAYMODE>
+	<ANIMTEMPLATE>LogoAnim</ANIMTEMPLATE>
+		<BOUNDS>
+			<X>280</X>
+			<Y>-20</Y>
+			<W>240</W>
+			<H>135</H>
+		</BOUNDS>
+	</ANIMATION -->
+
+	<!-- Picture : 상단 바탕화면 이미지(이펙트 효과) 
+	<PICTURE item="Lobby_StripTop" parent="Lobby_MainBGTop">
+		<BOUNDS>
+			<X>288</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP></BITMAP>
+		<DRAWMODE>1</DRAWMODE>
+	</PICTURE>-->
+
+
+	<!--
+	<PICTURE item="Lobby_Logo" parent="Lobby_MainBGTop">
+		<BOUNDS>
+			<X>10</X>
+			<Y>3</Y>
+			<W>164</W>
+			<H>76</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>gunz_logo_hq.png</BITMAP>
+	</PICTURE>
+	-->
+
+	<!-- Picture : 하단 바탕화면 이미지 
+	<PICTURE item="Lobby_MainBGBottom" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>552</Y>
+			<W>800</W>
+			<H>48</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>-->
+
+	<!-- Picture : 하단 바탕화면 이미지(이펙트 효과) 
+	<PICTURE item="Lobby_StripBottom" parent="Lobby_MainBGBottom">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>512</W>
+			<H>92</H>
+		</BOUNDS>
+		<STRETCH>x</STRETCH>
+		<BITMAP></BITMAP>
+	</PICTURE>-->
+
+	<!-- Picture : 방리스트 배경화면 이미지 출력 -->
+	<PICTURE item ="Lobby_RoomListBG" parent="Lobby">
+		<BOUNDS>
+			<X>155</X>
+			<Y>123</Y>
+			<W>624</W>
+			<H>421</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 채널정보 표시창 이미지 출력 -->
+	<!-- <PICTURE item ="Lobby_ChannelNameBG" parent="Lobby">
+		<BOUNDS>
+			<X>8</X>
+			<Y>75</Y>
+			<W>425</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Lobby_Title_bar.png</BITMAP>
+	</PICTURE> -->
+	
+	<!-- Label : 채널정보 표시 -->
+	<LABEL item="Lobby_ChannelName" parent="Lobby">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>210</R>
+			<G>210</G>
+			<B>210</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>20</X>
+			<Y>78</Y>
+			<W>380</W>
+			<H>20</H>
+		</BOUNDS>
+		<!-- <TEXT>STR:UI_LOBBY_01</TEXT> Lobby -->
+	</LABEL>
+
+	<!-- CLANLIST : 클랜전일때는 클랜정보 표시 -->
+	<CLANLIST item="Lobby_ClanList" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>18</X>
+			<Y>22</Y>
+			<W>376</W>
+			<H>160</H>
+		</BOUNDS>
+	</CLANLIST>
+
+	<!-- Picture : 클랜전일때는 클랜정보 표시 -->
+	<PICTURE item ="Lobby_ClanInfoBG" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>396</X>
+			<Y>12</Y>
+			<W>376</W>
+			<H>170</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- Picture : 클랜전일때는 클랜 엠블럼 표시 -->
+	<PICTURE item ="Lobby_ClanInfoEmblem" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>12</X>
+			<Y>10</Y>
+			<W>64</W>
+			<H>64</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 클랜전일때는 클랜 이름 표시 -->
+	<LABEL item="Lobby_ClanInfoName" parent="Lobby_ClanInfoBG">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>100</G>
+			<B>20</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>85</X>
+			<Y>8</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- Label : 클랜전일때는 클랜정보 표시 -->
+	<LABEL item="Lobby_ClanInfoDetail" parent="Lobby_ClanInfoBG">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>173</R>
+			<G>173</G>
+			<B>173</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>85</X>
+			<Y>28</Y>
+			<W>250</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- ZBMNUMLABEL : 클랜전일때는 클랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoWinLose" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>53</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 클랜전일때는 클랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoPoints" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>78</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 클랜전일때는 클랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoTotalPoints" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>103</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 클랜전일때는 클랜정보 표시 -->
+	<ZBMNUMLABEL item="Lobby_ClanInfoRanking" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>170</X>
+			<Y>128</Y>
+			<W>190</W>
+			<H>32</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- PICTURE : 클랜전일때는 클랜정보 표시
+	<PICTURE item ="Lobby_ClanInfoUnranked" parent="Lobby_ClanInfoBG">
+		<BOUNDS>
+			<X>240</X>
+			<Y>128</Y>
+			<W>128</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>unranked.tga</BITMAP>
+	</PICTURE> -->
+
+	<!-- Picture : 듀얼토너먼트 UI, 유저의 토너먼트 전적 배경 -->
+	<PICTURE item ="Lobby_DuelTournamentInfoBG" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>11</X>
+			<Y>16</Y>
+			<W>314</W>
+			<H>160</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+	
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 승패 수 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoWinLose" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>198</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 토너먼트 점수 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoPoints" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>198</X>
+			<Y>85</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 우승 수 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoWinners" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>198</X>
+			<Y>110</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 랭킹 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoRanking" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>198</X>
+			<Y>135</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+	
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 지난주 승패 수 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoWinLosePrev" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>95</X>
+			<Y>60</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 지난주 토너먼트 점수 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoPointsPrev" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>95</X>
+			<Y>85</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 지난주 우승 수 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoWinnersPrev" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>95</X>
+			<Y>110</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- ZBMNUMLABEL : 듀얼토너먼트 UI, 지난주 랭킹 -->
+	<ZBMNUMLABEL item="Lobby_DuelTournamentInfoRankingPrev" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>95</X>
+			<Y>135</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<BITMAP>grp_num.tga</BITMAP>
+		<FONTSIZE>
+			<W>32</W>
+			<H>32</H>
+		</FONTSIZE>
+	</ZBMNUMLABEL>
+
+	<!-- Picture : 듀얼토너먼트 UI, 유저 계급 엠블럼 표시 -->
+	<PICTURE item ="Lobby_DuelTournamentInfoEmblem" parent="Lobby_DuelTournamentInfoBG">
+		<BOUNDS>
+			<X>12</X>
+			<Y>9</Y>
+			<W>32</W>
+			<H>32</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>no_emblem.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 듀얼토너먼트 UI, 유저명 -->
+	<LABEL item="Lobby_DuelTournamentInfoName" parent="Lobby_DuelTournamentInfoBG">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>100</G>
+			<B>20</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>55</X>
+			<Y>14</Y>
+			<W>150</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+
+	<!-- DuelTournamentRankingList : 듀얼토너먼트 UI, 랭킹 리스트 -->
+	<DUELTOURNAMENTRANKINGLIST item="Lobby_DuelTournamentRankingList" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>342</X>
+			<Y>12</Y>
+			<W>430</W>
+			<H>170</H>
+		</BOUNDS>
+	</DUELTOURNAMENTRANKINGLIST>
+
+	<!-- Picture : 듀얼토너먼트 UI, 랭킹 리스트 상단 레이블 -->
+	<PICTURE item ="Lobby_DuelTournamentRankingListLabel" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>342</X>
+			<Y>17</Y>
+			<W>429</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>DuelTournamentRankingLabel.png</BITMAP>
+	</PICTURE>
+	
+	<!-- Label : 듀얼토너먼트 UI, 랭킹리스트 하단 다음 순위까지 남은 포인트 -->
+	<LABEL item="Lobby_DuelTournamentNeedPointNextRank" parent="Lobby_RoomListBG">
+		<FONT>FONTa10b</FONT>
+		<TEXTCOLOR>
+			<R>80</R>
+			<G>200</G>
+			<B>20</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>342</X>
+			<Y>161</Y>
+			<W>425</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	
+<!-- 페이지 번호 버튼 1~6 -->
+	<!-- BMButton : 페이지 번호 1 -->
+	<BMBUTTON item ="Lobby_RoomNo1" parent="Lobby">
+		<BOUNDS>
+			<X>155</X>
+			<Y>111</Y>
+			<W>12</W>
+			<H>12</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page1_on.png</BITMAP>
+		<BITMAP type="over">page1_on.png</BITMAP>
+		<BITMAP type="down">page1_off.png</BITMAP>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페이지 번호 2 -->
+	<BMBUTTON item ="Lobby_RoomNo2" parent="Lobby">
+		<BOUNDS>
+			<X>172</X>
+			<Y>111</Y>
+			<W>12</W>
+			<H>12</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page2_on.png</BITMAP>
+		<BITMAP type="over">page2_on.png</BITMAP>
+		<BITMAP type="down">page2_off.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페이지 번호 3 -->
+	<BMBUTTON item ="Lobby_RoomNo3" parent="Lobby">
+		<BOUNDS>
+			<X>189</X>
+			<Y>111</Y>
+			<W>12</W>
+			<H>12</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page3_on.png</BITMAP>
+		<BITMAP type="over">page3_on.png</BITMAP>
+		<BITMAP type="down">page3_off.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페이지 번호 4 -->
+	<BMBUTTON item ="Lobby_RoomNo4" parent="Lobby">
+		<BOUNDS>
+			<X>206</X>
+			<Y>111</Y>
+			<W>12</W>
+			<H>12</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page4_on.png</BITMAP>
+		<BITMAP type="over">page4_on.png</BITMAP>
+		<BITMAP type="down">page4_off.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페이지 번호 5 -->
+	<BMBUTTON item ="Lobby_RoomNo5" parent="Lobby">
+		<BOUNDS>
+			<X>223</X>
+			<Y>111</Y>
+			<W>12</W>
+			<H>12</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page5_on.png</BITMAP>
+		<BITMAP type="over">page5_on.png</BITMAP>
+		<BITMAP type="down">page5_off.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페이지 번호 6 -->
+	<BMBUTTON item ="Lobby_RoomNo6" parent="Lobby">
+		<BOUNDS>
+			<X>240</X>
+			<Y>111</Y>
+			<W>12</W>
+			<H>12</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">page6_on.png</BITMAP>
+		<BITMAP type="over">page6_on.png</BITMAP>
+		<BITMAP type="down">page6_off.png</BITMAP>
+		<PUSHBUTTON/>
+		<GROUP>Lobby_RoomNo</GROUP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페이지 이동버튼(좌) -->
+	<BMBUTTON item ="StageBeforeBtn" parent="Lobby">
+		<BOUNDS>
+			<X>645</X>
+			<Y>314</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_PageL_up.tga</BITMAP>
+		<BITMAP type="over">LobbyBtn_PageL_down.tga</BITMAP>
+		<BITMAP type="down">LobbyBtn_PageL_down.tga</BITMAP>
+	</BMBUTTON>
+
+	<!-- BMButton : 페이지 이동버튼(우) -->
+	<BMBUTTON item ="StageAfterBtn" parent="Lobby">
+		<BOUNDS>
+			<X>765</X>
+			<Y>314</Y>
+			<W>16</W>
+			<H>16</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_PageR_up.tga</BITMAP>
+		<BITMAP type="over">LobbyBtn_PageR_down.tga</BITMAP>
+		<BITMAP type="down">LobbyBtn_PageR_down.tga</BITMAP>
+	</BMBUTTON>
+
+	
+<!-- 방 리스트 표시 -->
+	<!-- ROOMLIST : 방 리스트 표시 -->
+	<ROOMLIST item="Lobby_StageList" parent="Lobby_RoomListBG">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>624</W>
+			<H>421</H>
+		</BOUNDS>
+		<BITMAP type="frame"></BITMAP>
+		<BITMAP type="back">banner_Mansion.png</BITMAP>
+		<BITMAP type="back">banner_Prison.png</BITMAP>
+		<BITMAP type="back">banner_Prison II.png</BITMAP>
+		<BITMAP type="back">banner_Station.png</BITMAP>
+		<BITMAP type="back">banner_Battle Arena.png</BITMAP>
+		<BITMAP type="back">banner_Town.png</BITMAP>
+		<BITMAP type="back">banner_Dungeon.png</BITMAP>
+		<BITMAP type="back">banner_Ruin.png</BITMAP>
+		<BITMAP type="back">banner_island.png</BITMAP>
+		<BITMAP type="back">banner_garden.png</BITMAP>
+		<BITMAP type="back">banner_castle.png</BITMAP>
+		<BITMAP type="back">banner_Citadel.png</BITMAP>
+		<BITMAP type="back">banner_factory.png</BITMAP>
+		<BITMAP type="back">banner_port.png</BITMAP>
+		<BITMAP type="back">banner_lost shrine.png</BITMAP>
+		<BITMAP type="back">banner_Stairway.png</BITMAP>
+		<BITMAP type="back">banner_snow_town.png</BITMAP>
+		<BITMAP type="back">banner_Halloween Town.png</BITMAP>
+		<BITMAP type="back">banner_Hall.png</BITMAP>
+		<BITMAP type="back">banner_Lost Shrine.png</BITMAP>
+		<BITMAP type="back">banner_High_Haven.png</BITMAP>
+		<BITMAP type="back">banner_relayMap.png</BITMAP>
+		<BITMAP type="back">banner_WeaponShop.png</BITMAP>
+		<BITMAP type="back">banner_guerr.png</BITMAP>
+		<BITMAP type="back">banner_robot.png</BITMAP>	
+		<BITMAP type="back">banner_krieg.png</BITMAP>
+		<BITMAP type="back">banner_Athena.png</BITMAP>
+		<BITMAP type="back">banner_de_dust2.png</BITMAP>
+		<BITMAP type="back">banner_DusteRSkillTrail_V2.png</BITMAP>
+		<BITMAP type="back">banner_DusteRSkillTrail_V3.png</BITMAP>
+		<BITMAP type="back">banner_DusteRSkillTrail_V4.png</BITMAP>
+		<BITMAP type="back">banner_eRing.png</BITMAP>
+		<BITMAP type="back">banner_Skillmap.png</BITMAP>
+		<BITMAP type="back">banner_Skillmapv2.png</BITMAP>
+		<BITMAP type="back">banner_Skillmapv3.png</BITMAP>
+		<BITMAP type="back">banner_Skillmapv4.png</BITMAP>
+		<BITMAP type="back">banner_SkirmishHall.png</BITMAP>
+		<BITMAP type="back">banner_newmap.tga</BITMAP>
+		<BITMAP type="icon" mode="0">death-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="1">teamdeath-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="2">Gladiator-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="3">teamGladiator-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="4">Assasin-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="5">train_mode.tga</BITMAP>
+		<BITMAP type="icon" mode="6">survival-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="7">quest-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="8">berserk-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="9">unlimitdeath-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="10">duel-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="12">ChallengeQuest_Guerilla-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="13">teamTrain-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="14">ctf-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="15">zombie-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="16">classic-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="17">Spy_mode.tga</BITMAP>
+		<BITMAP type="icon" mode="18">deity_mode.tga</BITMAP>
+		<BITMAP type="icon" mode="19">Vampire-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="20">bounty-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="21">death-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="22">death-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="23">death-mode.tga</BITMAP>		
+		<BITMAP type="icon" mode="24">death-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="25">death-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="26">teamdeath-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="27">nks-mode.tga</BITMAP>
+		<BITMAP type="icon" mode="28">teamdeath-mode.tga</BITMAP>
+		<SIZE type="width">206</SIZE>
+		<SIZE type="height">138</SIZE>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<VISIBLE>true</VISIBLE>
+	</ROOMLIST>
+
+
+<!-- 버튼 -->
+	<!-- BMButton : 게임 참가 버튼 -->
+	<BUTTON item="StageJoin" parent="Lobby">
+	<BUTTONLOOK>SteamBlueButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>493</X>
+			<Y>549</Y>
+			<W>116</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>QUICK JOIN</TEXT>
+	</BUTTON>
+
+	<!-- BMButton : 게임 생성 버튼 -->
+	<BUTTON item="StageCreateFrameCaller" parent="Lobby">
+	<BUTTONLOOK>SteamGreenButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>158</X>
+			<Y>549</Y>
+			<W>90</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>+ Create</TEXT>
+	</BUTTON>
+
+	<!-- BMBUTTON : 게임 바로하기 버튼 -->
+	<BUTTON item="QuickJoin" parent="Lobby">
+	<BUTTONLOOK>SteamBlueButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>623</X>
+			<Y>549</Y>
+			<W>157</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>JOIN</TEXT>
+	</BUTTON>
+
+	<!-- BUTTON : 게임 바로하기 버튼 -->
+	<BUTTON item="QuickJoin2" parent="Lobby">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>0</W>
+			<H>0</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_02</TEXT> <!-- 바로하기(&amp;G) -->
+	</BUTTON>
+	
+	<!-- Button : 클랜전 결성 버튼 -->
+	<BMBUTTON item ="ArrangedTeamGame" parent="Lobby"> <!-- nút start CW -->
+		<BOUNDS>
+			<X>360</X>
+			<Y>313</Y>
+			<W>125</W>
+			<H>42</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">playnow_off_kr.tga</BITMAP>
+		<BITMAP type="over">playnow_on_kr.tga</BITMAP>
+		<BITMAP type="down">playnow_on_kr.tga</BITMAP>
+	</BMBUTTON>
+
+	<BUTTON item="ArrangedLadderWars" parent="Lobby"> <!-- nút start Ladder -->
+		<BUTTONLOOK>SteamBlueButtonLook</BUTTONLOOK>
+		<Font>FONTa10b</Font>
+		<BOUNDS>
+			<X>326</X>
+			<Y>550</Y>
+			<W>156</W>
+			<H>34</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</TEXTALIGN>
+		<TEXT>Find Match</TEXT> <!-- 래더전 시작 -->
+		<STRETCH/>
+	</BUTTON>	
+
+	<BMBUTTON item ="RejoinCW" parent="Lobby"> <!-- nút rejoin CW -->
+		<BOUNDS>
+			<X>500</X>
+			<Y>313</Y>
+			<W>125</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">game_rejoin_off.png</BITMAP>
+		<BITMAP type="over">game_rejoin_on.png</BITMAP>
+		<BITMAP type="down">game_rejoin_on.png</BITMAP>
+	</BMBUTTON>		
+	
+	<!-- Button : 듀얼토너먼트 참가버튼 -->
+	<BMBUTTON item ="DuelTournamentGame" parent="Lobby">
+		<BOUNDS>
+			<X>320</X>
+			<Y>303</Y>
+			<W>150</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">LobbyBtn_Duelgame_up.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Duelgame_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Duelgame_down.png</BITMAP>
+	</BMBUTTON>
+	
+	<BMBUTTON item ="DuelTournamentGame_2Test" parent="Lobby">
+		<BOUNDS>
+			<X>140</X>
+			<Y>303</Y>
+			<W>150</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">LobbyBtn_Duelgame2v2_up.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Duelgame2v2_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Duelgame2v2_down.png</BITMAP>
+	</BMBUTTON>	
+
+	<BMBUTTON item ="DuelTournamentGame_4Test" parent="Lobby">
+		<BOUNDS>
+			<X>500</X>
+			<Y>303</Y>
+			<W>150</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<VISIBLE>false</VISIBLE>
+		<BITMAP type="up">LobbyBtn_Duelgame4v4_up.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Duelgame4v4_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Duelgame4v4_down.png</BITMAP>
+	</BMBUTTON>
+
+
+<!-- FRAME : 클랜전 상대팀 찾기 프레임 -->
+	<FRAME item="LobbyFindClanTeam">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>250</W>
+			<H>130</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_LOBBY_03</TEXT> <!-- 상대 클랜팀 찾기 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+	
+	<!-- Label : 상대팀 찾는 중 표시 -->
+	<LABEL item="LobbyWaitingArrangedGameLabel" parent="LobbyFindClanTeam">
+		<FONT>FONT10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>30</Y>
+			<W>180</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_04</TEXT> <!-- 상대팀 찾는 중... -->
+	</LABEL>
+	
+	<!-- Button : 클랜전 취소 버튼 -->
+	<BUTTON item="ArrangedTeamGame_Cancel" parent="LobbyFindClanTeam">
+		<BOUNDS>
+			<X>133</X>
+			<Y>83</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_05</TEXT> <!-- 클랜전 취소 -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	
+<!-- 플레이어 정보 + 채팅 + 플레이어 리스트 창 -->
+	<!-- Picture : 창 이미지(플레이어 정보+채팅창) -->
+	<PICTURE item ="Lobby_BottomBG" parent="Lobby">
+		<BOUNDS>
+			<X>8</X>
+			<Y>353</Y>
+			<W>784</W>
+			<H>210</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP></BITMAP>
+	</PICTURE>
+
+	<BUTTON item="CustomChannel" parent="Lobby">
+		<BUTTONLOOK>SteamNullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>100</X>
+			<Y>40</Y>
+			<W>50</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Custom</TEXT>
+	</BUTTON>
+	<BUTTON item="LadderChannel" parent="Lobby">
+		<BUTTONLOOK>SteamNullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>150</X>
+			<Y>40</Y>
+			<W>50</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>League</TEXT>
+	</BUTTON>
+	<BUTTON item="ClanWarChannel" parent="Lobby">
+		<BUTTONLOOK>SteamNullButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>200</X>
+			<Y>40</Y>
+			<W>50</W>
+			<H>30</H>
+		</BOUNDS>
+		<TEXT>Clan War</TEXT>
+	</BUTTON>
+
+
+<!-- Character View  : By Jorklenis2  -->
+<CHARACTERVIEW item="EquipmentInformationLobby" parent="Lobby">
+	<BOUNDS>
+	<X>15</X>
+	<Y>365</Y>
+	<W>180</W>
+	<H>180</H>
+	</BOUNDS>
+	<STRETCH/>
+	<TEXT></TEXT>
+	<TITLEBAR>true</TITLEBAR>
+	<RESIZABLE>false</RESIZABLE>
+	<MOVABLE>false</MOVABLE>
+	<VISIBLEEQUIPMENT>true</VISIBLEEQUIPMENT>
+	</CHARACTERVIEW>
+	
+		<!-- ===== Profile ===== -->
+	
+	<PICTURE item="Lobby_ProfileBanner" parent="Lobby">
+		<BOUNDS>
+			<X>569</X>
+			<Y>17</Y>
+			<W>23</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileBanner0000.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="Lobby_HideBannerName" parent="Lobby">
+		<BOUNDS>
+			<X>592</X>
+			<Y>17</Y>
+			<W>86</W>
+			<H>31</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>BannerName.png</BITMAP>
+	</PICTURE>
+
+	<!-- Label : 플레이어 이름 표시 -->
+	<LABEL item="Lobby_PlayerName" parent="Lobby">
+		<FONT>FONTa7</FONT>
+		<!-- <TEXTCOLOR>
+			<R>3</R>
+			<G>113</G>
+			<B>177</B>
+		</TEXTCOLOR> -->
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>597</X>
+			<Y>24</Y>
+			<W>78</W>
+			<H>10</H>
+		</BOUNDS>
+		<!-- <TEXT>STR:UI_LOBBY_06</TEXT> 이름 -->
+	</LABEL>
+	
+	<!-- Label : 플레이어 상세정보 표시(Level) -->
+	<LABEL item="Lobby_PlayerSpecLevel" parent="Lobby">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>597</X>
+			<Y>35</Y>
+			<W>25</W>
+			<H>11</H>
+		</BOUNDS>
+		<TEXT>STR:UI_CS_02</TEXT> <!--  레벨 : 0 lv. -->
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(XP) -->
+	<LABEL item="Lobby_PlayerSpecXP" parent="Lobby">
+		<FONT>FONTa7</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>625</X>
+			<Y>35</Y>
+			<W>52</W>
+			<H>11</H>
+		</BOUNDS>
+		<!-- <TEXT>STR:UI_LOBBY_09</TEXT> 경험치 : 0% -->
+	</LABEL>
+
+	<!-- Label : 플레이어 상세정보 표시(BP) -->
+	
+
+	<!-- Label : 플레이어 상세정보 표시(HP) -->
+	<!-- <LABEL item="Lobby_PlayerSpecHPAP" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>17</X>
+			<Y>488</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_29</TEXT> 
+	</LABEL> -->
+
+	<!-- Label : 플레이어 상세정보 표시(Event) -->
+	<!-- <LABEL item="Lobby_PlayerSpecEV" parent="Lobby">
+		<FONT>맑은 고딕</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>17</X>
+			<Y>458</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_28</TEXT> 
+		<VISIBLE>true</VISIBLE>
+	</LABEL>	 -->
+
+	
+
+			
+
+	<!-- Label : 플레이어 상세정보 표시(WT) -->
+	<!-- <LABEL item="Lobby_PlayerSpecWT" parent="Lobby">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>17</X>
+			<Y>503</Y>
+			<W>118</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_13</TEXT> 
+	</LABEL> -->
+
+	
+	
+ <!--상단버튼배열 
+	<BMBUTTON item="ShopCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>545</X>
+			<Y>55</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_Shop_up.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Shop_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Shop_down.png</BITMAP>
+		<TOOLTIP>STR:UI_TOOLTIP_SHOP</TOOLTIP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+	
+	<BMBUTTON item="MedalShopCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>488</X>
+			<Y>55</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_Medal_up.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Medal_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Medal_down.png</BITMAP>
+		<TOOLTIP>STR:UI_TOOLTIP_SHOPMEDAL</TOOLTIP>
+		<TEXT></TEXT>
+	</BMBUTTON>
+-->
+
+	<!-- <BMBUTTON item="EquipmentCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>605</X>
+			<Y>55</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_Equip_up.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Equip_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Equip_down.png</BITMAP>
+		<TOOLTIP>STR:UI_TOOLTIP_EQUIP</TOOLTIP>
+		<TEXT></TEXT>
+	</BMBUTTON> -->
+
+	<!-- BMBUTTON : 채널변경버튼 -->
+	<!-- <BMBUTTON item="ChannelListFrameCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>665</X>
+			<Y>55</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_Menu_up.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Menu_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Menu_down.png</BITMAP>
+		<TOOLTIP>STR:UI_TOOLTIP_CHANNEL</TOOLTIP>
+		<TEXT></TEXT>
+	</BMBUTTON> -->
+
+
+<!--하단버튼배열-->
+	<!-- BMBUTTON : 리플레이 버튼 -->
+	<BUTTON item ="ReplayCaller" parent="Lobby">
+		<BUTTONLOOK>SteamBlackButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>22</X>
+			<Y>549</Y>
+			<W>90</W>
+			<H>35</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT>REPLAY</TEXT>
+	</BUTTON>
+
+	<!-- BUTTON : 몬스터 도감 -->
+	<!-- <BMBUTTON item ="MonsterBookCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>605</X>
+			<Y>560</Y>
+			<W>40</W>
+			<H>45</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">LobbyBtn_Mon_down.png</BITMAP>
+		<BITMAP type="over">LobbyBtn_Mon_over.png</BITMAP>
+		<BITMAP type="down">LobbyBtn_Mon_up.png</BITMAP>
+		<TOOLTIP>STR:UI_TOOLTIP_MONSTER</TOOLTIP>
+	</BMBUTTON> -->
+
+	<!-- <BMBUTTON item="ScreenShotCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>130</X>
+			<Y>565</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">Screenshots_off.png</BITMAP>
+		<BITMAP type="over">Screenshots_on.png</BITMAP>
+		<BITMAP type="down">Screenshots_on.png</BITMAP>
+	</BMBUTTON>	 -->
+	<!-- <BMBUTTON item="OpenWebViewButton1" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>10</X>
+			<Y>565</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">web_off.png</BITMAP>
+		<BITMAP type="over">web_on.png</BITMAP>
+		<BITMAP type="down">web_on.png</BITMAP>
+	</BMBUTTON>	
+
+	<BUTTON item="Market" parent="Lobby">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>150</X>
+			<Y>565</Y>
+			<W>80</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>MARKETPLACE</TEXT>
+	</BUTTON>
+
+	<BUTTON item="BattlePass" parent="Lobby">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>250</X>
+			<Y>565</Y>
+			<W>80</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>BATTLE PASS</TEXT>
+	</BUTTON>
+
+	<BUTTON item="GachaBanner" parent="Lobby">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>350</X>
+			<Y>565</Y>
+			<W>80</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>GACHA</TEXT>
+	</BUTTON>
+
+	<BUTTON item="LadderReward" parent="Lobby">
+		<BUTTONLOOK>SteamBlueButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>450</X>
+			<Y>565</Y>
+			<W>80</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>RANK REWARD</TEXT>
+	</BUTTON> -->
+
+
+	<!--<BMBUTTON item="EventShopCaller" parent="Lobby">
+		<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>289</X>
+			<Y>565</Y>
+			<W>93</W>
+			<H>38</H>
+		</BOUNDS>
+		<BITMAP type="up">shop_off_Medal.tga</BITMAP>
+		<BITMAP type="over">shop_on_Medal.tga</BITMAP>
+		<BITMAP type="down">shop_on_Medal.tga</BITMAP>
+		<STRETCH/>
+		<TEXT></TEXT>
+	</BMBUTTON>-->
+	
+	<!-- BMBUTTON : 캐릭터변경버튼 -->
+	<!-- <BMBUTTON item="CharSelectionCaller" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>665</X>
+			<Y>560</Y>
+			<W>40</W>
+			<H>45</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">ChangeBtn_up.png</BITMAP>
+		<BITMAP type="over">ChangeBtn_over.png</BITMAP>
+		<BITMAP type="down">ChangeBtn_down.png</BITMAP>
+		<TOOLTIP>STR:UI_TOOLTIP_CHARACTER</TOOLTIP>
+		<TEXT></TEXT>
+	</BMBUTTON> -->
+
+	<!-- BMBUTTON : 로그아웃버튼 -->
+	<!-- <BMBUTTON item="Logout" parent="Lobby">
+	<BUTTONLOOK>NormalBmButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>725</X>
+			<Y>562</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">OptionLog_up.png</BITMAP>
+		<BITMAP type="over">OptionLog_over.png</BITMAP>
+		<BITMAP type="down">OptionLog_down.png</BITMAP>
+		<CONFIRMMESSAGE>STR:UI_LOBBY_A02</CONFIRMMESSAGE> 
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+		<TOOLTIP>STR:UI_TOOLTIP_LOGOUT</TOOLTIP>
+	</BMBUTTON> -->
+
+	<!-- <BMBUTTON item="CharUpdateCaller" parent="Lobby">
+		<BOUNDS>
+			<X>500</X>
+			<Y>313</Y>
+			<W>125</W>
+			<H>38</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP type="up">claim_off.png</BITMAP>
+		<BITMAP type="over">claim_on.png</BITMAP>
+		<BITMAP type="down">claim_on.png</BITMAP>
+		<CONFIRMMESSAGE>Collect your reward now! No need to follow these steps, you can keep playing and accumulating "Ladder Coins" if you want and then come here.</CONFIRMMESSAGE> 
+		<CONFIRMLOOK>DefaultFrameLook</CONFIRMLOOK>
+	</BMBUTTON>		 -->
+	
+
+<!-- 어레인지드 팀 게임 다이얼로그 -->
+	<FRAME item="ArrangedTeamGameDialog" >
+		<BOUNDS>
+			<X>200</X>
+			<Y>150</Y>
+			<W>400</W>
+			<H>300</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>false</VISIBLE>
+		<MOVABLE>false</MOVABLE>
+		<RESIZABLE>false</RESIZABLE>
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<TEXT>STR:UI_LOBBY_14</TEXT> <!-- 팀 게임 -->
+	</FRAME>
+
+	<LABEL item="Label" parent="ArrangedTeamGameDialog">
+		<FONT>FONTa5b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>110</X>
+			<Y>70</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Balance</TEXT> <!-- 실력이 비슷한 클랜과만 대전 -->
+	</LABEL>
+	<BUTTON item="BalancedMatchingCheckBox" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>80</X>
+			<Y>70</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+
+	<COMBOBOX item="CWGameType" parent="ArrangedTeamGameDialog">
+		<LISTBOXLOOK>CustomListBoxLook</LISTBOXLOOK>
+		<BUTTONLOOK>ListBoxButtonLook</BUTTONLOOK>
+		<FONT>FONTa5b</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<BOUNDS>
+			<X>270</X>
+			<Y>90</Y>
+			<W>110</W>
+			<H>18</H>
+		</BOUNDS>
+		<LISTITEM selected="true">Team DeathMatch</LISTITEM>
+		<!--<LISTITEM>Assassinate</LISTITEM>-->
+		<LISTITEM>Gladiator</LISTITEM>
+		<DROPSIZE>80</DROPSIZE>
+		<COMBOTYPE>1</COMBOTYPE>
+	</COMBOBOX>
+
+	<LABEL item="AntiLeadLabel" parent="ArrangedTeamGameDialog">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>110</X>
+			<Y>85</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Lead</TEXT> 
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	<BUTTON item="ClanAntiLead" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>80</X>
+			<Y>85</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<CHECKED>false</CHECKED>
+		<SELECTED>true</SELECTED>
+	</BUTTON>	
+
+	<LABEL item="DodgeLabel" parent="ArrangedTeamGameDialog">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>190</X>
+			<Y>85</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Dodge</TEXT> 
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	<BUTTON item="DodgeCheckBox" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>160</X>
+			<Y>85</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<CHECKED>false</CHECKED>
+		<SELECTED>true</SELECTED>
+	</BUTTON>	
+
+	<LABEL item="RotationLabel" parent="ArrangedTeamGameDialog">
+		<TEXTCOLOR>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>190</X>
+			<Y>70</Y>
+			<W>110</W>
+			<H>28</H>
+		</BOUNDS>
+		<TEXT>Rotation Base</TEXT> 
+		<SELECTED>true</SELECTED>
+	</LABEL>
+	<BUTTON item="RotationCheckBox" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>160</X>
+			<Y>70</Y>
+			<W>24</W>
+			<H>24</H>
+		</BOUNDS>
+		<CHECKED>false</CHECKED>
+		<SELECTED>true</SELECTED>
+	</BUTTON>	
+
+	<TEXTAREA item = "ArrangedTeam_Message" parent = "ArrangedTeamGameDialog">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>10</X>
+			<Y>40</Y>
+			<W>380</W>
+			<H>40</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_16</TEXT> <!-- 팀 게임에 참여할 플레이어를 선택해주십시오 -->
+		<EDITABLE>FALSE</EDITABLE>
+	</TEXTAREA>
+
+	<PLAYERSELECTLISTBOX item="ArrangedTeamSelect" parent="ArrangedTeamGameDialog">
+		<BOUNDS>
+			<X>90</X>
+			<Y>110</Y>
+			<W>290</W>
+			<H>130</H>
+		</BOUNDS>
+		<MULTISELECT/>
+	</PLAYERSELECTLISTBOX>
+
+	<BUTTON item="ArrangedTeamDialogOk" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>200</X>
+			<Y>250</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_17</TEXT> <!-- 확인(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="ArrangedTeamDialogClose" parent="ArrangedTeamGameDialog">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>300</X>
+			<Y>250</Y>
+			<W>90</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_LOBBY_18</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+	
+	
+<!-- 클랜 탈퇴 확인 -->
+	<FRAME item="ConfirmLeaveClan">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>350</W>
+			<H>130</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<TEXT>STR:UI_LOBBY_19</TEXT> <!-- 클랜 탈퇴 확인 -->
+		<VISIBLE>FALSE</VISIBLE>
+	</FRAME>
+	
+	<!-- Label : 클랜 탈퇴 확인 -->
+	<LABEL item="Label" parent="ConfirmLeaveClan">
+		<FONT>FONTa10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>15</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_20</TEXT> <!-- 클랜을 탈퇴하시겠습니까? -->
+	</LABEL>
+	
+	<BUTTON item="LeaveClanOK" parent="ConfirmLeaveClan">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>70</X>
+			<Y>80</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_21</TEXT> <!-- 탈퇴(&amp;O) -->
+	</BUTTON>
+	<BUTTON item="LeaveClanCancel" parent="ConfirmLeaveClan">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>180</X>
+			<Y>80</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>STR:UI_LOBBY_18</TEXT> <!-- 취소(&amp;C) -->
+	</BUTTON>
+
+<!-- FRAME : 듀얼 토너먼트 참가 신청 프레임 -->
+	<FRAME item="DuelTournamentWaitMatchDialog">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>300</W>
+			<H>130</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_LOBBY_DT01</TEXT> <!-- 듀얼 토너먼트 참가 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+	
+	<!-- Label : 튜얼토너먼트 참가자 찾는 중 표시 -->
+	<LABEL item="DuelTournamentWaitMatchLabel" parent="DuelTournamentWaitMatchDialog">
+		<FONT>FONT10</FONT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>false</RIGHT>
+			<BOTTOM>false</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>15</X>
+			<Y>30</Y>
+			<W>230</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_DT02</TEXT> <!-- 듀얼 토너먼트 참가자 모집 중 -->
+	</LABEL>
+	
+	<!-- Button : 토너먼트 취소 버튼 -->
+	<BUTTON item="DuelTournamentWaitMatchCancel" parent="DuelTournamentWaitMatchDialog">
+		<BOUNDS>
+			<X>180</X>
+			<Y>83</Y>
+			<W>100</W>
+			<H>32</H>
+		</BOUNDS>
+		<TEXT>STR:UI_LOBBY_18</TEXT> <!-- 토너먼트 취소 -->
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+	</BUTTON>
+	
+	<!-- BUTTON item="AchievementCaller" parent="Lobby">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>false</LEFT>
+			<TOP>false</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>200</X>
+			<Y>563</Y>
+			<W>110</W>
+			<H>36</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+	</BUTTON -->
+
+
+</XML>

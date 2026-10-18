@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Release_Desperate\\afxwin2.obj",
+            "outputs": [
+                "Release_Desperate\\afxwin2.inl.obj.dt.module.json",
+                "Release_Desperate\\afxwin2.inl.obj.dt.d.json",
+                "Release_Desperate\\Gunz.pch"
+            ],
+            "requires": []
+        }
+    ]
+}

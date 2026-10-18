@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Training">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+	<FRAME item="Training">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>-1</W>
+			<H>-1</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+	</FRAME>
+
+	<FRAME item="TrainingGroup" parent="Training">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>260</W>
+			<H>284</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<VISIBLE>TRUE</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+		<TEXT>Training Options</TEXT>
+	</FRAME>
+
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>12</X>
+			<Y>30</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Select an option for your practice.</TEXT>
+	</LABEL>	
+	
+	<BUTTON item="TrainingLifeInfinity" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>60</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>60</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Infinity HP/AP</TEXT>
+	</LABEL>
+	
+	<BUTTON item="TrainingNoStuns" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>80</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>80</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>No Stuns</TEXT>
+	</LABEL>
+
+	<BUTTON item="TrainingNoMassive" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>100</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>100</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>No Massive</TEXT>
+	</LABEL>	
+
+	<BUTTON item="TrainingInfAnmo" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>120</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>120</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Inf Bullet (500/500)</TEXT>
+	</LABEL>
+
+	<BUTTON item="TrainingNoFlip" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>140</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>140</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>No Flip</TEXT>
+	</LABEL>
+
+	<BUTTON item="TrainingSpeed" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>160</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>160</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Speed</TEXT>
+	</LABEL>
+
+	<BUTTON item="TrainingPaint" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>180</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>180</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Bullet Paint</TEXT>
+	</LABEL>
+
+	<BUTTON item="TrainingWire" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>200</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>200</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Wirefrime (Wall)</TEXT>
+	</LABEL>
+
+	<BUTTON item="TrainingNinja" parent="TrainingGroup">
+		<BUTTONLOOK>Custom1ButtonLook</BUTTONLOOK>
+		<PUSHBUTTON/>
+		<BOUNDS>
+			<X>2</X>
+			<Y>220</Y>
+			<W>130</W>
+			<H>24</H>
+		</BOUNDS>
+	</BUTTON>
+	<LABEL item="Label" parent="TrainingGroup">
+		<FONT>FONTa9</FONT>
+		<TEXTCOLOR>
+			<R>205</R>
+			<G>205</G>
+			<B>205</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>42</X>
+			<Y>220</Y>
+			<W>300</W>
+			<H>24</H>
+		</BOUNDS>
+		<TEXT>Jump Ninja</TEXT>
+	</LABEL>						
+
+	<BUTTON item="TrainingCloseButton" parent="TrainingGroup">
+		<BUTTONLOOK>DefaultButtonLook</BUTTONLOOK>
+		<ANCHORS>
+			<LEFT>true</LEFT>
+			<TOP>true</TOP>
+			<RIGHT>true</RIGHT>
+			<BOTTOM>true</BOTTOM>
+		</ANCHORS>
+		<BOUNDS>
+			<X>140</X>
+			<Y>235</Y>
+			<W>80</W>
+			<H>32</H>
+		</BOUNDS>
+		<DEFAULTKEY>ESC</DEFAULTKEY>
+		<TEXT>Apply (&amp;A)</TEXT>
+	</BUTTON>
+
+</XML>

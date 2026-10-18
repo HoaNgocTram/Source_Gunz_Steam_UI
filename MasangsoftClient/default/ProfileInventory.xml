@@ -1,0 +1,1181 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<XML ID="Profile_Inventory">
+	<Schema xmlns="MaietData" xmlns:dt="MaietDataTypes" />
+
+<!--
+   Profile_Inventory 화면 구성
+   
+   Last Update : 10.DEV.2004
+   Editor      : Lim Dong Hwan
+-->
+	
+<!-- FRAME : Profile_Inventory 화면 구성 -->
+	<FRAME item="Profile_Inventory">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- Picture : 상단 바탕화면 이미지 -->
+	<PICTURE item="Profile_Inventory_MainBGTop" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Shop_Background.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item="Profile_Preview_BG" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>501</X>
+			<Y>360</Y>
+			<W>512</W>
+			<H>140</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>MainTop_Profile.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="Profile_Preview_Icon" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>361</X>
+			<Y>360</Y>
+			<W>140</W>
+			<H>140</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileIconOn_0000.png</BITMAP>
+	</PICTURE>
+	<PICTURE item="Profile_Preview_Frame" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>361</X>
+			<Y>360</Y>
+			<W>140</W>
+			<H>140</H>
+		</BOUNDS>
+		<STRETCH/>
+	</PICTURE>
+	
+	<ZOUTLINELABEL item="Profile_Preview_Nickname" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>521</X>
+			<Y>390</Y>
+			<W>360</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<FONT>FONTa23</FONT>
+		<LABELTEXT>MyNickName</LABELTEXT>
+		<OUTLINECOLOR>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</OUTLINECOLOR>
+		<OUTLINETHICKNESS>1</OUTLINETHICKNESS>
+		<COLOR type="font">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+	</ZOUTLINELABEL>
+	
+	<FRAME item="Profile_NicknameColorPalette" parent="Profile_Inventory">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>1920</W>
+			<H>1080</H>
+		</BOUNDS>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>false</VISIBLE>
+		<FADEENABLE>false</FADEENABLE>
+	</FRAME>
+	
+	<!-- gunz plus 오픈 시 활성화
+	<LABEL item="Profile_Preview_EditNickNameColor_Text" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>731</X>
+			<Y>514</Y>
+			<W>250</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXTCOLOR>
+			<R>159</R>
+			<G>161</G>
+			<B>165</B>
+		</TEXTCOLOR>
+		<FONT>FONTa14</FONT>
+		<TEXTALIGN>
+			<VALIGN>center</VALIGN>
+			<HALIGN>right</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_GUNZPLUS_09</TEXT>
+	</LABEL>
+	
+	<BMBUTTON item="Profile_Preview_EditNicknameColor_Button" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>990</X>
+			<Y>514</Y>
+			<W>20</W>
+			<H>20</H>
+		</BOUNDS>
+		<STRETCH/>			
+		<BITMAP type="up">ClanEditButton_Default.png</BITMAP>
+		<BITMAP type="over">ClanEditButton_Over.png</BITMAP>
+		<BITMAP type="down">ClanEditButton_Default.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</BMBUTTON> -->
+	
+	<PICTURE item="Profile_Inventory_ColorPalette_BG" parent="Profile_NicknameColorPalette">
+		<BOUNDS>
+			<X>353</X>
+			<Y>539</Y>
+			<W>673</W>
+			<H>277</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>NickNameColorBG.png</BITMAP>
+	</PICTURE>
+	
+	<BMBUTTON item="Profile_Inventory_ColorPalette" parent="Profile_NicknameColorPalette">
+		<BOUNDS>
+			<X>377</X>
+			<Y>563</Y>
+			<W>489</W>
+			<H>221</H>
+		</BOUNDS>
+		<STRETCH/>			
+		<BITMAP type="up">ColorPalette.png</BITMAP>
+		<BITMAP type="over">ColorPalette.png</BITMAP>
+		<BITMAP type="down">ColorPalette.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+	</BMBUTTON>
+	
+	<PICTURE item="Profile_Inventory_PreviewColor" parent="Profile_NicknameColorPalette">
+		<BOUNDS>
+			<X>885</X>
+			<Y>675</Y>
+			<W>109</W>
+			<H>54</H>
+		</BOUNDS>
+		<COLORRECT>true</COLORRECT>
+		<COLOR>
+			<ALPHA>255</ALPHA>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+	</PICTURE>
+	
+	<PICTURE item="Profile_Inventory_SelectColor" parent="Profile_NicknameColorPalette">
+		<BOUNDS>
+			<X>885</X>
+			<Y>730</Y>
+			<W>109</W>
+			<H>54</H>
+		</BOUNDS>
+		<COLORRECT>true</COLORRECT>
+		<COLOR>
+			<ALPHA>255</ALPHA>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</COLOR>
+	</PICTURE>
+	
+	<BMBUTTON item="Profile_Inventory_ApplyButton" parent="Profile_NicknameColorPalette">
+		<BOUNDS>
+			<X>884</X>
+			<Y>562</Y>
+			<W>111</W>
+			<H>42</H>
+		</BOUNDS>
+		<BITMAP type="up">ColorApplyButton_On.png</BITMAP>
+		<BITMAP type="over">ColorApplyButton_Over.png</BITMAP>
+		<BITMAP type="down">ColorApplyButton_Off.png</BITMAP>
+		<STRETCH/>		
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_RC_08</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>	
+	
+	<BMBUTTON item="Profile_Inventory_ResetButton" parent="Profile_NicknameColorPalette">
+		<BOUNDS>
+			<X>884</X>
+			<Y>615</Y>
+			<W>111</W>
+			<H>42</H>
+		</BOUNDS>
+		<BITMAP type="up">ColorResetButton_On.png</BITMAP>
+		<BITMAP type="over">ColorResetButton_Over.png</BITMAP>
+		<BITMAP type="down">ColorResetButton_Off.png</BITMAP>
+		<STRETCH/>		
+		<FONT>FONTb16b</FONT>
+		<TEXT>STR:UI_LOBBY_27</TEXT>
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>	
+	
+	<PICTURE item="Profile_Preview_Shadow" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>347</X>
+			<Y>360</Y>
+			<W>680</W>
+			<H>153</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>Lobby_RoomBanner_Shadow.png</BITMAP>
+	</PICTURE>
+	
+	<!-- 인벤토리 우측 패널-->
+	<PICTURE item="Profile_Inventory_RightPanel" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>1072</X>
+			<Y>215</Y>
+			<W>811</W>
+			<H>746</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>InvenBG.png</BITMAP>
+	</PICTURE>
+	
+	<PICTURE item ="Profile_Inventory_TabLine" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>1072</X>
+			<Y>206</Y>
+			<W>811</W>
+			<H>1</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>InvenMainTab_Line.png</BITMAP>
+	</PICTURE>
+
+	<!-- BMBUTTON : 프로필 아이콘 탭 버튼 -->
+	<ZGBUTTON item="Profile_IconTab" parent="Profile_Inventory">
+		<BUTTONLOOK>InvenTabGButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>1072</X>
+			<Y>162</Y>
+			<W>160</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT></TEXT>
+		<GROUP>Profile_Inventory_Tab</GROUP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<ICONBITMAP>
+			<BITMAP type="0">ProfileSubTab_Icon_ON.png</BITMAP>
+			<BITMAP type="1">ProfileSubTab_Icon_OFF.png</BITMAP>
+		</ICONBITMAP>
+		<ICONSIZE>
+			<W>67</W>
+			<H>35</H>
+		</ICONSIZE>
+	</ZGBUTTON>
+	
+	<!-- BMBUTTON : 프로필 아이콘 프레임 탭 버튼 -->
+	<ZGBUTTON item="Profile_FrameTab" parent="Profile_Inventory">
+		<BUTTONLOOK>InvenTabGButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>1232</X>
+			<Y>162</Y>
+			<W>160</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT></TEXT>
+		<GROUP>Profile_Inventory_Tab</GROUP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<ICONBITMAP>
+			<BITMAP type="0">ProfileSubTab_Frame_ON.png</BITMAP>
+			<BITMAP type="1">ProfileSubTab_Frame_OFF.png</BITMAP>
+		</ICONBITMAP>
+		<ICONSIZE>
+			<W>67</W>
+			<H>35</H>
+		</ICONSIZE>
+	</ZGBUTTON>
+	
+	<!-- BMBUTTON : 프로필 배경 탭 버튼 -->
+	<ZGBUTTON item="Profile_BGTab" parent="Profile_Inventory">
+		<BUTTONLOOK>InvenTabGButtonLook</BUTTONLOOK>
+		<BOUNDS>
+			<X>1392</X>
+			<Y>162</Y>
+			<W>160</W>
+			<H>46</H>
+		</BOUNDS>
+		<STRETCH/>
+		<TEXT></TEXT>
+		<GROUP>Profile_Inventory_Tab</GROUP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<ICONBITMAP>
+			<BITMAP type="0">ProfileSubTab_BG_ON.png</BITMAP>
+			<BITMAP type="1">ProfileSubTab_BG_OFF.png</BITMAP>
+		</ICONBITMAP>
+		<ICONSIZE>
+			<W>67</W>
+			<H>35</H>
+		</ICONSIZE>
+	</ZGBUTTON>
+	
+	<!-- EQUIPMENTLISTBOX : 내 프로필 아이템 목록 -->
+	<EQUIPMENTLISTBOX item="ProfileItemList" parent="Profile_Inventory">
+		<LISTBOXLOOK>EquipListBoxLook</LISTBOXLOOK>
+		<THUMBLOOK>CustomRenewalThumbLook</THUMBLOOK>>
+		<BOUNDS>
+			<X>1080</X>
+			<Y>241</Y>
+			<W>804</W>
+			<H>695</H>
+		</BOUNDS>
+		<STRETCH/>
+		<ITEMSPACE>11</ITEMSPACE>
+		<ITEMSPACEH>15</ITEMSPACEH>
+		<ROWNUM>4.5</ROWNUM>
+		<NUMCOLUMN>3</NUMCOLUMN>
+		<NEWSCROLLBAR>true</NEWSCROLLBAR>
+		<VIEWTYPE>profile</VIEWTYPE>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDEQUIP>item</SOUNDEQUIP>
+		<VIGNETTEBITMAP>ListVignetteEffect_Inven.png</VIGNETTEBITMAP>
+		<VIGNETTEHEIGHT>60</VIGNETTEHEIGHT>
+	</EQUIPMENTLISTBOX>
+
+	<!-- BUTTON : 프로필 아이템 장착하기 버튼 -->
+	<BMBUTTON item="Profile_Equip" parent="Profile_Inventory">
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>250</G>
+			<B>250</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1626</X>
+			<Y>991</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_EQUIPMENT_02</TEXT> <!-- 장착 -->
+		<BITMAP type="up">EquipButton_ON.png</BITMAP>
+		<BITMAP type="over">EquipButton_Over.png</BITMAP>
+		<BITMAP type="down">EquipButton_OFF.png</BITMAP>
+		<FONT>FONTb19b</FONT>
+		<SOUNDCLICK>item</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+	<BMBUTTON item="Profile_UnEquip" parent="Profile_Inventory">
+		<TEXTCOLOR>
+			<R>250</R>
+			<G>250</G>
+			<B>250</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>1626</X>
+			<Y>991</Y>
+			<W>254</W>
+			<H>60</H>
+		</BOUNDS>
+		<STRETCH/>
+		<DEFAULTKEY>ENTER</DEFAULTKEY>
+		<TEXT>STR:UI_EQUIPMENT_39</TEXT> <!-- 장착 -->
+		<BITMAP type="up">EquipButton_ON.png</BITMAP>
+		<BITMAP type="over">EquipButton_Over.png</BITMAP>
+		<BITMAP type="down">EquipButton_OFF.png</BITMAP>
+		<FONT>FONTb19b</FONT>
+		<SOUNDCLICK>item</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+	
+<!-- 프로필 리스트 -->
+	<FRAME item="Profile_MyEquipListFrame" parent="Profile_Inventory">
+		<FRAMELOOK>NullFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>52</X>
+			<Y>159</Y>
+			<W>240</W>
+			<H>884</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+		<TITLEBAR>false</TITLEBAR>
+		<RESIZABLE>false</RESIZABLE>
+		<MOVABLE>false</MOVABLE>
+		<FOCUSABLE>false</FOCUSABLE>
+		<VISIBLE>true</VISIBLE>
+	</FRAME>
+	
+		<!-- BMBUTTON : 장착된 프로필 아이템 탭 버튼 -->
+	<BMBUTTON item="Profile_Inventory_ItemTab" parent="Profile_MyEquipListFrame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>63</W>
+			<H>53</H>
+		</BOUNDS>
+		<STRETCH/>
+		<PUSHBUTTON/>
+		<SETCHECK/>
+		<GROUP>Profile_InventoryTabCustomDlg</GROUP>		
+		<BITMAP type="up">EquipTab_Profile_OFF.png</BITMAP>
+		<BITMAP type="over">EquipTab_Profile_ON.png</BITMAP>
+		<BITMAP type="down">EquipTab_Profile_ON.png</BITMAP>
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BMBUTTON>
+
+	<!-- ITEMSLOT : 프로필 아이콘 -->
+	<ITEMSLOT item="Profile_EquipmentSlot_BG" parent="Profile_MyEquipListFrame" parts="profile_icon">
+		<BOUNDS>
+			<X>0</X>
+			<Y>68</Y>
+			<W>240</W>
+			<H>120</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileEquipSlot_Icon.png</BITMAP>			
+		<SOUNDEQUIP>item</SOUNDEQUIP>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 프로필 아이콘 프레임 -->
+	<ITEMSLOT item="Profile_EquipmentSlot_Icon" parent="Profile_MyEquipListFrame" parts="profile_frame">
+		<BOUNDS>
+			<X>0</X>
+			<Y>204</Y>
+			<W>240</W>
+			<H>120</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileEquipSlot_Frame.png</BITMAP>	
+		<SOUNDEQUIP>item</SOUNDEQUIP>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ITEMSLOT>
+
+	<!-- ITEMSLOT : 프로필 배경 -->
+	<ITEMSLOT item="Profile_EquipmentSlot_Frame" parent="Profile_MyEquipListFrame" parts="profile_bg">
+		<BOUNDS>
+			<X>0</X>
+			<Y>340</Y>
+			<W>240</W>
+			<H>120</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>ProfileEquipSlot_BG.png</BITMAP>
+		<SOUNDEQUIP>item</SOUNDEQUIP>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</ITEMSLOT>
+	
+	<!-- 아이템 툴팁 위젯 -->
+	<ZRICHTOOLTIP item="Profile_Tooltip" parent="Profile_Inventory">
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>391</W>
+			<H>362</H>
+		</BOUNDS>
+		<BITMAP type="bg">ShopEquipTooltip.png</BITMAP>
+		<COLOR type="textcolor">
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>225</R>
+			<G>225</G>
+			<B>225</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>207</R>
+			<G>207</G>
+			<B>207</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>148</R>
+			<G>148</G>
+			<B>148</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>
+		<COLOR type="textcolor">
+			<R>61</R>
+			<G>196</G>
+			<B>176</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<COLOR type="textcolor">
+			<R>200</R>
+			<G>0</G>
+			<B>0</B>
+			<ALPHA>255</ALPHA>
+		</COLOR>		
+		<ADDITEM item="GradeSlot" idx="0">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>90</H>
+			</RECT>		
+			<BITMAP type="Grade" state="0">GradePannel_White.png</BITMAP>
+			<BITMAP type="Grade" state="1">GradePannel_Blue.png</BITMAP>
+			<BITMAP type="Grade" state="2">GradePannel_Yellow.png</BITMAP>
+			<BITMAP type="Grade" state="3">GradePannel_Orange.png</BITMAP>
+			<BITMAP type="Grade" state="4">GradePannel_Purple.png</BITMAP>
+			<BITMAP type="Grade" state="5">GradePannel_Red.png</BITMAP>
+			<RECT type="bitmaprect">
+				<X>1</X>
+				<Y>1</Y>
+				<W>389</W>
+				<H>89</H>
+			</RECT>
+			<BITMAP type="gender" state="0">MaleIcon.png</BITMAP>
+			<BITMAP type="gender" state="1">FeMaleIcon.png</BITMAP>
+			<RECT type="genderrect">
+				<X>350</X>
+				<Y>17</Y>
+				<W>26</W>
+				<H>26</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTb19b" alignment="left" textcolor="0">
+				<X>10</X>
+				<Y>14</Y>
+				<W>350</W>
+				<H>25</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" textcolor="2">
+				<X>10</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>223</X>
+				<Y>57</Y>
+				<W>150</W>
+				<H>18</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="RemainingSlot" idx="1">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>60</H>
+			</RECT>
+			<BITMAP type="icon">RemainingTimeIcon.png</BITMAP>
+			<RECT type="iconrect">
+				<X>14</X>
+				<Y>16</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_08" textcolor="3">
+				<X>40</X>
+				<Y>18</Y>
+				<W>100</W>
+				<H>19</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="right" textcolor="3">
+				<X>174</X>
+				<Y>18</Y>
+				<W>200</W>
+				<H>19</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="MainAbilitySlot" idx="2">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>102</H>
+			</RECT>
+			<BITMAP type="icon">Ingame_BulletIcon.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>343</X>
+				<Y>41</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>274</X>
+				<Y>65</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>					
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_01" textcolor="3">
+				<X>18</X>
+				<Y>15</Y>
+				<W>200</W>
+				<H>20</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTb21b" alignment="left" textcolor="1">
+				<X>18</X>
+				<Y>45</Y>
+				<W>100</W>
+				<H>33</H>
+			</TEXTINFO>			
+			<TEXTINFO idx="2" font="FONTa14" alignment="right" textcolor="0">
+				<X>274</X>
+				<Y>43</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="0">
+				<X>343</X>
+				<Y>67</Y>
+				<W>31</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>274</X>
+				<Y>15</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="SubAbilitySlot" idx="3">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>126</H>
+			</RECT>
+			<RECT type="linerect">
+				<X>10</X>
+				<Y>0</Y>
+				<W>374</W>
+				<H>1</H>
+			</RECT>
+			<BITMAP type="icon">StatIcon_Delay.png</BITMAP>
+			<BITMAP type="icon">StatIcon_HP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_AP.png</BITMAP>
+			<BITMAP type="icon">StatIcon_WT.png</BITMAP>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>12</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>54</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>
+			<RECT type="iconrect">
+				<X>18</X>
+				<Y>95</Y>
+				<W>21</W>
+				<H>21</H>
+			</RECT>			
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_02" textcolor="3">
+				<X>54</X>
+				<Y>12</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_03" textcolor="3">
+				<X>54</X>
+				<Y>54</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="2" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_04" textcolor="3">
+				<X>54</X>
+				<Y>95</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="3" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>12</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="4" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>54</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="5" font="FONTa14" alignment="right" textcolor="3">
+				<X>313</X>
+				<Y>95</Y>
+				<W>60</W>
+				<H>15</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="InfoSlot" idx="4">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>200</H>
+			</RECT>			
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_05" textcolor="0">
+				<X>18</X>
+				<Y>16</Y>
+				<W>100</W>
+				<H>15</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>47</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<ADDITEM item="ItemSourceSlot" idx="5">
+			<RECT type="slotrect">
+				<X>0</X>
+				<Y>0</Y>
+				<W>391</W>
+				<H>139</H>
+			</RECT>
+			<RECT type="bitmaprect">
+				<X>10</X>
+				<Y>12</Y>
+				<W>374</W>
+				<H>24</H>
+			</RECT>
+			<BITMAP type="bg">ItemSubtitle.png</BITMAP>
+			<TEXTINFO idx="0" font="FONTa14" alignment="left" title="STR:UI_EQUIPMENT_TOOLTIP_06" textcolor="0">
+				<X>18</X>
+				<Y>15</Y>
+				<W>250</W>
+				<H>17</H>
+			</TEXTINFO>
+			<TEXTINFO idx="1" font="FONTa11" alignment="top" textcolor="3">
+				<X>18</X>
+				<Y>54</Y>
+				<W>348</W>
+				<H>86</H>
+			</TEXTINFO>
+		</ADDITEM>
+		<GRADIENTLINEARPROGRESSBAR item="PeriodProgressBar"  parent="Profile_Tooltip">
+			<BOUNDS>
+				<X>18</X>
+				<Y>136</Y>
+				<W>355</W> 
+				<H>4</H>
+			</BOUNDS>
+			<FILLCOLOR> <!-- 0 -->
+				<INDEX>0</INDEX>
+				<BEGIN>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</BEGIN>
+				<END>
+					<R>235</R>
+					<G>235</G>
+					<B>235</B>
+				</END>
+			</FILLCOLOR>
+			<EMPTYCOLOR>
+				<R>49</R>
+				<G>53</G>
+				<B>54</B>
+				<ALPHA>255</ALPHA>
+			</EMPTYCOLOR>
+			<LEANDIRECTION>0</LEANDIRECTION>
+			<OUTLINETHICKNESS>0</OUTLINETHICKNESS>
+		</GRADIENTLINEARPROGRESSBAR>
+	</ZRICHTOOLTIP>
+<!-- 선물을 받았을 때 확인하는 창 -->
+	<!-- Frame : 선물을 받았을 때 내용을 표시하는 창 -->
+	<FRAME item="ConfirmGiftMsgFrame">
+		<FRAMELOOK>DefaultFrameLook</FRAMELOOK>
+		<BOUNDS>
+			<X>0</X>
+			<Y>0</Y>
+			<W>360</W>
+			<H>300</H>
+		</BOUNDS>
+		<ALIGN>
+			<HALIGN>center</HALIGN>
+			<VALIGN>center</VALIGN>
+		</ALIGN>
+		<TEXT>STR:UI_SHOP_37</TEXT> <!-- 선물을 받았습니다 -->
+		<VISIBLE>false</VISIBLE>
+		<RESIZABLE>false</RESIZABLE>
+	</FRAME>
+	
+<!-- 아이템 기본 정보 -->
+	<!-- LABEL : 아이템 설명 표시 - 이름 -->
+	<LABEL item="ConfirmGiftMsgFrame_DescName_0" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>35</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<!-- LABEL : 아이템 설명 표시 - 받은시간 -->
+	<LABEL item="ConfirmGiftMsgFrame_DescTime_0" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>55</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<!-- PICTURE : 아이템 썸네일 이미지 -->
+	<PICTURE item ="ConfirmGiftMsgFrame_Thumbnail_0" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>295</X>
+			<Y>35</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+	</PICTURE>
+
+<!-- 세트 아이템일 경우 추가로 표시되야 되는 아이템 정보 -->
+	<!-- LABEL, LABEL, PICTURE : 아이템2 설명 표시, 아이템2 받은시간, 아이템2 썸네일 이미지 -->
+	<LABEL item="ConfirmGiftMsgFrame_DescName_1" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>35</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="ConfirmGiftMsgFrame_DescTime_1" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>55</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<PICTURE item ="ConfirmGiftMsgFrame_Thumbnail_1" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>295</X>
+			<Y>35</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<!-- LABEL, LABEL, PICTURE : 아이템3 설명 표시, 아이템3 받은시간, 아이템3 썸네일 이미지 -->
+	<LABEL item="ConfirmGiftMsgFrame_DescName_2" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>35</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="ConfirmGiftMsgFrame_DescTime_2" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>55</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<PICTURE item ="ConfirmGiftMsgFrame_Thumbnail_2" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>295</X>
+			<Y>35</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<!-- LABEL, LABEL, PICTURE : 아이템4 설명 표시, 아이템4 받은시간, 아이템4 썸네일 이미지 -->
+	<LABEL item="ConfirmGiftMsgFrame_DescName_3" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>35</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="ConfirmGiftMsgFrame_DescTime_3" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>55</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<PICTURE item ="ConfirmGiftMsgFrame_Thumbnail_3" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>295</X>
+			<Y>35</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	<!-- LABEL, LABEL, PICTURE : 아이템5 설명 표시, 아이템5 받은시간, 아이템5 썸네일 이미지 -->
+	<LABEL item="ConfirmGiftMsgFrame_DescName_4" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>35</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<LABEL item="ConfirmGiftMsgFrame_DescTime_4" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>55</Y>
+			<W>265</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXT></TEXT>
+	</LABEL>
+	<PICTURE item ="ConfirmGiftMsgFrame_Thumbnail_4" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>295</X>
+			<Y>35</Y>
+			<W>40</W>
+			<H>40</H>
+		</BOUNDS>
+		<STRETCH/>
+		<BITMAP>graynullframe.tga</BITMAP>
+		<VISIBLE>false</VISIBLE>
+	</PICTURE>
+	
+<!-- 보낸 사람 -->
+	<!-- LABEL : 보낸 사람 -->
+	<LABEL item="ConfirmGiftMsgFrame_SenderLabel" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>90</Y>
+			<W>310</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_SHOP_38</TEXT> <!-- 보낸 사람 -->
+	</LABEL>
+	<!-- LABEL : 보낸 사람 아이디 -->
+	<LABEL item="ConfirmGiftMsgFrame_Sender" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>110</Y>
+			<W>310</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT></TEXT> <!-- 코드에서 보낸 사람 아이디를 채워줘야 함 -->
+	</LABEL>
+	
+<!-- 메시지 -->
+	<!-- LABEL : 메시지 -->
+	<LABEL item="ConfirmGiftMsgFrame_MessageLabel" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>145</Y>
+			<W>310</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>left</HALIGN>
+		</TEXTALIGN>
+		<TEXT>STR:UI_SHOP_39</TEXT> <!-- 메시지 -->
+	</LABEL>
+	<!-- LABEL : 메시지 내용 -->
+	<TEXTAREA item="ConfirmGiftMsgFrame_Message" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>128</R>
+			<G>128</G>
+			<B>128</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>165</Y>
+			<W>240</W>
+			<H>50</H>
+		</BOUNDS>
+		<VISIBLE>true</VISIBLE>
+		<EDITABLE>false</EDITABLE>
+	</TEXTAREA>
+	
+	<!-- LABEL : 몇 개의 선물을 받았는지 알림 -->
+	<LABEL item="ConfirmGiftMsgFrame_MessageCount" parent="ConfirmGiftMsgFrame">
+		<TEXTCOLOR>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TEXTCOLOR>
+		<BOUNDS>
+			<X>25</X>
+			<Y>230</Y>
+			<W>310</W>
+			<H>20</H>
+		</BOUNDS>
+		<TEXTALIGN>
+			<HALIGN>center</HALIGN>
+		</TEXTALIGN>
+		<TEXT></TEXT>
+	</LABEL>
+	
+	<!-- BUTTON : 한개씩 보기 버튼 -->
+	<BUTTON item="ConfirmGiftMsgFrame_ViewOneBy" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>75</X>
+			<Y>255</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_40</TEXT> <!-- 한개씩 보기 -->
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BUTTON>
+	
+	<!-- BUTTON : 건너띄기 버튼 -->
+	<BUTTON item="ConfirmGiftMsgFrame_Skip" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>185</X>
+			<Y>255</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<TEXT>STR:UI_SHOP_41</TEXT> <!-- 건너띄기 -->
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BUTTON>
+	
+	<!-- BUTTON : 확인 버튼 -->
+	<BUTTON item="ConfirmGiftMsgFrame_Confirm" parent="ConfirmGiftMsgFrame">
+		<BOUNDS>
+			<X>130</X>
+			<Y>255</Y>
+			<W>100</W>
+			<H>25</H>
+		</BOUNDS>
+		<VISIBLE>false</VISIBLE>
+		<TEXT>STR:UI_SHOP_42</TEXT> <!-- 확인 -->
+		<SOUNDCLICK>mouse_click</SOUNDCLICK>
+		<SOUNDOVER>mouse_over</SOUNDOVER>
+	</BUTTON>
+</XML>
